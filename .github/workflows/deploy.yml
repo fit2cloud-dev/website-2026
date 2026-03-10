@@ -1,0 +1,46 @@
+name: 部署
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-to-server:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-to-server-group
+      cancel-in-progress: true
+    steps:
+      - name: 检出
+        uses: actions/checkout@v4
+      - name: 压缩
+        run: |
+          rm -rf fit2cloudweb.tar
+          rm -rf fit2cloudweb.tar.gz
+          tar -zcf fit2cloudweb.tar.gz --exclude=.git *
+          ls -la
+      - name: 上传
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.FIT2CLOUD_COM_HOST }}
+          username: ${{ secrets.FIT2CLOUD_COM_HOST_USERNAME }}
+          port: 22
+          password: ${{ secrets.FIT2CLOUD_COM_HOST_PWD }}
+          source: "fit2cloudweb.tar.gz"
+          target: /opt/website-2026/
+          # 上传到国内服务器太慢，所以从香港机器转一下
+          proxy_host: ${{ secrets.HK_PROXY_HOST }}
+          proxy_username: ${{ secrets.HK_PROXY_USERNAME }}
+          proxy_key: ${{ secrets.HK_PROXY_KEY }}
+      - name: 部署
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.FIT2CLOUD_COM_HOST }}
+          username: ${{ secrets.FIT2CLOUD_COM_HOST_USERNAME }}
+          password: ${{ secrets.FIT2CLOUD_COM_HOST_PWD }}
+          port: 22
+          script: |
+            cd /opt/website-2026/
+            tar zxf fit2cloudweb.tar.gz
+            rm -rf fit2cloudweb.tar.gz
+            /usr/local/nginx/sbin/nginx -s reload
