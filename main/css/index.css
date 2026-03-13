@@ -25,10 +25,12 @@ p {
     margin: 0;
     margin-bottom: 0;
 }
+dl,
 ol,
 ul {
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -67,6 +69,11 @@ body {
         max-width: 1280px;
     }
 }
+
+.btn {
+    --bs-btn-padding-y: 5px;
+    --bs-btn-padding-x: 16px;
+}
 .btn-lg {
     --bs-btn-padding-y: 12px;
     --bs-btn-padding-x: 32px;
@@ -104,7 +111,7 @@ body {
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card:hover {
+.card.hover:hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
     border-color: rgba(255, 255, 255, 0.8);
 }
@@ -130,6 +137,14 @@ body {
     font-weight: 500;
 }
 
+/* table */
+.table {
+    --bs-table-border-color: rgba(var(--bs-secondary-color-rgb), 0.2);
+}
+.table > :not(caption) > * > * {
+    background: none;
+    padding: 1.5rem 0.5rem;
+}
 /* Floating Animation */
 @keyframes float {
     0% {
