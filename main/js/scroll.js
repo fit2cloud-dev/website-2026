@@ -35,7 +35,7 @@
 
     // ==================== 3. 客户轮播分栏+响应式适配逻辑 ====================
     const initCustomerCarousel = () => {
-        const customersContainer = document.getElementById('f2c-waterfall-flow');
+        const customersContainer = document.getElementById('f2c-scroll-row');
         // 检查容器是否存在，避免报错
         if (!customersContainer) return;
 
@@ -66,7 +66,7 @@
             // 创建滚动列容器
             for (let i = 0; i < columnCount; i++) {
                 const column = document.createElement('div');
-                column.className = `scroll-column ${i % 2 === 0 ? 'animate-scroll-up' : 'animate-scroll-down'}`; // 奇偶列区分
+                column.className = `${i % 2 === 0 ? 'animate-scroll-up' : 'animate-scroll-down'}`; // 奇偶列区分
                 columns.push(column);
                 customersContainer.appendChild(column);
             }

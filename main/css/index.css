@@ -9,6 +9,7 @@
     --bs-link-hover-color: #0c7be0;
     --bs-link-hover-color-rgb: 12, 123, 224;
     --bs-border-radius: 8px;
+    --bs-body-line-height: 24px;
 }
 
 * {
@@ -72,6 +73,31 @@ body {
     .container-xl,
     .container-xxl {
         max-width: 1280px;
+    }
+}
+
+.columns-1 {
+    columns: 1;
+}
+@media (min-width: 576px) {
+    .columns-sm-1 {
+        columns: 1;
+    }
+}
+@media (min-width: 992px) {
+    .columns-md-1 {
+        columns: 1;
+    }
+    .columns-md-2 {
+        columns: 2;
+    }
+}
+@media (min-width: 1200px) {
+    .columns-lg-1 {
+        columns: 1;
+    }
+    .columns-lg-3 {
+        columns: 3;
     }
 }
 

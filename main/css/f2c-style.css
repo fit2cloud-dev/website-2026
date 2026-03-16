@@ -223,23 +223,19 @@
     padding: 10px 12px;
 }
 
-.f2c-waterfall-flow {
-    max-height: 800px;
-    min-height: 400px;
+.font-size-sm {
+    font-size: 14px;
+}
+.f2c-blockquote {
+    margin: 0;
+}
+
+.f2c-scroll-row {
     gap: 2rem;
     display: grid;
 }
 
-/* 滚动列通用样式 */
-.f2c-scroll-column {
-    display: flex;
-    flex-direction: column;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-.f2c-waterfall-flow .columns {
+.f2c-scroll-row .columns {
     break-inside: avoid;
     margin-bottom: calc(var(--bs-gutter-x) * 1);
 }
