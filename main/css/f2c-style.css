@@ -154,7 +154,7 @@
     padding: 160px 0 0;
 }
 .f2c-banner .banner-title {
-    margin: 120px 0;
+    margin-bottom: 80px;
 }
 .f2c-banner h1 {
     font-size: 48px;
@@ -199,6 +199,10 @@
 .f2c-Halo-badge {
     background: rgba(var(--bs-primary-rgb), 0.2) !important;
     color: var(--bs-primary) !important;
+}
+
+.min-height-48 {
+    min-height: 48px;
 }
 
 .min-height-96 {
