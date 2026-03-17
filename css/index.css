@@ -6,10 +6,15 @@
     --bs-secondary-text: #6c7280;
     --bs-secondary-color: #6c7280;
     --bs-secondary-color-rgb: 108, 114, 128;
-    --bs-link-hover-color: #0c7be0;
-    --bs-link-hover-color-rgb: 12, 123, 224;
+    --bs-link-color: #0c7be0;
+    --bs-link-color-rgb: 12, 123, 224;
+    /* --bs-link-hover-color: #0c7be0;
+    --bs-link-hover-color-rgb: 12, 123, 224; */
     --bs-border-radius: 8px;
     --bs-body-line-height: 24px;
+    --bs-body-color-rgb: 0, 18, 34;
+    --bs-body-color: #001222;
+    --bs-gray-900: #1f2329;
 }
 
 * {
@@ -18,7 +23,6 @@
     box-sizing: border-box;
 }
 a {
-    color: inherit;
     text-decoration: none;
 }
 
@@ -37,7 +41,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background: #eaf1ff;
     min-height: 100vh;
-    color: #001222;
+    color: var(--bs-body-color);
 }
 
 .list-unstyled li {
@@ -119,6 +123,18 @@ body {
     }
 }
 
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+}
 .btn {
     --bs-btn-padding-y: 5px;
     --bs-btn-padding-x: 16px;
@@ -217,6 +233,15 @@ body {
     background: none;
     padding: 1.5rem 0.5rem;
 }
+
+.title {
+    color: var(--bs-body-color);
+}
+
+.sub-title {
+    color: var(--bs-gray-900);
+}
+
 /* Floating Animation */
 @keyframes float {
     0% {

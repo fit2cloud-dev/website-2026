@@ -64,7 +64,7 @@
 
 #navigation .navbar-nav > li > a {
     display: block;
-    color: #6c7280;
+    color: var(--bs-secondary-text);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -223,9 +223,6 @@
     padding: 10px 12px;
 }
 
-.font-size-sm {
-    font-size: 14px;
-}
 .f2c-blockquote {
     margin: 0;
 }
@@ -236,7 +233,7 @@
 }
 
 .f2c-footer a:hover {
-    color: #343a40;
+    color: #343a40 !important;
     font-weight: 500;
 }
 
