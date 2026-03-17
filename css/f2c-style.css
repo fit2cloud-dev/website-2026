@@ -230,12 +230,8 @@
     margin: 0;
 }
 
-.f2c-scroll-row {
-    gap: 2rem;
-    display: grid;
-}
 
-.f2c-scroll-row .columns {
+#f2c-scroll-row .card {
     break-inside: avoid;
     margin-bottom: calc(var(--bs-gutter-x) * 1);
 }

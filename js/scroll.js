@@ -40,7 +40,7 @@
         if (!customersContainer) return;
 
         // 1. 保存原始的customer-item列表（深拷贝，避免重复操作）
-        const originalItems = Array.from(customersContainer.querySelectorAll('.columns'));
+        const originalItems = Array.from(customersContainer.querySelectorAll('.card'));
         // 无原始元素则终止执行
         if (originalItems.length === 0) return;
 
@@ -81,7 +81,7 @@
 
             // 复制一份item到列末尾，实现无缝滚动
             columns.forEach(column => {
-                const columnItems = Array.from(column.querySelectorAll('.columns'));
+                const columnItems = Array.from(column.querySelectorAll('.card'));
                 const copyItems = columnItems.map(item => item.cloneNode(true));
                 copyItems.forEach(copy => column.appendChild(copy));
             });
