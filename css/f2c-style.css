@@ -42,6 +42,7 @@
     position: absolute;
     filter: blur(80px);
     border-radius: 50%;
+    z-index: -1;
 }
 .blob-bg-blue {
     background: rgba(51, 112, 255, 0.1);
@@ -222,6 +223,10 @@
 
 .p-10-12 {
     padding: 10px 12px;
+}
+
+.fs-18 {
+    font-size: 18px;
 }
 
 .f2c-blockquote {
