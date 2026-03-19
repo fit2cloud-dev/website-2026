@@ -44,3 +44,31 @@ jobs:
             tar zxf fit2cloudweb.tar.gz
             rm -rf fit2cloudweb.tar.gz
             /usr/local/nginx/sbin/nginx -s reload
+  deploy-to-aliyun-oss:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: deploy-to-aliyun-oss-group
+      cancel-in-progress: true
+    steps:
+      - name: 安装ossutil
+        uses: yizhoumo/setup-ossutil@v2
+        with:
+          ossutil-version: '1.7.19'
+          endpoint: ${{ secrets.OSS_ENDPOINT }}
+          access-key-id: ${{ secrets.OSS_AK }}
+          access-key-secret: ${{ secrets.OSS_SK }}
+      - name: 检出
+        uses: actions/checkout@v4
+      - name: 压缩
+        run: |
+          rm -rf fit2cloudweb.tar
+          rm -rf fit2cloudweb.tar.gz
+          tar -zcf fit2cloudweb.tar.gz --exclude=.git *
+          ls -la
+      - name: 上传
+        run: |
+          rm -rf oss-tmp
+          mkdir -p oss-tmp
+          tar zxf fit2cloudweb.tar.gz -C oss-tmp
+          ossutil cp -r -f --meta=Cache-Control:max-age=0 oss-tmp/ oss://www-fit2cloud-com/
+          rm -rf oss-tmp
