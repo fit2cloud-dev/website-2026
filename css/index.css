@@ -194,6 +194,7 @@ body {
     border: none;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 .card.hover:hover {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
