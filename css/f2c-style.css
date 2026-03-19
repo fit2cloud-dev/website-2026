@@ -203,6 +203,10 @@
     color: var(--bs-primary) !important;
 }
 
+.f2c-bg-body {
+    background: var(--f2c-body-bg);
+}
+
 .min-height-48 {
     min-height: 48px;
 }
@@ -251,6 +255,31 @@
     background: none;
     padding: 0.75rem 0.5rem;
     vertical-align: middle;
+}
+
+.f2c-feature {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.f2c-feature:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.f2c-circle-icon {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    background: linear-gradient(45deg, transparent, rgba(47, 85, 212, 0.15));
+    font-size: 22px;
+}
+
+.f2c-circle-icon:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.f2c-border-top-3 {
+    border-top: 3px solid var(--bs-primary);
 }
 
 /*------------*/
@@ -309,8 +338,4 @@
     #wechat-customer {
         display: none !important;
     }
-}
-
-.f2c-bg-body {
-    background: var(--f2c-body-bg);
 }

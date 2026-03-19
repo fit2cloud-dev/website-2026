@@ -13,6 +13,7 @@
     --bs-body-color-rgb: 0, 18, 34;
     --bs-body-color: #001222;
     --bs-gray-900: #1f2329;
+    --bs-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
 }
 
 * {
@@ -168,6 +169,10 @@ body {
     background: linear-gradient(90deg, #f7fbff 0%, #f8faff 100%);
 }
 
+.bg-gradient {
+    background: linear-gradient(90deg, #f7fbff 0%, #ffffff 100%) !important;
+}
+
 .section {
     padding: 80px 0;
     position: relative;
@@ -202,9 +207,7 @@ body {
 .card-body {
     padding: 32px;
 }
-.card-gradient-background {
-    background: linear-gradient(90deg, #f7fbff 0%, #ffffff 100%);
-}
+
 .card-badge {
     width: 87px;
     height: 28px;
