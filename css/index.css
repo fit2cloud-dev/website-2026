@@ -8,8 +8,6 @@
     --bs-secondary-color-rgb: 108, 114, 128;
     --bs-link-color: #0c7be0;
     --bs-link-color-rgb: 12, 123, 224;
-    /* --bs-link-hover-color: #0c7be0;
-    --bs-link-hover-color-rgb: 12, 123, 224; */
     --bs-border-radius: 8px;
     --bs-body-line-height: 24px;
     --bs-body-color-rgb: 0, 18, 34;
@@ -39,7 +37,7 @@ ul {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: #eaf1ff;
+    background: var(--f2c-body-bg);
     min-height: 100vh;
     color: var(--bs-body-color);
 }
@@ -76,7 +74,19 @@ body {
     .container-sm,
     .container-xl,
     .container-xxl {
-        max-width: 1280px;
+        max-width: 1280px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 90% !important;
     }
 }
 
@@ -94,6 +104,7 @@ body {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
+
 @media (min-width: 992px) {
     .columns-md-1 {
         columns: 1;
@@ -241,6 +252,15 @@ body {
 .sub-title {
     color: var(--bs-gray-900);
 }
+
+/* nav */
+.nav-pills .nav-link.active {
+    background: linear-gradient(90deg, #0c7be0 0%, #333dff 82.69%) !important;
+}
+.nav-pills .nav-link.active p {
+    color: #ffffff !important;
+}
+
 
 /* Floating Animation */
 @keyframes float {
