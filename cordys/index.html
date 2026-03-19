@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cordys CRM - 新一代的开源 AI CRM 系统 - 官网</title>
+        <meta name="description" content="Cordys CRM 是集信息化、数字化、智能化于一体的开源 AI CRM 系统。" />
+        <meta name="keywords" content="开源CRM,AI CRM,免费CRM,开源CRM系统,AI CRM系统,免费CRM系统,销售易开源替代,纷享销客开源替代,Salesforce开源替代,飞致云CRM,CordysCRM,CRM Skills" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Cordys CRM - 新一代的开源 AI CRM 系统" />
+        <meta property="og:description" content="Cordys CRM 是集信息化、数字化、智能化于一体的开源 AI CRM 系统。" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="Cordys CRM - 新一代的开源 AI CRM 系统" />
+        <meta property="twitter:description" content="Cordys CRM 是集信息化、数字化、智能化于一体的开源 AI CRM 系统。" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="./images/favicon.png" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TWT2BFLFM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-3TWT2BFLFM');
+        </script>
+    </head>
+
+    <body>
+        <!-- Top Bar -->
+        <div class="top-bar" id="top-bar">
+            <div class="top-bar-container">
+                <div class="top-bar-left">
+                    <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                        <img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云" style="height: 20px; width: auto" />
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-dropdown" id="topBarDropdown">
+                        <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span class="dropdown-arrow">▼</span></button>
+                        <div class="top-bar-dropdown-content" id="dropdownContent">
+                            <a href="https://1panel.cn/" class="top-bar-dropdown-item"> <strong>1Panel</strong> - 现代化、开源的 Linux 面板 </a>
+                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item"> <strong>Cordys</strong> - 新一代的开源 AI CRM 系统 </a>                            
+                            <a href="https://jumpserver.org/" class="top-bar-dropdown-item"> <strong>JumpServer</strong> - 广受欢迎的开源堡垒机 </a>
+                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item"> <strong>MaxKB</strong> - 强大易用的企业级智能体平台 </a>
+                            <a href="https://dataease.cn/" class="top-bar-dropdown-item"> <strong>DataEase</strong> - 人人可用的开源 BI 工具 </a>
+                            <a href="https://sqlbot.org/" class="top-bar-dropdown-item"> <strong>SQLBot</strong> - 基于大模型的开源智能问数系统 </a>
+                            <a href="https://www.metersphere.io/" class="top-bar-dropdown-item"> <strong>MeterSphere</strong> - 新一代的开源持续测试工具 </a>
+                            <a href="https://halo.run/" class="top-bar-dropdown-item"> <strong>Halo</strong> - 强大易用的开源建站工具 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__brand">
+                        <a href="https://cordys.cn/" class="nav__logo">
+                            <img src="images/favicon.png" alt="Cordys CRM Logo" style="height: 48px; margin-right: 0.5em" />
+                            <span class="logo__text">Cordys CRM</span>
+                        </a>
+                    </div>
+
+                    <div class="nav__center">
+                        <a href="./download/introduce-cordys_2026.pdf" target="_blank" class="nav__link">产品介绍</a>
+                        <a href="https://community.fit2cloud.com/#/products/cordys-crm/downloads" target="_blank" class="nav__link">免费下载</a>
+                        <a href="https://cordys.cn/docs/" target="_blank" class="nav__link">在线文档</a>
+                        <a href="https://fit2cloud.com/about/index.html" target="_blank" class="nav__link">关于飞致云</a>
+                    </div>
+
+                    <div class="nav__right">
+                        <a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" class="nav__button nav__button--outline">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                ></path>
+                            </svg>
+                            代码仓库
+                        </a>
+                        <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="nav__button nav__button--primary">
+                            <svg
+                                fill="#fafafa"
+                                width="20"
+                                height="20"
+                                version="1.2"
+                                baseProfile="tiny"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="-351 153 256 256"
+                                xml:space="preserve"
+                                stroke="#fafafa"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M-209.3,262.6h-18.3V233c0-14.4,11.6-26,26-26h52.1c14.3,0,26,11.7,26,26v29.6h-18v-24.4c0-1.6-1.1-2.7-2.7-2.7 c-1.6,0-2.7,1.1-2.7,2.7h0.2v24.5h-57.4v-24.5c0-1.6-1.1-2.7-2.7-2.7c-1.6,0-2.7,1.1-2.7,2.7L-209.3,262.6z M-175.6,202.2 c11.5,0,20.9-9.4,20.9-20.9s-9.4-20.9-20.9-20.9s-20.9,9.4-20.9,20.9S-187.1,202.2-175.6,202.2z M-343,265.7v28.2h24.1V406H-128V294 h25v-28.2v-0.1H-343z M-337.5,244.3V191c0-2.6,2.1-4.7,4.7-4.7h80.5c2.6,0,4.7,2.1,4.7,4.7v53.2c0,2.6-2.1,4.7-4.7,4.7h-29.1v7.3 h10.7v5.2h-3.2h-37.1h-3.2v-5.2h10.5v-7.3h-29.1C-335.4,248.9-337.5,246.9-337.5,244.3z M-292.6,246.1c1.5,0,2.7-1.1,2.7-2.7 c0-1.5-1.2-2.7-2.7-2.7s-2.7,1.2-2.7,2.7C-295.3,245-294.1,246.1-292.6,246.1z M-331.6,238.7h78.1v-46.6h-78.1V238.7z"
+                                    ></path>
+                                </g>
+                            </svg>
+                            预约演示
+                        </a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero__background">
+                    <div class="hero__shape hero__shape--1"></div>
+                    <div class="hero__shape hero__shape--2"></div>
+                    <div class="hero__shape hero__shape--3"></div>
+                </div>
+
+                <div class="container">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <div class="hero__left">
+                                <h1 class="hero__title">新一代的开源 <span class="hero__title--highlight">AI CRM</span> 系统</h1>
+                                <p class="hero__subtitle">Cordys CRM 是由飞致云匠心打造的开源客户关系管理系统，深度融合信息化、数字化与智能化能力，支持私有化部署，全面保障企业数据安全与主权。</p>
+
+                                <div class="hero__features">
+                                    <a href="https://www.bilibili.com/video/BV1Wm1sB4ExL/" target="_blank" class="nav__button nav__button--primary"
+                                        ><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-play h-5 w-5"
+                                        >
+                                            <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                                        </svg>
+                                        视频介绍
+                                    </a>
+                                    <a href="https://community.fit2cloud.com/#/products/cordys-crm/downloads" target="_blank" class="nav__button nav__button--outline">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="lucide lucide-download h-5 w-5"
+                                        >
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" x2="12" y1="15" y2="3"></line>
+                                        </svg>
+                                        免费下载
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="hero__right">
+                                <div class="beta__card">
+                                    <h3 class="beta__title">加入交流群</h3>
+                                    <p class="beta__description">第一时间体验最新功能，与开发者直接交流。</p>
+
+                                    <div class="qr__container">
+                                        <div class="qr__code">
+                                            <img src="images/qrcode.png" alt="二维码" />
+                                        </div>
+                                        <p class="qr__label">微信扫码加群</p>
+                                    </div>
+
+                                    <div class="beta__info">
+                                        <div class="info__item">
+                                            <span class="info__label">当前最新版本</span>
+                                            <span class="info__value">v1.5.2</span>
+                                        </div>
+                                        <div class="info__item">
+                                            <span class="info__label">累计下载安装</span>
+                                            <span class="info__value">20万+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 1: Cordys 的品牌内涵 -->
+            <section class="section section--brand" id="brand">
+                <div class="container">
+                    <div class="brand__content">
+                        <h2 class="section__title">Cordys 的品牌内涵</h2>
+                        <div class="brand__meaning">
+                            <div class="brand__word">
+                                <span class="brand__phonetic">/ˈkɔːrdɪs/</span>
+                                <h3 class="brand__name">Cordys</h3>
+                            </div>
+                            <div class="brand__explanation">
+                                <p>由 <strong>"Cord"</strong>（连接之绳）与 <strong>"System"</strong>（系统）融合而成</p>
+                                <p class="brand__core">寓意<strong>「关系的纽带系统」</strong></p>
+                                <p class="brand__tagline">诠释了 CRM 的本质：连接客户，缔造长期价值</p>
+                            </div>
+                        </div>
+                        <div class="brand__decoration">
+                            <div class="brand__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Cordys CRM 是什么？ -->
+            <section class="section section--what" id="what">
+                <div class="container">
+                    <h2 class="section__title">产品定位</h2>
+                    <p class="section__subtitle">Cordys CRM 是集信息化、数字化和智能化于一体的开源 CRM 系统。</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <h3 class="feature-card__title">信息化</h3>
+                            <p class="feature-card__desc">基于低代码平台实现从线索到回款（L2C）的全流程精细化管理。</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg>
+                            </div>
+                            <h3 class="feature-card__title">数字化</h3>
+                            <p class="feature-card__desc">基于嵌入式分析引擎实现销售数据可视化呈现和自助式分析。</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-card__icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                                    <line x1="12" y1="19" x2="12" y2="22"></line>
+                                </svg>
+                            </div>
+                            <h3 class="feature-card__title">智能化</h3>
+                            <p class="feature-card__desc">AI 赋能，重塑 CRM 体验：从「要我用」到「我要用」。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: 核心优势 -->
+            <section class="section section--advantages" id="advantages">
+                <div class="container">
+                    <h2 class="section__title">核心优势</h2>
+                    <p class="section__subtitle">Cordys CRM 坚持开源开放，倾听客户反馈，坚持高质量持续迭代。</p>
+                    
+                    <div class="advantages-grid">
+                        <div class="advantage-card">
+                            <div class="advantage-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-card__title">灵活配置 · 高效协同</h3>
+                            <p class="advantage-card__desc">现代化架构，操作简洁流畅；精细权限与模块化配置，无缝集成主流办公平台，赋能团队高效协同。</p>
+                        </div>
+                        
+                        <div class="advantage-card">
+                            <div class="advantage-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-card__title">安全自主 · 深度可控</h3>
+                            <p class="advantage-card__desc">私有化部署，数据100%自主可控；开放API与标准接口，支持深度集成与定制开发，筑牢安全与发展基石。</p>
+                        </div>
+                        
+                        <div class="advantage-card">
+                            <div class="advantage-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                    <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-card__title">智能 BI · 决策赋能</h3>
+                            <p class="advantage-card__desc">深度融合 DataEase 分析引擎，销售数据可视化呈现；支持自助探索与实时洞察，驱动精准决策与业绩增长。</p>
+                        </div>
+                        
+                        <div class="advantage-card">
+                            <div class="advantage-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-card__title">AI 赋能 · 智能提效</h3>
+                            <p class="advantage-card__desc">开放 CRM Skills 接口，赋能 OpenClaw AI 销售助理 7×24 小时智能服务；提升销售全流程效率与决策质量。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: 价格 -->
+            <section class="section section--pricing" id="pricing">
+                <div class="container">
+                    <h2 class="section__title">价格</h2>
+                    <p class="section__subtitle">Cordys CRM 拒绝坐席制，让每个企业都用得起、用的好。</p>
+                    
+                    <!-- 版本对比 -->
+                    <div class="comparison">
+                        <div class="comparison__card comparison__card--community">
+                            <h3 class="comparison__title">Cordys CRM 社区版</h3>
+                            <p class="comparison__tagline">开源免费</p>
+                            <ul class="comparison__list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    基于 GPL v3 开源许可证协议
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    不开放 API 和 Skills
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    不能替换和修改 Logo 和版权信息
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg>
+                                    免费社区支持（微信群、论坛、GitHub Issues）
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="comparison__card comparison__card--enterprise">
+                            <h3 class="comparison__title">Cordys CRM 企业版</h3>
+                            <p class="comparison__tagline">按年订阅</p>
+                            <ul class="comparison__list">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    支持自定义 Logo 和主题
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    含 DataEase 嵌入式版
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    开放 API、Skills，支持 AI 销售助理调用
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    原厂企业级支持服务
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 价格表 -->
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">标准</h3>
+                            <div class="pricing-card__price">
+                                <span class="price__amount">¥3万</span>
+                                <span class="price__period">/年</span>
+                            </div>
+                            <div class="pricing-card__scope">
+                                <span>适用于企业营收规模 &lt; ¥1亿</span>
+                            </div>
+                            <ul class="pricing-card__features">
+                                <li>单机/冷备部署</li>
+                                <li>原厂企业级支持（基础级）</li>
+                            </ul>
+                            <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="pricing-card__btn">预约演示</a>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">专业</h3>
+                            <div class="pricing-card__price">
+                                <span class="price__amount">¥6万</span>
+                                <span class="price__period">/年</span>
+                            </div>
+                            <div class="pricing-card__scope">
+                                <span>适用于企业营收规模 ¥1亿 - ¥10亿</span>
+                            </div>
+                            <ul class="pricing-card__features">
+                                <li>单机/冷备部署</li>
+                                <li>原厂企业级支持（增强级）</li>
+                            </ul>
+                            <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="pricing-card__btn">预约演示</a>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <h3 class="pricing-card__title">旗舰</h3>
+                            <div class="pricing-card__price">
+                                <span class="price__amount">¥12万</span>
+                                <span class="price__period">/年</span>
+                            </div>
+                            <div class="pricing-card__scope">
+                                <span>不限营收规模</span>
+                            </div>
+                            <ul class="pricing-card__features">
+                                <li>单机/热备/分布式高可用</li>
+                                <li>原厂企业级支持（增强级）</li>
+                            </ul>
+                            <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="pricing-card__btn">预约演示</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p>
+                        <a href="https://beian.miit.gov.cn/" target="_blank"><span style="color: white">浙ICP备14038283号-11</span></a>
+                    </p>
+                    <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

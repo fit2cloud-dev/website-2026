@@ -27,7 +27,7 @@ jobs:
           port: 22
           password: ${{ secrets.FIT2CLOUD_COM_HOST_PWD }}
           source: "fit2cloudweb.tar.gz"
-          target: /opt/website-2026/
+          target: /opt/website/
           # 上传到国内服务器太慢，所以从香港机器转一下
           proxy_host: ${{ secrets.HK_PROXY_HOST }}
           proxy_username: ${{ secrets.HK_PROXY_USERNAME }}
@@ -40,7 +40,7 @@ jobs:
           password: ${{ secrets.FIT2CLOUD_COM_HOST_PWD }}
           port: 22
           script: |
-            cd /opt/website-2026/
+            cd /opt/website/
             tar zxf fit2cloudweb.tar.gz
             rm -rf fit2cloudweb.tar.gz
             /usr/local/nginx/sbin/nginx -s reload

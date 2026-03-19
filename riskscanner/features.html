@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>RiskScanner 功能介绍</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="RiskScanner 是开源的多云安全合规扫描平台，通过 Cloud Custodian 的 YAML DSL 定义扫描规则，实现对主流公(私)有云资源的安全合规扫描及使用优化建议。" />
+        <meta name="keywords" content="RiskScanner,多云安全合规扫描平台,Custodian" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="email" content="riskscanner@fit2cloud.com" />
+        <meta name="website" content="https://www.riskscanner.io" />
+        <link rel="shortcut icon" href="./images/logo/favicon.ico" />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="css/unicons.css" />
+        <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./css/mega.css" />
+        <link href="./css/animate.css" rel="stylesheet" />
+        <link href="./css/animations-delay.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header id="topnav" class="defaultscroll sticky">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+                        <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+                    </symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+                        <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+                    </symbol>
+                </defs>
+            </svg>
+
+            <div class="container">
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo/logo-dark-RiskScanner.svg" class="l-dark" height="35" alt="" />
+                        <img src="./images/logo/logo-light-RiskScanner.svg" class="l-light" height="35" alt="" />
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./features.html">功能</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li class="github-star">
+                            <iframe target="_blank" src="./github-btn.html?user=riskscanner&repo=riskscanner&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-half bg-dark d-table w-100" style="background-image: url('images/banner/banner3.jpg')">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h1 class="heading mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">RiskScanner 功能介绍</h1>
+                            <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-8">
+                                <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="watch btn btn-primary mt-2">  演示视频</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">功能列表</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-sm-12 col-xs-12 subscription-div" style="margin-top: 0px">
+                        <table class="subscription-table">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="6"><h5 class="title">首页</h5></td>
+
+                                    <td rowspan="4"><h6 class="title">概览</h6></td>
+                                    <td><p class="title-p">首页概览实时展示扫描资源的不合规数量与占比</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><p class="title-p">实时展示不合规扫描规则</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">实时展示云账号扫描评分与资源数量</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">实时展示区域不合规资源数量</p></td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="title">历史记录</h6></td>
+                                    <td><p class="title-p">记录并展示每个云账号每日的最终扫描记录与扫描资源数量</p></td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="title">活动</h6></td>
+                                    <td><p class="title-p">展示用户在平台的所有操作记录</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="6"><h5 class="title">扫描规则</h5></td>
+
+                                    <td rowspan="2"><h6 class="title">扫描规则</h6></td>
+                                    <td><p class="title-p">系统内置云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，不可增删改</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><p class="title-p">用户自定义云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，可增删改查</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2"><h6 class="title">规则标签</h6></td>
+                                    <td><p class="title-p">系统内置规则标签，给规则定义标签，不可增删改</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">用户自定义规则标签，给规则定义标签，可增删改查</p></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2"><h6 class="title">规则组</h6></td>
+                                    <td><p class="title-p">系统内置规则组，给规则分组，不可增删改</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">用户自定义规则组，给规则分组，可增删改查</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="4"><h5 class="title">扫描结果</h5></td>
+
+                                    <td rowspan="2"><h6 class="title">扫描结果</h6></td>
+                                    <td><p class="title-p">根据云平台扫描规则，扫描资源并生成扫描结果，查看扫描状态、扫描日志</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><p class="title-p">查看扫描结果的不合规资源的详细信息</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2"><h6 class="title">合规报告</h6></td>
+                                    <td><p class="title-p">根据规则组、等保预检等分组显示扫描结果，根据风险条例显示扫描资源的结果与优化改进建议</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">下载合规报告</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="6"><h5 class="title">云账号</h5></td>
+
+                                    <td rowspan="2"><h6 class="title">云账号设置</h6></td>
+                                    <td><p class="title-p">创建、编辑云平台的云账号</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><p class="title-p">一键扫描、一键校验、获取区域等</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2"><h6 class="title">定时任务</h6></td>
+                                    <td><p class="title-p">根据云账号或规则创建扫描定时任务</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">暂停启动定时任务，查看扫描详情、查看定时任务日志</p></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2"><h6 class="title">统计分析</h6></td>
+                                    <td><p class="title-p">根据云账号查看统计结果</p></td>
+                                </tr>
+                                <tr>
+                                    <td><p class="title-p">根据扫描规则、规则组别、等保条例、规则标签、扫描区域、扫描资源等维度查看扫描结果统计</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="6"><h5 class="title">系统设置</h5></td>
+
+                                    <td><h6 class="title">用户管理</h6></td>
+                                    <td><p class="title-p">创建、编辑、删除用户信息</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><h6 class="title">系统参数设置</h6></td>
+                                    <td><p class="title-p">设置邮件、企业微信、钉钉等信息</p></td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="title">消息通知</h6></td>
+                                    <td><p class="title-p">支持对安全合规规则扫描资源结果进行、邮件、企业微信、钉钉等消息通知</p></td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="title">代理设置</h6></td>
+                                    <td><p class="title-p">创建 http 或 https 类型的代理供云账号扫描使用</p></td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="title">个人设置</h6></td>
+                                    <td><p class="title-p">编辑用户、修改密码</p></td>
+                                </tr>
+
+                                <tr>
+                                    <td><h6 class="title">API Keys</h6></td>
+                                    <td><p class="title-p">创建 Access Key 与 Securet Keys 供 Restful APIs 调用使用</p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-cta" style="background: url('images/banner/banner4.jpg') center center no-repeat" id="cta">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title title-dark text-white mb-4">演示视频</h4>
+                            <p class="text-light para-desc para-dark mx-auto">快速演示如何通过 RiskScanner 实现对主流公(私)有云资源的安全合规扫描及使用优化建议</p>
+                            <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="play-btn border border-light mt-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-play fea icon-ex-md text-white title-dark"
+                                >
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">RiskScanner </span>? 欢迎通过如下方式联系我们。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-12 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="./images/contact/wechat-group.jpg" alt="RiskScanner Wechat" width="120" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="text-lg-center text-sm-left">
+                            <p class="mb-0 title-p"><a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">浙ICP备14038283号</a></p>
+                            <p class="pt-1 title-p">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery.easing.min.js"></script>
+        <script src="./js/scrollspy.min.js"></script>
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script src="./js/magnific.init.js"></script>
+        <script src="./js/owl.carousel.min.js "></script>
+        <script src="./js/owl.init.js "></script>
+        <script src="./js/feather.min.js"></script>
+        <script src="./js/monochrome-bundle.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/mega.js"></script>
+    </body>
+</html>

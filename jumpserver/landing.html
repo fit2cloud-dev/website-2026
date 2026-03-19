@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>JumpServer - 开源堡垒机 - 官网</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="JumpServer 是广受欢迎的开源堡垒机，是符合 4A 规范的专业运维安全审计系统。" />
+        <meta name="keywords" content="JumpServer, 开源堡垒机, 堡垒机, 信创堡垒机, 跳板机, 运维审计系统, 运维安全审计, 运维安全审计系统" />
+        <meta name="author" content="杭州飞致云信息科技有限公司" />
+        <meta name="email" content="support@fit2cloud.com" />
+        <meta name="website" content="https://www.jumpserver.org" />
+        <meta property="og:image" content="https://fit2cloud.com/images/logo/js-seo-1200-630.png" />
+        <link rel="shortcut icon" href="./images/logo/favicon.ico" />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/unicons.css" />
+        <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="./css/mega.css" />
+        <link href="./css/animate.css" rel="stylesheet" />
+        <link href="./css/animations-delay.css" rel="stylesheet" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-2ZRQ481R4Z');
+        </script>
+    </head>
+
+    <body>
+        <header id="topnav" class="defaultscroll sticky">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+                        <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+                    </symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+                        <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+                    </symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline">
+                                <span class="visible-xs text-muted">飞致云旗下开源产品</span>
+                            </p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline">
+                                            <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use>
+                                            </svg>
+                                            <span class="visuallyhidden">Open</span>
+                                        </span>
+                                    </div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://www.1panel.cn/" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>                                   
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo/logo-dark-JumpServer.svg" class="l-dark" height="35" alt="" />
+                        <img src="./images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="" />
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a target="_blank" href="https://vsqzsec.jumpserver.org/">产品优势</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="./xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="./distributed.html">分布式</a></li>
+                                <li><a href="./hardware.html">一体机</a></li>
+                                <li><a href="./remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="./database.html">数据库运维安全审计</a></li>
+                                <li><a href="./e-commerce.html">跨境电商</a></li>
+                                <li><a href="./pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </li>                        
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="http://docs.jumpserver.org/">在线文档</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/jumpserver">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/js/5">社区论坛</a></li>
+                                <li><a target="_blank" href="./customers.html">客户案例</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.jumpserver.org/">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/sQ91MK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf">如何向团队介绍 JumpServer?</a></li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <div class="mt-3 menu-mt-pnone">
+                                <a target="_blank" href="https://community.fit2cloud.com/#/products/jumpserver/downloads" class="btn btn-primary menu-btn">免费下载</a>
+                            </div>
+                        </li>
+                        <li><a href="./enterprise.html">企业版</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li class="github-star">
+                            <iframe target="_blank" src="./github-btn.html?user=jumpserver&repo=jumpserver&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="home-slider home-slider-70 position-relative">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item align-items-center active" style="background-image: url('images/banner/banner24.jpg')">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1 class="text-light para-dark animated fadeInDownBig animation-delay-1">
+                                            <b>广受欢迎的开源堡垒机</b>
+                                        </h1>
+                                        <h5 class="mt-4 mb-2 text-light para-dark animated fadeInDownBig animation-delay-1">
+                                            <span>运维必备神器！JumpServer 支持事前授权、事中监察、事后审计，满足等保合规要求。</span>
+                                        </h5>
+                                        <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-4">
+                                            <a target="_blank" href="https://www.bilibili.com/video/BV1GL411o7ZP/" class="btn btn-primary mt-2">  观看演示 </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title pb-2">
+                            <h4 class="title mb-2"><span class="text-primary">JumpServer</span> 是什么？</h4>
+                            <p class="text-muted">JumpServer 堡垒机帮助企业以更安全的方式管控和登录各种类型的 <span class="text-primary">IT 资产</span>。</p>
+                            <p class="text-muted">
+                                <a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank"><span class="text-primary">点击进一步了解: 如何向团队介绍 JumpServer?</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <i data-feather="link" class="fea icon-lg text-primary"></i>
+                            </div>
+                            <div class="content mt-4">
+                                <h4 class="page-title">SSH</h4>
+                                <p class="text-muted mb-0">Linux / Unix / 网络设备 等</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <svg class="fea icon-lg text-primary" role="presentation" viewBox="0 0 24 24">
+                                    <title>windows</title>
+                                    <path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z" style="fill: currentcolor"></path>
+                                </svg>
+                            </div>
+                            <div class="content mt-4">
+                                <h4 class="page-title">Windows</h4>
+                                <p class="text-muted mb-0">Web 方式连接 / 原生 RDP 连接</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <i data-feather="database" class="fea icon-lg text-primary"></i>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">数据库</h4>
+                                <p class="text-muted mb-0">MySQL / Oracle / SQLServer / PostgreSQL 等</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <svg class="fea icon-lg text-primary" role="presentation" viewBox="0 0 24 24">
+                                    <title>kubernetes</title>
+                                    <path
+                                        d="M13.95 13.5H13.72C13.54 13.61 13.46 13.82 13.54 14L14.4 16.11C15.23 15.58 15.86 14.79 16.19 13.86L13.96 13.5H13.95M10.5 13.79C10.44 13.62 10.29 13.5 10.12 13.5H10.04L7.82 13.87C8.15 14.79 8.78 15.57 9.61 16.1L10.46 14.03V14C10.5 13.95 10.5 13.86 10.5 13.79M12.33 14.6C12.23 14.42 12 14.35 11.82 14.45C11.75 14.5 11.7 14.53 11.67 14.6H11.66L10.57 16.57C11.35 16.83 12.19 16.88 13 16.69C13.14 16.66 13.29 16.62 13.43 16.57L12.34 14.6H12.33M15.78 10.03L14.1 11.5L14.11 11.53C13.95 11.67 13.93 11.91 14.07 12.06C14.12 12.12 14.18 12.16 14.25 12.18L14.26 12.19L16.43 12.81C16.5 11.84 16.29 10.86 15.78 10.03M12.67 10.19C12.68 10.4 12.85 10.56 13.06 10.55C13.14 10.55 13.21 10.53 13.27 10.5H13.28L15.11 9.19C14.41 8.5 13.5 8.07 12.54 7.95L12.67 10.19M10.73 10.5C10.9 10.61 11.13 10.58 11.25 10.41C11.3 10.35 11.32 10.28 11.33 10.2H11.34L11.46 7.95C11.31 7.97 11.16 8 11 8.03C10.2 8.21 9.46 8.61 8.88 9.19L10.72 10.5H10.73M9.74 12.19C9.94 12.14 10.06 11.93 10 11.73C10 11.65 9.95 11.59 9.89 11.54V11.53L8.21 10C7.69 10.86 7.47 11.84 7.58 12.82L9.74 12.2V12.19M11.38 12.85L12 13.15L12.62 12.85L12.77 12.18L12.34 11.65H11.65L11.22 12.18L11.38 12.85M22.27 14.17L20.5 6.5C20.41 6.08 20.13 5.74 19.76 5.56L12.59 2.13C12.22 1.96 11.78 1.96 11.4 2.13L4.24 5.56C3.87 5.74 3.59 6.08 3.5 6.5L1.73 14.17C1.68 14.37 1.68 14.57 1.73 14.76C1.74 14.82 1.76 14.88 1.78 14.94C1.81 15.03 1.86 15.13 1.91 15.21C1.94 15.25 1.96 15.29 2 15.32L6.95 21.5C6.97 21.5 7 21.54 7 21.56C7.1 21.65 7.19 21.72 7.28 21.78C7.4 21.86 7.54 21.92 7.68 21.95C7.79 22 7.91 22 8 22H16.12C16.19 22 16.26 21.97 16.32 21.95C16.37 21.94 16.42 21.92 16.46 21.91C16.5 21.89 16.53 21.88 16.57 21.86C16.62 21.84 16.67 21.81 16.72 21.78C16.84 21.7 16.95 21.6 17.05 21.5L17.2 21.3L22 15.32C22.1 15.2 22.17 15.07 22.22 14.94C22.24 14.88 22.26 14.82 22.27 14.76C22.32 14.57 22.32 14.36 22.27 14.17M14.84 17.16C14.86 17.22 14.88 17.28 14.91 17.33C14.87 17.41 14.85 17.5 14.88 17.59C15 17.83 15.11 18.05 15.26 18.27C15.34 18.38 15.42 18.5 15.5 18.61C15.5 18.64 15.53 18.69 15.54 18.73C15.66 18.93 15.6 19.19 15.39 19.32S14.92 19.37 14.8 19.17C14.79 19.14 14.78 19.12 14.77 19.09C14.75 19.06 14.73 19 14.71 19C14.66 18.85 14.62 18.72 14.59 18.59C14.5 18.34 14.42 18.1 14.29 17.87C14.24 17.8 14.16 17.75 14.08 17.73L14 17.57C12.71 18.05 11.3 18.05 10.03 17.56L9.93 17.74C9.86 17.75 9.79 17.78 9.74 17.83C9.6 18.07 9.5 18.32 9.41 18.6C9.38 18.73 9.34 18.86 9.29 19C9.27 19 9.25 19.07 9.23 19.1C9.15 19.32 8.91 19.44 8.68 19.36C8.46 19.28 8.34 19.04 8.42 18.81C8.43 18.78 8.45 18.76 8.46 18.73C8.5 18.7 8.5 18.65 8.5 18.62C8.59 18.5 8.66 18.39 8.74 18.27C8.9 18.06 9.03 17.82 9.13 17.58C9.14 17.5 9.13 17.41 9.1 17.33L9.17 17.15C8 16.45 7.12 15.36 6.7 14.06L6.5 14.09C6.44 14.04 6.35 14 6.27 14C6 14.05 5.76 14.13 5.5 14.22C5.39 14.28 5.26 14.33 5.13 14.37C5.1 14.38 5.06 14.39 5 14.4C4.78 14.47 4.54 14.35 4.46 14.13C4.39 13.9 4.5 13.66 4.74 13.58C4.76 13.58 4.79 13.57 4.82 13.57V13.56H4.83L4.94 13.54C5.08 13.5 5.22 13.5 5.35 13.5C5.61 13.5 5.87 13.44 6.12 13.38C6.2 13.33 6.26 13.27 6.31 13.19L6.5 13.14C6.29 11.78 6.6 10.41 7.36 9.27L7.22 9.15C7.22 9.06 7.19 8.97 7.14 8.9C6.94 8.73 6.73 8.58 6.5 8.45C6.38 8.39 6.26 8.32 6.14 8.24C6.12 8.22 6.08 8.19 6.06 8.17L6.05 8.16C5.85 8 5.8 7.74 5.94 7.53C6.03 7.43 6.15 7.38 6.29 7.38C6.4 7.39 6.5 7.43 6.59 7.5L6.68 7.57C6.78 7.66 6.87 7.77 6.96 7.87C7.14 8.06 7.33 8.24 7.54 8.39C7.62 8.43 7.71 8.44 7.8 8.42L7.95 8.53C8.7 7.73 9.68 7.17 10.75 6.93C11 6.87 11.27 6.83 11.53 6.81L11.54 6.63C11.61 6.57 11.65 6.5 11.68 6.4C11.69 6.14 11.67 5.88 11.63 5.63C11.6 5.5 11.58 5.36 11.57 5.22V5.1C11.55 4.86 11.72 4.65 11.96 4.62S12.4 4.77 12.43 5V5.22C12.42 5.36 12.4 5.5 12.37 5.63C12.33 5.88 12.31 6.14 12.32 6.4C12.34 6.5 12.39 6.57 12.46 6.62L12.47 6.81C13.83 6.93 15.09 7.54 16.03 8.53L16.19 8.41C16.28 8.43 16.37 8.42 16.45 8.38C16.66 8.23 16.86 8.05 17.03 7.86C17.12 7.76 17.21 7.66 17.31 7.56C17.34 7.54 17.38 7.5 17.41 7.5C17.58 7.32 17.85 7.32 18 7.5C18.19 7.66 18.18 7.93 18 8.1C18 8.12 17.97 8.14 17.94 8.16C17.92 8.18 17.88 8.21 17.85 8.23C17.74 8.31 17.62 8.38 17.5 8.44C17.27 8.57 17.05 8.72 16.86 8.89C16.8 8.96 16.77 9.04 16.78 9.13L16.62 9.27C17.39 10.4 17.7 11.78 17.5 13.13L17.69 13.18C17.73 13.26 17.8 13.32 17.88 13.36C18.13 13.43 18.39 13.47 18.65 13.5H19.06C19.09 13.53 19.14 13.54 19.18 13.55C19.42 13.58 19.58 13.8 19.55 14.04C19.5 14.27 19.31 14.44 19.07 14.41C19.04 14.4 19 14.4 19 14.39V14.38C18.94 14.38 18.9 14.37 18.86 14.36C18.73 14.32 18.61 14.27 18.5 14.21C18.24 14.11 18 14.04 17.73 14C17.64 14 17.56 14 17.5 14.08C17.43 14.07 17.37 14.06 17.31 14.05C16.9 15.36 16 16.46 14.84 17.16Z"
+                                        style="fill: currentcolor"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">Kubernetes</h4>
+                                <p class="text-muted mb-0">支持连接到 K8s 集群中的 Pods</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <svg class="fea icon-lg text-primary" role="presentation" viewBox="0 0 24 24">
+                                    <title>monitor-dashboard</title>
+                                    <path
+                                        d="M21,16V4H3V16H21M21,2A2,2 0 0,1 23,4V16A2,2 0 0,1 21,18H14V20H16V22H8V20H10V18H3C1.89,18 1,17.1 1,16V4C1,2.89 1.89,2 3,2H21M5,6H14V11H5V6M15,6H19V8H15V6M19,9V14H15V9H19M5,12H9V14H5V12M10,12H14V14H10V12Z"
+                                        style="fill: currentcolor"
+                                    ></path>
+                                </svg>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">Web 站点</h4>
+                                <p class="text-muted mb-0">各类系统的 Web 管理后台</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-5">
+                        <div class="features text-center">
+                            <div class="image position-relative d-inline-block">
+                                <i data-feather="grid" class="fea icon-lg text-primary"></i>
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">应用</h4>
+                                <p class="text-muted mb-0">通过 Remote App 连接各类应用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title pb-2">
+                            <h4 class="title mb-2"><span class="text-primary">JumpServer</span> 的优势</h4>
+                            <p class="text-muted">十年时间，倾情投入，用心做好一款堡垒机。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-12 mt-4 mb-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/open-source.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">开源</h4>
+                                <p class="text-muted mb-0">零门槛，线上快速获取和安装</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/no-plugins.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">无插件</h4>
+                                <p class="text-muted mb-0">仅需浏览器，极致 Web Terminal 使用体验</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/distributed.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">分布式</h4>
+                                <p class="text-muted mb-0">轻松支持大规模并发访问</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/cloudy-support.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">多云支持</h4>
+                                <p class="text-muted mb-0">一套系统，同时管理不同云上资产</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-4 mb-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/cloud-storage.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">云端存储</h4>
+                                <p class="text-muted mb-0">审计录像存放在云端，永不丢失</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12 mt-4">
+                        <div class="text-center">
+                            <div class="image position-relative d-inline-block">
+                                <img src="./images/icon/multi-tenant.svg" class="avatar avatar-small" alt="" />
+                            </div>
+
+                            <div class="content mt-4">
+                                <h4 class="page-title">内置多组织体系</h4>
+                                <p class="text-muted mb-0">一套系统，多个子公司和部门同时使用</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-2">案例研究</h4>
+                            <p class="text-muted">始终坚持倾听客户反馈，始终坚持高质量持续迭代，与客户共成长。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=3704">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-tengxunyouxi.png" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=3704" class="live-font-size card-title title text-dark"> 腾讯海外游戏基于 JumpServer 构建游戏安全运营能力 </a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-08-04</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=516">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-xiaohongshu.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=516" class="live-font-size card-title title text-dark">小红书的 JumpServer 堡垒机大规模资产跨版本迁移之路</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2019-07-26</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=1147">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-shunfeng.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=1147" class="live-font-size card-title title text-dark">JumpServer 堡垒机护航顺丰科技超大规模资产安全运维</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2019-04-21</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=3504">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-wanhua.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=3504" class="live-font-size card-title title text-dark">万华化学通过 JumpServer 管理全球化分布式 IT 资产</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-05-12</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=3080">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-boshiqiche.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=3080" class="live-font-size card-title title text-dark">博世通过 JumpServer 管控大规模资产并实现高并发访问 </a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2021-12-10</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=3716">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-huolala.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=3716" class="live-font-size card-title title text-dark"> 货拉拉通过 JumpServer 纳管大规模云上资产 </a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-08-09</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=c236dd41-98d4-4d3a-b5e1-e74b9667c50e">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-jinshan.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=c236dd41-98d4-4d3a-b5e1-e74b9667c50e" class="live-font-size card-title title text-dark">JumpServer堡垒机为金山办公信息安全保驾护航</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-10-16</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=687">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-dongfangmingzhu.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=687" class="live-font-size card-title title text-dark">东方明珠：JumpServer 高效管控异构化、分布式云端资产</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-04-19</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=666">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-jiangshunongxin.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=666" class="live-font-size card-title title text-dark">江苏农信：JumpServer 堡垒机助力行业云安全运维</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-01-21</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=d2828c71-dd71-40d6-b270-0c6cdaebd147">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-kms.png" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=d2828c71-dd71-40d6-b270-0c6cdaebd147" class="live-font-size card-title title text-dark">康明斯中国通过 JumpServer 搭建统一的运维安全审计平台</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-08-02</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=732">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-zhongshouyou.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=732" class="live-font-size card-title title text-dark">JumpServer 堡垒机助力中手游提升多云环境下安全运维能力</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2020-12-1</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="https://blog.fit2cloud.com/?p=48a69df5-2dee-4547-8feb-8950c5755a16">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-yingshi.jpg" class="card-img-top rounded-top" alt="..." />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="https://blog.fit2cloud.com/?p=48a69df5-2dee-4547-8feb-8950c5755a16" class="live-font-size card-title title text-dark"> 萤石网络通过 JumpServer 解决安全运维难题 </a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-05-08</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title mb-2">广受欢迎的开源堡垒机</h4>
+                        <p class="text-muted">千锤百炼，广泛服务于银行、证券、制造、物流、媒体、互联网等行业，累计安装超过 500,000 次。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row projects-wrapper">
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/maidanglao.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/yijia.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-02.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-01.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/shangqi.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/zhongguoyiqi.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-13.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-14.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/dazhong.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/guangqi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-16.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/haikangweishi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-19.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-15.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/vivo.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/tengxunyinyue.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/xiaoxiongdianqi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-20.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/anta.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/ximenzi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/dyson.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-21.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-37.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/baozundianshang.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-38.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/tengxunyouxi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-40.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-41.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/hangbanguanjia.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-12.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-36.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/xianggelila.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/huazhu.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-32.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/beikongshuiwu.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="images/customer/shunfeng.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="images/customer/T3chuxing.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/fuxing.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 financial">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/logo-27.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/pufayihang.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/ntt.png" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/beifanghuachuang.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/moshadong.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/51talk.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/yuepaoquan.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/zhongguoyinhang.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/zhongguoyouzheng.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/panasonic.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/lyfen.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/5i5j.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/deloitte.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/cosco.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/jitu.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/tianhongjijin.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/weilai.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/kangmingsi.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/zijietiaodong.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/haitian.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/haoliyou.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-6 mt-4 pt-2 energy">
+                        <div class="card border-0 work-container work-classic">
+                            <div class="card-body p-0">
+                                <a><img src="./images/customer/shengyuan.jpg" class="img-fluid rounded work-image border-0 shadow p-2" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-cta" style="background: url('./images/banner/banner10.png') center center no-repeat" id="cta">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <p class="text-light para-dark mx-auto">“ JumpServer 从创立至今始终坚持开源开放，始终坚持倾听社区心声，始终坚持高质量快速迭代。我们将继续秉承这些原则，用心做好一款堡垒机。”</p>
+                            <h6 class="text-light">—— JumpServer 开源项目创始人&nbsp;&nbsp;广宏伟</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wechat-customer">
+            <div class="wechat-customer">
+                <i data-feather="x-circle" class="fea text-primary close-btn" id="wechat-customer-close"></i>
+                <div class="wechat-customer_title">购买咨询</div>
+                <div class="wechat-customer_content">
+                    <img src="./images/wechat-customer.jpg" style="width: 100%" />
+                    <div class="text">
+                        <svg class="icon" style="width: 1em; height: 1em; vertical-align: middle; fill: currentColor; overflow: hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3166">
+                            <path
+                                d="M928 544 96 544c-17.664 0-32-14.336-32-32s14.336-32 32-32l832 0c17.696 0 32 14.336 32 32S945.696 544 928 544zM832 928l-192 0c-17.696 0-32-14.304-32-32s14.304-32 32-32l192 0c17.664 0 32-14.336 32-32l0-160c0-17.696 14.304-32 32-32s32 14.304 32 32l0 160C928 884.928 884.928 928 832 928zM352 928 192 928c-52.928 0-96-43.072-96-96l0-160c0-17.696 14.336-32 32-32s32 14.304 32 32l0 160c0 17.664 14.368 32 32 32l160 0c17.664 0 32 14.304 32 32S369.664 928 352 928zM128 384c-17.664 0-32-14.336-32-32L96 192c0-52.928 43.072-96 96-96l160 0c17.664 0 32 14.336 32 32s-14.336 32-32 32L192 160C174.368 160 160 174.368 160 192l0 160C160 369.664 145.664 384 128 384zM896 384c-17.696 0-32-14.336-32-32L864 192c0-17.632-14.336-32-32-32l-192 0c-17.696 0-32-14.336-32-32s14.304-32 32-32l192 0c52.928 0 96 43.072 96 96l0 160C928 369.664 913.696 384 896 384z"
+                                fill="#272636"
+                                p-id="3167"
+                            ></path>
+                        </svg>
+                        <span style="margin-left: 5px">微信扫码</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">JumpServer </span>? 欢迎通过如下方式联系我们</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Wechat" width="110" style="margin-top: 5px" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">微信公众号</h4>
+                        <img src="./images/contact/wechat-official.jpg" alt="JumpServer Wechat" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" class="footer-text-color">产品 PPT 材料</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="link" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
+                                </div>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="text-lg-center text-sm-left">
+                            <p class="mb-0 title-p"><a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备15023818号</a></p>
+                            <p class="pt-1 title-p">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                            <p class="pt-1 title-p">
+                                <!-- <a href="https://www.fit2cloud.com/legal/tos.html" class="text-foot title-p" target="_parent">使用条款 |</a> -->
+                                <a href="https://www.fit2cloud.com/legal/privacy-policy.html" class="text-foot title-p" target="_parent">隐私政策 |</a>
+                                <a href="https://www.fit2cloud.com/legal/licenses.html" class="text-foot title-p" target="_parent">社区软件许可协议</a>
+                            </p>
+                            <p class="pt-1 title-p">
+                                <a href="https://www.jumpserver.com" class="text-foot title-p" target="_parent">English Website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery.easing.min.js"></script>
+        <script src="./js/scrollspy.min.js"></script>
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <script src="./js/magnific.init.js"></script>
+        <script src="./js/owl.carousel.min.js "></script>
+        <script src="./js/owl.init.js "></script>
+        <script src="./js/feather.min.js"></script>
+        <script src="./js/monochrome-bundle.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/mega.js"></script>
+    </body>
+</html>
