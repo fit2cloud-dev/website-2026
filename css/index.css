@@ -271,23 +271,38 @@ body {
     color: #ffffff !important;
 }
 
-/* Floating Animation */
-@keyframes float {
-    0% {
-        transform: translateY(0px);
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-.animate-float {
-    animation: float 4s ease-in-out infinite;
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); /* 初始：在目标位置上方30px */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 最终：回到目标位置 */
+    }
 }
-.animate-float-delayed {
-    animation: float 4s ease-in-out 2s infinite;
+
+.slide-down {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideDown 1s ease-out 0.1s forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s ease-out 0.1s forwards;
 }
 
 /* scroll Animation */

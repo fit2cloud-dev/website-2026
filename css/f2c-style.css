@@ -163,6 +163,71 @@
     font-weight: 600;
 }
 
+/* banner Floating Animation */
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes float-delayed {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes float-slow {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+.f2c-animate-img-bottom {
+    animation: float-slow 4s ease-in-out 0.9s infinite;
+}
+.f2c-animate-img-block {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideDown 1s ease-out 0.1s forwards;
+}
+.f2c-animate-img-left {
+    opacity: 0;
+    transform: translateY(30px);
+    animation:
+        slideUp 0.8s ease-out 0.5s forwards,
+        float 4s ease-in-out 1.2s infinite;
+}
+.f2c-animate-img-right {
+    opacity: 0;
+    transform: translateY(30px);
+    animation:
+        slideUp 0.8s ease-out 0.5s forwards,
+        float-delayed 5s ease-in-out 1.2s infinite;
+}
+.f2c-animate-img-AI {
+    opacity: 0;
+    transform: translateY(30px);
+    animation:
+        slideUp 0.8s ease-out 0.5s forwards,
+        float-slow 4s ease-in-out 1.2s infinite;
+}
+
 .f2c-1Panel-badge {
     background: rgba(var(--f2c-1Panel-rgb), 0.2) !important;
     color: var(--f2c-1Panel) !important;
