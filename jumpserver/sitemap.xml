@@ -1,70 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.jumpserver.org/</loc>
-  <lastmod>2025-06-22T10:00:29+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/index.html</loc>
-  <lastmod>2025-06-22T10:00:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/customers.html</loc>
-  <lastmod>2025-06-22T09:59:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/video.html</loc>
-  <lastmod>2025-06-22T10:00:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/enterprise.html</loc>
-  <lastmod>2025-06-22T09:59:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/xinchuang.html</loc>
-  <lastmod>2025-06-22T10:00:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/distributed.html</loc>
-  <lastmod>2025-06-22T09:59:51+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/hardware.html</loc>
-  <lastmod>2025-06-22T09:59:57+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/remoteapp.html</loc>
-  <lastmod>2025-06-22T10:00:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/database.html</loc>
-  <lastmod>2025-06-22T09:59:50+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/e-commerce.html</loc>
-  <lastmod>2025-06-22T09:59:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.jumpserver.org/pam.html</loc>
-  <lastmod>2025-06-22T09:59:56+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.jumpserver.org/</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/about.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/customers.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/database.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/distributed.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/e-commerce.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/enterprise.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/features.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/hardware.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/landing.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/pam.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/remoteapp.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/video.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.jumpserver.org/xinchuang.html</loc>
+    <lastmod>2026-04-02</lastmod>
+  </url>
 </urlset>
