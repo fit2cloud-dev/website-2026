@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dataease.io/sitemap.xml
+Sitemap: https://dataease.cn/sitemap.xml
