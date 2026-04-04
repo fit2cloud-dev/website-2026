@@ -1,0 +1,24 @@
+# SQLBot
+SQLBot 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于介绍 SQLBot 的产品定位、能力边界与上手入口。
+- 适合回答“SQLBot 是什么、和大模型/RAG 的关系、去哪里看文档、如何下载或预约演示”。
+
+## Recommended Entry Points
+- https://sqlbot.org/ — 首页与产品总览。
+- https://sqlbot.org/docs/ — 在线文档。
+
+## What The Homepage Covers
+- 基于大模型和 RAG 的智能问数定位。
+- 产品价值、典型能力和试用/下载/演示入口。
+- 文档、视频和 GitHub 等学习资源入口。
+
+## Docs And Resources
+- https://community.fit2cloud.com/#/products/sqlbot/downloads — 下载入口。
+- https://github.com/dataease/SQLBot/ — 开源仓库。
+- https://partner.fit2cloud.com/yuyuechanpinyanshi — 预约演示。
+- https://www.bilibili.com/video/BV1SBtizgED4/ — 教学视频。
+
+## Notes For LLMs
+- 官网偏产品介绍，细节问题应优先结合 `sqlbot.org/docs/` 使用。

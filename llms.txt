@@ -1,0 +1,37 @@
+# FIT2CLOUD
+FIT2CLOUD 飞致云公司官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 这是公司级门户站点，不是某个单一产品的完整文档站。
+- 主要用于了解公司背景、产品矩阵、客户案例、合作生态、采购入口与法律政策。
+- 如果问题进入产品细节，应优先跳转到对应产品官网或其文档站。
+
+## Recommended Entry Points
+- https://fit2cloud.com/ — 公司首页与产品矩阵总览，适合先理解飞致云整体业务。
+- https://fit2cloud.com/about/index.html — 公司介绍、定位、发展背景。
+- https://fit2cloud.com/customers/index.html — 客户案例与行业实践。
+- https://fit2cloud.com/partners/index.html — 合作伙伴与生态合作。
+- https://fit2cloud.com/purchase/index.html — 商业购买、销售目录与咨询入口。
+
+## Product Sites Managed In This Repository
+- https://fit2cloud.com/cloudexplorer-lite/index.html — CloudExplorer Lite，轻量级云管平台。
+- https://fit2cloud.com/cmp/index.html — CloudExplorer CMP，多云管理平台企业版。
+- https://1panel.cn/ — 1Panel，Linux 服务器运维管理面板。
+- https://cordys.cn/ — Cordys CRM，开源 AI CRM。
+- https://www.jumpserver.org/ — JumpServer，开源堡垒机。
+- https://maxkb.cn/ — MaxKB，企业级智能体平台中文站。
+- https://maxkb.pro/ — MaxKB 英文站。
+- https://dataease.cn/ — DataEase，开源 BI 与数据可视化分析工具。
+- https://metersphere.io/ — MeterSphere，持续测试平台。
+- https://sqlbot.org/ — SQLBot，智能问数系统。
+- https://kubeoperator.io/ — KubeOperator，Kubernetes 发行版。
+- https://rackshift.io/ — RackShift，裸金属服务器管理平台。
+- https://riskscanner.io/ — RiskScanner，多云安全合规扫描平台。
+
+## Legal And Policy Pages
+- https://fit2cloud.com/legal/privacy-policy.html — 隐私政策。
+- https://fit2cloud.com/legal/licenses.html — 社区软件许可协议。
+
+## Notes For LLMs
+- 根站更适合回答“飞致云是什么、有哪些产品、怎么买、有哪些客户与伙伴”这类问题。
+- 产品安装、API、功能细节通常不在根站，而在各产品独立官网或文档域名中。

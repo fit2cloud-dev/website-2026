@@ -1,0 +1,34 @@
+# DataEase
+DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于理解 DataEase 的产品定位、功能能力、版本体系、体验入口与替代方案页面。
+- 适合回答“DataEase 是什么、有哪些版本、怎么试用、哪里看文档、适合什么 BI 场景”。
+- 官网偏评估与转化导向，操作文档在独立文档站。
+
+## Recommended Entry Points
+- https://dataease.cn/ — 首页与产品总览。
+- https://dataease.cn/features.html — 功能介绍。
+- https://dataease.cn/versions.html — 社区版、嵌入式版、专业版、企业版的版本对比。
+- https://dataease.cn/enterprise.html — 企业版介绍。
+- https://dataease.cn/demo.html — 在线体验环境。
+- https://dataease.cn/embedded-bi.html — 嵌入式分析方案。
+- https://dataease.cn/about.html — 产品背景与定位。
+
+## Additional Product Pages
+- https://dataease.cn/pro.html — 专业版介绍。
+- https://dataease.cn/video.html — 教学视频。
+- https://dataease.cn/landing.html — 备用/活动型产品落地页。
+- https://dataease.cn/finebi.html — 替代 FineBI 的方案页。
+- https://dataease.cn/tableau.html — 替代 Tableau 的方案页。
+
+## Docs And Support
+- https://dataease.io/docs/index.html — 官方文档。
+- https://community.fit2cloud.com/#/products/dataease/downloads — 下载入口。
+- https://kb.fit2cloud.com/categories/dataease — 知识库。
+- https://bbs.fit2cloud.com/c/de/6 — 社区论坛。
+- https://whitepaper.dataease.cn — 白皮书与资料。
+
+## Notes For LLMs
+- 版本与商业化问题优先参考 `versions.html`、`enterprise.html`、`pro.html`、`embedded-bi.html`。
+- 深入使用文档不在官网本域，而在 `dataease.io/docs`。

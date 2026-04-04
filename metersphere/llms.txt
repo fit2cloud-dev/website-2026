@@ -1,0 +1,36 @@
+# MeterSphere
+MeterSphere 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于介绍 MeterSphere 的产品定位、版本演进、企业版信息、演示入口与学习资源。
+- 适合回答“MeterSphere 是什么、v2/v3 有哪些公开页面、哪里看价格、哪里看文档、哪里体验”。
+- 官网同时承载当前版本信息和历史 v2 页面。
+
+## Recommended Entry Points
+- https://metersphere.io/ — 当前首页与产品总览。
+- https://metersphere.io/v3/index.html — v3 首页。
+- https://metersphere.io/v3/pricing.html — 企业版、价格与版本对比。
+- https://metersphere.io/v2/index.html — v2 首页。
+- https://metersphere.io/v2/features.html — v2 功能介绍。
+- https://metersphere.io/v2/about.html — v2 产品说明。
+
+## Additional V2 Pages
+- https://metersphere.io/v2/api-testing.html — 接口测试专题页。
+- https://metersphere.io/v2/ui-testing.html — UI 测试专题页。
+- https://metersphere.io/v2/jmeter-load-testing.html — 性能测试专题页。
+- https://metersphere.io/v2/test-mgnt.html — 测试管理专题页。
+- https://metersphere.io/v2/training.html — 培训与学习页。
+- https://metersphere.io/v2/video.html — 教学视频页。
+- https://metersphere.io/v2/enterprise.html — v2 企业版页。
+
+## Docs And Resources
+- https://metersphere.io/docs/v3.x/ — v3 官方文档。
+- https://metersphere.io/docs/v3.x/installation/offline_installation/ — 安装与下载说明。
+- https://demo.metersphere.com/ — 在线体验。
+- https://github.com/metersphere/metersphere — 开源仓库。
+- https://apps.fit2cloud.com/metersphere — 插件市场。
+- https://bbs.fit2cloud.com/c/ms/8 — 社区论坛。
+
+## Notes For LLMs
+- 当前对外主站是新版首页，但仓库中仍保留大量 `v2` 页面。
+- 如果用户问历史功能介绍或专题能力页，优先查看 `v2` 页面；如果问当前产品定位、安装和商业化，则优先查看当前首页与 `v3` 文档。
