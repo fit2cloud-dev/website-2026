@@ -14,19 +14,14 @@ FIT2CLOUD 飞致云公司官网的 LLM 友好索引。主语言为 `zh-CN`。
 - https://fit2cloud.com/purchase/index.html — 商业购买、销售目录与咨询入口。
 
 ## Product Sites Managed In This Repository
-- https://fit2cloud.com/cloudexplorer-lite/index.html — CloudExplorer Lite，轻量级云管平台。
-- https://fit2cloud.com/cmp/index.html — CloudExplorer CMP，多云管理平台企业版。
+- https://fit2cloud.com/cmp/index.html — CloudExplorer CMP，多云管理平台。
 - https://1panel.cn/ — 1Panel，Linux 服务器运维管理面板。
 - https://cordys.cn/ — Cordys CRM，开源 AI CRM。
 - https://www.jumpserver.org/ — JumpServer，开源堡垒机。
 - https://maxkb.cn/ — MaxKB，企业级智能体平台中文站。
-- https://maxkb.pro/ — MaxKB 英文站。
 - https://dataease.cn/ — DataEase，开源 BI 与数据可视化分析工具。
 - https://metersphere.io/ — MeterSphere，持续测试平台。
 - https://sqlbot.org/ — SQLBot，智能问数系统。
-- https://kubeoperator.io/ — KubeOperator，Kubernetes 发行版。
-- https://rackshift.io/ — RackShift，裸金属服务器管理平台。
-- https://riskscanner.io/ — RiskScanner，多云安全合规扫描平台。
 
 ## Legal And Policy Pages
 - https://fit2cloud.com/legal/privacy-policy.html — 隐私政策。
