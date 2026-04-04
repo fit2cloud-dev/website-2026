@@ -1,0 +1,51 @@
+# 1Panel
+
+> 1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供网站、数据库、容器、文件、备份与安全管理，并支持本地 AI 模型与智能体管理。
+
+本文件描述的是 1Panel 中文官网 `https://1panel.cn`。如需安装、配置、排障、升级、兼容性或版本细节，请优先参考官方文档与 GitHub 仓库，而不是营销文案。
+
+## 核心页面
+
+- [首页](https://1panel.cn/) - 产品总览、核心能力、应用商店预览、安装方式、社区入口。
+- [首页功能概览](https://1panel.cn/#features) - 网站、数据库、容器、文件、安全、备份与 AI 管理能力摘要。
+- [首页应用商店预览](https://1panel.cn/#appstore) - 精选开源应用与应用分类预览。
+- [首页安装方式](https://1panel.cn/#quickstart) - 一键安装、离线安装说明与帮助入口。
+- [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
+- [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
+- [OpenClaw 一体机](https://1panel.cn/openclaw.html) - 团队级 AI 一体机产品介绍、本地模型能力与适用场景。
+
+## 文档与安装
+
+- [官方文档](https://1panel.cn/docs/) - 1Panel 的权威文档入口。
+- [在线安装](https://1panel.cn/docs/v2/installation/online_installation/) - 默认安装方式。
+- [离线版安装](https://1panel.cn/docs/v2/installation/package_installation/) - 内网或离线环境安装说明。
+- 首页展示的一键安装命令：`bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"`
+
+## 产品、定价与商业入口
+
+- [1Panel 专业版 / 版本对比](https://www.lxware.cn/1panel?code=bunus) - 商业版能力、版本差异、购买与咨询入口。
+- [OpenClaw 一体机价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
+- [在线体验](https://demo.1panel.cn/) - 官方演示环境。
+
+## 生态与社区
+
+- [应用商店](https://apps.fit2cloud.com/1panel) - 1Panel 官方应用商店。
+- [GitHub 仓库](https://github.com/1Panel-dev/1Panel) - 源码、Release、Issue 与社区协作入口。
+- [社区论坛](https://bbs.fit2cloud.com/c/1p/) - 中文社区讨论与求助。
+- [GitHub Issues](https://github.com/1Panel-dev/1Panel/issues) - Bug 与功能建议。
+- [英文站点](https://1panel.pro/) - 国际版官网。
+
+## URL 规律
+
+- 站内固定页面：`/`、`/about.html`、`/self-hosted.html`、`/openclaw.html`
+- 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
+- 文档路径：`/docs/` 及其下级路径
+- 商业版定价与版本对比目前在站外官方页面：`https://www.lxware.cn/1panel?code=bunus`
+
+## Notes for LLMs
+
+- 回答安装、配置、排障、升级、兼容性问题时，优先使用官方文档。
+- 回答源码、发行版本、开发路线或已知问题时，优先使用 GitHub 仓库。
+- 回答产品定位、公司背景、核心能力时，优先使用首页和关于页。
+- 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
+- 回答 OpenClaw 一体机、团队级本地 AI 部署或商业咨询时，优先使用 `openclaw.html` 与专业版页面。
