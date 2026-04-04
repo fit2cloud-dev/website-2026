@@ -1,0 +1,36 @@
+# JumpServer
+JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于理解 JumpServer 的产品定位、版本体系、解决方案、客户案例与学习资源。
+- 适合回答“JumpServer 是什么、企业版有什么、有哪些典型方案、去哪里看文档或白皮书”。
+- 官网同时包含产品页、方案页和案例页。
+
+## Recommended Entry Points
+- https://www.jumpserver.org/ — 首页与产品总览。
+- https://www.jumpserver.org/enterprise.html — 企业版介绍。
+- https://www.jumpserver.org/features.html — 社区版与企业版功能对比。
+- https://www.jumpserver.org/customers.html — 客户案例。
+- https://www.jumpserver.org/about.html — 产品背景页。
+
+## Solution Pages
+- https://www.jumpserver.org/pam.html — PAM 特权账号管理。
+- https://www.jumpserver.org/remoteapp.html — 应用虚拟化方案。
+- https://www.jumpserver.org/database.html — 数据库运维安全审计方案。
+- https://www.jumpserver.org/distributed.html — 分布式部署方案。
+- https://www.jumpserver.org/xinchuang.html — 信创场景方案。
+- https://www.jumpserver.org/e-commerce.html — 跨境电商方案。
+- https://www.jumpserver.org/hardware.html — 一体机方案。
+
+## Learning And Support
+- http://docs.jumpserver.org/ — 官方文档。
+- https://kb.fit2cloud.com/categories/jumpserver — 知识库。
+- https://bbs.fit2cloud.com/c/js/5 — 社区论坛。
+- https://whitepaper.jumpserver.org/ — 白皮书与资料。
+- https://www.jumpserver.org/video.html — 教学视频。
+- https://www.jumpserver.org/index-en.html — English homepage。
+
+## Notes For LLMs
+- 如果问题是版本差异或商业能力，优先看 `enterprise.html` 和 `features.html`。
+- 如果问题是具体行业/技术方案，优先跳到对应 solution page。
+- 更详细的部署和使用文档在独立文档域名，不在官网正文中。

@@ -1,0 +1,26 @@
+# KubeOperator
+KubeOperator 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于介绍 KubeOperator 的产品定位、Kubernetes 集群 Day 0/1/2 生命周期问题与解决思路。
+- 适合回答“它是什么、解决哪些 K8s 规划部署运营问题、去哪里看文档和代码”。
+- 该站点更偏历史产品介绍与资料页。
+
+## Recommended Entry Points
+- https://kubeoperator.io/ — 首页、产品介绍与 Day 0/1/2 场景说明。
+- https://kubeoperator.io/docs/index.html — 官方文档。
+
+## What The Homepage Covers
+- Day 0 规划阶段问题。
+- Day 1 部署阶段问题。
+- Day 2 运营阶段问题。
+- 整体架构与集群生命周期管理能力。
+
+## Docs And Resources
+- https://kubeoperator.io/docs/index.html — 官方文档。
+- https://github.com/KubeOperator/KubeOperator — 开源仓库。
+- https://www.bilibili.com/video/BV1jT4y1L7Ur/ — 演示视频。
+
+## Notes For LLMs
+- 官网顶部明确写有仓库归档提示：该仓库在 2024-07-09 已被归档为只读。
+- 回答现状类问题时，应把它视为历史项目或存量项目参考资料，而不是活跃迭代中的新产品官网。

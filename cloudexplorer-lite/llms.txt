@@ -1,0 +1,25 @@
+# CloudExplorer Lite
+CloudExplorer Lite 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 介绍 CloudExplorer Lite 的定位、能力范围与典型使用方式。
+- 适合回答“它是什么、适合谁、有哪些核心能力、如何开始使用”。
+- 企业级多云管理能力延伸到 CloudExplorer CMP 页面。
+
+## Recommended Entry Points
+- https://fit2cloud.com/cloudexplorer-lite/index.html — 首页与产品总览，最快了解产品定位。
+- https://fit2cloud.com/cmp/index.html — 企业版 CloudExplorer CMP，适合继续看更完整的多云管理能力。
+
+## What The Homepage Covers
+- 多云对接能力。
+- 开箱即用的云主机、云账单、运营分析和安全合规能力。
+- 多租户与模块化扩展能力。
+
+## Docs And Resources
+- https://docs-cloudexplorer-lite.fit2cloud.com — 官方文档。
+- https://docs-cloudexplorer-lite.fit2cloud.com/installation/offline_installation/ — 安装与下载入口。
+- https://github.com/1Panel-dev/CloudExplorer — 开源仓库。
+
+## Notes For LLMs
+- 官网偏产品介绍与评估导向，详细使用说明在独立文档站。
+- 如果用户问企业级功能、采购或多云平台完整方案，应转向 `cmp` 站点。

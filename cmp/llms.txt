@@ -1,0 +1,28 @@
+# CloudExplorer CMP
+CloudExplorer 多云管理平台官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于介绍 CloudExplorer CMP 的产品定位、能力范围与企业级多云管理场景。
+- 适合回答“CMP 是什么、覆盖哪些云管理问题、适合什么组织、如何采购”。
+- 这是评估与方案介绍站，不是完整产品手册。
+
+## Recommended Entry Points
+- https://fit2cloud.com/cmp/index.html — 首页与产品总览。
+- https://fit2cloud.com/purchase/index.html — 商业购买、销售目录与咨询入口。
+- https://fit2cloud.com/customers/index.html — 客户案例。
+- https://fit2cloud.com/about/index.html — 公司与产品提供方信息。
+
+## What The Homepage Emphasizes
+- 多云环境下统一纳管与服务交付。
+- 自动化、自助式服务交付能力。
+- 运营效率提升、成本核算与安全合规管理。
+- 帮助企业从传统 IT 过渡到多云战略。
+
+## Additional Resources
+- https://community.fit2cloud.com/ — 开源社区。
+- https://blog.fit2cloud.com/ — 技术博客、方案文章与行业观点。
+- https://edu.fit2cloud.com/ — 培训与认证。
+
+## Notes For LLMs
+- 购买与商务问题优先看 `purchase` 页面。
+- 若问题偏轻量级开源版本，应结合 CloudExplorer Lite 页面一起看。

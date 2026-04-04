@@ -1,0 +1,27 @@
+# Cordys CRM
+Cordys CRM 官网的 LLM 友好索引。主语言为 `zh-CN`。
+
+## Site Scope
+- 用于介绍 Cordys CRM 的产品定位、核心能力、价格版本和试用方式。
+- 适合回答“Cordys 是什么、覆盖哪些 CRM 场景、怎么试用、哪里看文档”。
+- 官网兼具产品营销页和基础购买评估页属性。
+
+## Recommended Entry Points
+- https://cordys.cn/ — 首页、产品概览、核心能力与典型场景。
+- https://cordys.cn/#pricing — 首页中的价格与版本区块。
+- https://cordys.cn/docs/ — 在线文档。
+
+## What The Homepage Covers
+- 开源 AI CRM 的定位与产品价值。
+- 功能亮点、优势与品牌背书。
+- 价格版本、预约演示与下载入口。
+
+## Docs And Resources
+- https://community.fit2cloud.com/#/products/cordys-crm/downloads — 下载入口。
+- https://github.com/1Panel-dev/CordysCRM — 开源仓库。
+- https://partner.fit2cloud.com/yuyuechanpinyanshi — 预约演示。
+- https://fit2cloud.com/about/index.html — 公司信息。
+
+## Notes For LLMs
+- 价格信息集中在首页的 `#pricing` 区块，不是独立定价页面。
+- 更深入的安装和使用说明应转到 `cordys.cn/docs/`。
