@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践 - JumpServer 客户案例</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="JumpServer堡垒机在光伏制造业的应用" />
+        <meta name="keywords" content="JumpServer,客户案例,案例研究,堡垒机" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="email" content="support@fit2cloud.com" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <link href="../css/customer-detail.css" rel="stylesheet" type="text/css" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://www.jumpserver.org/customers/atesi.html" />
+        <meta property="og:site_name" content="JumpServer" />
+        <meta property="og:title" content="案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践" />
+        <meta property="og:description" content="JumpServer堡垒机在光伏制造业的应用" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.jumpserver.org/customers/atesi.html" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:image" content="https://blog.fit2cloud.com/upload/jumpserver官网-案例研究图-阿特斯-新版.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践" />
+        <meta name="twitter:description" content="JumpServer堡垒机在光伏制造业的应用" />
+        <meta name="twitter:image" content="https://blog.fit2cloud.com/upload/jumpserver官网-案例研究图-阿特斯-新版.jpg" />
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践", "description": "JumpServer堡垒机在光伏制造业的应用", "image": "https://blog.fit2cloud.com/upload/jumpserver官网-案例研究图-阿特斯-新版.jpg", "url": "https://www.jumpserver.org/customers/atesi.html", "datePublished": "2024-11-20T09:18:10.946343320Z", "publisher": {"@type": "Organization", "name": "FIT2CLOUD 飞致云", "url": "https://www.fit2cloud.com/"}, "isPartOf": {"@type": "WebSite", "name": "JumpServer", "url": "https://www.jumpserver.org/"}}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-2ZRQ481R4Z');
+        </script>
+    </head>
+    <body>
+
+        <header id="topnav" class="defaultscroll sticky">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+                        <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+                    </symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+                        <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+                    </symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline">
+                                <span class="visible-xs text-muted">飞致云旗下开源产品</span>
+                            </p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline">
+                                            <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use>
+                                            </svg>
+                                            <span class="visuallyhidden">Open</span>
+                                        </span>
+                                    </div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>                                   
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-JumpServer.svg" class="l-dark" height="35" alt="JumpServer Logo" />
+                        <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a target="_blank" href="https://vsqzsec.jumpserver.org/">产品优势</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../hardware.html">一体机</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../e-commerce.html">跨境电商</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </li>                        
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="../features.html">版本对比</a></li>
+                                <li><a target="_blank" href="http://docs.jumpserver.org/">在线文档</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/jumpserver">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/js/5">社区论坛</a></li>
+                                <li><a target="_blank" href="../customers.html">客户案例</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.jumpserver.org/">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/sQ91MK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf">如何向团队介绍 JumpServer?</a></li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <div class="mt-3 menu-mt-pnone">
+                                <a target="_blank" href="https://community.fit2cloud.com/#/products/jumpserver/downloads" class="btn btn-primary menu-btn">免费下载</a>
+                            </div>
+                        </li>
+                        <li><a href="../enterprise.html">企业版</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li><a href="https://jumpserver.com/" target="_blank">English</a></li>
+                        <li class="github-star">
+                            <iframe target="_blank" src="../github-btn.html?user=jumpserver&repo=jumpserver&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+<main id="main-content">
+        <section class="bg-half bg-dark d-table w-100" style="background-image: url('../images/banner/banner9.png')">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h1 class="heading mb-3 text-white title-dark animated"><b>JumpServer 客户案例</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="case-detail-wrap">
+                            <div class="case-article-card">
+                                <h2 class="case-article-title">案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践</h2>
+                                <div class="case-article-meta">
+                                    <span>发布时间：2024年11月20日</span>
+                                    <span>所属栏目：客户案例</span>
+                                </div>
+                                <p class="case-article-summary">JumpServer堡垒机在光伏制造业的应用</p>
+                                <div class="case-article">
+                                    <p style="">苏州阿特斯阳光电力科技有限公司（以下简称为阿特斯）是一家集太阳能光伏组件制造和为全球客户提供太阳能应用产品研发、设计、制造、销售的专业公司。</p><p style=""><img src="https://blog.fit2cloud.com/upload/jumpserver官网-案例研究图-阿特斯-新版.jpg" width="100%" height="100%" style="display: inline-block"></p><p style="">阿特斯集团总部位于加拿大，中国区总部位于江苏省苏州市。通过全球战略和多元化的市场布局，阿特斯目前在全球150个国家和地区建立了分支机构，是全球综合实力领先的太阳能光伏发电整体解决方案提供商。</p><h1 style="" id="%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4%E7%97%9B%E7%82%B9%E5%92%8C%E9%9C%80%E6%B1%82">系统运维痛点和需求</h1><p style="">业务的迅速发展给阿特斯IT系统的日常运维管理工作带来了很多问题和挑战，可以简单概括为以下几个方面：</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 服务器管理模式需要转变</strong></span></p><p style="">原先阿特斯各个基地的服务器都是由各个基地进行独立管理的，这种分散式的管理方式效率低，且难以形成统一的管理标准和规范。为了提升管理效率，确保服务器的稳定性和安全性，阿特斯希望将各个基地的服务器管理工作收归集团总部进行统一管理；</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 账密管理混乱，存在安全隐患</strong></span></p><p style="">过去阿特斯各事业部的账号和密码设置缺乏统一标准，导致登录账号密码的管理比较混乱。此外，生产系统登录权限的管理也相对松散，没有严格的审批流程和监控机制。任何人都可以随意登录系统，这样的登录方式给系统的安全性带来了威胁。</p><p style="">阿特斯希望通过引入堡垒机来解决这一问题，建立严格的登录审批制度和监控机制，确保只有经过授权的人员才能登录到指定系统；</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 需要满足审计要求，实现合规运营</strong></span></p><p style="">随着业务的发展和监管要求的日益严格，阿特斯现有的服务器和登录管理方式已经无法满足审计的相关要求，并且缺乏统一的审计标准和流程。阿特斯希望可以在公司内部建立完善的审计制度与审计流程，确保日常操作符合相关法规和审计的要求。</p><h1 style="" id="%E5%A0%A1%E5%9E%92%E6%9C%BA%E9%80%89%E5%9E%8B%E6%80%9D%E8%B7%AF">堡垒机选型思路</h1><p style="">阿特斯的运维管理员在多年前就已经接触并使用了JumpServer堡垒机开源版，对JumpServer简洁直观的用户界面和能够快速上手的操作流程印象深刻。同时，JumpServer在账号管理、权限分配，以及日志审计等方面的功能性都非常符合公司日常运维管理的需要。除此之外，JumpServer还是一款按月迭代的产品，以非常快的速度持续改进。</p><p style="">伴随着业务规模的扩大，阿特斯逐渐意识到传统集中式堡垒机在性能上的局限性。尤其是在多事业部、多节点的场景下，传统堡垒机往往会因为文件传输和登录操作的延迟而带来不好的用户体验。为此，阿特斯开始考察能够支持分布式部署的堡垒机。</p><p style="">在国内市场上，能够提供分布式堡垒机解决方案的厂商并不多，经过多轮筛选和测试，阿特斯的运维团队发现JumpServer堡垒机可以很好地满足公司分布式管理的需求。</p><p style="">在选型过程中，阿特斯的运维团队尤为关注堡垒机一键式脚本部署的功能和运维的便利性。对于非专业的运维人员来说，复杂的部署和运维流程无疑会增加工作负担。因此，阿特斯更倾向于选择那些能够提供一键式脚本部署和简单运维操作的堡垒机产品。JumpServer可以很好地满足这些需求，其一键式脚本部署功能可以快速完成安装工作，简单的运维操作界面能够帮助用户在日常的工作中节省大量的时间和精力。</p><h1 style="" id="jumpserver%E7%9A%84%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">JumpServer的架构设计</h1><p style="">阿特斯根据生产环境的实际需求，选择了分布式架构的部署方案，希望能够高效管理其庞大且分散的IT资产。每个事业部都配备了与其业务需求相互匹配的登录入口，各个事业部的用户通过各自专属的入口进行登录操作。这样的堡垒机部署架构不仅提升了系统的灵活性和可扩展性，还有效降低了用户在进行各项操作时可能面临的延迟问题。</p><p style="">另外，定制化的访问入口设计，使得用户的请求能够更直接地传输到负责处理该请求的服务节点上。同时，分布式的部署架构通过负载均衡机制，智能分配请求至负载较轻的服务器上进行处理，进一步缩短了响应时间。即便是在高并发访问的情况下，也能保持系统的流畅运行。</p><p style="text-align: center; ; "><img src="https://blog.fit2cloud.com/upload/图1-brtx.png" width="100%" height="100%" style="display: inline-block">▲图1 阿特斯JumpServer架构设计</p><p style="">需要强调的是，借助JumpServer的多组织管理功能，每个事业部的用户和资产实现了有效隔离，避免了因误操作或权限管理不当所导致的敏感信息泄露风险。每个组织都可以实施更为精细化的权限控制策略，确保只有被授权的用户才能访问特定资源，从而增强了系统整体的安全性。</p><p style="text-align: center; ; "><img src="https://blog.fit2cloud.com/upload/图2-vynq.png" width="100%" height="100%" style="display: inline-block">▲图2 阿特斯JumpServer多组织管理架构</p><h1 style="" id="jumpserver%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BA%AE%E7%82%B9">JumpServer的功能亮点</h1><p style="">在日常运维工作中，阿特斯的运维团队对JumpServer的一些特色功能给予了很高的评价：</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 多组织管理</strong></span></p><p style="">在分布式部署架构中，阿特斯各个事业部享有高度的自治权，由其各自指定的管理员负责日常的运营与维护工作。这种多组织的管理方式不仅提高了工作效率，还增强了组织的灵活性和响应速度。</p><p style="">与此同时，总部的系统具备强大的组织切换功能，能够轻松实现对各分节点堡垒机配置的全面监控与审查。无论是查看实时系统状态、调整安全策略，还是进行故障排查与性能优化，总部都能够迅速切换至对应的组织，获取详尽的配置信息。这种便捷性极大地提升了公司整体系统的管理效率和安全性；</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 远程应用</strong></span></p><p style="">用户可以自助式地通过JumpServer访问远程应用，通过客户端或者Web端进行远程应用访问，无需在本地环境安装相关客户端，只需要通过JumpServer的用户认证体系，就可以直接实现连接；</p><p style=""><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 命令过滤</strong></span></p><p style="">针对用户可能因为不熟悉系统或误操作而引发安全风险的问题，阿特斯通过JumpServer制定了严格的危险命令限制策略。通过智能识别与命令拦截机制，JumpServer可以自动阻止用户执行危险命令。这样一来，就显著降低了因误操作导致的系统故障和数据丢失风险，为用户提供一个更加安全可靠的操作环境。</p><h1 style="" id="jumpserver%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BB%B7%E5%80%BC%E6%94%B6%E7%9B%8A">JumpServer带来的价值收益</h1><p style="">JumpServer堡垒机在阿特斯集团内应用落地后，为其带来了一系列的价值收益。</p><p style=""><strong>首先是满足安全审计要求方面。</strong>通过集成日志记录与分析能力，JumpServer堡垒机能够详细记录每一次用户登录访问、操作行为以及系统状态变化等关键信息，为公司后续的审计和合规性检查提供了坚实的数据支撑。JumpServer全面的审计能力不仅有助于及时发现潜在的安全漏洞和违规操作，还能在发生安全事件时提供准确的追溯依据，确保企业能够迅速响应并采取相应的补救措施。</p><p style=""><strong>其次是有效降低了系统安全运维的风险。</strong>JumpServer严格的权限划分和审核机制，能够有效避免因权限过大而导致的潜在安全威胁，例如数据泄露、系统破坏等。这种精细化的管理方式在保证系统整体安全性的同时，还有助于明确用户之间的职责，并提高协作效率。</p><p style=""><strong>最后是系统运维管理与协作效率的整体提升。</strong> JumpServer为阿特斯各事业部提供了一套统一且易于操作的授权管理系统，确保了授权管理的规范性和准确性，同时减少了总部在授权审核、权限调整等方面的直接参与。这样一来，不仅大大降低了总部的运维管理压力，还促进了各基地之间的信息共享和协同工作，整个组织的运营效率显著提升。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="section bg-cta" style="background: url('../images/banner/banner10.png') center center no-repeat" id="cta">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <p class="text-light para-dark mx-auto">“ JumpServer 从创立至今始终坚持开源开放，始终坚持倾听社区心声，始终坚持高质量快速迭代。我们将继续秉承这些原则，用心做好一款堡垒机。”</p>
+                            <h6 class="text-light">—— JumpServer 开源项目创始人&nbsp;&nbsp;广宏伟</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">JumpServer </span>? 欢迎通过如下方式联系我们</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="110" style="margin-top: 5px" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">微信公众号</h4>
+                        <img src="../images/contact/wechat-official.jpg" alt="JumpServer 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" class="footer-text-color">产品 PPT 材料</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="link" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
+                                </div>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        
+</main>
+<footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="text-lg-center text-sm-left">
+                            <p class="mb-0 title-p"><a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备15023818号</a></p>
+                            <p class="pt-1 title-p">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                            <p class="pt-1 title-p">
+                                <!-- <a href="https://www.fit2cloud.com/legal/tos.html" class="text-foot title-p" target="_parent">使用条款 |</a> -->
+                                <a href="https://www.fit2cloud.com/legal/privacy-policy.html" class="text-foot title-p" target="_parent">隐私政策 |</a>
+                                <a href="https://www.fit2cloud.com/legal/licenses.html" class="text-foot title-p" target="_parent">社区软件许可协议</a>
+                            </p>
+                            <p class="pt-1 title-p">
+                                <a href="https://www.jumpserver.com" class="text-foot title-p" target="_parent">English Website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section id="footer_start">
+            <div class="footer-start-box">
+                <div class="footer-start-title">
+                    <p role="img" aria-label="celibrate" style="font-size: 14px">
+                        <a target="_blank" href="https://partner.fit2cloud.com/yuyuechanpinyanshi" style="color: white"><i class="mdi mdi-play-circle pr-1" style="font-size: 10px"></i>预约产品演示</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js "></script>
+        <script src="../js/owl.init.js "></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>
