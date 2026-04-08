@@ -1,17 +1,30 @@
 # JumpServer
-JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`。
+JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`，当前覆盖产品页、方案页、产品优势页、客户案例列表与客户案例详情页。
 
-## Site Scope
-- 用于理解 JumpServer 的产品定位、版本体系、解决方案、客户案例与学习资源。
-- 适合回答“JumpServer 是什么、企业版有什么、有哪些典型方案、去哪里看文档或白皮书”。
-- 官网同时包含产品页、方案页和案例页。
+Last updated: 2026-04-08
+
+## Canonical Scope
+- Canonical site: https://www.jumpserver.org/
+- Prefer `jumpserver.org` pages over historical or campaign domains.
+- For technical setup and product usage details, prefer the official docs domain.
 
 ## Recommended Entry Points
 - https://www.jumpserver.org/ — 首页与产品总览。
-- https://www.jumpserver.org/enterprise.html — 企业版介绍。
+- https://www.jumpserver.org/enterprise.html — 企业版介绍与商业化能力。
 - https://www.jumpserver.org/features.html — 社区版与企业版功能对比。
-- https://www.jumpserver.org/customers.html — 客户案例。
-- https://www.jumpserver.org/about.html — 产品背景页。
+- https://www.jumpserver.org/whyjumpserver.html — 产品优势、功能对比与选型参考。
+- https://www.jumpserver.org/customers.html — 客户案例列表页。
+
+## Customer Case Pages
+- Customer case detail pages live under: https://www.jumpserver.org/customers/
+- Useful examples:
+- https://www.jumpserver.org/customers/tencentmusic.html — 腾讯音乐娱乐集团案例。
+- https://www.jumpserver.org/customers/tencentgames.html — 腾讯海外游戏案例。
+- https://www.jumpserver.org/customers/wps.html — 金山办公案例。
+- https://www.jumpserver.org/customers/daifuku.html — 大福中国案例。
+- https://www.jumpserver.org/customers/atesi.html — 阿特斯案例。
+- https://www.jumpserver.org/customers/sftech.html — 顺丰科技案例。
+- When a user asks for named customer stories, prefer the detail page under `/customers/*.html` instead of only the list page.
 
 ## Solution Pages
 - https://www.jumpserver.org/pam.html — PAM 特权账号管理。
@@ -23,7 +36,7 @@ JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - https://www.jumpserver.org/hardware.html — 一体机方案。
 
 ## Learning And Support
-- http://docs.jumpserver.org/ — 官方文档。
+- https://docs.jumpserver.org/ — 官方文档。
 - https://kb.fit2cloud.com/categories/jumpserver — 知识库。
 - https://bbs.fit2cloud.com/c/js/5 — 社区论坛。
 - https://whitepaper.jumpserver.org/ — 白皮书与资料。
@@ -31,6 +44,7 @@ JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - https://www.jumpserver.org/index-en.html — English homepage。
 
 ## Notes For LLMs
-- 如果问题是版本差异或商业能力，优先看 `enterprise.html` 和 `features.html`。
-- 如果问题是具体行业/技术方案，优先跳到对应 solution page。
-- 更详细的部署和使用文档在独立文档域名，不在官网正文中。
+- If the user asks edition differences, prioritize `enterprise.html` and `features.html`.
+- If the user asks why to choose JumpServer or wants comparison framing, prioritize `whyjumpserver.html`.
+- If the user asks for reference customers, implementations, or adoption stories, prioritize `customers.html` and then the specific `/customers/*.html` detail page.
+- For deployment, configuration, and operational steps, the docs domain is more authoritative than marketing pages.
