@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>社区分享丨微拍堂通过JumpServer统一管控云上资产 - JumpServer 客户案例</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="JumpServer开源堡垒机在微拍堂的落地实践。" />
+        <meta name="keywords" content="JumpServer,客户案例,案例研究,堡垒机" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="email" content="support@fit2cloud.com" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <link href="../css/customer-detail.css" rel="stylesheet" type="text/css" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://www.jumpserver.org/customers/weipaitang.html" />
+        <meta property="og:site_name" content="JumpServer" />
+        <meta property="og:title" content="社区分享丨微拍堂通过JumpServer统一管控云上资产" />
+        <meta property="og:description" content="JumpServer开源堡垒机在微拍堂的落地实践。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.jumpserver.org/customers/weipaitang.html" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:image" content="https://blog.fit2cloud.com/wp-content/uploads/2021/09/【微信头图】社群分享-1920X1080.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="社区分享丨微拍堂通过JumpServer统一管控云上资产" />
+        <meta name="twitter:description" content="JumpServer开源堡垒机在微拍堂的落地实践。" />
+        <meta name="twitter:image" content="https://blog.fit2cloud.com/wp-content/uploads/2021/09/【微信头图】社群分享-1920X1080.jpg" />
+        <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "社区分享丨微拍堂通过JumpServer统一管控云上资产", "description": "JumpServer开源堡垒机在微拍堂的落地实践。", "image": "https://blog.fit2cloud.com/wp-content/uploads/2021/09/【微信头图】社群分享-1920X1080.jpg", "url": "https://www.jumpserver.org/customers/weipaitang.html", "datePublished": "2021-09-28T03:26:00Z", "publisher": {"@type": "Organization", "name": "FIT2CLOUD 飞致云", "url": "https://www.fit2cloud.com/"}, "isPartOf": {"@type": "WebSite", "name": "JumpServer", "url": "https://www.jumpserver.org/"}}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-2ZRQ481R4Z');
+        </script>
+    </head>
+    <body>
+
+        <header id="topnav" class="defaultscroll sticky">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7">
+                        <polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon>
+                    </symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15">
+                        <path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path>
+                    </symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline">
+                                <span class="visible-xs text-muted">飞致云旗下开源产品</span>
+                            </p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline">
+                                            <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true">
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use>
+                                            </svg>
+                                            <span class="visuallyhidden">Open</span>
+                                        </span>
+                                    </div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>                                   
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-JumpServer.svg" class="l-dark" height="35" alt="JumpServer Logo" />
+                        <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a target="_blank" href="https://vsqzsec.jumpserver.org/">产品优势</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../hardware.html">一体机</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../e-commerce.html">跨境电商</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </li>                        
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="../features.html">版本对比</a></li>
+                                <li><a target="_blank" href="http://docs.jumpserver.org/">在线文档</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/jumpserver">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/js/5">社区论坛</a></li>
+                                <li><a target="_blank" href="../customers.html">客户案例</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.jumpserver.org/">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/sQ91MK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf">如何向团队介绍 JumpServer?</a></li>
+                            </ul>
+                        </li>                        
+                        <li>
+                            <div class="mt-3 menu-mt-pnone">
+                                <a target="_blank" href="https://community.fit2cloud.com/#/products/jumpserver/downloads" class="btn btn-primary menu-btn">免费下载</a>
+                            </div>
+                        </li>
+                        <li><a href="../enterprise.html">企业版</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li><a href="https://jumpserver.com/" target="_blank">English</a></li>
+                        <li class="github-star">
+                            <iframe target="_blank" src="../github-btn.html?user=jumpserver&repo=jumpserver&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+<main id="main-content">
+        <section class="bg-half bg-dark d-table w-100" style="background-image: url('../images/banner/banner9.png')">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="page-next-level">
+                            <h1 class="heading mb-3 text-white title-dark animated"><b>JumpServer 客户案例</b></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="case-detail-wrap">
+                            <div class="case-article-card">
+                                <h2 class="case-article-title">社区分享丨微拍堂通过JumpServer统一管控云上资产</h2>
+                                <div class="case-article-meta">
+                                    <span>发布时间：2021年09月28日</span>
+                                    <span>所属栏目：客户案例</span>
+                                </div>
+                                <p class="case-article-summary">JumpServer开源堡垒机在微拍堂的落地实践。</p>
+                                <div class="case-article">
+                                    <p><em>编者注：在2021年9月11日举办的“2021 JumpServer开源堡垒机城市遇见· 杭州站”活动中，微拍堂运维工程师章远强分享了题为《JumpServer在微拍堂的落地实践》的演讲。以下内容根据本次演讲整理而成。</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>微拍堂成立于2014年，是国内领先的文玩艺术品电商平台。目前微拍堂平台累计用户已经超过7000万，入驻商家超过30万家。作为一家创新企业，微拍堂开创了文玩艺术品直播拍卖的先河，从商业模式上实现了文玩拍卖行业的线上化。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":2795,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://blog.fit2cloud.com/wp-content/uploads/2021/09/图1-1024x577.jpg" alt="" class="wp-image-2795"><figcaption>微拍堂运维工程师 章远强</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>微拍堂的IT基础设施全部构建于公有云之上。为了对云上的服务器进行管控，微拍堂基于JumpServer搭建了一套管理平台，并利用JumpServer中的开放API接口构建了自己的权限管控系统，所有操作记录录像也存储在云端。由于所有的计算节点都在云上，我们十分依赖这个管控平台去管理这些节点。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>在使用JumpServer以前，我们使用的是像齐治、帕拉迪这样的传统厂商提供的硬件堡垒机。这些堡垒机主要以管理本地资产为主，并不是非常适合我们的公有云架构。我们也考察了公有云服务商提供的云堡垒机，它们主要是以云上服务为主。对于微拍堂来说，公司的业务增长速度很快，云上基础设施的规模也在快速增加，未来我们还有可能引入多云的技术架构。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>因此，我们需要一款高性能、支持水平扩展的堡垒机，并且能够支持多云的应用环境。考虑了这些方面，我们认为JumpServer更加符合我们实际的业务需要，所以我们最终选择了基于JumpServer来构建这个管控平台。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>那么JumpServer对于我们来说有哪些优势呢？</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>第一点就是它可以基于软件部署的方式去进行管理；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>第二点就是我们在使用传统堡垒机的时候会遇到数据被误删、账号共享使用、访问不统一、操作时没有留痕、权限不控制、出现故障后无法回溯等安全运维的问题。这些问题都导致了我们必须要选择一套能够统一管控的堡垒机系统。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>JumpServer堡垒机支持软件部署，可以做到事先防范、集中管控还有事后溯源，很好地满足了微拍堂运维安全审计的实际需求。</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>微拍堂的云基础设施都建立在腾讯云之上，因此我们也将JumpServer堡垒机部署在腾讯云上。作为JumpServer堡垒机的长期用户，微拍堂已经拥有丰富的使用经验。下面我们就来分享一下微拍堂在堡垒机部署、权限管控和日志管理方面的具体实践，供大家参考和探讨。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>JumpServer的部署</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>JumpServer提供三种部署架构，即单点部署、主从部署和分布式部署。目前微拍堂的云上资产大概有2000多个节点，基于安全、运维、成本等诸多方面的考虑，尤其是容量方面的规划，我们最终选择的是主从部署的方案。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>用户可以通过Web页面和SSH客户端访问JumpServer，采纳MFA多因子认证，并进行录像审计以及SSH协议支持等。数据库采用的是主主同步的方式。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>对象存储方面，微拍堂使用了腾讯云的COS（Cloud Object Storage）存储，账号数据可以永久地保存在COS之上。JumpServer堡垒机自上线以来一直保持着高效稳定运营的状态。从登录频次上看，目前微拍堂每日用户登录JumpServer堡垒机的频次峰值已经超过了700次。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>基于JumpServer的权限管控</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>微拍堂基于JumpServer构建了一套权限管控机制，开发了一套CMDB（配置管理数据库）开发管控平台，通过调用JumpServer的API接口进行权限审批，对用户登录节点的行为进行授权。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>用户理论上是不允许登录线上节点的，只能登录一些授权节点。只有经过管理审批后，用户才有权限登录到指定节点并进行操作，所有操作行为都会在JumpServer上进行录像保留。这些记录会被收集到Elastic Search，然后通过Elastic Search实现监控告警。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>如果发现一些高危操作，我们都会基于JumpServer管控平台转发告知管理员。针对文件编辑的操作，我们会把初始文件在第一时间进行保存。用户操作后，如有需要回滚，可以根据文件的时间戳进行回滚。另外，我们给用户的访问权限分为永久权限和临时权限，节点授权之后默认24小时回收，而运维管理人员有权限访问所有的节点。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>基于JumpServer的日志管理</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>我们把JumpServer的账户信息、录像审计、操作日志统一保存到腾讯云的COS上，并通过Elastic Search进行日志采集，将其作为集群进行管控，并制定相应的告警规则。这样一来，我们就能管控到所有的登录操作，并且实现实时异常告警。操作录像我们会定期备份并导出。根据等保的要求，操作日志的保留时长至少半年，可以在JumpServer的控制台中对日志保持的时长进行设置。</p>
+<!-- /wp:paragraph -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="section bg-cta" style="background: url('../images/banner/banner10.png') center center no-repeat" id="cta">
+            <div class="bg-overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <p class="text-light para-dark mx-auto">“ JumpServer 从创立至今始终坚持开源开放，始终坚持倾听社区心声，始终坚持高质量快速迭代。我们将继续秉承这些原则，用心做好一款堡垒机。”</p>
+                            <h6 class="text-light">—— JumpServer 开源项目创始人&nbsp;&nbsp;广宏伟</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">JumpServer </span>? 欢迎通过如下方式联系我们</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="110" style="margin-top: 5px" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">微信公众号</h4>
+                        <img src="../images/contact/wechat-official.jpg" alt="JumpServer 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" class="footer-text-color">产品 PPT 材料</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="link" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
+                                </div>
+                            </div>                                          
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        
+</main>
+<footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="text-lg-center text-sm-left">
+                            <p class="mb-0 title-p"><a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">京ICP备15023818号</a></p>
+                            <p class="pt-1 title-p">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                            <p class="pt-1 title-p">
+                                <!-- <a href="https://www.fit2cloud.com/legal/tos.html" class="text-foot title-p" target="_parent">使用条款 |</a> -->
+                                <a href="https://www.fit2cloud.com/legal/privacy-policy.html" class="text-foot title-p" target="_parent">隐私政策 |</a>
+                                <a href="https://www.fit2cloud.com/legal/licenses.html" class="text-foot title-p" target="_parent">社区软件许可协议</a>
+                            </p>
+                            <p class="pt-1 title-p">
+                                <a href="https://www.jumpserver.com" class="text-foot title-p" target="_parent">English Website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <section id="footer_start">
+            <div class="footer-start-box">
+                <div class="footer-start-title">
+                    <p role="img" aria-label="celibrate" style="font-size: 14px">
+                        <a target="_blank" href="https://partner.fit2cloud.com/yuyuechanpinyanshi" style="color: white"><i class="mdi mdi-play-circle pr-1" style="font-size: 10px"></i>预约产品演示</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js "></script>
+        <script src="../js/owl.init.js "></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

@@ -49,6 +49,40 @@
 
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
+        <style>
+            @media (min-width: 768px) {
+                .public-case-grid > [class*='col-'] {
+                    display: flex;
+                }
+
+                .public-case-grid .blog {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .public-case-grid .card-body.content {
+                    flex: 1 1 auto;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                .public-case-grid .content h5 {
+                    margin-bottom: 0;
+                }
+
+                .public-case-grid .content .title {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                    line-height: 1.6;
+                    min-height: 3.2em;
+                    word-break: break-word;
+                }
+            }
+        </style>
     </head>
     <body>
         <header id="topnav" class="defaultscroll sticky">
@@ -192,17 +226,49 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row public-case-grid">
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=a04cdf0d-6704-4d18-9b40-9180baecd0e2">
+                            <a href="./customers/atesi.html">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-atesi.jpg" class="card-img-top rounded-top" alt="阿特斯客户案例封面" />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="./customers/atesi.html" class="live-font-size card-title title text-dark">阿特斯的 JumpServer 分布式部署和多组织管理实践</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2024-11-20</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="./customers/tianhong.html">
+                                <div class="position-relative">
+                                    <img src="./images/customer/customer-tianhonggufen.png" class="card-img-top rounded-top" alt="天虹股份客户案例封面" />
+                                    <div class="overlay rounded-top bg-dark"></div>
+                                </div>
+                            </a>
+                            <div class="card-body content">
+                                <h5><a href="./customers/tianhong.html" class="live-font-size card-title title text-dark">JumpServer 助力天虹股份构建可靠的运维安全审计平台</a></h5>
+                            </div>
+                            <div class="author">
+                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2024-04-17</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card blog rounded border-0 shadow">
+                            <a href="./customers/tencentmusic.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-tengxunyinyue.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content" style="padding-left: 15px;padding-right: 15px">
-                                <h5><a href="https://blog.fit2cloud.com/?p=a04cdf0d-6704-4d18-9b40-9180baecd0e2" class="live-font-size card-title title text-dark"> 腾讯音乐娱乐集团与 JumpServer 共探安全运维审计解决方案 </a></h5>
+                                <h5><a href="./customers/tencentmusic.html" class="live-font-size card-title title text-dark"> 腾讯音乐娱乐集团与 JumpServer 共探安全运维审计解决方案 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-12-26</small>
@@ -211,14 +277,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3704">
+                            <a href="./customers/tencentgames.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-tengxunyouxi.png" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3704" class="live-font-size card-title title text-dark"> 腾讯海外游戏基于 JumpServer 构建游戏安全运营能力 </a></h5>
+                                <h5><a href="./customers/tencentgames.html" class="live-font-size card-title title text-dark"> 腾讯海外游戏基于 JumpServer 构建游戏安全运营能力 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-08-04</small>
@@ -227,14 +293,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=516">
+                            <a href="./customers/xiaohongshu.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-xiaohongshu.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=516" class="live-font-size card-title title text-dark">小红书的 JumpServer 堡垒机大规模资产跨版本迁移之路</a></h5>
+                                <h5><a href="./customers/xiaohongshu.html" class="live-font-size card-title title text-dark">小红书的 JumpServer 堡垒机大规模资产跨版本迁移之路</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2019-07-26</small>
@@ -243,14 +309,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=1147">
+                            <a href="./customers/sftech.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-shunfeng.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=1147" class="live-font-size card-title title text-dark">JumpServer 堡垒机护航顺丰科技超大规模资产安全运维</a></h5>
+                                <h5><a href="./customers/sftech.html" class="live-font-size card-title title text-dark">JumpServer 堡垒机护航顺丰科技超大规模资产安全运维</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i> 2019-04-21</small>
@@ -259,14 +325,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3504">
+                            <a href="./customers/wanhua.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-wanhua.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3504" class="live-font-size card-title title text-dark">万华化学通过 JumpServer 管理全球化分布式 IT 资产 </a></h5>
+                                <h5><a href="./customers/wanhua.html" class="live-font-size card-title title text-dark">万华化学通过 JumpServer 管理全球化分布式 IT 资产 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-05-12</small>
@@ -275,14 +341,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3080">
+                            <a href="./customers/bosch.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-boshiqiche.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3080" class="live-font-size card-title title text-dark">博世通过 JumpServer 管控大规模资产并实现高并发访问 </a></h5>
+                                <h5><a href="./customers/bosch.html" class="live-font-size card-title title text-dark">博世通过 JumpServer 管控大规模资产并实现高并发访问 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2021-12-10</small>
@@ -291,14 +357,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3716">
+                            <a href="./customers/huolala.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-huolala.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3716" class="live-font-size card-title title text-dark"> 货拉拉通过 JumpServer 纳管大规模云上资产 </a></h5>
+                                <h5><a href="./customers/huolala.html" class="live-font-size card-title title text-dark"> 货拉拉通过 JumpServer 纳管大规模云上资产 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-08-09</small>
@@ -307,14 +373,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=c236dd41-98d4-4d3a-b5e1-e74b9667c50e">
+                            <a href="./customers/wps.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-jinshan.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=c236dd41-98d4-4d3a-b5e1-e74b9667c50e" class="live-font-size card-title title text-dark">JumpServer堡垒机为金山办公信息安全保驾护航</a></h5>
+                                <h5><a href="./customers/wps.html" class="live-font-size card-title title text-dark">JumpServer堡垒机为金山办公信息安全保驾护航</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-10-16</small>
@@ -323,14 +389,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=687">
+                            <a href="./customers/orientalpearl.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-dongfangmingzhu.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=687" class="live-font-size card-title title text-dark">东方明珠：JumpServer 高效管控异构化、分布式云端资产</a></h5>
+                                <h5><a href="./customers/orientalpearl.html" class="live-font-size card-title title text-dark">东方明珠：JumpServer 高效管控异构化、分布式云端资产</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-04-19</small>
@@ -339,14 +405,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=666">
+                            <a href="./customers/jiangsunongxin.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-jiangshunongxin.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=666" class="live-font-size card-title title text-dark">江苏农信：JumpServer 堡垒机助力行业云安全运维</a></h5>
+                                <h5><a href="./customers/jiangsunongxin.html" class="live-font-size card-title title text-dark">江苏农信：JumpServer 堡垒机助力行业云安全运维</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-01-21</small>
@@ -355,14 +421,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=d2828c71-dd71-40d6-b270-0c6cdaebd147">
+                            <a href="./customers/cummins.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-kms.png" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=d2828c71-dd71-40d6-b270-0c6cdaebd147" class="live-font-size card-title title text-dark">康明斯中国通过 JumpServer 搭建统一的运维安全审计平台</a></h5>
+                                <h5><a href="./customers/cummins.html" class="live-font-size card-title title text-dark">康明斯中国通过 JumpServer 搭建统一的运维安全审计平台</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-08-02</small>
@@ -371,14 +437,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=732">
+                            <a href="./customers/zhongshouyou.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-zhongshouyou.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=732" class="live-font-size card-title title text-dark">JumpServer 堡垒机助力中手游提升多云环境下安全运维能力</a></h5>
+                                <h5><a href="./customers/zhongshouyou.html" class="live-font-size card-title title text-dark">JumpServer 堡垒机助力中手游提升多云环境下安全运维能力</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2020-12-1</small>
@@ -387,14 +453,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=48a69df5-2dee-4547-8feb-8950c5755a16">
+                            <a href="./customers/ezviz.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-yingshi.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=48a69df5-2dee-4547-8feb-8950c5755a16" class="live-font-size card-title title text-dark"> 萤石网络通过 JumpServer 解决安全运维难题 </a></h5>
+                                <h5><a href="./customers/ezviz.html" class="live-font-size card-title title text-dark"> 萤石网络通过 JumpServer 解决安全运维难题 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-05-08</small>
@@ -403,14 +469,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3213">
+                            <a href="./customers/moonton.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-moonton.png" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3213" class="live-font-size card-title title text-dark">沐瞳游戏通过JumpServer管控多项目分布式资产 </a></h5>
+                                <h5><a href="./customers/moonton.html" class="live-font-size card-title title text-dark">沐瞳游戏通过JumpServer管控多项目分布式资产 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-01-11</small>
@@ -419,14 +485,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=3412">
+                            <a href="./customers/snowbeer.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-xuehuapijiu.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=3412" class="live-font-size card-title title text-dark">雪花啤酒的 JumpServer 堡垒机使用体会 </a></h5>
+                                <h5><a href="./customers/snowbeer.html" class="live-font-size card-title title text-dark">雪花啤酒的 JumpServer 堡垒机使用体会 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-03-22</small>
@@ -435,14 +501,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=851">
+                            <a href="./customers/ctrip.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-xiecheng.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=851" class="live-font-size card-title title text-dark">携程 JumpServer 堡垒机部署与运营实战</a></h5>
+                                <h5><a href="./customers/ctrip.html" class="live-font-size card-title title text-dark">携程 JumpServer 堡垒机部署与运营实战</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2019-09-10</small>
@@ -451,14 +517,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=4808">
+                            <a href="./customers/ningzheng.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-ningzhengqihuo.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=4808" class="live-font-size card-title title text-dark"> 宁证期货通过 JumpServer 有效实现安全运维控制 </a></h5>
+                                <h5><a href="./customers/ningzheng.html" class="live-font-size card-title title text-dark"> 宁证期货通过 JumpServer 有效实现安全运维控制 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2022-10-13</small>
@@ -467,14 +533,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=a60970fc-bfc6-4262-a0ce-089f95968af6">
+                            <a href="./customers/cumt.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-kuangyuedaxue.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=a60970fc-bfc6-4262-a0ce-089f95968af6" class="live-font-size card-title title text-dark"> 中国矿业大学基于 JumpServer 构建运维安全体系 </a></h5>
+                                <h5><a href="./customers/cumt.html" class="live-font-size card-title title text-dark"> 中国矿业大学基于 JumpServer 构建运维安全体系 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-06-14</small>
@@ -483,14 +549,14 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=6924739d-6dbc-45fc-95d6-aa9e81f191fd">
+                            <a href="./customers/yineng.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-yinengkeji.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=6924739d-6dbc-45fc-95d6-aa9e81f191fd" class="live-font-size card-title title text-dark"> 依能科技基于 JumpServer 构建运维安全审计平台 </a></h5>
+                                <h5><a href="./customers/yineng.html" class="live-font-size card-title title text-dark"> 依能科技基于 JumpServer 构建运维安全审计平台 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-03-14</small>
@@ -500,14 +566,14 @@
 
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=e87c5552-a1a5-4658-b3b0-d790c8dc6363">
+                            <a href="./customers/huading.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-huading.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=e87c5552-a1a5-4658-b3b0-d790c8dc6363" class="live-font-size card-title title text-dark"> 华鼎供应链通过 JumpServer 安全运维云端资产 </a></h5>
+                                <h5><a href="./customers/huading.html" class="live-font-size card-title title text-dark"> 华鼎供应链通过 JumpServer 安全运维云端资产 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-04-03</small>
@@ -517,14 +583,14 @@
 
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=a4133784-b3ef-4121-bae5-a370ed1859f2">
+                            <a href="./customers/daifuku.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-dafuzhong.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=a4133784-b3ef-4121-bae5-a370ed1859f2" class="live-font-size card-title title text-dark"> 大福中国通过 JumpServer 满足等保合规和资产管理双重需求 </a></h5>
+                                <h5><a href="./customers/daifuku.html" class="live-font-size card-title title text-dark"> 大福中国通过 JumpServer 满足等保合规和资产管理双重需求 </a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2023-08-14</small>
@@ -534,51 +600,17 @@
 
                     <div class="col-lg-3 col-md-6 mt-4 pt-2">
                         <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=2794">
+                            <a href="./customers/weipaitang.html">
                                 <div class="position-relative">
                                     <img src="./images/customer/customer-wpt.jpg" class="card-img-top rounded-top" alt="..." />
                                     <div class="overlay rounded-top bg-dark"></div>
                                 </div>
                             </a>
                             <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=2794" class="live-font-size card-title title text-dark">微拍堂通过 JumpServer 统一管控云上资产</a></h5>
+                                <h5><a href="./customers/weipaitang.html" class="live-font-size card-title title text-dark">微拍堂通过 JumpServer 统一管控云上资产</a></h5>
                             </div>
                             <div class="author">
                                 <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2021-9-28</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=2912">
-                                <div class="position-relative">
-                                    <img src="./images/customer/customer-ronglianqimo.jpg" class="card-img-top rounded-top" alt="..." />
-                                    <div class="overlay rounded-top bg-dark"></div>
-                                </div>
-                            </a>
-                            <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=2912" class="live-font-size card-title title text-dark">JumpServer 助力容联七陌纳管大规模混合云资产</a></h5>
-                            </div>
-                            <div class="author">
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2021-10-27</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card blog rounded border-0 shadow">
-                            <a href="https://blog.fit2cloud.com/?p=2983">
-                                <div class="position-relative">
-                                    <img src="./images/customer/customer-yunzhitianxia.png" class="card-img-top rounded-top" alt="..." />
-                                    <div class="overlay rounded-top bg-dark"></div>
-                                </div>
-                            </a>
-                            <div class="card-body content">
-                                <h5><a href="https://blog.fit2cloud.com/?p=2983" class="live-font-size card-title title text-dark">JumpServer 在云智天下多数据中心的应用实践</a></h5>
-                            </div>
-                            <div class="author">
-                                <small class="text-light date"><i class="mdi mdi-calendar-check"></i>2021-11-10</small>
                             </div>
                         </div>
                     </div>
