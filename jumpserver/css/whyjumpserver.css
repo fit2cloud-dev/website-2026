@@ -86,12 +86,12 @@
 
 .wj-hero h1 {
     color: #ffffff;
-    font-size: clamp(2.15rem, 3.5vw, 3.7rem);
+    font-size: clamp(1.7rem, 2.2vw, 2.4rem);
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.14;
+    line-height: 1.18;
     margin-bottom: 1.3rem;
-    max-width: 620px;
+    max-width: 100%;
 }
 
 .wj-hero p.lead {
@@ -243,6 +243,7 @@
 
     .wj-hero h1 {
         margin-bottom: 1rem;
+        white-space: nowrap;
     }
 
     .wj-hero p.lead {
@@ -304,6 +305,40 @@
     padding: 2rem;
 }
 
+.wj-overview-meta {
+    display: grid;
+    gap: 0.75rem;
+    list-style: none;
+    margin: 1.25rem 0 0;
+    padding: 0;
+}
+
+.wj-overview-meta li {
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    gap: 0.65rem;
+    line-height: 1.7;
+}
+
+.wj-overview-meta li i {
+    color: #ffffff;
+    flex: 0 0 auto;
+    height: 16px;
+    width: 16px;
+}
+
+.wj-overview-meta li span {
+    display: block;
+}
+
+.wj-overview-title {
+    color: #173128;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 .wj-overview-list,
 .wj-advantage-list,
 .wj-mini-list {
@@ -312,6 +347,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.wj-overview-card .wj-overview-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .wj-overview-list li,
@@ -337,10 +376,14 @@
 }
 
 .wj-chip-list {
+    background: #f7fbf8;
+    border: 1px solid rgba(64, 191, 128, 0.12);
+    border-radius: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
     margin-top: 1.2rem;
+    padding: 0.85rem 0.9rem;
 }
 
 .wj-chip {
@@ -348,9 +391,22 @@
     border: 1px solid rgba(64, 191, 128, 0.18);
     border-radius: 999px;
     color: var(--wj-primary-dark);
-    font-size: 0.82rem;
+    font-size: 0.74rem;
     font-weight: 600;
-    padding: 0.45rem 0.85rem;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    padding: 0.32rem 0.68rem;
+}
+
+.wj-overview-head--secondary + .wj-overview-body .wj-chip-list {
+    background: #f4f7f5;
+    border-color: rgba(89, 107, 101, 0.14);
+}
+
+.wj-overview-head--secondary + .wj-overview-body .wj-chip {
+    background: #edf2ef;
+    border-color: rgba(89, 107, 101, 0.16);
+    color: #4d5f59;
 }
 
 .wj-stat-band {
@@ -393,6 +449,34 @@
 .wj-table-card {
     height: 100%;
     overflow: hidden;
+}
+
+.wj-feature-tabs {
+    gap: 0.75rem;
+}
+
+.wj-feature-tabs .nav-item {
+    margin: 0;
+}
+
+.wj-feature-tabs .nav-link {
+    background: #eef4f1;
+    border: 0;
+    border-radius: 14px;
+    color: #5a6c65;
+    font-weight: 600;
+    padding: 0.85rem 1.35rem;
+}
+
+.wj-feature-tabs .nav-link:hover,
+.wj-feature-tabs .nav-link:focus {
+    color: var(--wj-primary-dark);
+}
+
+.wj-feature-tabs .nav-link.active {
+    background: linear-gradient(135deg, var(--wj-primary) 0%, var(--wj-primary-dark) 100%);
+    box-shadow: 0 16px 34px rgba(47, 150, 98, 0.22);
+    color: #ffffff;
 }
 
 .wj-table-head {
@@ -676,6 +760,29 @@
     max-width: 620px;
 }
 
+.wj-cta-panel .btn-light {
+    font-weight: 700;
+    min-width: 140px;
+}
+
+.wj-cta-panel .btn-outline-light {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.78);
+    border-width: 2px;
+    box-shadow: 0 12px 28px rgba(15, 39, 28, 0.16);
+    color: #ffffff;
+    font-weight: 700;
+    min-width: 140px;
+}
+
+.wj-cta-panel .btn-outline-light:hover,
+.wj-cta-panel .btn-outline-light:focus,
+.wj-cta-panel .btn-outline-light:active {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--wj-primary-dark);
+}
+
 .wj-summary-card {
     padding: 2rem;
 }
@@ -770,6 +877,7 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     overflow: hidden;
     padding: 2.4rem 2rem;
 }
@@ -820,7 +928,8 @@
     }
 
     .wj-hero h1 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
+        white-space: normal;
     }
 
     .wj-hero p.lead {
@@ -854,6 +963,18 @@
     .wj-summary-card,
     .wj-advantage-body {
         padding: 1.5rem;
+    }
+
+    .wj-overview-card .wj-overview-list {
+        grid-template-columns: 1fr;
+    }
+
+    .wj-feature-tabs {
+        gap: 0.5rem;
+    }
+
+    .wj-feature-tabs .nav-link {
+        padding: 0.7rem 1rem;
     }
 
     .wj-finding-header {
