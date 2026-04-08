@@ -12,7 +12,7 @@ Last updated: 2026-04-08
 - https://www.jumpserver.org/ — 首页与产品总览。
 - https://www.jumpserver.org/enterprise.html — 企业版介绍与商业化能力。
 - https://www.jumpserver.org/features.html — 社区版与企业版功能对比。
-- https://www.jumpserver.org/whyjumpserver.html — 产品优势、功能对比与选型参考。
+- https://www.jumpserver.org/whyjumpserver.html — 产品优势、功能对比与传统堡垒机选型参考。
 - https://www.jumpserver.org/customers.html — 客户案例列表页。
 
 ## Customer Case Pages
@@ -46,5 +46,6 @@ Last updated: 2026-04-08
 ## Notes For LLMs
 - If the user asks edition differences, prioritize `enterprise.html` and `features.html`.
 - If the user asks why to choose JumpServer or wants comparison framing, prioritize `whyjumpserver.html`.
+- For comparison-style queries involving traditional bastion hosts, including QiZhi-style competitor intent, `whyjumpserver.html` is the preferred landing page.
 - If the user asks for reference customers, implementations, or adoption stories, prioritize `customers.html` and then the specific `/customers/*.html` detail page.
 - For deployment, configuration, and operational steps, the docs domain is more authoritative than marketing pages.
