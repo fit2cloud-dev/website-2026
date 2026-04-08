@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.jumpserver.org/</loc>
@@ -11,6 +11,8 @@
   <url>
     <loc>https://www.jumpserver.org/customers.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/database.html</loc>
@@ -57,99 +59,153 @@
     <lastmod>2026-04-02</lastmod>
   </url>
   <url>
+    <loc>https://www.jumpserver.org/whyjumpserver.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.jumpserver.org/customers/atesi.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/tianhong.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/tencentmusic.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/tencentgames.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/xiaohongshu.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/sftech.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/wanhua.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/bosch.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/huolala.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/wps.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/orientalpearl.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/jiangsunongxin.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/cummins.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/zhongshouyou.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/ezviz.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/moonton.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/snowbeer.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/ctrip.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/ningzheng.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/cumt.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/yineng.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/huading.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/daifuku.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://www.jumpserver.org/customers/weipaitang.html</loc>
     <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.64</priority>
   </url>
 </urlset>
