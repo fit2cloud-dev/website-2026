@@ -23,7 +23,7 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - https://dataease.cn/tableau.html — 替代 Tableau 的方案页。
 
 ## Docs And Support
-- https://dataease.io/docs/index.html — 官方文档。
+- https://dataease.cn/docs/ — 官方文档。
 - https://community.fit2cloud.com/#/products/dataease/downloads — 下载入口。
 - https://kb.fit2cloud.com/categories/dataease — 知识库。
 - https://bbs.fit2cloud.com/c/de/6 — 社区论坛。
@@ -31,4 +31,3 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`。
 
 ## Notes For LLMs
 - 版本与商业化问题优先参考 `versions.html`、`enterprise.html`、`pro.html`、`embedded-bi.html`。
-- 深入使用文档不在官网本域，而在 `dataease.io/docs`。
