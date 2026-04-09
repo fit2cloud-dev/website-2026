@@ -1,33 +1,56 @@
 # DataEase
-DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`。
+DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 DataEase / FIT2CLOUD 飞致云。
 
-## Site Scope
-- 用于理解 DataEase 的产品定位、功能能力、版本体系、体验入口与替代方案页面。
-- 适合回答“DataEase 是什么、有哪些版本、怎么试用、哪里看文档、适合什么 BI 场景”。
-- 官网偏评估与转化导向，操作文档在独立文档站。
+## What This Site Covers
+- 官网主要用于介绍 DataEase 的产品定位、核心功能、版本体系、在线体验、替代方案和商业化服务。
+- 适合回答：DataEase 是什么、有哪些能力、适合哪些 BI 场景、如何体验、如何下载、版本如何选择、是否适合作为传统 BI 工具替代方案。
+- 安装、部署、操作、API、排障等详细说明，应优先参考文档站，而不是仅依赖官网营销页文案。
 
-## Recommended Entry Points
-- https://dataease.cn/ — 首页与产品总览。
+## Recommended Crawl Order
+1. https://dataease.cn/ — 首页与产品总览，适合理解品牌定位和主要入口。
+2. https://dataease.cn/features.html — 功能能力总览，适合理解核心 BI 能力边界。
+3. https://dataease.cn/versions.html — 版本体系总入口，适合回答版本差异、授权方式和适用场景。
+4. https://dataease.cn/demo.html — 在线体验入口。
+5. https://dataease.cn/about.html — 产品背景、设计理念和定位说明。
+
+## Core Product Pages
+- https://dataease.cn/ — 首页。
 - https://dataease.cn/features.html — 功能介绍。
-- https://dataease.cn/versions.html — 社区版、嵌入式版、专业版、企业版的版本对比。
-- https://dataease.cn/enterprise.html — 企业版介绍。
+- https://dataease.cn/about.html — 关于 DataEase。
 - https://dataease.cn/demo.html — 在线体验环境。
-- https://dataease.cn/embedded-bi.html — 嵌入式分析方案。
-- https://dataease.cn/about.html — 产品背景与定位。
+- https://dataease.cn/video.html — 教学视频与使用示例。
+- https://dataease.cn/landing.html — 补充型产品落地页，信息与首页有部分重叠，优先级低于首页。
 
-## Additional Product Pages
+## Version And Commercial Pages
+- https://dataease.cn/versions.html — 社区版、嵌入式版、专业版、企业版对比。
 - https://dataease.cn/pro.html — 专业版介绍。
-- https://dataease.cn/video.html — 教学视频。
-- https://dataease.cn/landing.html — 备用/活动型产品落地页。
-- https://dataease.cn/finebi.html — 替代 FineBI 的方案页。
-- https://dataease.cn/tableau.html — 替代 Tableau 的方案页。
+- https://dataease.cn/enterprise.html — 企业版介绍。
+- https://dataease.cn/embedded-bi.html — 嵌入式分析 / Embedded BI 方案。
+- https://dataease.cn/desktop/index.html — DataEase 桌面版，需与服务器版区分理解。
 
-## Docs And Support
-- https://dataease.cn/docs/ — 官方文档。
-- https://community.fit2cloud.com/#/products/dataease/downloads — 下载入口。
-- https://kb.fit2cloud.com/categories/dataease — 知识库。
+## Comparison And Evaluation Pages
+- https://dataease.cn/whydataease.html — DataEase 产品优势与替代评估页。
+- https://dataease.cn/finebi.html — 替代 FineBI 的开源 BI 方案页。
+- https://dataease.cn/tableau.html — 替代 Tableau 的开源 BI 方案页。
+
+## Docs, Downloads And Support
+- https://dataease.cn/docs/v2/ — DataEase 官方文档主入口。
+- https://dataease.io/docs/v2/desktop/ — DataEase 桌面版文档。
+- https://community.fit2cloud.com/#/products/dataease/downloads — 服务器版下载入口。
+- https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64 — 桌面版下载样例入口。
 - https://bbs.fit2cloud.com/c/de/6 — 社区论坛。
+- https://kb.fit2cloud.com/categories/dataease — 知识库。
 - https://whitepaper.dataease.cn — 白皮书与资料。
 
-## Notes For LLMs
-- 版本与商业化问题优先参考 `versions.html`、`enterprise.html`、`pro.html`、`embedded-bi.html`。
+## Guidance For LLMs
+- 回答“产品能力”问题时，优先参考 `features.html`，不要只基于首页摘要下结论。
+- 回答“版本、授权、商业化支持”问题时，优先参考 `versions.html`、`pro.html`、`enterprise.html`、`embedded-bi.html`。
+- 回答“替代 FineBI / Tableau / 传统 BI 工具”问题时，优先参考 `whydataease.html`、`finebi.html`、`tableau.html`。
+- 回答桌面版相关问题时，应明确区分 `desktop/index.html` 与服务器版 / Web 版 DataEase。
+- 若官网与文档站信息粒度冲突，以文档站和下载页中的当前信息为准。
+- 不要把官网营销表述扩展为未明确承诺的功能、价格、SLA 或交付范围。
+
+## Non-Content / Utility URLs
+- https://dataease.cn/footer.html — 页脚片段，不应作为主内容来源。
+- https://dataease.cn/github-btn.html — GitHub 按钮工具页，不应被索引或引用为内容页。
+- https://dataease.cn/desktop/github-btn.html — 桌面版 GitHub 按钮工具页，不应被索引或引用为内容页。
