@@ -10625,12 +10625,53 @@ document.addEventListener("turbolinks:load", function() {
             quickNav.removeClass('active');
         });
         // Clicking outside the quick-nav closes it.
-        $('body').on('click', function() {
+$('body').on('click', function() {
             quickNav.removeClass('active');
         });
     }
 });
 
+(function() {
+    if (window.__fit2cloudMegaNavOutsideCloseBound) {
+        return;
+    }
+
+    window.__fit2cloudMegaNavOutsideCloseBound = true;
+
+    function closeMegaNav(nav) {
+        if (!nav || !nav.classList.contains('open')) {
+            return;
+        }
+
+        nav.classList.remove('open');
+
+        var bodyContainer = nav.querySelector('.mega-nav-body-ct');
+        if (bodyContainer) {
+            bodyContainer.style.display = 'none';
+        }
+
+        var ctrl = nav.querySelector('.mega-nav-ctrl');
+        if (ctrl) {
+            ctrl.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    document.addEventListener('click', function(event) {
+        var openNavs = document.querySelectorAll('.mega-nav-sandbox .mega-nav.open');
+
+        if (!openNavs.length) {
+            return;
+        }
+
+        for (var i = 0; i < openNavs.length; i++) {
+            var nav = openNavs[i];
+
+            if (!nav.contains(event.target)) {
+                closeMegaNav(nav);
+            }
+        }
+    });
+})();
 
 
 

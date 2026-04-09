@@ -801,3 +801,9 @@ th.visible-print,td.visible-print {
 		width: 1024px
 	}
 }
+
+@media (max-width: 767px) {
+	.mega-nav-sandbox {
+		display: none !important;
+	}
+}
