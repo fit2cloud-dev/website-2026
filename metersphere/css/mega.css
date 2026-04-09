@@ -865,3 +865,9 @@ th.visible-print,td.visible-print {
 .mega-nav-sandbox .mega-nav-body .mega-nav-ul li a:hover {
     color: #007bff;
 }
+
+@media (max-width: 767px) {
+    .mega-nav-sandbox {
+        display: none !important;
+    }
+}
