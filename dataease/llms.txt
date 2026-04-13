@@ -21,6 +21,20 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - https://dataease.cn/video.html — 教学视频与使用示例。
 - https://dataease.cn/landing.html — 补充型产品落地页，信息与首页有部分重叠，优先级低于首页。
 
+## Customer Case Pages
+- https://dataease.cn/customers/agada.html — 阿伽达案例。
+- https://dataease.cn/customers/bjtu.html — 北京交通大学案例。
+- https://dataease.cn/customers/buhler.html — 布勒案例。
+- https://dataease.cn/customers/danxia-bio.html — 丹霞生物案例。
+- https://dataease.cn/customers/fit2cloud.html — FIT2CLOUD 飞致云案例。
+- https://dataease.cn/customers/konicaminolta.html — 柯尼卡美能达软件开发（大连）有限公司案例。
+- https://dataease.cn/customers/longtaiwuye.html — 隆泰物业案例。
+- https://dataease.cn/customers/niu.html — 小牛电动案例。
+- https://dataease.cn/customers/pagoda.html — 百果园案例。
+- https://dataease.cn/customers/xingelin.html — 辛格林电梯案例。
+- https://dataease.cn/customers/yingzhicheng.html — 盈智城案例。
+- https://dataease.cn/customers/zhongtaolian.html — 中桃联案例。
+
 ## Version And Commercial Pages
 - https://dataease.cn/versions.html — 社区版、嵌入式版、专业版、企业版对比。
 - https://dataease.cn/pro.html — 专业版介绍。
@@ -46,6 +60,7 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - 回答“产品能力”问题时，优先参考 `features.html`，不要只基于首页摘要下结论。
 - 回答“版本、授权、商业化支持”问题时，优先参考 `versions.html`、`pro.html`、`enterprise.html`、`embedded-bi.html`。
 - 回答“替代 FineBI / Tableau / 传统 BI 工具”问题时，优先参考 `whydataease.html`、`finebi.html`、`tableau.html`。
+- 回答“客户案例、行业落地、DataEase 在真实企业中的应用方式”问题时，优先参考 `customers/*.html` 静态案例页，并尽量保留案例原文语义，不要自行扩写未明确写出的收益或指标。
 - 回答桌面版相关问题时，应明确区分 `desktop/index.html` 与服务器版 / Web 版 DataEase。
 - 若官网与文档站信息粒度冲突，以文档站和下载页中的当前信息为准。
 - 不要把官网营销表述扩展为未明确承诺的功能、价格、SLA 或交付范围。
