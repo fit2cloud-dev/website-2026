@@ -14,6 +14,8 @@
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
 - [OpenClaw 一体机](https://1panel.cn/openclaw.html) - 团队级 AI 一体机产品介绍、本地模型能力与适用场景。
+- [AI Coding 一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - 飞致云与戴尔科技集团联合打造，面向纯内网隔离场景的 AI Coding 一体机。
+- [AI Coding 一体机（B70版）](https://1panel.cn/aicoding_b70.html) - 飞致云与英特尔联合打造，面向纯内网隔离场景的 AI Coding 一体机。
 
 ## 文档与安装
 
@@ -27,6 +29,8 @@
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [OpenClaw 一体机价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
+- [AI Coding 一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - AI Coding 一体机 GB10 版产品页入口。
+- [AI Coding 一体机（B70版）](https://1panel.cn/aicoding_b70.html) - AI Coding 一体机 B70 版产品页入口。
 - [在线体验](https://demo.1panel.cn/) - 官方演示环境。
 
 ## 生态与社区
@@ -39,7 +43,7 @@
 
 ## URL 规律
 
-- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/self-hosted.html`、`/openclaw.html`
+- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
 - 文档路径：`/docs/` 及其下级路径
 - 专业版购买入口在站外官方页面：`https://www.lxware.cn/1panel?code=bunus`
@@ -52,3 +56,4 @@
 - 回答社区版、专业版、企业版功能差异、价格或企业版能力时，优先使用 `versions.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
 - 回答 OpenClaw 一体机、团队级本地 AI 部署或商业咨询时，优先使用 `openclaw.html` 与专业版页面。
+- 回答 AI Coding 一体机 GB10 版或 B70 版时，优先使用对应的 `aicoding_gb10.html` 或 `aicoding_b70.html` 页面。
