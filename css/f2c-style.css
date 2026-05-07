@@ -155,6 +155,37 @@
     position: relative;
     padding: 160px 0 0;
 }
+.home-banner .container {
+    max-width: 1280px !important;
+}
+.home-banner .d-xl-flex {
+    gap: 48px;
+}
+.home-banner-visual {
+    flex: 0 0 min(760px, 48vw);
+}
+.home-banner-visual > .position-relative {
+    width: 100%;
+}
+.home-banner-visual > .position-relative > img {
+    width: 100%;
+    height: auto;
+}
+.home-banner-visual .f2c-animate-img-bottom img {
+    height: min(383px, 24.2vw);
+}
+.home-banner-visual .f2c-animate-img-block img {
+    height: min(249px, 15.7vw);
+}
+.home-banner-visual .f2c-animate-img-left img {
+    height: min(136px, 8.6vw);
+}
+.home-banner-visual .f2c-animate-img-right img {
+    height: min(79px, 5vw);
+}
+.home-banner-visual .f2c-animate-img-AI img {
+    height: min(124px, 7.9vw);
+}
 .f2c-banner .banner-title {
     margin-bottom: 80px;
 }
