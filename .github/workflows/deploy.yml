@@ -12,7 +12,9 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: 检出
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          ref: main
       - name: 压缩
         run: |
           rm -rf fit2cloudweb.tar
@@ -58,7 +60,9 @@ jobs:
           access-key-id: ${{ secrets.OSS_AK }}
           access-key-secret: ${{ secrets.OSS_SK }}
       - name: 检出
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+        with:
+          ref: main
       - name: 压缩
         run: |
           rm -rf fit2cloudweb.tar
