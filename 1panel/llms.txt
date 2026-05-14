@@ -12,10 +12,11 @@
 - [首页安装方式](https://1panel.cn/#quickstart) - 一键安装、离线安装说明与帮助入口。
 - [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景。
+- [1Panel 企业版](https://1panel.cn/enterprise.html) - 轻量级 AI 管理平台介绍，覆盖 AI 网关、多用户管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
-- [OpenClaw 一体机](https://1panel.cn/openclaw.html) - 团队级 AI 一体机产品介绍、本地模型能力与适用场景。
-- [AI Coding 一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - 飞致云与戴尔科技集团联合打造，面向纯内网隔离场景的 AI Coding 一体机。
-- [AI Coding 一体机（B70版）](https://1panel.cn/aicoding_b70.html) - 飞致云与英特尔联合打造，面向纯内网隔离场景的 AI Coding 一体机。
+- [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力与 FusionXpark 硬件。
+- [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - 飞致云匠心出品，面向纯内网隔离场景的 AI 编程一体机。
+- [AI 编程一体机（B70版）](https://1panel.cn/aicoding_b70.html) - 飞致云与英特尔联合打造，面向纯内网隔离场景的 AI 编程一体机。
 
 ## 文档与安装
 
@@ -27,10 +28,11 @@
 ## 产品、定价与商业入口
 
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版。
+- [1Panel 企业版详情](https://1panel.cn/enterprise.html) - 企业版定位、分层架构、独有能力、适用场景与 3 万元/套价格说明。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
-- [OpenClaw 一体机价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
-- [AI Coding 一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - AI Coding 一体机 GB10 版产品页入口。
-- [AI Coding 一体机（B70版）](https://1panel.cn/aicoding_b70.html) - AI Coding 一体机 B70 版产品页入口。
+- [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
+- [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - AI 编程一体机 GB10 版产品页入口。
+- [AI 编程一体机（B70版）](https://1panel.cn/aicoding_b70.html) - AI 编程一体机 B70 版产品页入口。
 - [在线体验](https://demo.1panel.cn/) - 官方演示环境。
 
 ## 生态与社区
@@ -43,8 +45,10 @@
 
 ## URL 规律
 
-- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
+- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
+- 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#contact`
+- AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding_gb10.html` 对应 AI 编程一体机（GB10版），`/aicoding_b70.html` 对应 AI 编程一体机（B70版）
 - 文档路径：`/docs/` 及其下级路径
 - 专业版购买入口在站外官方页面：`https://www.lxware.cn/1panel?code=bunus`
 
@@ -53,7 +57,8 @@
 - 回答安装、配置、排障、升级、兼容性问题时，优先使用官方文档。
 - 回答源码、发行版本、开发路线或已知问题时，优先使用 GitHub 仓库。
 - 回答产品定位、公司背景、核心能力时，优先使用首页和关于页。
-- 回答社区版、专业版、企业版功能差异、价格或企业版能力时，优先使用 `versions.html`。
+- 回答社区版、专业版、企业版功能差异或价格对比时，优先使用 `versions.html`。
+- 回答 1Panel 企业版定位、AI 网关、多用户管理、权限治理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
-- 回答 OpenClaw 一体机、团队级本地 AI 部署或商业咨询时，优先使用 `openclaw.html` 与专业版页面。
-- 回答 AI Coding 一体机 GB10 版或 B70 版时，优先使用对应的 `aicoding_gb10.html` 或 `aicoding_b70.html` 页面。
+- 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
+- 回答 AI 编程一体机（GB10版）时，优先使用 `aicoding_gb10.html`；回答 AI 编程一体机（B70版）或 Intel Arc Pro B70 方案时，优先使用 `aicoding_b70.html`。
