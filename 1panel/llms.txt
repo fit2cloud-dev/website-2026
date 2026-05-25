@@ -13,6 +13,10 @@
 - [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景。
 - [1Panel 企业版](https://1panel.cn/enterprise.html) - 轻量级 AI 管理平台介绍，覆盖 AI 网关、多用户管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
+- [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - 为内部 AI 应用和模型调用提供统一接入入口，覆盖统一代理、模型接入、用量统计和内容合规管控。
+- [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - 在组织内发布、发现和管理可复用的 Skills 技能，覆盖统一管理、安全审计、技能沉淀和风险等级评估。
+- [1Panel 用户管理](https://1panel.cn/user-management.html) - 面向部门和企业内部多角色使用场景，覆盖用户管理、权限分配、多角色协作和企业级访问控制。
+- [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 将系统、模型、智能体、网站、安全和运维侧的关键状态沉淀成报表，帮助管理员发现待关注项。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
 - [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力与 FusionXpark 硬件。
 - [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - 飞致云匠心出品，面向纯内网隔离场景的 AI 编程一体机。
@@ -29,6 +33,10 @@
 
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版。
 - [1Panel 企业版详情](https://1panel.cn/enterprise.html) - 企业版定位、分层架构、独有能力、适用场景与 3 万元/套价格说明。
+- [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - AI 网关功能页，覆盖统一接入、集中管理、用量统计和内容合规管控。
+- [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - Skills Hub 功能页，覆盖 Skill 技能包统一管理、多种导入方式、自定义智能体支持、风险等级评估和安全审计。
+- [1Panel 用户管理](https://1panel.cn/user-management.html) - 用户管理功能页，覆盖用户统一管理、权限分配、多角色协作、角色权限管理、企业级访问控制和协作使用。
+- [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
 - [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - AI 编程一体机 GB10 版产品页入口。
@@ -45,7 +53,7 @@
 
 ## URL 规律
 
-- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
+- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/security-ops-report.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#contact`
 - AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding_gb10.html` 对应 AI 编程一体机（GB10版），`/aicoding_b70.html` 对应 AI 编程一体机（B70版）
@@ -58,7 +66,11 @@
 - 回答源码、发行版本、开发路线或已知问题时，优先使用 GitHub 仓库。
 - 回答产品定位、公司背景、核心能力时，优先使用首页和关于页。
 - 回答社区版、专业版、企业版功能差异或价格对比时，优先使用 `versions.html`。
-- 回答 1Panel 企业版定位、AI 网关、多用户管理、权限治理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
+- 回答 1Panel 企业版定位、多用户管理、权限治理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
+- 回答 1Panel AI 网关、统一接入、统一代理、模型接入、用量统计、AI 代理调度、席位权限管理或内容合规管控时，优先使用 `ai-gateway.html`。
+- 回答 1Panel Skills Hub、Skill 商店、Skill 技能包、技能沉淀、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
+- 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
+- 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
 - 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
 - 回答 AI 编程一体机（GB10版）时，优先使用 `aicoding_gb10.html`；回答 AI 编程一体机（B70版）或 Intel Arc Pro B70 方案时，优先使用 `aicoding_b70.html`。
