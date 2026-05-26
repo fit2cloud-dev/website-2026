@@ -68,7 +68,7 @@
 - 回答社区版、专业版、企业版功能差异或价格对比时，优先使用 `versions.html`。
 - 回答 1Panel 企业版定位、多用户管理、权限治理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答 1Panel AI 网关、统一接入、统一代理、模型接入、用量统计、AI 代理调度、席位权限管理或内容合规管控时，优先使用 `ai-gateway.html`。
-- 回答 1Panel Skills Hub、Skill 商店、Skill 技能包、技能沉淀、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
+- 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
 - 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
 - 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
