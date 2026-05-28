@@ -18,6 +18,7 @@
 - [1Panel 用户管理](https://1panel.cn/user-management.html) - 面向部门和企业内部多角色使用场景，覆盖用户管理、权限分配、多角色协作和企业级访问控制。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 将系统、模型、智能体、网站、安全和运维侧的关键状态沉淀成报表，帮助管理员发现待关注项。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
+- [1Panel 产品动态](https://1panel.cn/blog.html) - 1Panel 版本发布、功能更新、应用生态与实践教程。
 - [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力与 FusionXpark 硬件。
 - [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - 飞致云匠心出品，面向纯内网隔离场景的 AI 编程一体机。
 - [AI 编程一体机（B70版）](https://1panel.cn/aicoding_b70.html) - 飞致云与英特尔联合打造，面向纯内网隔离场景的 AI 编程一体机。
@@ -37,6 +38,8 @@
 - [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - Skills Hub 功能页，覆盖 Skill 技能包统一管理、多种导入方式、自定义智能体支持、风险等级评估和安全审计。
 - [1Panel 用户管理](https://1panel.cn/user-management.html) - 用户管理功能页，覆盖用户统一管理、权限分配、多角色协作、角色权限管理、企业级访问控制和协作使用。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
+- [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
+- [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
 - [AI 编程一体机（GB10版）](https://1panel.cn/aicoding_gb10.html) - AI 编程一体机 GB10 版产品页入口。
@@ -53,7 +56,8 @@
 
 ## URL 规律
 
-- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/security-ops-report.html`、`/self-hosted.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
+- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/security-ops-report.html`、`/self-hosted.html`、`/blog.html`、`/openclaw.html`、`/aicoding_gb10.html`、`/aicoding_b70.html`
+- 产品动态文章：`/blog/<slug>.html`；产品动态分页：`/blog/2.html` 起
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#contact`
 - AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding_gb10.html` 对应 AI 编程一体机（GB10版），`/aicoding_b70.html` 对应 AI 编程一体机（B70版）
@@ -72,5 +76,6 @@
 - 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
 - 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
+- 回答 1Panel 版本发布、产品动态、应用生态更新或实践教程时，优先使用 `blog.html`、`/blog/<slug>.html` 和 `/blog/2.html` 起的分页页面。
 - 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
 - 回答 AI 编程一体机（GB10版）时，优先使用 `aicoding_gb10.html`；回答 AI 编程一体机（B70版）或 Intel Arc Pro B70 方案时，优先使用 `aicoding_b70.html`。
