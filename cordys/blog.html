@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cordys CRM 产品动态 - 版本发布、功能更新与实践教程</title>
+        <meta name="description" content="关注 Cordys CRM 版本发布、功能更新、AI CRM 实践教程与产品里程碑，了解开源 AI CRM 的最新进展。" />
+        <meta name="keywords" content="Cordys CRM 产品动态,Cordys CRM 版本发布,Cordys CRM 功能更新,AI CRM 实践教程,开源 CRM,CRM Skills,MaxKB,SQLBot" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta name="theme-color" content="#02a6ab" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="icon" href="./images/favicon.png" />
+        <link rel="apple-touch-icon" href="./images/favicon.png" />
+        <link rel="canonical" href="https://cordys.cn/blog.html" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta property="og:site_name" content="Cordys CRM" />
+        <meta property="og:title" content="Cordys CRM 产品动态" />
+        <meta property="og:description" content="关注 Cordys CRM 版本发布、功能更新、AI CRM 实践教程与产品里程碑，了解开源 AI CRM 的最新进展。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cordys.cn/blog.html" />
+        <meta property="og:image" content="https://cordys.cn/images/blog/default.png" />
+        <meta property="og:image:alt" content="Cordys CRM 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cordys CRM 产品动态" />
+        <meta name="twitter:description" content="关注 Cordys CRM 版本发布、功能更新、AI CRM 实践教程与产品里程碑，了解开源 AI CRM 的最新进展。" />
+        <meta name="twitter:image" content="https://cordys.cn/images/blog/default.png" />
+        <meta name="twitter:image:alt" content="Cordys CRM 产品动态" />
+        <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://fit2cloud.com/#organization","name":"FIT2CLOUD 飞致云","url":"https://fit2cloud.com/","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},{"@type":"WebSite","@id":"https://cordys.cn/#website","url":"https://cordys.cn/","name":"Cordys CRM","inLanguage":"zh-CN","publisher":{"@id":"https://fit2cloud.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://cordys.cn/blog.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://cordys.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://cordys.cn/blog.html"}]},{"@type":["CollectionPage","Blog"],"@id":"https://cordys.cn/blog.html#webpage","url":"https://cordys.cn/blog.html","name":"Cordys CRM 产品动态","description":"关注 Cordys CRM 版本发布、功能更新、AI CRM 实践教程与产品里程碑，了解开源 AI CRM 的最新进展。","inLanguage":"zh-CN","isPartOf":{"@id":"https://cordys.cn/#website"},"publisher":{"@id":"https://fit2cloud.com/#organization"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://cordys.cn/images/blog/default.png"}},{"@type":"ItemList","@id":"https://cordys.cn/blog.html#itemlist","itemListElement":[{"@type":"ListItem","position":1,"url":"https://cordys.cn/blog/approval-flow-v1-7-0.html","name":"新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本"},{"@type":"ListItem","position":2,"url":"https://cordys.cn/blog/cordys-skills-release.html","name":"速来体验 | Cordys CRM Skills技能正式发布"},{"@type":"ListItem","position":3,"url":"https://cordys.cn/blog/order-management-functions-v1-6-0.html","name":"新增订单管理模块、计算组件函数功能增强，Cordys CRM发布v1.6.0版本"},{"@type":"ListItem","position":4,"url":"https://cordys.cn/blog/contract-payment-invoice-v1-5-0.html","name":"合同模块新增回款记录、工商抬头管理和发票记录功能，Cordys CRM发布v1.5.0版本"},{"@type":"ListItem","position":5,"url":"https://cordys.cn/blog/contract-quote-tender-v1-4-0.html","name":"新增合同模块与报价功能，集成嵌入“大单网”标讯平台，Cordys CRM发布v1.4.0版本"},{"@type":"ListItem","position":6,"url":"https://cordys.cn/blog/sqlbot-sales-analytics.html","name":"操作教程 | 在Cordys CRM中接入SQLBot开源智能问数系统，实现销售智能问数"},{"@type":"ListItem","position":7,"url":"https://cordys.cn/blog/maxkb-sales-agents.html","name":"操作教程 | 在Cordys CRM中接入MaxKB，搭建各类销售管理智能体"},{"@type":"ListItem","position":8,"url":"https://cordys.cn/blog/open-source-ai-crm.html","name":"Cordys CRM正式开源，AI驱动客户关系管理加速演进"},{"@type":"ListItem","position":9,"url":"https://cordys.cn/blog/downloads-100000.html","name":"喜报丨Cordys CRM全网累计下载量突破100,000次！"}]}]}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TWT2BFLFM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-3TWT2BFLFM');
+        </script>
+    </head>
+    <body>
+        <div class="top-bar" id="top-bar">
+            <div class="top-bar-container">
+                <div class="top-bar-left">
+                    <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                        <img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" style="height: 20px; width: auto" />
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-dropdown" id="topBarDropdown">
+                        <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span class="dropdown-arrow">▼</span></button>
+                        <div class="top-bar-dropdown-content" id="dropdownContent">
+                            <a href="https://1panel.cn" class="top-bar-dropdown-item"> <strong>1Panel</strong> - 现代化、开源的 Linux 面板 </a>
+                            <a href="https://cordys.cn/" class="top-bar-dropdown-item"> <strong>Cordys</strong> - 新一代的开源 AI CRM 系统 </a>
+                            <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item"> <strong>JumpServer</strong> - 广受欢迎的开源堡垒机 </a>
+                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item"> <strong>MaxKB</strong> - 强大易用的企业级智能体平台 </a>
+                            <a href="https://dataease.cn/" class="top-bar-dropdown-item"> <strong>DataEase</strong> - 人人可用的开源 BI 工具 </a>
+                            <a href="https://sqlbot.org/" class="top-bar-dropdown-item"> <strong>SQLBot</strong> - 基于大模型的开源智能问数系统 </a>
+                            <a href="https://metersphere.io/" class="top-bar-dropdown-item"> <strong>MeterSphere</strong> - 新一代的开源持续测试工具 </a>
+                            <a href="https://halo.run/" class="top-bar-dropdown-item"> <strong>Halo</strong> - 强大易用的开源建站工具 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__brand">
+                        <a href="./index.html" class="nav__logo">
+                            <img src="images/favicon.png" alt="Cordys CRM Logo" style="height: 48px; margin-right: 0.5em" />
+                            <span class="logo__text">Cordys CRM</span>
+                        </a>
+                    </div>
+                    <div class="nav__center">
+                        <a href="./download/introduce-cordys_2026.pdf" target="_blank" class="nav__link" rel="noopener noreferrer">产品介绍</a>
+                        <a href="./blog.html" class="nav__link nav__link--active">产品动态</a>
+                        <a href="https://community.fit2cloud.com/#/products/cordys-crm/downloads" target="_blank" class="nav__link" rel="noopener noreferrer">免费下载</a>
+                        <a href="https://cordys.cn/docs/" target="_blank" class="nav__link" rel="noopener noreferrer">在线文档</a>
+                        <a href="https://fit2cloud.com/about/index.html" target="_blank" class="nav__link" rel="noopener noreferrer">关于飞致云</a>
+                    </div>
+                    <div class="nav__right">
+                        <a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" class="nav__button nav__button--outline" rel="noopener noreferrer">代码仓库</a>
+                        <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="nav__button nav__button--primary" rel="noopener noreferrer">预约演示</a>
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle" aria-label="展开导航" role="button" tabindex="0">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="blog-page">
+            <section class="blog-hero">
+                <div class="container">
+                    <div class="blog-hero__content">
+                        <h1 class="blog-hero__title">关注 AI CRM 的每一次能力演进</h1>
+                        <p class="blog-hero__subtitle">收录 Cordys CRM 版本发布、功能更新、AI 集成实践和产品里程碑，帮助你快速了解开源 AI CRM 的最新进展。</p>
+                        <div class="blog-hero__stats">
+                            <div>
+                                <strong>9</strong>
+                                <span>篇文章</span>
+                            </div>
+                            <div>
+                                <strong>2026</strong>
+                                <span>持续更新</span>
+                            </div>
+                            <div>
+                                <strong>AI CRM</strong>
+                                <span>主题聚焦</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-list-section">
+                <div class="container">
+                    <div class="blog-list">
+                        <article class="blog-card">
+                            <a href="blog/approval-flow-v1-7-0.html" class="blog-card__image">
+                                <img src="images/blog/cordys-01.png" alt="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2026-05-31">2026年05月31日</time>
+                                <h2><a href="blog/approval-flow-v1-7-0.html">新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本</a></h2>
+                                <p>首页新增我的待办功能。</p>
+                                <a href="blog/approval-flow-v1-7-0.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/cordys-skills-release.html" class="blog-card__image">
+                                <img src="images/blog/cordys-02.jpg" alt="速来体验 | Cordys CRM Skills技能正式发布" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2026-04-08">2026年04月08日</time>
+                                <h2><a href="blog/cordys-skills-release.html">速来体验 | Cordys CRM Skills技能正式发布</a></h2>
+                                <p>Cordys CRM Skills 将线索、商机、合同和回款等销售数据封装为 AI 可调用技能，让用户通过自然语言完成查询与管理，提升销售效率。</p>
+                                <a href="blog/cordys-skills-release.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/order-management-functions-v1-6-0.html" class="blog-card__image">
+                                <img src="images/blog/cordys-03.png" alt="新增订单管理模块、计算组件函数功能增强，Cordys CRM发布v1.6.0版本" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2026-03-27">2026年03月27日</time>
+                                <h2><a href="blog/order-management-functions-v1-6-0.html">新增订单管理模块、计算组件函数功能增强，Cordys CRM发布v1.6.0版本</a></h2>
+                                <p>订单状态流功能支持配置订单全生命周期状态。</p>
+                                <a href="blog/order-management-functions-v1-6-0.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/contract-payment-invoice-v1-5-0.html" class="blog-card__image">
+                                <img src="images/blog/cordys-04.png" alt="合同模块新增回款记录、工商抬头管理和发票记录功能，Cordys CRM发布v1.5.0版本" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2026-02-01">2026年02月01日</time>
+                                <h2><a href="blog/contract-payment-invoice-v1-5-0.html">合同模块新增回款记录、工商抬头管理和发票记录功能，Cordys CRM发布v1.5.0版本</a></h2>
+                                <p>工商信息支持与企查查系统对接。</p>
+                                <a href="blog/contract-payment-invoice-v1-5-0.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/contract-quote-tender-v1-4-0.html" class="blog-card__image">
+                                <img src="images/blog/cordys-05.png" alt="新增合同模块与报价功能，集成嵌入“大单网”标讯平台，Cordys CRM发布v1.4.0版本" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2025-12-19">2025年12月19日</time>
+                                <h2><a href="blog/contract-quote-tender-v1-4-0.html">新增合同模块与报价功能，集成嵌入“大单网”标讯平台，Cordys CRM发布v1.4.0版本</a></h2>
+                                <p>合同模块中新增回款计划功能，产品模块中新增价格表功能。</p>
+                                <a href="blog/contract-quote-tender-v1-4-0.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/sqlbot-sales-analytics.html" class="blog-card__image">
+                                <img src="images/blog/cordys-06.png" alt="操作教程 | 在Cordys CRM中接入SQLBot开源智能问数系统，实现销售智能问数" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2025-12-18">2025年12月18日</time>
+                                <h2><a href="blog/sqlbot-sales-analytics.html">操作教程 | 在Cordys CRM中接入SQLBot开源智能问数系统，实现销售智能问数</a></h2>
+                                <p>让 CRM 系统快速拥有智能问数能力。</p>
+                                <a href="blog/sqlbot-sales-analytics.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/maxkb-sales-agents.html" class="blog-card__image">
+                                <img src="images/blog/cordys-07.png" alt="操作教程 | 在Cordys CRM中接入MaxKB，搭建各类销售管理智能体" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2025-11-28">2025年11月28日</time>
+                                <h2><a href="blog/maxkb-sales-agents.html">操作教程 | 在Cordys CRM中接入MaxKB，搭建各类销售管理智能体</a></h2>
+                                <p>快速构建线索智能创建、商机智能跟进、智能报价等智能体。</p>
+                                <a href="blog/maxkb-sales-agents.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/open-source-ai-crm.html" class="blog-card__image">
+                                <img src="images/blog/cordys-08.jpg" alt="Cordys CRM正式开源，AI驱动客户关系管理加速演进" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2025-11-06">2025年11月06日</time>
+                                <h2><a href="blog/open-source-ai-crm.html">Cordys CRM正式开源，AI驱动客户关系管理加速演进</a></h2>
+                                <p>连接客户，缔造长期价值。</p>
+                                <a href="blog/open-source-ai-crm.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+
+                        <article class="blog-card">
+                            <a href="blog/downloads-100000.html" class="blog-card__image">
+                                <img src="images/blog/cordys-09.jpg" alt="喜报丨Cordys CRM全网累计下载量突破100,000次！" loading="lazy" />
+                            </a>
+                            <div class="blog-card__body">
+                                <time datetime="2025-09-22">2025年09月22日</time>
+                                <h2><a href="blog/downloads-100000.html">喜报丨Cordys CRM全网累计下载量突破100,000次！</a></h2>
+                                <p>Cordys CRM 公测已开启，欢迎体验并反馈。</p>
+                                <a href="blog/downloads-100000.html" class="blog-card__link">阅读全文</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p>
+                        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer"><span style="color: white">浙ICP备14038283号-11</span></a>
+                    </p>
+                    <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
