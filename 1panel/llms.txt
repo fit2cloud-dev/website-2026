@@ -40,6 +40,7 @@
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
 - [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
+- [2026 年常用 AI 网关产品盘点](https://1panel.cn/blog/ai-gateway-products-2026.html) - 对比 New API、Cloudflare AI Gateway、1Panel AI 网关、LiteLLM 和 OpenRouter 的核心优势与适用场景。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 介绍 1Panel AI 编程一体机（B70版）的软硬件配置、模型能力与内网 AI 编程场景。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
