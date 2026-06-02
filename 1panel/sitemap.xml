@@ -218,7 +218,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-1-4/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增QQ频道与vLLM管理功能，1Panel v2.1.4版本发布</image:title>
     </image:image>
   </url>
@@ -228,7 +228,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-1-2/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-8/cover.png</image:loc>
       <image:title>智能体支持能力持续增强，应用商店体验升级，1Panel v2.1.2版本发布</image:title>
     </image:image>
   </url>
@@ -338,7 +338,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-0-16/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-0/cover.jpg</image:loc>
       <image:title>支持IP证书签发、数据库TCP代理，1Panel v2.0.16版本正式发布</image:title>
     </image:image>
   </url>
@@ -358,7 +358,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/sec-2025-12-08/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/sec-2026-01-17/cover.jpg</image:loc>
       <image:title>重要通知丨1Panel漏洞通知及修复方案（1P-2025.12.08）</image:title>
     </image:image>
   </url>
@@ -398,7 +398,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-0-10/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-8/cover.png</image:loc>
       <image:title>功能持续优化，应用商店新增CRM分类，1Panel v2.0.10版本正式发布</image:title>
     </image:image>
   </url>
@@ -408,7 +408,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/sqlbot/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：SQLBot开源智能问数系统</image:title>
     </image:image>
   </url>
@@ -418,7 +418,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/sec-2025-08-01/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/sec-2026-01-17/cover.jpg</image:loc>
       <image:title>重要通知丨1Panel漏洞通知及修复方案（1P-2025.08.01）</image:title>
     </image:image>
   </url>
@@ -438,7 +438,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-0-5/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-0/cover.jpg</image:loc>
       <image:title>支持MySQL、PostgreSQL和Redis集群部署，1Panel开源面板v2.0.5版本发布</image:title>
     </image:image>
   </url>
@@ -448,7 +448,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/maxkb-v2/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-0/cover.jpg</image:loc>
       <image:title>速来体验 | 1Panel应用商店上新MaxKB V2社区版本</image:title>
     </image:image>
   </url>
@@ -458,7 +458,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-0-3/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-0/cover.jpg</image:loc>
       <image:title>多项功能优化与改进，1Panel开源面板v2.0.3版本发布</image:title>
     </image:image>
   </url>
@@ -468,7 +468,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v2-release/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-0/cover.jpg</image:loc>
       <image:title>速来体验 | 1Panel V2版本正式发布！</image:title>
     </image:image>
   </url>
@@ -478,7 +478,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/dbhub/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：DBHub通用数据库网关</image:title>
     </image:image>
   </url>
@@ -488,7 +488,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/beszel/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Beszel轻量级服务器监控平台</image:title>
     </image:image>
   </url>
@@ -498,7 +498,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/openvpn/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：OpenVPN开源VPN守护进程</image:title>
     </image:image>
   </url>
@@ -528,7 +528,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-10-26-lts/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增Ollama模型管理及GPU监控，1Panel开源面板v1.10.26 LTS版本发布</image:title>
     </image:image>
   </url>
@@ -548,7 +548,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/wordpress/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：WordPress开源博客软件和内容管理系统</image:title>
     </image:image>
   </url>
@@ -558,7 +558,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/halo/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Halo开源建站工具</image:title>
     </image:image>
   </url>
@@ -588,7 +588,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/maxkb/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：MaxKB开源知识库问答系统</image:title>
     </image:image>
   </url>
@@ -608,7 +608,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-10-20-lts/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增Python运行环境、支持病毒扫描和计划任务短信告警，1Panel开源面板v1.10.20 LTS版本发布</image:title>
     </image:image>
   </url>
@@ -618,7 +618,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/metersphere/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：MeterSphere开源持续测试工具</image:title>
     </image:image>
   </url>
@@ -628,7 +628,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/bytebase/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Bytebase开源数据库DevOps解决方案</image:title>
     </image:image>
   </url>
@@ -638,7 +638,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/kubepi/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：KubePi开源Kubernetes管理面板</image:title>
     </image:image>
   </url>
@@ -648,7 +648,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/screego/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Screego开源屏幕共享工具</image:title>
     </image:image>
   </url>
@@ -658,7 +658,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/sec-2024-07-20/cover.jpg</image:loc>
+      <image:loc>https://1panel.cn/images/blog/sec-2026-01-17/cover.jpg</image:loc>
       <image:title>重要通知丨1Panel漏洞通知及修复方案（1P-2024.07.20）</image:title>
     </image:image>
   </url>
@@ -688,7 +688,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/bitwarden/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Bitwarden开源密码管理器</image:title>
     </image:image>
   </url>
@@ -698,7 +698,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/memos/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Memos笔记服务</image:title>
     </image:image>
   </url>
@@ -708,7 +708,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-10-10/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增FTP功能、支持添加Redis远程数据库，专业版新增网站监控和黑金主题，1Panel开源面板v1.10.10版本发布</image:title>
     </image:image>
   </url>
@@ -728,7 +728,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/code-server/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：code-server</image:title>
     </image:image>
   </url>
@@ -738,7 +738,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/uptime-kuma/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Uptime Kuma</image:title>
     </image:image>
   </url>
@@ -748,7 +748,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/frp/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐： frp内网穿透工具</image:title>
     </image:image>
   </url>
@@ -758,7 +758,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/dataease/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：DataEase开源数据可视化分析工具</image:title>
     </image:image>
   </url>
@@ -768,7 +768,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/nginx-proxy/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：Nginx Proxy Manager</image:title>
     </image:image>
   </url>
@@ -798,7 +798,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/qinglong/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/moltbot/cover.png</image:loc>
       <image:title>1Panel应用推荐：青龙定时任务管理平台</image:title>
     </image:image>
   </url>
@@ -828,7 +828,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-9-3/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增PostgreSQL数据库管理功能，1Panel开源面板v1.9.3发布</image:title>
     </image:image>
   </url>
@@ -858,7 +858,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-9-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增工具箱管理功能、重构网站证书管理功能，1Panel开源面板v1.9.0发布</image:title>
     </image:image>
   </url>
@@ -878,7 +878,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/comments-2023-10/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/comments-2023-11/cover.png</image:loc>
       <image:title>10月，1Panel开源面板项目收到了这些评论</image:title>
     </image:image>
   </url>
@@ -888,7 +888,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-8-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-8/cover.png</image:loc>
       <image:title>新增文件收藏夹、回收站、终端等功能，1Panel开源面板v1.8.0发布</image:title>
     </image:image>
   </url>
@@ -898,7 +898,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/feedback/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/comments-2023-11/cover.png</image:loc>
       <image:title>参与有奖！1Panel开源面板社区反馈征集！</image:title>
     </image:image>
   </url>
@@ -908,7 +908,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/comments-2023-09/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/comments-2023-11/cover.png</image:loc>
       <image:title>9月，1Panel开源面板项目收到了这些评论</image:title>
     </image:image>
   </url>
@@ -918,7 +918,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-7-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增Node.js运行环境、新增系统缓存清理功能，1Panel开源面板v1.7.0发布</image:title>
     </image:image>
   </url>
@@ -928,7 +928,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/platform-comments/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/comments-2023-11/cover.png</image:loc>
       <image:title>当1Panel开源项目被社区平台推荐后，我们收获了这些评论</image:title>
     </image:image>
   </url>
@@ -938,7 +938,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-6-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增MariaDB数据库管理、支持多版本MySQL数据库共存，1Panel开源面板v1.6.0发布</image:title>
     </image:image>
   </url>
@@ -978,7 +978,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-4-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>新增进程管理、SSH会话管理功能，1Panel开源面板v1.4.0发布</image:title>
     </image:image>
   </url>
@@ -1018,7 +1018,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-3-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>面板安全能力持续增强，新增日志审计功能，1Panel开源面板v1.3.0发布</image:title>
     </image:image>
   </url>
@@ -1068,7 +1068,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://1panel.cn/images/blog/v1-1-0/cover.png</image:loc>
+      <image:loc>https://1panel.cn/images/blog/v2-1-9/cover.png</image:loc>
       <image:title>支持PHP运行环境和系统防火墙配置管理，1Panel开源面板v1.1.0发布</image:title>
     </image:image>
   </url>
