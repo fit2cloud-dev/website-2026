@@ -539,17 +539,104 @@ body {
 .footer {
   background: var(--text-primary);
   color: white;
-  padding: var(--spacing-lg) 0;
+  padding: 56px 0 28px;
   margin-top: var(--spacing-2xl);
 }
 
-.footer__content {
-  text-align: center;
+.footer__main {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.1fr) minmax(480px, 1.6fr);
+  gap: 56px;
+  align-items: start;
+}
+
+.footer__brand {
+  max-width: 360px;
+}
+
+.footer__brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer__brand-link:hover {
+  color: #ffffff;
+}
+
+.footer__brand-link img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer__desc {
+  margin: 18px 0 0;
+  color: #aebacc;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 32px;
+}
+
+.footer__title {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__links {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__links a {
+  color: #aebacc;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+  color: #ffffff;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 44px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer__text {
-  color: #CBD5E0;
+  margin: 0;
+  color: #aebacc;
   font-size: 14px;
+}
+
+.footer__beian {
+  color: #aebacc;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer__beian:hover {
+  color: #ffffff;
 }
 
 
@@ -947,11 +1034,11 @@ body {
 
 .article-content {
   margin-top: 38px;
-  padding: 34px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  background: var(--bg-primary);
-  box-shadow: var(--shadow-sm);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .article-content h2 {
@@ -1104,6 +1191,15 @@ body {
   .hero__title {
     font-size: 42px;
   }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer__brand {
+    max-width: 520px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1236,7 +1332,7 @@ body {
   }
 
   .article-content {
-    padding: 24px 18px;
+    padding: 0;
   }
 
   .article-content figure img,
@@ -1244,6 +1340,22 @@ body {
   .article-caption img,
   .article-cover {
     max-height: none;
+  }
+
+  .footer {
+    padding: 44px 0 24px;
+  }
+
+  .footer__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 24px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 34px;
   }
 }
 
@@ -1295,6 +1407,19 @@ body {
 
   .article-title {
     font-size: 26px;
+  }
+
+  .footer__brand-link {
+    font-size: 20px;
+  }
+
+  .footer__brand-link img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__nav {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1548,6 +1673,46 @@ body {
     font-size: 16px;
     color: var(--text-secondary);
     line-height: 1.7;
+}
+
+.product-overview {
+    max-width: 1180px;
+    margin: 56px auto 0;
+}
+
+.product-overview__header {
+    max-width: 720px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.product-overview__title {
+    margin: 0 0 12px;
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.product-overview__desc {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.product-overview__media {
+    overflow: hidden;
+    border: 1px solid rgba(2, 166, 171, 0.18);
+    border-radius: var(--radius-xl);
+    background: var(--bg-primary);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-overview__media img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* Section 3: Core Advantages */
@@ -1879,6 +2044,22 @@ body {
     
     .feature-card {
         padding: 32px 24px;
+    }
+
+    .product-overview {
+        margin-top: 40px;
+    }
+
+    .product-overview__header {
+        margin-bottom: 20px;
+    }
+
+    .product-overview__title {
+        font-size: 22px;
+    }
+
+    .product-overview__desc {
+        font-size: 15px;
     }
     
     /* Advantages Grid */
