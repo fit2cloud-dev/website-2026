@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /download/
+Allow: /images/
 
 Sitemap: https://cordys.cn/sitemap.xml

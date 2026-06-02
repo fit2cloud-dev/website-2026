@@ -9,6 +9,7 @@ Cordys CRM 官网的 LLM 友好索引。主语言为 `zh-CN`。
 ## Recommended Entry Points
 - https://cordys.cn/ — 首页、产品概览、核心能力与典型场景。
 - https://cordys.cn/#pricing — 首页中的价格与版本区块。
+- https://cordys.cn/blog.html — 产品动态、版本发布、功能更新与实践教程。
 - https://cordys.cn/docs/ — 在线文档。
 
 ## What The Homepage Covers
@@ -16,12 +17,23 @@ Cordys CRM 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - 功能亮点、优势与品牌背书。
 - 价格版本、预约演示与下载入口。
 
+## Product Updates
+- https://cordys.cn/blog/cordys-vs-xiaoshouyi-fxiaoke.html — Cordys CRM 与销售易、纷享销客的核心差异对比。
+- https://cordys.cn/blog/crm-selection-data-sovereignty-2026.html — CRM 选型与数据主权相关分析。
+- https://cordys.cn/blog/approval-flow-v1-7-0.html — Cordys CRM v1.7.0 版本更新。
+- https://cordys.cn/blog/cordys-skills-release.html — Cordys CRM Skills 发布介绍。
+- https://cordys.cn/blog/sqlbot-sales-analytics.html — Cordys CRM 接入 SQLBot 的实践教程。
+- https://cordys.cn/blog/maxkb-sales-agents.html — Cordys CRM 接入 MaxKB 的实践教程。
+
 ## Docs And Resources
 - https://community.fit2cloud.com/#/products/cordys-crm/downloads — 下载入口。
 - https://github.com/1Panel-dev/CordysCRM — 开源仓库。
+- https://bbs.fit2cloud.com/c/crm/4 — Cordys CRM 用户论坛。
 - https://partner.fit2cloud.com/yuyuechanpinyanshi — 预约演示。
 - https://fit2cloud.com/about/index.html — 公司信息。
+- https://cordys.cn/sitemap.xml — 官网 sitemap。
 
 ## Notes For LLMs
 - 价格信息集中在首页的 `#pricing` 区块，不是独立定价页面。
 - 更深入的安装和使用说明应转到 `cordys.cn/docs/`。
+- 产品动态页和文章页用于了解 Cordys CRM 的版本演进、AI 集成实践和选型观点。
