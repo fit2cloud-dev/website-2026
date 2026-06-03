@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布 - DataEase 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="新增支持数据填报、血缘分析和阈值告警功能。" />
+        <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link rel="canonical" href="https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布 - DataEase 产品动态" />
+        <meta property="og:description" content="新增支持数据填报、血缘分析和阈值告警功能。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html" />
+        <meta property="og:image" content="https://dataease.cn/images/blog/common/dataease-001.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/blog/common/dataease-001.png" />
+        <meta property="og:image:alt" content="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布 - DataEase 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="article:published_time" content="2024-09-09" />
+        <meta property="article:modified_time" content="2024-09-09" />
+        <meta property="og:updated_time" content="2024-09-09" />
+        <meta property="article:section" content="DataEase 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html" />
+        <meta name="twitter:title" content="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布 - DataEase 产品动态" />
+        <meta name="twitter:description" content="新增支持数据填报、血缘分析和阈值告警功能。" />
+        <meta name="twitter:image" content="https://dataease.cn/images/blog/common/dataease-001.png" />
+        <meta name="twitter:image:alt" content="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布 - DataEase 产品动态" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="../desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="de-article-main">
+            <article class="de-article container">
+                <nav class="de-article-breadcrumb" aria-label="面包屑">
+                    <a href="../index.html">首页</a>
+                    <span>/</span>
+                    <a href="../blog.html">产品动态</a>
+                </nav>
+                <header class="de-article-header">
+                    <h1>透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布</h1>
+                    <p>新增支持数据填报、血缘分析和阈值告警功能。</p>
+                    <time datetime="2024-09-09">2024年09月09日</time>
+                    <img src="../images/blog/common/dataease-001.png" alt="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布" loading="eager" />
+                </header>
+                <div class="de-article-content">
+                    <p>2024年9月9日，人人可用的开源BI工具DataEase正式发布v2.10 LTS（Long Term Support）版本。DataEase开源项目组将对v2.10 LTS版本提供长期支持，定期迭代发布小版本，持续进行问题修复更新并针对部分功能进行优化。欢迎广大用户升级使用v2.10 LTS版本。</p><p>DataEase v2.10 LTS版本的功能变动包括：<span><strong>数据集</strong></span>方面，支持直接导出数据集的数据，SQL片段支持注释，增强了复杂SQL的可读性；<span><strong>图表</strong></span>方面，新增矩阵热力图，色彩地图、气泡地图、符号地图支持提示气泡轮播展示，明细表支持直接展示图片，透视表支持自定义聚合公式，可以更加准确地展示汇总数据，K线图、指标卡、词云图等其他图表均有新功能和优化；<span><strong>系统设置</strong></span>方面，新增字体管理功能；<span><strong>仪表板和数据大屏</strong></span>方面，Tab组件支持轮播，并且在数据大屏中也可以使用Tab组件，图表和组件均支持传统边框设置，组件支持事件和3D设置。</p><p><span><strong>X-Pack增强包</strong></span>方面，新增血缘分析功能，用户可以清楚地了解到各类资源的使用情况。同时新增数据填报模块，该功能可以方便地收集用户数据，并将这些用户数据作为图表制作使用的数据集。新增阈值告警功能，可以针对图表的某个数据设置告警规则，防范错过重要数据。</p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p><span><strong>■ 图表：透视表支持自定义聚合公式</strong></span></p><p><span>在DataEase v2.10 LTS版本中，透视表支持自定义聚合公式，用户可以通过自行编写SQL语句来实现更加准确的聚合计算，使聚合结果更加符合预期。需要注意的是，自定义聚合公式会忽略原字段设置的聚合方式。</span></p><p><img src="../images/blog/release-20240909/dataease-039-01.png" alt="" loading="lazy" />▲图1 透视表自定义聚合公式</p><p><img src="../images/blog/release-20240909/dataease-039-02.png" alt="" loading="lazy" />▲图2 自定义聚合公式计算结果</p><p><span><strong>■ 系统设置：新增字体管理功能</strong></span></p><p>DataEase v2.10 LTS版本新增了“字体管理”功能模块，用户可以自行上传并使用更加符合仪表板和数据大屏主题的字体文件。此举可以有效提高仪表板的美观度，弥补了系统内置的字体风格可能和大屏主题不够匹配的问题。</p><p><img src="../images/blog/release-20240909/dataease-039-03.png" alt="" loading="lazy" />▲图3 系统设置中的“字体管理”页面</p><p>“字体管理”功能模块中的字体类型分为“系统内置”和“自定义”两类。系统内置字体不可删除，且内置字体默认不附带字体文件；自定义字体文件可以由用户自行上传。</p><p><img src="../images/blog/release-20240909/dataease-039-04.png" alt="" loading="lazy" />▲图4 更换系统默认字体</p><p>字体名称不允许修改且不允许重复，但允许删除和重新上传字库文件。将某种字体设置为默认字体后，除了会改变仪表板和数据大屏的字体以外，也会影响系统默认字体的显示。</p><p><img src="../images/blog/release-20240909/dataease-039-05.png" alt="" loading="lazy" />▲图5 图表制作过程中使用上传的自定义字体</p><p><span><strong>■ X-Pack增强包：新增血缘分析功能</strong></span></p><p>在v2.10 LTS版本中，DataEase新增了血缘分析功能。用户可以通过指定任一数据源、数据集或仪表板，对其进行关联性分析，DataEase将以表格或者关联图的形式把和指定资源相关联的资源进行统一展示。用户在删除数据源、数据集时，DataEase也会对即将删除的资源进行血缘分析，让用户可以清楚地知道删除操作后对数据与环境的影响面。</p><p><img src="../images/blog/release-20240909/dataease-039-06.png" alt="" loading="lazy" />▲图6 血缘关系脑图展示</p><p><img src="../images/blog/release-20240909/dataease-039-07.png" alt="" loading="lazy" />▲图7 删除资源时弹出的提示性血缘关系图</p><p><span><strong>■ X-Pack增强包：新增数据填报功能</strong></span></p><p>DataEase v2.10 LTS版本新增了数据填报模块，用户可以通过该模块创建数据表单和下发数据填报任务，以此来收集和整理日常工作中的业务数据。最终的业务数据可以在仪表板和数据大屏中进行相关的展示与分析。</p><p>拥有数据填报功能使用权限的用户可以创建需要收集的数据表单，指定需要其他用户填报的内容。当前支持的表单组件类型包括单行文本、多行文本、下拉框、单选框、多选框、日期、时间范围等。</p><p><img src="../images/blog/release-20240909/dataease-039-08.png" alt="" loading="lazy" />▲图8 数据填报表单创建页</p><p>被指定填写表单的用户可以在DataEase的“工作台”模块的“我的填报”列表中，对收到的填报任务进行处理。</p><p><img src="../images/blog/release-20240909/dataease-039-09.png" alt="" loading="lazy" />▲图9 “我的填报“列表页面</p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p><span>■</span> refactor（数据源）：升级Calcite依赖，支持低版本SQL Server数据源；</p><p><span>■</span> refactor（图表）：优化AntV图表加载速度（#11098）；</p><p><span>■</span> refactor（仪表板）：外部组件移入Tab时放入最底部，防止影响之前的布局（#11147）；</p><p><span>■</span> refactor（仪表板、数据大屏）：优化外部参数配置；</p><p><span>■</span> refactor（仪表板、数据大屏）：优化富文本数据集清理功能，查询组件禁用未选中的数据集的组件（#11324）；</p><p><span>■</span> refactor（仪表板、数据大屏）：优化对图片上传类型和大小的判断；</p><p><span>■</span> refactor（X-Pack）：定时报告支持接入企业微信和钉钉的消息通知；</p><p><span>■</span> refactor（X-Pack）：简化动态路径场景下CAS认证服务的配置流程；</p><p><span>■</span> refactor：调整MySQL镜像为 8.4.0-oraclelinux8 版本；</p><p><span>■</span> refactor：优化Token的过期提示信息（#11577）。</p><h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2><p><span>■</span> fix（数据源）：修复StarRocks数据源无法显示表字段备注的问题（#11433）；</p><p><span>■</span> fix（数据集）：修复SQL Server 2019使用自建Schema时，无法读取数据的问题（#11202）；</p><p><span>■</span> fix（数据集）：修复ClickHouse数据源时间格式化异常的问题（#11763）；</p><p><span>■</span> fix（数据集）：修复对已有新建计算字段的数据集进行关联，字段被全选后，刷新数据会出现报错的问题（#11263）；</p><p><span>■</span> fix（数据集）：修复数值字段超过18位时，数据集查询发生异常的问题（#9186）；</p><p><span>■</span> fix（图表）：修复从分组柱线图切换至堆叠柱线组合图后，堆叠项排序选项不正确的问题；</p><p><span>■</span> fix（图表）：修复堆叠柱线组合图下钻后，横轴发生错位的问题（#11587）；</p><p><span>■</span> fix（图表）：修复跨源情况下，关联日期字段出现错误的问题（#11339）；</p><p><span>■</span> fix（图表）：修复K线图未按照日期维度配置的格式进行显示的问题（#11354）；</p><p><span>■</span> fix（仪表板）：修复查询组件设置为默认值，和富文本一起放在Tab组件中，预览时查询条件不生效的问题（#11382）；</p><p><span>■</span> fix（仪表板）：修复导出图表数据时，点击“数据导出中心”入口按钮无响应，右侧未弹出“数据导出中心”页面的问题；</p><p><span>■</span> fix（仪表板）：修复从移动端查看公共链接时，Ticket无效的问题；</p><p><span>■</span> fix（数据大屏）：修复弹窗区设置过滤规则为默认参数，随后将规则作为外部参数传递给图表时，可能会发起两次请求的问题；</p><p><span>■</span> fix（数据大屏）：修复数据大屏空白处无法粘贴组件的问题（#11438）；</p><p><span>■</span> fix（仪表板、数据大屏）：修复因存在无数据集组件而导致数据大屏或者仪表板前端无法导出应用的问题；</p><p><span>■</span> fix（仪表板、数据大屏）：修复在使用应用模板创建的应用中，数据集计算字段无效的问题；</p><p><span>■</span> fix（数据大屏、仪表板）：修复导出的应用中没有包含数据集计算字段的问题（#11816）；</p><p><span>■</span> fix（数据大屏、仪表板）：修复嵌入式仪表板设置多个外部参数时，过滤条件叠加造成过滤结果不准确的问题；</p><p><span>■</span> fix（查询组件）：修复移动端日期范围组件查询异常的问题（#11756）；</p><p><span>■</span> fix（查询组件）：修复查询组件显示错位的问题（#11574）；</p><p><span>■</span> fix（系统设置）：修复自定义主题颜色没有同步的问题（#11340）；</p><p><span>■</span> fix（嵌入式）：修复iframe方式嵌入时，图表预览失败的问题；</p><p><span>■</span> fix（嵌入式）：修复嵌入式版由于无法访问数据导出中心，会导致无法导出图表数据的问题（#10529）；</p><p><span>■</span> fix（X-Pack）：修复重启服务会重置APISIX动态路径的问题；</p><p><span>■</span> fix（X-Pack）：修复仪表板加载时间过长，导致Token失效而退出登录的问题（#11267）；</p><p><span>■</span> fix（X-Pack）：修复社区版本启动有X-Pack报错信息的问题（#11317）；</p><p><span>■</span> fix（X-Pack）：调整同步管理中的SQL验证规则，不再限制特殊符号，而是仅验证是否包含非法操作。</p>
+                </div>
+            </article>
+        </main>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布","item":"https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html"}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布","description":"新增支持数据填报、血缘分析和阈值告警功能。","url":"https://dataease.cn/blog/post-0b18b461-dc2b-4a0a-8084-beee420102c5.html","datePublished":"2024-09-09","dateModified":"2024-09-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
+                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

@@ -620,3 +620,107 @@ a.text-primary:focus {
 /* html {
   filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
   -webkit-filter: grayscale(100%);} */
+
+/* DataEase desktop visual refresh */
+::-moz-selection {
+    background: rgba(10, 123, 224, 0.18) !important;
+    color: #0d2b4c !important;
+}
+
+::selection {
+    background: rgba(10, 123, 224, 0.18) !important;
+    color: #0d2b4c !important;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: translateY(-2px);
+}
+
+.btn.btn-icon {
+    min-height: auto;
+    padding: 0;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0a7be0 0%, #18b7ff 100%) !important;
+    border-color: #0a7be0 !important;
+    box-shadow: 0 12px 26px rgba(10, 123, 224, 0.26) !important;
+}
+
+.section {
+    background-size: cover;
+}
+
+.section.bg-light {
+    background: linear-gradient(180deg, #f8fbff 0%, #f2f7fc 100%) !important;
+}
+
+.contact-page .contact-page-container .content .card,
+.footer-page .footer-container {
+    border-radius: 8px;
+}
+
+.contact-page .contact-page-container .content .card {
+    border: 1px solid #dfe8f5;
+    box-shadow: 0 12px 32px rgba(24, 43, 77, 0.08);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-page .contact-page-container .content .card:hover {
+    border-color: rgba(10, 123, 224, 0.35);
+    box-shadow: 0 22px 54px rgba(10, 123, 224, 0.16);
+    transform: translateY(-4px);
+}
+
+.footer-page {
+    background: #121d2f;
+}
+
+.footer-page .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.footer-page .social-links a {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #d8e4f3;
+    display: inline-flex;
+    height: 38px;
+    justify-content: center;
+    width: 38px;
+}
+
+.footer-page .social-links a:hover {
+    background: #0a7be0;
+    border-color: #0a7be0;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.footer-page .social-links svg {
+    height: 18px;
+    width: 18px;
+}
+
+.footer-page .footer-container a:hover {
+    color: #ffffff;
+}
+
+.wechat-customer {
+    border: 1px solid rgba(10, 123, 224, 0.16);
+    border-radius: 8px;
+    box-shadow: 0 16px 38px rgba(24, 43, 77, 0.14);
+    overflow: hidden;
+}

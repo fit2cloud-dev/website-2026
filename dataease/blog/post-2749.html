@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩 - DataEase 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="王者荣耀中英雄数据与战斗数据的仪表板展示。" />
+        <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link rel="canonical" href="https://dataease.cn/blog/post-2749.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/post-2749.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/blog/post-2749.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩 - DataEase 产品动态" />
+        <meta property="og:description" content="王者荣耀中英雄数据与战斗数据的仪表板展示。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://dataease.cn/blog/post-2749.html" />
+        <meta property="og:image" content="https://dataease.cn/images/blog/common/dataease-128.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/blog/common/dataease-128.png" />
+        <meta property="og:image:alt" content="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩 - DataEase 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="article:published_time" content="2021-09-22" />
+        <meta property="article:modified_time" content="2021-09-22" />
+        <meta property="og:updated_time" content="2021-09-22" />
+        <meta property="article:section" content="DataEase 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/blog/post-2749.html" />
+        <meta name="twitter:title" content="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩 - DataEase 产品动态" />
+        <meta name="twitter:description" content="王者荣耀中英雄数据与战斗数据的仪表板展示。" />
+        <meta name="twitter:image" content="https://dataease.cn/images/blog/common/dataease-128.png" />
+        <meta name="twitter:image:alt" content="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩 - DataEase 产品动态" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="../desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="de-article-main">
+            <article class="de-article container">
+                <nav class="de-article-breadcrumb" aria-label="面包屑">
+                    <a href="../index.html">首页</a>
+                    <span>/</span>
+                    <a href="../blog.html">产品动态</a>
+                </nav>
+                <header class="de-article-header">
+                    <h1>仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩</h1>
+                    <p>王者荣耀中英雄数据与战斗数据的仪表板展示。</p>
+                    <time datetime="2021-09-22">2021年09月22日</time>
+                    <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩" loading="eager" />
+                </header>
+                <div class="de-article-content">
+                    <p>最近在逛掘金的时候发现Java分类的Github Trending榜单上出现了一个名为DataEase的项目。看名字原以为是一个大数据处理框架之类的项目，点进去看了一下，才发现原来是个开源的数据可视化平台，再到项目官网的Demo环境看了一眼，瞬间就来劲了，官方提供的几个示例仪表盘属实酷炫，秉着学无止境的态度，我准备上手体验一下。</p>
+
+
+
+<h2>项目简介</h2>
+
+
+
+<p>DataEase是开源的数据可视化分析工具，能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。</p>
+
+
+
+<p><strong>DataEase的功能：</strong></p>
+
+
+
+<p><strong>1. 图表展示：</strong>支持PC端、移动端及大屏;</p>
+
+
+
+<p><strong>2. 图表制作：</strong>支持丰富的图表类型（基于Apache ECharts实现）、支持拖拉拽方式快速制作仪表板;</p>
+
+
+
+<p><strong>3. 数据引擎：</strong>支持直连模式、本地模式（基于Apache Doris/Kettle实现）;</p>
+
+
+
+<p><strong>4. 数据连接：</strong>支持关系型数据库、Excel等文件、Hadoop等大数据平台、NoSQL等各种数据源。</p>
+
+
+
+<p><strong>DataEase的优势：</strong></p>
+
+
+
+<p><strong>1. 开源开放：</strong>零门槛，线上快速获取和安装；快速获取用户反馈、按月发布新版本；</p>
+
+
+
+<p><strong>2. 简单易用：</strong>极易上手，通过鼠标点击和拖拽即可完成分析；</p>
+
+
+
+<p><strong>3. 秒级响应：</strong>集成Apache Doris，超大数据量下秒级查询返回延时；</p>
+
+
+
+<p><strong>4. 安全分享：</strong>支持多种数据分享方式，确保数据安全。</p>
+
+
+
+<h2>实现流程</h2>
+
+
+
+<p>总的来说，这次使用DataEase开源数据可视化工具制作王者荣耀游戏数据的仪表板，主要分为以下几个步骤：</p>
+
+
+
+<p>1. 使用抓包工具Charles来获取接口；</p>
+
+
+
+<p>2. 将接口导入开源持续测试平台MeterSphere，测试接口，并提取所需参数，通过后置的Python脚本处理数据；</p>
+
+
+
+<p>3. 通过MeterSphere将处理完成后的数据保存至MySQL数据源；</p>
+
+
+
+<p>4. 通过开源数据可视化平台DataEase制作仪表板来展示游戏数据。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-01.png" alt="" loading="lazy" /></figure>
+
+
+
+<h2>确定展示内容</h2>
+
+
+
+<p>根据官网的介绍和文档，做了几个简单的图表之后，发现这个DataEase确实有点意思，点一点，拖拽一下就能做出简洁明了的数据面板。刚好最近公司在举办王者荣耀大赛，突然想到能不能用这个DataEase做一个展示个人战绩的大屏？心动不如行动，马上安排！</p>
+
+
+
+<p>关于环境搭建的部分，由于官网提供了一键安装部署的脚本，直接运行就可以，这边就不再展示安装过程了。</p>
+
+
+
+<p>然后根据我的理解，要展示一个玩家的战绩主要可以从两个方面入手，第一个是英雄数据，第二个是战斗数据。当然，如果能拿到一些有趣的数据的话也可以展示出来，比如皮肤数数量、各时间段胜率等。</p>
+
+
+
+<p>关于英雄数据的话，主要可以展示英雄的数量、类型分布还有战斗次数，从这几个数据就能看出玩家大致的技术类型，也就是常说的ADC、上单、打野、辅助、中单。关于战斗数据的话，主要就是展示玩家的战绩了，比如不同英雄类型的胜率、总体胜率、近期K/D/A和近期胜率等。</p>
+
+
+
+<h2>确定数据源</h2>
+
+
+
+<p>数据源我选择的是平时使用比较多的王者营地APP，因为上面的数据还是比较全面的。既然是使用APP作为数据源，就免不了要用抓包工具来获取数据了，所以在开始前需要做一些简单的准备工作。</p>
+
+
+
+<p><strong>1. 抓包工具Charles</strong></p>
+
+
+
+<p>这个工具应该很多人都用过，因为需要抓的接口都是走的Https协议，所以需要把Charles根证书导出来备用，如下图。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-02.jpg" alt="" loading="lazy" /></figure>
+
+
+
+<p><strong>2. 可抓Https包的安卓环境</strong></p>
+
+
+
+<p>谷歌在安卓7.0之后限制了自签名证书的使用限制，不过现在许多安卓模拟器都带了Root权限，还是有办法解决这个问题的。证书的安装可以参考这篇文章（<em>https://www.jianshu.com/p/561b5beeec22</em>），第二步那边我直接用“RE管理器”替代了。读写挂载和权限需注意下图中红圈部分。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-03.png" alt="" loading="lazy" /></figure>
+
+
+
+<h2>数据获取</h2>
+
+
+
+<p>我原本的思路是用Python模拟请求，然后将数据处理完成之后存到数据库中。目前需要的数据主要有三个：一个是账号的总体数据，一个是英雄数据，最后是战斗数据。</p>
+
+
+
+<p>不过，我了解到最近我司正在使用的开源测试平台MeterSphere既可以调试接口，又可以调用Python和SQL脚本，于是我就把整套流程都放在MeterSphere上完成了。</p>
+
+
+
+<p>获取账号信息和英雄信息的接口比较简单，这边主要需要说一下获取战斗信息的接口，因为这个接口和前面两个接口差别较大，除了主机地址不同之外，还涉及到分页。我这边使用全局环境变量加上循环控制来处理，详细内容如下：</p>
+
+
+
+<p>1. 首先转到自动化测试这边，创建一个场景；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-04.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>2. 在环境配置中，定义一个全局变量，名称设置为“lastTime”，因为这个分页接口使用的是时间戳作为分页的下标，如下图，值可以随意设置，我们在一开始会重置这个值；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-05.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>3. 然后添加一个Python类型的自定义脚本，在场景一开始就重置lastTime为0；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-06.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>4. 接着增加两个SQL脚本，分别是“建表”和“清空表”；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-07.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>5. 然后创建一个While类型的循环控制器，内容如下，表示的是当list变量不为空时，就一直循环，每次循环这个值都会变；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-08.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>6. 紧接着创建一个接口，地址为 <em>https://kohcamp.qq.com/game/morebattlelist</em>，具体内容如下，注意那个“lastTime”，每次脚本都会修改这个变量；</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-09.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>7. 最后，在这个接口下添加两个步骤。先是是参数提取，将战斗记录list和上次请求的lastTime提取出来存到变量中，然后在脚本中将数据处理完成后插入到数据库中，注意脚本最后一句“更新了全局的lastTime变量”。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-10.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>总体流程如下图，注意层级关系。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-11.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>获取到的部分数据如下：</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-12.png" alt="" loading="lazy" /></figure>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-13.png" alt="" loading="lazy" /></figure>
+
+
+
+<h2>表盘制作</h2>
+
+
+
+<p>根据一开始定的展示内容，结合获取到的数据，制作出以下7个表盘：</p>
+
+
+
+<p>■ <strong>玩家信息总览：</strong>主要展示玩家的总体游戏数据，参考王者营地APP。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-14.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>英雄游戏局数：</strong>展示玩家各个英雄上场的局数，包括总数、胜局和败局。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-15.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>英雄类型胜率：</strong>展示玩家各个类型的英雄的总体胜率。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-16.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>英雄总览：</strong>展示玩家英雄的总体数据，包括胜率、战力、皮肤数量等。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-17.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>英雄类型局数分布：</strong>展示各个类型的英雄的上场局数，这个可以看出玩家的技术类型。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-18.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>近期胜率：</strong>展示玩家最近的实力状态，包含了对局的数量。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-19.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>■ <strong>近期K/D/A：</strong>和近期胜率相结合可以反映出对局的状态，是Carry还是躺赢。</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-20.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>制作完成的仪表板如下：</p>
+
+
+
+<figure><img src="../images/blog/chart-20210922/dataease-169-21.png" alt="" loading="lazy" /></figure>
+                </div>
+            </article>
+        </main>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩","item":"https://dataease.cn/blog/post-2749.html"}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩","description":"王者荣耀中英雄数据与战斗数据的仪表板展示。","url":"https://dataease.cn/blog/post-2749.html","datePublished":"2021-09-22","dateModified":"2021-09-22","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
+                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

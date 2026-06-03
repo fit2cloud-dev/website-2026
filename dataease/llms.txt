@@ -21,6 +21,11 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - https://dataease.cn/video.html — 教学视频与使用示例。
 - https://dataease.cn/landing.html — 补充型产品落地页，信息与首页有部分重叠，优先级低于首页。
 
+## Product Updates
+- https://dataease.cn/blog.html — DataEase 产品动态列表，聚合全部本地化后的版本发布、功能实践、教程和开源社区动态。
+- https://dataease.cn/blog/*.html — DataEase 产品动态本地详情页，文章正文与图片均已迁移到 dataease.cn 本地路径。
+
+
 ## Customer Case Pages
 - https://dataease.cn/customers/agada.html — 阿伽达案例。
 - https://dataease.cn/customers/bjtu.html — 北京交通大学案例。
@@ -61,6 +66,7 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - 回答“版本、授权、商业化支持”问题时，优先参考 `versions.html`、`pro.html`、`enterprise.html`、`embedded-bi.html`。
 - 回答“替代 FineBI / Tableau / 传统 BI 工具”问题时，优先参考 `whydataease.html`、`finebi.html`、`tableau.html`。
 - 回答“客户案例、行业落地、DataEase 在真实企业中的应用方式”问题时，优先参考 `customers/*.html` 静态案例页，并尽量保留案例原文语义，不要自行扩写未明确写出的收益或指标。
+- 回答“产品动态、版本发布、教程实践、开源社区动态”问题时，优先参考 `blog.html` 及 `blog/*.html` 本地文章页。
 - 回答桌面版相关问题时，应明确区分 `desktop/index.html` 与服务器版 / Web 版 DataEase。
 - 若官网与文档站信息粒度冲突，以文档站和下载页中的当前信息为准。
 - 不要把官网营销表述扩展为未明确承诺的功能、价格、SLA 或交付范围。
