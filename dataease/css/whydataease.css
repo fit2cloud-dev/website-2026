@@ -1,13 +1,44 @@
 .whydataease-page {
-    --wd-primary: #2563eb;
-    --wd-primary-dark: #1745b5;
-    --wd-secondary: #06b6d4;
-    --wd-dark: #102a43;
-    --wd-muted: #5f7086;
-    --wd-border: rgba(37, 99, 235, 0.12);
-    --wd-shadow: 0 24px 54px rgba(16, 42, 67, 0.08);
+    --wd-primary: #0a7be0;
+    --wd-primary-dark: #075fb0;
+    --wd-secondary: #18b7ff;
+    --wd-dark: #172033;
+    --wd-muted: #5d6f88;
+    --wd-border: rgba(10, 123, 224, 0.14);
+    --wd-shadow: 0 24px 54px rgba(24, 43, 77, 0.08);
     --wd-radius: 24px;
     background: #ffffff;
+}
+
+.whydataease-page::-moz-selection,
+.whydataease-page ::-moz-selection {
+    background: rgba(10, 123, 224, 0.18) !important;
+    color: #0d2b4c !important;
+}
+
+.whydataease-page::selection,
+.whydataease-page ::selection {
+    background: rgba(10, 123, 224, 0.18) !important;
+    color: #0d2b4c !important;
+}
+
+.whydataease-page #topnav {
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.94);
+    border-bottom: 1px solid rgba(223, 232, 245, 0.9);
+    box-shadow: 0 8px 26px rgba(24, 43, 77, 0.06);
+}
+
+.whydataease-page #topnav .logo .l-dark {
+    display: inline-block;
+}
+
+.whydataease-page #topnav .logo .l-light {
+    display: none;
+}
+
+.whydataease-page #topnav .navigation-menu.nav-light > li > a {
+    color: #34445c;
 }
 
 .whydataease-page #navigation .navigation-menu > li.active > a,
@@ -16,18 +47,30 @@
 }
 
 .whydataease-page #navigation .navigation-menu > li.active > a {
-    color: #ffffff !important;
     font-weight: 700;
     position: relative;
-    text-shadow: 0 4px 14px rgba(21, 63, 174, 0.32);
+    text-shadow: none;
+}
+
+.whydataease-page #topnav .navigation-menu.nav-light > li > .menu-arrow {
+    border-color: #34445c;
+}
+
+.whydataease-page #topnav .navigation-menu.nav-light > li:hover > .menu-arrow,
+.whydataease-page #topnav .navigation-menu.nav-light > li.active > .menu-arrow,
+.whydataease-page #topnav.nav-sticky .navigation-menu.nav-light > li:hover > .menu-arrow,
+.whydataease-page #topnav.nav-sticky .navigation-menu.nav-light > li.active > .menu-arrow {
+    border-color: var(--wd-primary) !important;
 }
 
 
 .wd-hero {
     background:
-        radial-gradient(circle at top right, rgba(6, 182, 212, 0.28), transparent 34%),
-        linear-gradient(135deg, #0d1b2a 0%, #12345a 48%, #1b5fbf 100%);
-    color: #ffffff;
+        radial-gradient(circle at 82% 18%, rgba(24, 183, 255, 0.2), transparent 30%),
+        radial-gradient(circle at 8% 16%, rgba(10, 123, 224, 0.14), transparent 28%),
+        linear-gradient(180deg, #f7fbff 0%, #eef7ff 100%);
+    border-bottom: 1px solid #dfe8f5;
+    color: var(--wd-dark);
     overflow: hidden;
     padding: 8.8rem 0 5.5rem;
     position: relative;
@@ -41,7 +84,7 @@
 }
 
 .wd-hero::before {
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(10, 123, 224, 0.08);
     height: 360px;
     right: -120px;
     top: -140px;
@@ -49,7 +92,7 @@
 }
 
 .wd-hero::after {
-    background: rgba(6, 182, 212, 0.12);
+    background: rgba(24, 183, 255, 0.1);
     bottom: -180px;
     height: 340px;
     left: -90px;
@@ -83,7 +126,7 @@
 }
 
 .wd-hero h1 {
-    color: #ffffff;
+    color: var(--wd-dark);
     font-size: clamp(1.75rem, 2.2vw, 2.6rem);
     font-weight: 700;
     line-height: 1.18;
@@ -91,8 +134,9 @@
 }
 
 .wd-hero .lead {
-    color: rgba(255, 255, 255, 0.84);
-    font-size: 1.12rem;
+    color: #34445c;
+    font-size: 1.14rem;
+    font-weight: 500;
     line-height: 1.8;
     margin-bottom: 1.8rem;
     max-width: 700px;
@@ -107,9 +151,10 @@
 
 .wd-hero-point {
     align-items: flex-start;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(10, 123, 224, 0.12);
     border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(24, 43, 77, 0.06);
     display: flex;
     gap: 0.95rem;
     padding: 1rem 1.1rem;
@@ -117,8 +162,9 @@
 
 .wd-hero-point-icon {
     align-items: center;
-    background: rgba(6, 182, 212, 0.16);
+    background: #e8f4ff;
     border-radius: 16px;
+    color: var(--wd-primary);
     display: inline-flex;
     flex-shrink: 0;
     height: 46px;
@@ -128,22 +174,24 @@
 
 .wd-hero-point-icon i,
 .wd-hero-point-icon svg {
-    color: #94f3ff;
+    color: var(--wd-primary);
     height: 21px;
     width: 21px;
 }
 
 .wd-hero-point strong {
-    color: #ffffff;
+    color: #101827;
     display: block;
     font-size: 0.98rem;
+    font-weight: 700;
     margin-bottom: 0.2rem;
 }
 
 .wd-hero-point span {
-    color: rgba(255, 255, 255, 0.68);
+    color: #42526a;
     display: block;
     font-size: 0.9rem;
+    font-weight: 500;
     line-height: 1.5;
 }
 
@@ -155,15 +203,15 @@
 
 .wd-hero-actions .btn-outline-light {
     background: #ffffff;
-    border-color: #ffffff;
-    color: var(--wd-primary-dark);
+    border-color: rgba(10, 123, 224, 0.24);
+    color: var(--wd-primary);
     font-weight: 700;
 }
 
 .wd-hero-actions .btn-outline-light:hover,
 .wd-hero-actions .btn-outline-light:focus {
-    background: var(--wd-secondary);
-    border-color: var(--wd-secondary);
+    background: var(--wd-primary);
+    border-color: var(--wd-primary);
     color: #ffffff;
 }
 
@@ -238,10 +286,10 @@
 }
 
 .wd-hero-card {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04));
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #ffffff;
+    border: 1px solid #dbe6f5;
     border-radius: 30px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 26px 60px rgba(10, 123, 224, 0.12);
     overflow: hidden;
     padding: 0.8rem;
     position: relative;
@@ -256,11 +304,12 @@
 
 .wd-hero-card .wd-float {
     align-items: center;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(10, 123, 224, 0.12);
     border-radius: 18px;
     bottom: 1.4rem;
-    box-shadow: 0 14px 30px rgba(9, 24, 18, 0.18);
-    color: #173128;
+    box-shadow: 0 14px 30px rgba(24, 43, 77, 0.12);
+    color: var(--wd-dark);
     display: inline-flex;
     gap: 0.8rem;
     max-width: calc(100% - 2.8rem);
@@ -288,7 +337,7 @@
 }
 
 .wd-hero-card .wd-float strong {
-    color: #173128;
+    color: var(--wd-dark);
     display: block;
     font-size: 0.98rem;
     margin-bottom: 0.15rem;
@@ -336,14 +385,14 @@
 
 .wd-stat-card i,
 .wd-stat-card svg {
-    color: #1b3028;
+    color: var(--wd-primary);
     height: 24px;
     margin-bottom: 0.45rem;
     width: 24px;
 }
 
 .wd-stat-value {
-    color: #1b3028;
+    color: var(--wd-dark);
     font-size: 2rem;
     font-weight: 700;
     line-height: 1;
@@ -1022,9 +1071,11 @@
 }
 
 .wd-cta-panel {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background:
+        radial-gradient(circle at 88% 18%, rgba(24, 183, 255, 0.28), transparent 28%),
+        linear-gradient(135deg, #075fb0 0%, #0a7be0 58%, #18a7ee 100%);
     border-radius: 30px;
-    box-shadow: 0 22px 46px rgba(29, 78, 216, 0.18);
+    box-shadow: 0 22px 46px rgba(10, 123, 224, 0.24);
     color: #ffffff;
     padding: 3rem 2rem;
     text-align: center;
@@ -1033,13 +1084,14 @@
 .wd-cta-panel h3 {
     color: #ffffff;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 0.9rem;
 }
 
 .wd-cta-panel p {
-    color: rgba(255, 255, 255, 0.88);
+    color: #eef7ff;
     font-size: 1.08rem;
+    font-weight: 500;
     line-height: 1.8;
     margin: 0 auto;
     max-width: 680px;

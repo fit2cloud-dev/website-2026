@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>操作教程｜如何将DataEase开源工具嵌入第三方系统？ - DataEase 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！" />
+        <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link rel="canonical" href="https://dataease.cn/blog/post-3882.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/post-3882.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/blog/post-3882.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="操作教程｜如何将DataEase开源工具嵌入第三方系统？ - DataEase 产品动态" />
+        <meta property="og:description" content="在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://dataease.cn/blog/post-3882.html" />
+        <meta property="og:image" content="https://dataease.cn/images/blog/common/dataease-125.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/blog/common/dataease-125.jpg" />
+        <meta property="og:image:alt" content="操作教程｜如何将DataEase开源工具嵌入第三方系统？ - DataEase 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="article:published_time" content="2022-09-15" />
+        <meta property="article:modified_time" content="2022-09-15" />
+        <meta property="og:updated_time" content="2022-09-15" />
+        <meta property="article:section" content="DataEase 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/blog/post-3882.html" />
+        <meta name="twitter:title" content="操作教程｜如何将DataEase开源工具嵌入第三方系统？ - DataEase 产品动态" />
+        <meta name="twitter:description" content="在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！" />
+        <meta name="twitter:image" content="https://dataease.cn/images/blog/common/dataease-125.jpg" />
+        <meta name="twitter:image:alt" content="操作教程｜如何将DataEase开源工具嵌入第三方系统？ - DataEase 产品动态" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="../desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="de-article-main">
+            <article class="de-article container">
+                <nav class="de-article-breadcrumb" aria-label="面包屑">
+                    <a href="../index.html">首页</a>
+                    <span>/</span>
+                    <a href="../blog.html">产品动态</a>
+                </nav>
+                <header class="de-article-header">
+                    <h1>操作教程｜如何将DataEase开源工具嵌入第三方系统？</h1>
+                    <p>在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！</p>
+                    <time datetime="2022-09-15">2022年09月15日</time>
+                    <img src="../images/blog/common/dataease-125.jpg" alt="操作教程｜如何将DataEase开源工具嵌入第三方系统？" loading="eager" />
+                </header>
+                <div class="de-article-content">
+                    <p><em>编者注：本文选自DataEase官方知识库。</em></p>
+
+
+
+<p><em>原文链接：<br />https://kb.fit2cloud.com/archives/122</em></p>
+
+
+
+<p>在企业日常的使用中，经常有将DataEase开源数据可视化分析平台嵌入到第三方系统的需求。这样一来，DataEase就可以作为第三方系统中的某个菜单项，在点击相关选项后即可直接打开DataEase页面，并进行相关操作。</p>
+
+
+
+<p>DataEase开源工具嵌入第三方系统的效果示意图如下：</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-01.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>本文主要分享如何通过单点登录和模拟登录两种方式进行接口对接，从而实现将DataEase嵌入到第三方系统的实际效果。为了方便描述，本文将所示例的第三方系统统一称为“A系统”。</p>
+
+
+
+<h2>方案概述</h2>
+
+
+
+<p>DataEase支持使用iframe嵌套到第三方系统中，关键问题在于如何统一两个系统的用户认证，即用户在A系统中打开DataEase系统时，无需再次登录，DataEase可以自动登录至A系统中的账户。目前有两种解决方案：即单点登录和模拟登录。</p>
+
+
+
+<p><strong>1.1 单点登录</strong></p>
+
+
+
+<p>使用支持OIDC或CAS协议的系统作为统一登录平台，A系统与DataEase全部对接到同一个单点平台，实现只需一次登录就可访问两个系统，即单点登录（Single Sign On，SSO)。</p>
+
+
+
+<p>单点登录方式是DataEase原生支持的用户登录集成方式，仅需修改前端iframe嵌套即可。使用单点登录的方式，用户可以使用同一个密码登录两个平台，DataEase中不存在的用户在登录时会自动创建。单点登录方式在配置和使用方面更加方便，是比较推荐的方式。</p>
+
+
+
+<p><strong>1.2 模拟登录</strong></p>
+
+
+
+<p>A系统后台请求DataEase的登录接口，将登录成功的Token写入Cookie中，以模拟用户登录的过程，省去用户自己输入密码登录的过程。</p>
+
+
+
+<p>有些情况下受限于业务系统，部分用户的第三方系统没有对接SSO系统，这种情况下可以使用模拟登录的方式，通过做一些开发实现想要的效果。</p>
+
+
+
+<h2>单点登录方式的实现过程</h2>
+
+
+
+<p><strong>2.1 流程描述</strong></p>
+
+
+
+<p>目前，DataEase开源数据可视化分析平台支持OIDC、CAS协议，如果DataEase与A系统均已对接同一个单点登录系统，那么通过单点登录方案集成嵌入DataEase的整体流程如下：</p>
+
+
+
+<p>1. 用户通过单点登录系统登录至A系统；</p>
+
+
+
+<p>2. 用户点击相应菜单项，访问DataEase系统；</p>
+
+
+
+<p>3. DataEase通过单点登录系统获取到当前登录用户信息，自动登录并重定向至DataEase首页；</p>
+
+
+
+<p>4. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-02.png" alt="" loading="lazy" /></figure>
+
+
+
+<p><strong>2.2 配置指南</strong></p>
+
+
+
+<p>1. 配置OIDC或CAS；</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-03.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>2. 默认登录方式修改为“OIDC”；</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-04.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>3. 单点登录配置好后，在A系统中使用iframe地址访问DataEase地址即可。</p>
+
+
+
+<h2>模拟登录方式的实现过程</h2>
+
+
+
+<p><strong>3.1 流程描述</strong></p>
+
+
+
+<p>1. 用户登录A系统；</p>
+
+
+
+<p>2. 用户在A系统中通过iframe访问A系统的模拟登录接口；</p>
+
+
+
+<p>3. A系统根据已登录的用户信息请求DataEase的用户查询接口，获取到DataEase系统中对应的用户ID；</p>
+
+
+
+<p>4. A系统根据用户ID调用DataEase的用户密码修改接口，修改用户密码；</p>
+
+
+
+<p>5. A系统调用DataEase的模拟登录接口获取Token；</p>
+
+
+
+<p>6. A系统将Token写入Cookie中，并重定向至DataEase页面（当浏览器Cookie中存在Token时，访问DataEase便不再需要认证）；</p>
+
+
+
+<p>7. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-05.png" alt="" loading="lazy" /></figure>
+
+
+
+<p><strong>3.2 开发指南</strong></p>
+
+
+
+<p>此方案需要A系统提供一个模拟登录接口，并且在登录前修改DataEase中的用户密码以保证模拟登录成功。由于模拟登录是使用Cookie来实现，所以需要保证A系统与DataEase处于同一个根域名下。</p>
+
+
+
+<p><strong>3.2.1 DataEase提供的接口</strong></p>
+
+
+
+<p>1. API认证方式</p>
+
+
+
+<p>DataEase接口调用时需要在请求头中传递accessKey和signature。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-06.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>其中accessKey为下图中的Access Key的值，Access Key和Secret Key获取方式如下图所示。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-07.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>signature为Access Key和Secrent Key拼接后使用AES加密计算出的结果，计算方式如下：</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-08.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>图示代码可参考此链接：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</em></p>
+
+
+
+<p>2. 用户查询接口</p>
+
+
+
+<p>由于修改用户密码接口需要使用用户ID，我们首先需要使用用户查询接口获取用户ID。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-09.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>其中operator的取值可参考源码，比如“eq”代表SQL中的“=”。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-10.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>field取值参考数据库中sys_user表的字段名，例如username、nick_name等。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-11.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>3. 修改用户密码接口</p>
+
+
+
+<p>通过用户密码修改接口，修改用户密码。此处请求参数中的userId为上一步返回值中获取到的userId。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-12.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>4. 登录接口</p>
+
+
+
+<p>使用登录接口可获取到Token，将Token放入浏览器Cookie中后访问DataEase便不再需要登录认证。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-13.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>登录接口中的password和username均需使用RSA加密，加密密钥取自DataEase源码中application.properties文件。</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-14.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>加密方式如下：</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-15.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>图示代码可参考此链接：</p>
+
+
+
+<p><a href="https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。" target="_blank" rel="noopener noreferrer">https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</a></p>
+
+
+
+<p><strong>3.2.2 嵌套对接示例代码</strong></p>
+
+
+
+<p>基于以上接口，我们就可以实现将DataEase嵌入第三方系统。我写了一个Demo示例（下称Demo系统）供大家参考：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo。</em></p>
+
+
+
+<p>使用此示例需注意以下事项：</p>
+
+
+
+<p>1. Demo系统必须与DataEase处于同一域名下；</p>
+
+
+
+<p>你可以通过修改本地hosts文件来实现，比如我进行测试时在/etc/hosts中添加了如下映射：</p>
+
+
+
+<shiki-code><pre><code>127.0.0.1 localhost.fit2cloud.com
+10.2.3.23 edu.fit2cloud.com</code></pre></shiki-code>
+
+
+
+<p>2. 启动前，需要修改Demo系统代码，填充DataEaseLoginController中的变量值；</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-16.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>3. 页面嵌套参考如下代码，iframe中的src配置为后端的模拟登录地址；</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-17.png" alt="" loading="lazy" /></figure>
+
+
+
+<p>4. 在A系统登出时，需清除Cookie，否则DataEase中的用户不会退出登录；</p>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-18.png" alt="" loading="lazy" /></figure>
+
+
+
+<figure><img src="../images/blog/tutorial-20220915/dataease-125-19.png" alt="" loading="lazy" /></figure>
+
+
+
+<h2>总结</h2>
+
+
+
+<p>DataEase支持使用iframe将系统嵌套到第三方系统中，同时DataEase还支持OIDC、CAS协议的单点登录系统的对接。通过单点登录或者模拟登录的方式，解决了两个系统用户认证的问题，从而实现了在第三方系统已登录时无需再次认证即可直接打开DataEase进行操作的效果。</p>
+                </div>
+            </article>
+        </main>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜如何将DataEase开源工具嵌入第三方系统？","item":"https://dataease.cn/blog/post-3882.html"}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜如何将DataEase开源工具嵌入第三方系统？","description":"在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！","url":"https://dataease.cn/blog/post-3882.html","datePublished":"2022-09-15","dateModified":"2022-09-15","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-125.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
+                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

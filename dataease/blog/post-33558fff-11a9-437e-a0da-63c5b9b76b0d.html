@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>模板学堂｜数据可视化仪表板大屏设计流程梳理 - DataEase 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="模板市场上新！带你了解仪表板设计流程！" />
+        <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link rel="canonical" href="https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="模板学堂｜数据可视化仪表板大屏设计流程梳理 - DataEase 产品动态" />
+        <meta property="og:description" content="模板市场上新！带你了解仪表板设计流程！" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html" />
+        <meta property="og:image" content="https://dataease.cn/images/blog/common/dataease-028.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/blog/common/dataease-028.jpg" />
+        <meta property="og:image:alt" content="模板学堂｜数据可视化仪表板大屏设计流程梳理 - DataEase 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="article:published_time" content="2023-09-13" />
+        <meta property="article:modified_time" content="2023-09-13" />
+        <meta property="og:updated_time" content="2023-09-13" />
+        <meta property="article:section" content="DataEase 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html" />
+        <meta name="twitter:title" content="模板学堂｜数据可视化仪表板大屏设计流程梳理 - DataEase 产品动态" />
+        <meta name="twitter:description" content="模板市场上新！带你了解仪表板设计流程！" />
+        <meta name="twitter:image" content="https://dataease.cn/images/blog/common/dataease-028.jpg" />
+        <meta name="twitter:image:alt" content="模板学堂｜数据可视化仪表板大屏设计流程梳理 - DataEase 产品动态" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="../desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="de-article-main">
+            <article class="de-article container">
+                <nav class="de-article-breadcrumb" aria-label="面包屑">
+                    <a href="../index.html">首页</a>
+                    <span>/</span>
+                    <a href="../blog.html">产品动态</a>
+                </nav>
+                <header class="de-article-header">
+                    <h1>模板学堂｜数据可视化仪表板大屏设计流程梳理</h1>
+                    <p>模板市场上新！带你了解仪表板设计流程！</p>
+                    <time datetime="2023-09-13">2023年09月13日</time>
+                    <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂｜数据可视化仪表板大屏设计流程梳理" loading="eager" />
+                </header>
+                <div class="de-article-content">
+                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<em>https：//dataease.io/templates/</em>）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。<strong>目前，DataEase模板市场的模板数量已经超过了100个。</strong></p><h2 id="heading-1">2023年8月上新模板</h2><p>DataEase模板市场定期进行模板上新。2023年8月共上新4个模板，涉及教育、消费零售等主题，欢迎大家在DataEase模板市场下载使用。</p><p><img src="../images/blog/template-20230913/dataease-088-01.png" alt="1 一卡通.png" loading="lazy" /><img src="../images/blog/template-20230913/dataease-088-02.png" alt="2 全校人员.png" loading="lazy" /><img src="../images/blog/template-20230913/dataease-088-03.png" alt="3 高校门禁.png" loading="lazy" /><img src="../images/blog/template-20230913/dataease-088-04.png" alt="4 消费市场.png" loading="lazy" /></p><h2 id="heading-2">模板技巧</h2><p>本月的模板技巧为大家介绍如何通过DataEase开源数据可视化分析工具设计出“有效的数据可视化仪表板大屏”，与仪表板大屏的观看者建立起“有效沟通”。</p><p>数据可视化是一种以图形符号为主要视觉表现形式，将不可见的、抽象、复杂、枯燥、专业、不直观的数据内容，简单易懂地传递给用户的有效手段。用户可以通过数据可视化仪表板大屏的设计和展现来传递数据信息，解决工作中和生活中遇到的一些数据相关问题。</p><p>有效沟通是指成功把某一信息传递给沟通对象，沟通对象能够做出预期中回应的整个过程。</p><p>数据可视化仪表板大屏具有传递数据信息的作用，仪表板的设计也是一个建立沟通渠道和方式的过程。为了使仪表板可以通过数据的可视化语言，与仪表板大屏的观看者建立起“有效沟通”，在整个设计过程中我们也要时刻注意，设计出的仪表板大屏是否能够做到精准地传达有效的数据信息。</p><p>对于数据可视化仪表板，用户的期望是能够从中清晰、直观地看到所需的数据，并且能够简单、高效地完成数据的查询、对比、关联、分析等一系列交互动作，从而提升自己的工作效率，降低工作中的团队沟通成本、信息识别成本和数据分析成本。</p><p>接下来为大家介绍一种数据可视化仪表板大屏的设计思路流程，希望能够帮助大家更便利地设计出一个能够起到“有效沟通”作用的数据可视化仪表板大屏。</p><p><strong>一、仪表板设计流程</strong></p><p>仪表板的一般设计流程如下：</p><p>■ 明确需求</p><p>■ 筛选数据</p><p>■ 确定图表</p><p>■ 排版布局</p><p>■ 设计看板</p><p><img src="../images/blog/template-20230913/dataease-088-05.png" alt="5-xuwx.png" loading="lazy" /><strong>1. 明确需求</strong></p><p><strong>关键词：换位思考</strong></p><p>数据可视化仪表板大屏设计的第一步是需求分析。我们设计的大多数数据可视化仪表板大屏都是供他人使用，所以仪表板的设计者需要换位思考，以使用者的视角来审视、解读仪表板所传递的信息。这是仪表板大屏设计最重要的一点。</p><p>在换位思考中，设计者需要考虑仪表板使用者的使用目的，理清使用者及目标用户的特点和关注焦点是什么，从而确定仪表板主题内容和所需要的数据指标。当设计视角与使用者的视角一致时，才能实现“有效设计”。</p><p>数据可视化仪表板大屏的业务主题及与业务主题相关的数据指标示例如下：</p><p><img src="../images/blog/template-20230913/dataease-088-06.png" alt="6-bqat.png" loading="lazy" /><strong>2. 筛选数据</strong></p><p><strong>关键词：杜绝既要又要</strong></p><p>在梳理业务指标时，我们一般不能将所有的已有指标全部用于仪表板制作。而是要从用户的使用角度出发，在经过数据的初步处理和优化后，从这些繁多的指标中筛选出最需要的几种。</p><p>在仪表板使用数据的筛选过程中，我们应当“用正确的方法去<strong>识别最重要的数据指标</strong>，并且在此基础上投入<strong>最透彻的分析和拓展</strong>，达到最有效的信息传达率。”也就是说，在数据筛选阶段就决定好想要展示出的最关键内容，杜绝既要又要。</p><p>关键业务数据指标的整理与筛选示例如下：</p><p><img src="../images/blog/template-20230913/dataease-088-07.png" alt="7-hota.png" loading="lazy" /><strong>3. 确定图表</strong></p><p><strong>关键词：准确传达，信息明了</strong></p><p>在图表选择这一步，我们需要明确想要通过数据指标表达的内容，以及能够让观看者精准而便捷地捕捉有效数据信息的可视化展示形式。</p><p>同一个指标数据，从不同维度分析就会有不同结果。在不同的情境下，数据也会需要不同的可视化展示方式。通过有效的可视化展示，这份数据才能传达出仪表板制作者想要表达的信息。所以，我们在选择图表的时候一定要选择最能准确直观地表达出数据背后所蕴含信息的图表图形。</p><p>如果一份数据在被可视化为某种图表格式后，依然不能使得观看者顺利理解数据信息，那就不能说是一次成功的展示。</p><p><img src="../images/blog/template-20230913/dataease-088-08.png" alt="8-kerh.png" loading="lazy" /><img src="../images/blog/template-20230913/dataease-088-09.png" alt="9-brcu.png" loading="lazy" /><strong>4. 排版布局</strong></p><p><strong>关键词：构建视线流动时空</strong></p><p>在排版布局这一步，我们要根据场景业务线来构建视线流动时空，确定数据指标对应图表的位置安排。</p><p>确定了仪表板主题和所需数据指标之后，就要进一步明确仪表板大屏展示的内容动向，以及需要给观看者讲述的数据故事。以“展示问题、解决问题”为目标，为不同的业务数据模块理出先后顺序，并决定这些模块图表的布局排列。</p><p>在数据可视化仪表板大屏上，制作者可以通过巧妙设计仪表板布局的方法，来构建观者的视线流动路径和空间。观看者视线流动的路径通常与业务模块之间关系也有很大的联系，所以在构建仪表板的视线流动时空的过程中，既要考虑视觉习惯还要考虑业务关联。</p><p>基于用户的使用目标，数据可视化仪表板需要将一些零散但相关的信息数据用位置布局等线索穿插统筹起来，形成体系化的联系。一个优秀的仪表板大屏要能够协助用户总览关键业务数据，并对下属的各个图表模块数据之间的关系进行推导，在数据关系中发现关键的问题节点，进而通过解决这些问题来实现业务层面的优化。</p><p><img src="../images/blog/template-20230913/dataease-088-10.png" alt="10-uxpe.png" loading="lazy" /><strong>5. 设计看板</strong></p><p><strong>关键词：辅助输出，吸引眼球</strong></p><p>在仪表板设计过程中，我们要根据业务场景主题，来确定相应的设计风格和视觉语言。</p><p>仪表板视觉设计环节主要是考验审美的环节，涉及到仪表板配色、图表配色、辅助元素、炫酷的动效等多种设计技巧。绝大多数的视觉表现形式都是为了辅助信息的传播，增强信息的传达率。所以，数据可视化仪表板大屏的视觉设计应该尽可能在保证仪表板的实用度和可用性的情况下，进行视觉效果的增强，切不可喧宾夺主。</p><p>在DataEase开源数据可视化分析工具的模板市场中，有多种精美实用的仪表板模板供用户选用。如果难以决定自己的仪表板要使用什么配色主题、构图分布，可以前往DataEase模板市场（<em>https://dataease.io/templates/</em>），一键下载、应用同行业类型的仪表板模板。</p><p><img src="../images/blog/template-20230913/dataease-088-11.png" alt="11-ujmt.png" loading="lazy" /><strong>二、总结</strong></p><p>在数据可视化仪表板大屏的设计中，我们需要明确仪表板观看者所需的数据信息，并精准高效地满足对方的信息需求。在“数据可视化”这一信息沟通与传递的过程，做到仪表板设计者与观看者的“有效沟通”。</p><p>规范的仪表板设计流程是产出优秀仪表板大屏的保证。在正确有效的仪表板设计流程的引导下，我们可以在尽量避免非必要返工的同时，最大化把控数据可视化仪表板大屏的设计质量和进度，开展高效率的数据可视化工作。</p>
+                </div>
+            </article>
+        </main>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂｜数据可视化仪表板大屏设计流程梳理","item":"https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html"}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂｜数据可视化仪表板大屏设计流程梳理","description":"模板市场上新！带你了解仪表板设计流程！","url":"https://dataease.cn/blog/post-33558fff-11a9-437e-a0da-63c5b9b76b0d.html","datePublished":"2023-09-13","dateModified":"2023-09-13","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-028.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
+                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

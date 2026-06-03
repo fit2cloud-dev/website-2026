@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>社区分享｜企业BI选型：从Quick BI、Superset到DataEase - DataEase 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="从产品使用者到产品贡献者的转变。" />
+        <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link rel="canonical" href="https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="社区分享｜企业BI选型：从Quick BI、Superset到DataEase - DataEase 产品动态" />
+        <meta property="og:description" content="从产品使用者到产品贡献者的转变。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html" />
+        <meta property="og:image" content="https://dataease.cn/images/blog/news-20230720/dataease-094.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/blog/news-20230720/dataease-094.png" />
+        <meta property="og:image:alt" content="社区分享｜企业BI选型：从Quick BI、Superset到DataEase - DataEase 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="article:published_time" content="2023-07-20" />
+        <meta property="article:modified_time" content="2023-07-20" />
+        <meta property="og:updated_time" content="2023-07-20" />
+        <meta property="article:section" content="DataEase 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html" />
+        <meta name="twitter:title" content="社区分享｜企业BI选型：从Quick BI、Superset到DataEase - DataEase 产品动态" />
+        <meta name="twitter:description" content="从产品使用者到产品贡献者的转变。" />
+        <meta name="twitter:image" content="https://dataease.cn/images/blog/news-20230720/dataease-094.png" />
+        <meta name="twitter:image:alt" content="社区分享｜企业BI选型：从Quick BI、Superset到DataEase - DataEase 产品动态" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/unicons.css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-ul">
+                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="../desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a>
+                            <span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="de-article-main">
+            <article class="de-article container">
+                <nav class="de-article-breadcrumb" aria-label="面包屑">
+                    <a href="../index.html">首页</a>
+                    <span>/</span>
+                    <a href="../blog.html">产品动态</a>
+                </nav>
+                <header class="de-article-header">
+                    <h1>社区分享｜企业BI选型：从Quick BI、Superset到DataEase</h1>
+                    <p>从产品使用者到产品贡献者的转变。</p>
+                    <time datetime="2023-07-20">2023年07月20日</time>
+                    <img src="../images/blog/news-20230720/dataease-094.png" alt="社区分享｜企业BI选型：从Quick BI、Superset到DataEase" loading="eager" />
+                </header>
+                <div class="de-article-content">
+                    <p><strong>“使用DataEase后，我们把使用过程中发现的一些不方便的地方提出来，项目团队和用户一起想办法解决和优化，共同把这个产品做得更好。DataEase是一个开发者和用户共创的开源产品。”</strong></p><p><strong>——DataEase开源社区核心用户 马先生</strong></p><p><em>编者注：以下内容基于DataEase开源社区核心用户马先生的社区分享整理而成。</em></p><p>马先生任职于一家全球化社交娱乐公司，公司日常业务运营涉及到大量平台的日活、月活等数据信息。从2021年至今，公司根据自身的业务运营需要，前后选择了三款BI工具，分别是Quick BI、Superset和DataEase，而每款产品的选择与淘汰，都与公司的需求息息相关。</p><p>■ <strong>Quick BI时期</strong>：在2021年8月之前，该公司还没有建立完善的数据仓库，公司内部也只有一个人负责数据可视化工作，使用的产品是Quick BI个人版。当时大部分数据都是以邮件的形式发送给业务部门，但邮件的数据是静态数据，无法直接查询历史数据，历史数据需要查询历史邮件，比较耗费人力；</p><p>■ <strong>Superset时期</strong>：随着公司业务的发展，该公司逐渐成立了一个成熟的数据部门，搭建了自己的数仓系统，并开始使用Superset。相比Quick BI，Superset最大的优势在于这是一款开源软件，不必通过以数据下载或者页面截图之后发邮件的方式分享给业务部门。仅需登录同一个系统，数据部门做完的数据就可以呈现给业务部门，并且可以由业务部门自行查阅历史的留存数据。无论是明细数据还是某个单一维度的数据，都可以查看历史数据。在此基础上，他们完成了Quick BI时期（邮件需求）到Superset时期的第一次跨越——也就是从静态数据到动态数据的转变；</p><p>■<strong> DataEase时期</strong>：完成第一次转变后，马先生所在的数据团队开始思考第二个问题。Superset虽然是开源软件，但它毕竟是外国的开源项目，不符合国人的使用习惯，并且在使用功能上也不能完全满足公司的需求。例如，技术部门需要制作一个性能监控数据的展示大屏，通过Superset来实现很麻烦。于是数据团队开始寻找下一个更适合自己公司的的BI产品。这时他们偶然发现了国产的开源可视化产品——DataEase，这款产品完美地解决了马先生所在团队在使用Superset时碰到的两个问题：即不满足国人使用习惯，以及实时数据刷新不好处理。于是，他们实现了第二次跨越——从可用产品到易用产品。</p><p>在马先生使用Quick BI、Superset再到DataEase的BI产品升级过程中，DataEase开源社区也见证了他逐渐加入到开源世界，从产品使用者到产品贡献者的旅程。</p><h2 id="%E7%A4%BE%E5%8C%BA%E7%94%A8%E6%88%B7%E8%AE%BF%E8%B0%88">社区用户访谈</h2><p><strong>什么样的契机让您开始接触并使用DataEase的呢？</strong></p><p>马先生：之前我们公司一直使用Superset作为数据图表展示系统。随着业务的增长，有很多运营和产品同事希望自己配置报表，他们接触Superset之后，<strong>普遍反馈说Superset配置比较繁琐。</strong>比如配置折线图，Superset要配置时间列、时间粒度、指标、维度、分组等，很多业务同事在配置图表这一步就迷糊了，很难理解维度、分组这些术语。实际上，业务同事需要的是一个能够把数据集、图表、仪表盘和配置项都集成在一起的、方便配置的图表系统。这种图表系统的学习成本低，可以让业务同事快速上手。</p><p>经过了一系列的产品调研之后，发现了DataEase。我在DataEase官网上的测试环境试用了一下，发现还挺好用的，于是就开始给业务部门部署使用了。</p><p><img src="../images/blog/news-20230720/dataease-094-01.png" alt="图01-wlqc.png" loading="lazy" />▲ 图1 Superset的视图设计页面</p><p><img src="../images/blog/news-20230720/dataease-094-02.png" alt="图02-kgww.png" loading="lazy" />▲ 图2 DataEase的视图设计页面</p><p>■ DataEase视图设计功能区介绍</p><p>【序号1】：数据操作区、样式编辑区和高级功能区切换</p><p>【序号2】：搜索</p><p>【序号3】：字段编辑</p><p>【序号4】：更换数据集</p><p>【序号5】：可选维度列表</p><p>【序号6】：可选指标列表</p><p>【序号7】：图表类型（包括ECharts和AntV）</p><p>【序号8】：结果展示</p><p>【序号9】：维度设置区</p><p>【序号10】：指标设置区</p><p>【序号11】：结果过滤器</p><p>【序号12】：钻取维度设置区</p><p>【序号13】：图表展示</p><p><strong>您认为DataEase的优势是什么，缺点是什么呢？</strong></p><p>马先生：我们公司目前Superset和DataEase都在使用。产品部门主要用的是Superset，运营部门主要用的是DataEase。此外，DataEase主要用来展示UID粒度的数据。</p><p>相比DataEase，Superset的优势主要体现在它的缓存机制。随着创建的报表越来越多，请求量增大带来的问题也随之出现。由于我们采用的是直连方式，在应对并行的几百个查询时，DataEase的缓存效果不太明显，响应比较慢。Superset可以自定义缓存的失效时间或者不缓存，这个功能点对我们来说是比较实用的。</p><p>DataEase的优势也比较明显，具体包括以下几点：</p><p>1. DataEase给我的第一感觉就是界面<strong>简洁并且漂亮</strong>，它可以方便地制作各种样式的图表，背景图案、图表的样式边框都可以自定义设置。最重要的是，它配置图表的过程足够简洁，对于业务人员来说，他只需要知道需要什么样的数据集，就可以直接创建仪表板。Superset的数据集是一个杂乱无章的列表结构，而DataEase的数据集可以分级分类。</p><p><img src="../images/blog/news-20230720/dataease-094-03.png" alt="图03-shei.png" loading="lazy" />▲ 图3 Superset的使用界面</p><p><img src="../images/blog/news-20230720/dataease-094-04.png" alt="图04-mmtf.png" loading="lazy" />▲ 图4 DataEase的使用界面</p><p>2. DataEase的社区交流群内非常活跃，客服也会耐心地解答我们的问题。这是一种开源的生态环境，让我们相信<strong>DataEase是一个有活力的项目。</strong></p><p>3. DataEase的社区版<strong>完全开源</strong>，用我们最为熟悉的Springboot+Vue.js技术栈开发，有利于我们在其基础上做一些定制化的东西。</p><p><strong>DataEase解决了您公司什么样的业务需求呢？是如何使用DataEase的？</strong></p><p>马先生：为了让业务方（例如销售、运营等企业内查看或制作仪表板的人员）更便捷地使用，我们会在DataEase中提前准备好数据集并做好分类。具体操作就是，我们会给每个业务单独创建文件夹，业务下还会根据区域和功能继续创建二级文件夹。通过这样的分类方法，业务方就能很清楚地知道这是什么数据。</p><p>有了数据之后，业务方可以很方便地配置自己的报表，释放了开发团队的人力。DataEase还支持分享报表，用户可以把自己的报表方便地分享给别人。现在，如果是业务人员自行配置生成仪表板，就会选择使用DataEase。</p><p><strong>DataEase社区版有一些局限性，面对这些局限性你们是怎么做的呢？</strong></p><p>马先生：是的，DataEase的社区版没有开放权限管控功能，这对没有二次开发能力的公司来说比较麻烦。因此，如果是以一个团队为单位来使用DataEase，最好还是需要购买企业版。DataEase企业版的权限管控功能可以管控到行权限和列权限，这是很厉害的功能。面对一些需求场景，比如一个仪表板要给不同的业务部门看他们对应的数据，如果通过DataEase的行权限功能来配置，几十秒就搞定了。目前我们则只能给每个业务部门都做一个仪表板。</p><p>其次，针对我们自己的业务需求，运营的同事希望对看板指标进行监控，所以我们开发了DataEase的报警功能，对于达到阈值的指标可以直接发送报警邮件、短信、电话等。</p><p><strong>在DataEase的模板市场里，用户可以免费下载模板直接应用到自己的仪表板中。您觉得这会带给用户一些便利吗？</strong></p><p>马先生：我用过DataEase的模板市场，感觉挺方便的。我们把模板下载下来之后可以直接替换数据来使用模板，不用自己再去做样式。听说用户也可以给模板市场投稿，不过我们还没有投过稿。有个小建议，模板市场里大多数是深色系的模板，我们公司用的是则是浅色系的仪表板居多。因为深色的仪表板视觉上比较晃眼，浅色的仪表板会给人干净清爽的感觉。</p><p><strong>您之前提到了DataEase的社区交流群比较活跃，那您和您的同事在群里也会和大家一起沟通交流或者问问题吗？</strong></p><p>马先生：我把我的同事们都拉到社区群了。虽然我们对DataEase做了二次开发，但是很多小的功能点我们依然不清楚，所以同事们遇到问题也会在交流群里提问。有时候我看到了别人问的问题我能解答，我也会回答一下。</p><p>我还给DataEase修复过几个小Bug，提交过两次PR，都已经被合并到主分支中了。因为我之前做过开源，所以对提PR、跑测试、合并到主分支等整个代码开发的流程规范都很清楚。有时候我们可能发现了一些小Bug，但不是很影响DataEase的主功能，我们就会按照流程提一个PR。</p><p><strong>您现在对DataEase项目已经非常了解了。对它有什么建议吗？</strong></p><p>马先生：我之前提到过对比Superset，DataEase的一个不足就是DataEase的缓存效果不太明显，这个问题我觉得如果能做个前端异步就能完美解决。这个不足主要出现在两种使用场景中：</p><p>第一种场景是用户点击一个页面没有加载完成时，又点击了另一个页面，DataEase不会立刻跳转，而是需要等到上一个页面加载完成才会跳转。对于用户而言，最好是不用等待当前页面加载完成就可以直接跳转；</p><p>第二种场景是，不论是在编辑仪表板还是拖拽维度指标时，DataEase都需要请求数据，因此在数据量大的情况下操作起来就没那么顺滑。如果设置一个按钮，用户点击那个按钮后仪表板才向后台请求数据，做到编辑完再进行整体刷新，这样可以减少请求，让用户使用起来更加丝滑。</p><p>缓存问题可以参考一下其他的开源BI产品。企业在选择可视化产品时会有一种本能的不信任，就是用户不知道拿过来之后，这个东西到底能不能用。很多开源BI产品其实也没有怎么运作宣传，但是它们能吸引客户的主要原因在于，这些产品经历了很多用户的实践，所以用户的使用黏性需要时间来沉淀。ToB端的产品需要迭代和更新，吸引更多的企业来使用，进而验证产品的稳定性。这也印证了飞致云的那句口号：<strong>“软件用起来才有价值，才有改进的机会”。</strong></p><p>DataEase项目之前迭代的速度很快，最近几个月因为要做2.0版本，1.0版本迭代的速度会慢一些。其实我觉得目前这个更新频率也挺好的，Bug修复的速度还是很快，Feature可以慢慢来。因为做产品要考虑到大多数的用户，而不是为某个单一的用户服务，每个需求都要考察得比较全面才好，需要考虑新版本会不会对其他的用户产生影响。</p>
+                </div>
+            </article>
+        </main>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"社区分享｜企业BI选型：从Quick BI、Superset到DataEase","item":"https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html"}]}</script>
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"社区分享｜企业BI选型：从Quick BI、Superset到DataEase","description":"从产品使用者到产品贡献者的转变。","url":"https://dataease.cn/blog/post-b86347ff-628f-4d97-b63c-308aea74adf9.html","datePublished":"2023-07-20","dateModified":"2023-07-20","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/news-20230720/dataease-094.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
+                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="../versions.html">版本对比</a></li>
+                                <li><a href="../pro.html">DataEase 专业版</a></li>
+                                <li><a href="../embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="../enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/monochrome-bundle.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

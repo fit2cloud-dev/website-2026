@@ -4,6 +4,10 @@
         <meta charset="utf-8" />
         <title>DataEase - 人人可用的开源 BI 工具 - 官网</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
         <meta name="description" content="DataEase 是人人可用的开源 BI 工具，支持多数据源连接、拖拽式分析、仪表板、数据大屏、报表与分享协作，适用于企业数据可视化与自助分析场景。" />
         <meta name="keywords" content="DataEase, 开源 BI 工具, 数据可视化, 自助分析, 仪表板, 数据大屏, 商业智能, BI 平台, 数据分析软件" />
         <meta name="email" content="dataease@fit2cloud.com" />
@@ -27,15 +31,21 @@
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://dataease.cn/" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
         <meta property="og:site_name" content="DataEase" />
         <meta property="og:title" content="DataEase - 人人可用的开源 BI 工具 - 官网" />
         <meta property="og:description" content="DataEase 是人人可用的开源 BI 工具，支持多数据源连接、拖拽式分析、仪表板、数据大屏、报表与分享协作，适用于企业数据可视化与自助分析场景。" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dataease.cn/" />
         <meta property="og:image" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
         <meta property="og:image:alt" content="DataEase 开源 BI 工具官网首页" />
         <meta property="og:locale" content="zh_CN" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/" />
         <meta name="twitter:title" content="DataEase - 人人可用的开源 BI 工具 - 官网" />
         <meta name="twitter:description" content="DataEase 是人人可用的开源 BI 工具，支持多数据源连接、拖拽式分析、仪表板、数据大屏、报表与分享协作，适用于企业数据可视化与自助分析场景。" />
         <meta name="twitter:image" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
@@ -206,7 +216,7 @@
                             <span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
-                                <li><a href="./desktop/index.html">桌面版安装包</a></li>                                
+                                <li><a href="./desktop/index.html">桌面版安装包</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -214,6 +224,7 @@
                             <span class="menu-arrow"></span>
                             <ul class="submenu">
                                 <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a href="./blog.html">产品动态</a></li>
                                 <li><a target="_blank" href="./demo.html">在线体验</a></li>
                                 <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
                                 <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
@@ -239,7 +250,7 @@
 
                         <li class="github-star">
                             <iframe target="_blank" src="./github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
-                        </li>                       
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -265,7 +276,7 @@
                 </div>
             </section>
 
-            <section class="section">
+            <section class="section de-home-migration">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12 text-center">
@@ -288,7 +299,7 @@
                 </div>
             </section>
 
-            <section class="section bg-light" id="customer-stories">
+            <section class="section de-home-advantages" id="customer-stories">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-12 text-center">
@@ -306,9 +317,9 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6 col-12 mt-4 mb-4">
-                            <div class="text-center">
+                    <div class="row de-advantage-grid">
+                        <div class="col-lg-3 col-md-6 col-12 mt-4">
+                            <div class="features de-advantage-card text-center">
                                 <div class="image position-relative d-inline-block">
                                     <img src="./images/icon/open_source.svg" class="avatar avatar-small" alt="" />
                                 </div>
@@ -320,8 +331,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="text-center">
+                        <div class="col-lg-3 col-md-6 col-12 mt-4">
+                            <div class="features de-advantage-card text-center">
                                 <div class="image position-relative d-inline-block">
                                     <img src="./images/icon/simple_easy.svg" class="avatar avatar-small" alt="" />
                                 </div>
@@ -333,8 +344,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="text-center">
+                        <div class="col-lg-3 col-md-6 col-12 mt-4">
+                            <div class="features de-advantage-card text-center">
                                 <div class="image position-relative d-inline-block">
                                     <img src="./images/icon/quick_response.svg" class="avatar avatar-small" alt="" />
                                 </div>
@@ -346,8 +357,8 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-12 mt-4">
-                            <div class="text-center">
+                        <div class="col-lg-3 col-md-6 col-12 mt-4">
+                            <div class="features de-advantage-card text-center">
                                 <div class="image position-relative d-inline-block">
                                     <img src="./images/icon/security_share.svg" class="avatar avatar-small" alt="" />
                                 </div>
@@ -799,9 +810,9 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-10 mt-4 pt-2">
-                            <div class="media">
+                    <div class="row justify-content-center de-migration-row">
+                        <div class="col-lg-10 col-12 mt-4 pt-2">
+                            <div class="media de-migration-card">
                                 <i data-feather="chevron-right" class="fea icon-ex-md text-primary mr-2 mt-1"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0"><span class="text-primary">我在基于 ECharts/AntV 等工具来 DIY 制作各种图表和大屏</span></h5>
@@ -818,9 +829,9 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-10 mt-4 pt-2">
-                            <div class="media">
+                    <div class="row justify-content-center de-migration-row">
+                        <div class="col-lg-10 col-12 mt-4 pt-2">
+                            <div class="media de-migration-card">
                                 <i data-feather="chevron-right" class="fea icon-ex-md text-primary mr-2 mt-1"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0"><span class="text-primary">我在使用「帆软 FineBI」 等传统 BI 工具</span></h5>
@@ -837,9 +848,9 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-10 mt-4 pt-2">
-                            <div class="media">
+                    <div class="row justify-content-center de-migration-row">
+                        <div class="col-lg-10 col-12 mt-4 pt-2">
+                            <div class="media de-migration-card">
                                 <i data-feather="chevron-right" class="fea icon-ex-md text-primary mr-2 mt-1"></i>
                                 <div class="media-body">
                                     <h5 class="mt-0"><span class="text-primary">我在使用 Metabase 等国外开源 BI 工具</span></h5>
@@ -1105,29 +1116,39 @@
                 </div>
             </section>
 
-            <section class="section bg-cta" style="background: url('images/banner/banner2.jpg') center center no-repeat" id="cta">
-                <div class="bg-overlay"></div>
+            <section class="section de-home-video" id="cta">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title title-dark text-white mb-4">演示视频</h4>
-                                <p class="text-light para-desc para-dark mx-auto">快速演示如何通过 DataEase 连接关系型数据库、通过拖拉拽方式的制作图表并与他人分享。</p>
-                                <a target="_blank" href="https://space.bilibili.com/510493147/lists/3136743?type=season" class="play-btn border border-light mt-4">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-play fea icon-ex-md text-white title-dark"
-                                    >
-                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                    </svg>
+                    <div class="de-video-panel">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <div class="de-video-copy">
+                                    <h4 class="title mb-4">演示视频</h4>
+                                    <p class="para-desc mb-4">快速演示如何通过 DataEase 连接关系型数据库、通过拖拉拽方式的制作图表并与他人分享。</p>
+                                    <a target="_blank" href="https://space.bilibili.com/510493147/lists/3136743?type=season" class="btn btn-primary">
+                                        <i data-feather="play-circle" class="fea icon-sm mr-2"></i>
+                                        演示视频
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 mt-4 mt-lg-0">
+                                <a target="_blank" href="https://space.bilibili.com/510493147/lists/3136743?type=season" class="de-video-preview" aria-label="演示视频">
+                                    <img src="./images/banner/banner2.jpg" alt="演示视频" />
+                                    <span class="de-video-play" aria-hidden="true">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-play fea icon-ex-md"
+                                        >
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -1198,18 +1219,68 @@
                 </div>
             </section>
         </main>
-        <footer class="footer footer-bar">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                    <div class="col">
-                        <div class="text-lg-center text-sm-left">
-                            <p class="mb-0 title-p"><a href="https://beian.miit.gov.cn/" target="_blank" class="text-reset">浙ICP备14038283号</a></p>
-                            <p class="pt-1 title-p">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
-                            <p class="pt-1 title-p">
-                                <a href="https://www.fit2cloud.com/legal/privacy-policy.html" class="text-foot title-p" target="_parent">隐私政策 |</a>
-                                <a href="https://www.fit2cloud.com/legal/licenses.html" class="text-foot title-p" target="_parent">社区软件许可协议</a>
-                            </p>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="./index.html" aria-label="DataEase 首页">
+                            <img src="./images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                        </a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
                         </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">产品</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="./whydataease.html">产品优势</a></li>
+                                <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
+                                <li><a href="./blog.html">产品动态</a></li>
+                                <li><a href="./demo.html" target="_blank">在线体验</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">资源</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">购买</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="./versions.html">版本对比</a></li>
+                                <li><a href="./pro.html">DataEase 专业版</a></li>
+                                <li><a href="./embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="./enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </div>
+                        <div class="de-footer-group">
+                            <h2 class="de-footer-title">联系</h2>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/e40eKK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a>
+                        <a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a>
                     </div>
                 </div>
             </div>
