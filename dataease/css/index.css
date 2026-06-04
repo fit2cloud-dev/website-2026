@@ -3173,3 +3173,60 @@ a.text-primary,
         font-size: 29px;
     }
 }
+
+/* ========== 飞致云旗下开源产品下拉菜单新样式 ========== */
+
+.mega-nav-body {
+    border-radius: 8px;
+    padding: 0;
+    overflow: hidden;
+    min-width: 280px;
+}
+
+.mega-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mega-nav-list li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mega-nav-list li:last-child {
+    border-bottom: none;
+}
+
+.mega-nav-list li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s;
+}
+
+.mega-nav-list li a:hover {
+    background-color: #f8f9fa;
+}
+
+.mega-nav-list .product-name {
+    display: block;
+    color: #0a7be0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.mega-nav-list .product-desc {
+    display: block;
+    color: #8492a6;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+@media (min-width: 992px) {
+    .mega-nav-sandbox .mega-nav-body-ct {
+        width: 320px;
+    }
+}
