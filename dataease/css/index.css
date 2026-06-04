@@ -357,6 +357,11 @@ h6,
     font-weight: 400;
 }
 
+/* 关键词高亮加粗 */
+.text-primary {
+    font-weight: 700;
+}
+
 /*------------*/
 .footer-start-box {
     position: fixed;
