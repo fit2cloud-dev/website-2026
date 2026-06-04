@@ -352,6 +352,11 @@ h6,
     font-size: 15px !important;
 }
 
+/* 与客户共成长 博客卡片标题字重 */
+.card.blog .card-title {
+    font-weight: 400;
+}
+
 /*------------*/
 .footer-start-box {
     position: fixed;
