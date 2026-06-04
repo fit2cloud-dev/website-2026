@@ -1610,18 +1610,6 @@ a {
     top: 0;
 }
 
-.de-advantage-grid > div:nth-child(2) .de-advantage-card {
-    --advantage-accent: #14a6ff;
-}
-
-.de-advantage-grid > div:nth-child(3) .de-advantage-card {
-    --advantage-accent: #22b8a9;
-}
-
-.de-advantage-grid > div:nth-child(4) .de-advantage-card {
-    --advantage-accent: #5b7cfa;
-}
-
 .de-advantage-card:hover {
     border-color: rgba(10, 123, 224, 0.38);
     box-shadow: 0 24px 54px rgba(10, 123, 224, 0.16);
