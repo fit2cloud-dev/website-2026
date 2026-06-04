@@ -30,6 +30,7 @@
         setupSmoothScroll();
         setupAnimations();
         setupAccessibility();
+        setupQrFloat();
     }
 
     /**
@@ -364,6 +365,31 @@
                 }
             }
         });
+    }
+
+    /**
+     * QR Float Widget Handler
+     * Right-bottom floating widget for QR code on pricing page
+     */
+    function setupQrFloat() {
+        const floatWidget = document.getElementById('qrFloat');
+        const closeBtn = document.getElementById('qrFloatClose');
+
+        if (!floatWidget) return;
+
+        // Show float after a short delay (no body scroll lock)
+        setTimeout(function () {
+            floatWidget.classList.add('show');
+        }, 800);
+
+        function hideFloat() {
+            floatWidget.classList.remove('show');
+        }
+
+        // Close on X button
+        if (closeBtn) {
+            closeBtn.addEventListener('click', hideFloat);
+        }
     }
 
     /**
