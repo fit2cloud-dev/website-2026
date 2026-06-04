@@ -243,6 +243,11 @@ p {
     color: #007bff !important;
 }
 
+#topnav .navigation-menu.nav-light > li:hover > a,
+#topnav .navigation-menu.nav-light > li.active > a {
+    color: #007bff !important;
+}
+
 .btn-primary,
 .btn-outline-primary,
 .btn-outline-primary:hover,
@@ -273,6 +278,8 @@ p {
 #topnav .has-submenu .submenu .has-submenu:hover .submenu-arrow,
 #topnav.nav-sticky .navigation-menu.nav-light > li:hover > .menu-arrow,
 #topnav.nav-sticky .navigation-menu.nav-light > li.active > .menu-arrow,
+#topnav .navigation-menu.nav-light > li:hover > .menu-arrow,
+#topnav .navigation-menu.nav-light > li.active > .menu-arrow,
 .pricing-rates.business-rate:hover,
 .pricing-rates.starter-plan,
 .event-schedule:hover,

@@ -2676,6 +2676,16 @@ a.text-primary,
     color: var(--de-primary) !important;
 }
 
+#topnav .navigation-menu.nav-light > li:hover > a,
+#topnav .navigation-menu.nav-light > li.active > a {
+    color: var(--de-primary) !important;
+}
+
+#topnav .navigation-menu.nav-light > li:hover > .menu-arrow,
+#topnav .navigation-menu.nav-light > li.active > .menu-arrow {
+    border-color: var(--de-primary) !important;
+}
+
 .btn {
     font-size: var(--de-font-size-base);
     line-height: 1.35;
