@@ -1,9 +1,9 @@
 body {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 }
 
 p {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1,
@@ -18,14 +18,14 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
     font-weight: 300;
     margin-bottom: 0;
 }
 
 #topnav .navigation-menu > li > a {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -95,7 +95,7 @@ h6,
     padding: 10px 0 5px 0;
     background-color: #0a7be0;
     text-align: center;
-    color: white;
+    color: #172033;
 }
 
 .subscription-table td {
@@ -112,7 +112,7 @@ h6,
 
 .subscription-table .de-title-bg {
     background-color: #0a7be0;
-    color: #ffffff;
+    color: #172033;
     padding: 0 15px;
     text-align: center;
 }
@@ -2152,9 +2152,9 @@ a {
 }
 
 #contact .contact-detail a[href^="mailto:"] {
-    font-size: 18px;
-    overflow-wrap: normal;
-    white-space: nowrap;
+    font-size: clamp(16px, 1.08vw, 18px);
+    overflow-wrap: anywhere;
+    white-space: normal;
     word-break: normal;
 }
 
@@ -2466,5 +2466,689 @@ a {
 
     #contact .contact-detail a[href^="mailto:"] {
         font-size: 17px;
+    }
+}
+
+/* DataEase typography system */
+:root {
+    --de-font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+    --de-font-size-xs: 12px;
+    --de-font-size-sm: 14px;
+    --de-font-size-base: 16px;
+    --de-font-size-md: 17px;
+    --de-font-size-lg: 18px;
+    --de-font-size-xl: 20px;
+    --de-font-size-h4: 22px;
+    --de-font-size-h3: 26px;
+    --de-font-size-h2: 32px;
+    --de-font-size-h1: 42px;
+    --de-font-size-display: 46px;
+    --de-line-height-body: 1.78;
+    --de-line-height-title: 1.28;
+    --de-text-soft: #526783;
+    --de-text-subtle: #7a8798;
+    --de-inverse: #ffffff;
+    --de-inverse-muted: #c9d7ea;
+}
+
+html {
+    font-size: var(--de-font-size-base);
+}
+
+body,
+button,
+input,
+select,
+textarea,
+.btn,
+.dropdown-menu,
+.popover,
+.tooltip,
+.table {
+    font-family: var(--de-font-family) !important;
+}
+
+body {
+    color: var(--de-text);
+    font-size: var(--de-font-size-base);
+    font-weight: 400;
+    line-height: var(--de-line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.heading,
+.title,
+.page-title,
+.section-title .title,
+.title-heading .heading {
+    color: var(--de-ink);
+    font-family: var(--de-font-family) !important;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: var(--de-line-height-title);
+}
+
+h1,
+.h1,
+.title-heading .heading,
+.page-next-level .heading {
+    font-size: var(--de-font-size-display);
+}
+
+h2,
+.h2,
+.section-title .title {
+    font-size: var(--de-font-size-h2);
+}
+
+h3,
+.h3 {
+    font-size: var(--de-font-size-h3);
+}
+
+h4,
+.h4 {
+    font-size: var(--de-font-size-h4);
+}
+
+h5,
+.h5,
+.card .title,
+.pricing-rates .title,
+.media-body h5 {
+    font-size: var(--de-font-size-lg);
+}
+
+h6,
+.h6 {
+    font-size: var(--de-font-size-base);
+}
+
+p,
+li,
+td,
+th,
+label,
+.para-desc,
+.answer,
+.card p,
+.pricing-rates p,
+.section-title p,
+.title-heading p {
+    color: var(--de-text-soft);
+    font-family: var(--de-font-family) !important;
+    font-size: var(--de-font-size-base);
+    line-height: var(--de-line-height-body);
+}
+
+small,
+.small,
+.title-p,
+.badge,
+.de-blog-eyebrow,
+.de-blog-more,
+.de-blog-pagination-summary,
+.de-blog-page-btn,
+.de-blog-page-ellipsis,
+.de-article-breadcrumb,
+.de-blog-card time,
+.de-article-header time,
+.de-site-footer .de-footer-links a,
+.de-site-footer .de-footer-bottom p,
+.de-site-footer .de-footer-bottom a {
+    font-family: var(--de-font-family) !important;
+    font-size: var(--de-font-size-sm);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--de-primary);
+}
+
+a:hover,
+a:focus {
+    color: var(--de-primary-dark);
+}
+
+.text-dark,
+a.text-dark,
+.card h5,
+.card .title,
+.pricing-rates .title,
+.media-body h5,
+.de-blog-card h2 a,
+.de-article-content h2,
+.de-article-content h3,
+.de-article-content h4,
+.de-article-content strong {
+    color: var(--de-ink) !important;
+}
+
+.text-muted,
+.text-secondary,
+.text-black-50,
+.de-blog-card p,
+.de-blog-lead,
+.de-article-header p,
+.de-article-content p,
+.de-article-content li {
+    color: var(--de-muted) !important;
+}
+
+.text-primary,
+a.text-primary,
+.de-migration-card h5 .text-primary,
+.de-offer-combo-row h5 .text-primary {
+    color: var(--de-primary) !important;
+}
+
+#topnav .navigation-menu > li > a,
+#topnav .navigation-menu > li .submenu li a,
+.mega-nav-sandbox .mega-nav-body .mega-nav-ul li a {
+    color: #2f3f56;
+    font-family: var(--de-font-family) !important;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+#topnav .navigation-menu > li .submenu li a,
+.mega-nav-sandbox .mega-nav-body .mega-nav-ul li a {
+    font-size: var(--de-font-size-sm);
+    font-weight: 500;
+}
+
+#topnav .navigation-menu > li:hover > a,
+#topnav .navigation-menu > li.active > a,
+#topnav .navigation-menu > li .submenu li a:hover,
+.mega-nav-sandbox .mega-nav-body .mega-nav-ul li a:hover {
+    color: var(--de-primary) !important;
+}
+
+.btn {
+    font-size: var(--de-font-size-base);
+    line-height: 1.35;
+}
+
+.menu-btn,
+.btn-sm,
+.btn.btn-sm {
+    font-size: var(--de-font-size-sm) !important;
+}
+
+.card,
+.explore-feature,
+.pricing-rates,
+.media,
+.de-blog-card,
+.de-article-content {
+    color: var(--de-text);
+}
+
+.card .title,
+.pricing-rates .title,
+.de-advantage-card .page-title,
+.de-migration-card h5,
+.enterprise-xpack .title,
+.de-embedded-capabilities .explore-feature .title {
+    color: var(--de-ink) !important;
+    font-size: var(--de-font-size-xl);
+    line-height: 1.45;
+}
+
+.de-advantage-card p,
+.de-migration-card .answer,
+.de-offer-combo-row p,
+.enterprise-xpack p,
+.de-embedded-capabilities .explore-feature p {
+    color: var(--de-text-soft) !important;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.de-blog-hero h1,
+.de-article-header h1 {
+    color: var(--de-ink);
+    font-size: var(--de-font-size-h1);
+}
+
+.de-blog-card h2 {
+    font-size: var(--de-font-size-xl);
+}
+
+.de-article-content {
+    color: var(--de-text);
+    font-size: var(--de-font-size-base);
+}
+
+.de-article-content h2 {
+    font-size: var(--de-font-size-h3);
+}
+
+.de-article-content h3 {
+    font-size: var(--de-font-size-h4);
+}
+
+.de-article-content h4 {
+    font-size: var(--de-font-size-lg);
+}
+
+.versions-compare-table .table thead th,
+.table-title-1 {
+    color: #172033;
+    font-size: var(--de-font-size-base);
+}
+
+.subscription-table th,
+.subscription-table .de-title-bg {
+    color: #172033;
+    font-size: var(--de-font-size-base);
+}
+
+.versions-compare-table .table td,
+.versions-compare-table .table th,
+.subscription-table td,
+.table-title-2 {
+    color: #27364c;
+    font-size: 15px;
+}
+
+.bg-dark,
+.bg-footer,
+.de-site-footer,
+.footer-page,
+.de-commerce-page .bg-half,
+.gradient,
+.bg-primary {
+    color: var(--de-inverse);
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark h4,
+.bg-dark h5,
+.bg-dark h6,
+.bg-footer h1,
+.bg-footer h2,
+.bg-footer h3,
+.bg-footer h4,
+.bg-footer h5,
+.bg-footer h6,
+.de-site-footer h1,
+.de-site-footer h2,
+.de-site-footer h3,
+.de-site-footer h4,
+.de-site-footer h5,
+.de-site-footer h6,
+.footer-page h1,
+.footer-page h2,
+.footer-page h3,
+.footer-page h4,
+.footer-page h5,
+.footer-page h6,
+.de-commerce-page .bg-half h1,
+.de-commerce-page .bg-half h2,
+.de-commerce-page .bg-half h3,
+.de-commerce-page .bg-half h4,
+.de-commerce-page .bg-half h5,
+.de-commerce-page .bg-half h6,
+.gradient h1,
+.gradient h2,
+.gradient h3,
+.gradient h4,
+.gradient h5,
+.gradient h6,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary h4,
+.bg-primary h5,
+.bg-primary h6 {
+    color: var(--de-inverse) !important;
+}
+
+.bg-dark p,
+.bg-dark li,
+.bg-footer p,
+.bg-footer li,
+.de-site-footer p,
+.de-site-footer li,
+.footer-page p,
+.footer-page li,
+.de-commerce-page .bg-half p,
+.de-commerce-page .bg-half li,
+.gradient p,
+.gradient li,
+.bg-primary p,
+.bg-primary li {
+    color: var(--de-inverse-muted) !important;
+}
+
+.de-site-footer .de-footer-title,
+.de-site-footer .de-footer-logo {
+    color: var(--de-inverse) !important;
+}
+
+.de-site-footer .de-footer-desc,
+.de-site-footer .de-footer-links a,
+.de-site-footer .de-footer-bottom p,
+.de-site-footer .de-footer-bottom a {
+    color: var(--de-inverse-muted) !important;
+}
+
+.de-site-footer .de-footer-links a:hover,
+.de-site-footer .de-footer-bottom a:hover {
+    color: var(--de-inverse) !important;
+}
+
+/* Unified table style */
+.table-responsive,
+.versions-compare-table,
+.de-article-content figure,
+.de-article-content .de-table-wrap {
+    border-radius: 14px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.subscription-table,
+.versions-compare-table .table,
+.de-article-content table {
+    background: #ffffff;
+    border: 1px solid #dbe7f6;
+    border-collapse: separate;
+    border-radius: 14px;
+    border-spacing: 0;
+    box-shadow: 0 18px 42px rgba(10, 123, 224, 0.08);
+    color: #27364c;
+    margin-bottom: 24px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.subscription-table th,
+.subscription-table .de-title-bg,
+.versions-compare-table .table thead th,
+.de-article-content table thead th {
+    background: linear-gradient(135deg, #e9f5ff 0%, #f6fbff 100%) !important;
+    border-color: #d6e5f7 !important;
+    color: #172033 !important;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.55;
+    text-align: center;
+}
+
+.subscription-table td,
+.subscription-table th,
+.versions-compare-table .table td,
+.versions-compare-table .table th,
+.de-article-content table td,
+.de-article-content table th {
+    border-color: #dfe8f4 !important;
+    color: #27364c !important;
+    font-size: 15px;
+    line-height: 1.78;
+    padding: 16px 18px;
+    vertical-align: middle;
+}
+
+.subscription-table td .title-p,
+.subscription-table td p,
+.versions-compare-table .table td .title-p,
+.versions-compare-table .table td p {
+    color: #27364c !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.subscription-table td .title,
+.versions-compare-table .table tbody th .title {
+    color: #162033 !important;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.subscription-table tbody td,
+.versions-compare-table .table tbody td,
+.de-article-content table tbody td {
+    color: #24324a !important;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.versions-compare-table .table tbody td.text-muted,
+.versions-compare-table .table tbody td .text-muted {
+    color: #24324a !important;
+}
+
+.versions-compare-table > ul .title-p,
+.versions-compare-table ul.mt-4 .title-p {
+    color: #33445c !important;
+    font-weight: 500;
+}
+
+.subscription-table td,
+.versions-compare-table .table td,
+.de-article-content table td {
+    background: #ffffff;
+}
+
+.subscription-table tr:nth-child(even) td,
+.versions-compare-table .table tbody tr:nth-child(even) td,
+.de-article-content table tr:nth-child(even) td {
+    background: #f8fbff;
+}
+
+.subscription-table tr:hover td,
+.versions-compare-table .table tbody tr:hover td,
+.de-article-content table tr:hover td {
+    background: #f1f8ff;
+}
+
+.subscription-table td:first-child,
+.subscription-table th:first-child,
+.versions-compare-table .table tbody td:first-child,
+.de-article-content table td:first-child {
+    color: #162033 !important;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.subscription-table .x-pack-color,
+.td-bg-color,
+.versions-compare-table .table .bg-color {
+    background: #f8fbff !important;
+    color: #27364c !important;
+}
+
+.subscription-table .x-pack-span,
+.subscription-table .new-span {
+    border-radius: 999px;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 3px 8px;
+}
+
+.subscription-table .x-pack-span {
+    background: rgba(10, 123, 224, 0.12);
+    color: var(--de-primary) !important;
+}
+
+.subscription-table .new-span {
+    background: rgba(16, 185, 129, 0.14);
+    color: #047857 !important;
+}
+
+.versions-compare-table .table .title-bg {
+    background: linear-gradient(135deg, #eef7ff 0%, #f8fbff 100%);
+    border: 0;
+    border-radius: 0;
+    color: var(--de-primary) !important;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    padding: 14px 20px;
+    width: 100%;
+}
+
+.versions-compare-table .table tbody th .title {
+    color: #162033 !important;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.versions-compare-table .table .title-bg-th th {
+    background: linear-gradient(135deg, #eef7ff 0%, #f8fbff 100%) !important;
+    border-bottom: 1px solid #d6e5f7 !important;
+    border-top: 1px solid #d6e5f7 !important;
+    padding: 0 !important;
+}
+
+.versions-compare-table .table .title-bg-th:hover th,
+.versions-compare-table .table .title-bg-th:hover .title-bg {
+    background: linear-gradient(135deg, #e7f4ff 0%, #f4fbff 100%) !important;
+}
+
+.de-article-content table strong,
+.de-article-content table b {
+    color: #162033 !important;
+}
+
+.de-article-content figure {
+    margin: 28px 0;
+}
+
+.de-article-content figure table {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .subscription-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .subscription-table tbody {
+        display: table;
+        min-width: 720px;
+        width: 100%;
+    }
+
+    .versions-compare-table .table,
+    .de-article-content table {
+        min-width: 720px;
+    }
+
+    .subscription-table td,
+    .subscription-table th,
+    .versions-compare-table .table td,
+    .versions-compare-table .table th,
+    .de-article-content table td,
+    .de-article-content table th {
+        font-size: 14px;
+        padding: 13px 14px;
+    }
+
+    .versions-compare-table .table .title-bg {
+        font-size: 15px;
+    }
+
+    .versions-compare-table .table tbody th .title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    h1,
+    .h1,
+    .title-heading .heading,
+    .page-next-level .heading {
+        font-size: 36px;
+    }
+
+    h2,
+    .h2,
+    .section-title .title {
+        font-size: 28px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 24px;
+    }
+
+    .de-blog-hero h1,
+    .de-article-header h1 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 575px) {
+    body,
+    p,
+    li,
+    td,
+    th,
+    label,
+    .para-desc,
+    .answer,
+    .btn {
+        font-size: 15px;
+    }
+
+    h1,
+    .h1,
+    .title-heading .heading,
+    .page-next-level .heading {
+        font-size: 30px;
+    }
+
+    h2,
+    .h2,
+    .section-title .title {
+        font-size: 25px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 22px;
+    }
+
+    h4,
+    .h4,
+    h5,
+    .h5,
+    .card .title,
+    .pricing-rates .title,
+    .media-body h5 {
+        font-size: 18px;
+    }
+
+    .de-blog-hero h1,
+    .de-article-header h1 {
+        font-size: 29px;
     }
 }

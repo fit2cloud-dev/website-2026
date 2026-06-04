@@ -1,5 +1,5 @@
 body {
-    font-family: source-han-sans-simplified-c, open sans, Helvetica, Arial, sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +31,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: Nunito, sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 0;
@@ -523,7 +523,7 @@ a.text-primary:focus {
 /*数字滚动插件的CSS可调整样式*/
 
 .count-section {
-    font-family: Nunito, sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;

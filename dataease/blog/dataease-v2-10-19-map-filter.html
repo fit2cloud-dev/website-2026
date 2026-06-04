@@ -11,6 +11,9 @@
         <meta name="description" content="配置跳转动作时，支持自动携带查询组件的当前过滤条件至目标页面。" />
         <meta name="keywords" content="DataEase 产品动态, DataEase 版本发布, DataEase 更新日志, DataEase 操作教程, 开源 BI 工具" />
         <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
         <link rel="shortcut icon" href="../images/logo/favicon.ico" />
         <link rel="canonical" href="https://dataease.cn/blog/dataease-v2-10-19-map-filter.html" />
         <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/blog/dataease-v2-10-19-map-filter.html" />
@@ -49,6 +52,16 @@
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9362Z0KNSP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-9362Z0KNSP');
+        </script>
     </head>
     <body>
         <header id="topnav" class="defaultscroll sticky nav-sticky de-blog-nav">
@@ -73,14 +86,14 @@
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-ul">
-                                            <li><a href="https://1panel.cn" target="_blank"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
-                                            <li><a href="https://cordys.cn/" target="_blank"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
-                                            <li><a href="https://www.jumpserver.org/" target="_blank"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
-                                            <li><a href="https://maxkb.cn/" target="_blank"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
-                                            <li><a href="https://dataease.cn/" target="_blank"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
-                                            <li><a href="https://sqlbot.org/" target="_blank"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
-                                            <li><a href="https://metersphere.io/" target="_blank"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
-                                            <li><a href="https://halo.run/" target="_blank"><b>Halo</b> - 强大易用的开源建站工具</a></li>
+                                            <li><a href="https://1panel.cn" target="_blank" rel="noopener noreferrer"><b>1Panel</b> - 现代化、开源的 Linux 面板</a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank" rel="noopener noreferrer"><b>Cordys</b> - 新一代的开源 AI CRM 系统</a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank" rel="noopener noreferrer"><b>JumpServer</b> - 广受欢迎的开源堡垒机</a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank" rel="noopener noreferrer"><b>MaxKB</b> - 强大易用的企业级智能体平台</a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank" rel="noopener noreferrer"><b>DataEase</b> - 人人可用的开源 BI 工具</a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank" rel="noopener noreferrer"><b>SQLBot</b> - 基于大模型的开源智能问数系统</a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank" rel="noopener noreferrer"><b>MeterSphere</b> - 新一代的开源持续测试工具</a></li>
+                                            <li><a href="https://halo.run/" target="_blank" rel="noopener noreferrer"><b>Halo</b> - 强大易用的开源建站工具</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -100,7 +113,7 @@
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../whydataease.html">产品优势</a></li>
-                        <li><a target="_blank" href="https://templates.dataease.cn/">模板市场</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/" rel="noopener noreferrer">模板市场</a></li>
                         <li class="has-submenu">
                             <a href="javascript:void(0)">免费下载</a>
                             <span class="menu-arrow"></span>
@@ -113,16 +126,16 @@
                             <a href="javascript:void(0)">帮助与支持</a>
                             <span class="menu-arrow"></span>
                             <ul class="submenu">
-                                <li><a target="_blank" href="https://dataease.cn/docs/v2/">在线文档</a></li>
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/" rel="noopener noreferrer">在线文档</a></li>
                                 <li><a href="../blog.html">产品动态</a></li>
-                                <li><a target="_blank" href="../demo.html">在线体验</a></li>
-                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease">知识库</a></li>
-                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6">社区论坛</a></li>
-                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
-                                <li><a target="_blank" href="https://whitepaper.dataease.cn">技术白皮书</a></li>
-                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html">《数据可视化分析与实践》书籍</a></li>
-                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK">提交技术咨询</a></li>
-                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf">如何向团队介绍 DataEase？</a></li>
+                                <li><a target="_blank" href="../demo.html" rel="noopener noreferrer">在线体验</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease" rel="noopener noreferrer">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/" rel="noopener noreferrer">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html" rel="noopener noreferrer">《数据可视化分析与实践》书籍</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/e40eKK" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" rel="noopener noreferrer">如何向团队介绍 DataEase？</a></li>
                             </ul>
                         </li>
                         <li class="has-submenu">
@@ -135,8 +148,8 @@
                                 <li><a href="../enterprise.html">DataEase 企业版</a></li>
                             </ul>
                         </li>
-                        <li><a target="_blank" href="https://sqlbot.org/">智能问数</a></li>
-                        <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                        <li><a target="_blank" href="https://sqlbot.org/" rel="noopener noreferrer">智能问数</a></li>
+                        <li><a href="../demo.html" target="_blank" rel="noopener noreferrer">在线体验</a></li>
                         <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=dataease&repo=dataease&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
                     </ul>
                 </div>
@@ -184,7 +197,7 @@
                                 <li><a href="../whydataease.html">产品优势</a></li>
                                 <li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li>
                                 <li><a href="../blog.html">产品动态</a></li>
-                                <li><a href="../demo.html" target="_blank">在线体验</a></li>
+                                <li><a href="../demo.html" target="_blank" rel="noopener noreferrer">在线体验</a></li>
                             </ul>
                         </div>
                         <div class="de-footer-group">

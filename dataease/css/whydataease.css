@@ -127,7 +127,7 @@
 
 .wd-hero h1 {
     color: var(--wd-dark);
-    font-size: clamp(1.75rem, 2.2vw, 2.6rem);
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.18;
     margin-bottom: 1.2rem;
@@ -1442,5 +1442,292 @@
     .wd-recommendation,
     .wd-testimonial {
         border-radius: 20px;
+    }
+}
+
+/* Typography alignment */
+.whydataease-page {
+    --wd-font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+    --wd-text: #34445c;
+    --wd-text-soft: #526783;
+    --wd-text-muted: #68788f;
+}
+
+.whydataease-page,
+.whydataease-page button,
+.whydataease-page input,
+.whydataease-page select,
+.whydataease-page textarea,
+.whydataease-page .btn {
+    font-family: var(--wd-font-family) !important;
+}
+
+.whydataease-page {
+    color: var(--wd-text);
+    font-size: 16px;
+    line-height: 1.78;
+}
+
+.whydataease-page h1,
+.whydataease-page h2,
+.whydataease-page h3,
+.whydataease-page h4,
+.whydataease-page h5,
+.whydataease-page h6,
+.whydataease-page .title,
+.whydataease-page .page-title,
+.whydataease-page .wd-section-title h2,
+.whydataease-page .wd-group-title {
+    color: var(--wd-dark);
+    font-family: var(--wd-font-family) !important;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.28;
+}
+
+.whydataease-page .wd-hero h1 {
+    color: var(--wd-dark);
+    font-size: 42px;
+}
+
+.whydataease-page .wd-section-title h2 {
+    font-size: 32px;
+}
+
+.whydataease-page h3,
+.whydataease-page .wd-group-title {
+    font-size: 24px;
+}
+
+.whydataease-page h4 {
+    font-size: 22px;
+}
+
+.whydataease-page h5 {
+    font-size: 18px;
+}
+
+.whydataease-page p,
+.whydataease-page li,
+.whydataease-page .lead,
+.whydataease-page .wd-section-title p,
+.whydataease-page .wd-overview-subtitle,
+.whydataease-page .wd-hero-point span,
+.whydataease-page .wd-card p,
+.whydataease-page .wd-feature-card p,
+.whydataease-page .wd-security-card p,
+.whydataease-page .wd-summary-card p,
+.whydataease-page .wd-roi-card p,
+.whydataease-page .wd-key-card p,
+.whydataease-page .wd-recommendation p,
+.whydataease-page .wd-testimonial p {
+    color: var(--wd-text-soft);
+    font-family: var(--wd-font-family) !important;
+    font-size: 16px;
+    line-height: 1.78;
+}
+
+.whydataease-page .wd-eyebrow,
+.whydataease-page .wd-tag,
+.whydataease-page .wd-final-stat span,
+.whydataease-page small,
+.whydataease-page .small {
+    font-family: var(--wd-font-family) !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.whydataease-page #topnav .navigation-menu > li > a,
+.whydataease-page #topnav .navigation-menu > li .submenu li a {
+    font-family: var(--wd-font-family) !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.whydataease-page #topnav .navigation-menu > li .submenu li a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.whydataease-page .wd-final-cta,
+.whydataease-page .wd-final-cta h2,
+.whydataease-page .wd-final-cta h3,
+.whydataease-page .wd-final-cta strong {
+    color: #ffffff;
+}
+
+.whydataease-page .wd-final-cta p,
+.whydataease-page .wd-final-cta li,
+.whydataease-page .wd-final-stat span {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.whydataease-page .wd-cta-panel,
+.whydataease-page .wd-cta-panel h3 {
+    color: #ffffff;
+}
+
+.whydataease-page .wd-cta-panel h3 {
+    text-shadow: 0 2px 10px rgba(4, 38, 78, 0.2);
+}
+
+.whydataease-page .wd-cta-panel p {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: #ffffff !important;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.75;
+    max-width: 760px;
+    padding: 0;
+    text-shadow: 0 2px 12px rgba(4, 38, 78, 0.34);
+}
+
+.whydataease-page .wd-hero-point {
+    min-width: 0;
+}
+
+.whydataease-page .wd-hero-point > div:not(.wd-hero-point-icon) {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.whydataease-page .wd-hero .wd-hero-point strong {
+    font-size: 16px;
+    line-height: 1.45;
+}
+
+.whydataease-page .wd-hero .wd-hero-point span {
+    color: #42526a;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.65;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .whydataease-page .wd-hero-point {
+        gap: 0.75rem;
+        padding: 0.95rem;
+    }
+
+    .whydataease-page .wd-hero-point-icon {
+        border-radius: 14px;
+        height: 42px;
+        width: 42px;
+    }
+
+    .whydataease-page .wd-hero .wd-hero-point span {
+        font-size: 14px;
+    }
+}
+
+/* Table alignment */
+.whydataease-page .wd-table-card {
+    background: #ffffff;
+    border: 1px solid #dbe7f6;
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(10, 123, 224, 0.08);
+}
+
+.whydataease-page .wd-table-head {
+    background: linear-gradient(135deg, #0a7be0 0%, #18a7ee 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.35rem 1.6rem;
+}
+
+.whydataease-page .wd-table-head h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.whydataease-page .wd-table-card .table-responsive {
+    border-radius: 0;
+}
+
+.whydataease-page .wd-compare-table {
+    background: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+    min-width: 760px;
+}
+
+.whydataease-page .wd-compare-table thead th {
+    background: linear-gradient(135deg, #e9f5ff 0%, #f6fbff 100%);
+    border-bottom: 1px solid #d6e5f7;
+    color: #172033;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.55;
+    padding: 16px 18px;
+}
+
+.whydataease-page .wd-compare-table td,
+.whydataease-page .wd-compare-table th {
+    border-color: #dfe8f4;
+    color: #27364c;
+    font-size: 15px;
+    line-height: 1.78;
+    padding: 16px 18px;
+    vertical-align: middle;
+}
+
+.whydataease-page .wd-compare-table tbody tr:nth-child(even) td {
+    background: #f8fbff;
+}
+
+.whydataease-page .wd-compare-table tbody tr:hover td {
+    background: #f1f8ff;
+}
+
+.whydataease-page .wd-compare-table tbody td {
+    color: #24324a;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.whydataease-page .wd-compare-table tbody td:first-child {
+    color: #162033;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .whydataease-page .wd-hero h1 {
+        font-size: 34px;
+    }
+
+    .whydataease-page .wd-section-title h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    .whydataease-page,
+    .whydataease-page p,
+    .whydataease-page li,
+    .whydataease-page .lead,
+    .whydataease-page .wd-section-title p {
+        font-size: 15px;
+    }
+
+    .whydataease-page .wd-hero h1 {
+        font-size: 30px;
+    }
+
+    .whydataease-page .wd-section-title h2 {
+        font-size: 25px;
+    }
+
+    .whydataease-page .wd-cta-panel p {
+        display: block;
+        max-width: 100%;
+        padding: 0;
     }
 }
