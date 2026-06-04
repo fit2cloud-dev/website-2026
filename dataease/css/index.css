@@ -3197,6 +3197,24 @@ a.text-primary,
     background-color: #f8f9fa;
 }
 
+/* 数据源 Logo 卡片：居中 + 去阴影 */
+.projects-wrapper .work-image {
+    display: block;
+    margin: 0 auto;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.projects-wrapper .card-body a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-wrapper .work-image:hover {
+    box-shadow: none !important;
+}
+
 .mega-nav-list .product-name {
     display: block;
     color: #0a7be0;
@@ -3217,4 +3235,14 @@ a.text-primary,
     .mega-nav-sandbox .mega-nav-body-ct {
         width: 320px;
     }
+}
+
+/* Hero 标题字重优化 */
+.ttitle-heading h1,
+.ttitle-heading h1 b {
+    font-weight: 500;
+}
+
+.ttitle-heading h5 {
+    font-weight: 400;
 }
