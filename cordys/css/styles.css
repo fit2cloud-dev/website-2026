@@ -833,36 +833,65 @@ body {
   top: 100%;
   right: 0;
   background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  min-width: 320px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  min-width: 340px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
   z-index: 1001;
   display: none;
-  margin-top: 8px;
+  margin-top: 10px;
+  padding: 6px 0;
+}
+
+.top-bar-dropdown-content::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  right: 60px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  transform: rotate(45deg);
 }
 
 
 .top-bar-dropdown-content.show {
-  display: block; /* 显示状态 */
+  display: block;
 }
 
 .top-bar-dropdown-item {
-  padding: 10px 15px;
+  padding: 12px 18px;
   color: #333333;
   text-decoration: none;
-  display: block;
-  transition: all 0.3s ease;
-  border-bottom: 1px solid #e5e7eb; 
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.2s ease;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .top-bar-dropdown-item:last-child {
   border-bottom: none;
 }
 
+.top-bar-dropdown-item:hover {
+  background: #f5f9ff;
+}
 
-.top-bar-dropdown-item strong {
-  color: #4a90ff;
+.top-bar-dropdown-item__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.4;
+}
+
+.top-bar-dropdown-item__desc {
+  font-size: 12px;
+  color: #999999;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 /* ==========================================================================
