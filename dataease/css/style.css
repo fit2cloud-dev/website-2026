@@ -29,8 +29,6 @@
  *     17.  Contact              *
  *     18.  Footer               *
  ================================*/
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
-
 .bg-primary {
   background-color: #2f55d4 !important;
 }
@@ -2122,7 +2120,7 @@ button:not(:disabled) {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden !important;
   font-size: 16px;
   color: #161c2d;
@@ -2140,7 +2138,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 600;
 }
@@ -2478,7 +2476,7 @@ p {
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", serif;
+  font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
   padding-left: 10px;
   padding-right: 10px;
 }

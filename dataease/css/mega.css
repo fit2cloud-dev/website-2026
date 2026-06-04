@@ -175,7 +175,7 @@ th.visible-print,td.visible-print {
 .mega-nav-sandbox .mega-nav-banner {
 	background-color: black;
 	color: white;
-	font-family: "klavika-web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 	font-size: 16px;
 	min-height: 3em
 }
@@ -214,7 +214,7 @@ th.visible-print,td.visible-print {
 
 .mega-nav-sandbox .mega-nav {
 	display: inline-block;
-	font-family: "klavika-web", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.35714
 }
@@ -411,7 +411,7 @@ th.visible-print,td.visible-print {
 	display: block;
 	font-size: 1.28571em;
 	font-weight: 600;
-	letter-spacing: -0.02em
+	letter-spacing: 0
 }
 
 .mega-nav-sandbox .mega-nav-grid-item>ul {
