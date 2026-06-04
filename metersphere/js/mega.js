@@ -9185,49 +9185,31 @@ return jQuery;
 // --------------------------------------------------
 
 var HashiMegaNav = function() {
-  var productClass = 'mega-nav-grid-item',
-      productActiveClass = 'is-active',
-      url = window.location.hostname,
-      products = [
-        'vagrant',
-        'packer',
-        'terraform',
-        'vault',
-        'nomad',
-        'consul'
-      ];
-
-  for (var i = 0; i < products.length; i++) {
-    if (url.indexOf(products[i]) !== -1) {
-      $('.' + productClass + '-' + products[i]).addClass(productActiveClass);
-    }
-  }
-
   var $body = $('#mega-nav-body-ct');
   var $arrow = $('#mega-nav-ctrl');
   var $nav = $arrow.parent();
-  var $close = $('#mega-nav-close');
-
-  function matchesBreakpoint() {
-    return window.matchMedia("(min-width: 980px)").matches;
-  }
+  var $close = $('#mega-nav-panel-close');
+  var $overlay = $('.mega-nav-overlay');
+  var $tagline = $('#mega-nav-tagline-click');
 
   function openNav() {
-    if(matchesBreakpoint()) {
-      $body.slideDown('fast');
+    $body.show();
+    $('body').addClass('mega-nav-no-scroll');
+    // Use setTimeout to ensure display:block is applied before animation
+    setTimeout(function() {
       $nav.addClass('open');
-    } else {
-      $body.fadeIn('fast');
-    }
+    }, 10);
   }
 
   function closeNav() {
-    if(matchesBreakpoint()) {
-      $body.slideUp('fast');
-      $nav.removeClass('open');
-    } else {
-      $body.fadeOut('fast');
-    }
+    $nav.removeClass('open');
+    // Wait for transition to finish, then hide
+    setTimeout(function() {
+      if (!$nav.hasClass('open')) {
+        $body.hide();
+        $('body').removeClass('mega-nav-no-scroll');
+      }
+    }, 350);
   }
 
   function isNavOpen() {
@@ -9244,8 +9226,26 @@ var HashiMegaNav = function() {
     }
   });
 
-  $close.unbind().on('click', function() {
+  // Close button in panel header
+  $close.unbind().on('click', function(e) {
+    e.stopPropagation();
     closeNav();
+  });
+
+  // Overlay click to close
+  $overlay.unbind().on('click', function(e) {
+    e.stopPropagation();
+    closeNav();
+  });
+
+  // Tagline text click to toggle
+  $tagline.unbind().on('click', function(e) {
+    e.preventDefault();
+    if(isNavOpen()) {
+      closeNav();
+    } else {
+      openNav();
+    }
   });
 }
 
@@ -10644,10 +10644,16 @@ $('body').on('click', function() {
         }
 
         nav.classList.remove('open');
+        document.body.classList.remove('mega-nav-no-scroll');
 
         var bodyContainer = nav.querySelector('.mega-nav-body-ct');
         if (bodyContainer) {
-            bodyContainer.style.display = 'none';
+            // Wait for slide-out transition (350ms) before hiding
+            setTimeout(function() {
+                if (!nav.classList.contains('open')) {
+                    bodyContainer.style.display = 'none';
+                }
+            }, 350);
         }
 
         var ctrl = nav.querySelector('.mega-nav-ctrl');

@@ -204,8 +204,21 @@ th.visible-print,td.visible-print {
 .mega-nav-sandbox .mega-nav-tagline {
 	align-items: center;
 	display: inline-flex;
+	font-size: 13px;
+	color: #8492a6;
 	margin-bottom: 0;
-	vertical-align: -1px
+	vertical-align: -1px;
+	cursor: pointer;
+	transition: color 0.2s ease;
+	user-select: none;
+}
+
+.mega-nav-sandbox .mega-nav-tagline:hover {
+	color: #ffffff;
+}
+
+.mega-nav-sandbox .mega-nav-tagline:hover .text-muted {
+	color: #ffffff;
 }
 
 .mega-nav-sandbox .mega-nav-tagline>img {
@@ -299,11 +312,17 @@ th.visible-print,td.visible-print {
 	display: block
 }
 
+/* WorkBuddy: mega-nav right-side slide panel (附件形式) */
+/* Body scroll lock when panel is open */
+body.mega-nav-no-scroll {
+	overflow: hidden;
+}
+
 .mega-nav-sandbox .mega-nav-body-ct {
 	bottom: 0;
 	display: none;
 	left: 0;
-	overflow-y: auto;
+	overflow: hidden;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -314,44 +333,183 @@ th.visible-print,td.visible-print {
 	display: block
 }
 
+/* Overlay background */
+.mega-nav-sandbox .mega-nav-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.mega-nav-sandbox .mega-nav.open .mega-nav-overlay {
+	opacity: 1;
+}
+
+/* Panel - slides in from right */
 .mega-nav-sandbox .mega-nav-body {
-	background-color: white;
-	box-shadow: 0 2px 16px rgba(79,99,122,0.2);
-	color: black;
-	margin: 1em;
-	padding: 1em
+	background-color: #fff;
+	color: #1a1a2e;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 520px;
+	max-width: 90vw;
+	overflow-y: auto;
+	box-shadow: -8px 0 30px rgba(0, 0, 0, 0.15);
+	transform: translateX(100%);
+	transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
 }
 
-.mega-nav-sandbox .mega-nav-body-footer {
-	color: #a4b1b2;
-	display: none
+.mega-nav-sandbox .mega-nav.open .mega-nav-body {
+	transform: translateX(0);
 }
 
-.mega-nav-sandbox .mega-nav-body-footer>:last-child {
-	margin-bottom: 0
+/* Panel inner container */
+.mega-nav-sandbox .mega-nav-panel {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100vh;
 }
 
-.mega-nav-sandbox .mega-nav-close {
-	background-color: transparent;
-	border: 1px solid currentColor;
-	float: right;
-	margin-left: 1em;
-	margin-bottom: 1em;
-	padding: 0.5em;
-	text-align: center
+/* Panel header */
+.mega-nav-sandbox .mega-nav-panel-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 28px 20px;
+	border-bottom: 1px solid #e8ecf1;
+	flex-shrink: 0;
 }
 
-.mega-nav-sandbox .mega-nav-close:hover,.mega-nav-sandbox .mega-nav-close:focus {
-	color: #333333;
-	outline: none
+.mega-nav-sandbox .mega-nav-panel-title {
+	font-size: 18px;
+	font-weight: 700;
+	color: #1a1a2e;
+	margin: 0;
+	letter-spacing: 0.5px;
 }
 
-.mega-nav-sandbox .mega-nav-close:active {
-	outline: none
+.mega-nav-sandbox .mega-nav-panel-close {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #e0e4ea;
+	border-radius: 8px;
+	background: #f8f9fb;
+	color: #64748b;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	padding: 0;
 }
 
-.mega-nav-sandbox .mega-nav-close .mega-nav-icon {
-	display: block
+.mega-nav-sandbox .mega-nav-panel-close:hover {
+	background: #e8ecf1;
+	color: #1a1a2e;
+	border-color: #d0d5dd;
+}
+
+/* Panel body */
+.mega-nav-sandbox .mega-nav-panel-body {
+	flex: 1;
+	padding: 20px 28px 32px;
+	overflow-y: auto;
+}
+
+/* Product grid */
+.mega-nav-sandbox .mega-nav-product-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Product card */
+.mega-nav-sandbox .mega-nav-product-card {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 18px;
+	border-radius: 12px;
+	background: #f8f9fb;
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.25s ease;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.mega-nav-sandbox .mega-nav-product-card:hover {
+	background: #eef2ff;
+	border-color: #c7d2fe;
+	transform: translateX(4px);
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Product icon wrapper */
+.mega-nav-sandbox .mega-nav-product-icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.mega-nav-sandbox .mega-nav-product-icon img {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+}
+
+/* Product initial (fallback letter) */
+.mega-nav-sandbox .mega-nav-product-initial {
+	width: 48px;
+	height: 48px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+}
+
+/* Product info */
+.mega-nav-sandbox .mega-nav-product-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 0;
+}
+
+.mega-nav-sandbox .mega-nav-product-name {
+	font-size: 15px;
+	font-weight: 700;
+	color: #1a1a2e;
+	line-height: 1.3;
+}
+
+.mega-nav-sandbox .mega-nav-product-desc {
+	font-size: 13px;
+	color: #64748b;
+	line-height: 1.4;
 }
 
 .mega-nav-sandbox .mega-nav-h1 {
@@ -525,106 +683,7 @@ th.visible-print,td.visible-print {
 	transform: translateX(3px) rotate(-90deg)
 }
 
-@media (min-width: 570px) {
-	.mega-nav-sandbox .mega-nav-btn {
-		margin-bottom: 2.53333em
-	}
-
-	/* .mega-nav-sandbox .mega-nav-body {
-		padding: 2em 2em 1em
-	} */
-
-	.mega-nav-sandbox .mega-nav-body-grid {
-		display: flex;
-		flex-wrap: wrap
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(1) {
-		width: 100%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(2) {
-		width: 33.33333%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(3) {
-		width: 33.33333%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(4) {
-		width: 33.33333%
-	}
-
-	.mega-nav-sandbox .mega-nav-h1 {
-		font-size: 2em;
-		margin-bottom: 0.07143em
-	}
-
-	.mega-nav-sandbox .mega-nav-h2 {
-		font-size: 1.28571em;
-		margin-bottom: 1.05556em
-	}
-
-	.mega-nav-sandbox .mega-nav-h3 {
-		color: black;
-		font-size: 1.28571em;
-		font-weight: bold;
-		margin-bottom: 0.64286em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid {
-		border: 0;
-		display: flex;
-		margin-bottom: 2.71429em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid>li {
-		flex-grow: 1;
-		margin-bottom: -1px;
-		margin-right: -1px;
-		width: calc(100% + 1px)
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item {
-		display: block;
-		border: 1px solid #d4dcdd;
-		margin-bottom: 0;
-		padding: 1.35714em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item,.mega-nav-sandbox .mega-nav-grid-item>ul {
-		text-align: center
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item>ul {
-		display: flex;
-		justify-content: center;
-		margin-top: 1.35714em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item>ul>li+li {
-		margin-left: 0.67857em;
-		margin-top: 0
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-img {
-		margin-right: 0;
-		width: auto
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-img>img {
-		max-height: 4.71429em
-	}
-
-	.mega-nav-sandbox .mega-nav-tag {
-		font-size: 1em;
-		padding: 0.14286em 0.21429em
-	}
-
-	.mega-nav-sandbox .mega-nav-btn {
-		width: auto
-	}
-}
+/* Removed old mega-nav-body, mega-nav-ul styles - now using slide panel design */
 
 @media (min-width: 768px) {
 	.mega-nav-sandbox .mega-nav-banner-item:first-child {
@@ -637,237 +696,61 @@ th.visible-print,td.visible-print {
 		position: relative
 	}
 
-	.mega-nav-sandbox .mega-nav::before {
-		border-bottom: 1em solid white;
-		border-left: 0.71429em solid transparent;
-		border-right: 0.71429em solid transparent;
-		content: ' ';
-		display: none;
-		height: 0;
-		left: 50%;
-		position: absolute;
-		top: 100%;
-		transform: translateX(-50%);
-		width: 0;
-		z-index: 1101
-	}
-
-	.mega-nav-sandbox .mega-nav.open::before {
-		display: block
-	}
-
-	.mega-nav-sandbox .mega-nav-btn {
-		margin-bottom: 1.26667em
-	}
-
-	.mega-nav-sandbox .mega-nav-body-ct {
-		bottom: auto;
-		left: auto;
-		overflow: visible;
-		position: absolute;
-		right: 0;
-		top: 100%;
-		/* width: 940px */
-	}
-
 	.mega-nav-sandbox .mega-nav-body {
-		margin: 1em 0 0
-	}
-
-	.mega-nav-sandbox .mega-nav-body-header {
-        text-align: center;
-	}
-
-	.mega-nav-sandbox .mega-nav-body-header-item:last-child {
-		margin-left: auto
-	}
-
-	.mega-nav-sandbox .mega-nav-body-footer {
-		display: block;
-		padding-top: 1em
-	}
-
-	.mega-nav-sandbox .mega-nav-h2 {
-		margin-bottom: 2.11111em
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid {
-		position: relative
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid::before {
-		background-color: #d4dcdd;
-		content: ' ';
-		height: 1px;
-		left: -2em;
-		margin-top: -0.78571em;
-		position: absolute;
-		right: -2em;
-		top: 100%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(1) {
-		width: 25%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(2) {
-		width: 25%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(3) {
-		width: 25%
-	}
-
-	.mega-nav-sandbox .mega-nav-body-grid-item:nth-child(4) {
-		width: 25%
-	}
-
-	.mega-nav-sandbox .mega-nav-close {
-		display: none
-	}
-
-	.mega-nav-sandbox .mega-nav-h3 {
-		padding-top: 0.52778em;
-		position: relative;
-        text-align: center;
-	}
-
-	.mega-nav-sandbox .mega-nav-h3::before {
-		background-color: #d4dcdd;
-		content: ' ';
-		height: 1px;
-		left: 0;
-		position: absolute;
-		right: 0.67857em;
-		top: 0
-	}
-
-	.mega-nav-sandbox .mega-nav-grid {
-		margin-bottom: 2.42857em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item {
-		position: relative
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item::before {
-		background-color: #d4dcdd;
-		content: ' ';
-		height: 1px;
-		left: 0;
-		margin-top: 1.64286em;
-		position: absolute;
-		right: 0;
-		top: 100%
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item:hover::before,.mega-nav-sandbox .mega-nav-grid-item:focus::before,.mega-nav-sandbox .mega-nav-grid-item.is-active::before {
-		background-color: #bfc6c7
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item>ul {
-		left: 0;
-		margin-top: 0;
-		padding-top: 1em;
-		position: absolute;
-		right: 0;
-		top: 100%
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item>ul>li+li {
-		margin-left: 1.14286em
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-fit2cloud:hover::before,.mega-nav-sandbox .mega-nav-grid-item-fit2cloud:focus::before,.mega-nav-sandbox .mega-nav-grid-item-fit2cloud.is-active::before {
-		background-color: #00355d
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-kubeoperator:hover::before,.mega-nav-sandbox .mega-nav-grid-item-kubeoperator:focus::before,.mega-nav-sandbox .mega-nav-grid-item-kubeoperator.is-active::before {
-		background-color: #fa5341
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-jumpserver:hover::before,.mega-nav-sandbox .mega-nav-grid-item-jumpserver:focus::before,.mega-nav-sandbox .mega-nav-grid-item-jumpserver.is-active::before {
-		background-color: #2b937c
-	}
-
-	.mega-nav-sandbox .mega-nav-grid-item-metersphere:hover::before,.mega-nav-sandbox .mega-nav-grid-item-metersphere:focus::before,.mega-nav-sandbox .mega-nav-grid-item-metersphere.is-active::before {
-		background-color: #622870
-	}
-}
-
-@media (min-width: 1200px) {
-	.mega-nav-sandbox .mega-nav-body-ct {
-		/* width: 1024px */
+		width: 460px;
+		max-width: 90vw;
 	}
 }
 
 
-.mega-nav-sandbox .mega-nav-grid-item {
-    align-items: center;
-    border: 1px solid #d4dcdd;
-    display: flex;
-    margin-bottom: -1px;
-    min-height: 3.57143em;
-    padding: 0.28571em 0.71429em;
-    position: relative;
-    width: 200px;
-    height: 200px;
+/* Style overrides cleaned - using slide panel design */
+
+/* Product card staggered animation on open */
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card {
+	animation: megaNavCardFadeIn 0.4s ease forwards;
+	opacity: 0;
 }
 
-.mega-nav-sandbox .mega-nav-h3::before {
-    background-color: #d4dcdd;
-    content: ' ';
-    height: 0px !important;
-    left: 0;
-    position: absolute;
-    right: 0.67857em;
-    top: 0;
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(1) { animation-delay: 0.05s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(2) { animation-delay: 0.1s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(3) { animation-delay: 0.15s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(4) { animation-delay: 0.2s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(5) { animation-delay: 0.25s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(6) { animation-delay: 0.3s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(7) { animation-delay: 0.35s; }
+.mega-nav-sandbox .mega-nav.open .mega-nav-product-card:nth-child(8) { animation-delay: 0.4s; }
+
+@keyframes megaNavCardFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
-.mega-nav-sandbox .mega-nav-body-grid::before {
-    background-color: #d4dcdd;
-    content: ' ';
-    height: 0px !important;
-    left: -2em;
-    margin-top: -0.78571em;
-    position: absolute;
-    right: -2em;
-    top: 100%;
-}
-
-.mega-nav-sandbox .mega-nav-body {
-    background-color: white;
-    box-shadow: 0 2px 16px rgba(79, 99, 122, 0.2);
-    color: black;
-    margin-top: 1em;
-    padding: 1em;
-    border-radius: 6px;
-    /* padding-left: 80px;
-  padding-right: 80px */
-}
-
-.mega-nav-sandbox .mega-nav-body .mega-nav-ul {
-    list-style: none;
-    margin: 0 !important;
-    padding: 0;
-    min-width: 280px;
-    font-size: 12px;
-}
-
-.mega-nav-sandbox .mega-nav-body .mega-nav-ul li {
-    padding: 10px 10px;
-}
-
-.mega-nav-sandbox .mega-nav-body .mega-nav-ul li a {
-    font-weight: 400;
-    color: #3c4858;
-}
-.mega-nav-sandbox .mega-nav-body .mega-nav-ul li a:hover {
-    color: #007bff;
-}
-
+/* Mobile responsive adjustments */
 @media (max-width: 767px) {
-    .mega-nav-sandbox {
-        display: none !important;
-    }
+	.mega-nav-sandbox {
+		display: none !important;
+	}
+	
+	.mega-nav-sandbox .mega-nav-body {
+		width: 100vw;
+		max-width: 100vw;
+	}
+	
+	.mega-nav-sandbox .mega-nav-panel-header {
+		padding: 20px 16px 16px;
+	}
+	
+	.mega-nav-sandbox .mega-nav-panel-body {
+		padding: 12px 16px 24px;
+	}
+	
+	.mega-nav-sandbox .mega-nav-product-card {
+		padding: 14px 14px;
+	}
 }
