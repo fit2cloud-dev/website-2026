@@ -26,6 +26,7 @@
         setupScrollHandler();
         setupNavigation();
         setupTopBarDropdown();
+        setupHelpDropdown();
         setupSmoothScroll();
         setupAnimations();
         setupAccessibility();
@@ -201,6 +202,44 @@
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = '';
             }
+        }
+    }
+
+    /**
+     * Help Dropdown Handler
+     * Manages the help & support dropdown menu in the main nav
+     */
+    function setupHelpDropdown() {
+        const helpDropdownBtn = document.getElementById('helpDropdownBtn');
+        const helpDropdownContent = document.getElementById('helpDropdownContent');
+
+        if (helpDropdownBtn && helpDropdownContent) {
+            helpDropdownBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                helpDropdownContent.classList.toggle('show');
+
+                const isExpanded = helpDropdownContent.classList.contains('show');
+                helpDropdownBtn.setAttribute('aria-expanded', isExpanded);
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!helpDropdownBtn.contains(e.target) && !helpDropdownContent.contains(e.target)) {
+                    helpDropdownContent.classList.remove('show');
+                    helpDropdownBtn.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && helpDropdownContent.classList.contains('show')) {
+                    helpDropdownContent.classList.remove('show');
+                    helpDropdownBtn.setAttribute('aria-expanded', 'false');
+                    helpDropdownBtn.focus();
+                }
+            });
+
+            helpDropdownBtn.setAttribute('aria-expanded', 'false');
+            helpDropdownBtn.setAttribute('aria-haspopup', 'true');
         }
     }
 
