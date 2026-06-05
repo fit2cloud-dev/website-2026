@@ -604,6 +604,22 @@
     }
 }
 
+/* 手机端：隐藏飞致云黑色横条，确保汉堡菜单可点击 */
+@media (max-width: 833px) {
+    .mega-nav-banner {
+        display: none !important;
+    }
+    .menu-extras {
+        position: relative;
+        z-index: 1001;
+    }
+    .navbar-toggle {
+        position: relative;
+        z-index: 1001;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 375px) {
     #topnav .buy-menu-btn {
         display: block !important;

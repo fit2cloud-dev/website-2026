@@ -1146,6 +1146,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Top Bar */
+  .top-bar { display: none; }
+
   /* Navigation */
 
 .nav__button {
@@ -1159,12 +1162,12 @@ body {
 
 .nav__center,
 .nav__right {
-  display: none !important;
+  display: none;
 }
 
 .nav.mobile-open .nav__center,
 .nav.mobile-open .nav__right {
-  display: flex;
+  display: flex !important;
   background-color: white;
 }
 

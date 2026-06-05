@@ -706,47 +706,63 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Navigation */
-  .nav__button {
-    width: 80%;
-    justify-content: center;
+  /* Hide top bar on mobile */
+  .top-bar {
+    display: none !important;
   }
 
+  .header {
+    top: 0;
+  }
+
+  /* Navigation */
   .nav {
     position: relative;
+    flex-wrap: wrap;
   }
 
   .nav__center,
   .nav__right {
-    display: none !important;
-  }
-
-  .nav.mobile-open .nav__center,
-  .nav.mobile-open .nav__right {
-    display: flex;
-    background-color: white;
-  }
-
-  .nav.mobile-open {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .nav.mobile-open .nav__center {
-    display: flex;
-    position: static;
-    transform: none;
-    order: 1;
-    justify-content: center;
-  }
-
-  .nav__link {
-    padding: var(--spacing-md);
-    border-bottom: 1px solid var(--border-color);
+    display: none;
   }
 
   .nav__toggle {
-    display: none !important;
+    display: flex;
+  }
+
+  /* Mobile menu open state */
+  .nav.mobile-open .nav__center,
+  .nav.mobile-open .nav__right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-sm) 0;
+  }
+
+  .nav.mobile-open .nav__center {
+    position: static;
+    transform: none;
+    order: 1;
+  }
+
+  .nav.mobile-open .nav__right {
+    order: 2;
+    gap: var(--spacing-sm);
+    padding-bottom: var(--spacing-md);
+  }
+
+  .nav.mobile-open .nav__link {
+    padding: var(--spacing-sm) 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav.mobile-open .nav__button {
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   /* Hero Section */
@@ -754,6 +770,10 @@ body {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
     text-align: center;
+  }
+
+  .hero {
+    padding-top: 110px;
   }
 
   .hero__title {
@@ -781,6 +801,10 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 0 var(--spacing-sm);
+  }
+
+  .hero {
+    padding-top: 90px;
   }
 
   .hero__title {

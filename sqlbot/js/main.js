@@ -34,10 +34,10 @@
      */
     function setupScrollHandler() {
         let isTopBarHidden = false;
+        const isMobile = () => window.innerWidth <= 768;
 
         function handleScroll() {
             const currentScrollY = window.scrollY;
-            const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
 
             if (currentScrollY > 50) {
                 header.classList.add('scrolled');
@@ -45,7 +45,10 @@
                 header.classList.remove('scrolled');
             }
 
-            if (topBar) {
+            // Skip top-bar scroll logic on mobile (top-bar is hidden via CSS)
+            if (topBar && !isMobile()) {
+                const scrollDirection = currentScrollY > lastScrollY ? 'down' : 'up';
+
                 if (scrollDirection === 'down' && currentScrollY > 100 && !isTopBarHidden) {
                     topBar.classList.add('hidden');
                     header.classList.add('top-bar-hidden');
@@ -72,6 +75,15 @@
                     ticking = false;
                 });
                 ticking = true;
+            }
+        });
+
+        // Reset state on resize between mobile/desktop
+        window.addEventListener('resize', function() {
+            if (isMobile()) {
+                topBar.classList.remove('hidden');
+                header.classList.remove('top-bar-hidden');
+                isTopBarHidden = false;
             }
         });
     }

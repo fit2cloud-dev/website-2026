@@ -36,4 +36,35 @@
     sections.forEach(function (section) {
         revealObserver.observe(section);
     });
+
+    // ========== 手机端汉堡菜单 ==========
+    // 等待 DOM 就绪
+    function initMobileMenu() {
+        var toggle = document.querySelector('.navbar-toggle');
+        var navigation = document.querySelector('#navigation');
+        if (!toggle || !navigation) return;
+
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            navigation.classList.toggle('open');
+            toggle.classList.toggle('open');
+        });
+
+        // 点击菜单项后自动关闭（手机端）
+        var menuLinks = navigation.querySelectorAll('.navigation-menu a');
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (window.innerWidth <= 833) {
+                    navigation.classList.remove('open');
+                    toggle.classList.remove('open');
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
+    } else {
+        initMobileMenu();
+    }
 })();
