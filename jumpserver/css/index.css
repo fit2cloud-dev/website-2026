@@ -5221,9 +5221,11 @@ a:focus {
 }
 
 .js-db-4a-section .js-solution-card-col > .text-center {
-    height: 292px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    min-height: 292px;
+    min-height: 260px;
+    padding: 20px 15px;
 }
 
 @media (max-width: 991px) {
