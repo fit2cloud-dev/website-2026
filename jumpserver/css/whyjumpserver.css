@@ -994,3 +994,559 @@
         right: 1rem;
     }
 }
+
+/* Typography and contrast refinements */
+.whyjumpserver-page {
+    font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
+}
+
+.whyjumpserver-page p,
+.whyjumpserver-page li,
+.whyjumpserver-page td,
+.whyjumpserver-page th {
+    font-family: inherit;
+}
+
+.wj-hero p.lead,
+.wj-eyebrow,
+.wj-hero-point span {
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.wj-compare-table td,
+.wj-compare-table th,
+.wj-table-head span,
+.wj-feature-desc {
+    color: #2b3d34;
+}
+
+.wj-feature-name {
+    color: #10271f;
+    font-size: 0.98rem;
+    font-weight: 700;
+}
+
+.wj-cta-panel p {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Product advantages visual refinements */
+.whyjumpserver-page #overview {
+    background:
+        radial-gradient(circle at 12% 18%, rgba(64, 191, 128, 0.14), transparent 26%),
+        linear-gradient(180deg, #eef8f4 0%, #f8fbfa 100%) !important;
+}
+
+.whyjumpserver-page #features {
+    background: #ffffff;
+}
+
+.whyjumpserver-page #advantages {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(74, 168, 255, 0.08), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f4faf7 100%);
+}
+
+.whyjumpserver-page .wj-stat-card,
+.whyjumpserver-page .wj-overview-card,
+.whyjumpserver-page .wj-table-card,
+.whyjumpserver-page .wj-summary-card,
+.whyjumpserver-page .wj-cost-card,
+.whyjumpserver-page .wj-advantage-card {
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    border-radius: 14px;
+    box-shadow: 0 16px 40px rgba(22, 49, 41, 0.08);
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.whyjumpserver-page .wj-stat-card:hover,
+.whyjumpserver-page .wj-overview-card:hover,
+.whyjumpserver-page .wj-table-card:hover,
+.whyjumpserver-page .wj-summary-card:hover,
+.whyjumpserver-page .wj-cost-card:hover,
+.whyjumpserver-page .wj-advantage-card:hover {
+    border-color: rgba(43, 147, 124, 0.32);
+    box-shadow: 0 24px 54px rgba(22, 49, 41, 0.14);
+    transform: translateY(-6px);
+}
+
+.whyjumpserver-page .wj-stat-card,
+.whyjumpserver-page .wj-advantage-card,
+.whyjumpserver-page .wj-summary-card,
+.whyjumpserver-page .wj-cost-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.whyjumpserver-page .wj-stat-card::before,
+.whyjumpserver-page .wj-advantage-card::before,
+.whyjumpserver-page .wj-summary-card::before,
+.whyjumpserver-page .wj-cost-card::before {
+    background: linear-gradient(90deg, var(--wj-primary), #3aa0ff);
+    content: "";
+    height: 4px;
+    left: 0;
+    opacity: 0.9;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.whyjumpserver-page .wj-stat-card {
+    padding: 1.75rem 1.5rem 1.65rem;
+}
+
+.whyjumpserver-page .wj-stat-card i,
+.whyjumpserver-page .wj-stat-card svg {
+    align-items: center;
+    background: linear-gradient(135deg, rgba(64, 191, 128, 0.14), rgba(74, 168, 255, 0.1));
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    border-radius: 8px;
+    color: var(--wj-primary-dark);
+    display: inline-flex;
+    height: 48px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 12px;
+    width: 48px;
+}
+
+.whyjumpserver-page .wj-advantage-tag svg {
+    height: 16px;
+    width: 16px;
+}
+
+.whyjumpserver-page .wj-stat-value {
+    color: #15261f;
+    font-size: 2.05rem;
+    font-weight: 800;
+}
+
+.whyjumpserver-page .wj-stat-label {
+    color: #52675e;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.whyjumpserver-page .wj-overview-card {
+    overflow: hidden;
+}
+
+.whyjumpserver-page .wj-overview-head {
+    padding: 2.05rem;
+}
+
+.whyjumpserver-page .wj-overview-head--primary {
+    background:
+        radial-gradient(circle at 85% 16%, rgba(255, 255, 255, 0.22), transparent 30%),
+        linear-gradient(135deg, #2f9662 0%, #40bf80 100%);
+}
+
+.whyjumpserver-page .wj-overview-head--secondary {
+    background:
+        radial-gradient(circle at 85% 16%, rgba(255, 255, 255, 0.2), transparent 30%),
+        linear-gradient(135deg, #213b32 0%, #4b6a5c 100%);
+}
+
+.whyjumpserver-page .wj-overview-title,
+.whyjumpserver-page .wj-table-head h4,
+.whyjumpserver-page .wj-advantage-body h3,
+.whyjumpserver-page .wj-summary-card h4,
+.whyjumpserver-page .wj-cost-card h4 {
+    color: #15261f;
+    font-weight: 800;
+}
+
+.whyjumpserver-page .wj-overview-list li,
+.whyjumpserver-page .wj-advantage-list li,
+.whyjumpserver-page .wj-mini-list li,
+.whyjumpserver-page .wj-compare-table td,
+.whyjumpserver-page .wj-feature-desc {
+    color: #33483e;
+    font-weight: 500;
+}
+
+.whyjumpserver-page .wj-chip-list {
+    background: #f2faf6;
+    border-color: rgba(43, 147, 124, 0.14);
+    border-radius: 10px;
+}
+
+.whyjumpserver-page .wj-chip {
+    background: #ffffff;
+    border-color: rgba(43, 147, 124, 0.16);
+    color: #2f5f4f;
+    font-weight: 700;
+}
+
+.whyjumpserver-page .wj-feature-tabs .nav-link {
+    border: 1px solid rgba(43, 147, 124, 0.12);
+    border-radius: 8px;
+    color: #41584f;
+}
+
+.whyjumpserver-page .wj-feature-tabs .nav-link.active {
+    border-color: transparent;
+}
+
+.whyjumpserver-page .wj-table-card {
+    overflow: hidden;
+}
+
+.whyjumpserver-page .wj-table-head {
+    background: linear-gradient(135deg, #e8f7f1 0%, #f7fbf9 100%);
+    border-bottom: 1px solid #d6e7e0;
+    padding: 1.45rem 1.6rem;
+}
+
+.whyjumpserver-page .wj-table-head span {
+    color: #52675e;
+    font-weight: 600;
+}
+
+.whyjumpserver-page .wj-compare-table thead th {
+    background: #f7fbf9;
+    color: #1d342b;
+    font-size: 0.92rem;
+    font-weight: 800;
+}
+
+.whyjumpserver-page .wj-compare-table td {
+    border-top: 1px solid rgba(43, 147, 124, 0.12);
+}
+
+.whyjumpserver-page .wj-compare-table tbody tr:nth-child(even) td {
+    background: #f7fbf9;
+}
+
+.whyjumpserver-page .wj-compare-table tbody tr:hover td {
+    background: #eef8f4;
+}
+
+.whyjumpserver-page .wj-advantage-card {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(64, 191, 128, 0.12), transparent 30%),
+        linear-gradient(145deg, #ffffff 0%, #f6fbf8 100%);
+}
+
+.whyjumpserver-page .wj-advantage-media {
+    background:
+        radial-gradient(circle at 30% 18%, rgba(64, 191, 128, 0.1), transparent 34%),
+        linear-gradient(135deg, #f7fbf9 0%, #edf7f3 100%);
+    min-height: 280px;
+}
+
+.whyjumpserver-page .wj-advantage-media img {
+    border: 1px solid rgba(43, 147, 124, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 18px 38px rgba(22, 49, 41, 0.12);
+}
+
+.whyjumpserver-page .wj-advantage-tag {
+    background: rgba(43, 147, 124, 0.1);
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    color: var(--wj-primary-dark);
+}
+
+.whyjumpserver-page .wj-cta-panel {
+    background:
+        radial-gradient(circle at 85% 12%, rgba(255, 255, 255, 0.2), transparent 28%),
+        linear-gradient(135deg, #2f9662 0%, #40bf80 100%);
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 20px 48px rgba(47, 150, 98, 0.22);
+}
+
+@media (max-width: 767.98px) {
+    .whyjumpserver-page .wj-stat-card,
+    .whyjumpserver-page .wj-overview-card,
+    .whyjumpserver-page .wj-table-card,
+    .whyjumpserver-page .wj-summary-card,
+    .whyjumpserver-page .wj-cost-card,
+    .whyjumpserver-page .wj-advantage-card,
+    .whyjumpserver-page .wj-cta-panel {
+        border-radius: 12px;
+    }
+
+    .whyjumpserver-page .wj-stat-card:hover,
+    .whyjumpserver-page .wj-overview-card:hover,
+    .whyjumpserver-page .wj-table-card:hover,
+    .whyjumpserver-page .wj-summary-card:hover,
+    .whyjumpserver-page .wj-cost-card:hover,
+    .whyjumpserver-page .wj-advantage-card:hover {
+        transform: none;
+    }
+}
+
+/* Unified visual system */
+.whyjumpserver-page {
+    --wj-primary: var(--de-primary, #2b937c);
+    --wj-primary-dark: var(--de-primary-dark, #1f755f);
+    --wj-accent: #f8fbff;
+    --wj-border: var(--de-line, #dfe8f5);
+    --wj-shadow: var(--de-shadow, 0 14px 36px rgba(24, 43, 77, 0.08));
+    color: var(--de-text, #34445c);
+}
+
+.whyjumpserver-page p,
+.whyjumpserver-page li,
+.whyjumpserver-page td,
+.whyjumpserver-page th,
+.whyjumpserver-page .wj-feature-desc,
+.whyjumpserver-page .wj-table-head span,
+.whyjumpserver-page .wj-overview-list li,
+.whyjumpserver-page .wj-advantage-list li,
+.whyjumpserver-page .wj-mini-list li {
+    color: var(--de-muted, #68788f) !important;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.whyjumpserver-page h1,
+.whyjumpserver-page h2,
+.whyjumpserver-page h3,
+.whyjumpserver-page h4,
+.whyjumpserver-page h5,
+.whyjumpserver-page h6,
+.whyjumpserver-page .section-title .title,
+.whyjumpserver-page .wj-overview-title,
+.whyjumpserver-page .wj-table-head h4,
+.whyjumpserver-page .wj-advantage-body h3,
+.whyjumpserver-page .wj-summary-card h4,
+.whyjumpserver-page .wj-cost-card h4 {
+    color: var(--de-ink, #172033) !important;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.28;
+}
+
+.whyjumpserver-page .wj-hero h1,
+.whyjumpserver-page .wj-recommendation h3,
+.whyjumpserver-page .wj-recommendation h4,
+.whyjumpserver-page .wj-cta-panel h2,
+.whyjumpserver-page .wj-cta-panel h3,
+.whyjumpserver-page .wj-cta-panel h4 {
+    color: #ffffff !important;
+}
+
+.whyjumpserver-page .section.bg-light,
+.whyjumpserver-page #overview {
+    background: linear-gradient(180deg, #f8fbff 0%, #f2f7fc 100%) !important;
+}
+
+.whyjumpserver-page .wj-stat-card,
+.whyjumpserver-page .wj-overview-card,
+.whyjumpserver-page .wj-table-card,
+.whyjumpserver-page .wj-summary-card,
+.whyjumpserver-page .wj-cost-card,
+.whyjumpserver-page .wj-advantage-card,
+.whyjumpserver-page .wj-highlight-card,
+.whyjumpserver-page .wj-legend,
+.whyjumpserver-page .wj-metric-card {
+    background: var(--de-card, #ffffff) !important;
+    border: 1px solid var(--de-line, #dfe8f5) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 10px 28px rgba(24, 43, 77, 0.06);
+}
+
+.whyjumpserver-page .wj-stat-card:hover,
+.whyjumpserver-page .wj-overview-card:hover,
+.whyjumpserver-page .wj-table-card:hover,
+.whyjumpserver-page .wj-summary-card:hover,
+.whyjumpserver-page .wj-cost-card:hover,
+.whyjumpserver-page .wj-advantage-card:hover {
+    border-color: rgba(43, 147, 124, 0.35) !important;
+    box-shadow: var(--de-shadow-hover, 0 22px 54px rgba(43, 147, 124, 0.16));
+    transform: translateY(-4px);
+}
+
+.whyjumpserver-page .wj-stat-value {
+    color: var(--de-ink, #172033) !important;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.whyjumpserver-page .wj-stat-label,
+.whyjumpserver-page .wj-finding-header span,
+.whyjumpserver-page .wj-note {
+    color: var(--de-muted, #68788f) !important;
+}
+
+.whyjumpserver-page .wj-table-head {
+    background: linear-gradient(135deg, #f8fbff 0%, #eef6ff 100%) !important;
+    border-bottom: 1px solid var(--de-line, #dfe8f5);
+}
+
+.whyjumpserver-page .wj-compare-table thead th {
+    background: #f8fbff !important;
+    color: var(--de-ink, #172033) !important;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.whyjumpserver-page .wj-compare-table td {
+    border-top: 1px solid var(--de-line, #dfe8f5);
+    color: var(--de-text, #34445c) !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.whyjumpserver-page .wj-compare-table tbody tr:nth-child(even) td {
+    background: #f8fbff;
+}
+
+.whyjumpserver-page .wj-feature-tabs .nav-link {
+    background: #f8fbff;
+    border: 1px solid var(--de-line, #dfe8f5);
+    border-radius: 8px;
+    color: var(--de-text, #34445c);
+    font-size: 15px;
+}
+
+.whyjumpserver-page .wj-feature-tabs .nav-link.active {
+    background: linear-gradient(135deg, var(--de-primary, #2b937c) 0%, var(--de-accent, #1fb993) 100%) !important;
+    border-color: var(--de-primary, #2b937c) !important;
+    color: #ffffff !important;
+}
+
+.whyjumpserver-page .wj-chip-list,
+.whyjumpserver-page .wj-advantage-tag {
+    background: var(--de-primary-soft, #e8f7f1);
+    border-color: rgba(43, 147, 124, 0.14);
+}
+
+.whyjumpserver-page .wj-chip {
+    background: #ffffff;
+    border-color: var(--de-line, #dfe8f5);
+    color: var(--de-text, #34445c);
+    font-size: 14px;
+}
+
+.whyjumpserver-page .wj-cta-panel {
+    background: linear-gradient(135deg, var(--de-primary, #2b937c) 0%, var(--de-accent, #1fb993) 100%) !important;
+    border: 0 !important;
+    border-radius: 8px !important;
+}
+
+.whyjumpserver-page .wj-cta-panel p,
+.whyjumpserver-page .wj-recommendation p,
+.whyjumpserver-page .wj-recommendation li {
+    color: rgba(255, 255, 255, 0.88) !important;
+}
+
+@media (max-width: 767.98px) {
+    .whyjumpserver-page p,
+    .whyjumpserver-page li,
+    .whyjumpserver-page td,
+    .whyjumpserver-page th,
+    .whyjumpserver-page .wj-feature-desc {
+        font-size: 15px;
+    }
+}
+
+.whyjumpserver-page {
+    background: #f6faff;
+}
+
+.whyjumpserver-page .wj-hero {
+    background:
+        radial-gradient(circle at 80% 18%, rgba(64, 191, 128, 0.28), transparent 34%),
+        linear-gradient(135deg, #10231d 0%, #18362d 48%, #23694e 100%) !important;
+}
+
+.whyjumpserver-page .wj-hero p.lead,
+.whyjumpserver-page .wj-eyebrow,
+.whyjumpserver-page .wj-hero-point span {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.whyjumpserver-page #overview,
+.whyjumpserver-page #advantages {
+    background:
+        radial-gradient(circle at 12% 16%, rgba(43, 147, 124, 0.1), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, #eef8f4 100%) !important;
+}
+
+.whyjumpserver-page #features {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%) !important;
+}
+
+.whyjumpserver-page p,
+.whyjumpserver-page li,
+.whyjumpserver-page td,
+.whyjumpserver-page .wj-feature-desc,
+.whyjumpserver-page .wj-table-head span,
+.whyjumpserver-page .wj-overview-list li,
+.whyjumpserver-page .wj-advantage-list li,
+.whyjumpserver-page .wj-mini-list li {
+    color: #42546a !important;
+}
+
+.whyjumpserver-page .section-title p,
+.whyjumpserver-page .text-muted {
+    color: #526783 !important;
+}
+
+.whyjumpserver-page .wj-stat-label,
+.whyjumpserver-page .wj-note,
+.whyjumpserver-page .wj-finding-header span {
+    color: #53677f !important;
+}
+
+.whyjumpserver-page .wj-table-card,
+.whyjumpserver-page .wj-overview-card,
+.whyjumpserver-page .wj-stat-card,
+.whyjumpserver-page .wj-summary-card,
+.whyjumpserver-page .wj-cost-card,
+.whyjumpserver-page .wj-advantage-card {
+    background:
+        radial-gradient(circle at 88% 12%, rgba(43, 147, 124, 0.06), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #fbfdff 100%) !important;
+}
+
+.whyjumpserver-page .wj-stat-card::before,
+.whyjumpserver-page .wj-advantage-card::before,
+.whyjumpserver-page .wj-summary-card::before,
+.whyjumpserver-page .wj-cost-card::before {
+    background: var(--js-card-stripe, linear-gradient(90deg, #2b937c 0%, #1fb993 100%)) !important;
+}
+
+.whyjumpserver-page .wj-table-head {
+    background: linear-gradient(135deg, #eef8f4 0%, #f8fbff 100%) !important;
+}
+
+.whyjumpserver-page .wj-compare-table td {
+    color: #34445c !important;
+}
+
+.whyjumpserver-page .wj-overview-head--primary {
+    background:
+        radial-gradient(circle at 86% 14%, rgba(255, 255, 255, 0.2), transparent 32%),
+        linear-gradient(135deg, #17835f 0%, #27b780 100%) !important;
+}
+
+.whyjumpserver-page .wj-overview-head--secondary {
+    background:
+        radial-gradient(circle at 86% 14%, rgba(255, 255, 255, 0.16), transparent 32%),
+        linear-gradient(135deg, #17342a 0%, #31564a 100%) !important;
+}
+
+.whyjumpserver-page .wj-overview-head h3,
+.whyjumpserver-page .wj-overview-head h3 b {
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 18, 12, 0.28);
+}
+
+.whyjumpserver-page .wj-overview-head small,
+.whyjumpserver-page .wj-overview-head .wj-overview-meta li,
+.whyjumpserver-page .wj-overview-head .wj-overview-meta li span {
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.whyjumpserver-page .wj-overview-head .wj-overview-meta i,
+.whyjumpserver-page .wj-overview-head .wj-overview-meta svg {
+    color: rgba(255, 255, 255, 0.94) !important;
+    stroke: currentColor !important;
+}
