@@ -624,7 +624,6 @@ body {
   background: var(--text-primary);
   color: white;
   padding: 56px 0 28px;
-  margin-top: var(--spacing-2xl);
 }
 
 .footer__main {
