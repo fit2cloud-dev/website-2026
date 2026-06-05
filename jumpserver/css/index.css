@@ -69,16 +69,22 @@ h6,
     }
 }
 
+@media (max-width: 991px) {
+    #topnav .navigation-menu > li:first-child {
+        margin-left: 0;
+    }
+
+    #topnav .menu-btn {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-mt-pnone {
         margin-top: 0 !important;
     }
 
     .notice-phone {
-        display: none !important;
-    }
-
-    #topnav .menu-btn {
         display: none !important;
     }
 
