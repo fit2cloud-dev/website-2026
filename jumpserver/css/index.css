@@ -4529,7 +4529,7 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview,
-.js-enterprise-page #xpack,
+.js-enterprise-page #js-xpack,
 .js-enterprise-page .js-enterprise-editions {
     background:
         radial-gradient(circle at 10% 16%, rgba(43, 147, 124, 0.1), transparent 28%),
@@ -4548,7 +4548,7 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .js-enterprise-entry-grid > [class*="col-"],
-.js-enterprise-page #xpack .row > [class*="col-"] {
+.js-enterprise-page #js-xpack .row > [class*="col-"] {
     display: flex;
 }
 
@@ -4604,14 +4604,14 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .js-enterprise-entry-grid > [class*="col-"] > a,
-.js-enterprise-page #xpack .row > [class*="col-"] > .card {
+.js-enterprise-page #js-xpack .row > [class*="col-"] > .card {
     display: flex;
     height: 100%;
     width: 100%;
 }
 
 .js-enterprise-page .js-enterprise-overview .card,
-.js-enterprise-page #xpack .card {
+.js-enterprise-page #js-xpack .card {
     background:
         radial-gradient(circle at 86% 12%, rgba(43, 147, 124, 0.12), transparent 32%),
         linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(246, 252, 249, 0.98) 100%) !important;
@@ -4643,12 +4643,12 @@ a:focus {
     z-index: 2;
 }
 
-.js-enterprise-page #xpack .card::before {
+.js-enterprise-page #js-xpack .card::before {
     content: none !important;
 }
 
 .js-enterprise-page .js-enterprise-overview .card::after,
-.js-enterprise-page #xpack .card::after {
+.js-enterprise-page #js-xpack .card::after {
     background:
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), transparent 62%),
         linear-gradient(135deg, rgba(43, 147, 124, 0.1), rgba(31, 185, 147, 0));
@@ -4666,7 +4666,7 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .card:hover,
-.js-enterprise-page #xpack .card:hover {
+.js-enterprise-page #js-xpack .card:hover {
     background:
         radial-gradient(circle at 86% 12%, rgba(43, 147, 124, 0.16), transparent 34%),
         linear-gradient(145deg, #ffffff 0%, #f2fbf7 100%) !important;
@@ -4676,13 +4676,13 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .card:hover::after,
-.js-enterprise-page #xpack .card:hover::after {
+.js-enterprise-page #js-xpack .card:hover::after {
     opacity: 1;
     transform: scale(1);
 }
 
 .js-enterprise-page .js-enterprise-overview .card-body,
-.js-enterprise-page #xpack .card-body {
+.js-enterprise-page #js-xpack .card-body {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -4698,16 +4698,16 @@ a:focus {
     padding: 44px 34px 40px !important;
 }
 
-.js-enterprise-page #xpack .row > [class*="col-"] {
+.js-enterprise-page #js-xpack .row > [class*="col-"] {
     line-height: normal !important;
 }
 
-.js-enterprise-page #xpack .card-body {
+.js-enterprise-page #js-xpack .card-body {
     min-height: 176px;
 }
 
 .js-enterprise-page .js-enterprise-overview .icon,
-.js-enterprise-page #xpack .icon {
+.js-enterprise-page #js-xpack .icon {
     align-items: center;
     background:
         radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.96), transparent 38%),
@@ -4730,8 +4730,8 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .icon img,
-.js-enterprise-page #xpack .icon img,
-.js-enterprise-page #xpack .icon svg {
+.js-enterprise-page #js-xpack .icon img,
+.js-enterprise-page #js-xpack .icon svg {
     color: var(--de-primary) !important;
     height: 42px;
     max-height: 42px;
@@ -4748,13 +4748,13 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .card:hover .icon,
-.js-enterprise-page #xpack .card:hover .icon {
+.js-enterprise-page #js-xpack .card:hover .icon {
     box-shadow: 0 18px 34px rgba(43, 147, 124, 0.18) !important;
     transform: translateY(-3px) scale(1.04);
 }
 
 .js-enterprise-page .js-enterprise-overview .content,
-.js-enterprise-page #xpack .card-body > h5 {
+.js-enterprise-page #js-xpack .card-body > h5 {
     margin-top: 24px !important;
 }
 
@@ -4763,7 +4763,7 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .card .title,
-.js-enterprise-page #xpack .card .title {
+.js-enterprise-page #js-xpack .card .title {
     color: var(--js-color-heading) !important;
     display: block;
     font-size: 19px !important;
@@ -4774,7 +4774,7 @@ a:focus {
     max-width: 280px;
 }
 
-.js-enterprise-page #xpack .section-title {
+.js-enterprise-page #js-xpack .section-title {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -4782,7 +4782,7 @@ a:focus {
     text-align: center;
 }
 
-.js-enterprise-page #xpack .section-title > .title {
+.js-enterprise-page #js-xpack .section-title > .title {
     align-self: center;
     display: block;
     font-size: clamp(25px, 3vw, 32px) !important;
@@ -4845,19 +4845,19 @@ a:focus {
 
 @media (max-width: 767px) {
     .js-enterprise-page .js-enterprise-overview .card-body,
-    .js-enterprise-page #xpack .card-body {
+    .js-enterprise-page #js-xpack .card-body {
         min-height: 160px;
         padding: 28px 20px 26px !important;
     }
 
     .js-enterprise-page .js-enterprise-overview .icon,
-    .js-enterprise-page #xpack .icon {
+    .js-enterprise-page #js-xpack .icon {
         height: 68px;
         width: 68px;
     }
 
     .js-enterprise-page .js-enterprise-overview .card .title,
-    .js-enterprise-page #xpack .card .title {
+    .js-enterprise-page #js-xpack .card .title {
         font-size: 18px !important;
     }
 
@@ -4898,8 +4898,8 @@ a:focus {
     line-height: 1.45;
 }
 
-.js-enterprise-page #xpack .card .title,
-.js-enterprise-page #xpack .card h5.title {
+.js-enterprise-page #js-xpack .card .title,
+.js-enterprise-page #js-xpack .card h5.title {
     font-size: 18px !important;
     font-weight: 500 !important;
     line-height: 1.45 !important;
