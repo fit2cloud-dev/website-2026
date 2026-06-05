@@ -259,7 +259,7 @@ th.visible-print,td.visible-print {
 	height: 0.8em;
 	transform: rotate(-90deg);
 	width: 0.8em;
-	color: #8492a6
+	color: rgba(255,255,255,0.8)
 }
 
 .mega-nav-sandbox .open>.mega-nav-ctrl .mega-nav-icon-angle-right {
@@ -290,7 +290,7 @@ th.visible-print,td.visible-print {
 }
 
 .mega-nav-sandbox .mega-nav-icon-outline {
-	border: 1px solid #8492a6;
+	border: 1px solid rgba(255,255,255,0.5);
 	margin-top: -1px;
 	padding: 0.5em
 }
