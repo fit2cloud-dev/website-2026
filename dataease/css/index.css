@@ -58,8 +58,7 @@ h6,
 
 @media (max-width: 991px) {
     .github-star {
-        float: left;
-        padding: 10px 20px;
+        display: none;
     }
 }
 

@@ -618,6 +618,9 @@
         z-index: 1001;
         cursor: pointer;
     }
+    .menu-btn {
+        display: none !important;
+    }
 }
 
 @media (max-width: 375px) {

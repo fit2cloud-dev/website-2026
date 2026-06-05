@@ -1126,21 +1126,23 @@ body {
     }
 
     .dev-consulting__features {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
+        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        max-width: 520px;
     }
 
-    .feature-grid .feature-card:last-child {
-        grid-column: span 2;
-        max-width: 400px;
-        margin: 0 auto;
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
     }
 
     .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 520px;
         gap: 24px;
     }
 }
@@ -1150,53 +1152,18 @@ body {
   .top-bar { display: none; }
 
   /* Navigation */
-
-.nav__button {
-  width: 80%;
-  justify-content: center;
-}
-
-.nav {
-  position: relative;
-}
-
-.nav__center,
-.nav__right {
-  display: none;
-}
-
-.nav.mobile-open .nav__center,
-.nav.mobile-open .nav__right {
-  display: flex !important;
-  background-color: white;
-}
-
-.nav.mobile-open {
-  flex-direction: column;
-  align-items: stretch;
-  height: auto;
-}
-
-.nav.mobile-open .nav__center {
-  display: flex;
-  position: static;
-  transform: none;
-  order: 1;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-}
-  .nav.mobile-open .nav__right {
-    order: 2;
-    flex-direction: column;
-    width: 100%;
-    padding: var(--spacing-sm) 0 var(--spacing-md);
+  .nav {
+    position: relative;
   }
-  .nav__link {
-    padding: var(--spacing-md);
-    border-bottom: 1px solid var(--border-color);
+
+  .nav__center {
+    display: none;
   }
-  
+
+  .nav__right {
+    display: none !important;
+  }
+
   .nav__toggle {
     display: flex !important;
     position: absolute;
@@ -1207,12 +1174,45 @@ body {
   .nav__brand {
     min-height: 70px;
   }
+
+  .nav__link {
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav.mobile-open {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+  }
+
+  .nav.mobile-open .nav__center {
+    display: flex !important;
+    position: static;
+    transform: none;
+    order: 1;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+
+  /* Header */
+  .header {
+    top: 0;
+  }
   
   /* Hero Section */
+  .hero {
+    padding-top: 80px;
+    min-height: auto;
+  }
+
   .hero__content {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
     text-align: center;
+    min-height: auto;
   }
   
   .hero__title {
@@ -1233,7 +1233,7 @@ body {
   }
 
   .blog-page {
-    padding-top: 110px;
+    padding-top: 90px;
   }
 
   .blog-hero {
@@ -1253,7 +1253,7 @@ body {
   }
 
   .pricing-hero {
-    padding: 220px 0 100px;
+    padding: 120px 0 60px;
   }
 
   .pricing-hero__title {
@@ -1274,7 +1274,7 @@ body {
   }
 
   .article-page {
-    padding-top: 118px;
+    padding-top: 90px;
   }
 
   .article-title {
@@ -1334,7 +1334,7 @@ body {
     }
 
     .dev-consulting__features {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 12px;
     }
 
@@ -1376,7 +1376,7 @@ body {
 
     /* Feature Grid */
     .feature-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 24px;
     }
 
@@ -1404,7 +1404,7 @@ body {
 
     /* Advantages Grid */
     .advantages-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 24px;
     }
 
@@ -1427,7 +1427,7 @@ body {
 
     /* Pricing Grid */
     .pricing-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         gap: 24px;
         max-width: 400px;
     }
@@ -1438,6 +1438,11 @@ body {
 
     .price__amount {
         font-size: 40px;
+    }
+
+    .service-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .service-table th:first-child {
@@ -1463,6 +1468,15 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 0 var(--spacing-sm);
+  }
+
+  .hero {
+    padding-top: 70px;
+    min-height: auto;
+  }
+
+  .hero__content {
+    min-height: auto;
   }
   
   .hero__title {
@@ -1494,7 +1508,7 @@ body {
   }
 
   .pricing-hero {
-    padding: 200px 0 100px;
+    padding: 100px 0 60px;
   }
 
   .pricing-hero__title {

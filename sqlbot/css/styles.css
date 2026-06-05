@@ -760,9 +760,13 @@ body {
   }
 
   .nav.mobile-open .nav__button {
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto;
+    display: none !important;
+  }
+
+  /* Hide action buttons on mobile */
+  .nav__button--outline,
+  .nav__button--primary {
+    display: none !important;
   }
 
   /* Hero Section */
