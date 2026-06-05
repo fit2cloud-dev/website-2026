@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台 - JumpServer 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="JumpServer堡垒机服务百货零售行业企业。" />
+        <meta name="keywords" content="JumpServer,产品动态,开源堡垒机,堡垒机,PAM,运维安全审计,数据库审计" />
+        <meta name="email" content="support@fit2cloud.com" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://www.jumpserver.org/blog/security-20240417.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://www.jumpserver.org/blog/security-20240417.html" />
+        <link rel="alternate" hreflang="en" href="https://www.jumpserver.com/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.jumpserver.org/blog/security-20240417.html" />
+        <meta property="og:site_name" content="JumpServer" />
+        <meta property="og:title" content="案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台 - JumpServer 产品动态" />
+        <meta property="og:description" content="JumpServer堡垒机服务百货零售行业企业。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.jumpserver.org/blog/security-20240417.html" />
+        <meta property="og:image" content="https://www.jumpserver.org/images/blog/security-20240417/cover.png" />
+        <meta property="og:image:alt" content="案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台 - JumpServer 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:locale:alternate" content="en" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台 - JumpServer 产品动态" />
+        <meta name="twitter:description" content="JumpServer堡垒机服务百货零售行业企业。" />
+        <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/security-20240417/cover.png" />
+        <meta name="twitter:image:alt" content="案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台 - JumpServer 产品动态" />
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台","description":"JumpServer堡垒机服务百货零售行业企业。","datePublished":"2024-04-17T02:40:49.781883+00:00","dateModified":"2024-04-17T02:40:49.781883+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/security-20240417.html"},"image":["https://www.jumpserver.org/images/blog/security-20240417/cover.png"]}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-2ZRQ481R4Z');
+        </script>
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-list">
+                                            <li>
+                                                <a href="https://cordys.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">Cordys CRM</span>
+                                                    <span class="product-desc">新一代的开源 AI CRM 系统</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://1panel.cn" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">1Panel</span>
+                                                    <span class="product-desc">现代化、开源的 Linux 面板</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://maxkb.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">MaxKB</span>
+                                                    <span class="product-desc">开源企业级智能体平台</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.jumpserver.org/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">JumpServer</span>
+                                                    <span class="product-desc">广受欢迎的开源堡垒机</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://dataease.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">DataEase</span>
+                                                    <span class="product-desc">人人可用的开源 BI 工具</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://sqlbot.org/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">SQLBot</span>
+                                                    <span class="product-desc">基于大模型的开源智能问数系统</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://metersphere.io/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">MeterSphere</span>
+                                                    <span class="product-desc">新一代的开源持续测试工具</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://halo.run/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">Halo</span>
+                                                    <span class="product-desc">强大易用的开源建站工具</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-JumpServer.svg" class="l-dark" height="35" alt="JumpServer Logo" />
+                        <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whyjumpserver.html">产品优势</a></li>
+                        <li><a href="../customers.html">客户案例</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../hardware.html">一体机</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../e-commerce.html">跨境电商</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../enterprise.html">企业版</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../features.html">版本对比</a></li>
+                                <li><a target="_blank" href="http://docs.jumpserver.org/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/jumpserver">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/js/5">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.jumpserver.org/">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/sQ91MK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf">如何向团队介绍 JumpServer?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://jumpserver.com/" target="_blank" rel="noopener noreferrer">English</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=jumpserver&repo=jumpserver&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe></li>
+                        <li><div class="mt-3 menu-mt-pnone"><a target="_blank" href="https://community.fit2cloud.com/#/products/jumpserver/downloads" class="btn btn-primary menu-btn">免费下载</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="main-content" class="de-article-main">
+            <article class="de-article">
+                <nav class="de-article-breadcrumb"><a href="../blog.html">产品动态</a><span>/</span><span>案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台</span></nav>
+                <header class="de-article-header">
+                    <time datetime="2024-04-17">2024-04-17</time>
+                    <h1>案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台</h1>
+                    <p>JumpServer堡垒机服务百货零售行业企业。</p>
+                    <img src="../images/blog/security-20240417/cover.png" alt="案例研究 | JumpServer助力天虹股份构建可靠的运维安全审计平台" loading="lazy" />
+                </header>
+                <div class="de-article-content">
+                    <p style="text-align: start; "></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">天虹数科商业股份有限公司（以下简称为“天虹股份”）成立于1984年，是国有控股的上市公司。通过人本、科学的管理，以及专业、高效的运营，天虹股份连续多年入围中国连锁百强企业，拥有全国领先的零售技术研发和运营能力。天虹股份围绕百货、购物中心、超市三大业态打造线上线下融合的数字化、体验式新零售，旗下拥有“天虹”、“君尚”、“sp@ce”品牌。</span></p><p><img src="../images/blog/security-20240417/cover.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">近年来，天虹股份积极转型，大力发展线上线下一体化的智慧零售商业模式。天虹数字化已实现全门店、全业态、全流程覆盖，形成”到店+到家“的融合零售，并且持续推进技术服务的输出，成为科技零售的领先者。天虹的每个门店还弹性定制百货、超市和体验配套的业态组合及主题设计，并且不断迭代主题街区。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">为了给顾客提供优质的商品，天虹股份持续整合供应链，在全国建立了众多的生鲜基地，开拓了30多个国家的直采渠道，引进全球好货。</span></p><h1 style="text-align: start; " id="%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E9%80%89%E6%8B%A9jumpserver%E5%A0%A1%E5%9E%92%E6%9C%BA%EF%BC%9F">为什么会选择JumpServer堡垒机？</h1><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">随着业务的扩张和IT资产规模的快速增长，相较于过去的运维安全审计解决方案，天虹股份的运维团队对运维审计系统的使用体验、开放性和可扩展性提出了更高的要求：</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 支持高可用和横向扩展</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">天虹股份目前在深圳的南山区和龙岗区设有两个机房，随着IT资产规模和使用人员的增加，对于堡垒机的要求也日益提高。原有堡垒机的传统单机部署架构存在单点故障的风险，运维团队急需一款具备持续可用性和快速容灾切换能力的堡垒机，以确保业务的持续稳定运行。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer堡垒机采用了模块化解耦的架构设计，可以根据企业的需求实现高可用部署，并支持灵活的横向扩展，从而满足企业未来发展的需求。这样的架构设计不仅能够提高系统的稳定性和可靠性，还能有效应对突发情况，确保业务的持续运营。</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 支持网域网关</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">为了有效支持天虹股份信息化系统和线上商城等业务，天虹股份的研发部门在不同的网络环境中分别建立了开发、测试和生产环境。这样一来，就需要构建一个可以集中管理不同网域资产的统一运维审计入口。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer堡垒机提供的网域网关功能可以很好地满足这一需求。即使是处于网络隔离状态下的资产也能够通过网域网关功能实现流量的转发。这使得天虹股份能够通过JumpServer堡垒机统一访问隔离网段中的资产，形成统一的资产访问门户。这样不仅可以确保运维工作的顺利进行，提高了日常运维的效率和安全性，还满足了公司在不同网络环境下统一访问资源的需求。</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 支持广泛的云平台对接</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">作为一家运行在混合云基础设施之上的科技企业，天虹股份拥有多套虚拟化平台，包括私有化VMware以及腾讯云等公有云平台。未来，还将继续扩展不同的异构环境，以满足不断增长的IT需求和不断变化的业务挑战。因此，天虹股份需要堡垒机能够支持复杂的IT环境，与广泛的云平台进行对接。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer支持与多种云平台进行对接，并且可以通过“云同步”的功能自动同步云平台的资产信息。通过JumpServer堡垒机集中管理云平台上的资产，提高了系统运维的效率，让天虹股份能够统一管理多云环境中的IT资产，为未来的系统扩展和业务发展奠定了坚实的基础。</span></p><h1 style="text-align: start; " id="jumpserver%E5%A0%A1%E5%9E%92%E6%9C%BA%E7%9A%84%E9%83%A8%E7%BD%B2%E6%9E%B6%E6%9E%84">JumpServer堡垒机的部署架构</h1><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">针对JumpServer堡垒机的部署方案，天虹股份的运维团队选择使用高可用的部署架构。天虹股份分别在深圳的南山区、龙岗区两个机房部署了JumpServer节点，数据库采用主主同步的方式，审计录像统一存储在NFS（Network File System，网络文件系统）上。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">同时，JumpServer的不同节点通过Keepalived高可用服务实现VIP漂移，使用一个VIP地址作为统一的访问入口提供服务。在极端情况下，如果某个机房的服务器宕机，Keepalived高可用服务会自动将VIP漂移至另一个机房的节点，确保服务的正常运行，保障系统安全。</span></p><p style="text-align: center; "><img src="../images/blog/security-20240417/image.png" alt="" loading="lazy" />▲ 图1 天虹股份JumpServer堡垒机部署架构图</p><h1 style="text-align: start; " id="jumpserver%E5%A0%A1%E5%9E%92%E6%9C%BA%E7%9A%84%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF">JumpServer堡垒机的应用场景</h1><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">高可用部署的JumpServer堡垒机在天虹股份的主要应用场景包括：</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 对接LDAP认证</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer支持LDAP用户认证，能够自动同步LDAP用户信息。在创建资产授权规则时，管理员可选择“同名账号”选项，这样一来，用户可以通过域账号直接登录Windows资产，从而快速实现用户同步和权限管理，极大地提升了运维管理的工作效率。</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 访问权限控制</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">在日常运维工作中，除了内部用户需要登录堡垒机连接资产，堡垒机还需要满足外部供应商临时访问资产的需求场景。为了确保外部供应商的安全访问，JumpServer堡垒机主要通过以下功能加以控制：</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">资产登录复核：</span></strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">外部供应商在连接资产时，系统会发送工单消息给相应的审批人，审批人通过后才会下放资产连接权限；</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">核心资产申请授权：</span></strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">外部供应商可以提交申请资产授权工单，以获取临时访问核心资产的权限；</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">高危命令复核：</span></strong><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">当用户的操作涉及高危命令时，也可以通过工单机制进行高危命令复核。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">此外，当JumpServer与企业微信认证对接后，工单消息可以直接推送至企业微信，审批人可以直接在企业微信上完成工单审批。这样不仅加强了系统的安全策略，还为管理人员的日常操作提供了便利性。通过以上措施，天虹股份的运维团队能够高效地管理外部供应商的访问权限，确保资产的安全性和合规性。</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 良好的使用体验</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer堡垒机提供了不依赖于任何插件且体验优异的Web Terminal功能，让用户能够通过Web浏览器轻松连接服务器。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">同时，JumpServer还支持RDP File下载功能，用户可将RDP File保存至本地，双击即可启动RDP客户端连接资产，享受高清流畅的画质。这一功能为需要频繁连接和操作Windows系统的用户带来了良好的使用体验。</span></p><h1 style="text-align: start; " id="jumpserver%E5%A0%A1%E5%9E%92%E6%9C%BA%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BB%B7%E5%80%BC%E6%94%B6%E7%9B%8A">JumpServer堡垒机带来的价值收益</h1><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">JumpServer堡垒机落地使用后，天虹股份获得的价值收益包括：</span></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 提升了用户体验。</span></strong>JumpServer划分为控制台、审计台和工作台三个面板，分别服务于管理员、审计员和普通用户。其界面设计美观直接，资产树和Web终端等操作界面简洁明了，用户上手非常简单。同时，通过客户端连接的方式保留了用户的操作习惯。在公司内部推广期间，JumpServer凭借良好的用户体验赢得了内部用户的高度认可；</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 提高了运维管理效率。</span></strong>JumpServer的云同步功能集中且高效地管理了天虹异构的IT基础设施。JumpServer提供的账号改密、账号收集、账号备份等自动化功能在满足企业安全合规要求的同时，极大地降低了大规模IT资产的运维管理成本。同时，JumpServer具有丰富的生态对接能力，例如企业微信认证对接等，进一步提升了运维的便利性和高效性；</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 加强了安全访问策略。</span></strong>面对多元化的操作角色，JumpServer支持RBAC（基于角色的访问控制）权限控制，可以针对不同的用户和应用场景设定不同的访问策略，配合“三位一体”的工单复核机制，加强资产访问的安全性；</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 提升了运维审计能力。</span></strong>JumpServer的审计台提供了全面的审计功能，可以记录和追踪用户的操作行为，包括登录记录、命令执行记录、会话操作录像等，为运维团队提供了关键的合规依据和安全溯源能力，有助于加强管理员对系统操作的监控和审计，确保系统数据的安全性和合规性；</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■ 满足未来的发展规划。</span></strong>JumpServer为天虹股份未来的业务发展提供了良好的技术支撑。其强大的API对接能力使得复杂的工单授权策略可以轻松对接内部OA工单流程，满足企业未来自动化管理的需求。另外，JumpServer采用了高可用部署和易于横向扩展的架构设计，在保障系统稳定运行的同时，也能够满足未来公司的系统扩展需求。</p>
+                </div>
+                <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
+            </article>
+        </main>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
+                        <p class="de-footer-desc">广受欢迎的开源堡垒机</p>
+                        <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                        </div>
+                    </div>
+                    <div class="de-footer-nav">
+                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
+                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://community.fit2cloud.com/#/products/jumpserver/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li></ul></div>
+                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
+                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                    </div>
+                </div>
+                <div class="de-footer-bottom">
+                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备15023818号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
+                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>

@@ -122,15 +122,32 @@
 
 .case-article table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #dbe9e3;
+    border-radius: 12px;
+    box-shadow: 0 14px 34px rgba(43, 147, 124, 0.08);
     overflow: hidden;
 }
 
 .case-article th,
 .case-article td {
-    border: 1px solid #e6ecf0;
-    padding: 12px 14px;
+    border: 1px solid #dfe9e5;
+    color: #27364c;
+    font-size: 15px;
+    line-height: 1.75;
+    padding: 14px 16px;
     vertical-align: top;
+}
+
+.case-article th {
+    background: linear-gradient(135deg, #e8f6f1 0%, #f7fbf9 100%);
+    color: #17233a;
+    font-weight: 700;
+}
+
+.case-article tr:nth-child(even) td {
+    background: #f7fbf9;
 }
 
 .case-article strong {
@@ -180,4 +197,74 @@
     .case-article iframe {
         min-height: 220px;
     }
+}
+
+/* Customer detail typography normalization */
+.case-detail-wrap,
+.case-detail-wrap p,
+.case-detail-wrap li,
+.case-detail-wrap td,
+.case-detail-wrap th,
+.case-detail-wrap a,
+.case-detail-wrap blockquote {
+    font-family: var(--js-font-main, "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif) !important;
+}
+
+.case-article-title,
+.case-article h1,
+.case-article h2,
+.case-article h3,
+.case-article h4,
+.case-article h5,
+.case-article h6 {
+    color: var(--js-color-heading, #172033) !important;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.case-article-title {
+    font-size: var(--js-font-page-title, clamp(34px, 4vw, 46px));
+    line-height: 1.32;
+}
+
+.case-article-summary,
+.case-article,
+.case-article p,
+.case-article li,
+.case-article blockquote {
+    color: var(--js-color-muted, #526783) !important;
+    font-size: var(--js-font-body, 16px);
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.case-article-meta {
+    color: var(--js-color-soft, #68788f) !important;
+    font-size: var(--js-font-meta, 14px);
+    line-height: 1.6;
+}
+
+.case-article h2 {
+    font-size: var(--js-font-section-title, clamp(25px, 3vw, 32px));
+}
+
+.case-article h3 {
+    font-size: var(--js-font-card-title, 21px);
+}
+
+.case-article th {
+    color: var(--js-color-heading, #172033) !important;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.case-article td {
+    color: var(--js-color-body, #34445c) !important;
+    font-size: var(--js-font-small, 15px);
+    font-weight: 500;
+}
+
+.case-article strong {
+    color: var(--js-color-heading, #172033) !important;
+    font-weight: 800;
 }

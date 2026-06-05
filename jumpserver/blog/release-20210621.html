@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布 - JumpServer 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="X-Pack增强包新增XRDP组件和账号管理功能模块。" />
+        <meta name="keywords" content="JumpServer,产品动态,开源堡垒机,堡垒机,PAM,运维安全审计,数据库审计" />
+        <meta name="email" content="support@fit2cloud.com" />
+        <link rel="shortcut icon" href="../images/logo/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="../css/mega.css" />
+        <link href="../css/animate.css" rel="stylesheet" />
+        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://www.jumpserver.org/blog/release-20210621.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://www.jumpserver.org/blog/release-20210621.html" />
+        <link rel="alternate" hreflang="en" href="https://www.jumpserver.com/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.jumpserver.org/blog/release-20210621.html" />
+        <meta property="og:site_name" content="JumpServer" />
+        <meta property="og:title" content="新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布 - JumpServer 产品动态" />
+        <meta property="og:description" content="X-Pack增强包新增XRDP组件和账号管理功能模块。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.jumpserver.org/blog/release-20210621.html" />
+        <meta property="og:image" content="https://www.jumpserver.org/images/blog/release-20221121/cover.jpg" />
+        <meta property="og:image:alt" content="新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布 - JumpServer 产品动态" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:locale:alternate" content="en" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布 - JumpServer 产品动态" />
+        <meta name="twitter:description" content="X-Pack增强包新增XRDP组件和账号管理功能模块。" />
+        <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/release-20221121/cover.jpg" />
+        <meta name="twitter:image:alt" content="新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布 - JumpServer 产品动态" />
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布","description":"X-Pack增强包新增XRDP组件和账号管理功能模块。","datePublished":"2021-06-21T06:05:27+00:00","dateModified":"2021-06-21T06:05:27+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/release-20210621.html"},"image":["https://www.jumpserver.org/images/blog/release-20221121/cover.jpg"]}</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-2ZRQ481R4Z');
+        </script>
+    </head>
+    <body>
+        <header id="topnav" class="defaultscroll sticky de-blog-nav">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-list">
+                                            <li>
+                                                <a href="https://cordys.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">Cordys CRM</span>
+                                                    <span class="product-desc">新一代的开源 AI CRM 系统</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://1panel.cn" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">1Panel</span>
+                                                    <span class="product-desc">现代化、开源的 Linux 面板</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://maxkb.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">MaxKB</span>
+                                                    <span class="product-desc">开源企业级智能体平台</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.jumpserver.org/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">JumpServer</span>
+                                                    <span class="product-desc">广受欢迎的开源堡垒机</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://dataease.cn/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">DataEase</span>
+                                                    <span class="product-desc">人人可用的开源 BI 工具</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://sqlbot.org/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">SQLBot</span>
+                                                    <span class="product-desc">基于大模型的开源智能问数系统</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://metersphere.io/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">MeterSphere</span>
+                                                    <span class="product-desc">新一代的开源持续测试工具</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://halo.run/" target="_blank" rel="noopener noreferrer">
+                                                    <span class="product-name">Halo</span>
+                                                    <span class="product-desc">强大易用的开源建站工具</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="../index.html">
+                        <img src="../images/logo/logo-dark-JumpServer.svg" class="l-dark" height="35" alt="JumpServer Logo" />
+                        <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="../whyjumpserver.html">产品优势</a></li>
+                        <li><a href="../customers.html">客户案例</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">解决方案</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../hardware.html">一体机</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../e-commerce.html">跨境电商</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../enterprise.html">企业版</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="../features.html">版本对比</a></li>
+                                <li><a target="_blank" href="http://docs.jumpserver.org/">在线文档</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/jumpserver">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/js/5">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.jumpserver.org/">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://jinshuju.net/f/sQ91MK">提交技术咨询</a></li>
+                                <li><a target="_blank" href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf">如何向团队介绍 JumpServer?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://jumpserver.com/" target="_blank" rel="noopener noreferrer">English</a></li>
+                        <li class="github-star"><iframe target="_blank" src="../github-btn.html?user=jumpserver&repo=jumpserver&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"> </iframe></li>
+                        <li><div class="mt-3 menu-mt-pnone"><a target="_blank" href="https://community.fit2cloud.com/#/products/jumpserver/downloads" class="btn btn-primary menu-btn">免费下载</a></div></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main id="main-content" class="de-article-main">
+            <article class="de-article">
+                <nav class="de-article-breadcrumb"><a href="../blog.html">产品动态</a><span>/</span><span>新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布</span></nav>
+                <header class="de-article-header">
+                    <time datetime="2021-06-21">2021-06-21</time>
+                    <h1>新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布</h1>
+                    <p>X-Pack增强包新增XRDP组件和账号管理功能模块。</p>
+                    <img src="../images/blog/release-20221121/cover.jpg" alt="新增站内信功能，支持通过VS Code直连Linux-SSH协议资产，JumpServer堡垒机v2.11.0发布" loading="lazy" />
+                </header>
+                <div class="de-article-content">
+                    <p>6月21日，JumpServer开源堡垒机正式发布v2.11.0版本。在该版本中，JumpServer新增站内信功能，可接收危险命令告警、监控告警等信息。同时，该版本还支持通过SSH工具直连资产，以及通过VS Code（即Visual Studio Code）的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产，从而进行远程开发。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>X-Pack增强包功能方面，JumpServer新增XRDP组件，支持用户通过本地客户端直连RDP资产，建立图形会话界面。为了满足更多企业用户实际需求，我们还新增了账号管理，主要包括资产账号、应用账号、收集用户、以及改密计划等功能，以方便账号集中统一纳管。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3><strong>新增功能</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>1. 新增站内信功能</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>在JumpServer v2.11.0版本中，新增站内信功能，支持订阅查看内部消息提示。目前JumpServer支持四种消息接收方式，即邮件、企业微信、钉钉和站内信。支持设置接收消息类型包括：危险命令告警以及监控告警。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>管理员可点击“系统设置”→“系统消息订阅”，勾选具体的接收消息方式，并且设置消息接收人。如果危险命令告警勾选了全部消息接收方式，当用户执行了高危命令，接收人即可通过邮件、企业微信、钉钉、站内信方式收到告警信息。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-01.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图1 通过选择“系统设置”→“系统消息订阅”，设置消息接收方式和接收人</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-02.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图2 接收人在JumpServer界面右上角点击“站内信”图标，即可展示所收到的未读站内信</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-03.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图3 接收人可在企业微信接收到告警信息</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>2. 支持通过SSH工具直连资产</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>在JumpServer v2.11.0版本中，支持通过SSH工具直连资产。使用命令格式：s<em>sh jumpserverUsername@systemUsername@AssetIP@jumpserverHostIP -p2222</em>，如果能匹配到唯一资产、唯一系统用户名，则可直接登录该资产。如匹配到多个同IP资产，则用户可自主选择资产以及系统用户进行登录。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-04.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图4 通过SSH特殊命令格式，指定系统用户直连资产</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>3. 支持通过VS Code的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>在JumpServer v2.11.0版本中，支持通过VS Code（即Visual Studio Code）的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产，从而进行远程开发。用户需要在VS Code插件库下载Remote-SSH。下载成功后，点击远程SSH连接工具，选择“Connect to Host”→“Add New SSH Host”。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>输入命令格式：<em>ssh jumpserverUsername@systemUsername@AssetIP@jumpserverHostIP -p2222</em>，根据提示，可使用指定的系统用户连接指定的资产（即JumpServer所纳管的Linux-SSH协议资产）。目前我们仅支持自动登录的系统用户，且匹配的资产是唯一的。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-05.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图5 支持通过VS Code的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-06.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图6 成功直连JumpServer所纳管的Linux-SSH协议资产</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>4. 新增XRDP组件，支持用户通过本地客户端直连RDP资产（X-Pack增强包内）</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>X-Pack增强功能方面，JumpServer v2.11.0版本新增XRDP组件，支持用户通过本地客户端直连RDP资产，建立图形会话界面。管理员选择“系统设置”→“终端设置”，填写好RDP地址。用户只需在Luna界面中，点击“WIndows资产”→“系统用户”→“连接方式”，选择“Microsoft RDP Client”选项，并点击“确定”按钮，即会自动下载一个RDP文件。用户通过本地自主安装的远程桌面客户端连接工具打开RDP文件，即可使用刚才选择的系统用户直连该资产，同时JumpServer还能够对其进行会话审计。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-07.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图7 用户下载RDP文件，点击“Windows资产”→ “系统用户”，选择Microsoft RDP Client连接方式</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-08.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图8 使用本地Microsoft RDP Client打开该RDP文件，成功使用所选择的系统用户连接该资产</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-09.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图9 管理员可在“会话管理”界面审计该XRDP会话</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>5. 新增账号管理功能模块（X-Pack增强包内）</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>JumpServer v2.11.0版本还新增了账号管理功能模块（X-Pack增强包内）。主要包括资产账号、应用账号、收集用户、以及改密计划等功能，方便账号集中统一纳管。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>需要说明的是，这一版本的JumpServer取消了原有X-Pack模块中的密码匣子、收集用户、改密计划选项，将其功能合并至账号管理功能模块中。</strong>以资产账号为例，管理员点击资产账号左侧的资产树节点，即可获取该节点下所有资产列表信息；点击某条资产，右侧即可获取该资产的所有账号列表。用户还可对账号密码进行查询、更新、测试可连接性、导出资产账号密码等操作。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-10.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图10 获取资产的所有账号列表信息，并且可对账号密码进行查询、更新、测试可连接性、导出资产账号密码等操作</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="../images/blog/release-20210621/image-11.png" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" /><figcaption>图11 获取某应用的所有账号密码信息，并可进行查看密码、导出账号密码等操作</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3><strong>功能优化</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;支持使用华为云对象存储服务（OBS)，可对会话录像进行存储；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化系统用户，支持用户设置临时密码；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化通过Luna页面登录资产时对系统用户的选择，提升用户使用体验；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化记录Token认证的登录日志；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化Koko组件的代码结构，并重构部分代码逻辑（Koko）；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化云同步的资产创建者字段为System（X-Pack增强包内）；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;优化云账号测试失败的提示信息（X-Pack增强包内）。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3><strong>Bug修复</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;修复Redis服务异常时（例如主从切换）用户Session立即过期的问题 ；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;修复导入模版生成的列表中没有显示整数类型所在列的问题；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;修改周期监测任务的配置参数；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;修复Azure云管账号创建必填字段提示信息（X-Pack增强包内）；</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>■&nbsp;修复组织批量删除的问题，禁止批量。</p>
+<!-- /wp:paragraph -->
+                </div>
+                <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
+            </article>
+        </main>
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
+                        <p class="de-footer-desc">广受欢迎的开源堡垒机</p>
+                        <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                        </div>
+                    </div>
+                    <div class="de-footer-nav">
+                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
+                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://community.fit2cloud.com/#/products/jumpserver/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li></ul></div>
+                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
+                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                    </div>
+                </div>
+                <div class="de-footer-bottom">
+                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">京ICP备15023818号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
+                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/jquery-3.5.1.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.easing.min.js"></script>
+        <script src="../js/scrollspy.min.js"></script>
+        <script src="../js/jquery.magnific-popup.min.js"></script>
+        <script src="../js/magnific.init.js"></script>
+        <script src="../js/owl.carousel.min.js"></script>
+        <script src="../js/owl.init.js"></script>
+        <script src="../js/feather.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/mega.js"></script>
+    </body>
+</html>
