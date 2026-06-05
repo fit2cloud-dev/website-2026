@@ -1,0 +1,83 @@
+/* ============================================
+   MeterSphere 现代化动感效果
+   ============================================ */
+
+/* -- 滚动揭示动画 -- */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* 交错延迟让动画更有层次 */
+.reveal-section .reveal-left,
+.reveal-section .reveal-right {
+    transition-delay: 0.1s;
+}
+
+/* 激活态 */
+.reveal-left.revealed,
+.reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* -- 图片悬停漂浮 -- */
+.hover-float {
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1),
+                filter 0.4s ease;
+}
+
+.hover-float:hover {
+    transform: translateY(-8px) scale(1.02);
+    filter: drop-shadow(0 12px 24px rgba(120, 56, 135, 0.15));
+}
+
+/* -- 标题现代下划线 -- */
+.section-title h3.title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h3.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #783887, #a855f7);
+    border-radius: 2px;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.reveal-section.revealed .section-title h3.title::after {
+    width: 60px;
+}
+
+/* -- Section 整体淡入 -- */
+.reveal-section {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* -- 图片淡入微缩放 -- */
+.reveal-section img.hover-float {
+    transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
+                filter 0.4s ease;
+}
+
+/* -- 段落文字渐变淡入 -- */
+.reveal-section .text-muted {
+    transition: opacity 0.5s ease 0.3s,
+                transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.3s;
+}

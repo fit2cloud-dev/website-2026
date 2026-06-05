@@ -10,23 +10,13 @@
 /****************************/
 /*         INDEX            */
 /*===========================
- *     01.  Loader          *
- *     02.  Menu            *
- *     03.  Sticky Menu     *
+ *     01.  Menu            *
+ *     02.  Sticky Menu     *
  *     03.  Back to top     *
  ===========================*/
 
 !(function ($) {
     'use strict';
-    // Loader
-    $(window).on('load', function () {
-        $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({
-            overflow: 'visible',
-        });
-    });
-
     // Menu
     $('.navbar-toggle').on('click', function (event) {
         $(this).toggleClass('open');
@@ -63,20 +53,6 @@
         }
     });
 
-    $('.mouse-down').on('click', function (event) {
-        var $anchor = $(this);
-        $('html, body')
-            .stop()
-            .animate(
-                {
-                    scrollTop: $($anchor.attr('href')).offset().top - 72,
-                },
-                1500,
-                'easeInOutExpo',
-            );
-        event.preventDefault();
-    });
-
     //Sticky
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -101,27 +77,10 @@
         return false;
     });
 
-    //Tooltip
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    //Popover
-    $(function () {
-        $('[data-toggle="popover"]').popover();
-    });
     //Feather icon
     feather.replace();
 
     $('#wechat-customer-close').on('click', () => {
         $('#wechat-customer').hide();
-    });
-    // 投票通知
-    let timer = setTimeout(() => {
-        $('#notice-dialog').modal('show');
-    }, 200);
-
-    $('#close-modal').on('click', () => {
-        $('#notice-dialog').modal('hide');
-        clearTimeout(timer);
     });
 })(jQuery);

@@ -1,0 +1,216 @@
+/* ============================================
+   MeterSphere 产品动态 (Blog) 页面样式
+   参考 1Panel blog 页面布局设计
+   ============================================ */
+
+/* --- 页面标题区 --- */
+.blog-page-header {
+    background: linear-gradient(135deg, #783887 0%, #4a1a6b 100%);
+    padding: 100px 0 64px;
+    text-align: center;
+}
+
+.blog-page-header .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.blog-page-title {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.blog-page-desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.blog-stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.blog-stats span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 6px 16px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .blog-page-header {
+        padding: 80px 0 48px;
+    }
+    .blog-page-title {
+        font-size: 30px;
+    }
+    .blog-page-desc {
+        font-size: 15px;
+    }
+    .blog-stats {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* --- 文章列表区 --- */
+.blog-list-section {
+    padding: 60px 0;
+    background: #f8f9fc;
+}
+
+.blog-list-section .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* 文章卡片 */
+.blog-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 30px rgba(120, 56, 135, 0.12);
+    transform: translateY(-2px);
+}
+
+.blog-card-body {
+    position: relative;
+}
+
+.blog-date {
+    display: inline-block;
+    color: #783887;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.blog-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.blog-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-title a:hover {
+    color: #783887;
+}
+
+.blog-desc {
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.blog-read-more {
+    color: #783887;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-read-more:hover {
+    color: #5a2766;
+}
+
+@media (max-width: 768px) {
+    .blog-list-section {
+        padding: 40px 0;
+    }
+    .blog-card {
+        padding: 20px 20px;
+        border-radius: 8px;
+    }
+    .blog-title {
+        font-size: 17px;
+    }
+    .blog-desc {
+        font-size: 14px;
+    }
+}
+
+/* --- 分页导航 --- */
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.blog-pagination .page-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+.blog-pagination .page-btn:hover {
+    border-color: #783887;
+    color: #783887;
+    background: #faf5ff;
+}
+
+.blog-pagination .page-btn.active {
+    background: #783887;
+    color: #fff;
+    border-color: #783887;
+    cursor: default;
+}
+
+.blog-pagination .page-dots {
+    color: #999;
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+@media (max-width: 768px) {
+    .blog-pagination {
+        gap: 4px;
+        margin-top: 28px;
+    }
+    .blog-pagination .page-btn {
+        min-width: 32px;
+        height: 32px;
+        font-size: 13px;
+        padding: 0 8px;
+        border-radius: 6px;
+    }
+}

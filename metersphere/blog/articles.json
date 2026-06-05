@@ -1,0 +1,1184 @@
+[
+  {
+    "date": "2025-11-25",
+    "title": "操作教程｜在MeterSphere中通过AI生成测试用例",
+    "pid": "728f71a9-52c1-4dfb-80ad-7ed60882c9f3",
+    "filename": "2025-11-25-操作教程-在MeterSphere中通过AI生成测试用例.html"
+  },
+  {
+    "date": "2025-11-15",
+    "title": "思维导图模式下测试用例支持使用富文本编辑器，MeterSphere v3.6.7 LTS版本发布",
+    "pid": "5af80b34-30f2-43ef-92a1-7f590ccece6a",
+    "filename": "2025-11-15-思维导图模式下测试用例支持使用富文本编辑器-MeterSphere-v3-6-7.html"
+  },
+  {
+    "date": "2025-06-23",
+    "title": "速来体验丨MeterSphere支持AI生成测试用例！",
+    "pid": "1a711e42-04fe-4dce-8196-938071be4021",
+    "filename": "2025-06-23-速来体验丨MeterSphere支持AI生成测试用例.html"
+  },
+  {
+    "date": "2024-12-26",
+    "title": "年度发布 | MeterSphere v3.6 LTS正式发布",
+    "pid": "ac3487a6-955b-4871-ac1c-7b5bfd7ff7a4",
+    "filename": "2024-12-26-年度发布-MeterSphere-v3-6-LTS正式发布.html"
+  },
+  {
+    "date": "2024-11-29",
+    "title": "新增工作台模块，任务中心支持一键重跑，MeterSphere v3.5版本发布",
+    "pid": "3aca1922-9cdc-46ca-b6ec-b9d0a27e0ca9",
+    "filename": "2024-11-29-新增工作台模块-任务中心支持一键重跑-MeterSphere-v3-5版本发布.html"
+  },
+  {
+    "date": "2024-11-05",
+    "title": "任务中心全新升级，新增分享接口文档功能，MeterSphere v3.4版本发布",
+    "pid": "c429c19e-7218-40a2-a08a-1f751f80a22a",
+    "filename": "2024-11-05-任务中心全新升级-新增分享接口文档功能-MeterSphere-v3-4版本发布.html"
+  },
+  {
+    "date": "2024-09-29",
+    "title": "测试管理新增视图与高级搜索功能，MeterSphere v3.3版本发布",
+    "pid": "8bb68ceb-e196-44e9-a8dd-df570a531ffa",
+    "filename": "2024-09-29-测试管理新增视图与高级搜索功能-MeterSphere-v3-3版本发布.html"
+  },
+  {
+    "date": "2024-08-26",
+    "title": "IDEA插件支持API调试、接口用例支持一键同步API变更，MeterSphere v3.2.0版本发布",
+    "pid": "a812f292-2981-4ee4-a9d9-52a7d8b9b874",
+    "filename": "2024-08-26-IDEA插件支持API调试-接口用例支持一键同步API变更-MeterSpher.html"
+  },
+  {
+    "date": "2024-07-29",
+    "title": "接口测试支持IDEA插件一键同步API、新增思维导图快速评审测试用例，MeterSphere v3.1.0版本发布",
+    "pid": "a40f4421-f332-442e-a04a-43ee3906ac3a",
+    "filename": "2024-07-29-接口测试支持IDEA插件一键同步API-新增思维导图快速评审测试用例-Meter.html"
+  },
+  {
+    "date": "2024-07-18",
+    "title": "MTSC 2024 上海站，MeterSphere与您不见不散！",
+    "pid": "9c03283c-ca85-4efb-a0a1-0d9edac00f83",
+    "filename": "2024-07-18-MTSC-2024-上海站-MeterSphere与您不见不散.html"
+  },
+  {
+    "date": "2024-07-01",
+    "title": "MeterSphere v3.0全新启航，让软件测试工作更简单、更高效",
+    "pid": "d62d7c5a-f925-4b38-979e-2aa1afde290a",
+    "filename": "2024-07-01-MeterSphere-v3-0全新启航-让软件测试工作更简单-更高效.html"
+  },
+  {
+    "date": "2024-05-28",
+    "title": "案例研究｜MeterSphere助力万物云构建高效自动化测试平台",
+    "pid": "20cd640b-e935-47dc-a5ec-05d413c9a313",
+    "filename": "2024-05-28-案例研究-MeterSphere助力万物云构建高效自动化测试平台.html"
+  },
+  {
+    "date": "2024-05-15",
+    "title": "案例研究｜茶百道通过MeterSphere+阿里云云效实现高质量产品交付",
+    "pid": "caa0491f-0e03-4b26-afd7-721a8215fdd2",
+    "filename": "2024-05-15-案例研究-茶百道通过MeterSphere-阿里云云效实现高质量产品交付.html"
+  },
+  {
+    "date": "2024-04-16",
+    "title": "案例研究｜众乐邦将MeterSphere持续测试平台融入DevOps流水线",
+    "pid": "73d8d966-a500-422b-bdcd-3bee9491c52e",
+    "filename": "2024-04-16-案例研究-众乐邦将MeterSphere持续测试平台融入DevOps流水线.html"
+  },
+  {
+    "date": "2024-03-26",
+    "title": "操作教程｜在MeterSphere中通过SSH登录服务器的两种方法",
+    "pid": "2872c1b3-71e1-45f9-9fdd-7809398f3db1",
+    "filename": "2024-03-26-操作教程-在MeterSphere中通过SSH登录服务器的两种方法.html"
+  },
+  {
+    "date": "2024-03-06",
+    "title": "操作教程｜使用MeterSphere对恒生UFX系统进行压力测试",
+    "pid": "72b2805d-2be8-4452-b7f6-51ebace44a6b",
+    "filename": "2024-03-06-操作教程-使用MeterSphere对恒生UFX系统进行压力测试.html"
+  },
+  {
+    "date": "2024-02-21",
+    "title": "社区分享｜中华保险基于MeterSphere开展接口自动化测试",
+    "pid": "7477926a-c43d-4615-89f0-01f466a89e74",
+    "filename": "2024-02-21-社区分享-中华保险基于MeterSphere开展接口自动化测试.html"
+  },
+  {
+    "date": "2023-12-27",
+    "title": "操作教程｜MeterSphere UI测试+VNC：简单、快捷地查看UI测试实时执行详情",
+    "pid": "464dd23c-9690-4440-b6e7-c1bb93c56dcb",
+    "filename": "2023-12-27-操作教程-MeterSphere-UI测试-VNC-简单-快捷地查看UI测试实时.html"
+  },
+  {
+    "date": "2023-12-06",
+    "title": "社区分享｜简米Ping++基于MeterSphere开展异地测试协作",
+    "pid": "65f4a482-7f12-45c1-ba14-c7dc287410bb",
+    "filename": "2023-12-06-社区分享-简米Ping-基于MeterSphere开展异地测试协作.html"
+  },
+  {
+    "date": "2023-11-24",
+    "title": "MTSC 2023 深圳站，MeterSphere与您不见不散！",
+    "pid": "aa822744-c67f-4009-baba-50b32c274520",
+    "filename": "2023-11-24-MTSC-2023-深圳站-MeterSphere与您不见不散.html"
+  },
+  {
+    "date": "2023-11-08",
+    "title": "社区分享｜杭银消费金融基于MeterSphere开展接口自动化测试",
+    "pid": "27d0330c-6b20-47e6-8e51-99885c4cc473",
+    "filename": "2023-11-08-社区分享-杭银消费金融基于MeterSphere开展接口自动化测试.html"
+  },
+  {
+    "date": "2023-10-30",
+    "title": "性能测试支持结果抽样分析，MeterSphere v2.10.8 LTS版本发布",
+    "pid": "06618cb6-e28d-466f-b20a-2760fe624b77",
+    "filename": "2023-10-30-性能测试支持结果抽样分析-MeterSphere-v2-10-8-LTS版本发布.html"
+  },
+  {
+    "date": "2023-10-10",
+    "title": "MeterSphere技术分享：UI自动化测试的必要性与解决方案",
+    "pid": "3ae46c4f-8574-4e9b-b1ed-263db27f5479",
+    "filename": "2023-10-10-MeterSphere技术分享-UI自动化测试的必要性与解决方案.html"
+  },
+  {
+    "date": "2023-09-26",
+    "title": "《持续测试白皮书》v2.0版本正式开放下载！",
+    "pid": "98065d74-6416-4974-be16-b54f0cc53379",
+    "filename": "2023-09-26-持续测试白皮书-v2-0版本正式开放下载.html"
+  },
+  {
+    "date": "2023-09-14",
+    "title": "社区分享｜MeterSphere变身啄木鸟，助力云帐房落地接口自动化测试",
+    "pid": "41a1014c-98f6-4fbd-9ded-d6dc824cded7",
+    "filename": "2023-09-14-社区分享-MeterSphere变身啄木鸟-助力云帐房落地接口自动化测试.html"
+  },
+  {
+    "date": "2023-08-30",
+    "title": "社区分享｜智慧普华的测试工具及平台选型思路",
+    "pid": "1648526e-a3e9-4c71-8ff0-11a5a1e18a90",
+    "filename": "2023-08-30-社区分享-智慧普华的测试工具及平台选型思路.html"
+  },
+  {
+    "date": "2023-08-21",
+    "title": "MeterSphere开源项目GitHub Star数量超过10000！",
+    "pid": "942f01d3-2a19-48f2-975c-9fe745722bf7",
+    "filename": "2023-08-21-MeterSphere开源项目GitHub-Star数量超过10000.html"
+  },
+  {
+    "date": "2023-08-17",
+    "title": "选型｜MeterSphere开源版、企业版和Cloud版选型攻略",
+    "pid": "ea34bfe7-0182-45ea-9ddc-22baf550c73d",
+    "filename": "2023-08-17-选型-MeterSphere开源版-企业版和Cloud版选型攻略.html"
+  },
+  {
+    "date": "2023-08-07",
+    "title": "前端页面性能优化，MeterSphere v2.10.5 LTS版本发布",
+    "pid": "7e7987c8-0cf6-4d36-bc73-0bcd642750f7",
+    "filename": "2023-08-07-前端页面性能优化-MeterSphere-v2-10-5-LTS版本发布.html"
+  },
+  {
+    "date": "2023-08-03",
+    "title": "社区分享丨蓝卓数字科技的MeterSphere使用分享",
+    "pid": "146c107e-87f2-4aff-8601-751ccb92d3c7",
+    "filename": "2023-08-03-社区分享丨蓝卓数字科技的MeterSphere使用分享.html"
+  },
+  {
+    "date": "2023-07-27",
+    "title": "产品解读｜有了JMeter，为什么还需要MeterSphere？",
+    "pid": "2725190d-b035-4b1a-b207-5521987e22a8",
+    "filename": "2023-07-27-产品解读-有了JMeter-为什么还需要MeterSphere.html"
+  },
+  {
+    "date": "2023-07-20",
+    "title": "社区分享｜国信证券基于开源工具的系统质量保障实践",
+    "pid": "ad4bcac1-5579-43de-875d-5a6488f2e2ca",
+    "filename": "2023-07-20-社区分享-国信证券基于开源工具的系统质量保障实践.html"
+  },
+  {
+    "date": "2023-06-21",
+    "title": "三年时间打磨，MeterSphere v2.10 LTS版本给测试用户带来的价值",
+    "pid": "fe9a6947-1018-464a-bbba-efa40129ea2d",
+    "filename": "2023-06-21-三年时间打磨-MeterSphere-v2-10-LTS版本给测试用户带来的价值.html"
+  },
+  {
+    "date": "2023-06-12",
+    "title": "报名丨2023 MeterSphere开源持续测试平台 城市遇见 · 深圳站",
+    "pid": "53ecb05b-820f-4746-b807-b1ff2ef0664a",
+    "filename": "2023-06-12-报名丨2023-MeterSphere开源持续测试平台-城市遇见-深圳站.html"
+  },
+  {
+    "date": "2023-06-09",
+    "title": "关于长亮科技涉嫌抄袭MeterSphere开源持续测试平台的情况说明",
+    "pid": "c599e604-1493-40ab-88cd-0199f36bb15c",
+    "filename": "2023-06-09-关于长亮科技涉嫌抄袭MeterSphere开源持续测试平台的情况说明.html"
+  },
+  {
+    "date": "2023-06-07",
+    "title": "社区分享丨万帮能源基于MeterSphere展开微服务接口自动化测试",
+    "pid": "803a62a3-03c0-4e84-84e3-0e7f8efcc3c5",
+    "filename": "2023-06-07-社区分享丨万帮能源基于MeterSphere展开微服务接口自动化测试.html"
+  },
+  {
+    "date": "2023-05-29",
+    "title": "年度发布 | MeterSphere一站式开源持续测试平台发布v2.10 LTS版本",
+    "pid": "0d30056c-6c95-4932-a411-87fb5b8d43b0",
+    "filename": "2023-05-29-年度发布-MeterSphere一站式开源持续测试平台发布v2-10-LTS.html"
+  },
+  {
+    "date": "2023-05-26",
+    "title": "重要通知丨MeterSphere漏洞通知及修复方案（MS-2023.05.26）",
+    "pid": "86206b9c-1353-4216-aea3-e9076cb5deff",
+    "filename": "2023-05-26-重要通知丨MeterSphere漏洞通知及修复方案-MS-2023-05-26.html"
+  },
+  {
+    "date": "2023-05-24",
+    "title": "MeterSphere UI测试中循环变量及流程控制的使用",
+    "pid": "c7d9ea8d-542d-4a4a-81a3-ada44c396244",
+    "filename": "2023-05-24-MeterSphere-UI测试中循环变量及流程控制的使用.html"
+  },
+  {
+    "date": "2023-04-18",
+    "title": "社区分享丨金融科技公司DevOps与持续测试应用实践",
+    "pid": "071bb008-faa1-4ee7-b7f4-c6b7e51adfc7",
+    "filename": "2023-04-18-社区分享丨金融科技公司DevOps与持续测试应用实践.html"
+  },
+  {
+    "date": "2023-04-04",
+    "title": "社区分享｜易快报基于MeterSphere的接口自动化项目落地实践",
+    "pid": "cf3c6a38-5012-4b0c-928f-95ddfc755808",
+    "filename": "2023-04-04-社区分享-易快报基于MeterSphere的接口自动化项目落地实践.html"
+  },
+  {
+    "date": "2023-03-29",
+    "title": "通过MeterSphere的UI测试模块实现H5翻页测试",
+    "pid": "c1974f60-198d-4301-b4d4-d721e46b8041",
+    "filename": "2023-03-29-通过MeterSphere的UI测试模块实现H5翻页测试.html"
+  },
+  {
+    "date": "2023-03-14",
+    "title": "基于MeterSphere实现多版本浏览器兼容性测试",
+    "pid": "e03f941c-afea-43a8-a0fb-979de379fad3",
+    "filename": "2023-03-14-基于MeterSphere实现多版本浏览器兼容性测试.html"
+  },
+  {
+    "date": "2023-03-10",
+    "title": "重要通知丨MeterSphere漏洞通知及修复方案（MS-2023.03.10）",
+    "pid": "dcdc7635-9cfe-4d98-bdfd-f9554f0ce942",
+    "filename": "2023-03-10-重要通知丨MeterSphere漏洞通知及修复方案-MS-2023-03-10.html"
+  },
+  {
+    "date": "2023-02-27",
+    "title": "测试跟踪模块UX交互升级，多个X-Pack功能开放至开源版，MeterSphere v2.7.0发布",
+    "pid": "518f495e-568c-46a1-b25f-c93d290100c6",
+    "filename": "2023-02-27-测试跟踪模块UX交互升级-多个X-Pack功能开放至开源版-MeterSpher.html"
+  },
+  {
+    "date": "2023-02-20",
+    "title": "报名丨2023 MeterSphere开源持续测试平台 城市遇见 · 北京站",
+    "pid": "242be821-0d2a-4dc1-a457-ca2c1eb1902c",
+    "filename": "2023-02-20-报名丨2023-MeterSphere开源持续测试平台-城市遇见-北京站.html"
+  },
+  {
+    "date": "2023-02-07",
+    "title": "在MeterSphere的Mock服务中通过后置脚本使用HttpClient",
+    "pid": "5428",
+    "filename": "2023-02-07-在MeterSphere的Mock服务中通过后置脚本使用HttpClient.html"
+  },
+  {
+    "date": "2023-02-01",
+    "title": "MeterSphere开源持续测试平台与腾讯云CODING DevOps的集成",
+    "pid": "5379",
+    "filename": "2023-02-01-MeterSphere开源持续测试平台与腾讯云CODING-DevOps的集成.html"
+  },
+  {
+    "date": "2023-01-16",
+    "title": "UI自动化测试模块与环境管理全面打通，MeterSphere v2.6.0发布",
+    "pid": "5346",
+    "filename": "2023-01-16-UI自动化测试模块与环境管理全面打通-MeterSphere-v2-6-0发布.html"
+  },
+  {
+    "date": "2023-01-10",
+    "title": "操作教程｜MeterSphere接口测试模块中循环控制器的使用",
+    "pid": "5326",
+    "filename": "2023-01-10-操作教程-MeterSphere接口测试模块中循环控制器的使用.html"
+  },
+  {
+    "date": "2023-01-04",
+    "title": "重要通知丨MeterSphere漏洞通知及修复方案（MS-2023.01.04）",
+    "pid": "5287",
+    "filename": "2023-01-04-重要通知丨MeterSphere漏洞通知及修复方案-MS-2023-01-04.html"
+  },
+  {
+    "date": "2022-12-27",
+    "title": "开源版支持工作台展示，新增超级管理员用户组，MeterSphere v2.5.0发布",
+    "pid": "5262",
+    "filename": "2022-12-27-开源版支持工作台展示-新增超级管理员用户组-MeterSphere-v2-5-0.html"
+  },
+  {
+    "date": "2022-12-19",
+    "title": "社区分享｜商米科技基于MeterSphere的全球化云服务接口测试实践",
+    "pid": "5236",
+    "filename": "2022-12-19-社区分享-商米科技基于MeterSphere的全球化云服务接口测试实践.html"
+  },
+  {
+    "date": "2022-12-14",
+    "title": "MeterSphere开源持续测试平台入选MTSC 2022年度最佳开源项目",
+    "pid": "5227",
+    "filename": "2022-12-14-MeterSphere开源持续测试平台入选MTSC-2022年度最佳开源项目.html"
+  },
+  {
+    "date": "2022-12-08",
+    "title": "MeterSphere UI测试模块实现创建新标签页及页面切换",
+    "pid": "5192",
+    "filename": "2022-12-08-MeterSphere-UI测试模块实现创建新标签页及页面切换.html"
+  },
+  {
+    "date": "2022-11-28",
+    "title": "模块首页UX交互升级，接口测试支持禁用本地执行，MeterSphere v2.4.0发布",
+    "pid": "5116",
+    "filename": "2022-11-28-模块首页UX交互升级-接口测试支持禁用本地执行-MeterSphere-v2-4.html"
+  },
+  {
+    "date": "2022-11-22",
+    "title": "社区分享｜致远互联基于MeterSphere构建敏捷测试平台与DevOps体系",
+    "pid": "5069",
+    "filename": "2022-11-22-社区分享-致远互联基于MeterSphere构建敏捷测试平台与DevOps体系.html"
+  },
+  {
+    "date": "2022-11-14",
+    "title": "社区分享｜云智天下的自动化测试落地与演进",
+    "pid": "4949",
+    "filename": "2022-11-14-社区分享-云智天下的自动化测试落地与演进.html"
+  },
+  {
+    "date": "2022-11-02",
+    "title": "报名丨2022 MeterSphere开源持续测试平台 城市遇见 · 上海站",
+    "pid": "4922",
+    "filename": "2022-11-02-报名丨2022-MeterSphere开源持续测试平台-城市遇见-上海站.html"
+  },
+  {
+    "date": "2022-10-31",
+    "title": "架构演进丨 MeterSphere v2.3升级至微服务架构",
+    "pid": "4888",
+    "filename": "2022-10-31-架构演进丨-MeterSphere-v2-3升级至微服务架构.html"
+  },
+  {
+    "date": "2022-10-27",
+    "title": "MeterSphere和GitLab单点登录认证集成",
+    "pid": "4875",
+    "filename": "2022-10-27-MeterSphere和GitLab单点登录认证集成.html"
+  },
+  {
+    "date": "2022-10-17",
+    "title": "报名丨2022 MeterSphere开源持续测试平台 城市遇见 · 成都站",
+    "pid": "4811",
+    "filename": "2022-10-17-报名丨2022-MeterSphere开源持续测试平台-城市遇见-成都站.html"
+  },
+  {
+    "date": "2022-10-11",
+    "title": "MeterSphere接口测试提取数组及引用的高级用法",
+    "pid": "4794",
+    "filename": "2022-10-11-MeterSphere接口测试提取数组及引用的高级用法.html"
+  },
+  {
+    "date": "2022-09-26",
+    "title": "接口测试支持自定义模板，UI测试支持自定义组合指令，MeterSphere v2.2.0发布",
+    "pid": "3896",
+    "filename": "2022-09-26-接口测试支持自定义模板-UI测试支持自定义组合指令-MeterSphere-v2.html"
+  },
+  {
+    "date": "2022-09-19",
+    "title": "报名丨2022 MeterSphere开源持续测试平台 城市遇见 · 广州站",
+    "pid": "3887",
+    "filename": "2022-09-19-报名丨2022-MeterSphere开源持续测试平台-城市遇见-广州站.html"
+  },
+  {
+    "date": "2022-09-14",
+    "title": "社区分享丨法大大基于MeterSphere打通DevOps流程",
+    "pid": "3876",
+    "filename": "2022-09-14-社区分享丨法大大基于MeterSphere打通DevOps流程.html"
+  },
+  {
+    "date": "2022-09-06",
+    "title": "社区分享｜MeterSphere在微服务架构中的自动化测试应用",
+    "pid": "3860",
+    "filename": "2022-09-06-社区分享-MeterSphere在微服务架构中的自动化测试应用.html"
+  },
+  {
+    "date": "2022-08-29",
+    "title": "文件管理功能重构，MeterSphere v2.1.0发布",
+    "pid": "3823",
+    "filename": "2022-08-29-文件管理功能重构-MeterSphere-v2-1-0发布.html"
+  },
+  {
+    "date": "2022-08-24",
+    "title": "MeterSphere之UI测试滑块验证及页面滚动条问题处理",
+    "pid": "3787",
+    "filename": "2022-08-24-MeterSphere之UI测试滑块验证及页面滚动条问题处理.html"
+  },
+  {
+    "date": "2022-08-08",
+    "title": "报名丨2022 MeterSphere开源持续测试平台 城市遇见 · 深圳站",
+    "pid": "3710",
+    "filename": "2022-08-08-报名丨2022-MeterSphere开源持续测试平台-城市遇见-深圳站.html"
+  },
+  {
+    "date": "2022-08-01",
+    "title": "新起点丨MeterSphere开源持续测试平台v2.0发布",
+    "pid": "3695",
+    "filename": "2022-08-01-新起点丨MeterSphere开源持续测试平台v2-0发布.html"
+  },
+  {
+    "date": "2022-07-29",
+    "title": "MeterSphere开源项目GitHub Star数量超过8000！",
+    "pid": "3691",
+    "filename": "2022-07-29-MeterSphere开源项目GitHub-Star数量超过8000.html"
+  },
+  {
+    "date": "2022-07-26",
+    "title": "产品解读丨MeterSphere UI测试模块的设计与分布式扩展",
+    "pid": "3686",
+    "filename": "2022-07-26-产品解读丨MeterSphere-UI测试模块的设计与分布式扩展.html"
+  },
+  {
+    "date": "2022-07-19",
+    "title": "通过Shell实现MeterSphere Signature签名",
+    "pid": "3647",
+    "filename": "2022-07-19-通过Shell实现MeterSphere-Signature签名.html"
+  },
+  {
+    "date": "2022-07-15",
+    "title": "GitLab CI/CD集成MeterSphere自动化测试",
+    "pid": "3649",
+    "filename": "2022-07-15-GitLab-CI-CD集成MeterSphere自动化测试.html"
+  },
+  {
+    "date": "2022-07-05",
+    "title": "使用MeterSphere让你的测试工作持续高效",
+    "pid": "3629",
+    "filename": "2022-07-05-使用MeterSphere让你的测试工作持续高效.html"
+  },
+  {
+    "date": "2022-06-30",
+    "title": "在MeterSphere接口测试中如何使用JMeter函数和MockJS函数",
+    "pid": "3621",
+    "filename": "2022-06-30-在MeterSphere接口测试中如何使用JMeter函数和MockJS函数.html"
+  },
+  {
+    "date": "2022-06-27",
+    "title": "通过MeterSphere和DataEase实现项目Bug处理进展实时跟进",
+    "pid": "3616",
+    "filename": "2022-06-27-通过MeterSphere和DataEase实现项目Bug处理进展实时跟进.html"
+  },
+  {
+    "date": "2022-06-24",
+    "title": "MeterSphere开源持续测试平台与阿里云云效DevOps的集成",
+    "pid": "3614",
+    "filename": "2022-06-24-MeterSphere开源持续测试平台与阿里云云效DevOps的集成.html"
+  },
+  {
+    "date": "2022-06-16",
+    "title": "在MeterSphere接口测试中如何设置使用变量",
+    "pid": "3552",
+    "filename": "2022-06-16-在MeterSphere接口测试中如何设置使用变量.html"
+  },
+  {
+    "date": "2022-06-14",
+    "title": "产品解读｜MeterSphere接口自动化执行策略详解",
+    "pid": "3547",
+    "filename": "2022-06-14-产品解读-MeterSphere接口自动化执行策略详解.html"
+  },
+  {
+    "date": "2022-06-07",
+    "title": "在MeterSphere开源持续测试平台中调用Redis集群",
+    "pid": "3538",
+    "filename": "2022-06-07-在MeterSphere开源持续测试平台中调用Redis集群.html"
+  },
+  {
+    "date": "2022-05-30",
+    "title": "技术选型丨MeterSphere为什么选择Selenium作为UI自动化框架？",
+    "pid": "3530",
+    "filename": "2022-05-30-技术选型丨MeterSphere为什么选择Selenium作为UI自动化框架.html"
+  },
+  {
+    "date": "2022-05-28",
+    "title": "重要通知丨MeterSphere Fastjson反序列化漏洞通知及修复方案（MS-2022-03）",
+    "pid": "3526",
+    "filename": "2022-05-28-重要通知丨MeterSphere-Fastjson反序列化漏洞通知及修复方案-M.html"
+  },
+  {
+    "date": "2022-05-26",
+    "title": "产品解读丨MeterSphere开源持续测试平台助力企业测试平台化建设",
+    "pid": "3524",
+    "filename": "2022-05-26-产品解读丨MeterSphere开源持续测试平台助力企业测试平台化建设.html"
+  },
+  {
+    "date": "2022-05-20",
+    "title": "在MeterSphere平台添加并使用Kubernetes资源池",
+    "pid": "3517",
+    "filename": "2022-05-20-在MeterSphere平台添加并使用Kubernetes资源池.html"
+  },
+  {
+    "date": "2022-05-13",
+    "title": "MeterSphere的UI测试模块如何远程调用浏览器？",
+    "pid": "3512",
+    "filename": "2022-05-13-MeterSphere的UI测试模块如何远程调用浏览器.html"
+  },
+  {
+    "date": "2022-05-10",
+    "title": "产品解读丨MeterSphere接口自动化测试的应用场景和实践",
+    "pid": "3501",
+    "filename": "2022-05-10-产品解读丨MeterSphere接口自动化测试的应用场景和实践.html"
+  },
+  {
+    "date": "2022-05-05",
+    "title": "新增UI测试模块，MeterSphere一站式开源持续测试平台发布v1.20 LTS版本",
+    "pid": "3491",
+    "filename": "2022-05-05-新增UI测试模块-MeterSphere一站式开源持续测试平台发布v1-20-L.html"
+  },
+  {
+    "date": "2022-04-26",
+    "title": "观察丨关于UI测试，MeterSphere开源项目组所看到的",
+    "pid": "3486",
+    "filename": "2022-04-26-观察丨关于UI测试-MeterSphere开源项目组所看到的.html"
+  },
+  {
+    "date": "2022-04-21",
+    "title": "名单丨MeterSphere UI测试模块内测入选名单公布",
+    "pid": "3479",
+    "filename": "2022-04-21-名单丨MeterSphere-UI测试模块内测入选名单公布.html"
+  },
+  {
+    "date": "2022-04-21",
+    "title": "MeterSphere相较于JMeter的优势解读",
+    "pid": "3470",
+    "filename": "2022-04-21-MeterSphere相较于JMeter的优势解读.html"
+  },
+  {
+    "date": "2022-04-19",
+    "title": "案例分享｜中国移动上研院基于MeterSphere构建规范化测试体系",
+    "pid": "3465",
+    "filename": "2022-04-19-案例分享-中国移动上研院基于MeterSphere构建规范化测试体系.html"
+  },
+  {
+    "date": "2022-04-14",
+    "title": "产品解读丨MeterSphere中测试计划的场景设计与实现",
+    "pid": "3457",
+    "filename": "2022-04-14-产品解读丨MeterSphere中测试计划的场景设计与实现.html"
+  },
+  {
+    "date": "2022-04-12",
+    "title": "内测丨MeterSphere UI测试模块内测招募",
+    "pid": "3451",
+    "filename": "2022-04-12-内测丨MeterSphere-UI测试模块内测招募.html"
+  },
+  {
+    "date": "2022-04-08",
+    "title": "MeterSphere开源项目下载超过100,000次！",
+    "pid": "3441",
+    "filename": "2022-04-08-MeterSphere开源项目下载超过100-000次.html"
+  },
+  {
+    "date": "2022-03-28",
+    "title": "接口自动化场景优化，MeterSphere v1.19.0发布",
+    "pid": "3422",
+    "filename": "2022-03-28-接口自动化场景优化-MeterSphere-v1-19-0发布.html"
+  },
+  {
+    "date": "2022-03-25",
+    "title": "MeterSphere开源项目GitHub Star数量超过7000！",
+    "pid": "3418",
+    "filename": "2022-03-25-MeterSphere开源项目GitHub-Star数量超过7000.html"
+  },
+  {
+    "date": "2022-03-24",
+    "title": "MeterSphere在开源压测工具JMeter上的分布式优化和实践",
+    "pid": "3415",
+    "filename": "2022-03-24-MeterSphere在开源压测工具JMeter上的分布式优化和实践.html"
+  },
+  {
+    "date": "2022-03-10",
+    "title": "MeterSphere开源持续测试平台完成麒麟软件NeoCertify认证",
+    "pid": "3383",
+    "filename": "2022-03-10-MeterSphere开源持续测试平台完成麒麟软件NeoCertify认证.html"
+  },
+  {
+    "date": "2022-03-04",
+    "title": "重要通知丨MeterSphere漏洞通知及修复方案（MS-2022-02）",
+    "pid": "3370",
+    "filename": "2022-03-04-重要通知丨MeterSphere漏洞通知及修复方案-MS-2022-02.html"
+  },
+  {
+    "date": "2022-02-28",
+    "title": "Mock触发条件新增规则匹配与逻辑判断，MeterSphere v1.18.0发布",
+    "pid": "3351",
+    "filename": "2022-02-28-Mock触发条件新增规则匹配与逻辑判断-MeterSphere-v1-18-0发.html"
+  },
+  {
+    "date": "2022-02-24",
+    "title": "通过Jenkins Pipeline配合MeterSphere完成自动化接口测试",
+    "pid": "3343",
+    "filename": "2022-02-24-通过Jenkins-Pipeline配合MeterSphere完成自动化接口测试.html"
+  },
+  {
+    "date": "2022-02-14",
+    "title": "直播预告丨玩转MeterSphere开源持续测试平台系列教程之性能测试",
+    "pid": "3310",
+    "filename": "2022-02-14-直播预告丨玩转MeterSphere开源持续测试平台系列教程之性能测试.html"
+  },
+  {
+    "date": "2022-02-10",
+    "title": "案例分享｜MeterSphere接口测试在互联网零售平台朴朴超市的实践分享",
+    "pid": "3302",
+    "filename": "2022-02-10-案例分享-MeterSphere接口测试在互联网零售平台朴朴超市的实践分享.html"
+  },
+  {
+    "date": "2022-01-27",
+    "title": "新增版本管理及版本对比，MeterSphere v1.17.0发布",
+    "pid": "3281",
+    "filename": "2022-01-27-新增版本管理及版本对比-MeterSphere-v1-17-0发布.html"
+  },
+  {
+    "date": "2022-01-17",
+    "title": "直播预告丨玩转MeterSphere开源持续测试平台系列教程之接口测试",
+    "pid": "3246",
+    "filename": "2022-01-17-直播预告丨玩转MeterSphere开源持续测试平台系列教程之接口测试.html"
+  },
+  {
+    "date": "2022-01-13",
+    "title": "MeterSphere实现机器人定时在企业微信群中发送消息的功能",
+    "pid": "3229",
+    "filename": "2022-01-13-MeterSphere实现机器人定时在企业微信群中发送消息的功能.html"
+  },
+  {
+    "date": "2022-01-12",
+    "title": "课程｜MeterSphere开源持续测试平台官方认证课程现已上线",
+    "pid": "3215",
+    "filename": "2022-01-12-课程-MeterSphere开源持续测试平台官方认证课程现已上线.html"
+  },
+  {
+    "date": "2022-01-06",
+    "title": "重要通知丨MeterSphere漏洞通知及修复方案（MS-2022-01）",
+    "pid": "3193",
+    "filename": "2022-01-06-重要通知丨MeterSphere漏洞通知及修复方案-MS-2022-01.html"
+  },
+  {
+    "date": "2021-12-24",
+    "title": "MeterSphere开源持续测试平台携手柠檬班，为提升软件测试行业整体效率添砖加瓦",
+    "pid": "3161",
+    "filename": "2021-12-24-MeterSphere开源持续测试平台携手柠檬班-为提升软件测试行业整体效率添砖.html"
+  },
+  {
+    "date": "2021-12-23",
+    "title": "增加公共用例库功能，MeterSphere v1.16.0发布",
+    "pid": "3155",
+    "filename": "2021-12-23-增加公共用例库功能-MeterSphere-v1-16-0发布.html"
+  },
+  {
+    "date": "2021-12-17",
+    "title": "教程｜在MeterSphere前后置脚本中引用Python第三方库",
+    "pid": "3110",
+    "filename": "2021-12-17-教程-在MeterSphere前后置脚本中引用Python第三方库.html"
+  },
+  {
+    "date": "2021-12-16",
+    "title": "案例分享｜领先未来的MeterSphere接口测试实践",
+    "pid": "3100",
+    "filename": "2021-12-16-案例分享-领先未来的MeterSphere接口测试实践.html"
+  },
+  {
+    "date": "2021-12-10",
+    "title": "MeterSphere开源项目GitHub Star数量超过6000！",
+    "pid": "3084",
+    "filename": "2021-12-10-MeterSphere开源项目GitHub-Star数量超过6000.html"
+  },
+  {
+    "date": "2021-11-29",
+    "title": "直播预告丨玩转MeterSphere开源持续测试平台系列教程之测试跟踪",
+    "pid": "3060",
+    "filename": "2021-11-29-直播预告丨玩转MeterSphere开源持续测试平台系列教程之测试跟踪.html"
+  },
+  {
+    "date": "2021-11-25",
+    "title": "增加项目报告功能，MeterSphere v1.15.0发布",
+    "pid": "3052",
+    "filename": "2021-11-25-增加项目报告功能-MeterSphere-v1-15-0发布.html"
+  },
+  {
+    "date": "2021-11-18",
+    "title": "MTSC 2021 深圳站，不见不散！",
+    "pid": "3026",
+    "filename": "2021-11-18-MTSC-2021-深圳站-不见不散.html"
+  },
+  {
+    "date": "2021-11-11",
+    "title": "本地部署MeterSphere一站式开源持续测试平台源码",
+    "pid": "2988",
+    "filename": "2021-11-11-本地部署MeterSphere一站式开源持续测试平台源码.html"
+  },
+  {
+    "date": "2021-11-04",
+    "title": "MeterSphere提交缺陷至TAPD全过程详解",
+    "pid": "2962",
+    "filename": "2021-11-04-MeterSphere提交缺陷至TAPD全过程详解.html"
+  },
+  {
+    "date": "2021-10-28",
+    "title": "新增我的工作台功能，简化管理模型，MeterSphere v1.14.0发布",
+    "pid": "2918",
+    "filename": "2021-10-28-新增我的工作台功能-简化管理模型-MeterSphere-v1-14-0发布.html"
+  },
+  {
+    "date": "2021-10-20",
+    "title": "MeterSphere提交缺陷至禅道的全过程详解",
+    "pid": "2871",
+    "filename": "2021-10-20-MeterSphere提交缺陷至禅道的全过程详解.html"
+  },
+  {
+    "date": "2021-10-12",
+    "title": "MeterSphere访谈丨在QECon上海站谈谈我们对开源和持续测试的理解",
+    "pid": "2848",
+    "filename": "2021-10-12-MeterSphere访谈丨在QECon上海站谈谈我们对开源和持续测试的理解.html"
+  },
+  {
+    "date": "2021-10-08",
+    "title": "案例分享｜用友融联借助MeterSphere开源持续测试平台提升测试效率",
+    "pid": "2801",
+    "filename": "2021-10-08-案例分享-用友融联借助MeterSphere开源持续测试平台提升测试效率.html"
+  },
+  {
+    "date": "2021-09-23",
+    "title": "接口自动化支持插件扩展，提供MQTT插件，MeterSphere v1.13.0发布",
+    "pid": "2772",
+    "filename": "2021-09-23-接口自动化支持插件扩展-提供MQTT插件-MeterSphere-v1-13-0.html"
+  },
+  {
+    "date": "2021-09-17",
+    "title": "MeterSphere X QECon｜60+精彩演讲尽在QECon软件质量效能大会上海站",
+    "pid": "2710",
+    "filename": "2021-09-17-MeterSphere-X-QECon-60-精彩演讲尽在QECon软件质量效能.html"
+  },
+  {
+    "date": "2021-09-16",
+    "title": "MeterSphere对接Jira的配置及自定义缺陷字段的设置方法",
+    "pid": "2683",
+    "filename": "2021-09-16-MeterSphere对接Jira的配置及自定义缺陷字段的设置方法.html"
+  },
+  {
+    "date": "2021-09-13",
+    "title": "北京TiD质量竞争力大会，不见不散！",
+    "pid": "2704",
+    "filename": "2021-09-13-北京TiD质量竞争力大会-不见不散.html"
+  },
+  {
+    "date": "2021-09-09",
+    "title": "MeterSphere获取任意时间格式进行时间与时间戳互转",
+    "pid": "2670",
+    "filename": "2021-09-09-MeterSphere获取任意时间格式进行时间与时间戳互转.html"
+  },
+  {
+    "date": "2021-09-02",
+    "title": "MeterSphere结合混沌注入工具（ChaosBlade）的场景自动化测试实践",
+    "pid": "2618",
+    "filename": "2021-09-02-MeterSphere结合混沌注入工具-ChaosBlade-的场景自动化测试实.html"
+  },
+  {
+    "date": "2021-08-26",
+    "title": "增加消息通知，支持TCP协议Mock服务，MeterSphere v1.12.0发布",
+    "pid": "2509",
+    "filename": "2021-08-26-增加消息通知-支持TCP协议Mock服务-MeterSphere-v1-12-0.html"
+  },
+  {
+    "date": "2021-08-18",
+    "title": "使用脚本同步MeterSphere开源持续测试平台与Jira的工单状态",
+    "pid": "2464",
+    "filename": "2021-08-18-使用脚本同步MeterSphere开源持续测试平台与Jira的工单状态.html"
+  },
+  {
+    "date": "2021-08-11",
+    "title": "细说MeterSphere基于Prometheus实现的性能监控方案",
+    "pid": "2418",
+    "filename": "2021-08-11-细说MeterSphere基于Prometheus实现的性能监控方案.html"
+  },
+  {
+    "date": "2021-08-04",
+    "title": "案例分享｜360借助MeterSphere提升自动化测试水平",
+    "pid": "2366",
+    "filename": "2021-08-04-案例分享-360借助MeterSphere提升自动化测试水平.html"
+  },
+  {
+    "date": "2021-07-28",
+    "title": "使用分享｜MeterSphere使用外置Kafka集群的方法",
+    "pid": "2328",
+    "filename": "2021-07-28-使用分享-MeterSphere使用外置Kafka集群的方法.html"
+  },
+  {
+    "date": "2021-07-27",
+    "title": "MeterSphere开源项目GitHub Star数量超过5000！",
+    "pid": "2323",
+    "filename": "2021-07-27-MeterSphere开源项目GitHub-Star数量超过5000.html"
+  },
+  {
+    "date": "2021-07-22",
+    "title": "增加任务中心，MeterSphere v1.11.0发布",
+    "pid": "2313",
+    "filename": "2021-07-22-增加任务中心-MeterSphere-v1-11-0发布.html"
+  },
+  {
+    "date": "2021-07-15",
+    "title": "MTSC 2021 上海站，不见不散！",
+    "pid": "2296",
+    "filename": "2021-07-15-MTSC-2021-上海站-不见不散.html"
+  },
+  {
+    "date": "2021-07-01",
+    "title": "案例分享｜民生科技基于MeterSphere平台实现测试用例复用",
+    "pid": "2288",
+    "filename": "2021-07-01-案例分享-民生科技基于MeterSphere平台实现测试用例复用.html"
+  },
+  {
+    "date": "2021-06-16",
+    "title": "使用分享｜在MeterSphere中调用Linux Bash命令执行Robot Framework用例",
+    "pid": "2263",
+    "filename": "2021-06-16-使用分享-在MeterSphere中调用Linux-Bash命令执行Robot.html"
+  },
+  {
+    "date": "2021-06-09",
+    "title": "使用分享｜将TestLink用例迁移到MeterSphere的方法（附脚本下载地址）",
+    "pid": "2252",
+    "filename": "2021-06-09-使用分享-将TestLink用例迁移到MeterSphere的方法-附脚本下载地.html"
+  },
+  {
+    "date": "2021-06-08",
+    "title": "量变到质变，MeterSphere一站式开源持续测试平台发布首个LTS版本",
+    "pid": "2241",
+    "filename": "2021-06-08-量变到质变-MeterSphere一站式开源持续测试平台发布首个LTS版本.html"
+  },
+  {
+    "date": "2021-06-04",
+    "title": "MeterSphere使用分享｜使用Postman和Fiddler进行移动端接口测试",
+    "pid": "2249",
+    "filename": "2021-06-04-MeterSphere使用分享-使用Postman和Fiddler进行移动端接口.html"
+  },
+  {
+    "date": "2021-05-28",
+    "title": "支持自定义权限及项目级别权限配置，MeterSphere v1.10.0发布",
+    "pid": "2226",
+    "filename": "2021-05-28-支持自定义权限及项目级别权限配置-MeterSphere-v1-10-0发布.html"
+  },
+  {
+    "date": "2021-05-26",
+    "title": "案例分享｜易盛信息在MeterSphere上实现多类型接口场景自动化测试",
+    "pid": "2182",
+    "filename": "2021-05-26-案例分享-易盛信息在MeterSphere上实现多类型接口场景自动化测试.html"
+  },
+  {
+    "date": "2021-05-21",
+    "title": "MeterSphere使用分享｜使用参数列表与ForEach循环组合优化接口自动化测试",
+    "pid": "2173",
+    "filename": "2021-05-21-MeterSphere使用分享-使用参数列表与ForEach循环组合优化接口自动.html"
+  },
+  {
+    "date": "2021-05-13",
+    "title": "使用分享｜使用MeterSphere循环控制器进行接口场景自动化测试",
+    "pid": "2124",
+    "filename": "2021-05-13-使用分享-使用MeterSphere循环控制器进行接口场景自动化测试.html"
+  },
+  {
+    "date": "2021-04-30",
+    "title": "新增缺陷管理和Mock服务，MeterSphere v1.9.0发布",
+    "pid": "2113",
+    "filename": "2021-04-30-新增缺陷管理和Mock服务-MeterSphere-v1-9-0发布.html"
+  },
+  {
+    "date": "2021-04-28",
+    "title": "MeterSphere使用分享｜ForEach+脚本断言在金融业务复杂场景的实践",
+    "pid": "2088",
+    "filename": "2021-04-28-MeterSphere使用分享-ForEach-脚本断言在金融业务复杂场景的实践.html"
+  },
+  {
+    "date": "2021-04-28",
+    "title": "问答精选｜MeterSphere v1.8版本发布说明会",
+    "pid": "2087",
+    "filename": "2021-04-28-问答精选-MeterSphere-v1-8版本发布说明会.html"
+  },
+  {
+    "date": "2021-04-21",
+    "title": "案例分享｜九里云基于MeterSphere落地一站式自动化测试平台",
+    "pid": "2078",
+    "filename": "2021-04-21-案例分享-九里云基于MeterSphere落地一站式自动化测试平台.html"
+  },
+  {
+    "date": "2021-04-15",
+    "title": "使用分享｜在MeterSphere中使用SQL请求提取参数并断言",
+    "pid": "2054",
+    "filename": "2021-04-15-使用分享-在MeterSphere中使用SQL请求提取参数并断言.html"
+  },
+  {
+    "date": "2021-04-07",
+    "title": "使用分享｜部署MeterSphere分布式环境全流程",
+    "pid": "2039",
+    "filename": "2021-04-07-使用分享-部署MeterSphere分布式环境全流程.html"
+  },
+  {
+    "date": "2021-04-02",
+    "title": "使用分享｜MeterSphere实现对外加密接口自动化测试",
+    "pid": "2006",
+    "filename": "2021-04-02-使用分享-MeterSphere实现对外加密接口自动化测试.html"
+  },
+  {
+    "date": "2021-03-31",
+    "title": "杭州测试生态圈春季沙龙成功举办",
+    "pid": "1996",
+    "filename": "2021-03-31-杭州测试生态圈春季沙龙成功举办.html"
+  },
+  {
+    "date": "2021-03-29",
+    "title": "使用分享｜使用MeterSphere愉快地做一个带有登录场景的接口测试",
+    "pid": "1955",
+    "filename": "2021-03-29-使用分享-使用MeterSphere愉快地做一个带有登录场景的接口测试.html"
+  },
+  {
+    "date": "2021-03-26",
+    "title": "测试用例支持思维导图编辑模式，MeterSphere v1.8.0发布",
+    "pid": "1947",
+    "filename": "2021-03-26-测试用例支持思维导图编辑模式-MeterSphere-v1-8-0发布.html"
+  },
+  {
+    "date": "2021-03-18",
+    "title": "使用分享｜MeterSphere SQL数据库查询校验操作指南",
+    "pid": "1894",
+    "filename": "2021-03-18-使用分享-MeterSphere-SQL数据库查询校验操作指南.html"
+  },
+  {
+    "date": "2021-03-15",
+    "title": "MeterSphere开源项目GitHub Star数量超过4000！",
+    "pid": "1916",
+    "filename": "2021-03-15-MeterSphere开源项目GitHub-Star数量超过4000.html"
+  },
+  {
+    "date": "2021-03-12",
+    "title": "征文｜分享MeterSphere使用教程，赢取社区好礼",
+    "pid": "1881",
+    "filename": "2021-03-12-征文-分享MeterSphere使用教程-赢取社区好礼.html"
+  },
+  {
+    "date": "2021-03-11",
+    "title": "使用分享丨MeterSphere平台上的SSL证书配置",
+    "pid": "1853",
+    "filename": "2021-03-11-使用分享丨MeterSphere平台上的SSL证书配置.html"
+  },
+  {
+    "date": "2021-02-09",
+    "title": "88秒回顾MeterSphere开源持续测试平台的2020",
+    "pid": "1844",
+    "filename": "2021-02-09-88秒回顾MeterSphere开源持续测试平台的2020.html"
+  },
+  {
+    "date": "2021-02-04",
+    "title": "问答精选｜新年特辑：全方位揭秘MeterSphere一站式开源持续测试平台",
+    "pid": "1835",
+    "filename": "2021-02-04-问答精选-新年特辑-全方位揭秘MeterSphere一站式开源持续测试平台.html"
+  },
+  {
+    "date": "2021-02-02",
+    "title": "生日快乐｜MeterSphere开源项目一岁啦！",
+    "pid": "1831",
+    "filename": "2021-02-02-生日快乐-MeterSphere开源项目一岁啦.html"
+  },
+  {
+    "date": "2021-02-02",
+    "title": "测试用例支持自定义标签，MeterSphere v1.7.0发布",
+    "pid": "1821",
+    "filename": "2021-02-02-测试用例支持自定义标签-MeterSphere-v1-7-0发布.html"
+  },
+  {
+    "date": "2021-02-01",
+    "title": "《持续测试白皮书》成功发布，现已开放下载（附下载方法）",
+    "pid": "1813",
+    "filename": "2021-02-01-持续测试白皮书-成功发布-现已开放下载-附下载方法.html"
+  },
+  {
+    "date": "2021-01-22",
+    "title": "直播预告丨《持续测试白皮书》发布会",
+    "pid": "1785",
+    "filename": "2021-01-22-直播预告丨-持续测试白皮书-发布会.html"
+  },
+  {
+    "date": "2021-01-07",
+    "title": "众测｜MeterSphere再度众测，奖品多多等你来！",
+    "pid": "1749",
+    "filename": "2021-01-07-众测-MeterSphere再度众测-奖品多多等你来.html"
+  },
+  {
+    "date": "2021-01-05",
+    "title": "MeterSphere用户访谈录：微洱科技",
+    "pid": "1735",
+    "filename": "2021-01-05-MeterSphere用户访谈录-微洱科技.html"
+  },
+  {
+    "date": "2020-12-29",
+    "title": "接口测试改版，新增接口定义子模块，MeterSphere v1.6.0发布",
+    "pid": "1717",
+    "filename": "2020-12-29-接口测试改版-新增接口定义子模块-MeterSphere-v1-6-0发布.html"
+  },
+  {
+    "date": "2020-12-24",
+    "title": "MeterSphere用户访谈录：网鱼网咖",
+    "pid": "1711",
+    "filename": "2020-12-24-MeterSphere用户访谈录-网鱼网咖.html"
+  },
+  {
+    "date": "2020-12-18",
+    "title": "飞致云旗下两个开源项目双双进入GitHub趋势榜主榜",
+    "pid": "1696",
+    "filename": "2020-12-18-飞致云旗下两个开源项目双双进入GitHub趋势榜主榜.html"
+  },
+  {
+    "date": "2020-12-17",
+    "title": "MeterSphere开源项目GitHub Star数量超过3000！",
+    "pid": "1692",
+    "filename": "2020-12-17-MeterSphere开源项目GitHub-Star数量超过3000.html"
+  },
+  {
+    "date": "2020-12-09",
+    "title": "MeterSphere案例分享丨永福信息基于MeterSphere从项目维度持续推进测试任务",
+    "pid": "1654",
+    "filename": "2020-12-09-MeterSphere案例分享丨永福信息基于MeterSphere从项目维度持续.html"
+  },
+  {
+    "date": "2020-12-04",
+    "title": "喜报｜MeterSphere入选2020年浙江省软件产业高质量发展重点项目",
+    "pid": "1647",
+    "filename": "2020-12-04-喜报-MeterSphere入选2020年浙江省软件产业高质量发展重点项目.html"
+  },
+  {
+    "date": "2020-12-02",
+    "title": "支持对接禅道进行缺陷管理，MeterSphere v1.5.0发布",
+    "pid": "1639",
+    "filename": "2020-12-02-支持对接禅道进行缺陷管理-MeterSphere-v1-5-0发布.html"
+  },
+  {
+    "date": "2020-11-25",
+    "title": "MeterSphere开源持续测试平台下载超过20000次！",
+    "pid": "1632",
+    "filename": "2020-11-25-MeterSphere开源持续测试平台下载超过20000次.html"
+  },
+  {
+    "date": "2020-11-18",
+    "title": "MeterSphere案例分享丨基于JMeter的性能测试方案演进之路",
+    "pid": "1621",
+    "filename": "2020-11-18-MeterSphere案例分享丨基于JMeter的性能测试方案演进之路.html"
+  },
+  {
+    "date": "2020-11-13",
+    "title": "MeterSphere案例分享丨易盛信息MeterSphere接口测试使用经验",
+    "pid": "1601",
+    "filename": "2020-11-13-MeterSphere案例分享丨易盛信息MeterSphere接口测试使用经验.html"
+  },
+  {
+    "date": "2020-11-11",
+    "title": "MeterSphere案例分享丨蔚澜环保基于MeterSphere的自动化测试实践",
+    "pid": "1591",
+    "filename": "2020-11-11-MeterSphere案例分享丨蔚澜环保基于MeterSphere的自动化测试实.html"
+  },
+  {
+    "date": "2020-11-05",
+    "title": "MeterSphere案例分享丨88完美邮箱全面提升产品质量的落地指南",
+    "pid": "1573",
+    "filename": "2020-11-05-MeterSphere案例分享丨88完美邮箱全面提升产品质量的落地指南.html"
+  },
+  {
+    "date": "2020-10-27",
+    "title": "消息通知支持企业微信、钉钉机器人，MeterSphere v1.4.0发布",
+    "pid": "1564",
+    "filename": "2020-10-27-消息通知支持企业微信-钉钉机器人-MeterSphere-v1-4-0发布.html"
+  },
+  {
+    "date": "2020-10-22",
+    "title": "培训丨MeterSphere培训课程火热上线",
+    "pid": "1560",
+    "filename": "2020-10-22-培训丨MeterSphere培训课程火热上线.html"
+  },
+  {
+    "date": "2020-10-20",
+    "title": "征集丨申报MeterSphere优秀案例，赢取MTSC大会门票！",
+    "pid": "1552",
+    "filename": "2020-10-20-征集丨申报MeterSphere优秀案例-赢取MTSC大会门票.html"
+  },
+  {
+    "date": "2020-09-29",
+    "title": "增加用例评审及思维导图导入功能，MeterSphere v1.3.0发布",
+    "pid": "1509",
+    "filename": "2020-09-29-增加用例评审及思维导图导入功能-MeterSphere-v1-3-0发布.html"
+  },
+  {
+    "date": "2020-09-17",
+    "title": "教程丨在MeterSphere中使用预执行脚本功能生成接口认证签名",
+    "pid": "1489",
+    "filename": "2020-09-17-教程丨在MeterSphere中使用预执行脚本功能生成接口认证签名.html"
+  },
+  {
+    "date": "2020-09-03",
+    "title": "教程丨使用MeterSphere进行场景化的接口测试",
+    "pid": "1463",
+    "filename": "2020-09-03-教程丨使用MeterSphere进行场景化的接口测试.html"
+  },
+  {
+    "date": "2020-09-02",
+    "title": "MeterSphere开源项目GitHub Star数量超过2000！",
+    "pid": "1459",
+    "filename": "2020-09-02-MeterSphere开源项目GitHub-Star数量超过2000.html"
+  },
+  {
+    "date": "2020-08-31",
+    "title": "集成JIRA/TAPD管理缺陷，增强接口测试，MeterSphere v1.2.0发布",
+    "pid": "1449",
+    "filename": "2020-08-31-集成JIRA-TAPD管理缺陷-增强接口测试-MeterSphere-v1-2.html"
+  },
+  {
+    "date": "2020-08-27",
+    "title": "MeterSphere开源项目下载超过10000次！",
+    "pid": "1438",
+    "filename": "2020-08-27-MeterSphere开源项目下载超过10000次.html"
+  },
+  {
+    "date": "2020-08-12",
+    "title": "教程丨使用MeterSphere做Dubbo接口测试",
+    "pid": "1397",
+    "filename": "2020-08-12-教程丨使用MeterSphere做Dubbo接口测试.html"
+  },
+  {
+    "date": "2020-08-04",
+    "title": "持续测试的兴起：写在MeterSphere开源项目GitHub Star数量突破1000之际",
+    "pid": "1392",
+    "filename": "2020-08-04-持续测试的兴起-写在MeterSphere开源项目GitHub-Star数量突破.html"
+  },
+  {
+    "date": "2020-07-31",
+    "title": "MeterSphere开源项目GitHub Star数量超过1000！",
+    "pid": "1385",
+    "filename": "2020-07-31-MeterSphere开源项目GitHub-Star数量超过1000.html"
+  },
+  {
+    "date": "2020-07-27",
+    "title": "支持Dubbo协议，提供Jenkins插件，MeterSphere v1.1.0发布",
+    "pid": "1365",
+    "filename": "2020-07-27-支持Dubbo协议-提供Jenkins插件-MeterSphere-v1-1-0.html"
+  },
+  {
+    "date": "2020-07-01",
+    "title": "直播回顾丨MeterSphere一站式开源持续测试平台的初心与方向",
+    "pid": "1326",
+    "filename": "2020-07-01-直播回顾丨MeterSphere一站式开源持续测试平台的初心与方向.html"
+  },
+  {
+    "date": "2020-06-28",
+    "title": "众测｜提Issues得奖品，MeterSphere在线发福利",
+    "pid": "1318",
+    "filename": "2020-06-28-众测-提Issues得奖品-MeterSphere在线发福利.html"
+  },
+  {
+    "date": "2020-06-15",
+    "title": "FIT2CLOUD飞致云发布MeterSphere开源持续测试平台",
+    "pid": "1262",
+    "filename": "2020-06-15-FIT2CLOUD飞致云发布MeterSphere开源持续测试平台.html"
+  }
+]

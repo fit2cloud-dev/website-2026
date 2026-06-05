@@ -539,11 +539,6 @@ h6,
     display: none;
 }
 
-/* 让全网黑白 */
-/* html {
-  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
-  -webkit-filter: grayscale(100%);} */
-
 .de-blog-main,
 .de-article-main {
     background: #f5f8fc;

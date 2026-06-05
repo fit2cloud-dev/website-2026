@@ -293,7 +293,7 @@
             );
 
             // Observe elements for animation
-            document.querySelectorAll('.beta__card, .feature__item').forEach(el => {
+            document.querySelectorAll('.beta__card').forEach(el => {
                 animationObserver.observe(el);
             });
         }
@@ -304,7 +304,7 @@
      */
     function setupAccessibility() {
         // Add keyboard navigation for interactive elements
-        document.querySelectorAll('.feature__item, .beta__card').forEach(element => {
+        document.querySelectorAll('.beta__card').forEach(element => {
             element.setAttribute('tabindex', '0');
 
             element.addEventListener('keydown', function (e) {
@@ -396,47 +396,7 @@
      * Performance Optimizations
      */
 
-    // Preload critical resources
-    function preloadResources() {
-        const criticalResources = ['css/styles.css'];
-
-        criticalResources.forEach(resource => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.as = 'style';
-            link.href = resource;
-            document.head.appendChild(link);
-        });
-    }
-
-    // Lazy load non-critical elements
-    function setupLazyLoading() {
-        if ('IntersectionObserver' in window) {
-            const lazyElements = document.querySelectorAll('[data-lazy]');
-
-            const lazyObserver = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const element = entry.target;
-                        const src = element.getAttribute('data-lazy');
-
-                        if (src) {
-                            element.src = src;
-                            element.removeAttribute('data-lazy');
-                        }
-
-                        lazyObserver.unobserve(element);
-                    }
-                });
-            });
-
-            lazyElements.forEach(el => lazyObserver.observe(el));
-        }
-    }
-
     /**
-     * Error Handling
-     */
     window.addEventListener('error', function (e) {
         console.error('JavaScript error occurred:', e.error);
         // In production, you might want to send this to an analytics service
@@ -479,12 +439,6 @@
      */
     function trackEvent(eventName, properties = {}) {
         // Placeholder for analytics tracking
-        console.log('Event tracked:', eventName, properties);
-
-        // Example: Google Analytics
-        // if (typeof gtag !== 'undefined') {
-        //     gtag('event', eventName, properties);
-        // }
     }
 
     // Track page interactions
@@ -497,20 +451,4 @@
         });
     });
 
-    // Initialize lazy loading and preloading
-    setupLazyLoading();
-
-    // Add visual feedback for development
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        console.log('🚀 Cordys CRM Website initialized successfully');
-        console.log('📱 Responsive breakpoints: Mobile(<768px), Tablet(768-1024px), Desktop(>1024px)');
-    }
-
-    // 投票通知
-    document.addEventListener('DOMContentLoaded', function () {
-        // 初始化模态框实例（Bootstrap 5.2 官方API）
-        const voteModal = new bootstrap.Modal(document.getElementById('notice-dialog'));
-        // 自动弹出模态框
-        voteModal.show();
-    });
 })();
