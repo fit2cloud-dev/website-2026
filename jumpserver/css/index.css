@@ -1598,8 +1598,8 @@ a:focus {
     background: linear-gradient(135deg, #e8f6f1 0%, #f6fbf8 100%) !important;
     border-color: #d6e7e0 !important;
     color: var(--de-ink) !important;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 500;
     line-height: 1.55;
     text-align: center;
 }
@@ -2265,8 +2265,8 @@ a:focus {
 .versions-compare-table .table th,
 .de-article-content table th {
     color: var(--de-ink) !important;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .table td,
@@ -4252,8 +4252,8 @@ th,
 .table-title-2,
 .versions-compare-table .table .title-bg {
     color: var(--js-color-heading) !important;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 500;
     line-height: 1.55;
 }
 
@@ -4280,6 +4280,11 @@ th,
 
 .versions-compare-table .table tbody td:first-child {
     font-size: 14px;
+    white-space: nowrap;
+}
+
+.subscription-table td:first-child,
+.subscription-table th:first-child {
     white-space: nowrap;
 }
 
@@ -4627,8 +4632,7 @@ a:focus {
     width: 100% !important;
 }
 
-.js-enterprise-page .js-enterprise-overview .card::before,
-.js-enterprise-page #xpack .card::before {
+.js-enterprise-page .js-enterprise-overview .card::before {
     background: var(--js-card-stripe, linear-gradient(90deg, #2b937c 0%, #1fb993 100%));
     content: "";
     height: 4px;
@@ -4637,6 +4641,10 @@ a:focus {
     right: 0;
     top: 0;
     z-index: 2;
+}
+
+.js-enterprise-page #xpack .card::before {
+    content: none !important;
 }
 
 .js-enterprise-page .js-enterprise-overview .card::after,
@@ -4754,8 +4762,8 @@ a:focus {
     margin-top: 30px !important;
 }
 
-.js-enterprise-page .js-enterprise-overview .title,
-.js-enterprise-page #xpack .title {
+.js-enterprise-page .js-enterprise-overview .card .title,
+.js-enterprise-page #xpack .card .title {
     color: var(--js-color-heading) !important;
     display: block;
     font-size: 19px !important;
@@ -4767,16 +4775,24 @@ a:focus {
 }
 
 .js-enterprise-page #xpack .section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
 .js-enterprise-page #xpack .section-title > .title {
+    align-self: center;
+    display: block;
     font-size: clamp(25px, 3vw, 32px) !important;
     font-weight: 700 !important;
     line-height: 1.28 !important;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     max-width: none;
+    text-align: center !important;
+    width: 100%;
 }
 
 .js-enterprise-page .js-enterprise-overview a:hover {
@@ -4840,8 +4856,8 @@ a:focus {
         width: 68px;
     }
 
-    .js-enterprise-page .js-enterprise-overview .title,
-    .js-enterprise-page #xpack .title {
+    .js-enterprise-page .js-enterprise-overview .card .title,
+    .js-enterprise-page #xpack .card .title {
         font-size: 18px !important;
     }
 
@@ -4885,7 +4901,7 @@ a:focus {
 .js-enterprise-page #xpack .card .title,
 .js-enterprise-page #xpack .card h5.title {
     font-size: 18px !important;
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     line-height: 1.45 !important;
 }
 
