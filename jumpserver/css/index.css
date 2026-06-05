@@ -5087,3 +5087,199 @@ a:focus {
         padding: 20px;
     }
 }
+
+/* Database audit solution overview */
+.js-db-audit-section {
+    background:
+        radial-gradient(circle at 12% 18%, rgba(43, 147, 124, 0.08), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+}
+
+.js-db-audit-section .container {
+    max-width: 1120px;
+}
+
+.js-db-audit-layout {
+    background:
+        linear-gradient(90deg, rgba(43, 147, 124, 0.08), rgba(43, 147, 124, 0)),
+        #ffffff;
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 24px 70px rgba(24, 43, 77, 0.08);
+    display: grid;
+    gap: 26px;
+    grid-template-columns: minmax(260px, 0.86fr) minmax(0, 1.42fr);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 980px;
+    padding: 28px;
+}
+
+.js-db-audit-layout > [class*="col-"] {
+    display: flex;
+    flex: none;
+    margin: 0 !important;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+    width: auto;
+}
+
+.js-db-audit-features .section-title {
+    margin: 0 !important;
+    width: 100%;
+}
+
+.js-db-audit-features ul {
+    display: grid;
+    gap: 14px;
+    line-height: normal !important;
+    margin: 0;
+}
+
+.js-db-audit-features li {
+    margin: 0 !important;
+}
+
+.js-db-audit-features .features {
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 14px 34px rgba(24, 43, 77, 0.06);
+    display: flex;
+    min-height: 104px;
+    padding: 18px 20px !important;
+    width: 100%;
+}
+
+.js-db-audit-features .features .icon {
+    align-items: center;
+    background:
+        radial-gradient(circle at 70% 18%, rgba(255, 255, 255, 0.92), transparent 38%),
+        linear-gradient(135deg, rgba(43, 147, 124, 0.12), rgba(74, 168, 255, 0.08));
+    border: 1px solid rgba(43, 147, 124, 0.14);
+    border-radius: 8px !important;
+    color: var(--de-primary) !important;
+    display: inline-flex;
+    flex: 0 0 58px;
+    height: 58px;
+    justify-content: center;
+    margin: 0 18px 0 0 !important;
+    width: 58px;
+}
+
+.js-db-audit-features .features .icon svg {
+    height: 28px;
+    width: 28px;
+}
+
+.js-db-audit-features .features .title {
+    color: var(--de-ink, #172033) !important;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.js-db-audit-visual {
+    align-items: center;
+    background:
+        radial-gradient(circle at 72% 18%, rgba(43, 147, 124, 0.08), transparent 32%),
+        linear-gradient(135deg, #f7fbfa 0%, #eef8f4 100%);
+    border-radius: 8px;
+    justify-content: center;
+    min-height: 346px;
+    padding: 28px !important;
+}
+
+.js-db-audit-diagram {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.86);
+    border: 1px solid rgba(43, 147, 124, 0.12);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    width: 100%;
+}
+
+.js-db-audit-diagram img {
+    display: block;
+    max-height: 320px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.js-db-4a-section .js-db-4a-card-grid {
+    align-items: stretch;
+}
+
+.js-db-4a-section .js-solution-card-col {
+    display: flex;
+}
+
+.js-db-4a-section .js-solution-card-col > .text-center {
+    height: 292px;
+    justify-content: center;
+    min-height: 292px;
+}
+
+@media (max-width: 991px) {
+    .js-db-audit-layout {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+    }
+
+    .js-db-audit-features ul {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .js-db-audit-features .features {
+        align-items: flex-start !important;
+        flex-direction: column;
+        gap: 14px;
+        min-height: 132px;
+    }
+
+    .js-db-audit-features .features .icon {
+        margin: 0 !important;
+    }
+
+    .js-db-4a-section .js-solution-card-col > .text-center {
+        height: auto;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .js-db-audit-layout {
+        gap: 18px;
+        max-width: calc(100vw - 32px);
+        padding: 18px;
+    }
+
+    .js-db-audit-features ul {
+        grid-template-columns: 1fr;
+    }
+
+    .js-db-audit-features .features {
+        align-items: center !important;
+        flex-direction: row;
+        min-height: 92px;
+    }
+
+    .js-db-audit-features .features .title {
+        white-space: normal;
+    }
+
+    .js-db-audit-visual {
+        min-height: 0;
+        padding: 16px !important;
+    }
+
+    .js-db-audit-diagram {
+        padding: 14px;
+    }
+}
