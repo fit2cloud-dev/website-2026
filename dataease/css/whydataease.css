@@ -191,7 +191,7 @@
     color: #42526a;
     display: block;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -1602,7 +1602,7 @@
 .whydataease-page .wd-hero .wd-hero-point span {
     color: #42526a;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.65;
     overflow-wrap: break-word;
     word-break: normal;

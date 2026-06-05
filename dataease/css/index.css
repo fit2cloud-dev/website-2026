@@ -2725,6 +2725,7 @@ a.text-primary,
 .de-embedded-capabilities .explore-feature p {
     color: var(--de-text-soft) !important;
     font-size: 15px;
+    font-weight: 400;
     line-height: 1.85;
 }
 
