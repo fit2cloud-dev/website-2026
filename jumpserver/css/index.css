@@ -70,7 +70,12 @@ h6,
 }
 
 @media (max-width: 991px) {
-    #topnav .navigation-menu > li:first-child {
+    #topnav .navigation-menu > li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #topnav .navigation-menu > li:last-child {
         margin-left: 0;
     }
 
