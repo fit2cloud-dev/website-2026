@@ -1550,3 +1550,54 @@
     color: rgba(255, 255, 255, 0.94) !important;
     stroke: currentColor !important;
 }
+
+/* Product advantages: keep both halves aligned to the same two-column rhythm */
+@media (min-width: 992px) {
+    .whyjumpserver-page #advantages .wj-advantage-row {
+        align-items: stretch;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        min-height: 320px;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-row > [class*="col-"] {
+        align-items: center;
+        display: flex;
+        flex: none;
+        max-width: none;
+        min-width: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100%;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-row.flex-lg-row-reverse > [class*="col-"]:first-child {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-row.flex-lg-row-reverse > [class*="col-"]:last-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-media,
+    .whyjumpserver-page #advantages .wj-advantage-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        min-height: 320px;
+        padding: 2.25rem;
+        width: 100%;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-body {
+        align-items: flex-start;
+    }
+
+    .whyjumpserver-page #advantages .wj-advantage-media img {
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+}
