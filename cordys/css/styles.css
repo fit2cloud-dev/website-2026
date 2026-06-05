@@ -1676,6 +1676,19 @@ body {
     padding: 80px 0;
 }
 
+/* 价格页交错底色 */
+.section--compare {
+    background-color: var(--bg-primary);
+}
+
+.section--pricing {
+    background-color: var(--bg-secondary);
+}
+
+.section--service {
+    background-color: var(--bg-primary);
+}
+
 .section__title {
     font-size: 36px;
     font-weight: 700;
@@ -2405,7 +2418,6 @@ body {
    ========================================================================== */
 
 .service-section {
-    margin-top: 64px;
 }
 
 .service-section .section__title {
@@ -2554,7 +2566,7 @@ body {
 
 .dev-consulting {
     padding: 100px 0;
-    background: linear-gradient(180deg, var(--bg-primary) 0%, #F8FAFC 100%);
+    background-color: var(--bg-secondary);
 }
 
 .dev-consulting__header {
