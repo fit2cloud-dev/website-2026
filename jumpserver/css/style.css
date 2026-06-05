@@ -931,7 +931,7 @@ small {
   letter-spacing: 0.5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 6px;
 }
 
@@ -1536,7 +1536,7 @@ button:not(:disabled) {
 }
 
 .alert.alert-pills .content {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .page-next-level .title {
@@ -2140,7 +2140,7 @@ h6,
 .h6 {
   font-family: "Source Han Sans SC", "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 ::-moz-selection {
@@ -4042,7 +4042,7 @@ p {
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .sidebar .widget .tagcloud>a:hover {

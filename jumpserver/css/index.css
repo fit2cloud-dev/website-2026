@@ -20,7 +20,7 @@ h6,
 .h6 {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', sans-serif;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0;
 }
 
@@ -48,7 +48,7 @@ h6,
 .title-p {
     font-size: 0.9rem;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -75,6 +75,10 @@ h6,
     }
 
     .notice-phone {
+        display: none !important;
+    }
+
+    #topnav .menu-btn {
         display: none !important;
     }
 
@@ -420,7 +424,7 @@ h6,
 .elevator-box .sidebar-nav > .navbar-item .navbar-link {
     color: #8492a6;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .elevator-box .sidebar-nav > .navbar-item.active,
@@ -746,7 +750,7 @@ a:focus {
     color: #26384f;
     font-family: var(--de-font-family) !important;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0;
 }
 
@@ -828,7 +832,7 @@ a:focus {
 .de-blog-hero h1 {
     color: var(--de-ink);
     font-size: clamp(34px, 4vw, 46px);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .de-blog-lead {
@@ -863,7 +867,7 @@ a:focus {
     color: var(--de-ink);
     display: block;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.2;
 }
 
@@ -938,7 +942,7 @@ a:focus {
 
 .de-blog-card h2 {
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.45;
     margin-top: 10px;
 }
@@ -968,7 +972,7 @@ a:focus {
 .de-blog-more {
     color: var(--de-primary) !important;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 18px;
 }
 
@@ -1059,7 +1063,7 @@ a:focus {
 .de-article-header h1 {
     color: var(--de-ink);
     font-size: clamp(30px, 4vw, 42px);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.3;
     margin: 14px 0;
 }
@@ -1105,7 +1109,7 @@ a:focus {
 .de-article-content h3,
 .de-article-content h4 {
     color: var(--de-ink) !important;
-    font-weight: 800;
+    font-weight: 700;
     margin: 34px 0 18px;
 }
 
@@ -1144,7 +1148,7 @@ a:focus {
 
 .de-article-back a {
     color: var(--de-primary) !important;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /* Contact and footer */
@@ -1181,7 +1185,8 @@ a:focus {
 #contact .page-title {
     color: var(--de-ink) !important;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
 #contact img {
@@ -1229,7 +1234,7 @@ a:focus {
     color: var(--de-text) !important;
     display: block;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
     overflow-wrap: anywhere;
     word-break: normal;
 }
@@ -1262,7 +1267,7 @@ a:focus {
     display: inline-flex;
     gap: 12px;
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .de-site-footer .de-footer-logo img {
@@ -1319,7 +1324,7 @@ a:focus {
 .de-site-footer .de-footer-title {
     color: #ffffff !important;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
     margin: 0 0 16px;
 }
 
@@ -1397,8 +1402,8 @@ a:focus {
     background: linear-gradient(135deg, #e8f6f1 0%, #f6fbf8 100%) !important;
     border-color: #d6e7e0 !important;
     color: var(--de-ink) !important;
-    font-size: 15px;
-    font-weight: 800;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 1.55;
     text-align: center;
 }
@@ -1431,7 +1436,7 @@ a:focus {
 .versions-compare-table .table tbody th .title {
     color: var(--de-ink) !important;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.55;
 }
 
@@ -1449,7 +1454,7 @@ a:focus {
 .de-article-content table td:first-child {
     color: var(--de-ink) !important;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .subscription-table tr:nth-child(even) td,
@@ -1477,7 +1482,7 @@ a:focus {
     border-radius: 999px;
     display: inline-flex;
     font-size: 12px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.4;
     padding: 3px 8px;
 }
@@ -1495,7 +1500,7 @@ a:focus {
     color: var(--de-primary) !important;
     display: block;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.5;
     margin: 0;
     padding: 14px 20px;
@@ -1665,7 +1670,7 @@ a:focus {
 .js-advantage-card .page-title {
     color: var(--de-ink);
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.35;
 }
 
@@ -2020,7 +2025,7 @@ a:focus {
 .mega-nav-sandbox .mega-nav-body .mega-nav-ul li a {
     color: #26384f !important;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0;
 }
 
@@ -2065,7 +2070,7 @@ a:focus {
 .de-article-content table th {
     color: var(--de-ink) !important;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .table td,
@@ -2083,7 +2088,7 @@ a:focus {
 .de-article-content table td:first-child {
     color: var(--de-ink) !important;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .td-bg-color,
@@ -2116,7 +2121,8 @@ a:focus {
 }
 
 .js-home-what .section-title p,
-.js-home-4a .section-title p {
+.js-home-4a .section-title p,
+.js-case-section .section-title p {
     color: #526783 !important;
     font-weight: 500;
 }
@@ -2229,7 +2235,7 @@ a:focus {
 .js-asset-card .page-title {
     color: var(--de-ink) !important;
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.35;
     min-height: 30px;
     margin-bottom: 12px !important;
@@ -2311,7 +2317,7 @@ a:focus {
 .js-4a-card .title {
     color: var(--de-ink) !important;
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.35;
     margin-bottom: 10px;
 }
@@ -2401,7 +2407,7 @@ a:focus {
 .js-founder-content p {
     color: var(--de-ink) !important;
     font-size: clamp(20px, 2vw, 27px);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.72;
     margin: 0 !important;
     max-width: 820px;
@@ -2414,7 +2420,7 @@ a:focus {
     color: var(--de-primary-dark) !important;
     display: inline-flex;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     gap: 12px;
     line-height: 1.6;
     margin: 24px 0 0;
@@ -2434,6 +2440,9 @@ a:focus {
     border: 1px solid rgba(43, 147, 124, 0.14) !important;
     border-radius: 8px !important;
     box-shadow: 0 14px 34px rgba(24, 43, 77, 0.08);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -2499,6 +2508,7 @@ a:focus {
     border: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
+    flex: 1 1 auto;
     min-height: 118px;
     padding: 28px 24px 24px !important;
 }
@@ -2722,9 +2732,14 @@ a:focus {
     vertical-align: middle;
 }
 
+#topnav .navigation-menu > li:first-child {
+    margin-left: auto;
+}
+
 #topnav .navigation-menu > li:last-child {
     align-items: center;
     display: flex;
+    margin-left: auto;
     min-height: 70px;
 }
 
@@ -3056,7 +3071,7 @@ a:focus {
     color: #0a7be0 !important;
     display: block;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.45;
 }
 
@@ -3346,7 +3361,7 @@ a:focus {
 .js-solution-page main .card .title {
     color: var(--de-ink) !important;
     font-size: 21px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.35;
 }
 
@@ -3520,7 +3535,7 @@ a:focus {
     color: #42556f !important;
     display: flex;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     gap: 10px;
     line-height: 1.75;
     margin-bottom: 14px !important;
@@ -3580,6 +3595,7 @@ a:focus {
 }
 
 .js-distributed-page main .distributed-feature-detail .features .title {
+    font-size: 18px;
     margin-bottom: 8px;
 }
 
@@ -3620,7 +3636,7 @@ a:focus {
 
 .js-distributed-page main .distributed-benefits .features h4 {
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 12px;
 }
 
@@ -3700,7 +3716,7 @@ a:focus {
 .js-distributed-page main .distributed-use-case h5 {
     color: var(--de-ink) !important;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
     grid-column: 2;
     margin: 2px 0 0 !important;
 }
@@ -3751,7 +3767,7 @@ a:focus {
 .js-distributed-page main .distributed-use-case ul li strong {
     color: var(--de-ink);
     display: inline;
-    font-weight: 800;
+    font-weight: 500;
     margin-right: 2px;
 }
 
@@ -3869,7 +3885,7 @@ h6,
 .page-next-level .heading {
     color: var(--js-color-heading) !important;
     font-family: var(--js-font-main) !important;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 1.28;
 }
@@ -3927,8 +3943,20 @@ th,
 .de-article-content h2 {
     color: var(--js-color-heading) !important;
     font-size: var(--js-font-card-title);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.36;
+}
+
+.js-asset-card .page-title {
+    font-weight: 500;
+}
+
+.js-advantage-card .page-title {
+    font-weight: 500;
+}
+
+.js-4a-card .title {
+    font-weight: 500;
 }
 
 .card p,
@@ -3955,7 +3983,7 @@ th,
 
 #topnav .navigation-menu > li .submenu li a {
     font-size: var(--js-font-meta);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .mega-nav-sandbox .mega-nav-tagline {
@@ -3969,7 +3997,7 @@ th,
     color: var(--de-primary) !important;
     font-family: var(--js-font-main) !important;
     font-size: var(--js-font-meta);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .mega-nav-sandbox .mega-nav-list .product-desc {
@@ -3982,7 +4010,7 @@ th,
 .btn {
     font-family: var(--js-font-main) !important;
     font-size: var(--js-font-body);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 1.35;
     white-space: nowrap;
@@ -4008,7 +4036,7 @@ th,
 .versions-compare-table .table .title-bg {
     color: var(--js-color-heading) !important;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.55;
 }
 
@@ -4030,7 +4058,12 @@ th,
 .case-article td:first-child {
     color: var(--js-color-heading) !important;
     font-size: var(--js-font-small);
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.versions-compare-table .table tbody td:first-child {
+    font-size: 14px;
+    white-space: nowrap;
 }
 
 .text-light,
@@ -4084,7 +4117,7 @@ th,
 
 .de-site-footer .de-footer-title {
     font-size: var(--js-font-small);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .de-blog-card time,
@@ -4131,7 +4164,7 @@ a:focus {
 .js-version-video-copy .title {
     color: var(--js-color-heading) !important;
     font-size: 34px !important;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.25;
 }
 
@@ -4308,8 +4341,8 @@ a:focus {
 }
 
 .js-enterprise-page .js-enterprise-overview .section-title .title {
-    font-size: clamp(34px, 4vw, 46px) !important;
-    font-weight: 800;
+    font-size: clamp(25px, 3vw, 32px) !important;
+    font-weight: 700;
     line-height: 1.24;
     margin-left: auto;
     margin-right: auto;
@@ -4509,17 +4542,23 @@ a:focus {
     color: var(--js-color-heading) !important;
     display: block;
     font-size: 19px !important;
-    font-weight: 650;
+    font-weight: 500;
     letter-spacing: 0;
     line-height: 1.48;
     margin: 0;
     max-width: 280px;
 }
 
+.js-enterprise-page #xpack .section-title {
+    text-align: center;
+}
+
 .js-enterprise-page #xpack .section-title > .title {
     font-size: clamp(25px, 3vw, 32px) !important;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     line-height: 1.28 !important;
+    margin-left: auto;
+    margin-right: auto;
     max-width: none;
 }
 
@@ -4622,7 +4661,7 @@ a:focus {
 .js-enterprise-page .js-enterprise-overview .card .title,
 .js-enterprise-page .js-enterprise-overview .card h5 .title {
     font-size: 22px !important;
-    font-weight: 650 !important;
+    font-weight: 500 !important;
     line-height: 1.45;
 }
 
@@ -4880,7 +4919,7 @@ a:focus {
 }
 
 .js-4a-card {
-    align-items: flex-start;
+    align-items: center;
     background: transparent !important;
     border: 0 !important;
     border-radius: 0 !important;
@@ -5177,7 +5216,7 @@ a:focus {
 .js-db-audit-features .features .title {
     color: var(--de-ink, #172033) !important;
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.35;
     margin: 0;
     white-space: nowrap;
