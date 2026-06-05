@@ -113,9 +113,6 @@ body {
     .columns-md-2 {
         columns: 2;
     }
-    .grid-cols-md-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
     .grid-cols-md-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -126,12 +123,6 @@ body {
     }
     .columns-lg-3 {
         columns: 3;
-    }
-    .grid-cols-lg-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-    .grid-cols-lg-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .grid-cols-lg-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -297,12 +288,6 @@ body {
     opacity: 0;
     transform: translateY(-30px);
     animation: slideDown 1s ease-out 0.1s forwards;
-}
-
-.slide-up {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: slideUp 1s ease-out 0.1s forwards;
 }
 
 /* scroll Animation */
