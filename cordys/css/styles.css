@@ -2412,6 +2412,24 @@ body {
     font-size: 36px;
     text-align: center;
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.service-title__tag {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #DC2626;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: 6px;
+    padding: 4px 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
 .service-section .section__subtitle {
@@ -2419,6 +2437,28 @@ body {
     color: var(--text-secondary);
     font-size: 18px;
     margin-bottom: 40px;
+}
+
+.service-subtitle--with-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.service-subtitle__label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #DC2626;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: 6px;
+    padding: 4px 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    vertical-align: middle;
 }
 
 .service-table-wrapper {
@@ -2509,7 +2549,226 @@ body {
 }
 
 /* ==========================================================================
+   Dev Consulting Section (二次开发咨询服务)
+   ========================================================================== */
+
+.dev-consulting {
+    padding: 100px 0;
+    background: linear-gradient(180deg, var(--bg-primary) 0%, #F8FAFC 100%);
+}
+
+.dev-consulting__header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.dev-consulting__header .section__title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 14px;
+}
+
+.dev-consulting__header .section__subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin: 0 auto;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dev-consulting__body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.dev-consulting__content {
+    width: 100%;
+}
+
+.dev-consulting__intro {
+    font-size: 16px;
+    line-height: 1.85;
+    color: var(--text-secondary);
+    margin: 0 0 36px;
+}
+
+.dev-consulting__intro strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Feature Cards */
+.dev-consulting__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.dev-consulting__feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 20px;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.dev-consulting__feature-card:hover {
+    border-color: rgba(2, 166, 171, 0.35);
+    box-shadow: 0 4px 16px rgba(2, 166, 171, 0.08);
+    transform: translateY(-4px);
+}
+
+.dev-consulting__feature-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 166, 171, 0.08);
+    border-radius: 12px;
+    color: var(--primary-color);
+}
+
+.dev-consulting__feature-body h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 6px;
+}
+
+.dev-consulting__feature-body p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Pricing Note Box */
+.dev-consulting__pricing-note {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: #FFFBF0;
+    border: 1px solid #FDE68A;
+    border-left: 4px solid #F59E0B;
+    border-radius: var(--radius-md);
+}
+
+.dev-consulting__pricing-note p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #92400E;
+}
+
+.dev-consulting__pricing-note strong {
+    color: #78350F;
+}
+
+.dev-consulting__pricing-note a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dev-consulting__pricing-note a:hover {
+    text-decoration: underline;
+}
+
+.dev-consulting__pricing-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: #F59E0B;
+}
+
+/* ==========================================================================
    Responsive Styles for New Sections
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .dev-consulting__body {
+        max-width: 100%;
+    }
+
+    .dev-consulting__features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dev-consulting {
+        padding: 60px 0;
+    }
+
+    .dev-consulting__header {
+        margin-bottom: 36px;
+    }
+
+    .dev-consulting__header .section__title {
+        font-size: 28px;
+    }
+
+    .dev-consulting__header .section__subtitle {
+        font-size: 15px;
+    }
+
+    .dev-consulting__body {
+        max-width: 100%;
+    }
+
+    .dev-consulting__features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .dev-consulting__feature-card {
+        flex-direction: row;
+    }
+
+    .dev-consulting__intro {
+        font-size: 15px;
+    }
+
+    .dev-consulting__feature-card {
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dev-consulting {
+        padding: 60px 0;
+    }
+
+    .dev-consulting__header .section__title {
+        font-size: 24px;
+    }
+
+    .dev-consulting__feature-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .dev-consulting__feature-body h4 {
+        font-size: 15px;
+    }
+
+    .dev-consulting__pricing-note {
+        padding: 14px 16px;
+    }
+}
+
+/* ==========================================================================
+   Responsive Styles for New Sections (legacy)
    ========================================================================== */
 
 @media (max-width: 1024px) {
@@ -2638,6 +2897,17 @@ body {
 
     .service-table--compare th:first-child {
         width: auto;
+    }
+
+    .service-subtitle--with-label {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .service-title__tag,
+    .service-subtitle__label {
+        font-size: 14px;
+        padding: 3px 12px;
     }
 }
 
