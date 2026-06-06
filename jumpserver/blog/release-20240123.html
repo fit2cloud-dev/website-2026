@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="SQL Server数据库连接支持命令审计。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/tutorial-20260107/cover.jpg" />
         <meta name="twitter:image:alt" content="邮件服务支持Exchange协议，资产历史账号支持设置保留数量，JumpServer堡垒机v3.10.2 LTS版本发布 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"邮件服务支持Exchange协议，资产历史账号支持设置保留数量，JumpServer堡垒机v3.10.2 LTS版本发布","description":"SQL Server数据库连接支持命令审计。","datePublished":"2024-01-23T16:00:25.059932+00:00","dateModified":"2024-01-23T16:00:25.059932+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/release-20240123.html"},"image":["https://www.jumpserver.org/images/blog/tutorial-20260107/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "邮件服务支持Exchange协议，资产历史账号支持设置保留数量，JumpServer堡垒机v3.10.2 LTS版本发布",
+                "description": "SQL Server数据库连接支持命令审计。",
+                "datePublished": "2024-01-23T16:00:25.059932+00:00",
+                "dateModified": "2024-01-23T16:00:25.059932+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/release-20240123.html" },
+                "image": ["https://www.jumpserver.org/images/blog/tutorial-20260107/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -190,7 +218,65 @@
                     <img src="../images/blog/tutorial-20260107/cover.jpg" alt="邮件服务支持Exchange协议，资产历史账号支持设置保留数量，JumpServer堡垒机v3.10.2 LTS版本发布" loading="lazy" />
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/release-20240123/image-01.png" alt="截屏2024-01-23 23.39.24.png" loading="lazy" />2024年1月22日，JumpServer开源堡垒机正式发布v3.10.2 LTS版本。<strong>JumpServer开源项目组将对v3.10 LTS版本提供长期的支持和维护，并定期迭代发布小版本。欢迎广大社区用户升级至v3.10 LTS版本，以获得更佳的使用体验。</strong></p><p style="text-align: start; ">在v3.10.2 LTS版本中，JumpServer的邮件服务功能新增支持Exchange协议。目前JumpServer所支持的邮件协议包括SMTP协议（即简单邮件传输协议）和Exchange协议，为用户提供了更多的选择。同时，LDAP（即轻量目录访问协议）定时同步用户功能支持设置消息收件人，定时同步用户任务完成后，系统会自动发送消息通知给收件人。另外，资产历史账号也支持设置保留数量，以满足用户的更多安全需求。</p><p style="text-align: start; "><strong>X-Pack增强包</strong>方面，JumpServer的SQL Server数据库连接支持命令审计，用户通过Magnus代理连接SQL Server数据库时，进行CURD操作会进行命令审计记录。</p><h1 style="text-align: start; " id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h1><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">1. 邮件服务新增支持Exchange协议</span></strong></p><p style="text-align: start; ">在JumpServer v3.10.2 LTS版本中，邮件服务功能方面，新增支持Exchange协议。目前JumpServer支持的邮件协议为SMTP和Exchange两种，为用户提供了更丰富和灵活的选择。</p><p style="text-align: start; ">管理员可以在JumpServer中选择“系统设置”→“消息通知”→“邮件设置”，修改邮件配置时选择Exchange协议。</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="图1-npik.png" loading="lazy" />▲ 图1 邮件服务新增支持Exchange协议</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">2. 资产历史账号支持设置保留数量</span></strong></p><p style="text-align: start; ">在JumpServer v3.10.2 LTS版本中，资产历史账号支持设置保留数量，以满足用户的安全性需求。管理员可以在JumpServer中选择“系统设置”→“功能设置”→“账号存储”，设置资产历史账号的保留数量。</p><p style="text-align: start; "><strong>特别提示：</strong>如果设置历史账号保留数量的数值小于999，系统将在每日晚间自动执行任务，即检查并删除超出预定数量的历史账号。如果该数值达到或超过999，则不进行任何历史账号的删除操作。</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="图2-vhrb.png" loading="lazy" />▲ 图2 历史账号保留数量配置</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="图3-gdcj.png" loading="lazy" />▲ 图3 任务执行后，历史账号将自动执行任务</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">3. LDAP定时同步用户功能支持设置消息收件人</span></strong></p><p style="text-align: start; ">在JumpServer v3.10.2 LTS版本中，LDAP定时同步用户功能支持设置消息收件人。定时同步用户任务完成后，系统会自动发送消息通知给收件人，让用户能够更加及时地了解同步状态。</p><p style="text-align: start; ">接收消息的方式包含邮件、站内信、企业微信、钉钉、飞书等，用户只要开启配置，都将收到消息通知。</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="图4-lpbt.png" loading="lazy" />▲ 图4 LDAP定时同步用户功能支持设置消息收件人</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="图5-yxmw.png" loading="lazy" />▲ 图5 LDAP定时同步任务完成后，自动推送消息通知</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">4. SQL Server数据库连接支持命令审计（Magnus组件）（X-Pack增强包内）</span></strong></p><p style="text-align: start; ">在JumpServer v3.10.2 LTS版本中，针对企业版用户，SQL Server数据库连接支持命令审计，为用户连接数据库提供更多保障和选择。</p><p>用户可以通过Web终端，选择SQL Server资产，并选择客户端连接方式（即Magnus代理连接），所操作的CURD命令都会进行审计记录。</p><p style="text-align: center; "><img src="../images/blog/release-20240123/image.png" alt="" loading="lazy" />▲ 图6 SQL Server数据库连接支持命令审计</p><h1 style="text-align: start; " id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h1><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化用户授权资产树的加载速度；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> Redis密码支持使用特殊字符（配置文件）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 同步LDAP用户时，用户组只移除LDAP同步过来的用户组（即以AD开头的用户组名称）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化资产标签绑定逻辑，解决主机等资产列表不显示绑定标签的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化使用Nginx处理静态资源，解决会话录像在线播放不能倍速播放的问题（MP4格式）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化标签导入和搜索的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 使用Web GUI方式连接数据库时，去掉超时时间的限制（Chen组件）。</p><h1 style="text-align: start; " id="%E2%80%8Bbug%E4%BF%AE%E5%A4%8D">​Bug修复</h1><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复UNION的类型character varying和UUID（即通用唯一识别码）不匹配的问题（感谢GitHub用户@zhoufaming的贡献）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复手机号加密导致忘记密码判断总是失败问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复配置文件开启<em>HTTPS_PORT</em>，升级后会被注释掉，导致访问失败的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复用户登录成功，日志不显示的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复导入自定义远程应用时出现报错的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复资源列表按字段排序失效的问题；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复组织管理员用户没有权限监控会话及查看录像的问题（X-Pack增强包内）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复账号备份和改密结果文件只导出一条记录的问题（X-Pack增强包内）；</p><p style="text-align: start; "><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复账号改密的更新日期没有同步更新的问题（X-Pack增强包内）。</p>
+                    <p>
+                        <img src="../images/blog/release-20240123/image-01.png" alt="截屏2024-01-23 23.39.24.png" loading="lazy" />2024年1月22日，JumpServer开源堡垒机正式发布v3.10.2 LTS版本。<strong
+                            >JumpServer开源项目组将对v3.10 LTS版本提供长期的支持和维护，并定期迭代发布小版本。欢迎广大社区用户升级至v3.10 LTS版本，以获得更佳的使用体验。</strong
+                        >
+                    </p>
+                    <p style="text-align: start">
+                        在v3.10.2
+                        LTS版本中，JumpServer的邮件服务功能新增支持Exchange协议。目前JumpServer所支持的邮件协议包括SMTP协议（即简单邮件传输协议）和Exchange协议，为用户提供了更多的选择。同时，LDAP（即轻量目录访问协议）定时同步用户功能支持设置消息收件人，定时同步用户任务完成后，系统会自动发送消息通知给收件人。另外，资产历史账号也支持设置保留数量，以满足用户的更多安全需求。
+                    </p>
+                    <p style="text-align: start"><strong>X-Pack增强包</strong>方面，JumpServer的SQL Server数据库连接支持命令审计，用户通过Magnus代理连接SQL Server数据库时，进行CURD操作会进行命令审计记录。</p>
+                    <h1 style="text-align: start" id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h1>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">1. 邮件服务新增支持Exchange协议</span></strong>
+                    </p>
+                    <p style="text-align: start">在JumpServer v3.10.2 LTS版本中，邮件服务功能方面，新增支持Exchange协议。目前JumpServer支持的邮件协议为SMTP和Exchange两种，为用户提供了更丰富和灵活的选择。</p>
+                    <p style="text-align: start">管理员可以在JumpServer中选择“系统设置”→“消息通知”→“邮件设置”，修改邮件配置时选择Exchange协议。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="图1-npik.png" loading="lazy" />▲ 图1 邮件服务新增支持Exchange协议</p>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">2. 资产历史账号支持设置保留数量</span></strong>
+                    </p>
+                    <p style="text-align: start">在JumpServer v3.10.2 LTS版本中，资产历史账号支持设置保留数量，以满足用户的安全性需求。管理员可以在JumpServer中选择“系统设置”→“功能设置”→“账号存储”，设置资产历史账号的保留数量。</p>
+                    <p style="text-align: start">
+                        <strong>特别提示：</strong>如果设置历史账号保留数量的数值小于999，系统将在每日晚间自动执行任务，即检查并删除超出预定数量的历史账号。如果该数值达到或超过999，则不进行任何历史账号的删除操作。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="图2-vhrb.png" loading="lazy" />▲ 图2 历史账号保留数量配置</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="图3-gdcj.png" loading="lazy" />▲ 图3 任务执行后，历史账号将自动执行任务</p>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">3. LDAP定时同步用户功能支持设置消息收件人</span></strong>
+                    </p>
+                    <p style="text-align: start">在JumpServer v3.10.2 LTS版本中，LDAP定时同步用户功能支持设置消息收件人。定时同步用户任务完成后，系统会自动发送消息通知给收件人，让用户能够更加及时地了解同步状态。</p>
+                    <p style="text-align: start">接收消息的方式包含邮件、站内信、企业微信、钉钉、飞书等，用户只要开启配置，都将收到消息通知。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="图4-lpbt.png" loading="lazy" />▲ 图4 LDAP定时同步用户功能支持设置消息收件人</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="图5-yxmw.png" loading="lazy" />▲ 图5 LDAP定时同步任务完成后，自动推送消息通知</p>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">4. SQL Server数据库连接支持命令审计（Magnus组件）（X-Pack增强包内）</span></strong>
+                    </p>
+                    <p style="text-align: start">在JumpServer v3.10.2 LTS版本中，针对企业版用户，SQL Server数据库连接支持命令审计，为用户连接数据库提供更多保障和选择。</p>
+                    <p>用户可以通过Web终端，选择SQL Server资产，并选择客户端连接方式（即Magnus代理连接），所操作的CURD命令都会进行审计记录。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20240123/image.png" alt="" loading="lazy" />▲ 图6 SQL Server数据库连接支持命令审计</p>
+                    <h1 style="text-align: start" id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h1>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化用户授权资产树的加载速度；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> Redis密码支持使用特殊字符（配置文件）；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 同步LDAP用户时，用户组只移除LDAP同步过来的用户组（即以AD开头的用户组名称）；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化资产标签绑定逻辑，解决主机等资产列表不显示绑定标签的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化使用Nginx处理静态资源，解决会话录像在线播放不能倍速播放的问题（MP4格式）；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 优化标签导入和搜索的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 使用Web GUI方式连接数据库时，去掉超时时间的限制（Chen组件）。</p>
+                    <h1 style="text-align: start" id="%E2%80%8Bbug%E4%BF%AE%E5%A4%8D">​Bug修复</h1>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复UNION的类型character varying和UUID（即通用唯一识别码）不匹配的问题（感谢GitHub用户@zhoufaming的贡献）；
+                    </p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复手机号加密导致忘记密码判断总是失败问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复配置文件开启<em>HTTPS_PORT</em>，升级后会被注释掉，导致访问失败的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复用户登录成功，日志不显示的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复导入自定义远程应用时出现报错的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复资源列表按字段排序失效的问题；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复组织管理员用户没有权限监控会话及查看录像的问题（X-Pack增强包内）；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复账号备份和改密结果文件只导出一条记录的问题（X-Pack增强包内）；</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span> 修复账号改密的更新日期没有同步更新的问题（X-Pack增强包内）。</p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -247,10 +333,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -261,21 +347,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

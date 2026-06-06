@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,158 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜在PowerPoint中插入可交互的DataEase仪表板" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <h2 id="%E5%89%8D%E8%A8%80">前言</h2><p><span>作为人人可用的开源数据可视化分析工具，DataEase（</span><em><span>http://github.com/dataease</span></em><span>）</span><span>可以帮助用户快速分析数据并洞察业务趋势。基于这种特性，许多用户在会议或培训上展示数据成果时，会将DataEase中仪表板的静态截图加入PowerPoint（微软公司的一款演示文稿软件）中来丰富所展示的内容。不过，如果仪表板添加了交互操作（比如上卷、下钻、联动等），静态的截图就无法展示这些交互式的操作了，数据的呈现效果也会大打折扣。</span></p><p><span>本文为大家介绍一种在PowerPoint中展示可交互仪表板的方法，该方法主要使用的工具是Web Viewer插件。</span></p><p><span>注意：</span></p><p><span>1. 使用WPS的用户可以选择WebShape网页控件，以呈现更具生动性、互动性和吸引力的演示效果；</span></p><p><span>2. 插件的具体功能和使用方式会因为版本和配置的不同而有所差异，用户可以根据自身的需求和软件版本来了解插件的具体使用方法。</span></p><h2 id="web-viewer%E4%BB%8B%E7%BB%8D">Web Viewer介绍</h2><p><span>Web Viewer是一个用来在PowerPoint演示文稿中嵌入网页的插件。安装了Web Viewer插件后，网页内容可以在幻灯片中直接加载并展示，该功能可以帮助用户将DataEase仪表板的实时视图嵌入到幻灯片中，从而获得具有动态感和互动感的演示体验。</span></p><h2 id="%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">安装步骤</h2><p><strong><span>一、安装Web Viewer插件</span></strong></p><p><span>打开PowerPoint，新建空白演示文稿，打开“开发工具”菜单，点击功能区中的“加载项”按钮，如图1所示。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图1 PowerPoint中“加载项”按钮的位置</p><p><span>点击“加载项”按钮后，会出现“Office 加载项”的弹出窗口，该弹出窗口默认显示“我的加载项”选项卡，需要在窗口左上角切换至“应用商店”选项卡。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-02.png" alt="" loading="lazy" />▲ 图2 “Office 加载项”窗口中的“应用商店”选项卡界面</p><p><span>在“应用商店”选项卡的搜索栏中搜索“Web Viewer”，在右侧的搜索结果列表中点击“Web Viewer”插件右侧的“添加”按钮。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-03.png" alt="" loading="lazy" />▲ 图3 在“应用商店”选项卡中查找Web Viewer插件</p><p><span>添加完成后，在“Office 加载项”窗口中切换到“我的加载项”选项卡下，可以看到Web Viewer插件已经被添加，如图4所示。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-04.png" alt="" loading="lazy" />▲ 图4 成功添加Web Viewer插件</p><p><strong><span>二、在PowerPoint中嵌入DataEase仪表板</span></strong></p><p><span>Web Viewer插件安装完成后，就可以在PowerPoint演示文稿中嵌入DataEase仪表板了。</span></p><p><span>在编辑幻灯片页面打开“开发工具”菜单，点击功能区中的“加载项”按钮。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图5 在演示文稿中添加加载项</p><p><span>在弹出的“Office 加载项”窗口中选择“我的加载项”选项卡，选中Web Viewer插件，然后点击窗口右下角的“添加”按钮。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-06.png" alt="" loading="lazy" />▲ 图6 在演示文稿中添加Web Viewer插件</p><p><span>在演示文稿中成功添加Web Viewer插件后的界面如图7所示。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-07.png" alt="" loading="lazy" />▲ 图7 在演示文稿中添加Web Viewer插件后的效果</p><p><span>接下来，点击幻灯片中Web Viewer插件的地址栏，输入DataEase仪表板的公共链接地址（公共链接地址可以在DataEase中直接生成并导出），然后点击操作界面右下角的“Preview”（预览）按钮，便可以导入并预览仪表板内容。导入的仪表板数据会实时更新，并支持在PowerPoint中进行交互。</span></p><p><span>注意：PowerPoint仅允许访问HTTPS安全地址，如果DataEase未配置HTTPS安全地址，生成的公共链接会被PowerPoint拦截。</span></p><p><img src="../images/blog/tutorial-20240409/dataease-065-08.png" alt="" loading="lazy" />▲ 图8 在Web Viewer地址栏添加DataEase仪表板的公共链接</p><p><span>在幻灯片中插入了DataEase仪表板后的展示效果如图9所示。</span></p><p>▲ 图9 利用Web Viewer嵌入可交互DataEase仪表板的展示效果</p><h2 id="%E7%BB%93%E8%AF%AD"><span>结语</span></h2><p><span>从演示效果上来看，Web Viewer插件与DataEase的结合，让PowerPoint演示不再受限于静态图像，真正变成了一个动态的数据展示平台。用户不仅可以在演示中展示静态数据图表，还可以展示动态、交互式的数据视图，为复杂的数据分析和报告展示提供了一种生动的方式，极大增强了演示的数据表现力和观众参与度。从数据呈现的角度来看，在幻灯片中插入可交互的DataEase仪表板不仅提高了数据呈现的质量，也使得观众可以更加直观地理解数据背后的故事和价值。</span></p>
+                    <h2 id="%E5%89%8D%E8%A8%80">前言</h2>
+                    <p>
+                        <span>作为人人可用的开源数据可视化分析工具，DataEase（</span><em><span>http://github.com/dataease</span></em
+                        ><span>）</span
+                        ><span
+                            >可以帮助用户快速分析数据并洞察业务趋势。基于这种特性，许多用户在会议或培训上展示数据成果时，会将DataEase中仪表板的静态截图加入PowerPoint（微软公司的一款演示文稿软件）中来丰富所展示的内容。不过，如果仪表板添加了交互操作（比如上卷、下钻、联动等），静态的截图就无法展示这些交互式的操作了，数据的呈现效果也会大打折扣。</span
+                        >
+                    </p>
+                    <p><span>本文为大家介绍一种在PowerPoint中展示可交互仪表板的方法，该方法主要使用的工具是Web Viewer插件。</span></p>
+                    <p><span>注意：</span></p>
+                    <p><span>1. 使用WPS的用户可以选择WebShape网页控件，以呈现更具生动性、互动性和吸引力的演示效果；</span></p>
+                    <p><span>2. 插件的具体功能和使用方式会因为版本和配置的不同而有所差异，用户可以根据自身的需求和软件版本来了解插件的具体使用方法。</span></p>
+                    <h2 id="web-viewer%E4%BB%8B%E7%BB%8D">Web Viewer介绍</h2>
+                    <p>
+                        <span
+                            >Web Viewer是一个用来在PowerPoint演示文稿中嵌入网页的插件。安装了Web
+                            Viewer插件后，网页内容可以在幻灯片中直接加载并展示，该功能可以帮助用户将DataEase仪表板的实时视图嵌入到幻灯片中，从而获得具有动态感和互动感的演示体验。</span
+                        >
+                    </p>
+                    <h2 id="%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">安装步骤</h2>
+                    <p>
+                        <strong><span>一、安装Web Viewer插件</span></strong>
+                    </p>
+                    <p><span>打开PowerPoint，新建空白演示文稿，打开“开发工具”菜单，点击功能区中的“加载项”按钮，如图1所示。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图1 PowerPoint中“加载项”按钮的位置</p>
+                    <p><span>点击“加载项”按钮后，会出现“Office 加载项”的弹出窗口，该弹出窗口默认显示“我的加载项”选项卡，需要在窗口左上角切换至“应用商店”选项卡。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-02.png" alt="" loading="lazy" />▲ 图2 “Office 加载项”窗口中的“应用商店”选项卡界面</p>
+                    <p><span>在“应用商店”选项卡的搜索栏中搜索“Web Viewer”，在右侧的搜索结果列表中点击“Web Viewer”插件右侧的“添加”按钮。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-03.png" alt="" loading="lazy" />▲ 图3 在“应用商店”选项卡中查找Web Viewer插件</p>
+                    <p><span>添加完成后，在“Office 加载项”窗口中切换到“我的加载项”选项卡下，可以看到Web Viewer插件已经被添加，如图4所示。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-04.png" alt="" loading="lazy" />▲ 图4 成功添加Web Viewer插件</p>
+                    <p>
+                        <strong><span>二、在PowerPoint中嵌入DataEase仪表板</span></strong>
+                    </p>
+                    <p><span>Web Viewer插件安装完成后，就可以在PowerPoint演示文稿中嵌入DataEase仪表板了。</span></p>
+                    <p><span>在编辑幻灯片页面打开“开发工具”菜单，点击功能区中的“加载项”按钮。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图5 在演示文稿中添加加载项</p>
+                    <p><span>在弹出的“Office 加载项”窗口中选择“我的加载项”选项卡，选中Web Viewer插件，然后点击窗口右下角的“添加”按钮。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-06.png" alt="" loading="lazy" />▲ 图6 在演示文稿中添加Web Viewer插件</p>
+                    <p><span>在演示文稿中成功添加Web Viewer插件后的界面如图7所示。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-07.png" alt="" loading="lazy" />▲ 图7 在演示文稿中添加Web Viewer插件后的效果</p>
+                    <p>
+                        <span
+                            >接下来，点击幻灯片中Web
+                            Viewer插件的地址栏，输入DataEase仪表板的公共链接地址（公共链接地址可以在DataEase中直接生成并导出），然后点击操作界面右下角的“Preview”（预览）按钮，便可以导入并预览仪表板内容。导入的仪表板数据会实时更新，并支持在PowerPoint中进行交互。</span
+                        >
+                    </p>
+                    <p><span>注意：PowerPoint仅允许访问HTTPS安全地址，如果DataEase未配置HTTPS安全地址，生成的公共链接会被PowerPoint拦截。</span></p>
+                    <p><img src="../images/blog/tutorial-20240409/dataease-065-08.png" alt="" loading="lazy" />▲ 图8 在Web Viewer地址栏添加DataEase仪表板的公共链接</p>
+                    <p><span>在幻灯片中插入了DataEase仪表板后的展示效果如图9所示。</span></p>
+                    <p>▲ 图9 利用Web Viewer嵌入可交互DataEase仪表板的展示效果</p>
+                    <h2 id="%E7%BB%93%E8%AF%AD"><span>结语</span></h2>
+                    <p>
+                        <span
+                            >从演示效果上来看，Web
+                            Viewer插件与DataEase的结合，让PowerPoint演示不再受限于静态图像，真正变成了一个动态的数据展示平台。用户不仅可以在演示中展示静态数据图表，还可以展示动态、交互式的数据视图，为复杂的数据分析和报告展示提供了一种生动的方式，极大增强了演示的数据表现力和观众参与度。从数据呈现的角度来看，在幻灯片中插入可交互的DataEase仪表板不仅提高了数据呈现的质量，也使得观众可以更加直观地理解数据背后的故事和价值。</span
+                        >
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜在PowerPoint中插入可交互的DataEase仪表板","item":"https://dataease.cn/blog/post-61c6a559-22d1-43fd-9880-7d879ff9a109.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜在PowerPoint中插入可交互的DataEase仪表板","description":"让PowerPoint成为动态的数据展示平台，在演示中获得更好的数据表现力和观众参与度。","url":"https://dataease.cn/blog/post-61c6a559-22d1-43fd-9880-7d879ff9a109.html","datePublished":"2024-04-09","dateModified":"2024-04-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜在PowerPoint中插入可交互的DataEase仪表板", "item": "https://dataease.cn/blog/post-61c6a559-22d1-43fd-9880-7d879ff9a109.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜在PowerPoint中插入可交互的DataEase仪表板",
+                "description": "让PowerPoint成为动态的数据展示平台，在演示中获得更好的数据表现力和观众参与度。",
+                "url": "https://dataease.cn/blog/post-61c6a559-22d1-43fd-9880-7d879ff9a109.html",
+                "datePublished": "2024-04-09",
+                "dateModified": "2024-04-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

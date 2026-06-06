@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,163 +220,195 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文为稀土掘金博主plateauandsp的原创文章。</em></p>
-<p>原文链接：</p>
-<p><a href="https://juejin.cn/post/7078555707561213989" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7078555707561213989</a></p>
-<p>大宽表是数据挖掘模型训练中经常需要使用到的手段之一。出于工作中对数据挖掘以及宽表制作的需求，我近期从网上了解到一个方便好用、号称“人人可用”的数据可视化工具——DataEase，从而在DataEase中采用模拟数据生成宽表，看看是否能够满足需求。本文详细介绍一下我的操作思路和步骤。</p>
+                    <p>原文链接：</p>
+                    <p><a href="https://juejin.cn/post/7078555707561213989" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7078555707561213989</a></p>
+                    <p>
+                        大宽表是数据挖掘模型训练中经常需要使用到的手段之一。出于工作中对数据挖掘以及宽表制作的需求，我近期从网上了解到一个方便好用、号称“人人可用”的数据可视化工具——DataEase，从而在DataEase中采用模拟数据生成宽表，看看是否能够满足需求。本文详细介绍一下我的操作思路和步骤。
+                    </p>
 
+                    <h2>宽表的定义与作用</h2>
+                    <p>
+                        从字面意义上讲，宽表就是字段比较多的数据库表，通常是指业务主题相关的指标、维度、属性关联在一起的一张数据库表。由于把不同的内容都放在同一张表存储，宽表已经不符合三范式的模型设计规范。随之带来的主要坏处就是数据的大量冗余，与之相对应的好处就是查询的便捷与性能的提升。
+                    </p>
+                    <p>
+                        宽表的设计广泛应用于数据挖掘模型训练前的数据准备。通过把相关字段放在同一张表中，可以大大提高数据挖掘模型训练过程中迭代计算时的效率。也就是说，用空间换时间，便于训练迭代、减少表关联数量，修改少量数据时就不需要改多张表。
+                    </p>
 
-<h2>宽表的定义与作用</h2>
-<p>从字面意义上讲，宽表就是字段比较多的数据库表，通常是指业务主题相关的指标、维度、属性关联在一起的一张数据库表。由于把不同的内容都放在同一张表存储，宽表已经不符合三范式的模型设计规范。随之带来的主要坏处就是数据的大量冗余，与之相对应的好处就是查询的便捷与性能的提升。</p>
-<p>宽表的设计广泛应用于数据挖掘模型训练前的数据准备。通过把相关字段放在同一张表中，可以大大提高数据挖掘模型训练过程中迭代计算时的效率。也就是说，用空间换时间，便于训练迭代、减少表关联数量，修改少量数据时就不需要改多张表。</p>
+                    <h2>DataEase的关联数据集</h2>
+                    <p>
+                        DataEase（<em><a href="https://link.zhihu.com/?target=https%3A//dataease.io" target="_blank" rel="noopener noreferrer">https://dataease.io</a></em
+                        >）是开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。
+                    </p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-01.png" alt="" loading="lazy" /></figure>
+                    <p>DataEase关联数据集的步骤如下图所示。采用多数据集间关联关系的构建，以及通过对数据集字段的选择展示组合完成，更易理解，也更加方便使用。在DataEase中，对于宽表的操作主要就是利用关联数据集来创建和生成。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-02.jpg" alt="" loading="lazy" /></figure>
 
+                    <h2>基础数据说明</h2>
+                    <p>为了方便展示，我预先准备了所需的表和测试数据。使用的所有数据均通过函数伪造生成，如果类似，纯属巧合。文章末尾会提供Demo数据，需要的话可以将它们导入SQL文件练习操作。</p>
+                    <p>ER图（Entity Relationship Diagram，即实体-联系图，一般用来描述现实世界的概念模型）如下：</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-03.png" alt="" loading="lazy" /></figure>
 
-<h2>DataEase的关联数据集</h2>
-<p>DataEase（<em><a href="https://link.zhihu.com/?target=https%3A//dataease.io" target="_blank" rel="noopener noreferrer">https://dataease.io</a></em>）是开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-01.png" alt="" loading="lazy" /></figure>
-<p>DataEase关联数据集的步骤如下图所示。采用多数据集间关联关系的构建，以及通过对数据集字段的选择展示组合完成，更易理解，也更加方便使用。在DataEase中，对于宽表的操作主要就是利用关联数据集来创建和生成。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-02.jpg" alt="" loading="lazy" /></figure>
+                    <h2>具体表的内容说明</h2>
+                    <p>■ 学生表：student，包含10000条数据。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-05.png" alt="" loading="lazy" /></figure>
+                    <p>■ 学院表：faculty，包含5条数据。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-07.png" alt="" loading="lazy" /></figure>
+                    <p>■ 专业表：major，包含21条数据。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-08.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-09.png" alt="" loading="lazy" /></figure>
+                    <p>■ 课程表：course，包含2个基础课程数据。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-10.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-11.png" alt="" loading="lazy" /></figure>
+                    <p>■ 成绩表：scores，包含每个学生的每个课程分数。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-13.png" alt="" loading="lazy" /></figure>
 
+                    <h2>生成宽表</h2>
+                    <p>此宽表的生成需要将上述五张表中的数据进行整合，且需要在一张表中包含以下信息：学生、年龄、入学时间、电话、院系、专业、课程、成绩等。</p>
+                    <p><strong>第一步：接入数据源。</strong>将原生数据导入MySQL数据库中（<em>demo.sql</em>），在DataEase数据源中接入MySQL数据源，如下图所示：</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-14.png" alt="" loading="lazy" /></figure>
+                    <p><strong>第二步：在数据集中创建名为“考试成绩”的独立目录。</strong>用于存放数据集。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-15.png" alt="" loading="lazy" /></figure>
+                    <p><strong>第三步：创建数据库数据集，将五张表全部导入。</strong>可以采用直连或者抽取的方式，本次我采用的是直连方式。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-16.png" alt="" loading="lazy" /></figure>
+                    <p><strong>第四步：创建关联数据集。</strong>将数据库数据集中的五张表以学生表开始，采用右连接的方式一一关联。</p>
+                    <p>① 创建关联数据集</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-17.png" alt="" loading="lazy" /></figure>
+                    <p>② 选择学生表</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-18.png" alt="" loading="lazy" /></figure>
+                    <p>③ 关联成绩表</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-19.png" alt="" loading="lazy" /></figure>
+                    <p>④ 设置学生表和成绩表关联关系</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-20.png" alt="" loading="lazy" /></figure>
+                    <p>⑤ 设置成绩表和课程表的关联关系</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-21.png" alt="" loading="lazy" /></figure>
+                    <p>⑥ 依此类推，可以设置课程表和专业表的关联关系，以及专业表和学院表的关联关系。</p>
+                    <p>最终得到我们需要的宽表如下：</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-22.png" alt="" loading="lazy" /></figure>
 
-<h2>基础数据说明</h2>
-<p>为了方便展示，我预先准备了所需的表和测试数据。使用的所有数据均通过函数伪造生成，如果类似，纯属巧合。文章末尾会提供Demo数据，需要的话可以将它们导入SQL文件练习操作。</p>
-<p>ER图（Entity Relationship Diagram，即实体-联系图，一般用来描述现实世界的概念模型）如下：</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-03.png" alt="" loading="lazy" /></figure>
+                    <h2>关于表连接的说明</h2>
+                    <p>Join（连接）是SQL的一种语法，可以通过不同的运算方式将多张表中的数据集中在同一张表里。在DataEase中支持以下几种连接：</p>
+                    <p><strong>■ Left Join （左连接，左外连接）：</strong>返回包括左表中的所有记录和右表中连接字段相等的记录。</p>
+                    <p>SQL语法：</p>
+                    <shiki-code>
+                        <pre><code>select a.name,b.job from A a left join B b on a.id=b.A_id</code></pre>
+                    </shiki-code>
+                    <p><strong>■ Right Join （右连接，右外连接）：</strong>返回包括右表中的所有记录和左表中连接字段相等的记录。</p>
+                    <p>SQL语法：</p>
+                    <shiki-code>
+                        <pre><code>select a.name,b.job from A a right join B b on a.id=b.A_id</code></pre>
+                    </shiki-code>
+                    <p><strong>■ Inner Join （等值连接又称内连接）：</strong>只返回两个表中连接字段相等的行。</p>
+                    <p>SQL语法：</p>
+                    <shiki-code>
+                        <pre><code>select a.name,b.job from A a inner join B b on a.id=b.A_id</code></pre>
+                    </shiki-code>
 
+                    <h2>在仪表板中使用</h2>
+                    <p>宽表完成后，可以在DataEase的仪表板中进行使用。</p>
+                    <figure><img src="../images/blog/news-20220329/dataease-151-23.png" alt="" loading="lazy" /></figure>
 
-<h2>具体表的内容说明</h2>
-<p>■ 学生表：student，包含10000条数据。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-04.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220329/dataease-151-05.png" alt="" loading="lazy" /></figure>
-<p>■ 学院表：faculty，包含5条数据。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-06.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220329/dataease-151-07.png" alt="" loading="lazy" /></figure>
-<p>■ 专业表：major，包含21条数据。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-08.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220329/dataease-151-09.png" alt="" loading="lazy" /></figure>
-<p>■ 课程表：course，包含2个基础课程数据。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-10.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220329/dataease-151-11.png" alt="" loading="lazy" /></figure>
-<p>■ 成绩表：scores，包含每个学生的每个课程分数。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-12.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220329/dataease-151-13.png" alt="" loading="lazy" /></figure>
-
-
-<h2>生成宽表</h2>
-<p>此宽表的生成需要将上述五张表中的数据进行整合，且需要在一张表中包含以下信息：学生、年龄、入学时间、电话、院系、专业、课程、成绩等。</p>
-<p><strong>第一步：接入数据源。</strong>将原生数据导入MySQL数据库中（<em>demo.sql</em>），在DataEase数据源中接入MySQL数据源，如下图所示：</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-14.png" alt="" loading="lazy" /></figure>
-<p><strong>第二步：在数据集中创建名为“考试成绩”的独立目录。</strong>用于存放数据集。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-15.png" alt="" loading="lazy" /></figure>
-<p><strong>第三步：创建数据库数据集，将五张表全部导入。</strong>可以采用直连或者抽取的方式，本次我采用的是直连方式。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-16.png" alt="" loading="lazy" /></figure>
-<p><strong>第四步：创建关联数据集。</strong>将数据库数据集中的五张表以学生表开始，采用右连接的方式一一关联。</p>
-<p>① 创建关联数据集</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-17.png" alt="" loading="lazy" /></figure>
-<p>② 选择学生表</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-18.png" alt="" loading="lazy" /></figure>
-<p>③ 关联成绩表</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-19.png" alt="" loading="lazy" /></figure>
-<p>④ 设置学生表和成绩表关联关系</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-20.png" alt="" loading="lazy" /></figure>
-<p>⑤ 设置成绩表和课程表的关联关系</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-21.png" alt="" loading="lazy" /></figure>
-<p>⑥ 依此类推，可以设置课程表和专业表的关联关系，以及专业表和学院表的关联关系。</p>
-<p>最终得到我们需要的宽表如下：</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-22.png" alt="" loading="lazy" /></figure>
-
-
-<h2>关于表连接的说明</h2>
-<p>Join（连接）是SQL的一种语法，可以通过不同的运算方式将多张表中的数据集中在同一张表里。在DataEase中支持以下几种连接：</p>
-<p><strong>■ Left Join （左连接，左外连接）：</strong>返回包括左表中的所有记录和右表中连接字段相等的记录。</p>
-<p>SQL语法：</p>
-<shiki-code><pre><code>select a.name,b.job from A a left join B b on a.id=b.A_id</code></pre></shiki-code>
-<p><strong>■ Right Join （右连接，右外连接）：</strong>返回包括右表中的所有记录和左表中连接字段相等的记录。</p>
-<p>SQL语法：</p>
-<shiki-code><pre><code>select a.name,b.job from A a right join B b on a.id=b.A_id</code></pre></shiki-code>
-<p><strong>■ Inner Join （等值连接又称内连接）：</strong>只返回两个表中连接字段相等的行。</p>
-<p>SQL语法：</p>
-<shiki-code><pre><code>select a.name,b.job from A a inner join B b on a.id=b.A_id</code></pre></shiki-code>
-
-
-<h2>在仪表板中使用</h2>
-<p>宽表完成后，可以在DataEase的仪表板中进行使用。</p>
-<figure><img src="../images/blog/news-20220329/dataease-151-23.png" alt="" loading="lazy" /></figure>
-
-
-<h2>附件</h2>
-<p>本文用到的测试数据SQL：</p>
-<p>链接：</p>
-<p><a href="https://pan.baidu.com/s/1XaBbGSOoN9qVioiRzKmAFw" target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1XaBbGSOoN9qVioiRzKmAFw</a></p>
-<p>提取码：wlwn</p>
+                    <h2>附件</h2>
+                    <p>本文用到的测试数据SQL：</p>
+                    <p>链接：</p>
+                    <p><a href="https://pan.baidu.com/s/1XaBbGSOoN9qVioiRzKmAFw" target="_blank" rel="noopener noreferrer">https://pan.baidu.com/s/1XaBbGSOoN9qVioiRzKmAFw</a></p>
+                    <p>提取码：wlwn</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"在DataEase开源数据可视化平台中关联数据集制作宽表","item":"https://dataease.cn/blog/post-3430.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"在DataEase开源数据可视化平台中关联数据集制作宽表","description":"使用DataEase制作生成一个宽表。","url":"https://dataease.cn/blog/post-3430.html","datePublished":"2022-03-29","dateModified":"2022-03-29","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "在DataEase开源数据可视化平台中关联数据集制作宽表", "item": "https://dataease.cn/blog/post-3430.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "在DataEase开源数据可视化平台中关联数据集制作宽表",
+                "description": "使用DataEase制作生成一个宽表。",
+                "url": "https://dataease.cn/blog/post-3430.html",
+                "datePublished": "2022-03-29",
+                "dateModified": "2022-03-29",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

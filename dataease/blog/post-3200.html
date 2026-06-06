@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,126 +220,166 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/release-20220110/dataease-158-01.png" alt="" loading="lazy" /></figure>
-<p>1月10日，DataEase开源数据可视化分析平台正式发布v1.6.0版本。在该版本中，平台支持了移动端展示；数据源方面，新增了对IBM DB2数据源的支持；视图方面，支持同比/环比快速计算方式，过滤器支持and和or逻辑；数据集方面，新增了关联数据集，简化了之前版本中自定义数据集的使用；仪表板方面，时间控件新增动态时间支持，过滤组件支持跨数据集的多视图筛选。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <p>
+                        1月10日，DataEase开源数据可视化分析平台正式发布v1.6.0版本。在该版本中，平台支持了移动端展示；数据源方面，新增了对IBM
+                        DB2数据源的支持；视图方面，支持同比/环比快速计算方式，过滤器支持and和or逻辑；数据集方面，新增了关联数据集，简化了之前版本中自定义数据集的使用；仪表板方面，时间控件新增动态时间支持，过滤组件支持跨数据集的多视图筛选。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。
+                    </p>
 
+                    <h2>新增功能</h2>
+                    <p><strong>■ 新增移动端支持</strong></p>
+                    <p>
+                        如今移动办公发展迅速，数据可视化平台对移动端支持的必要性也随之提升。DataEase
+                        v1.6.0中新增了对移动端的支持。用户通过移动设备访问DataEase平台时，DataEase后端服务会判断访问设备的类型，自动跳转到访问设备对应的展示界面。在DataEase移动端中，用户可以方便地查看收藏的仪表板等可视化数据，随时随地掌握业务的动态变化。
+                    </p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 数据源新增支持DB2</strong></p>
+                    <p>
+                        DB2是IBM开发的一款支持多媒体、Web的关系型数据库管理系统。DB2主要应用于大型应用系统，具有较好的可伸缩性，可支持从大型机到单用户环境，在市面上占有较大的份额。在DataEase
+                        v1.6.0版本中，我们增加了对DB2数据源的支持。截止目前，DataEase已支持了Excel、MySQL、Oracle、SQL Server、PostgreSQL、Elasticsearch、MariaDB、Apache Doris、ClickHouse、MongoDB、Amazon
+                        Redshift、DB2等各类数据源，可以满足用户大部分的数据场景。
+                    </p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-04.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 新增关联数据集</strong></p>
+                    <p>
+                        在v1.6.0之前的版本中，DataEase通过自定义数据集来实现跨源跨库的数据关联。但由于自定义数据集在设计之初兼顾了关联关系的复用，所以使用步骤比较繁琐，不够便捷。在v1.6.0版本中，DataEase新增了关联数据集，用户可以方便地关联多个数据集的数据，并实时地看到关联后的数据预览，操作起来更加简单快捷。
+                    </p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-05.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 仪表板过滤组件支持跨数据集的多视图筛选</strong></p>
+                    <p>
+                        DataEase以往版本的过滤组件限制条件较为严苛，可控制的视图要求必须基于同一个数据集制作。因此为了创建一个可控制多个视图的过滤组件，用户往往需要添加自定义数据集，将多个数据集关联在一个数据集中。DataEase
+                        v1.6.0版本中对仪表板的过滤组件进行了增强，可以支持跨数据集的多视图筛选，极大地便利了用户在制作仪表板时的操作。用户仅需将多个视图要关联筛选的字段拖动到过滤组件字段框中，设置好对应的作用范围即可。
+                    </p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-06.png" alt="" loading="lazy" /></figure>
+                    <p>除了上述提到的新增功能外，DataEase v1.6.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <p>■ 数据集新增行权限限制（X-Pack增强包内）</p>
+                    <p>
+                        在DataEase以往的版本中，只要用户拥有数据集的查看权限即可查看该数据集的所有数据，但有些时候，管理者希望不同的人员看到数据集的不同数据。在DataEase
+                        v1.6.0版本中，我们增加了数据集行权限功能，可以对数据集数据进行精细化的控制。
+                    </p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-07.png" alt="" loading="lazy" /></figure>
+                    <p>■ 支持仪表板定时报告（X-Pack增强包内）</p>
+                    <p>在一些场景中用户希望定时地向有关人员发送仪表板数据展现情况。在DataEase v1.6.0版本中，我们增加了仪表板的定时报告功能，用户可以根据配置的定时报告任务，定时向相关人员发送相关仪表板的截图信息。</p>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-08.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/release-20220110/dataease-158-09.png" alt="" loading="lazy" /></figure>
 
-<h2>新增功能</h2>
-<p><strong>■ 新增移动端支持</strong></p>
-<p>如今移动办公发展迅速，数据可视化平台对移动端支持的必要性也随之提升。DataEase v1.6.0中新增了对移动端的支持。用户通过移动设备访问DataEase平台时，DataEase后端服务会判断访问设备的类型，自动跳转到访问设备对应的展示界面。在DataEase移动端中，用户可以方便地查看收藏的仪表板等可视化数据，随时随地掌握业务的动态变化。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-02.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/release-20220110/dataease-158-03.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 数据源新增支持DB2</strong></p>
-<p>DB2是IBM开发的一款支持多媒体、Web的关系型数据库管理系统。DB2主要应用于大型应用系统，具有较好的可伸缩性，可支持从大型机到单用户环境，在市面上占有较大的份额。在DataEase v1.6.0版本中，我们增加了对DB2数据源的支持。截止目前，DataEase已支持了Excel、MySQL、Oracle、SQL Server、PostgreSQL、Elasticsearch、MariaDB、Apache Doris、ClickHouse、MongoDB、Amazon Redshift、DB2等各类数据源，可以满足用户大部分的数据场景。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-04.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 新增关联数据集</strong></p>
-<p>在v1.6.0之前的版本中，DataEase通过自定义数据集来实现跨源跨库的数据关联。但由于自定义数据集在设计之初兼顾了关联关系的复用，所以使用步骤比较繁琐，不够便捷。在v1.6.0版本中，DataEase新增了关联数据集，用户可以方便地关联多个数据集的数据，并实时地看到关联后的数据预览，操作起来更加简单快捷。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-05.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 仪表板过滤组件支持跨数据集的多视图筛选</strong></p>
-<p>DataEase以往版本的过滤组件限制条件较为严苛，可控制的视图要求必须基于同一个数据集制作。因此为了创建一个可控制多个视图的过滤组件，用户往往需要添加自定义数据集，将多个数据集关联在一个数据集中。DataEase v1.6.0版本中对仪表板的过滤组件进行了增强，可以支持跨数据集的多视图筛选，极大地便利了用户在制作仪表板时的操作。用户仅需将多个视图要关联筛选的字段拖动到过滤组件字段框中，设置好对应的作用范围即可。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-06.png" alt="" loading="lazy" /></figure>
-<p>除了上述提到的新增功能外，DataEase v1.6.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
-<p>■ 数据集新增行权限限制（X-Pack增强包内）</p>
-<p>在DataEase以往的版本中，只要用户拥有数据集的查看权限即可查看该数据集的所有数据，但有些时候，管理者希望不同的人员看到数据集的不同数据。在DataEase v1.6.0版本中，我们增加了数据集行权限功能，可以对数据集数据进行精细化的控制。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-07.png" alt="" loading="lazy" /></figure>
-<p>■ 支持仪表板定时报告（X-Pack增强包内）</p>
-<p>在一些场景中用户希望定时地向有关人员发送仪表板数据展现情况。在DataEase v1.6.0版本中，我们增加了仪表板的定时报告功能，用户可以根据配置的定时报告任务，定时向相关人员发送相关仪表板的截图信息。</p>
-<figure><img src="../images/blog/release-20220110/dataease-158-08.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/release-20220110/dataease-158-09.png" alt="" loading="lazy" /></figure>
+                    <h2>功能优化</h2>
+                    <p>■ refactor（数据集）：Excel替换时，可以不重建表结构，做字段Mapping；</p>
+                    <p>■ refactor（视图）：优化指标结果；</p>
+                    <p>■ refactor（视图）：地图值不存在时，显示空；</p>
+                    <p>■ refactor（视图）：调整了视图Tab的样式；</p>
+                    <p>■ refactor（仪表板）：优化了仪表板适配后端的长屏截图；</p>
+                    <p>■ refactor（仪表板）：支持仪表板高清PDF导出；</p>
+                    <p>■ refactor（仪表板）：优化过滤组件可以跟随仪表板缩放；</p>
+                    <p>■ refactor（仪表板）：优化了仪表板命名的问题，相同目录下的仪表板和目录允许重名；</p>
+                    <p>■ refactor：去掉代码中固定的超时时间；</p>
+                    <p>■ perf：优化执行任务查询时间。</p>
 
-
-<h2>功能优化</h2>
-<p>■ refactor（数据集）：Excel替换时，可以不重建表结构，做字段Mapping；</p>
-<p>■ refactor（视图）：优化指标结果；</p>
-<p>■ refactor（视图）：地图值不存在时，显示空；</p>
-<p>■ refactor（视图）：调整了视图Tab的样式；</p>
-<p>■ refactor（仪表板）：优化了仪表板适配后端的长屏截图；</p>
-<p>■ refactor（仪表板）：支持仪表板高清PDF导出；</p>
-<p>■ refactor（仪表板）：优化过滤组件可以跟随仪表板缩放；</p>
-<p>■ refactor（仪表板）：优化了仪表板命名的问题，相同目录下的仪表板和目录允许重名；</p>
-<p>■ refactor：去掉代码中固定的超时时间；</p>
-<p>■ perf：优化执行任务查询时间。</p>
-
-
-<h2>Bug修复</h2>
-<p>■ fix：修复了MongoDB不支持JDBC连接字符串的问题；</p>
-<p>■ fix：修复了不支持Hive NOSASL认证方式的问题；</p>
-<p>■ fix：修复了Elasticsearch TableInfo视图错误的Bug；</p>
-<p>■ fix：修复了多个Tabs组件会同时操作的问题；</p>
-<p>■ fix：修复了编辑仪表板边界位置工具栏不完整的问题；</p>
-<p>■ fix：修复了过滤组件对小数不支持的问题；</p>
-<p>■ fix：修复了数据集目录查询不准确的问题；</p>
-<p>■ fix：修复了文本搜索组件在预览和编辑时显示不一致的Bug；</p>
-<p>■ fix：修复了SQL Server数据库名称有特殊字符的Bug；</p>
-<p>■ fix：修复了空地图试图切换错误的Bug。</p>
+                    <h2>Bug修复</h2>
+                    <p>■ fix：修复了MongoDB不支持JDBC连接字符串的问题；</p>
+                    <p>■ fix：修复了不支持Hive NOSASL认证方式的问题；</p>
+                    <p>■ fix：修复了Elasticsearch TableInfo视图错误的Bug；</p>
+                    <p>■ fix：修复了多个Tabs组件会同时操作的问题；</p>
+                    <p>■ fix：修复了编辑仪表板边界位置工具栏不完整的问题；</p>
+                    <p>■ fix：修复了过滤组件对小数不支持的问题；</p>
+                    <p>■ fix：修复了数据集目录查询不准确的问题；</p>
+                    <p>■ fix：修复了文本搜索组件在预览和编辑时显示不一致的Bug；</p>
+                    <p>■ fix：修复了SQL Server数据库名称有特殊字符的Bug；</p>
+                    <p>■ fix：修复了空地图试图切换错误的Bug。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"支持移动端展示，数据源新增对DB2的支持，DataEase开源数据可视化分析平台v1.6.0发布","item":"https://dataease.cn/blog/post-3200.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"支持移动端展示，数据源新增对DB2的支持，DataEase开源数据可视化分析平台v1.6.0发布","description":"新增了关联数据集，支持跨数据集的多视图筛选。","url":"https://dataease.cn/blog/post-3200.html","datePublished":"2022-01-10","dateModified":"2022-01-10","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-114.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "支持移动端展示，数据源新增对DB2的支持，DataEase开源数据可视化分析平台v1.6.0发布", "item": "https://dataease.cn/blog/post-3200.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "支持移动端展示，数据源新增对DB2的支持，DataEase开源数据可视化分析平台v1.6.0发布",
+                "description": "新增了关联数据集，支持跨数据集的多视图筛选。",
+                "url": "https://dataease.cn/blog/post-3200.html",
+                "datePublished": "2022-01-10",
+                "dateModified": "2022-01-10",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-114.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

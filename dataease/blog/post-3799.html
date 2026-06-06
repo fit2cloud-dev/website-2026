@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,128 +220,218 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：</em></p>
-<p><em>本文为知乎博主LBOO的原创文章。</em></p>
-<p><em>原文链接：</em></p>
-<p><a href="https://zhuanlan.zhihu.com/p/556281830" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/556281830</a></p>
-<p>DataEase是一个号称“人人可用”的开源数据可视化分析工具，支持以拖拉拽的方式组建仪表板，而且有很多美观的图表类型。最近DataEase还发布了官方模板市场，提供了很多场景的大屏模板，实用又好看。</p>
-<p>但是我们在进行数据分析的时候重点还是数据，如果数据没有实际价值只是将图做得好看，则是本末倒置的行为。我们在业务系统中获取的数据通常是需要处理才能放在图表中展现的，那么DataEase能够提供哪些数据处理能力呢？这篇文章我就来测验一下，DataEase的数据处理能力到底行不行。</p>
+                    <p><em>本文为知乎博主LBOO的原创文章。</em></p>
+                    <p><em>原文链接：</em></p>
+                    <p><a href="https://zhuanlan.zhihu.com/p/556281830" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/556281830</a></p>
+                    <p>DataEase是一个号称“人人可用”的开源数据可视化分析工具，支持以拖拉拽的方式组建仪表板，而且有很多美观的图表类型。最近DataEase还发布了官方模板市场，提供了很多场景的大屏模板，实用又好看。</p>
+                    <p>
+                        但是我们在进行数据分析的时候重点还是数据，如果数据没有实际价值只是将图做得好看，则是本末倒置的行为。我们在业务系统中获取的数据通常是需要处理才能放在图表中展现的，那么DataEase能够提供哪些数据处理能力呢？这篇文章我就来测验一下，DataEase的数据处理能力到底行不行。
+                    </p>
 
+                    <h2>功能使用</h2>
+                    <p><strong>一、多表合并</strong></p>
+                    <p>如果你需要将两个数据表的字段合并，联合为一张新表，DataEase提供了可以在界面操作的数据表合并功能，不需要懂SQL，直接在DataEase的界面就可以实现数据表的左右合并。比如这里的两个表：</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-01.png" alt="" loading="lazy" />
+                        <figcaption>▲ 表1 各省百强县数量</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-02.png" alt="" loading="lazy" />
+                        <figcaption>▲ 表2 2020年至2021年GDP统计</figcaption>
+                    </figure>
+                    <p>如果我想在同一个表中既显示省份的百强县数量，又显示2020年和2021年GDP值，就需要将两个表关联。此时在DataEase中新建一个关联数据集即可，操作十分简单，直接在页面中勾选要显示的字段并配置关联关系即可：</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-03.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图1 编辑关联数据集页面</figcaption>
+                    </figure>
+                    <p>关联后结果如下：</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-04.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图2 关联数据集预览页面</figcaption>
+                    </figure>
+                    <p><strong>二、数据集计算字段</strong></p>
+                    <p>在上面说到的表中有2021年GDP和2020年GDP两个字段，那么如果我想计算2021年GDP增长率，该如何处理？DataEase提供了一个计算字段功能，可以实现这种需求。</p>
+                    <p>在字段管理界面，点击新建计算字段：</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-05.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图3 字段管理页面</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-06.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图4 添加计算字段页面</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-07.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图5 数据预览页面</figcaption>
+                    </figure>
+                    <p>当然，你可能更希望增长率以百分比的形式来展示，DataEase同样提供数值格式配置的功能，本文后面也会提到。</p>
+                    <p><strong>三、视图计算字段</strong></p>
+                    <p>如果你需要对数据做分组汇总计算，则需要用到视图计算字段功能，此处以电动车增值服务销售分析表举例，表格式如下：</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-08.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图6 数据集字段管理页面</figcaption>
+                    </figure>
+                    <p>此表中记录了按日期、车型、用户等维度统计的当天销售金额及去年同天的销售金额。下面我们来看一下如何按产品汇总计算销售额增长率：</p>
+                    <p>1. 在仪表板编辑页面中的视图编辑栏中，进入视图字段管理页面；</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-09.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图7 打开视图字段管理页面</figcaption>
+                    </figure>
+                    <p>2. 新建计算字段。在视图计算字段中，你可以使用如AVG、SUM等聚合函数来生成新的字段；</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-10.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图8 视图字段管理页面</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-11.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图9 视图计算字段添加页面</figcaption>
+                    </figure>
+                    <p>3. 字段添加完成后，在视图中，将“车型”选项拖入维度框，将“增长率”选项拖入指标框，就可以根据维度实时的分组计算增长率了。</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-12.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图10 按照产品分析增长率</figcaption>
+                    </figure>
+                    <p><strong>四、快速计算同比环比</strong></p>
+                    <p>如果你有按日期计算的数据，想计算分析同比/环比值，DataEase提供了同比/环比快速计算功能，可以在仪表板的视图配置界面中的相关指标中直接配置。</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-13.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图11 打开同环比配置界面</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-14.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图12 同环比设置页面</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-15.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图13 月环比增长率视图</figcaption>
+                    </figure>
+                    <p><strong>五、数据汇总计算</strong></p>
+                    <p>在仪表板的视图配置区域，可以对指标的汇总方式进行配置，支持求和、平均、最大值、最小值、标准差、方差、计数、去重计数等汇总方式。</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-16.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图14 汇总方式配置</figcaption>
+                    </figure>
+                    <p><strong>六、数值格式</strong></p>
+                    <p>通过数值格式配置，你可以给数据添加数量单位、单位后缀、千分符，配置小数保留位数、百分比等。</p>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-17.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图15 打开数值格式配置模块</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-18.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图16 数值格式-数量单位</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-19.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图17 数值格式-单位后缀、千分符</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-20.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图18 数值格式-小数位数</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/news-20220825/dataease-129-21.png" alt="" loading="lazy" />
+                        <figcaption>▲ 图19 数值格式-百分比</figcaption>
+                    </figure>
 
-<h2>功能使用</h2>
-<p><strong>一、多表合并</strong></p>
-<p>如果你需要将两个数据表的字段合并，联合为一张新表，DataEase提供了可以在界面操作的数据表合并功能，不需要懂SQL，直接在DataEase的界面就可以实现数据表的左右合并。比如这里的两个表：</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-01.png" alt="" loading="lazy" /><figcaption>▲ 表1 各省百强县数量</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-02.png" alt="" loading="lazy" /><figcaption>▲ 表2 2020年至2021年GDP统计</figcaption></figure>
-<p>如果我想在同一个表中既显示省份的百强县数量，又显示2020年和2021年GDP值，就需要将两个表关联。此时在DataEase中新建一个关联数据集即可，操作十分简单，直接在页面中勾选要显示的字段并配置关联关系即可：</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-03.png" alt="" loading="lazy" /><figcaption>▲ 图1 编辑关联数据集页面</figcaption></figure>
-<p>关联后结果如下：</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-04.png" alt="" loading="lazy" /><figcaption>▲ 图2 关联数据集预览页面</figcaption></figure>
-<p><strong>二、数据集计算字段</strong></p>
-<p>在上面说到的表中有2021年GDP和2020年GDP两个字段，那么如果我想计算2021年GDP增长率，该如何处理？DataEase提供了一个计算字段功能，可以实现这种需求。</p>
-<p>在字段管理界面，点击新建计算字段：</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-05.png" alt="" loading="lazy" /><figcaption>▲ 图3 字段管理页面</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-06.png" alt="" loading="lazy" /><figcaption>▲ 图4 添加计算字段页面</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-07.png" alt="" loading="lazy" /><figcaption>▲ 图5 数据预览页面</figcaption></figure>
-<p>当然，你可能更希望增长率以百分比的形式来展示，DataEase同样提供数值格式配置的功能，本文后面也会提到。</p>
-<p><strong>三、视图计算字段</strong></p>
-<p>如果你需要对数据做分组汇总计算，则需要用到视图计算字段功能，此处以电动车增值服务销售分析表举例，表格式如下：</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-08.png" alt="" loading="lazy" /><figcaption>▲ 图6 数据集字段管理页面</figcaption></figure>
-<p>此表中记录了按日期、车型、用户等维度统计的当天销售金额及去年同天的销售金额。下面我们来看一下如何按产品汇总计算销售额增长率：</p>
-<p>1. 在仪表板编辑页面中的视图编辑栏中，进入视图字段管理页面；</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-09.png" alt="" loading="lazy" /><figcaption>▲ 图7 打开视图字段管理页面</figcaption></figure>
-<p>2. 新建计算字段。在视图计算字段中，你可以使用如AVG、SUM等聚合函数来生成新的字段；</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-10.png" alt="" loading="lazy" /><figcaption>▲ 图8 视图字段管理页面</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-11.png" alt="" loading="lazy" /><figcaption>▲ 图9 视图计算字段添加页面</figcaption></figure>
-<p>3. 字段添加完成后，在视图中，将“车型”选项拖入维度框，将“增长率”选项拖入指标框，就可以根据维度实时的分组计算增长率了。</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-12.png" alt="" loading="lazy" /><figcaption>▲ 图10 按照产品分析增长率</figcaption></figure>
-<p><strong>四、快速计算同比环比</strong></p>
-<p>如果你有按日期计算的数据，想计算分析同比/环比值，DataEase提供了同比/环比快速计算功能，可以在仪表板的视图配置界面中的相关指标中直接配置。</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-13.png" alt="" loading="lazy" /><figcaption>▲ 图11 打开同环比配置界面</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-14.png" alt="" loading="lazy" /><figcaption>▲ 图12 同环比设置页面</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-15.png" alt="" loading="lazy" /><figcaption>▲ 图13 月环比增长率视图</figcaption></figure>
-<p><strong>五、数据汇总计算</strong></p>
-<p>在仪表板的视图配置区域，可以对指标的汇总方式进行配置，支持求和、平均、最大值、最小值、标准差、方差、计数、去重计数等汇总方式。</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-16.png" alt="" loading="lazy" /><figcaption>▲ 图14 汇总方式配置</figcaption></figure>
-<p><strong>六、数值格式</strong></p>
-<p>通过数值格式配置，你可以给数据添加数量单位、单位后缀、千分符，配置小数保留位数、百分比等。</p>
-<figure><img src="../images/blog/news-20220825/dataease-129-17.png" alt="" loading="lazy" /><figcaption>▲ 图15 打开数值格式配置模块</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-18.png" alt="" loading="lazy" /><figcaption>▲ 图16 数值格式-数量单位</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-19.png" alt="" loading="lazy" /><figcaption>▲ 图17 数值格式-单位后缀、千分符</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-20.png" alt="" loading="lazy" /><figcaption>▲ 图18 数值格式-小数位数</figcaption></figure>
-<figure><img src="../images/blog/news-20220825/dataease-129-21.png" alt="" loading="lazy" /><figcaption>▲ 图19 数值格式-百分比</figcaption></figure>
-
-
-<h2>总结</h2>
-<p>总的来看，DataEase开源数据可视化分析平台提供了可直接操作的多表合并功能，支持函数的多字段数据整合处理功能、分组数据处理功能、便捷的同环比计算和数据汇总功能，能够满足企业用户大部分的数据处理需求。DataEase的操作方法也十分简单方便，在使用上述功能时不需要使用SQL语句，实现了它的定位——“人人可用”。</p>
+                    <h2>总结</h2>
+                    <p>
+                        总的来看，DataEase开源数据可视化分析平台提供了可直接操作的多表合并功能，支持函数的多字段数据整合处理功能、分组数据处理功能、便捷的同环比计算和数据汇总功能，能够满足企业用户大部分的数据处理需求。DataEase的操作方法也十分简单方便，在使用上述功能时不需要使用SQL语句，实现了它的定位——“人人可用”。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"学习笔记丨开源BI工具DataEase的数据处理能力实测","item":"https://dataease.cn/blog/post-3799.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"学习笔记丨开源BI工具DataEase的数据处理能力实测","description":"DataEase的数据处理能力到底强在哪？","url":"https://dataease.cn/blog/post-3799.html","datePublished":"2022-08-25","dateModified":"2022-08-25","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-108.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "学习笔记丨开源BI工具DataEase的数据处理能力实测", "item": "https://dataease.cn/blog/post-3799.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "学习笔记丨开源BI工具DataEase的数据处理能力实测",
+                "description": "DataEase的数据处理能力到底强在哪？",
+                "url": "https://dataease.cn/blog/post-3799.html",
+                "datePublished": "2022-08-25",
+                "dateModified": "2022-08-25",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-108.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

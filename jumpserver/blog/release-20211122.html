@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="支持管理员开启或关闭异地登录保护功能。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/release-20221121/cover.jpg" />
         <meta name="twitter:image:alt" content="新增Linux资产二级用户登录功能，会话录像支持存储在华为云OBS，JumpServer堡垒机v2.16.0发布 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"新增Linux资产二级用户登录功能，会话录像支持存储在华为云OBS，JumpServer堡垒机v2.16.0发布","description":"支持管理员开启或关闭异地登录保护功能。","datePublished":"2021-11-22T00:22:17+00:00","dateModified":"2021-11-22T00:22:17+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/release-20211122.html"},"image":["https://www.jumpserver.org/images/blog/release-20221121/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "新增Linux资产二级用户登录功能，会话录像支持存储在华为云OBS，JumpServer堡垒机v2.16.0发布",
+                "description": "支持管理员开启或关闭异地登录保护功能。",
+                "datePublished": "2021-11-22T00:22:17+00:00",
+                "dateModified": "2021-11-22T00:22:17+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/release-20211122.html" },
+                "image": ["https://www.jumpserver.org/images/blog/release-20221121/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -191,191 +219,217 @@
                 </header>
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image-01.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>11月22日，JumpServer开源堡垒机正式发布v2.16.0版本。在这一版本中，JumpServer新增Linux资产二级用户登录功能，支持用户登录资产后自动切换为其他用户；该版本还支持将资产连接过程中产生的会话录像存储在华为云对象存储服务OBS中；用户登录方面，支持管理员开启或关闭异地登录保护功能。X-Pack增强包方面，支持管理员自定义配置导航栏中的文档、技术支持链接地址。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        11月22日，JumpServer开源堡垒机正式发布v2.16.0版本。在这一版本中，JumpServer新增Linux资产二级用户登录功能，支持用户登录资产后自动切换为其他用户；该版本还支持将资产连接过程中产生的会话录像存储在华为云对象存储服务OBS中；用户登录方面，支持管理员开启或关闭异地登录保护功能。X-Pack增强包方面，支持管理员自定义配置导航栏中的文档、技术支持链接地址。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>新增功能</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>新增功能</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><strong>1. 新增Linux资产二级用户登录功能</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>1. 新增Linux资产二级用户登录功能</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.16.0版本中，新增Linux资产二级用户登录功能。管理员在创建、更新系统用户时启用“用户切换”选项，并指定“切换自”系统用户（仅支持配置自动登录SSH协议系统用户）。这样一来，用户在登录资产时，会首先使用“切换自”系统用户登录资产，登录成功后会自动切换至当前系统用户。同时，管理员可以在“系统用户详情”标签中的“Su用户”页面查看当前系统用户支持切换到的所有系统用户。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        在JumpServer
+                        v2.16.0版本中，新增Linux资产二级用户登录功能。管理员在创建、更新系统用户时启用“用户切换”选项，并指定“切换自”系统用户（仅支持配置自动登录SSH协议系统用户）。这样一来，用户在登录资产时，会首先使用“切换自”系统用户登录资产，登录成功后会自动切换至当前系统用户。同时，管理员可以在“系统用户详情”标签中的“Su用户”页面查看当前系统用户支持切换到的所有系统用户。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3032,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图1 在“系统用户”页面中指定“切换自”系统用户</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3032,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图1 在“系统用户”页面中指定“切换自”系统用户</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:image {"id":3033,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图2 在“系统用户详情”→“Su用户”页面中查看可以切换到的所有系统用户</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3033,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图2 在“系统用户详情”→“Su用户”页面中查看可以切换到的所有系统用户</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p><strong>2. 会话录像支持存储在华为云OBS</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>2. 会话录像支持存储在华为云OBS</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.16.0版本中，会话录像存储支持配置并使用华为云对象存储服务OBS。目前，JumpServer已支持的存储服务包括AWS S3、Ceph、Swift、阿里云OSS、Azure和华为云OBS。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在JumpServer v2.16.0版本中，会话录像存储支持配置并使用华为云对象存储服务OBS。目前，JumpServer已支持的存储服务包括AWS S3、Ceph、Swift、阿里云OSS、Azure和华为云OBS。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3034,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图3 在“会话管理”→“存储配置”中选择“OBS”选项</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3034,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图3 在“会话管理”→“存储配置”中选择“OBS”选项</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:image {"id":3035,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图4 创建华为云OBS录像存储</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3035,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图4 创建华为云OBS录像存储</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:image {"id":3036,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图5 更新终端录像存储</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3036,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图5 更新终端录像存储</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p><strong>3. 支持管理员开启或关闭异地登录保护功能</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>3. 支持管理员开启或关闭异地登录保护功能</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.16.0版本中，管理员可以自定义开启或关闭异地登录保护功能，满足了用户在不同场景下对于账号安全性的需求。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在JumpServer v2.16.0版本中，管理员可以自定义开启或关闭异地登录保护功能，满足了用户在不同场景下对于账号安全性的需求。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3037,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图6 在“系统设置”→“安全设置”中开启或关闭异地登录保护功能</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3037,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图6 在“系统设置”→“安全设置”中开启或关闭异地登录保护功能</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p><strong>4.&nbsp;支持自定义配置导航栏中的文档、技术支持链接地址（X-Pack增强包内）</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>4.&nbsp;支持自定义配置导航栏中的文档、技术支持链接地址（X-Pack增强包内）</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.16.0版本中，管理员可以自定义配置导航栏中的文档、技术支持链接地址。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在JumpServer v2.16.0版本中，管理员可以自定义配置导航栏中的文档、技术支持链接地址。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":3038,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" /><figcaption>▲图7 在“系统设置”→“其他设置”中配置文档、技术支持链接地址</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":3038,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/release-20211122/image.png" alt="" loading="lazy" />
+                        <figcaption>▲图7 在“系统设置”→“其他设置”中配置文档、技术支持链接地址</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:heading -->
-<h2>功能优化</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>功能优化</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化MFA认证、绑定流程；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化MFA认证、绑定流程；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化支持管理员手动修改资产硬件信息；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化支持管理员手动修改资产硬件信息；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化登录页面MFA认证失败的错误提示信息；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化登录页面MFA认证失败的错误提示信息；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;移动“会话设置保留时间”至“定期清理设置”页面；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;移动“会话设置保留时间”至“定期清理设置”页面；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;新增ESC和F11快捷键，通过Web Terminal连接Windows资产时进行使用；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;新增ESC和F11快捷键，通过Web Terminal连接Windows资产时进行使用；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;新增内置资产平台列表Windows-RDP、Windows-TLS，并设置Windows2016为外置平台；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;新增内置资产平台列表Windows-RDP、Windows-TLS，并设置Windows2016为外置平台；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化异地登录提醒不再对局域网地址进行检测；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化异地登录提醒不再对局域网地址进行检测；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化重置公钥成功的消息格式；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化重置公钥成功的消息格式；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化创建用户邮件信息，支持部分标签定义；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化创建用户邮件信息，支持部分标签定义；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化终端列表指标数值保留至一位小数；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化终端列表指标数值保留至一位小数；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化通过rz命令下载多文件时的显示问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化通过rz命令下载多文件时的显示问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化更新页面密码输入框的风格；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化更新页面密码输入框的风格；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化数据库改密支持MySQL v5.6版本，Oracle密码支持设置特殊字符（X-Pack增强包内）。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化数据库改密支持MySQL v5.6版本，Oracle密码支持设置特殊字符（X-Pack增强包内）。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>Bug修复</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>Bug修复</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复执行Ansible任务的日志输出中包含非UTF-8字符报错的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复执行Ansible任务的日志输出中包含非UTF-8字符报错的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复开启使用RADIUS OTP配置后，用户登录没有跳转至MFA认证页面的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复开启使用RADIUS OTP配置后，用户登录没有跳转至MFA认证页面的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复终端删除后录像存储不能删除的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复终端删除后录像存储不能删除的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复LDAP设置多个OU（组织单元）时，包含空白字符测试连接会失败的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复LDAP设置多个OU（组织单元）时，包含空白字符测试连接会失败的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复因光标移动造成命令拦截失败的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复因光标移动造成命令拦截失败的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复应用授权详情中用户组不能删除的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复应用授权详情中用户组不能删除的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复首次打开管理页面获取不到默认语言的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复首次打开管理页面获取不到默认语言的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复数据库连接没有关闭的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复数据库连接没有关闭的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复创建、更新表单下拉列表选项较多导致文字溢出的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复创建、更新表单下拉列表选项较多导致文字溢出的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复进行MFA登录验证时没有自动选中输入框的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复进行MFA登录验证时没有自动选中输入框的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复工单流程更新后不生效的问题（X-Pack增强包内）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复工单流程更新后不生效的问题（X-Pack增强包内）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复数据库改密成功后无法连接的问题（X-Pack增强包内）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复数据库改密成功后无法连接的问题（X-Pack增强包内）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复通过XRDP连接资产时网关限制只能使用22端口的问题（X-Pack增强包内）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复通过XRDP连接资产时网关限制只能使用22端口的问题（X-Pack增强包内）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复通过XRDP连接Windows资产时偶尔报错的问题（X-Pack增强包内）。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复通过XRDP连接Windows资产时偶尔报错的问题（X-Pack增强包内）。</p>
+                    <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -432,10 +486,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -446,21 +500,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

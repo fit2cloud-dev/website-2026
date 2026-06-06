@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,210 @@
                     <img src="../images/blog/common/dataease-025.jpg" alt="仪表板展示 | DataEase看世界：数据呈现世界油价变化" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <h2 id="dataease-%E7%9C%8B%E4%B8%96%E7%95%8C"><strong>DataEase 看世界</strong></h2><div class="de-table-wrap"><table><tbody><tr><td><p><strong>本期主题</strong></p></td><td><p>世界油价变化</p></td></tr><tr><td><p><strong>DataEase</strong></p><p><strong>版本号</strong></p></td><td><p>v1.18.5</p></td></tr><tr><td><p><strong>使用功能</strong></p></td><td><p>仪表板样式、组件样式、缩略轴、辅助线、视图、悬浮模式、超链接、数据集、仪表板分享</p></td></tr><tr><td><p><strong>使用视图</strong></p></td><td><p>基础折线图、基础柱状图、百分比柱状图、选项卡组件、文本组件、矩形组件</p></td></tr><tr><td><p><strong>数据来源</strong></p></td><td><p><a href="https://asb.opec.org/" target="_blank" rel="noopener noreferrer">https://asb.opec.org/</a></p></td></tr></tbody></table></div><h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><strong>背景介绍</strong></h2><p>最近几个月，全球能源市场一直处于动荡不安的状态，与石油相关的新闻也非常频繁。2023年2月10日，面对西方多轮限价举措，俄罗斯副总理亚历山大·诺瓦克宣布，俄罗斯将在3月把每日原油产量下调50万桶。目前，全球经济仍在从新冠肺炎疫情中复苏，对石油的需求尚未完全恢复，如果俄罗斯的削减导致价格大幅上涨，可能会减缓经济复苏，并对许多依赖石油的行业产生负面影响。</p><p>石油是一种重要的化石燃料，广泛应用于工业生产、交通运输、家庭用电和农业等领域，对现代社会的发展和运转至关重要。自20世纪70年代以来，石油价格一直受到诸多波动的影响。这些波动是由一系列影响全球石油市场并形成其轨迹的重要历史事件所形成的。在本文中，我们将使用DataEase开源数据可视化分析工具对世界石油市场情况进行分析，结合自1970年以来影响油价的一些重大事件，做出相关的分析和结论。</p><p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p><p><img src="../images/blog/chart-20230530/dataease-100-01.png" alt="图01-jhxe.png" loading="lazy" />▲  图1 世界石油情况概览大屏</p><p><em>仪表板链接：</em></p><p><a href="https://democenter.fit2cloud.com:2371/link/nOgveniX" target="_blank" rel="noopener noreferrer"><em>https://democenter.fit2cloud.com:2371/link/nOgveniX</em></a></p><h2 id="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><strong>数据分析</strong></h2><p>从图2和图3中我们可以发现，中东地区的已探明石油储量长期以来一直占全世界探明石油储量的50%以上，产量也一直维持在全世界石油产量的30%左右。因此，中东地区的稳定性一直是影响油价的一个关键因素。历史上很多影响油价的大事件都与中东地区有关联。</p><p><img src="../images/blog/chart-20230530/dataease-100-02.png" alt="图02-ndcv.png" loading="lazy" />▲  图2 中东已探明石油储量占比</p><p><img src="../images/blog/chart-20230530/dataease-100-03.png" alt="图03-kmmm.png" loading="lazy" />▲  图3 中东历年石油产量占全世界石油产量的比例</p><p>图4和图5展示的是上世纪40年代至70年代的世界石油价格，以美元为计价单位。可以看到，20世纪70年代初，每桶石油的价格不到4美元，到了1974年每桶石油价格上升到了10美元以上。而在上世纪70年代之前，油价一直稳定地保持在4美元以下。</p><p>结合当时的新闻来看，上世纪70年代初石油的价格上涨对生活成本和经济增长都产生了重大影响，而油价上涨的主要原因是二十世纪70年代的石油危机。1973年，包括沙特阿拉伯在内的一批阿拉伯产油国宣布禁止向在赎罪日战争中支持以色列的国家出口石油，这一禁运导致油价大幅上涨，对全球经济产生了深远影响。</p><p><img src="../images/blog/chart-20230530/dataease-100-04.png" alt="图04-lpwl.png" loading="lazy" />▲  图4 1971年4月石油价格（美元）</p><p><img src="../images/blog/chart-20230530/dataease-100-05.png" alt="图05-tdho.png" loading="lazy" />▲  图5 1974年4月石油价格（美元）</p><p>图6显示，石油价格在1980年4月上涨到近40美元每桶。在整个80年代，石油一直在较高的价格范围内抖动。</p><p><img src="../images/blog/chart-20230530/dataease-100-06.png" alt="图06-pbmu.png" loading="lazy" />▲  图6 1980年4月石油价格（美元）</p><p>从图7和图8可以看出，1981年，伊朗的石油产量从1978年的5241千桶/天骤降至1262千桶每天，不足之前的四分之一，同时伊拉克的石油产量则从1978年的2562千桶/天降至897千桶/天。</p><p>这是因为在1980年，伊拉克发动了对伊朗的全面进攻，两伊战争爆发。两伊战争从1980年持续到1988年。这场冲突导致该地区石油产量大幅下降，并导致石油价格大幅上涨。该冲突导致中东局势更加不稳定，也是这段时间油价抖动频繁的原因之一。</p><p><img src="../images/blog/chart-20230530/dataease-100-07.png" alt="图07-yfob.png" loading="lazy" />▲  图7 1978年伊朗与伊拉克的石油产量</p><p><img src="../images/blog/chart-20230530/dataease-100-08.png" alt="图08-jjsb.png" loading="lazy" />▲  图8 1981年伊朗与伊拉克的石油产量</p><p>接下来的一次油价抖动发生在上世纪90年代。在1990年6月，油价还是17美元/桶，但是到了1990年9月份则已经涨至近40美元/桶，直到9月后油价才逐渐回落。如图9和图10所示。</p><p>结合时代背景，1990年，伊拉克发动攻击占领了阿拉伯半岛的科威特，全球石油供应遭到了严重威胁。此外，由于伊拉克政府对石油生产和出口的控制，全球石油市场陷入了混乱，对全球经济造成了严重影响。然而随着联合国的干预，伊拉克最终退出了科威特，全球石油市场得以稳定，石油价格也随之回落。</p><p><img src="../images/blog/chart-20230530/dataease-100-09.png" alt="图09-ktyr.png" loading="lazy" />▲  图9 1990年6月原油价格（美元）</p><p><img src="../images/blog/chart-20230530/dataease-100-10.png" alt="图10-kiua.png" loading="lazy" />▲  图10 1990年9月原油价格（美元）</p><p>在二十世纪90年代，自1991年开始油价就在10到25美元震荡。这是由于石油产量增加和需求减少，而这段低油价时期一直持续到2000年代初。2000年以后，全球经济开始复苏，对石油的需求再次开始增加，油价开始上涨，在2008年全球金融危机爆发前达到峰值的140美元/桶。如图11和图12所示。</p><p><img src="../images/blog/chart-20230530/dataease-100-11.png" alt="图11-ngek.png" loading="lazy" />▲  图11 2000年2月原油价格</p><p><img src="../images/blog/chart-20230530/dataease-100-12.png" alt="图12-jcnm.png" loading="lazy" />▲  图12 2008年6月原油价格</p><p>2009年，油价跌至41美元/桶，相比2008年6月，跌幅达到70%。随后油价只有小幅波动，一直到2014年的夏天都相对稳定。到了2014年下半年，油价又开始大幅下跌。如图13和图14所示。</p><p>众所周知，2008年全球金额危机爆发，金融危机对油价产生了重大影响，因此石油需求的减少和经济活动的放缓是造成油价大幅下跌的主要原因。之后随着全球经济逐渐复苏，危机之后便出现了一段油价相对稳定的时期。</p><p><img src="../images/blog/chart-20230530/dataease-100-13.png" alt="图13-xins.png" loading="lazy" />▲  图13 2009年1月原油价格</p><p><img src="../images/blog/chart-20230530/dataease-100-14.png" alt="图14-rivf.png" loading="lazy" />▲  图14 2014年6月原油价格</p><p>那么为什么到了2014年下半年，油价又开始大幅下跌呢？</p><p>从图15和图16可以看到，近年来美国的石油储量和产量都在提高，美国页岩油产量增加。这种新的石油来源的开发改变了全球石油市场，并导致石油产量大幅增加，反过来又给油价带来了下行压力。这一新的石油来源也改变了地缘政治格局，美国成为全球石油市场的主要参与者，减少了对中东石油的依赖。</p><p>同时，由于全球经济放缓，特别是欧洲和中国，石油需求开始减弱。石油消费的减少给石油价格带来了额外的下行压力。此外，石油输出国组织（OPEC）不降低产量的决定进一步加剧了供应过剩的局面，给油价带来了进一步的下行压力。以上这些因素的叠加影响，造成了2014年油价新一轮的暴跌。</p><p><img src="../images/blog/chart-20230530/dataease-100-15.png" alt="图15-ktfd.png" loading="lazy" />▲  图15 1992-2021年美国石油储量</p><p><img src="../images/blog/chart-20230530/dataease-100-16.png" alt="图16-edvt.png" loading="lazy" />▲  图16 1991-2021年美国石油产量</p><p>从图17和图18中可以看到，2019年12月，油价还处于61美元/桶，之后便快速下降，到2020年4月来到油价的谷底（即18.84美元/桶）。</p><p>2019年末，新冠肺炎疫情爆发，随后迅速蔓延至全球。疫情期间，多国发布封锁和旅行限制政策，导致汽油和其他石油产品消费量大幅下降。消费需求的减少，加上一些主要产油国的产量增加，是导致2020年春季油价暴跌的主要原因。</p><p><img src="../images/blog/chart-20230530/dataease-100-17.png" alt="图17-bsnb.png" loading="lazy" />▲  图17 2019年12月原油价格</p><p><img src="../images/blog/chart-20230530/dataease-100-18.png" alt="图18-tzhw.png" loading="lazy" />▲  图18 2020年4月原油价格</p><h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2><p>自1970年以来，全球石油价格受到了一系列重要历史事件的影响，包括20世纪70年代的石油危机、两伊战争、2008年的金融危机、美国页岩油的出现和新冠疫情等。这些事件对全球石油市场产生了深远影响，并在过去五十年中决定了石油市场的发展轨迹。尽管存在这些波动，石油仍然是全球经济体系中的一种关键商品，并继续着发挥重要的作用。</p><p>在这个石油价格主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的自定义视图组件，其中涉及到折线图、柱状图、百分比柱状图等多种图表类型。该仪表板在数据来源文字上设值了超链接，点击即可跳转至OPEC数据下载页面。除了视图组件外，还使用了选项卡组件来将世界、OPEC、中东、美国的石油储量和产量进行了隔离展示，使数据展示更加清晰和独立。在“仪表板分享”环节，我们创建了仪表板的公共链接分享，使没有账号的人员也可以访问该仪表板。</p>
+                    <h2 id="dataease-%E7%9C%8B%E4%B8%96%E7%95%8C"><strong>DataEase 看世界</strong></h2>
+                    <div class="de-table-wrap">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p><strong>本期主题</strong></p>
+                                    </td>
+                                    <td><p>世界油价变化</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>DataEase</strong></p>
+                                        <p><strong>版本号</strong></p>
+                                    </td>
+                                    <td><p>v1.18.5</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>使用功能</strong></p>
+                                    </td>
+                                    <td><p>仪表板样式、组件样式、缩略轴、辅助线、视图、悬浮模式、超链接、数据集、仪表板分享</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>使用视图</strong></p>
+                                    </td>
+                                    <td><p>基础折线图、基础柱状图、百分比柱状图、选项卡组件、文本组件、矩形组件</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p><strong>数据来源</strong></p>
+                                    </td>
+                                    <td>
+                                        <p><a href="https://asb.opec.org/" target="_blank" rel="noopener noreferrer">https://asb.opec.org/</a></p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><strong>背景介绍</strong></h2>
+                    <p>
+                        最近几个月，全球能源市场一直处于动荡不安的状态，与石油相关的新闻也非常频繁。2023年2月10日，面对西方多轮限价举措，俄罗斯副总理亚历山大·诺瓦克宣布，俄罗斯将在3月把每日原油产量下调50万桶。目前，全球经济仍在从新冠肺炎疫情中复苏，对石油的需求尚未完全恢复，如果俄罗斯的削减导致价格大幅上涨，可能会减缓经济复苏，并对许多依赖石油的行业产生负面影响。
+                    </p>
+                    <p>
+                        石油是一种重要的化石燃料，广泛应用于工业生产、交通运输、家庭用电和农业等领域，对现代社会的发展和运转至关重要。自20世纪70年代以来，石油价格一直受到诸多波动的影响。这些波动是由一系列影响全球石油市场并形成其轨迹的重要历史事件所形成的。在本文中，我们将使用DataEase开源数据可视化分析工具对世界石油市场情况进行分析，结合自1970年以来影响油价的一些重大事件，做出相关的分析和结论。
+                    </p>
+                    <p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-01.png" alt="图01-jhxe.png" loading="lazy" />▲ 图1 世界石油情况概览大屏</p>
+                    <p><em>仪表板链接：</em></p>
+                    <p>
+                        <a href="https://democenter.fit2cloud.com:2371/link/nOgveniX" target="_blank" rel="noopener noreferrer"><em>https://democenter.fit2cloud.com:2371/link/nOgveniX</em></a>
+                    </p>
+                    <h2 id="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><strong>数据分析</strong></h2>
+                    <p>
+                        从图2和图3中我们可以发现，中东地区的已探明石油储量长期以来一直占全世界探明石油储量的50%以上，产量也一直维持在全世界石油产量的30%左右。因此，中东地区的稳定性一直是影响油价的一个关键因素。历史上很多影响油价的大事件都与中东地区有关联。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-02.png" alt="图02-ndcv.png" loading="lazy" />▲ 图2 中东已探明石油储量占比</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-03.png" alt="图03-kmmm.png" loading="lazy" />▲ 图3 中东历年石油产量占全世界石油产量的比例</p>
+                    <p>
+                        图4和图5展示的是上世纪40年代至70年代的世界石油价格，以美元为计价单位。可以看到，20世纪70年代初，每桶石油的价格不到4美元，到了1974年每桶石油价格上升到了10美元以上。而在上世纪70年代之前，油价一直稳定地保持在4美元以下。
+                    </p>
+                    <p>
+                        结合当时的新闻来看，上世纪70年代初石油的价格上涨对生活成本和经济增长都产生了重大影响，而油价上涨的主要原因是二十世纪70年代的石油危机。1973年，包括沙特阿拉伯在内的一批阿拉伯产油国宣布禁止向在赎罪日战争中支持以色列的国家出口石油，这一禁运导致油价大幅上涨，对全球经济产生了深远影响。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-04.png" alt="图04-lpwl.png" loading="lazy" />▲ 图4 1971年4月石油价格（美元）</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-05.png" alt="图05-tdho.png" loading="lazy" />▲ 图5 1974年4月石油价格（美元）</p>
+                    <p>图6显示，石油价格在1980年4月上涨到近40美元每桶。在整个80年代，石油一直在较高的价格范围内抖动。</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-06.png" alt="图06-pbmu.png" loading="lazy" />▲ 图6 1980年4月石油价格（美元）</p>
+                    <p>从图7和图8可以看出，1981年，伊朗的石油产量从1978年的5241千桶/天骤降至1262千桶每天，不足之前的四分之一，同时伊拉克的石油产量则从1978年的2562千桶/天降至897千桶/天。</p>
+                    <p>
+                        这是因为在1980年，伊拉克发动了对伊朗的全面进攻，两伊战争爆发。两伊战争从1980年持续到1988年。这场冲突导致该地区石油产量大幅下降，并导致石油价格大幅上涨。该冲突导致中东局势更加不稳定，也是这段时间油价抖动频繁的原因之一。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-07.png" alt="图07-yfob.png" loading="lazy" />▲ 图7 1978年伊朗与伊拉克的石油产量</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-08.png" alt="图08-jjsb.png" loading="lazy" />▲ 图8 1981年伊朗与伊拉克的石油产量</p>
+                    <p>接下来的一次油价抖动发生在上世纪90年代。在1990年6月，油价还是17美元/桶，但是到了1990年9月份则已经涨至近40美元/桶，直到9月后油价才逐渐回落。如图9和图10所示。</p>
+                    <p>
+                        结合时代背景，1990年，伊拉克发动攻击占领了阿拉伯半岛的科威特，全球石油供应遭到了严重威胁。此外，由于伊拉克政府对石油生产和出口的控制，全球石油市场陷入了混乱，对全球经济造成了严重影响。然而随着联合国的干预，伊拉克最终退出了科威特，全球石油市场得以稳定，石油价格也随之回落。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-09.png" alt="图09-ktyr.png" loading="lazy" />▲ 图9 1990年6月原油价格（美元）</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-10.png" alt="图10-kiua.png" loading="lazy" />▲ 图10 1990年9月原油价格（美元）</p>
+                    <p>
+                        在二十世纪90年代，自1991年开始油价就在10到25美元震荡。这是由于石油产量增加和需求减少，而这段低油价时期一直持续到2000年代初。2000年以后，全球经济开始复苏，对石油的需求再次开始增加，油价开始上涨，在2008年全球金融危机爆发前达到峰值的140美元/桶。如图11和图12所示。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-11.png" alt="图11-ngek.png" loading="lazy" />▲ 图11 2000年2月原油价格</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-12.png" alt="图12-jcnm.png" loading="lazy" />▲ 图12 2008年6月原油价格</p>
+                    <p>2009年，油价跌至41美元/桶，相比2008年6月，跌幅达到70%。随后油价只有小幅波动，一直到2014年的夏天都相对稳定。到了2014年下半年，油价又开始大幅下跌。如图13和图14所示。</p>
+                    <p>众所周知，2008年全球金额危机爆发，金融危机对油价产生了重大影响，因此石油需求的减少和经济活动的放缓是造成油价大幅下跌的主要原因。之后随着全球经济逐渐复苏，危机之后便出现了一段油价相对稳定的时期。</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-13.png" alt="图13-xins.png" loading="lazy" />▲ 图13 2009年1月原油价格</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-14.png" alt="图14-rivf.png" loading="lazy" />▲ 图14 2014年6月原油价格</p>
+                    <p>那么为什么到了2014年下半年，油价又开始大幅下跌呢？</p>
+                    <p>
+                        从图15和图16可以看到，近年来美国的石油储量和产量都在提高，美国页岩油产量增加。这种新的石油来源的开发改变了全球石油市场，并导致石油产量大幅增加，反过来又给油价带来了下行压力。这一新的石油来源也改变了地缘政治格局，美国成为全球石油市场的主要参与者，减少了对中东石油的依赖。
+                    </p>
+                    <p>
+                        同时，由于全球经济放缓，特别是欧洲和中国，石油需求开始减弱。石油消费的减少给石油价格带来了额外的下行压力。此外，石油输出国组织（OPEC）不降低产量的决定进一步加剧了供应过剩的局面，给油价带来了进一步的下行压力。以上这些因素的叠加影响，造成了2014年油价新一轮的暴跌。
+                    </p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-15.png" alt="图15-ktfd.png" loading="lazy" />▲ 图15 1992-2021年美国石油储量</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-16.png" alt="图16-edvt.png" loading="lazy" />▲ 图16 1991-2021年美国石油产量</p>
+                    <p>从图17和图18中可以看到，2019年12月，油价还处于61美元/桶，之后便快速下降，到2020年4月来到油价的谷底（即18.84美元/桶）。</p>
+                    <p>2019年末，新冠肺炎疫情爆发，随后迅速蔓延至全球。疫情期间，多国发布封锁和旅行限制政策，导致汽油和其他石油产品消费量大幅下降。消费需求的减少，加上一些主要产油国的产量增加，是导致2020年春季油价暴跌的主要原因。</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-17.png" alt="图17-bsnb.png" loading="lazy" />▲ 图17 2019年12月原油价格</p>
+                    <p><img src="../images/blog/chart-20230530/dataease-100-18.png" alt="图18-tzhw.png" loading="lazy" />▲ 图18 2020年4月原油价格</p>
+                    <h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2>
+                    <p>
+                        自1970年以来，全球石油价格受到了一系列重要历史事件的影响，包括20世纪70年代的石油危机、两伊战争、2008年的金融危机、美国页岩油的出现和新冠疫情等。这些事件对全球石油市场产生了深远影响，并在过去五十年中决定了石油市场的发展轨迹。尽管存在这些波动，石油仍然是全球经济体系中的一种关键商品，并继续着发挥重要的作用。
+                    </p>
+                    <p>
+                        在这个石油价格主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的自定义视图组件，其中涉及到折线图、柱状图、百分比柱状图等多种图表类型。该仪表板在数据来源文字上设值了超链接，点击即可跳转至OPEC数据下载页面。除了视图组件外，还使用了选项卡组件来将世界、OPEC、中东、美国的石油储量和产量进行了隔离展示，使数据展示更加清晰和独立。在“仪表板分享”环节，我们创建了仪表板的公共链接分享，使没有账号的人员也可以访问该仪表板。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示 | DataEase看世界：数据呈现世界油价变化","item":"https://dataease.cn/blog/post-9d29cdbf-88c7-40e5-8ab5-0d42af7f54ad.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示 | DataEase看世界：数据呈现世界油价变化","description":"石油市场动荡，DataEase带你看看世界油价变化情况。","url":"https://dataease.cn/blog/post-9d29cdbf-88c7-40e5-8ab5-0d42af7f54ad.html","datePublished":"2023-05-30","dateModified":"2023-05-30","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-025.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示 | DataEase看世界：数据呈现世界油价变化", "item": "https://dataease.cn/blog/post-9d29cdbf-88c7-40e5-8ab5-0d42af7f54ad.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示 | DataEase看世界：数据呈现世界油价变化",
+                "description": "石油市场动荡，DataEase带你看看世界油价变化情况。",
+                "url": "https://dataease.cn/blog/post-9d29cdbf-88c7-40e5-8ab5-0d42af7f54ad.html",
+                "datePublished": "2023-05-30",
+                "dateModified": "2023-05-30",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-025.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

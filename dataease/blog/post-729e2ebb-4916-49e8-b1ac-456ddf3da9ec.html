@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,182 @@
                     <img src="../images/blog/common/dataease-001.png" alt="践行“人人可用”：更轻量、更好用、更优雅、更全面，DataEase开源数据可视化分析平台发布v2.0版本" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>2023年11月6日，DataEase开源数据可视化分析平台正式发布v2.0版本。DataEase开源项目创立于2021年1月，于2021年6月发布v1.0版本。相比v1.x版本，DataEase v2.0版本<strong><span>采用了更加轻量级的架构设计</span></strong>，功能模块在保留原有“仪表板”模块的基础上，<strong><span>新增“数据大屏”模块和“工作台”模块</span></strong>，同时<strong><span>引入开源动态数据管理框架Apache Calcite来统一数据集的创建与管理</span></strong>，并在嵌入式方面做了扩展，<strong><span>支持图表、仪表板、数据大屏、设计器等丰富的嵌入场景</span></strong>，力求深入践行DataEase“人人可用”的产品设计理念，为用户提供更轻量、更好用、更优雅、更全面的BI工具。</p><p>DataEase（<a href="https://github.com/dataease" target="_blank" rel="noopener noreferrer"><em>https://github.com/dataease</em></a>）是一款人人可用的开源数据可视化分析工具，它能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并且可以方便地与他人分享。截至2023年11月，DataEase在代码托管平台GitHub上的Star数量已经超过13,200个，并多次登陆GitHub趋势榜单。</p><p><img src="../images/blog/release-20231106/dataease-084-01.png" alt="1 star.jpg" loading="lazy" />▲ 图1 DataEase GitHub Star增长趋势图</p><p>DataEase 自v1.0版本至今，在开源社区获得了广泛的安装基础，DataEase v1.x版本的社区累计下载总数已经超过89,000次。每天都有新用户认识、下载并使用DataEase开源数据可视化分析工具。社区用户通过提交GitHub Issue、技术交流群互动、论坛互动等多种方式向DataEase项目组反馈各种需求和问题。</p><p>在为用户实现需求、解决问题的过程中，DataEase的产品研发团队也意识到，受限于DataEase v1.x版本的架构设计，用户的部分需求难以在原有的架构中实现。为了让DataEase变得更好，真正实现“人人可用”的愿景，研发团队自2023年1月启动DataEase的大规模重构工作，历经11个月的产品开发、测试和改进，DataEase v2.0版本诞生。</p><p><img src="../images/blog/release-20231106/dataease-084-02.jpg" alt="2 【架构图】dataease架构图开源版-2023.jpg" loading="lazy" />▲ 图2 DataEase v2版本产品功能架构图</p><h2 id="heading-1">更轻量</h2><p>在v1版本中，DataEase集成了Apache Doris与Kettle以满足数据的同步需求。但在这两个组件的影响下，DataEase v1版本的安装包体积随着版本更新日渐增大，应用整体更显笨重，不利于适应更多的终端或场景需求，也难以通过缩减基本功能模块内存大小的方法来缓解DataEase的内存压力。同时，在DataEase的实际使用过程中，Apache Doris与Kettle起到的作用相对较小，且并非不可替代。</p><p>为了解决DataEase v1版本软件臃肿的问题，DataEase v2版本将Apache Doris和Kettle从DataEase中分离出来，并选择引用其他轻量级的第三方组件来支持DataEase v2版本新的功能和架构设计。此举让DataEase整体应用更加轻便与灵活，同时也为DataEase v2版本的全场景支持打下了良好的基础。</p><p><img src="../images/blog/release-20231106/dataease-084-03.jpg" alt="3 【架构图】dataease安装包缩小-mflv.jpg" loading="lazy" />▲ 图3 DataEase v1和v2版本安装包大小对比示意</p><h2 id="heading-2">更好用</h2><p>作为一款人人可用的开源数据可视化分析工具，DataEase长期贯彻“易用且好用”的设计理念，并将这一理念延续至DataEase v2版本序列。</p><p>深入了解用户在DataEase v1版本中的软件使用习惯与可视化应用场景后，DataEase v2.0版本在软件的模块设计方面进行了改进与优化，以提供更加顺畅的操作手感与优秀的使用体验。</p><p>DataEase v2.0版本在保留原有的“仪表板”模块的基础上，新增了“数据大屏”模块。DataEase为这两个模块提供了不同的功能特性，让用户可以更精确地选择适合自己需求的模块，并且更高效地完成工作任务。</p><p>通过“仪表板”模块，用户可以方便快捷地进行数据分析、创建数据报告和简易数据报表等；而通过“数据大屏”模块，用户可以创造出更加注重视觉效果的数据大屏，专供显示器终端展示使用。这种差异化的设计让产品更具灵活性，旨在更好地满足用户不同的需求和使用场景。</p><p>同时，DataEase v2.0版本新增“工作台”模块，为用户提供个人在DataEase中的信息汇总展示。用户可以通过“工作台”模块查看管理仪表板或数据大屏的最近使用记录、我的收藏、我的分享等相关信息，前往DataEase模板市场，也可以在“工作台”模块中快速创建各类资源的便捷入口。</p><p><img src="../images/blog/release-20231106/dataease-084-04.jpg" alt="4 工作台.jpg" loading="lazy" />▲ 图4 DataEase v2.0版本产品工作原理图</p><p>为了提升软件在功能交互方面的能力，DataEase v2版本对大量v1版本的功能进行了优化和改进。例如，调整“数据源”模块的操作流程，让用户可以快速高效地引用新建数据源或历史数据源来创建数据集；调整仪表板和数据大屏设计器的布局，让用户可以更简单、便捷地引入新组件或设计仪表板。这些改进加强了用户与产品之间的互动，使DataEase v2版本更加易用、好用，为用户提供优秀的使用体验。</p><p><img src="../images/blog/release-20231106/dataease-084-05.jpg" alt="5 仪表板.jpg" loading="lazy" />▲ 图5 DataEase v2.0版本仪表板制作界面</p><p><img src="../images/blog/release-20231106/dataease-084-06.jpg" alt="6 数据大屏.jpg" loading="lazy" />▲ 图6 DataEase v2.0版本数据大屏制作界面</p><h2 id="heading-3">更优雅</h2><p>DataEase v2版本引入了强大的开源动态数据管理框架Apache Calcite。利用Apache Calcite开源框架“允许应用程序使用标准的SQL语言查询多种后端数据源，而无需为每个数据源编写特定的查询代码”的特点，DataEase v2版本极大地简化了数据集的创建和管理过程，同时实现了数据集类型的统一，让用户能够更轻松地进行数据处理和分析操作。</p><p><img src="../images/blog/release-20231106/dataease-084-07.jpg" alt="7 数据集.jpg" loading="lazy" />▲ 图7 DataEase v2.0版本统一数据集类型展示</p><h2 id="heading-4">更全面</h2><p>随着DataEase用户数量的不断增加，DataEase项目组注意到，越来越多的用户需要将DataEase无缝嵌入到公司的其他系统中，即越来越多的用户具有DataEase的嵌入式集成需求。大部分用户希望将已创建的仪表板页面嵌入到其他系统页面中，以取代原本需要开发的数据可视化页面。</p><p>针对以上需求，DataEase v2.0版本在嵌入式方面进行了显著增强，为用户提供单一图表嵌入、仪表板或数据大屏页面嵌入和设计器嵌入三种嵌入方式，让用户可以依照自身需求将DataEase嵌入其公司系统。这样一来，用户就可以在自己的工作流程中直接访问和使用数据可视化分析功能，而无需切换至独立的应用程序。</p><p><img src="../images/blog/release-20231106/dataease-084-08.jpg" alt="8 嵌入式.jpg" loading="lazy" />▲ 图8 DataEase v2.0版本嵌入式方案展示</p><p>此外，DataEase项目组还了解到，许多用户在DataEase中实际常用的只有基本的数据可视化分析功能，并不需要“系统管理”模块中一些与他人协作的功能。DataEase后续还计划推出基于Windows和Mac两种操作系统的桌面版本，供无需开展系统协作的用户免费下载并使用，力求在降低DataEase安装和使用门槛的同时，让软件的使用更加轻便。</p><p>目前，DataEase v2.0版本还未完全覆盖v1.18.x版本的全部功能。但在轻量级的全新架构下，DataEase v2版本将更快、更好地实现之前v1版本中已实现的，以及难以实现的场景。DataEase v2版本将进入按月迭代的轨道，DataEase项目组也会持续关注大家的反馈，听取广大社区用户的建议，不断完善产品功能和使用体验。</p><p>需要说明的是，DataEase不支持直接从v1.18.x版本升级到v2.0.0版本。但DataEase v1.18.x版本的维护和更新将会长期持续进行。未来，DataEase将并行支持v2.x和v1.18.x两个大版本，用户可以根据自身的实际情况选择使用某个版本，以更好地满足自己的数据可视化需求。</p>
+                    <p>
+                        2023年11月6日，DataEase开源数据可视化分析平台正式发布v2.0版本。DataEase开源项目创立于2021年1月，于2021年6月发布v1.0版本。相比v1.x版本，DataEase v2.0版本<strong><span>采用了更加轻量级的架构设计</span></strong
+                        >，功能模块在保留原有“仪表板”模块的基础上，<strong><span>新增“数据大屏”模块和“工作台”模块</span></strong
+                        >，同时<strong><span>引入开源动态数据管理框架Apache Calcite来统一数据集的创建与管理</span></strong
+                        >，并在嵌入式方面做了扩展，<strong><span>支持图表、仪表板、数据大屏、设计器等丰富的嵌入场景</span></strong
+                        >，力求深入践行DataEase“人人可用”的产品设计理念，为用户提供更轻量、更好用、更优雅、更全面的BI工具。
+                    </p>
+                    <p>
+                        DataEase（<a href="https://github.com/dataease" target="_blank" rel="noopener noreferrer"><em>https://github.com/dataease</em></a
+                        >）是一款人人可用的开源数据可视化分析工具，它能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并且可以方便地与他人分享。截至2023年11月，DataEase在代码托管平台GitHub上的Star数量已经超过13,200个，并多次登陆GitHub趋势榜单。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-01.png" alt="1 star.jpg" loading="lazy" />▲ 图1 DataEase GitHub Star增长趋势图</p>
+                    <p>
+                        DataEase 自v1.0版本至今，在开源社区获得了广泛的安装基础，DataEase v1.x版本的社区累计下载总数已经超过89,000次。每天都有新用户认识、下载并使用DataEase开源数据可视化分析工具。社区用户通过提交GitHub
+                        Issue、技术交流群互动、论坛互动等多种方式向DataEase项目组反馈各种需求和问题。
+                    </p>
+                    <p>
+                        在为用户实现需求、解决问题的过程中，DataEase的产品研发团队也意识到，受限于DataEase
+                        v1.x版本的架构设计，用户的部分需求难以在原有的架构中实现。为了让DataEase变得更好，真正实现“人人可用”的愿景，研发团队自2023年1月启动DataEase的大规模重构工作，历经11个月的产品开发、测试和改进，DataEase v2.0版本诞生。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-02.jpg" alt="2 【架构图】dataease架构图开源版-2023.jpg" loading="lazy" />▲ 图2 DataEase v2版本产品功能架构图</p>
+                    <h2 id="heading-1">更轻量</h2>
+                    <p>
+                        在v1版本中，DataEase集成了Apache Doris与Kettle以满足数据的同步需求。但在这两个组件的影响下，DataEase
+                        v1版本的安装包体积随着版本更新日渐增大，应用整体更显笨重，不利于适应更多的终端或场景需求，也难以通过缩减基本功能模块内存大小的方法来缓解DataEase的内存压力。同时，在DataEase的实际使用过程中，Apache
+                        Doris与Kettle起到的作用相对较小，且并非不可替代。
+                    </p>
+                    <p>
+                        为了解决DataEase v1版本软件臃肿的问题，DataEase v2版本将Apache Doris和Kettle从DataEase中分离出来，并选择引用其他轻量级的第三方组件来支持DataEase
+                        v2版本新的功能和架构设计。此举让DataEase整体应用更加轻便与灵活，同时也为DataEase v2版本的全场景支持打下了良好的基础。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-03.jpg" alt="3 【架构图】dataease安装包缩小-mflv.jpg" loading="lazy" />▲ 图3 DataEase v1和v2版本安装包大小对比示意</p>
+                    <h2 id="heading-2">更好用</h2>
+                    <p>作为一款人人可用的开源数据可视化分析工具，DataEase长期贯彻“易用且好用”的设计理念，并将这一理念延续至DataEase v2版本序列。</p>
+                    <p>深入了解用户在DataEase v1版本中的软件使用习惯与可视化应用场景后，DataEase v2.0版本在软件的模块设计方面进行了改进与优化，以提供更加顺畅的操作手感与优秀的使用体验。</p>
+                    <p>DataEase v2.0版本在保留原有的“仪表板”模块的基础上，新增了“数据大屏”模块。DataEase为这两个模块提供了不同的功能特性，让用户可以更精确地选择适合自己需求的模块，并且更高效地完成工作任务。</p>
+                    <p>
+                        通过“仪表板”模块，用户可以方便快捷地进行数据分析、创建数据报告和简易数据报表等；而通过“数据大屏”模块，用户可以创造出更加注重视觉效果的数据大屏，专供显示器终端展示使用。这种差异化的设计让产品更具灵活性，旨在更好地满足用户不同的需求和使用场景。
+                    </p>
+                    <p>
+                        同时，DataEase
+                        v2.0版本新增“工作台”模块，为用户提供个人在DataEase中的信息汇总展示。用户可以通过“工作台”模块查看管理仪表板或数据大屏的最近使用记录、我的收藏、我的分享等相关信息，前往DataEase模板市场，也可以在“工作台”模块中快速创建各类资源的便捷入口。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-04.jpg" alt="4 工作台.jpg" loading="lazy" />▲ 图4 DataEase v2.0版本产品工作原理图</p>
+                    <p>
+                        为了提升软件在功能交互方面的能力，DataEase
+                        v2版本对大量v1版本的功能进行了优化和改进。例如，调整“数据源”模块的操作流程，让用户可以快速高效地引用新建数据源或历史数据源来创建数据集；调整仪表板和数据大屏设计器的布局，让用户可以更简单、便捷地引入新组件或设计仪表板。这些改进加强了用户与产品之间的互动，使DataEase
+                        v2版本更加易用、好用，为用户提供优秀的使用体验。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-05.jpg" alt="5 仪表板.jpg" loading="lazy" />▲ 图5 DataEase v2.0版本仪表板制作界面</p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-06.jpg" alt="6 数据大屏.jpg" loading="lazy" />▲ 图6 DataEase v2.0版本数据大屏制作界面</p>
+                    <h2 id="heading-3">更优雅</h2>
+                    <p>
+                        DataEase v2版本引入了强大的开源动态数据管理框架Apache Calcite。利用Apache Calcite开源框架“允许应用程序使用标准的SQL语言查询多种后端数据源，而无需为每个数据源编写特定的查询代码”的特点，DataEase
+                        v2版本极大地简化了数据集的创建和管理过程，同时实现了数据集类型的统一，让用户能够更轻松地进行数据处理和分析操作。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-07.jpg" alt="7 数据集.jpg" loading="lazy" />▲ 图7 DataEase v2.0版本统一数据集类型展示</p>
+                    <h2 id="heading-4">更全面</h2>
+                    <p>
+                        随着DataEase用户数量的不断增加，DataEase项目组注意到，越来越多的用户需要将DataEase无缝嵌入到公司的其他系统中，即越来越多的用户具有DataEase的嵌入式集成需求。大部分用户希望将已创建的仪表板页面嵌入到其他系统页面中，以取代原本需要开发的数据可视化页面。
+                    </p>
+                    <p>
+                        针对以上需求，DataEase
+                        v2.0版本在嵌入式方面进行了显著增强，为用户提供单一图表嵌入、仪表板或数据大屏页面嵌入和设计器嵌入三种嵌入方式，让用户可以依照自身需求将DataEase嵌入其公司系统。这样一来，用户就可以在自己的工作流程中直接访问和使用数据可视化分析功能，而无需切换至独立的应用程序。
+                    </p>
+                    <p><img src="../images/blog/release-20231106/dataease-084-08.jpg" alt="8 嵌入式.jpg" loading="lazy" />▲ 图8 DataEase v2.0版本嵌入式方案展示</p>
+                    <p>
+                        此外，DataEase项目组还了解到，许多用户在DataEase中实际常用的只有基本的数据可视化分析功能，并不需要“系统管理”模块中一些与他人协作的功能。DataEase后续还计划推出基于Windows和Mac两种操作系统的桌面版本，供无需开展系统协作的用户免费下载并使用，力求在降低DataEase安装和使用门槛的同时，让软件的使用更加轻便。
+                    </p>
+                    <p>
+                        目前，DataEase v2.0版本还未完全覆盖v1.18.x版本的全部功能。但在轻量级的全新架构下，DataEase v2版本将更快、更好地实现之前v1版本中已实现的，以及难以实现的场景。DataEase
+                        v2版本将进入按月迭代的轨道，DataEase项目组也会持续关注大家的反馈，听取广大社区用户的建议，不断完善产品功能和使用体验。
+                    </p>
+                    <p>
+                        需要说明的是，DataEase不支持直接从v1.18.x版本升级到v2.0.0版本。但DataEase
+                        v1.18.x版本的维护和更新将会长期持续进行。未来，DataEase将并行支持v2.x和v1.18.x两个大版本，用户可以根据自身的实际情况选择使用某个版本，以更好地满足自己的数据可视化需求。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"践行“人人可用”：更轻量、更好用、更优雅、更全面，DataEase开源数据可视化分析平台发布v2.0版本","item":"https://dataease.cn/blog/post-729e2ebb-4916-49e8-b1ac-456ddf3da9ec.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"践行“人人可用”：更轻量、更好用、更优雅、更全面，DataEase开源数据可视化分析平台发布v2.0版本","description":"DataEase新增嵌入式场景支持。","url":"https://dataease.cn/blog/post-729e2ebb-4916-49e8-b1ac-456ddf3da9ec.html","datePublished":"2023-11-06","dateModified":"2023-11-06","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "践行“人人可用”：更轻量、更好用、更优雅、更全面，DataEase开源数据可视化分析平台发布v2.0版本",
+                        "item": "https://dataease.cn/blog/post-729e2ebb-4916-49e8-b1ac-456ddf3da9ec.html"
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "践行“人人可用”：更轻量、更好用、更优雅、更全面，DataEase开源数据可视化分析平台发布v2.0版本",
+                "description": "DataEase新增嵌入式场景支持。",
+                "url": "https://dataease.cn/blog/post-729e2ebb-4916-49e8-b1ac-456ddf3da9ec.html",
+                "datePublished": "2023-11-06",
+                "dateModified": "2023-11-06",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

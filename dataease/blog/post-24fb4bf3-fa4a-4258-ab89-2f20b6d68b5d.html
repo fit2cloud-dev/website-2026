@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,82 +219,211 @@
                     <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂｜SQL数据集动态参数使用场景及功能详解" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（https：//dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。<strong>目前，DataEase模板市场的模板数量已经超过了100个。</strong></p><h2 id="2023%E5%B9%B47%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF">2023年7月上新模板</h2><p>DataEase模板市场定期进行模板上新。2023年7月共上新7个模板，涉及教育、制造、零售、医疗、开源生态等主题，欢迎大家在DataEase模板市场下载使用。</p><p><img src="../images/blog/template-20230809/dataease-091-01.png" alt="1 开源软件供应链生态大屏.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-02.png" alt="2 全国高考招生大数据.png" loading="lazy" /><img src="../images/blog/common/dataease-031-04.png" alt="3 2022年消费者权益保护.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-04.png" alt="4 1panel 数据看板.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-05.png" alt="5 业务生产看板.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-06.png" alt="6 某连锁饮品销售看板.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-07.png" alt="7 2022年医美行业网络关注度.png" loading="lazy" /></p><h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7">模板技巧</h2><p>本月的模板技巧为大家介绍通过DataEase开源数据可视化分析工具中SQL数据集的动态参数功能，来减少仪表板数据查询时间的方法。</p><p>在使用DataEase制作的仪表板时，用户经常会利用筛选组件来灵活地展示数据。然而，这些筛选组件实际上是在图表的SQL查询中添加了额外的WHERE条件。当数据量非常大的时候，这种简单的拼接方式可能会导致查询时间显著增加，影响用户体验。</p><p>为了加快查询的效率，我们建议用户考虑使用SQL数据集的动态参数功能。通过动态参数设置，用户可以将原本的外查询转换为内查询，从而有效地优化查询过程。这样一来，筛选条件将直接传递到原始SQL内部，避免了大规模的数据扫描，从而大幅减少查询时间。</p><p><img src="../images/blog/template-20230809/dataease-091-08.png" alt="8 技巧.png" loading="lazy" />以下方一个简单SQL语句为例，不设置动态传参，直接使用筛序条件的效果如下：</p><shiki-code><pre><code>-- 原始SQL数据集语句：
+                    <p>
+                        DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（https：//dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。<strong
+                            >目前，DataEase模板市场的模板数量已经超过了100个。</strong
+                        >
+                    </p>
+                    <h2 id="2023%E5%B9%B47%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF">2023年7月上新模板</h2>
+                    <p>DataEase模板市场定期进行模板上新。2023年7月共上新7个模板，涉及教育、制造、零售、医疗、开源生态等主题，欢迎大家在DataEase模板市场下载使用。</p>
+                    <p>
+                        <img src="../images/blog/template-20230809/dataease-091-01.png" alt="1 开源软件供应链生态大屏.png" loading="lazy" /><img
+                            src="../images/blog/template-20230809/dataease-091-02.png"
+                            alt="2 全国高考招生大数据.png"
+                            loading="lazy"
+                        /><img src="../images/blog/common/dataease-031-04.png" alt="3 2022年消费者权益保护.png" loading="lazy" /><img
+                            src="../images/blog/template-20230809/dataease-091-04.png"
+                            alt="4 1panel 数据看板.png"
+                            loading="lazy"
+                        /><img src="../images/blog/template-20230809/dataease-091-05.png" alt="5 业务生产看板.png" loading="lazy" /><img
+                            src="../images/blog/template-20230809/dataease-091-06.png"
+                            alt="6 某连锁饮品销售看板.png"
+                            loading="lazy"
+                        /><img src="../images/blog/template-20230809/dataease-091-07.png" alt="7 2022年医美行业网络关注度.png" loading="lazy" />
+                    </p>
+                    <h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7">模板技巧</h2>
+                    <p>本月的模板技巧为大家介绍通过DataEase开源数据可视化分析工具中SQL数据集的动态参数功能，来减少仪表板数据查询时间的方法。</p>
+                    <p>
+                        在使用DataEase制作的仪表板时，用户经常会利用筛选组件来灵活地展示数据。然而，这些筛选组件实际上是在图表的SQL查询中添加了额外的WHERE条件。当数据量非常大的时候，这种简单的拼接方式可能会导致查询时间显著增加，影响用户体验。
+                    </p>
+                    <p>
+                        为了加快查询的效率，我们建议用户考虑使用SQL数据集的动态参数功能。通过动态参数设置，用户可以将原本的外查询转换为内查询，从而有效地优化查询过程。这样一来，筛选条件将直接传递到原始SQL内部，避免了大规模的数据扫描，从而大幅减少查询时间。
+                    </p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-08.png" alt="8 技巧.png" loading="lazy" />以下方一个简单SQL语句为例，不设置动态传参，直接使用筛序条件的效果如下：</p>
+                    <shiki-code>
+                        <pre><code>-- 原始SQL数据集语句：
 select * from table_demo;
 -- 仪表板使用筛选条件无动态传参的拼接语句：
-select * from (select * from table_demo) where condition = ‘仪表板筛选组件所选条件’;</code></pre></shiki-code><p>设置动态传参，筛选条件直接替换预置参数的效果如下：</p><shiki-code><pre><code>-- SQL数据集语句设置动态参数：
+select * from (select * from table_demo) where condition = ‘仪表板筛选组件所选条件’;</code></pre>
+                    </shiki-code>
+                    <p>设置动态传参，筛选条件直接替换预置参数的效果如下：</p>
+                    <shiki-code>
+                        <pre><code>-- SQL数据集语句设置动态参数：
 select * from table_demo where condition = ‘${condition}’;
 -- 仪表板筛选条件使用动态参数做替换：
-select * from table_demo where condition = ‘仪表板筛选组件所选条件’;</code></pre></shiki-code><p><strong>一、功能使用的前提</strong></p><p>1. 使用SQL数据集；</p><p>2. 进入SQL数据集编辑界面后，数据链接选择使用直连模式（直连与定时同步的差异参见：<em>https://dataease.io/docs/user_manual/dataset_description/</em>）。</p><p><img src="../images/blog/template-20230809/dataease-091-09.png" alt="9 SQL数据集.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-10.png" alt="10 直连.png" loading="lazy" /><strong>二、功能使用详解</strong></p><p><strong>1. SQL数据集的设置</strong></p><p>这部分我们通过一个示例来介绍。如下图所示，通过一个简单的SQL语句，我们查询了华为云的账单数据。</p><shiki-code><pre><code>SELECT * FROM 云账单_华为云;</code></pre></shiki-code><p><img src="../images/blog/template-20230809/dataease-091-11.png" alt="11 云账单.png" loading="lazy" />当我们在仪表板上使用账单数据时，预备将产品作为筛选条件，并且希望该条件在SQL数据集中作为动态参数被传入。</p><p><img src="../images/blog/template-20230809/dataease-091-12.png" alt="12 动态参数.png" loading="lazy" />这时我们便可在SQL语句上补充WHERE条件，但无需将条件设置为固定值，而是使用“<em>${xxx}</em>”进行替代，其中“<em>xxx</em>”为变量名。</p><shiki-code><pre><code>SELECT * FROM 云账单_华为云  WHERE 产品 = '${Product}';</code></pre></shiki-code><p>完成SQL语句的编写后，可以点击下图所示SQL数据集编辑界面右上角的“运行查询”按钮进行预览，并确认所写SQL的执行没有问题。</p><p><strong>注意：</strong>虽然我们增加了WHERE条件，但未传入实际值到变量中时，并不会影响原始SQL的执行及使用。</p><p><img src="../images/blog/template-20230809/dataease-091-13.png" alt="13 运行查询.png" loading="lazy" />如果需要进一步验证传入实际的值后，SQL查询结果是否符合我们的预期，可以点击SQL数据集编辑界面右上角的“参数设置”选项。</p><p><img src="../images/blog/template-20230809/dataease-091-14.png" alt="14 参数设置.png" loading="lazy" />按照下图说明，完成相关参数的配置，点击“确认”按钮。</p><p><img src="../images/blog/template-20230809/dataease-091-15.png" alt="15 参数配置.png" loading="lazy" />再次点击SQL数据集编辑界面右上角的“运行查询”按钮，观察运行结果。如下图所示，此次查询结果均为已设置的产品类型为“弹性公网IP”的数据，由此证明动态参数是正常生效的。</p><p><img src="../images/blog/template-20230809/dataease-091-16.png" alt="16 弹性公网.png" loading="lazy" />需要特别补充的是，如下图所示，在进行“参数设置”时，该下拉选项中两个参数的区别为：</p><p>■ 仅编辑时生效：参数设置中所赋予的值仅用于在此数据集的编辑界面中的“运行查询”测试，离开数据集编辑界面后，该值无任何作用；</p><p>■ 数据集预览时全局生效：参数设置中所赋予的值不仅在此数据集编辑中的“运行查询”测试中生效，同时其值将作为该SQL数据集的默认条件，在外部预览数据集时同样生效。</p><p><img src="../images/blog/template-20230809/dataease-091-17.png" alt="17 仅编辑.png" loading="lazy" />设置了“数据集预览时全局生效”选项后，退出SQL数据集编辑界面，此时预览数据集界面的效果如下，查询结果同样保持为已设置产品类型为“弹性公网IP”的数据。</p><p><img src="../images/blog/template-20230809/dataease-091-18.png" alt="18 全局生效.png" loading="lazy" /><strong>2. 在仪表板中的应用</strong></p><p>使用上文中我们所配置的华为云云账单SQL数据集制作一些简单图表，以下是未做过滤时的原始仪表板。</p><p><img src="../images/blog/template-20230809/dataease-091-19.png" alt="19 原始仪表板.png" loading="lazy" />该仪表板中同时放置了一个文本下拉筛选组件，并将华为云云账单SQL数据集中的产品作为筛选条件。</p><p><img src="../images/blog/template-20230809/dataease-091-20.png" alt="" loading="lazy" /></p><p>将该组件与SQL数据集中预设置的参数进行关联，如下图所示，勾选对应参数即可。</p><p><img src="../images/blog/template-20230809/dataease-091-21.png" alt="" loading="lazy" /></p><p>保存参数的关联后，返回仪表板。使用下图筛选条件任选一个值，所选的值会被直接传入到上文所设置的“<em>Product</em>”变量中。</p><p><img src="../images/blog/template-20230809/dataease-091-22.png" alt="22 过滤.png" loading="lazy" />重新编辑文本下拉组件，去掉参数的绑定后保存，再次测试仪表板数据筛选效果。</p><p><img src="../images/blog/template-20230809/dataease-091-23.png" alt="" loading="lazy" /></p><p>从筛选条件中任选一个数据值进行过滤，由于此时并未绑定SQL数据集的动态参数，即所选的值并未直接传到“<em>Product</em>”变量中，而是在其SQL外层拼接新的过滤条件。但其并不影响对仪表板数据的过滤，如下图所示，仪表板筛选结果与之前一致。</p><p><img src="../images/blog/template-20230809/dataease-091-24.png" alt="" loading="lazy" /></p><h2 id="%E6%80%BB%E7%BB%93">总结</h2><p>SQL动态传参通过将用户的查询条件由外部传参转换为内部传参，有效提升了查询效率。然而，并非所有场景都需要使用动态传参，特别是在数据量较小的情况下。虽然该功能有助于改善查询效率，但并不能解决所有的SQL查询性能问题。</p><p>在使用动态传参时，需要综合考虑利弊，并视具体情况谨慎选择是否使用。进一步优化SQL语句、数据库表和数据库等方面也是提升查询性能的关键。</p>
+select * from table_demo where condition = ‘仪表板筛选组件所选条件’;</code></pre>
+                    </shiki-code>
+                    <p><strong>一、功能使用的前提</strong></p>
+                    <p>1. 使用SQL数据集；</p>
+                    <p>2. 进入SQL数据集编辑界面后，数据链接选择使用直连模式（直连与定时同步的差异参见：<em>https://dataease.io/docs/user_manual/dataset_description/</em>）。</p>
+                    <p>
+                        <img src="../images/blog/template-20230809/dataease-091-09.png" alt="9 SQL数据集.png" loading="lazy" /><img src="../images/blog/template-20230809/dataease-091-10.png" alt="10 直连.png" loading="lazy" /><strong
+                            >二、功能使用详解</strong
+                        >
+                    </p>
+                    <p><strong>1. SQL数据集的设置</strong></p>
+                    <p>这部分我们通过一个示例来介绍。如下图所示，通过一个简单的SQL语句，我们查询了华为云的账单数据。</p>
+                    <shiki-code>
+                        <pre><code>SELECT * FROM 云账单_华为云;</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/template-20230809/dataease-091-11.png" alt="11 云账单.png" loading="lazy" />当我们在仪表板上使用账单数据时，预备将产品作为筛选条件，并且希望该条件在SQL数据集中作为动态参数被传入。</p>
+                    <p>
+                        <img
+                            src="../images/blog/template-20230809/dataease-091-12.png"
+                            alt="12 动态参数.png"
+                            loading="lazy"
+                        />这时我们便可在SQL语句上补充WHERE条件，但无需将条件设置为固定值，而是使用“<em>${xxx}</em>”进行替代，其中“<em>xxx</em>”为变量名。
+                    </p>
+                    <shiki-code>
+                        <pre><code>SELECT * FROM 云账单_华为云  WHERE 产品 = '${Product}';</code></pre>
+                    </shiki-code>
+                    <p>完成SQL语句的编写后，可以点击下图所示SQL数据集编辑界面右上角的“运行查询”按钮进行预览，并确认所写SQL的执行没有问题。</p>
+                    <p><strong>注意：</strong>虽然我们增加了WHERE条件，但未传入实际值到变量中时，并不会影响原始SQL的执行及使用。</p>
+                    <p>
+                        <img
+                            src="../images/blog/template-20230809/dataease-091-13.png"
+                            alt="13 运行查询.png"
+                            loading="lazy"
+                        />如果需要进一步验证传入实际的值后，SQL查询结果是否符合我们的预期，可以点击SQL数据集编辑界面右上角的“参数设置”选项。
+                    </p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-14.png" alt="14 参数设置.png" loading="lazy" />按照下图说明，完成相关参数的配置，点击“确认”按钮。</p>
+                    <p>
+                        <img
+                            src="../images/blog/template-20230809/dataease-091-15.png"
+                            alt="15 参数配置.png"
+                            loading="lazy"
+                        />再次点击SQL数据集编辑界面右上角的“运行查询”按钮，观察运行结果。如下图所示，此次查询结果均为已设置的产品类型为“弹性公网IP”的数据，由此证明动态参数是正常生效的。
+                    </p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-16.png" alt="16 弹性公网.png" loading="lazy" />需要特别补充的是，如下图所示，在进行“参数设置”时，该下拉选项中两个参数的区别为：</p>
+                    <p>■ 仅编辑时生效：参数设置中所赋予的值仅用于在此数据集的编辑界面中的“运行查询”测试，离开数据集编辑界面后，该值无任何作用；</p>
+                    <p>■ 数据集预览时全局生效：参数设置中所赋予的值不仅在此数据集编辑中的“运行查询”测试中生效，同时其值将作为该SQL数据集的默认条件，在外部预览数据集时同样生效。</p>
+                    <p>
+                        <img
+                            src="../images/blog/template-20230809/dataease-091-17.png"
+                            alt="17 仅编辑.png"
+                            loading="lazy"
+                        />设置了“数据集预览时全局生效”选项后，退出SQL数据集编辑界面，此时预览数据集界面的效果如下，查询结果同样保持为已设置产品类型为“弹性公网IP”的数据。
+                    </p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-18.png" alt="18 全局生效.png" loading="lazy" /><strong>2. 在仪表板中的应用</strong></p>
+                    <p>使用上文中我们所配置的华为云云账单SQL数据集制作一些简单图表，以下是未做过滤时的原始仪表板。</p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-19.png" alt="19 原始仪表板.png" loading="lazy" />该仪表板中同时放置了一个文本下拉筛选组件，并将华为云云账单SQL数据集中的产品作为筛选条件。</p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-20.png" alt="" loading="lazy" /></p>
+                    <p>将该组件与SQL数据集中预设置的参数进行关联，如下图所示，勾选对应参数即可。</p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-21.png" alt="" loading="lazy" /></p>
+                    <p>保存参数的关联后，返回仪表板。使用下图筛选条件任选一个值，所选的值会被直接传入到上文所设置的“<em>Product</em>”变量中。</p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-22.png" alt="22 过滤.png" loading="lazy" />重新编辑文本下拉组件，去掉参数的绑定后保存，再次测试仪表板数据筛选效果。</p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-23.png" alt="" loading="lazy" /></p>
+                    <p>
+                        从筛选条件中任选一个数据值进行过滤，由于此时并未绑定SQL数据集的动态参数，即所选的值并未直接传到“<em>Product</em>”变量中，而是在其SQL外层拼接新的过滤条件。但其并不影响对仪表板数据的过滤，如下图所示，仪表板筛选结果与之前一致。
+                    </p>
+                    <p><img src="../images/blog/template-20230809/dataease-091-24.png" alt="" loading="lazy" /></p>
+                    <h2 id="%E6%80%BB%E7%BB%93">总结</h2>
+                    <p>SQL动态传参通过将用户的查询条件由外部传参转换为内部传参，有效提升了查询效率。然而，并非所有场景都需要使用动态传参，特别是在数据量较小的情况下。虽然该功能有助于改善查询效率，但并不能解决所有的SQL查询性能问题。</p>
+                    <p>在使用动态传参时，需要综合考虑利弊，并视具体情况谨慎选择是否使用。进一步优化SQL语句、数据库表和数据库等方面也是提升查询性能的关键。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂｜SQL数据集动态参数使用场景及功能详解","item":"https://dataease.cn/blog/post-24fb4bf3-fa4a-4258-ab89-2f20b6d68b5d.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂｜SQL数据集动态参数使用场景及功能详解","description":"模板市场上新！带你了解DataEase中的SQL数据集动态参数功能！","url":"https://dataease.cn/blog/post-24fb4bf3-fa4a-4258-ab89-2f20b6d68b5d.html","datePublished":"2023-08-09","dateModified":"2023-08-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-028.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "模板学堂｜SQL数据集动态参数使用场景及功能详解", "item": "https://dataease.cn/blog/post-24fb4bf3-fa4a-4258-ab89-2f20b6d68b5d.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "模板学堂｜SQL数据集动态参数使用场景及功能详解",
+                "description": "模板市场上新！带你了解DataEase中的SQL数据集动态参数功能！",
+                "url": "https://dataease.cn/blog/post-24fb4bf3-fa4a-4258-ab89-2f20b6d68b5d.html",
+                "datePublished": "2023-08-09",
+                "dateModified": "2023-08-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-028.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

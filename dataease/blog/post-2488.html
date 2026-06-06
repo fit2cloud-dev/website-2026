@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,160 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜使用DataEase制作汽车销售大数据仪表板" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>在当今的大数据的时代，我们的日常工作中都会用到各式各样的数据。处理数据的方式也从之前的文档处理发展成了数据可视化大屏处理。通过大屏我们可以快速地从大量的企业数据信息中筛选出有效信息，所以学习如何使用大屏进行数据可视化是非常重要的。由于我对汽车行业比较感兴趣，所以打算学习如何使用数据可视化大屏进行汽车销售数据的展示。</p><h2 id="heading-1">数据展示需求</h2><p>对于汽车销售的数据信息，我们可能会比较关心的问题包括：</p><p>1. 汽车的主要销售地区分布，以及各个地区的销售量对比；</p><p>2. 汽车的实时销量；</p><p>3. 人们的购车计划情况；</p><p>4. 各种车型参数的对比；</p><p>5. 交易量的走势；</p><p>6.  ……</p><p>首先我搜索了汽车销售数据类的大屏展示，发现了百度智能云有一个示例场景符合我的要求，于是打算找一款开源的数据可视化工具对这一场景进行复现。</p><p>示例场景：</p><p><img src="../images/blog/chart-20210824/dataease-174-01.png" alt="" loading="lazy" /></p><h2 id="heading-2">数据可视化工具选择</h2><p>最近在GitHub上发现了一款很热门的数据可视化分析工具名叫DataEase，这是一款开源的数据可视化工具，可以帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase能够支持丰富的数据源连接，用户可以通过拖拉拽方式快速制作图表，并且可以方便地与他人分享。</p><p>DataEase开源数据可视化分析工具的主要功能包括：</p><p><strong>1. 图表展示：</strong>支持 PC 端、移动端及大屏；</p><p><strong>2. 图表制作：</strong>支持丰富的图表类型（基于 Apache ECharts 实现）、支持拖拉拽方式快速制作仪表板；</p><p><strong>3. 数据引擎：</strong>支持直连模式、本地模式（基于 Apache Doris / Kettle 实现）；</p><p><strong>4. 数据连接：</strong>支持关系型数据库、Excel 等多种数据源。</p><p>更详细的介绍可以查看DataEase官方文档：</p><p><a href="https://dataease.io/docs。" target="_blank" rel="noopener noreferrer">https://dataease.io/docs</a>。</p><h2 id="heading-3">汽车销售大数据仪表板制作</h2><p>看完DataEase的产品文档后，就可以开始复现百度智能云的示例场景了。具体的步骤如下：</p><p><strong>一、搭建环境</strong></p><p>准备好机器后，按照产品文档中的在线安装步骤进行安装，详见：</p><p><a href="https://dataease.io/docs/installation/online_installation/。" target="_blank" rel="noopener noreferrer">https://dataease.io/docs/installation/online_installation/</a>。</p><p>安装完环境后，我们使用默认的账号进行登录。</p><p><strong>二、准备数据源</strong></p><p>虽然百度智能云提供的经典大屏示例中没有提供类似数据库等可以实时获取数据的数据源，但是示例的页面中可以导出视图的数据为Excel。所以数据集的创建就使用了添加Excel数据集的方式。</p><p>首先在示例场景中导出数据为Excel：</p><p><img src="../images/blog/chart-20210824/dataease-174-02.png" alt="" loading="lazy" /></p><p>然后在DataEase上添加Excel数据集：</p><p><img src="../images/blog/chart-20210824/dataease-174-03.png" alt="" loading="lazy" /></p><p>上传示例场景中导出的Excel文件：</p><p><img src="../images/blog/chart-20210824/dataease-174-04.png" alt="" loading="lazy" /></p><p>重复以上步骤，将所有视图所需的数据集都导入之后，我们就可以开始进行视图的制作了。</p><p><strong>三、创建视图</strong></p><p>■ 首先，根据示例场景中的视图样式，在DataEase上选择对应的图表类型；</p><p>■ 然后，选择维度和指标，把需要展示的维度和指标分别拖拽到图表类型下方的类别轴／维度、值轴／指标；</p><p>■ 再进行指标和维度的排序汇总方式选择，调整视图样式尽量复现示例场景等操作。这样就可以将数据集中的数据通过视图的方式展示出来。</p><p>下图为销售地区视图：</p><p><img src="../images/blog/chart-20210824/dataease-174-05.png" alt="" loading="lazy" /></p><p><strong>四、编辑仪表板</strong></p><p>当所有的视图都制作完成之后，就可以开始编辑仪表板了。首先获取示例大屏的背景图以及修饰图，进行模仿示例大屏的初步布局。</p><p>初步布局后的仪表板如下：</p><p><img src="../images/blog/chart-20210824/dataease-174-06.png" alt="" loading="lazy" /></p><p>完成初步布局后，我们只需要选择左侧的视图，拖拽对应设计的视图到仪表板中，再进行样式的调整，就可以完成最终的大屏展示。</p><p>最终的大屏展示结果如下：</p><p><img src="../images/blog/chart-20210824/dataease-174-07.png" alt="" loading="lazy" /></p><h2 id="heading-4">DataEase使用体会</h2><p>在本次学习制作汽车销售大数据仪表板的过程中，发现了DataEase开源数据可视化分析工具的一些亮点，在此分享给大家：<br /></p><p>■ <strong>开源开放：</strong>在GitHub网站上即可获取整个开源项目，不需要支付额外的费用，并且按月发布新版本，将会有越来越多的新功能上线，值得期待；</p><p>■ <strong>易于安装：</strong>不需要繁琐的安装命令，只需要上传安装包、解压、执行安装脚本文件即可完成整个安装过程；</p><p>■ <strong>简单易用：</strong>操作都很简单，通过鼠标点击和拖拽组件就可以制作大屏，对于刚开始学习制作仪表板的小白非常友好；</p><p>■ <strong>易于分享：</strong>可以通过创建公共链接的方式，将制作的仪表板分享出去；</p><p>■ <strong>丰富的数据连接方式：</strong>支持关系型数据库、Excel等多种数据源，可以满足多种场景的数据展示需求。</p>
+                    <p>
+                        在当今的大数据的时代，我们的日常工作中都会用到各式各样的数据。处理数据的方式也从之前的文档处理发展成了数据可视化大屏处理。通过大屏我们可以快速地从大量的企业数据信息中筛选出有效信息，所以学习如何使用大屏进行数据可视化是非常重要的。由于我对汽车行业比较感兴趣，所以打算学习如何使用数据可视化大屏进行汽车销售数据的展示。
+                    </p>
+                    <h2 id="heading-1">数据展示需求</h2>
+                    <p>对于汽车销售的数据信息，我们可能会比较关心的问题包括：</p>
+                    <p>1. 汽车的主要销售地区分布，以及各个地区的销售量对比；</p>
+                    <p>2. 汽车的实时销量；</p>
+                    <p>3. 人们的购车计划情况；</p>
+                    <p>4. 各种车型参数的对比；</p>
+                    <p>5. 交易量的走势；</p>
+                    <p>6.  ……</p>
+                    <p>首先我搜索了汽车销售数据类的大屏展示，发现了百度智能云有一个示例场景符合我的要求，于是打算找一款开源的数据可视化工具对这一场景进行复现。</p>
+                    <p>示例场景：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-01.png" alt="" loading="lazy" /></p>
+                    <h2 id="heading-2">数据可视化工具选择</h2>
+                    <p>
+                        最近在GitHub上发现了一款很热门的数据可视化分析工具名叫DataEase，这是一款开源的数据可视化工具，可以帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase能够支持丰富的数据源连接，用户可以通过拖拉拽方式快速制作图表，并且可以方便地与他人分享。
+                    </p>
+                    <p>DataEase开源数据可视化分析工具的主要功能包括：</p>
+                    <p><strong>1. 图表展示：</strong>支持 PC 端、移动端及大屏；</p>
+                    <p><strong>2. 图表制作：</strong>支持丰富的图表类型（基于 Apache ECharts 实现）、支持拖拉拽方式快速制作仪表板；</p>
+                    <p><strong>3. 数据引擎：</strong>支持直连模式、本地模式（基于 Apache Doris / Kettle 实现）；</p>
+                    <p><strong>4. 数据连接：</strong>支持关系型数据库、Excel 等多种数据源。</p>
+                    <p>更详细的介绍可以查看DataEase官方文档：</p>
+                    <p><a href="https://dataease.io/docs。" target="_blank" rel="noopener noreferrer">https://dataease.io/docs</a>。</p>
+                    <h2 id="heading-3">汽车销售大数据仪表板制作</h2>
+                    <p>看完DataEase的产品文档后，就可以开始复现百度智能云的示例场景了。具体的步骤如下：</p>
+                    <p><strong>一、搭建环境</strong></p>
+                    <p>准备好机器后，按照产品文档中的在线安装步骤进行安装，详见：</p>
+                    <p><a href="https://dataease.io/docs/installation/online_installation/。" target="_blank" rel="noopener noreferrer">https://dataease.io/docs/installation/online_installation/</a>。</p>
+                    <p>安装完环境后，我们使用默认的账号进行登录。</p>
+                    <p><strong>二、准备数据源</strong></p>
+                    <p>虽然百度智能云提供的经典大屏示例中没有提供类似数据库等可以实时获取数据的数据源，但是示例的页面中可以导出视图的数据为Excel。所以数据集的创建就使用了添加Excel数据集的方式。</p>
+                    <p>首先在示例场景中导出数据为Excel：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-02.png" alt="" loading="lazy" /></p>
+                    <p>然后在DataEase上添加Excel数据集：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-03.png" alt="" loading="lazy" /></p>
+                    <p>上传示例场景中导出的Excel文件：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-04.png" alt="" loading="lazy" /></p>
+                    <p>重复以上步骤，将所有视图所需的数据集都导入之后，我们就可以开始进行视图的制作了。</p>
+                    <p><strong>三、创建视图</strong></p>
+                    <p>■ 首先，根据示例场景中的视图样式，在DataEase上选择对应的图表类型；</p>
+                    <p>■ 然后，选择维度和指标，把需要展示的维度和指标分别拖拽到图表类型下方的类别轴／维度、值轴／指标；</p>
+                    <p>■ 再进行指标和维度的排序汇总方式选择，调整视图样式尽量复现示例场景等操作。这样就可以将数据集中的数据通过视图的方式展示出来。</p>
+                    <p>下图为销售地区视图：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-05.png" alt="" loading="lazy" /></p>
+                    <p><strong>四、编辑仪表板</strong></p>
+                    <p>当所有的视图都制作完成之后，就可以开始编辑仪表板了。首先获取示例大屏的背景图以及修饰图，进行模仿示例大屏的初步布局。</p>
+                    <p>初步布局后的仪表板如下：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-06.png" alt="" loading="lazy" /></p>
+                    <p>完成初步布局后，我们只需要选择左侧的视图，拖拽对应设计的视图到仪表板中，再进行样式的调整，就可以完成最终的大屏展示。</p>
+                    <p>最终的大屏展示结果如下：</p>
+                    <p><img src="../images/blog/chart-20210824/dataease-174-07.png" alt="" loading="lazy" /></p>
+                    <h2 id="heading-4">DataEase使用体会</h2>
+                    <p>在本次学习制作汽车销售大数据仪表板的过程中，发现了DataEase开源数据可视化分析工具的一些亮点，在此分享给大家：<br /></p>
+                    <p>■ <strong>开源开放：</strong>在GitHub网站上即可获取整个开源项目，不需要支付额外的费用，并且按月发布新版本，将会有越来越多的新功能上线，值得期待；</p>
+                    <p>■ <strong>易于安装：</strong>不需要繁琐的安装命令，只需要上传安装包、解压、执行安装脚本文件即可完成整个安装过程；</p>
+                    <p>■ <strong>简单易用：</strong>操作都很简单，通过鼠标点击和拖拽组件就可以制作大屏，对于刚开始学习制作仪表板的小白非常友好；</p>
+                    <p>■ <strong>易于分享：</strong>可以通过创建公共链接的方式，将制作的仪表板分享出去；</p>
+                    <p>■ <strong>丰富的数据连接方式：</strong>支持关系型数据库、Excel等多种数据源，可以满足多种场景的数据展示需求。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜使用DataEase制作汽车销售大数据仪表板","item":"https://dataease.cn/blog/post-2488.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜使用DataEase制作汽车销售大数据仪表板","description":"通过DataEase进行汽车销售类数据大屏可视化复现。","url":"https://dataease.cn/blog/post-2488.html","datePublished":"2021-08-24","dateModified":"2021-08-24","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜使用DataEase制作汽车销售大数据仪表板", "item": "https://dataease.cn/blog/post-2488.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜使用DataEase制作汽车销售大数据仪表板",
+                "description": "通过DataEase进行汽车销售类数据大屏可视化复现。",
+                "url": "https://dataease.cn/blog/post-2488.html",
+                "datePublished": "2021-08-24",
+                "dateModified": "2021-08-24",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

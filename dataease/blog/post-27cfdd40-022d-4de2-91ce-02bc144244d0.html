@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,193 @@
                     <img src="../images/blog/common/dataease-001.png" alt="AI智能问数能力全面升级，DataEase开源BI工具v2.10.13 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><span>2025年9月16日，人人可用的开源BI工具DataEase正式发布v2.10.13 LTS版本。</span></p><p><span><strong>重要更新：AI智能问数能力全面升级</strong></span></p><p><span>DataEase v2.10.13 LTS版本重磅引入全新的开源智能问数系统SQLBot（<em>https://github.com/dataease/SQLBot</em>），完全替代DataEase原有的Copilot功能。SQLBot是基于大语言模型和RAG（Retrieval Augmented Generation，检索增强生成）的开源智能问数系统，帮助用户实现数据的即问即答，有效提升数据查询的智能化水平。</span></p><p><span>与同类产品相比，SQLBot的优势体现在以下方面：</span></p><p><span>■ </span>更快速：通过自然语言即可快速生成复杂的SQL查询；</p><p><span>■</span> 更精准：智能理解业务意图，大幅减少查询错误；</p><p><span>■</span> 更开放：基于开源架构，支持社区贡献和自定义扩展。</p><p><span>DataEase嵌入SQLBot后将全面升级用户的智能问数体验，辅助用户高效挖掘数据价值，让数据分析变得更加简单和直观。</span></p><p><img src="../images/blog/release-20250916/dataease-016-01.png" alt="1 架构-wiqu.png" loading="lazy" />▲图1 SQLBot智能问数工作原理</p><p><img src="../images/blog/release-20250916/dataease-016-02.png" alt="截屏2025-09-16 19.17.36.png" loading="lazy" />▲图2 DataEase嵌入SQLBot智能问数系统</p><p><span>DataEase v2.10.13 LTS版本的其他功能变动包括：</span><span><strong>查询组件</strong></span>方面，日期查询组件增加快捷选项；<span><strong>仪表板/数据大屏</strong></span>方面，通用配色增加斑马纹配色；<span><strong>系统设置</strong></span>方面，系统变量值支持设置别名。</p><p><span><strong>X-Pack增强包</strong></span>的功能变动包括：<span><strong>数据填报</strong></span>方面，内置数据源增加支持数据填报功能配置。</p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p><span>■</span> feature（系统参数）：支持SQLBot嵌入设置；</p><p><span>■</span> feature（仪表板、数据大屏）：通用配色增加斑马纹配色；</p><p><span>■</span> feature（查询组件）：日期查询组件增加快捷选项；</p><p><span>■</span> feature（系统设置）：系统变量值支持设置别名（#16713）；</p><p><span>■</span> feature（X-Pack，数据填报）：内置数据源增加支持数据填报功能配置。</p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p><span>■</span> refactor（图表）：优化移动端跳转问题；</p><p><span>■</span> refactor（数据大屏、仪表板）：资源发布时，清理无用数据（#16749）；</p><p><span>■</span> refactor（X-Pack，定时报告）：定时报告页面增加额外等待时间设置；</p><p><span>■</span> refactor（X-Pack，用户管理）：创建用户API接口返回数据增加用户ID（#16825）；</p><p><span>■</span> refactor（X-Pack，同步管理）：使用Quartz统一管理任务调度；</p><p><span>■ </span>refactor（X-Pack，同步管理）：对Elasticsearch数据源时间类型字段进行优化，默认映射为Doris的String类型；</p><p><span>■ </span>refactor（X-Pack，同步管理）：优化任务状态刷新机制；</p><p><span>■ </span>refactor（X-Pack，同步管理）：优化同步日志提示信息；</p><p><span>■ </span>refactor（X-Pack，同步管理）：优化同步配置参数传递逻辑；</p><p><span>■ </span>refactor：更新移动端样式。</p><h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2><p><span>■</span> fix（图表）：修复放大Tab中图表并执行导出图片操作后，轮播提示显示异常的问题；</p><p><span>■</span> fix（图表）：修复明细表合并单元格后，维度存在空值时导出失败的问题（#16777）；</p><p><span>■</span> fix（图表）：修复明细表基础样式勾选“自动换行”选项后，表头会出现部分信息不显示的问题（#16804）；</p><p><span>■</span> fix（图表）：修复明细表字段全都是维度时，导出的Excel文件中单元格合并失效的问题；</p><p><span>■</span> fix（图表）：修复水波图标签被裁剪的问题（#16798）；</p><p><span>■</span> fix（图表）：修复查询组件首选项会影响跳转条件的问题；</p><p><span>■</span> fix（图表）：修复透视表列维度为空时，带格式导出会失败的问题；</p><p><span>■</span> fix（图表）：开启轮播提示的图表启用缩略轴时，禁用轮播提示；</p><p><span>■</span> fix（图表）：修复透视表自定义汇总时，通过搜索添加字段会报错的问题；</p><p><span>■</span> fix（图表）：修复地图中福州与福清、平潭的连线出现多余连接线的问题（#16877）；</p><p><span>■</span> fix（图表）：字段自定义排序去除空值（#16307）；</p><p><span>■</span> fix（图表）：修复明细表隐藏列后，导出数据出现错乱的问题（#16785）；</p><p><span>■</span> fix（查询组件）：修复设置默认值和必填项，同时隐藏查询按钮时，输入任意值回车后均会重置为默认值的问题（#16750）；</p><p><span>■</span> fix（查询组件）：修复手动输入型选项值在查看时，默认值显示为未勾选状态的问题（#16709）；</p><p><span>■</span> fix（查询组件）：修复开启首选项时未关闭查询按钮，导致查询按钮失效的问题（#16894）；</p><p><span>■</span> fix（查询组件）：修复文本搜索需两次回车才能返回结果，首次触发显示“暂无数据”的问题；</p><p><span>■</span> fix（查询组件）：修复时间范围组件默认值提示“超出日期筛选范围”的问题（#16914）；</p><p><span>■</span> fix（查询组件）：修复行权限与过滤组件“首项”默认值同时使用时，会导致过滤功能失效的问题；</p><p><span>■</span> fix（仪表板）：修复手动输入型查询组件出现样式错位的问题；</p><p><span>■</span> fix（仪表板）：修复仪表板缩放模式切换为“按组件比例缩放”后，保存发布再次查看不生效问题（#16885）；</p><p><span>■ </span>fix（数据大屏）：修复Tab及内部组件的右键菜单定位偏移问题；</p><p><span>■ </span>fix（仪表板、数据大屏）：修复设置图表背景图时出现多余滚动条问题；</p><p><span>■</span> fix（数据源）：修复调整浏览器窗口大小时，Excel字段选择器的选中状态被隐藏的问题；</p><p><span>■</span> fix（数据源）：修复无数据源时点击“创建数据集”按钮，页面卡死且控制台报错的问题（#16831）；</p><p><span>■</span> fix（数据源）：修复飞书渠道查看更新记录提示异常的问题；</p><p><span>■</span> fix（数据源）：修复SQL Server数据过滤异常的问题；</p><p><span>■</span> fix（数据源）：修复Calcite转SQL Server时CONCAT函数异常的问题（#16860）；</p><p><span>■</span> fix（数据源）：修复SQL Server下拉树组件报错问题；</p><p><span>■</span> fix（数据集）：修复字段表达式引用新建计算参数失效的问题；</p><p><span>■</span> fix（数据集）：修复自定义SQL未保存直接关闭时缺少提示信息的问题；</p><p><span>■</span> fix（系统设置）：修复三方嵌入配置仅保存不验证时，错误触发应用状态变更的问题；</p><p><span>■</span> fix（系统设置）：修复弹窗层级显示异常的问题；</p><p><span>■</span> fix（X-Pack，同步管理）：修复SQL查询验证错误；</p><p><span>■</span> fix（X-Pack，同步管理）：修复SQL Server表名含@符号时任务创建失败的问题；</p><p><span>■ </span>fix（X-Pack，同步管理）：修复下次执行时间计算错乱问题；</p><p><span>■ </span>fix（X-Pack，同步管理）：修复数据源异常时同步日志丢失的问题；</p><p><span>■ </span>fix（X-Pack，同步管理）：修复SQL Server uniqueidentifier字段导致定时任务创建失败的问题；</p><p><span>■</span> fix（X-Pack，同步管理）：修复字段数量过多导致任务创建失败的问题；</p><p><span>■ </span>fix（X-Pack）：修复“权限配置”→“按用户配置”时，用户量过大导致页面卡顿的问题；</p><p><span>■ </span>fix（X-Pack）：修复移动仪表板后，后台缓存未即时刷新的问题；</p><p><span>■ </span>fix（X-Pack）：修复在“组织管理”模块中修改名称需刷新浏览器才能生效的问题（#16751）；</p><p><span>■</span> fix（漏洞）：修复DB2 LDAP存在的SSRF漏洞（CVE-2025-58045）；</p><p><span>■ </span>fix（漏洞）：修复Impala数据源JDBC攻击漏洞（CVE-2025-58046）；</p><p><span>■</span> fix（漏洞）：修复Redshift JDBC绕过漏洞（CVE-2025-58748）；</p><p><span>■</span> fix：修复模板市场地址提示错误（#16858）；</p><p><span>■</span> fix：统一数据大屏与仪表板事件触发规则，编辑状态下禁止触发；</p><p><span>■</span> fix：修复存储单位判断脚本中非GB单位的处理问题。</p>
+                    <p><span>2025年9月16日，人人可用的开源BI工具DataEase正式发布v2.10.13 LTS版本。</span></p>
+                    <p>
+                        <span><strong>重要更新：AI智能问数能力全面升级</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >DataEase v2.10.13 LTS版本重磅引入全新的开源智能问数系统SQLBot（<em>https://github.com/dataease/SQLBot</em>），完全替代DataEase原有的Copilot功能。SQLBot是基于大语言模型和RAG（Retrieval Augmented
+                            Generation，检索增强生成）的开源智能问数系统，帮助用户实现数据的即问即答，有效提升数据查询的智能化水平。</span
+                        >
+                    </p>
+                    <p><span>与同类产品相比，SQLBot的优势体现在以下方面：</span></p>
+                    <p><span>■ </span>更快速：通过自然语言即可快速生成复杂的SQL查询；</p>
+                    <p><span>■</span> 更精准：智能理解业务意图，大幅减少查询错误；</p>
+                    <p><span>■</span> 更开放：基于开源架构，支持社区贡献和自定义扩展。</p>
+                    <p><span>DataEase嵌入SQLBot后将全面升级用户的智能问数体验，辅助用户高效挖掘数据价值，让数据分析变得更加简单和直观。</span></p>
+                    <p><img src="../images/blog/release-20250916/dataease-016-01.png" alt="1 架构-wiqu.png" loading="lazy" />▲图1 SQLBot智能问数工作原理</p>
+                    <p><img src="../images/blog/release-20250916/dataease-016-02.png" alt="截屏2025-09-16 19.17.36.png" loading="lazy" />▲图2 DataEase嵌入SQLBot智能问数系统</p>
+                    <p>
+                        <span>DataEase v2.10.13 LTS版本的其他功能变动包括：</span><span><strong>查询组件</strong></span
+                        >方面，日期查询组件增加快捷选项；<span><strong>仪表板/数据大屏</strong></span
+                        >方面，通用配色增加斑马纹配色；<span><strong>系统设置</strong></span
+                        >方面，系统变量值支持设置别名。
+                    </p>
+                    <p>
+                        <span><strong>X-Pack增强包</strong></span
+                        >的功能变动包括：<span><strong>数据填报</strong></span
+                        >方面，内置数据源增加支持数据填报功能配置。
+                    </p>
+                    <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
+                    <p><span>■</span> feature（系统参数）：支持SQLBot嵌入设置；</p>
+                    <p><span>■</span> feature（仪表板、数据大屏）：通用配色增加斑马纹配色；</p>
+                    <p><span>■</span> feature（查询组件）：日期查询组件增加快捷选项；</p>
+                    <p><span>■</span> feature（系统设置）：系统变量值支持设置别名（#16713）；</p>
+                    <p><span>■</span> feature（X-Pack，数据填报）：内置数据源增加支持数据填报功能配置。</p>
+                    <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
+                    <p><span>■</span> refactor（图表）：优化移动端跳转问题；</p>
+                    <p><span>■</span> refactor（数据大屏、仪表板）：资源发布时，清理无用数据（#16749）；</p>
+                    <p><span>■</span> refactor（X-Pack，定时报告）：定时报告页面增加额外等待时间设置；</p>
+                    <p><span>■</span> refactor（X-Pack，用户管理）：创建用户API接口返回数据增加用户ID（#16825）；</p>
+                    <p><span>■</span> refactor（X-Pack，同步管理）：使用Quartz统一管理任务调度；</p>
+                    <p><span>■ </span>refactor（X-Pack，同步管理）：对Elasticsearch数据源时间类型字段进行优化，默认映射为Doris的String类型；</p>
+                    <p><span>■ </span>refactor（X-Pack，同步管理）：优化任务状态刷新机制；</p>
+                    <p><span>■ </span>refactor（X-Pack，同步管理）：优化同步日志提示信息；</p>
+                    <p><span>■ </span>refactor（X-Pack，同步管理）：优化同步配置参数传递逻辑；</p>
+                    <p><span>■ </span>refactor：更新移动端样式。</p>
+                    <h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2>
+                    <p><span>■</span> fix（图表）：修复放大Tab中图表并执行导出图片操作后，轮播提示显示异常的问题；</p>
+                    <p><span>■</span> fix（图表）：修复明细表合并单元格后，维度存在空值时导出失败的问题（#16777）；</p>
+                    <p><span>■</span> fix（图表）：修复明细表基础样式勾选“自动换行”选项后，表头会出现部分信息不显示的问题（#16804）；</p>
+                    <p><span>■</span> fix（图表）：修复明细表字段全都是维度时，导出的Excel文件中单元格合并失效的问题；</p>
+                    <p><span>■</span> fix（图表）：修复水波图标签被裁剪的问题（#16798）；</p>
+                    <p><span>■</span> fix（图表）：修复查询组件首选项会影响跳转条件的问题；</p>
+                    <p><span>■</span> fix（图表）：修复透视表列维度为空时，带格式导出会失败的问题；</p>
+                    <p><span>■</span> fix（图表）：开启轮播提示的图表启用缩略轴时，禁用轮播提示；</p>
+                    <p><span>■</span> fix（图表）：修复透视表自定义汇总时，通过搜索添加字段会报错的问题；</p>
+                    <p><span>■</span> fix（图表）：修复地图中福州与福清、平潭的连线出现多余连接线的问题（#16877）；</p>
+                    <p><span>■</span> fix（图表）：字段自定义排序去除空值（#16307）；</p>
+                    <p><span>■</span> fix（图表）：修复明细表隐藏列后，导出数据出现错乱的问题（#16785）；</p>
+                    <p><span>■</span> fix（查询组件）：修复设置默认值和必填项，同时隐藏查询按钮时，输入任意值回车后均会重置为默认值的问题（#16750）；</p>
+                    <p><span>■</span> fix（查询组件）：修复手动输入型选项值在查看时，默认值显示为未勾选状态的问题（#16709）；</p>
+                    <p><span>■</span> fix（查询组件）：修复开启首选项时未关闭查询按钮，导致查询按钮失效的问题（#16894）；</p>
+                    <p><span>■</span> fix（查询组件）：修复文本搜索需两次回车才能返回结果，首次触发显示“暂无数据”的问题；</p>
+                    <p><span>■</span> fix（查询组件）：修复时间范围组件默认值提示“超出日期筛选范围”的问题（#16914）；</p>
+                    <p><span>■</span> fix（查询组件）：修复行权限与过滤组件“首项”默认值同时使用时，会导致过滤功能失效的问题；</p>
+                    <p><span>■</span> fix（仪表板）：修复手动输入型查询组件出现样式错位的问题；</p>
+                    <p><span>■</span> fix（仪表板）：修复仪表板缩放模式切换为“按组件比例缩放”后，保存发布再次查看不生效问题（#16885）；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复Tab及内部组件的右键菜单定位偏移问题；</p>
+                    <p><span>■ </span>fix（仪表板、数据大屏）：修复设置图表背景图时出现多余滚动条问题；</p>
+                    <p><span>■</span> fix（数据源）：修复调整浏览器窗口大小时，Excel字段选择器的选中状态被隐藏的问题；</p>
+                    <p><span>■</span> fix（数据源）：修复无数据源时点击“创建数据集”按钮，页面卡死且控制台报错的问题（#16831）；</p>
+                    <p><span>■</span> fix（数据源）：修复飞书渠道查看更新记录提示异常的问题；</p>
+                    <p><span>■</span> fix（数据源）：修复SQL Server数据过滤异常的问题；</p>
+                    <p><span>■</span> fix（数据源）：修复Calcite转SQL Server时CONCAT函数异常的问题（#16860）；</p>
+                    <p><span>■</span> fix（数据源）：修复SQL Server下拉树组件报错问题；</p>
+                    <p><span>■</span> fix（数据集）：修复字段表达式引用新建计算参数失效的问题；</p>
+                    <p><span>■</span> fix（数据集）：修复自定义SQL未保存直接关闭时缺少提示信息的问题；</p>
+                    <p><span>■</span> fix（系统设置）：修复三方嵌入配置仅保存不验证时，错误触发应用状态变更的问题；</p>
+                    <p><span>■</span> fix（系统设置）：修复弹窗层级显示异常的问题；</p>
+                    <p><span>■</span> fix（X-Pack，同步管理）：修复SQL查询验证错误；</p>
+                    <p><span>■</span> fix（X-Pack，同步管理）：修复SQL Server表名含@符号时任务创建失败的问题；</p>
+                    <p><span>■ </span>fix（X-Pack，同步管理）：修复下次执行时间计算错乱问题；</p>
+                    <p><span>■ </span>fix（X-Pack，同步管理）：修复数据源异常时同步日志丢失的问题；</p>
+                    <p><span>■ </span>fix（X-Pack，同步管理）：修复SQL Server uniqueidentifier字段导致定时任务创建失败的问题；</p>
+                    <p><span>■</span> fix（X-Pack，同步管理）：修复字段数量过多导致任务创建失败的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复“权限配置”→“按用户配置”时，用户量过大导致页面卡顿的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复移动仪表板后，后台缓存未即时刷新的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复在“组织管理”模块中修改名称需刷新浏览器才能生效的问题（#16751）；</p>
+                    <p><span>■</span> fix（漏洞）：修复DB2 LDAP存在的SSRF漏洞（CVE-2025-58045）；</p>
+                    <p><span>■ </span>fix（漏洞）：修复Impala数据源JDBC攻击漏洞（CVE-2025-58046）；</p>
+                    <p><span>■</span> fix（漏洞）：修复Redshift JDBC绕过漏洞（CVE-2025-58748）；</p>
+                    <p><span>■</span> fix：修复模板市场地址提示错误（#16858）；</p>
+                    <p><span>■</span> fix：统一数据大屏与仪表板事件触发规则，编辑状态下禁止触发；</p>
+                    <p><span>■</span> fix：修复存储单位判断脚本中非GB单位的处理问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"AI智能问数能力全面升级，DataEase开源BI工具v2.10.13 LTS版本发布","item":"https://dataease.cn/blog/post-27cfdd40-022d-4de2-91ce-02bc144244d0.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AI智能问数能力全面升级，DataEase开源BI工具v2.10.13 LTS版本发布","description":"DataEase引入SQLBot开源智能问数系统。","url":"https://dataease.cn/blog/post-27cfdd40-022d-4de2-91ce-02bc144244d0.html","datePublished":"2025-09-16","dateModified":"2025-09-16","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "AI智能问数能力全面升级，DataEase开源BI工具v2.10.13 LTS版本发布", "item": "https://dataease.cn/blog/post-27cfdd40-022d-4de2-91ce-02bc144244d0.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "AI智能问数能力全面升级，DataEase开源BI工具v2.10.13 LTS版本发布",
+                "description": "DataEase引入SQLBot开源智能问数系统。",
+                "url": "https://dataease.cn/blog/post-27cfdd40-022d-4de2-91ce-02bc144244d0.html",
+                "datePublished": "2025-09-16",
+                "dateModified": "2025-09-16",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

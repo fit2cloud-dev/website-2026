@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,110 +220,180 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文为掘金博主cjwts的原创文章。</em></p>
-<p><em>原文链接：<a href="https://link.zhihu.com/?target=https%3A//juejin.cn/post/7102340727723524103/" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7102340727723524103/</a></em></p>
-<p>由于岗位需求和工作内容的要求，我需要对公司不同团队的销售额及它们的同环比等数据进行统计和分析。之前都是通过分组表和明细表的方法来进行统计，但这存在着一个问题：无法在一个表格中统计不同维度的数据，例如合同类型、签约时间、业务途径的单项合计金额等。这些内容只能在单一维度进行统计和展示，所以我一直在寻找一款符合我自己需求的数据可视化工具。</p>
-<p>DataEase这个开源项目，自它创立之初我就从GitHub上开始关注。前段时间，DataEase v1.8版本更新了支持视图组件使用透视表展示数据的功能，感觉这个功能能够很好地满足我的需求，于是马上动手尝试起来。</p>
-<p>透视表是由行维度、列维度以及数值区域组成的报表，可以展示多维度的统计场景。本次我将向大家演示如何在DataEase上制作透视表的图表。出于公司数据不方便公开的原因，我选择了中国2022年第一季度各地区住宅销售情况作为主题。这些数据可以从中国数据网上找到，看完后想尝试的朋友可以自行去该网站下载。</p>
+                    <p>
+                        <em>原文链接：<a href="https://link.zhihu.com/?target=https%3A//juejin.cn/post/7102340727723524103/" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7102340727723524103/</a></em>
+                    </p>
+                    <p>
+                        由于岗位需求和工作内容的要求，我需要对公司不同团队的销售额及它们的同环比等数据进行统计和分析。之前都是通过分组表和明细表的方法来进行统计，但这存在着一个问题：无法在一个表格中统计不同维度的数据，例如合同类型、签约时间、业务途径的单项合计金额等。这些内容只能在单一维度进行统计和展示，所以我一直在寻找一款符合我自己需求的数据可视化工具。
+                    </p>
+                    <p>DataEase这个开源项目，自它创立之初我就从GitHub上开始关注。前段时间，DataEase v1.8版本更新了支持视图组件使用透视表展示数据的功能，感觉这个功能能够很好地满足我的需求，于是马上动手尝试起来。</p>
+                    <p>
+                        透视表是由行维度、列维度以及数值区域组成的报表，可以展示多维度的统计场景。本次我将向大家演示如何在DataEase上制作透视表的图表。出于公司数据不方便公开的原因，我选择了中国2022年第一季度各地区住宅销售情况作为主题。这些数据可以从中国数据网上找到，看完后想尝试的朋友可以自行去该网站下载。
+                    </p>
 
+                    <h2>操作流程</h2>
+                    <p>第一步，建立新的数据集分组。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-01.png" alt="" loading="lazy" />
+                        <figcaption>图1 添加数据表分组</figcaption>
+                    </figure>
+                    <p><br />第二步，导入实验所用数据。DataEase支持多种数据源，可以将Excel文件直接导入至DataEase平台。</p>
+                    <figure><img src="../images/blog/tutorial-20220531/dataease-141-02.png" alt="" loading="lazy" /></figure>
+                    <p>第三步，整理数据。导入数据集后，可以在“字段管理”功能里修改字段类型，我在这里将“月份”字段的字段类型修改为“时间”类型。这样初始数据的准备就完成了。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-03.png" alt="" loading="lazy" />
+                        <figcaption>图3 修改字段类型</figcaption>
+                    </figure>
+                    <p>第四步，选择视图类型。进入“仪表板”界面，添加“视图”，指定需要用到的数据集并选择视图类型为“透视表”。目前DataEase暂时只有AntV视图包含透视表类型，ECharts暂不支持，在选择的时候请大家注意一下。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-04.png" alt="" loading="lazy" />
+                        <figcaption>图4 视图指定数据集</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-05.png" alt="" loading="lazy" />
+                        <figcaption>图5 选择图表类型</figcaption>
+                    </figure>
+                    <p>第五步，制作视图。将“地区”字段拖入数据行维度，“季度”和“月份”字段拖入数据列维度，这样透视表的行维度显示为“地区”，列维度一级显示为“季度”，二级显示为“月份”，其中“月份”还能够以年月的形式显示。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-06.png" alt="" loading="lazy" />
+                        <figcaption>图6 待分析区处理</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-07.png" alt="" loading="lazy" />
+                        <figcaption>图7 月份指标处理</figcaption>
+                    </figure>
+                    <p>然后将指标字段拖入到数据列指标，透视表的雏形就做好了。为了方便展示重要数据，DataEase还提供了丰富的过滤器。通过添加对应的过滤规则和过滤值，我在仪表板上留下了三大地区的数据，便于查看和展示。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-08.png" alt="" loading="lazy" />
+                        <figcaption>图8 添加过滤规则</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-09.png" alt="" loading="lazy" />
+                        <figcaption>图9 通过规则对字段进行过滤</figcaption>
+                    </figure>
+                    <p>第六步，完善视图。从图10中可以看到处理后的报表会自动算出行维度和列维度的总计值。接着将行总计的别名修改为“全国”，列总计的别名修改为“季度地区总计”，再将表头、表格修改为自己喜欢的配色，这样透视表就完成了。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-10.png" alt="" loading="lazy" />
+                        <figcaption>图10 修改合计行显示名</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-11.png" alt="" loading="lazy" />
+                        <figcaption>图11 处理后的报表</figcaption>
+                    </figure>
+                    <p>此外，DataEase还支持对指标列进行环比的快速计算。通过选择字段下的“快速计算”，选择“同比/环比”计算，设置“差值百分比”环比，就可以看到相应字段自动替换成了环比增长率的数值。</p>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-12.png" alt="" loading="lazy" />
+                        <figcaption>图12 选择快速计算方式</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-13.png" alt="" loading="lazy" />
+                        <figcaption>图13 同环比设置</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/blog/tutorial-20220531/dataease-141-14.png" alt="" loading="lazy" />
+                        <figcaption>图14 同环比数据展示</figcaption>
+                    </figure>
 
-<h2>操作流程</h2>
-<p>第一步，建立新的数据集分组。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-01.png" alt="" loading="lazy" /><figcaption>图1 添加数据表分组</figcaption></figure>
-<p><br />第二步，导入实验所用数据。DataEase支持多种数据源，可以将Excel文件直接导入至DataEase平台。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-02.png" alt="" loading="lazy" /></figure>
-<p>第三步，整理数据。导入数据集后，可以在“字段管理”功能里修改字段类型，我在这里将“月份”字段的字段类型修改为“时间”类型。这样初始数据的准备就完成了。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-03.png" alt="" loading="lazy" /><figcaption>图3 修改字段类型</figcaption></figure>
-<p>第四步，选择视图类型。进入“仪表板”界面，添加“视图”，指定需要用到的数据集并选择视图类型为“透视表”。目前DataEase暂时只有AntV视图包含透视表类型，ECharts暂不支持，在选择的时候请大家注意一下。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-04.png" alt="" loading="lazy" /><figcaption>图4 视图指定数据集</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-05.png" alt="" loading="lazy" /><figcaption>图5 选择图表类型</figcaption></figure>
-<p>第五步，制作视图。将“地区”字段拖入数据行维度，“季度”和“月份”字段拖入数据列维度，这样透视表的行维度显示为“地区”，列维度一级显示为“季度”，二级显示为“月份”，其中“月份”还能够以年月的形式显示。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-06.png" alt="" loading="lazy" /><figcaption>图6 待分析区处理</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-07.png" alt="" loading="lazy" /><figcaption>图7 月份指标处理</figcaption></figure>
-<p>然后将指标字段拖入到数据列指标，透视表的雏形就做好了。为了方便展示重要数据，DataEase还提供了丰富的过滤器。通过添加对应的过滤规则和过滤值，我在仪表板上留下了三大地区的数据，便于查看和展示。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-08.png" alt="" loading="lazy" /><figcaption>图8 添加过滤规则</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-09.png" alt="" loading="lazy" /><figcaption>图9 通过规则对字段进行过滤</figcaption></figure>
-<p>第六步，完善视图。从图10中可以看到处理后的报表会自动算出行维度和列维度的总计值。接着将行总计的别名修改为“全国”，列总计的别名修改为“季度地区总计”，再将表头、表格修改为自己喜欢的配色，这样透视表就完成了。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-10.png" alt="" loading="lazy" /><figcaption>图10 修改合计行显示名</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-11.png" alt="" loading="lazy" /><figcaption>图11 处理后的报表</figcaption></figure>
-<p>此外，DataEase还支持对指标列进行环比的快速计算。通过选择字段下的“快速计算”，选择“同比/环比”计算，设置“差值百分比”环比，就可以看到相应字段自动替换成了环比增长率的数值。</p>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-12.png" alt="" loading="lazy" /><figcaption>图12 选择快速计算方式</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-13.png" alt="" loading="lazy" /><figcaption>图13 同环比设置</figcaption></figure>
-<figure><img src="../images/blog/tutorial-20220531/dataease-141-14.png" alt="" loading="lazy" /><figcaption>图14 同环比数据展示</figcaption></figure>
-
-
-<h2>使用感受</h2>
-<p>整个透视表制作下来，我个人觉得DataEase开源数据可视化分析工具的体验很不错，非常适合做一些财务报表、工作年报/月报等。</p>
-<p>相比于其他一些我使用过的数据可视化工具，DataEase不需要额外安装Excel插件，使用方便，全程都是使用拖拉拽的方式制作图表，易用性方面可以说是数据可视化产品中的佼佼者，也算是完美体现了这个开源项目的口号——“人人可用”。</p>
-<p>不过，DataEase目前在数据集的处理能力方面仍有很大的提升空间。比如，指标不能进行二次计算，部分数据需要提前进行预处理，以及它的前端渲染能力也相对较弱。总的来说，DataEase是一款很容易上手且功能丰富的数据可视化工具，希望它能继续保持每月迭代的更新频率，不断完善功能，我也会对继续关注这个项目的发展。</p>
+                    <h2>使用感受</h2>
+                    <p>整个透视表制作下来，我个人觉得DataEase开源数据可视化分析工具的体验很不错，非常适合做一些财务报表、工作年报/月报等。</p>
+                    <p>相比于其他一些我使用过的数据可视化工具，DataEase不需要额外安装Excel插件，使用方便，全程都是使用拖拉拽的方式制作图表，易用性方面可以说是数据可视化产品中的佼佼者，也算是完美体现了这个开源项目的口号——“人人可用”。</p>
+                    <p>
+                        不过，DataEase目前在数据集的处理能力方面仍有很大的提升空间。比如，指标不能进行二次计算，部分数据需要提前进行预处理，以及它的前端渲染能力也相对较弱。总的来说，DataEase是一款很容易上手且功能丰富的数据可视化工具，希望它能继续保持每月迭代的更新频率，不断完善功能，我也会对继续关注这个项目的发展。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜快速上手DataEase透视表制作","item":"https://dataease.cn/blog/post-3532.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜快速上手DataEase透视表制作","description":"DataEase支持“透视表”视图，轻松完成各类报表。","url":"https://dataease.cn/blog/post-3532.html","datePublished":"2022-05-31","dateModified":"2022-05-31","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-125.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜快速上手DataEase透视表制作", "item": "https://dataease.cn/blog/post-3532.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜快速上手DataEase透视表制作",
+                "description": "DataEase支持“透视表”视图，轻松完成各类报表。",
+                "url": "https://dataease.cn/blog/post-3532.html",
+                "datePublished": "2022-05-31",
+                "dateModified": "2022-05-31",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-125.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

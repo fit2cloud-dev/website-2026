@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="JumpServer助力东风康明斯进行数字化转型。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/security-20221103/cover.jpg" />
         <meta name="twitter:image:alt" content="社区分享丨东风康明斯基于JumpServer构建统一运维安全审计平台 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"社区分享丨东风康明斯基于JumpServer构建统一运维安全审计平台","description":"JumpServer助力东风康明斯进行数字化转型。","datePublished":"2022-11-03T05:00:00+00:00","dateModified":"2022-11-03T05:00:00+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/security-20221103.html"},"image":["https://www.jumpserver.org/images/blog/security-20221103/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "社区分享丨东风康明斯基于JumpServer构建统一运维安全审计平台",
+                "description": "JumpServer助力东风康明斯进行数字化转型。",
+                "datePublished": "2022-11-03T05:00:00+00:00",
+                "dateModified": "2022-11-03T05:00:00+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/security-20221103.html" },
+                "image": ["https://www.jumpserver.org/images/blog/security-20221103/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -191,223 +219,236 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：在2022年8月20日举办的“2022 JumpServer开源堡垒机城市遇见·&nbsp;武汉站”活动中，东风康明斯资深信息安全工程师蔡阳分享了题为《JumpServer在东风康明斯的实践》的主题演讲。以下内容根据本次演讲整理而成。</em></p>
-<!-- /wp:paragraph -->
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>东风康明斯发动机有限公司（以下简称为东风康明斯）位于湖北省襄阳市，是湖北省代表性的制造业企业。该公司由东风汽车股份有限公司和美国康明斯公司各占50%的股权比例合资兴建，以柴油发动机制造为主要经营业务。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>东风康明斯发动机有限公司（以下简称为东风康明斯）位于湖北省襄阳市，是湖北省代表性的制造业企业。该公司由东风汽车股份有限公司和美国康明斯公司各占50%的股权比例合资兴建，以柴油发动机制造为主要经营业务。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4930,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image-01.jpg" alt="图片" loading="lazy" /><figcaption>东风康明斯资深信息安全工程师 蔡阳</figcaption></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4930,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large">
+                        <img src="../images/blog/security-20221103/image-01.jpg" alt="图片" loading="lazy" />
+                        <figcaption>东风康明斯资深信息安全工程师 蔡阳</figcaption>
+                    </figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>在工业4.0浪潮的影响之下，包括东风康明斯在内的制造业企业都开始进行数字化转型。“数字化”简而言之就是要打通各个系统，打破数据孤岛，实现各个系统的实时连接，最后建立统一的数据湖等应用体系。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在工业4.0浪潮的影响之下，包括东风康明斯在内的制造业企业都开始进行数字化转型。“数字化”简而言之就是要打通各个系统，打破数据孤岛，实现各个系统的实时连接，最后建立统一的数据湖等应用体系。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>“数字化”对IT资产的连接性要求非常高，特别是对于智能制造企业来说，很多工业设备都需要连接到网络中，这其中的信息安全隐患不容忽视，因此需要从管理、运维等多个方面进行考虑。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>“数字化”对IT资产的连接性要求非常高，特别是对于智能制造企业来说，很多工业设备都需要连接到网络中，这其中的信息安全隐患不容忽视，因此需要从管理、运维等多个方面进行考虑。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>资产管理的痛点</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>资产管理的痛点</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>对于东风康明斯来说，数字化转型的过程中对IT及工业设备的规范化管理和安全运维是一项非常重要的工作。而在实际的工作中，对IT资产和工业设备的统一运维一直存在着挑战，主要体现在以下几个方面：</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>对于东风康明斯来说，数字化转型的过程中对IT及工业设备的规范化管理和安全运维是一项非常重要的工作。而在实际的工作中，对IT资产和工业设备的统一运维一直存在着挑战，主要体现在以下几个方面：</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>1. 资产碎片化，运维工作量大</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>1. 资产碎片化，运维工作量大</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>东风康明斯目前拥有虚拟服务器有300多台，物理机50多台，还有一些工业设备分布在不同的车间，资产和基础设施的分布范围很广，这就导致了日常的审计和运维的工作量都非常大。如果这些工作交给不同的服务商去处理，一方面是工作比较分散不好控制，另一方面也存在着很大的安全隐患。因此，公司急需一个统一的资产管理和运维审计平台来处理这些繁杂的工作；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        东风康明斯目前拥有虚拟服务器有300多台，物理机50多台，还有一些工业设备分布在不同的车间，资产和基础设施的分布范围很广，这就导致了日常的审计和运维的工作量都非常大。如果这些工作交给不同的服务商去处理，一方面是工作比较分散不好控制，另一方面也存在着很大的安全隐患。因此，公司急需一个统一的资产管理和运维审计平台来处理这些繁杂的工作；
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>2. 监管难</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>2. 监管难</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>作为一家智能制造企业，东风康明斯需要与很多外部供应商进行对接，其中也有很多的外国厂商。在这种情况下，如果没有一个安全审计的平台，用户的访问和操作都会存在风险。如果没有严格的访问管控体系，非常容易发生数据丢失的情况，且无法对系统故障进行有效的追溯。因此，加强对信息系统安全性的监控是急需解决的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        作为一家智能制造企业，东风康明斯需要与很多外部供应商进行对接，其中也有很多的外国厂商。在这种情况下，如果没有一个安全审计的平台，用户的访问和操作都会存在风险。如果没有严格的访问管控体系，非常容易发生数据丢失的情况，且无法对系统故障进行有效的追溯。因此，加强对信息系统安全性的监控是急需解决的问题；
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>3. 需要专业的支持服务</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>3. 需要专业的支持服务</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>为了减少使用上的学习成本，以及更快速地排查问题，东风康明斯希望这个统一的运维安全管理平台能够提供专业化的日常支持服务，在使用过程中出现任何问题都可以及时向专业的技术人员咨询并得到解答。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>为了减少使用上的学习成本，以及更快速地排查问题，东风康明斯希望这个统一的运维安全管理平台能够提供专业化的日常支持服务，在使用过程中出现任何问题都可以及时向专业的技术人员咨询并得到解答。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>为什么选择JumpServer？</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>为什么选择JumpServer？</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>经过对市场上主流堡垒机的考察和实际测试，东风康明斯最终选择部署JumpServer堡垒机企业版。相比传统的堡垒机，JumpServer堡垒机所具有的优势包括：</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>经过对市场上主流堡垒机的考察和实际测试，东风康明斯最终选择部署JumpServer堡垒机企业版。相比传统的堡垒机，JumpServer堡垒机所具有的优势包括：</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>1. 开源</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>1. 开源</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>JumpServer是一款开源软件。开源软件在对接东风康明斯的OA系统（也就是工单系统）上具有很大的优势。在OA系统中用户发起权限审批之后，我们可以通过JumpServer在审批后给用户自动赋权，不需要运维人员进行重复性的操作。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>JumpServer是一款开源软件。开源软件在对接东风康明斯的OA系统（也就是工单系统）上具有很大的优势。在OA系统中用户发起权限审批之后，我们可以通过JumpServer在审批后给用户自动赋权，不需要运维人员进行重复性的操作。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>此外，JumpServer还是一款每月进行更新迭代的开源软件，在版本的更新过程中会增加很多我们需要的新功能，不断提升我们对堡垒机的使用体验；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>此外，JumpServer还是一款每月进行更新迭代的开源软件，在版本的更新过程中会增加很多我们需要的新功能，不断提升我们对堡垒机的使用体验；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>2. 安全</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>2. 安全</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在等保2.0规范的要求下，企业对网络安全保护的要求越来越严格。事实上，不管是运维安全审计，还是服务器的专业化管理，都对企业提出了更高的要求，“通过一个统一的平台管理多种类IT资产”已经成为一种必需。JumpServer满足4A规范，能够满足企业运维安全审计的实际要求；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        在等保2.0规范的要求下，企业对网络安全保护的要求越来越严格。事实上，不管是运维安全审计，还是服务器的专业化管理，都对企业提出了更高的要求，“通过一个统一的平台管理多种类IT资产”已经成为一种必需。JumpServer满足4A规范，能够满足企业运维安全审计的实际要求；
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>3. 易用</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>3. 易用</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>JumpServer这款堡垒机是非常容易上手的，其设计很符合中国用户的使用习惯。此外，JumpServer还提供了多元化的部署方式，并且可以同步管理云上的主机和本地虚拟化平台的主机，有效降低了管理多云资产的成本；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>JumpServer这款堡垒机是非常容易上手的，其设计很符合中国用户的使用习惯。此外，JumpServer还提供了多元化的部署方式，并且可以同步管理云上的主机和本地虚拟化平台的主机，有效降低了管理多云资产的成本；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>4. 专业服务支持</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>4. 专业服务支持</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>JumpServer企业版提供四大服务支持：一是提供专业培训，帮助我们系统地学习如何正确地使用JumpServer，避免走弯路；二是提供原厂服务，遇到的技术问题能够快速解决，减少问题排查和定位的时间；三是提供解决方案，针对于企业内部资产管理的需求提供专业的解决方案；四是快速响应，对于我们提出的问题和需求，都能够快速地给予反馈和解决。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        JumpServer企业版提供四大服务支持：一是提供专业培训，帮助我们系统地学习如何正确地使用JumpServer，避免走弯路；二是提供原厂服务，遇到的技术问题能够快速解决，减少问题排查和定位的时间；三是提供解决方案，针对于企业内部资产管理的需求提供专业的解决方案；四是快速响应，对于我们提出的问题和需求，都能够快速地给予反馈和解决。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>JumpServer在东风康明斯的应用场景</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>JumpServer在东风康明斯的应用场景</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><strong>1.&nbsp; 部署模式</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>1.&nbsp; 部署模式</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>目前，东风康明斯主要使用JumpServer来管理私有云资产，因此我们最终采用的是主备架构的部署方式，并将数据库MySQL和Redis进行了抽离部署，即MySQL采用主主同步，Redis采用主从同步。录像存储则对接到了NFS服务器之上。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>目前，东风康明斯主要使用JumpServer来管理私有云资产，因此我们最终采用的是主备架构的部署方式，并将数据库MySQL和Redis进行了抽离部署，即MySQL采用主主同步，Redis采用主从同步。录像存储则对接到了NFS服务器之上。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4931,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4931,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 东风康明斯JumpServer部署架构图</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 东风康明斯JumpServer部署架构图</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>2. 工单管理</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>2. 工单管理</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>外部供应商对公司资源的访问授权需要通过工单进行申请，登录和连接资产等操作都需要管理员进行审批。管理员审批通过后，JumpServer不需要再进行手动授权，可以自动给帐号分配相应的服务器资源以及相应的权限。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>外部供应商对公司资源的访问授权需要通过工单进行申请，登录和连接资产等操作都需要管理员进行审批。管理员审批通过后，JumpServer不需要再进行手动授权，可以自动给帐号分配相应的服务器资源以及相应的权限。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4932,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4932,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 工单申请</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 工单申请</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>3. 对接企业微信</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>3. 对接企业微信</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>JumpServer支持对接企业微信入口。管理员可以免密登录到JumpServer后台，不需要登录OA系统，在企业微信中就可以使用移动设备直接进行工单审批，大大减少了运维的工作量。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>JumpServer支持对接企业微信入口。管理员可以免密登录到JumpServer后台，不需要登录OA系统，在企业微信中就可以使用移动设备直接进行工单审批，大大减少了运维的工作量。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4933,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4933,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 企业微信工作台添加JumpServer入口</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 企业微信工作台添加JumpServer入口</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4934,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4934,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 在企业微信中即可进行工单审批</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 在企业微信中即可进行工单审批</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>4. 批量改密</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>4. 批量改密</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在使用JumpServer之前，我们修改密码需要各个系统的管理员进行手动操作。一方面工作量很大，另一方面密码设置的安全性也不高，经常出现使用弱口令的情况。JumpServer的批量改密功能帮助我们解决了这一问题。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在使用JumpServer之前，我们修改密码需要各个系统的管理员进行手动操作。一方面工作量很大，另一方面密码设置的安全性也不高，经常出现使用弱口令的情况。JumpServer的批量改密功能帮助我们解决了这一问题。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>使用JumpServer进行定期批量改密之后，密码设置满足等保合规的要求，还很好地解决了资产种类和数量过多带来的重复工作问题。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>使用JumpServer进行定期批量改密之后，密码设置满足等保合规的要求，还很好地解决了资产种类和数量过多带来的重复工作问题。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4935,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4935,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 批量改密计划</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 批量改密计划</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>5. 通过Syslog对接到日志系统</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>5. 通过Syslog对接到日志系统</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>基于JumpServer，东风康明斯通过Syslog对接到日志系统，实现了日志的统一管理。这样一来，我们的操作审计、高危命令、操作审计文件上传/下载等指令都可以得到记录。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>基于JumpServer，东风康明斯通过Syslog对接到日志系统，实现了日志的统一管理。这样一来，我们的操作审计、高危命令、操作审计文件上传/下载等指令都可以得到记录。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4936,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.jpg" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4936,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.jpg" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲&nbsp;通过Syslog对接到日志系统</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲&nbsp;通过Syslog对接到日志系统</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>6. 数据库代理直连审计</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>6. 数据库代理直连审计</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>对于公司的研发和DBA同事来说，他们更习惯使用客户端的形式进行数据库连接和操作。JumpServer的Magnus组件支持数据库代理直连审计，在完成数据库审计操作的同时，还保留了用户之前的操作习惯。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>对于公司的研发和DBA同事来说，他们更习惯使用客户端的形式进行数据库连接和操作。JumpServer的Magnus组件支持数据库代理直连审计，在完成数据库审计操作的同时，还保留了用户之前的操作习惯。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4937,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4937,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/security-20221103/image.png" alt="图片" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲&nbsp;数据库代理直连</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲&nbsp;数据库代理直连</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>总结</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>总结</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>对于东风康明斯来说，通过JumpServer堡垒机，我们实现了对服务器等资产的统一管理，实现了运维操作路径的唯一性，满足了我们内部对于安全运维的要求。权限控制方面，基于JumpServer的工单管理、登录控制、命令过滤等功能，有效实现了对外部供应商的权限控制，不必再担心赋权问题的错乱给IT运营带来负面影响。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        对于东风康明斯来说，通过JumpServer堡垒机，我们实现了对服务器等资产的统一管理，实现了运维操作路径的唯一性，满足了我们内部对于安全运维的要求。权限控制方面，基于JumpServer的工单管理、登录控制、命令过滤等功能，有效实现了对外部供应商的权限控制，不必再担心赋权问题的错乱给IT运营带来负面影响。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>此外，JumpServer还支持主备高可用的部署方式，提供了容灾备份能力，在面对突发情况时可以迅速启用备份系统，确保系统安全运维能力可持续。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>此外，JumpServer还支持主备高可用的部署方式，提供了容灾备份能力，在面对突发情况时可以迅速启用备份系统，确保系统安全运维能力可持续。</p>
+                    <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -464,10 +505,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -478,21 +519,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

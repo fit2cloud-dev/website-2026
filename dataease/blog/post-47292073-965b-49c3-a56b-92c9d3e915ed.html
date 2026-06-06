@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,175 @@
                     <img src="../images/blog/common/dataease-025.jpg" alt="仪表板展示 | X-lab开放实验室GitHub开源项目洞察大屏" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><strong>背景介绍</strong></h2><p>X-lab开放实验室是一个开源软件产业开放式创新的共同体，由来自国内外著名高校、创业公司、部分互联网与IT企业的专家学者与工程师所构成，目前已在包括开源治理标准制定、开源社区行为度量与分析、开源社区流程自动化、开源全域数据治理与洞察等方面做出了较有影响力的工作。</p><p>OpenLeaderBoard是X-lab开放实验室旗下的开源项目，它是一个全球开源领导力排行榜，基于一套科学、公正、透明的方法生成全球开源项目、开源企业、开源贡献者的排行榜单。OpenLeaderBoard对GitHub上的企业、项目以及开发者进行了活跃度和影响力的排名。</p><p>OpenDigger则是X-lab实验室主导的开源生态数据分析核心项目，负责与开源测量学相关的一切数据、指标、模型、算法等落库与实现。作为一个具有共识性的实施标准工具集，当前OpenDigger项目已经在木兰社区下面进行孵化与培养，并服务于包括木兰社区、开放原子基金会、互联网企业、COSS 企业、投资机构、媒体等不同的组织。</p><p>X-lab开放实验室需要对全球开源项目的相关数据指标进行多维度的展示，因此希望制作一个开源项目洞察大屏，在大屏中展示开源项目的不同指标，例如项目关注度、巴士系数、项目参与人数、Star/Fork总数、Star/Fork新增等指标，让关注项目的人可以了解整个开源项目的具体情况。</p><p>要在大屏上展示这么多的指标，就需要考虑数据怎么来？数据如何展示？什么样的项目适合OpenLeaderboard？基于这些问题，X-lab开放实验室开始进行项目选型，从数据展示、数据源接入、是否适合OpenLeaderboard、是否适合X-lab开放实验室等各个维度进行考察，希望要找到跟目标和要求相契合的数据可视化产品。</p><h2 id="%E5%A4%A7%E5%B1%8F%E4%BB%8B%E7%BB%8D"><strong>大屏介绍</strong></h2><p>GitHub开源项目洞察大屏基于DataEase（<a href="https://github.com/dataease/dataease）" target="_blank" rel="noopener noreferrer"><em>https://github.com/dataease/dataease</em>）</a> 实现OpenLeaderBoard开源项目各指标的分析展示，包含了被观察开源项目的影响力、关注度、活跃度、巴士系数（即累计达到项目50%贡献度的开发者数量）、项目参与人数、Star/Fork总数、Star/Fork新增等指标。</p><p>对于OpenLeaderBoard来说，对数据可视化分析工具的需求包括：首先，要能够直观地展示开源项目的质量、进展和问题等项目整体情况，帮助社区及时发现和解决问题；其次，是展现开源项目关注度和活跃度，以激励社区成员参与项目开发和维护，促进社区成员的参与和贡献；最后，呈现开源项目数据和指标监控，这样做可以提高项目的质量和透明度，促进项目的发展和推广。</p><p>以DataEase开源项目为例，其开源项目洞察大屏的效果如下图所示。</p><p><img src="../images/blog/chart-20230426/dataease-102-01.png" alt="图01-ubtw.png" loading="lazy" /></p><h2 id="%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9dataease%EF%BC%9F"><strong>为什么选择DataEase？</strong></h2><p>在进行BI产品选型时，X-lab开放实验室团队对比了多款开源工具，最终选择了DataEase开源数据可视化分析工具。X-lab开放实验室选择DataEase的原因包括：</p><p>1. DataEase是开源项目，<strong>所有人都可以贡献和使用</strong>，与X-lab开放实验室的使命、愿景、价值观相契合；</p><p>2. <strong>简单易用</strong>，DataEase不仅可以只需要一条命令就可以一键安装，而且可以通过拖拉拽的方式来设计图表；</p><p>3. 丰富的图表支持；</p><p>4. 多种数据源支持；</p><p>5. DataEase项目的整体活跃度非常高，而且<strong>每月持续迭代更新版本</strong>。</p><h2 id="%E8%90%BD%E5%9C%B0%E8%BF%87%E7%A8%8B"><strong>落地过程</strong></h2><p>基于上述的原因，X-lab开放实验室团队选择了DataEase。在使用部署的过程中，X-lab开放实验室团队也发现了一些大屏落地过程中需要解决的问题，但最终都通过和DataEase开源工具的配合得以解决。</p><p><strong>问题1：</strong>由OpenDigger提供的数据的数据格式是固定的，所以在对接DataEase时，发现基于这些数据格式无法进行有效的数据展示。</p><p><strong>解决方法1：</strong>经过团队多方讨论，决定写一个数据中转程序（即od-api）来解决这一问题。由数据中转程序来实现数据格式转换，获取开源项目的影响力、关注度、活跃度、巴士系数、项目参与人数等数据，并定时同步对应的数据，将数据存储到MySQL数据库中，再由DataEase进行数据源的接入，以及历史数据的同步。</p><p><strong>问题2：</strong>团队希望获取开源项目在GitHub代码托管平台的Star、Fork等总数，但OpenDigger中记录的数据为趋势数据，并未记录总数等数据，即使数据累加也不是实际的Star总数、Fork总数。</p><p><strong>解决方法2：</strong>团队通过调研接口后发现，GitHub开发的API中包含这些数据，通过调用API的接口，成功获取到这部分数据。</p><p><strong>问题3：</strong>在OpenLeaderBoard项目排行榜中，当存在多个项目时，如何在进入开源项目大屏后使得展示的数据都是对应项目的数据？</p><p><strong>解决方法3：</strong>在OpenLeaderBoard排行榜页面上增加一列图标，通过点击该列中的图标跳转至对应具体项目的开源洞察大屏。DataEase支持实时传入外部参数，只需要在跳转时，在公共链接部分对应上各自的项目名称，点击后大屏上即可展示对应的项目洞察数据。</p><h2 id="%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0"><strong>效果实现</strong></h2><p><strong>1. 实现方案</strong></p><p>相关数据由Opendigger和GitHub API提供，用数据转换程序od-api将数据整理落库到MySQL数据库中，并调整相对应的数据格式，最后将MySQL作为数据源接入到DataEase平台，用来进行数据分析和展示。</p><p><strong>底层数据来源：</strong>OpenDigger、GitHub API；</p><p><strong>数据转换程序：</strong>od_api；</p><p><strong>DataEase数据源接入：</strong>MySQL；</p><p><strong>数据展示：DataEase开源数据可视化分析平台</strong>。</p><p><img src="../images/blog/chart-20230426/dataease-102-02.png" alt="图02-uakk.png" loading="lazy" />▲ 附图 GitHub开源项目洞察大屏整体实现方案架构图</p><p><strong>2. 实现效果</strong></p><h2 id="%E6%9B%B4%E5%A4%9A%E5%90%88%E4%BD%9C"><strong>更多合作</strong></h2><p>除了GitHub开源项目洞察大屏，X-lab开放实验室基于DataEase还实现了GitHub 2022数字洞察报告（BI大屏版），内容包含对GitHub多角度的宏观分析和微观分析，从全域生态、地域生态、供应链生态、技术生态、商业生态、组织生态、社区生态和开发者自身等八大视角，全面展示了开源软件生态体系的发展状况。</p><p>《GitHub 2022数字洞察报告》包含了GitHub全球增长大屏、开源软件供应链生态大屏、开源技术领域与编程语言大屏、开源数据库领域洞察大屏、全球商业开源洞察大屏、木兰开源社区洞察大屏、开源项目社区洞察大屏（下图以dataease洞察大屏为例）和开发者个人贡献大屏，后续还计划将这些大屏集成至OpenLeaderBoard项目中并统一入口。</p><h2 id="%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF"><strong>赛事信息</strong></h2><p>近日，开放原子开源基金会发起了<a href="https://mp.weixin.qq.com/s?__biz=MzA5MTc0MzEzNQ==&amp;mid=2672498049&amp;idx=1&amp;sn=d6be2018eda904f1b4e9ad0c184671a0&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">“OpenDigger开源软件生态数据分析挖掘平台挑战赛（OpenSODA）”</a>。本项赛事正在火热进行中，比赛作品征集中W2类作品主题为“开源领域的可视化大屏”，DataEase为W2类作品案例的合作平台。该赛事初赛时间为5月6日，报名已经开始，欢迎大家使用DataEase开源数据可视化分析工具参加本项赛事。</p>
+                    <h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D"><strong>背景介绍</strong></h2>
+                    <p>
+                        X-lab开放实验室是一个开源软件产业开放式创新的共同体，由来自国内外著名高校、创业公司、部分互联网与IT企业的专家学者与工程师所构成，目前已在包括开源治理标准制定、开源社区行为度量与分析、开源社区流程自动化、开源全域数据治理与洞察等方面做出了较有影响力的工作。
+                    </p>
+                    <p>
+                        OpenLeaderBoard是X-lab开放实验室旗下的开源项目，它是一个全球开源领导力排行榜，基于一套科学、公正、透明的方法生成全球开源项目、开源企业、开源贡献者的排行榜单。OpenLeaderBoard对GitHub上的企业、项目以及开发者进行了活跃度和影响力的排名。
+                    </p>
+                    <p>
+                        OpenDigger则是X-lab实验室主导的开源生态数据分析核心项目，负责与开源测量学相关的一切数据、指标、模型、算法等落库与实现。作为一个具有共识性的实施标准工具集，当前OpenDigger项目已经在木兰社区下面进行孵化与培养，并服务于包括木兰社区、开放原子基金会、互联网企业、COSS
+                        企业、投资机构、媒体等不同的组织。
+                    </p>
+                    <p>
+                        X-lab开放实验室需要对全球开源项目的相关数据指标进行多维度的展示，因此希望制作一个开源项目洞察大屏，在大屏中展示开源项目的不同指标，例如项目关注度、巴士系数、项目参与人数、Star/Fork总数、Star/Fork新增等指标，让关注项目的人可以了解整个开源项目的具体情况。
+                    </p>
+                    <p>
+                        要在大屏上展示这么多的指标，就需要考虑数据怎么来？数据如何展示？什么样的项目适合OpenLeaderboard？基于这些问题，X-lab开放实验室开始进行项目选型，从数据展示、数据源接入、是否适合OpenLeaderboard、是否适合X-lab开放实验室等各个维度进行考察，希望要找到跟目标和要求相契合的数据可视化产品。
+                    </p>
+                    <h2 id="%E5%A4%A7%E5%B1%8F%E4%BB%8B%E7%BB%8D"><strong>大屏介绍</strong></h2>
+                    <p>
+                        GitHub开源项目洞察大屏基于DataEase（<a href="https://github.com/dataease/dataease）" target="_blank" rel="noopener noreferrer"><em>https://github.com/dataease/dataease</em>）</a>
+                        实现OpenLeaderBoard开源项目各指标的分析展示，包含了被观察开源项目的影响力、关注度、活跃度、巴士系数（即累计达到项目50%贡献度的开发者数量）、项目参与人数、Star/Fork总数、Star/Fork新增等指标。
+                    </p>
+                    <p>
+                        对于OpenLeaderBoard来说，对数据可视化分析工具的需求包括：首先，要能够直观地展示开源项目的质量、进展和问题等项目整体情况，帮助社区及时发现和解决问题；其次，是展现开源项目关注度和活跃度，以激励社区成员参与项目开发和维护，促进社区成员的参与和贡献；最后，呈现开源项目数据和指标监控，这样做可以提高项目的质量和透明度，促进项目的发展和推广。
+                    </p>
+                    <p>以DataEase开源项目为例，其开源项目洞察大屏的效果如下图所示。</p>
+                    <p><img src="../images/blog/chart-20230426/dataease-102-01.png" alt="图01-ubtw.png" loading="lazy" /></p>
+                    <h2 id="%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9dataease%EF%BC%9F"><strong>为什么选择DataEase？</strong></h2>
+                    <p>在进行BI产品选型时，X-lab开放实验室团队对比了多款开源工具，最终选择了DataEase开源数据可视化分析工具。X-lab开放实验室选择DataEase的原因包括：</p>
+                    <p>1. DataEase是开源项目，<strong>所有人都可以贡献和使用</strong>，与X-lab开放实验室的使命、愿景、价值观相契合；</p>
+                    <p>2. <strong>简单易用</strong>，DataEase不仅可以只需要一条命令就可以一键安装，而且可以通过拖拉拽的方式来设计图表；</p>
+                    <p>3. 丰富的图表支持；</p>
+                    <p>4. 多种数据源支持；</p>
+                    <p>5. DataEase项目的整体活跃度非常高，而且<strong>每月持续迭代更新版本</strong>。</p>
+                    <h2 id="%E8%90%BD%E5%9C%B0%E8%BF%87%E7%A8%8B"><strong>落地过程</strong></h2>
+                    <p>基于上述的原因，X-lab开放实验室团队选择了DataEase。在使用部署的过程中，X-lab开放实验室团队也发现了一些大屏落地过程中需要解决的问题，但最终都通过和DataEase开源工具的配合得以解决。</p>
+                    <p><strong>问题1：</strong>由OpenDigger提供的数据的数据格式是固定的，所以在对接DataEase时，发现基于这些数据格式无法进行有效的数据展示。</p>
+                    <p>
+                        <strong>解决方法1：</strong
+                        >经过团队多方讨论，决定写一个数据中转程序（即od-api）来解决这一问题。由数据中转程序来实现数据格式转换，获取开源项目的影响力、关注度、活跃度、巴士系数、项目参与人数等数据，并定时同步对应的数据，将数据存储到MySQL数据库中，再由DataEase进行数据源的接入，以及历史数据的同步。
+                    </p>
+                    <p><strong>问题2：</strong>团队希望获取开源项目在GitHub代码托管平台的Star、Fork等总数，但OpenDigger中记录的数据为趋势数据，并未记录总数等数据，即使数据累加也不是实际的Star总数、Fork总数。</p>
+                    <p><strong>解决方法2：</strong>团队通过调研接口后发现，GitHub开发的API中包含这些数据，通过调用API的接口，成功获取到这部分数据。</p>
+                    <p><strong>问题3：</strong>在OpenLeaderBoard项目排行榜中，当存在多个项目时，如何在进入开源项目大屏后使得展示的数据都是对应项目的数据？</p>
+                    <p>
+                        <strong>解决方法3：</strong
+                        >在OpenLeaderBoard排行榜页面上增加一列图标，通过点击该列中的图标跳转至对应具体项目的开源洞察大屏。DataEase支持实时传入外部参数，只需要在跳转时，在公共链接部分对应上各自的项目名称，点击后大屏上即可展示对应的项目洞察数据。
+                    </p>
+                    <h2 id="%E6%95%88%E6%9E%9C%E5%AE%9E%E7%8E%B0"><strong>效果实现</strong></h2>
+                    <p><strong>1. 实现方案</strong></p>
+                    <p>相关数据由Opendigger和GitHub API提供，用数据转换程序od-api将数据整理落库到MySQL数据库中，并调整相对应的数据格式，最后将MySQL作为数据源接入到DataEase平台，用来进行数据分析和展示。</p>
+                    <p><strong>底层数据来源：</strong>OpenDigger、GitHub API；</p>
+                    <p><strong>数据转换程序：</strong>od_api；</p>
+                    <p><strong>DataEase数据源接入：</strong>MySQL；</p>
+                    <p><strong>数据展示：DataEase开源数据可视化分析平台</strong>。</p>
+                    <p><img src="../images/blog/chart-20230426/dataease-102-02.png" alt="图02-uakk.png" loading="lazy" />▲ 附图 GitHub开源项目洞察大屏整体实现方案架构图</p>
+                    <p><strong>2. 实现效果</strong></p>
+                    <h2 id="%E6%9B%B4%E5%A4%9A%E5%90%88%E4%BD%9C"><strong>更多合作</strong></h2>
+                    <p>
+                        除了GitHub开源项目洞察大屏，X-lab开放实验室基于DataEase还实现了GitHub
+                        2022数字洞察报告（BI大屏版），内容包含对GitHub多角度的宏观分析和微观分析，从全域生态、地域生态、供应链生态、技术生态、商业生态、组织生态、社区生态和开发者自身等八大视角，全面展示了开源软件生态体系的发展状况。
+                    </p>
+                    <p>
+                        《GitHub
+                        2022数字洞察报告》包含了GitHub全球增长大屏、开源软件供应链生态大屏、开源技术领域与编程语言大屏、开源数据库领域洞察大屏、全球商业开源洞察大屏、木兰开源社区洞察大屏、开源项目社区洞察大屏（下图以dataease洞察大屏为例）和开发者个人贡献大屏，后续还计划将这些大屏集成至OpenLeaderBoard项目中并统一入口。
+                    </p>
+                    <h2 id="%E8%B5%9B%E4%BA%8B%E4%BF%A1%E6%81%AF"><strong>赛事信息</strong></h2>
+                    <p>
+                        近日，开放原子开源基金会发起了<a
+                            href="https://mp.weixin.qq.com/s?__biz=MzA5MTc0MzEzNQ==&amp;mid=2672498049&amp;idx=1&amp;sn=d6be2018eda904f1b4e9ad0c184671a0&amp;scene=21#wechat_redirect"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >“OpenDigger开源软件生态数据分析挖掘平台挑战赛（OpenSODA）”</a
+                        >。本项赛事正在火热进行中，比赛作品征集中W2类作品主题为“开源领域的可视化大屏”，DataEase为W2类作品案例的合作平台。该赛事初赛时间为5月6日，报名已经开始，欢迎大家使用DataEase开源数据可视化分析工具参加本项赛事。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示 | X-lab开放实验室GitHub开源项目洞察大屏","item":"https://dataease.cn/blog/post-47292073-965b-49c3-a56b-92c9d3e915ed.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示 | X-lab开放实验室GitHub开源项目洞察大屏","description":"开源项目强强联合，对GitHub开源项目进行多角度分析。","url":"https://dataease.cn/blog/post-47292073-965b-49c3-a56b-92c9d3e915ed.html","datePublished":"2023-04-26","dateModified":"2023-04-26","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-025.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示 | X-lab开放实验室GitHub开源项目洞察大屏", "item": "https://dataease.cn/blog/post-47292073-965b-49c3-a56b-92c9d3e915ed.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示 | X-lab开放实验室GitHub开源项目洞察大屏",
+                "description": "开源项目强强联合，对GitHub开源项目进行多角度分析。",
+                "url": "https://dataease.cn/blog/post-47292073-965b-49c3-a56b-92c9d3e915ed.html",
+                "datePublished": "2023-04-26",
+                "dateModified": "2023-04-26",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-025.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

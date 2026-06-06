@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,171 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜通过1Panel开源Linux面板快速安装DataEase" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析工具（<em>dataease.io</em>）的在线安装是通过在服务器命令行执行Linux命令来进行的。但是在实际的安装部署过程中，很多数据分析师或者业务人员经常会因为不熟悉Linux操作系统及命令行操作方式，在安装DataEase的过程中遇到一些障碍。</p><p>针对这种情况，用户可以选择通过1Panel开源Linux服务器运维管理面板（<em>1panel.cn</em>）来安装DataEase。DataEase和1Panel都是FIT2CLOUD飞致云旗下的开源项目，1Panel可以为DataEase的安装提供良好的支持，降低了用户在线安装过程的操作难度，简化了安装流程，让用户能够快速安装并使用DataEase。</p><h2 id="heading-1">安装步骤</h2><p><strong>1. 安装1Panel</strong></p><p>关于1Panel的安装部署与基础功能介绍，请参考1Panel官方文档（<em>https://1panel.cn/docs/installation/online_installation/</em>）。</p><p>在完成1Panel的安装部署，并对1Panel的基础功能有了一定了解后，将安装完成界面显示的入口网址复制到浏览器打开。进入网址后看到如下1Panel操作界面，则表示1Panel已经安装成功。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-01.png" alt="1 1Panel.png" loading="lazy" /><strong>2. 安装基础软件MySQL数据库</strong></p><p>在安装DataEase之前，我们需要先在1Panel上安装好DataEase运行所需的数据库软件MySQL。在1Panel的应用商店中选择“MySQL”应用，点击“安装”按钮，选择“5.7.xx”版本（注意：为与即将安装的DataEase适配，这里必须选择“5.7.xx”版本）。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-02.png" alt="2 MySQL.png" loading="lazy" /><img src="../images/blog/tutorial-20230823/dataease-089-03.png" alt="3 MySQL安装.png" loading="lazy" />接下来进行参数设置，设置完成后，点击“确认”按钮。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-04.png" alt="4 MySQL确认.png" loading="lazy" />在MySQL的安装界面中，各个待填入项目的含义如下：</p><p>■ 名称：创建MySQL应用的名称；</p><p>■ root用户密码：安装MySQL应用所属的root用户密码；</p><p>■ 端口：MySQL应用的服务端口；</p><p>■ 容器名称：MySQL应用对应的容器名称；</p><p>■ CPU限制：MySQL应用可以使用的CPU核心数；</p><p>■ 内存限制：MySQL应用可以使用的内存大小。</p><p>应用开始安装后，页面将自动跳转至已安装应用列表。等到刚才安装的MySQL应用状态转变为“已启动”状态，则MySQL数据库工具已成功安装在服务器中。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-05.png" alt="5 MySQL已启动.png" loading="lazy" /><strong>3. 安装DataEase</strong></p><p>确认MySQL数据库已经安装完成。进入1Panel应用商店的应用列表，选择其中的“DataEase”应用，点击“安装”按钮。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-06.png" alt="6 DE.png" loading="lazy" />点击“安装”按钮后进入“详情”页面，选择最新的DataEase版本进行安装。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-07.png" alt="7 DE安装.png" loading="lazy" />在DataEase的安装界面中，各待填入项目的含义如下：</p><p>■ 名称：要创建的DataEase应用的名称；</p><p>■ 数据库服务：DataEase应用使用的数据库应用，此选项支持下拉选择服务器中已安装的MySQL数据库应用，1Panel会自动配置DataEase使用该数据库；</p><p>■ 数据库名：DataEase应用使用的数据库名称，1Panel会在选中的MySQL数据库中自动创建这个DataEase数据库；</p><p>■ 数据库用户：DataEase应用使用的数据库用户名，1Panel会在选中的MySQL数据库中自动创建该用户，并添加对应的数据库授权；</p><p>■ 数据库用户密码：DataEase应用使用的数据库用户密码，1Panel会在选中的MySQL数据库中自动为上一步创建的用户配置该密码；</p><p>■ 管理员：DataEase应用初始化创建的超级管理员用户名；</p><p>■ 管理员密码：DataEase应用初始化创建的超级管理员密码（后续登录系统可以更改）；</p><p>■ 端口：DataEase应用的服务端口；</p><p>■ 容器名称：DataEase应用对应的容器名称；</p><p>■ CPU限制：DataEase应用可以使用的CPU核心数；</p><p>■ 内存限制：DataEase应用可以使用的内存大小；</p><p>■ 端口外部访问：开启此选项后，DataEase应用可以使用<em>IP:PORT</em>进行访问（注意：为保证DataEase应用正常运行，必须打开“端口外部访问”选项）。</p><p>应用开始安装后，页面将自动跳转到已安装应用列表。等到刚才安装的DataEase应用状态转变为“已启动”，则DataEase开源数据可视化分析工具已成功安装在服务器中。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-08.png" alt="8 DE已启动.png" loading="lazy" /><strong>4. 访问DataEase</strong></p><p>DataEase安装成功后，在浏览器导航栏中输入“IP地址:端口”进行访问，即可登录至安装好的DataEase。DataEase的初始默认账号、密码分别为“admin”和“dataease”。第一次登录DataEase后，系统会强制要求用户修改admin用户的密码。密码修改完成后，重新登录系统即可使用DataEase。</p><p><img src="../images/blog/tutorial-20230823/dataease-089-09.png" alt="9 访问DE.png" loading="lazy" /><img src="../images/blog/tutorial-20230823/dataease-089-10.png" alt="10 修改密码.png" loading="lazy" /><img src="../images/blog/tutorial-20230823/dataease-089-11.png" alt="11 DE首页.png" loading="lazy" /></p><h2 id="heading-2">安装过程中的常见问题</h2><p><strong>1. 使用1Panel安装的DataEase采用什么安装模式？</strong></p><p>通过1Panel安装的DataEase采用的是Simple安装模式。<strong>使用1Panel安装DataEase不建议更换安装模式</strong>，如果更换了安装模式，安装过程会额外产生一些复杂的步骤。</p><p>如果想搭建其他模式的DataEase，建议阅读DataEase在线文档（<em>https://dataease.io/docs/installation/offline_installation/</em>），使用安装包进行离线安装。</p><p><strong>2. 安装DataEase时Simple模式和Local模式的区别？</strong></p><p><strong>① 从系统功能上来看：</strong></p><p>■ Simple模式中没有定时同步功能，Excel数据集以及API数据集中的数据会被保存到MySQL数据库中；</p><p>■ Local模式具有定时同步功能，Excel数据集以及API数据集中的数据会被保存到Doris中。</p><p>除了是否具有定时同步功能以外，两种安装模式中DataEase的数据源、数据集和仪表板等功能都是完全一样的，<strong>用户无需担心通过Simple模式安装的DataEase在制作仪表板时会有基础功能的缺失</strong>。</p><p><strong>② 从系统架构上来看：</strong></p><p>通过Simple模式安装的DataEase，相对于在Local模式下安装的DataEase而言，缺少了Kettle和Doris两个组件。即Simple模式下安装的DataEase只有DataEase本身和MySQL数据库两个组件。</p><h2 id="heading-3">总结</h2><p>1Panel和DataEase都是比较好上手的开源工具，但是两者所属的领域不同。1Panel是一款开源的Linux服务器运维管理面板，DataEase则是一款开源数据可视化分析工具。两者结合使用，简化了用户在服务器运维与软件安装方面的操作难度。</p><p>安装完成后，DataEase的使用操作简便快捷，便于广大有数据可视化需求的用户快速上手，可以帮助数据分析师或者业务人员制作出清晰美观的仪表板大屏，洞察业务趋势。</p>
+                    <p>
+                        DataEase开源数据可视化分析工具（<em>dataease.io</em>）的在线安装是通过在服务器命令行执行Linux命令来进行的。但是在实际的安装部署过程中，很多数据分析师或者业务人员经常会因为不熟悉Linux操作系统及命令行操作方式，在安装DataEase的过程中遇到一些障碍。
+                    </p>
+                    <p>
+                        针对这种情况，用户可以选择通过1Panel开源Linux服务器运维管理面板（<em>1panel.cn</em>）来安装DataEase。DataEase和1Panel都是FIT2CLOUD飞致云旗下的开源项目，1Panel可以为DataEase的安装提供良好的支持，降低了用户在线安装过程的操作难度，简化了安装流程，让用户能够快速安装并使用DataEase。
+                    </p>
+                    <h2 id="heading-1">安装步骤</h2>
+                    <p><strong>1. 安装1Panel</strong></p>
+                    <p>关于1Panel的安装部署与基础功能介绍，请参考1Panel官方文档（<em>https://1panel.cn/docs/installation/online_installation/</em>）。</p>
+                    <p>在完成1Panel的安装部署，并对1Panel的基础功能有了一定了解后，将安装完成界面显示的入口网址复制到浏览器打开。进入网址后看到如下1Panel操作界面，则表示1Panel已经安装成功。</p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-01.png" alt="1 1Panel.png" loading="lazy" /><strong>2. 安装基础软件MySQL数据库</strong></p>
+                    <p>
+                        在安装DataEase之前，我们需要先在1Panel上安装好DataEase运行所需的数据库软件MySQL。在1Panel的应用商店中选择“MySQL”应用，点击“安装”按钮，选择“5.7.xx”版本（注意：为与即将安装的DataEase适配，这里必须选择“5.7.xx”版本）。
+                    </p>
+                    <p>
+                        <img src="../images/blog/tutorial-20230823/dataease-089-02.png" alt="2 MySQL.png" loading="lazy" /><img
+                            src="../images/blog/tutorial-20230823/dataease-089-03.png"
+                            alt="3 MySQL安装.png"
+                            loading="lazy"
+                        />接下来进行参数设置，设置完成后，点击“确认”按钮。
+                    </p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-04.png" alt="4 MySQL确认.png" loading="lazy" />在MySQL的安装界面中，各个待填入项目的含义如下：</p>
+                    <p>■ 名称：创建MySQL应用的名称；</p>
+                    <p>■ root用户密码：安装MySQL应用所属的root用户密码；</p>
+                    <p>■ 端口：MySQL应用的服务端口；</p>
+                    <p>■ 容器名称：MySQL应用对应的容器名称；</p>
+                    <p>■ CPU限制：MySQL应用可以使用的CPU核心数；</p>
+                    <p>■ 内存限制：MySQL应用可以使用的内存大小。</p>
+                    <p>应用开始安装后，页面将自动跳转至已安装应用列表。等到刚才安装的MySQL应用状态转变为“已启动”状态，则MySQL数据库工具已成功安装在服务器中。</p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-05.png" alt="5 MySQL已启动.png" loading="lazy" /><strong>3. 安装DataEase</strong></p>
+                    <p>确认MySQL数据库已经安装完成。进入1Panel应用商店的应用列表，选择其中的“DataEase”应用，点击“安装”按钮。</p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-06.png" alt="6 DE.png" loading="lazy" />点击“安装”按钮后进入“详情”页面，选择最新的DataEase版本进行安装。</p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-07.png" alt="7 DE安装.png" loading="lazy" />在DataEase的安装界面中，各待填入项目的含义如下：</p>
+                    <p>■ 名称：要创建的DataEase应用的名称；</p>
+                    <p>■ 数据库服务：DataEase应用使用的数据库应用，此选项支持下拉选择服务器中已安装的MySQL数据库应用，1Panel会自动配置DataEase使用该数据库；</p>
+                    <p>■ 数据库名：DataEase应用使用的数据库名称，1Panel会在选中的MySQL数据库中自动创建这个DataEase数据库；</p>
+                    <p>■ 数据库用户：DataEase应用使用的数据库用户名，1Panel会在选中的MySQL数据库中自动创建该用户，并添加对应的数据库授权；</p>
+                    <p>■ 数据库用户密码：DataEase应用使用的数据库用户密码，1Panel会在选中的MySQL数据库中自动为上一步创建的用户配置该密码；</p>
+                    <p>■ 管理员：DataEase应用初始化创建的超级管理员用户名；</p>
+                    <p>■ 管理员密码：DataEase应用初始化创建的超级管理员密码（后续登录系统可以更改）；</p>
+                    <p>■ 端口：DataEase应用的服务端口；</p>
+                    <p>■ 容器名称：DataEase应用对应的容器名称；</p>
+                    <p>■ CPU限制：DataEase应用可以使用的CPU核心数；</p>
+                    <p>■ 内存限制：DataEase应用可以使用的内存大小；</p>
+                    <p>■ 端口外部访问：开启此选项后，DataEase应用可以使用<em>IP:PORT</em>进行访问（注意：为保证DataEase应用正常运行，必须打开“端口外部访问”选项）。</p>
+                    <p>应用开始安装后，页面将自动跳转到已安装应用列表。等到刚才安装的DataEase应用状态转变为“已启动”，则DataEase开源数据可视化分析工具已成功安装在服务器中。</p>
+                    <p><img src="../images/blog/tutorial-20230823/dataease-089-08.png" alt="8 DE已启动.png" loading="lazy" /><strong>4. 访问DataEase</strong></p>
+                    <p>
+                        DataEase安装成功后，在浏览器导航栏中输入“IP地址:端口”进行访问，即可登录至安装好的DataEase。DataEase的初始默认账号、密码分别为“admin”和“dataease”。第一次登录DataEase后，系统会强制要求用户修改admin用户的密码。密码修改完成后，重新登录系统即可使用DataEase。
+                    </p>
+                    <p>
+                        <img src="../images/blog/tutorial-20230823/dataease-089-09.png" alt="9 访问DE.png" loading="lazy" /><img src="../images/blog/tutorial-20230823/dataease-089-10.png" alt="10 修改密码.png" loading="lazy" /><img
+                            src="../images/blog/tutorial-20230823/dataease-089-11.png"
+                            alt="11 DE首页.png"
+                            loading="lazy"
+                        />
+                    </p>
+                    <h2 id="heading-2">安装过程中的常见问题</h2>
+                    <p><strong>1. 使用1Panel安装的DataEase采用什么安装模式？</strong></p>
+                    <p>通过1Panel安装的DataEase采用的是Simple安装模式。<strong>使用1Panel安装DataEase不建议更换安装模式</strong>，如果更换了安装模式，安装过程会额外产生一些复杂的步骤。</p>
+                    <p>如果想搭建其他模式的DataEase，建议阅读DataEase在线文档（<em>https://dataease.io/docs/installation/offline_installation/</em>），使用安装包进行离线安装。</p>
+                    <p><strong>2. 安装DataEase时Simple模式和Local模式的区别？</strong></p>
+                    <p><strong>① 从系统功能上来看：</strong></p>
+                    <p>■ Simple模式中没有定时同步功能，Excel数据集以及API数据集中的数据会被保存到MySQL数据库中；</p>
+                    <p>■ Local模式具有定时同步功能，Excel数据集以及API数据集中的数据会被保存到Doris中。</p>
+                    <p>除了是否具有定时同步功能以外，两种安装模式中DataEase的数据源、数据集和仪表板等功能都是完全一样的，<strong>用户无需担心通过Simple模式安装的DataEase在制作仪表板时会有基础功能的缺失</strong>。</p>
+                    <p><strong>② 从系统架构上来看：</strong></p>
+                    <p>通过Simple模式安装的DataEase，相对于在Local模式下安装的DataEase而言，缺少了Kettle和Doris两个组件。即Simple模式下安装的DataEase只有DataEase本身和MySQL数据库两个组件。</p>
+                    <h2 id="heading-3">总结</h2>
+                    <p>1Panel和DataEase都是比较好上手的开源工具，但是两者所属的领域不同。1Panel是一款开源的Linux服务器运维管理面板，DataEase则是一款开源数据可视化分析工具。两者结合使用，简化了用户在服务器运维与软件安装方面的操作难度。</p>
+                    <p>安装完成后，DataEase的使用操作简便快捷，便于广大有数据可视化需求的用户快速上手，可以帮助数据分析师或者业务人员制作出清晰美观的仪表板大屏，洞察业务趋势。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜通过1Panel开源Linux面板快速安装DataEase","item":"https://dataease.cn/blog/post-a3726949-a129-44c3-8cba-2115762a4115.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜通过1Panel开源Linux面板快速安装DataEase","description":"通过1Panel快速安装DataEase，降低用户在线安装过程的操作难度，简化安装流程。","url":"https://dataease.cn/blog/post-a3726949-a129-44c3-8cba-2115762a4115.html","datePublished":"2023-08-23","dateModified":"2023-08-23","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜通过1Panel开源Linux面板快速安装DataEase", "item": "https://dataease.cn/blog/post-a3726949-a129-44c3-8cba-2115762a4115.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜通过1Panel开源Linux面板快速安装DataEase",
+                "description": "通过1Panel快速安装DataEase，降低用户在线安装过程的操作难度，简化安装流程。",
+                "url": "https://dataease.cn/blog/post-a3726949-a129-44c3-8cba-2115762a4115.html",
+                "datePublished": "2023-08-23",
+                "dateModified": "2023-08-23",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

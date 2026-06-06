@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,123 +220,152 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/release-20220509/dataease-145-01.png" alt="" loading="lazy" /></figure>
-<p>5月9日，DataEase开源数据可视化分析平台正式发布v1.10.0版本。</p>
-<p>在这一版本中，DataEase平台新增了对MaxCompute数据源的支持；仪表板方面，加入了辅助设计网格，同时增加了矩阵密度，让用户在制作仪表板的时候可以更精确、方便地对指定视图或组件进行相关放置；视图方面，优化了更换数据集时字段的自动匹配功能，让用户在更替同结构数据集时无需对视图再次进行编辑。对于所有视图中的指标，我们均加入了去重计数的支持。</p>
-<p>另外，新版DataEase对表格的一些功能做了增强，AntV表格支持设置数据格式，明细表支持下拉及翻页等模式；X-Pack增强功能方面，用户可以对首页及帮助文档进行自定义设置；安装部署方面，DataEase正式实现了对ARM64架构的支持。最后，我们还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <p>5月9日，DataEase开源数据可视化分析平台正式发布v1.10.0版本。</p>
+                    <p>
+                        在这一版本中，DataEase平台新增了对MaxCompute数据源的支持；仪表板方面，加入了辅助设计网格，同时增加了矩阵密度，让用户在制作仪表板的时候可以更精确、方便地对指定视图或组件进行相关放置；视图方面，优化了更换数据集时字段的自动匹配功能，让用户在更替同结构数据集时无需对视图再次进行编辑。对于所有视图中的指标，我们均加入了去重计数的支持。
+                    </p>
+                    <p>
+                        另外，新版DataEase对表格的一些功能做了增强，AntV表格支持设置数据格式，明细表支持下拉及翻页等模式；X-Pack增强功能方面，用户可以对首页及帮助文档进行自定义设置；安装部署方面，DataEase正式实现了对ARM64架构的支持。最后，我们还对其他一些常用的功能进行了功能优化和问题修复。
+                    </p>
 
+                    <h2>新增功能</h2>
+                    <p><strong>■ 新增MaxCompute数据源支持</strong></p>
+                    <p>
+                        MaxCompute（ODPS）是适用于数据分析场景的企业级SaaS（Software as a
+                        Service）模式云数据仓库，以Serverless架构提供快速、全托管的在线数据仓库服务，消除了传统数据平台在资源扩展性和弹性方面的限制，最小化用户运维投入，使您可以经济并高效地分析处理海量数据。
+                    </p>
+                    <p>在v1.10.0版本中，DataEase新增MaxCompute数据源，用户可以在DataEase中连接阿里云的MaxCompute服务，在DataEase平台上对MaxCompute数据进行展示和分析。</p>
+                    <figure><img src="../images/blog/release-20220509/dataease-145-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ AntV表格功能增强</strong></p>
+                    <p>数值格式化对于简洁明了地展示数据有着很大的帮助。例如通过千分符的设置，可以让金融从业人员快速地分辨出数额的大小；通过限定小数位数，可以统一所有数据显示格式等。</p>
+                    <p>DataEase在v1.10.0版本中优先对AntV表格新增了数值格式的支持，目前支持的格式选项有：数量单位、单位后缀、千分符、小数位数、百分比等。用户可以对需要添加格式的指标字段进行单独的格式设置。</p>
+                    <figure><img src="../images/blog/release-20220509/dataease-145-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 支持ARM64架构下的安装运行</strong></p>
+                    <p>在国产化的大背景之下，越来越多的用户将ARM架构的服务器作为了底层IT基础设施，社区用户也多次提出需要在ARM架构下运行DataEase的需求。</p>
+                    <p>从v1.10.0版本开始，DataEase正式增加了对ARM架构的支持，用户可以在“鲲鹏“及“飞腾”等ARM架构服务器上安装并运行DataEase开源数据可视化分析平台。</p>
+                    <p><strong>■ 自定义首页及帮助文档（X-Pack增强包内）</strong></p>
+                    <p>对于企业用户来说，相比于默认的DataEase标准化首页，更希望自己的企业员工在使用DataEase的时候看到自己按需预置的首页。同样的，每个企业也会有从自身实际情况出发编写定制化帮助文档的需求。</p>
+                    <p>为了满足上述需求，DataEase从v1.10.0版本开始，在X-Pack增强包中新增了首页链接及帮助文档链接的自定义设置支持，企业用户可以对相关内容进行个性化设置。</p>
+                    <figure><img src="../images/blog/release-20220509/dataease-145-04.png" alt="" loading="lazy" /></figure>
+                    <p>除了上述提到的新增功能外，DataEase v1.10.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
-<h2>新增功能</h2>
-<p><strong>■ 新增MaxCompute数据源支持</strong></p>
-<p>MaxCompute（ODPS）是适用于数据分析场景的企业级SaaS（Software as a Service）模式云数据仓库，以Serverless架构提供快速、全托管的在线数据仓库服务，消除了传统数据平台在资源扩展性和弹性方面的限制，最小化用户运维投入，使您可以经济并高效地分析处理海量数据。</p>
-<p>在v1.10.0版本中，DataEase新增MaxCompute数据源，用户可以在DataEase中连接阿里云的MaxCompute服务，在DataEase平台上对MaxCompute数据进行展示和分析。</p>
-<figure><img src="../images/blog/release-20220509/dataease-145-02.png" alt="" loading="lazy" /></figure>
-<p><strong>■ AntV表格功能增强</strong></p>
-<p>数值格式化对于简洁明了地展示数据有着很大的帮助。例如通过千分符的设置，可以让金融从业人员快速地分辨出数额的大小；通过限定小数位数，可以统一所有数据显示格式等。</p>
-<p>DataEase在v1.10.0版本中优先对AntV表格新增了数值格式的支持，目前支持的格式选项有：数量单位、单位后缀、千分符、小数位数、百分比等。用户可以对需要添加格式的指标字段进行单独的格式设置。</p>
-<figure><img src="../images/blog/release-20220509/dataease-145-03.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 支持ARM64架构下的安装运行</strong></p>
-<p>在国产化的大背景之下，越来越多的用户将ARM架构的服务器作为了底层IT基础设施，社区用户也多次提出需要在ARM架构下运行DataEase的需求。</p>
-<p>从v1.10.0版本开始，DataEase正式增加了对ARM架构的支持，用户可以在“鲲鹏“及“飞腾”等ARM架构服务器上安装并运行DataEase开源数据可视化分析平台。</p>
-<p><strong>■ 自定义首页及帮助文档（X-Pack增强包内）</strong></p>
-<p>对于企业用户来说，相比于默认的DataEase标准化首页，更希望自己的企业员工在使用DataEase的时候看到自己按需预置的首页。同样的，每个企业也会有从自身实际情况出发编写定制化帮助文档的需求。</p>
-<p>为了满足上述需求，DataEase从v1.10.0版本开始，在X-Pack增强包中新增了首页链接及帮助文档链接的自定义设置支持，企业用户可以对相关内容进行个性化设置。</p>
-<figure><img src="../images/blog/release-20220509/dataease-145-04.png" alt="" loading="lazy" /></figure>
-<p>除了上述提到的新增功能外，DataEase v1.10.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h2>功能优化</h2>
+                    <p>■ refactor（视图）：优化后文本卡仅支持一个维度；</p>
+                    <p>■ refactor（视图）：视图明细导出优化；</p>
+                    <p>■ refactor（视图）：优化后视图联动不清除历史联动条件；</p>
+                    <p>■ refactor（仪表板）：仪表板外部参数设置和视图跳转设置中，添加或选中参数时自动启用相应功能；</p>
+                    <p>■ refactor（仪表板）：复用模板悬浮显示全称；</p>
+                    <p>■ refactor（仪表板）：仪表板模板导出支持同时导出服务器静态图片；</p>
+                    <p>■ refactor（仪表板）：避免事件冲突，仪表板全屏预览状态不显示流媒体控制条；</p>
+                    <p>■ refactor（仪表板）：优化流媒体，关闭IO隐藏缓冲区等；</p>
+                    <p>■ refactor：升级Apache Doris版本 （v0.15→v1.0.0）；</p>
+                    <p>■ refactor：优化后用户修改密码后强制退出。</p>
 
-
-<h2>功能优化</h2>
-<p>■ refactor（视图）：优化后文本卡仅支持一个维度；</p>
-<p>■ refactor（视图）：视图明细导出优化；</p>
-<p>■ refactor（视图）：优化后视图联动不清除历史联动条件；</p>
-<p>■ refactor（仪表板）：仪表板外部参数设置和视图跳转设置中，添加或选中参数时自动启用相应功能；</p>
-<p>■ refactor（仪表板）：复用模板悬浮显示全称；</p>
-<p>■ refactor（仪表板）：仪表板模板导出支持同时导出服务器静态图片；</p>
-<p>■ refactor（仪表板）：避免事件冲突，仪表板全屏预览状态不显示流媒体控制条；</p>
-<p>■ refactor（仪表板）：优化流媒体，关闭IO隐藏缓冲区等；</p>
-<p>■ refactor：升级Apache Doris版本 （v0.15→v1.0.0）；</p>
-<p>■ refactor：优化后用户修改密码后强制退出。</p>
-
-
-<h2>Bug修复</h2>
-<p>■ fix：修复精简模式添加Excel数据集时最多只能添加100条的问题 （#2141）；</p>
-<p>■ fix：修复Excel数据集在单元格中包含特殊符号或空值时会报错的问题（#2138）；</p>
-<p>■ fix：删除数据表中重复的索引（#1864）；</p>
-<p>■ fix：修复同时同步多个数据集时会出现部分数据集数据为空的情况（#2159）；</p>
-<p>■ fix：在任务管理模块中设置定时报告，用户只能看到自己定制的定时报告。（#2065）；</p>
-<p>■ fix：管理员可以对所有定时报告进行删除操作（#2064）；</p>
-<p>■ fix：修复文本过滤组件中的搜索框搜到的字段，某些情况下拖拽后显示值不正确的问题（#2037）；</p>
-<p>■ fix：修复了定时任务创建全量任务，执行完成后修改为增量，发现增量不生效的问题；</p>
-<p>■ fix：修复移动端设计时，等待区可能出现空白的问题；</p>
-<p>■ fix：修复移动端使用域名访问报错的问题。</p>
+                    <h2>Bug修复</h2>
+                    <p>■ fix：修复精简模式添加Excel数据集时最多只能添加100条的问题 （#2141）；</p>
+                    <p>■ fix：修复Excel数据集在单元格中包含特殊符号或空值时会报错的问题（#2138）；</p>
+                    <p>■ fix：删除数据表中重复的索引（#1864）；</p>
+                    <p>■ fix：修复同时同步多个数据集时会出现部分数据集数据为空的情况（#2159）；</p>
+                    <p>■ fix：在任务管理模块中设置定时报告，用户只能看到自己定制的定时报告。（#2065）；</p>
+                    <p>■ fix：管理员可以对所有定时报告进行删除操作（#2064）；</p>
+                    <p>■ fix：修复文本过滤组件中的搜索框搜到的字段，某些情况下拖拽后显示值不正确的问题（#2037）；</p>
+                    <p>■ fix：修复了定时任务创建全量任务，执行完成后修改为增量，发现增量不生效的问题；</p>
+                    <p>■ fix：修复移动端设计时，等待区可能出现空白的问题；</p>
+                    <p>■ fix：修复移动端使用域名访问报错的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"支持MaxCompute，DataEase开源数据可视化分析平台v1.10.0发布","item":"https://dataease.cn/blog/post-3495.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"支持MaxCompute，DataEase开源数据可视化分析平台v1.10.0发布","description":"仪表板加入了辅助设计网格，AntV表格功能增强。","url":"https://dataease.cn/blog/post-3495.html","datePublished":"2022-05-09","dateModified":"2022-05-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-114.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "支持MaxCompute，DataEase开源数据可视化分析平台v1.10.0发布", "item": "https://dataease.cn/blog/post-3495.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "支持MaxCompute，DataEase开源数据可视化分析平台v1.10.0发布",
+                "description": "仪表板加入了辅助设计网格，AntV表格功能增强。",
+                "url": "https://dataease.cn/blog/post-3495.html",
+                "datePublished": "2022-05-09",
+                "dateModified": "2022-05-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-114.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

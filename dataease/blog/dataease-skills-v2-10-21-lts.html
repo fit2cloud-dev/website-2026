@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,186 @@
                     <img src="../images/blog/common/dataease-003.png" alt="DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>2026年4月16日，人人可用的开源BI工具DataEase正式发布v2.10.21 LTS版本。</p><p>在这一版本中，DataEase推出了Skills技能体系，并进行了安全漏洞修复。<strong>智能体</strong>方面，引入DataEase Skills技能体系；<strong>图表</strong>方面，新增多维散点图支持，支持明细表分页字体大小配置；<strong>仪表板/数据大屏</strong>方面，新增默认标签字体颜色设置功能；<strong>移动端</strong>方面，新增移动端改密和骨架屏显示功能。</p><p><strong>X-Pack增强包</strong>方面，DataEase权限配置中新增“手机号”字段系统变量，新增支持数据填报功能的SQL Server数据源插件，定时报告功能新增钉钉群推送渠道，优化了Playwright默认时区设置，提升定时报告的准确性和可用性。</p><h2 id="%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D">安全漏洞修复</h2><p>DataEase v2.10.21 LTS版本修复了SQL注入漏洞（CVE-2026-33082、CVE-2026-33083、CVE-2026-33084、CVE-2026-33121、CVE-2026-33122和CVE-2026-33207）、任意文件读取漏洞、远程代码执行漏洞、认证伪造绕过漏洞等多项安全漏洞，进一步提升系统整体安全性。</p><p>感谢社区用户@PineBlizz发现并向DataEase开源社区反馈上述漏洞。</p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p><strong>■ DataEase Skills技能体系全新上线</strong></p><p>DataEase v2.10.21版本新增了DataEase Skills技能，这是一个全新的AI能力扩展体系，能够为用户的数据分析工作提供丰富的预构建技能模板和自定义技能开发能力。用户可以通过DataEase Skills技能体系快速集成各种业务场景的智能化分析功能，显著降低ChatBI应用开发门槛，提升数据分析的智能化水平。DataEase Skills技能详细可参见GitHub仓库（https://github.com/dataease/DataEase-skills）。</p><figure><img src="../images/blog/skills-20260420/dataease-003-01.png" alt="▲图1 DataEase Skills使用效果图.png" loading="lazy" /></figure><p>▲图1 DataEase Skills使用效果示意</p><p><strong>■ 图表新增支持多维散点图</strong></p><p>DataEase v2.10.21版本新增多维散点图支持，能够更直观地展现多维度数据之间的复杂关系，丰富了数据可视化的表达方式。同时，DataEase新增仪表板/数据大屏默认标签字体颜色设置功能，支持明细表分页字体大小配置，让用户能够更精细化地定制图表外观，提升报表的专业性和可读性。</p><figure><img src="../images/blog/skills-20260420/dataease-003-02.png" alt="▲图2 DataEase新增支持多维散点图.png" loading="lazy" /></figure><p>▲图2 DataEase新增支持多维散点图</p><p><strong>■ 移动端体验显著提升</strong></p><p>在DataEase v2.10.21版本中，移动端新增改密功能，用户可以直接在移动设备上修改账户密码，提升了账号管理的安全性和便利性。同时新增骨架屏显示功能，有效改善了页面加载过程中的用户体验，让应用交互更加流畅自然。</p><figure><img src="../images/blog/skills-20260420/dataease-003-03.png" alt="▲图3 DataEase移动端改密操作页面.png" loading="lazy" /></figure><p>▲图3 DataEase移动端改密操作页面</p><p><strong>■ X-Pack增强包：权限管控、数据填报、定时报告功能优化</strong></p><p>在DataEase v2.10.21版本中，X-Pack增强包在权限配置中新增“手机号”字段系统变量，支持基于用户手机号进行数据权限的匹配与控制，进一步丰富了权限管控维度。</p><p>另外，DataEase新增支持数据填报功能的SQL Server数据源插件，扩展了数据源的兼容性。定时报告功能新增钉钉群推送渠道，丰富了消息通知方式，同时优化了Playwright默认时区设置，提升了定时报告的准确性和可用性。</p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p>■ refactor（仪表板、数据大屏）：升级流媒体播放器插件，新增支持H.265编码；</p><p>■ refactor：优化组件嵌入自动适配缩放功能；</p><p>■ refactor：优化Tab排序标题双击修改名称功能；</p><p>■ refactor：优化图表表头样式；</p><p>■ refactor（X-Pack）：优化第三方认证平台表单校验机制；</p><p>■ refactor（X-Pack）：优化嵌入式Token黑名单清理机制；</p><p>■ refactor（X-Pack）：优化定时报告的条件配置样式；</p><p>■ refactor（X-Pack）：优化定时报告消息渠道相互阻塞的问题；</p><p>■ refactor（X-Pack）：优化定时报告视图显示效果。</p><h2 id="%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D">问题修复</h2><p>■ fix（图表）：修复明细表导出时因包含隐藏字段，导致指标格式化错误的问题（#17737）；</p><p>■ fix（图表）：修复分组堆叠柱状图的子维度或堆叠项为空时，图表渲染异常的问题；</p><p>■ fix（图表）：修复汇总表同环比和占比计算同时开启时，占比计算错误的问题（#17995）；</p><p>■ fix（图表）：修复明细表隐藏字段后导出失败的问题；</p><p>■ fix（图表）：修复从支持下钻的图表下钻后切换到不支持下钻图表时，下钻路径及字段不清空的问题；</p><p>■ fix（图表）：修复查询条件值存在单引号时，无法匹配数据的问题；</p><p>■ fix（图表）：修复表格总计行标签复制错误的问题；</p><p>■ fix（图表）：修复气泡地图轮播时，鼠标悬浮提示没有消失的问题；</p><p>■ fix（图表）：修复鼠标悬浮在图表上时，轮播提示不会暂停的问题；</p><p>■ fix（图表）：修复图表提示配置自定义显示指标字段时，非数值类型图表出现报错的问题；</p><p>■ fix（图表）：修复Edge浏览器中公共链接图表带轮播功能时，全屏预览放大后又退出全屏，轮播提示显示位置不正确的问题；</p><p>■ fix（图表）：修复折线图子维度为日期格式时，图例显示和提示不一致的问题；</p><p>■ fix（图表）：修复子弹图调整图例图标时，区间背景配置会被还原的问题；</p><p>■ fix（图表）：修复子弹图横轴标签长度限制失效的问题；</p><p>■ fix（图表）：修复子弹图区间背景禁用区间背景提示字段后，提示依然可以显示的问题；</p><p>■ fix（图表）：修复子弹图区间背景设置固定值后，调整图例大小导致图例显示形状变化的问题；</p><p>■ fix（图表）：优化子弹图图例配置中图标配置选择器的长度；</p><p>■ fix（图表）：修复明细表在开启总计状态下导出Excel时，总计没有导出的问题（#18114）；</p><p>■ fix（地图）：修复数据大屏中默认图表尺寸无法显示世界地图边界的问题；</p><p>■ fix（数据大屏）：修复大屏导出为模板，再应用这个模板新建大屏时，图表标题显示不全的问题；</p><p>■ fix（数据大屏）：修复指标卡条件样式背景颜色样式不正确的问题；</p><p>■ fix（数据大屏）：修复Tab组件三个标识颜色不统一的问题；</p><p>■ fix（数据集）：修复过滤器筛选包含逗号的固定值时，被错误解析为多个值导致筛选失效的问题（#18082）；</p><p>■ fix（仪表板、数据大屏）：修复配置了查询条件后未进行查询，但放大图表时过滤条件已生效的问题（#18089）；</p><p>■ fix（仪表板、数据大屏）：修复图表刷新后，使用下拉树组件勾选选项，但不点击查询，图表依然会发生过滤的问题；</p><p>■ fix（仪表板、数据大屏）：修复仪表板预览界面中，跳转弹窗按钮高度较低时，无法显示完整的问题；</p><p>■ fix（仪表板、数据大屏）：修复应用跳转链接带字段时会提示“[undefined]”的问题；</p><p>■ fix（仪表板、数据大屏）：修复批量配置Tab组件边框不生效的问题；</p><p>■ fix（仪表板、数据大屏）：修复编辑状态下有查询组件的图表，在删除查询组件后，图表仍持过滤状态的问题；</p><p>■ fix（仪表板、数据大屏）：修复组合组件的嵌入式缩放问题；</p><p>■ fix（仪表板、数据大屏）：修复跳转联动小菜单可能被上方组件遮挡的问题；</p><p>■ fix（仪表板）：修复移动端跳转问题；</p><p>■ fix（数据源）：修复Oracle CONCAT Function出现的问题（#18208）；</p><p>■ fix（数据源）：修复远程Excel数据源对接大屏应用模板时匹配本地Excel数据源报错的问题（#18102）；</p><p>■ fix：修复移动端配置过滤组件查询条件部分样式不生效的问题（#18103）；</p><p>■ fix（X-Pack）：修复组织管理中心导航栏内容显示不全的问题；</p><p>■ fix（X-Pack）：修复查询角色接口参数keyword失效的问题（#18001）；</p><p>■ fix（X-Pack）：修复定时报告选择导出图表双线组合图会缺失对应图标的问题；</p><p>■ fix（X-Pack）：修复阈值告警条件判断为空时没有提示内容的问题。</p>
+                    <p>2026年4月16日，人人可用的开源BI工具DataEase正式发布v2.10.21 LTS版本。</p>
+                    <p>
+                        在这一版本中，DataEase推出了Skills技能体系，并进行了安全漏洞修复。<strong>智能体</strong>方面，引入DataEase
+                        Skills技能体系；<strong>图表</strong>方面，新增多维散点图支持，支持明细表分页字体大小配置；<strong>仪表板/数据大屏</strong>方面，新增默认标签字体颜色设置功能；<strong>移动端</strong>方面，新增移动端改密和骨架屏显示功能。
+                    </p>
+                    <p>
+                        <strong>X-Pack增强包</strong>方面，DataEase权限配置中新增“手机号”字段系统变量，新增支持数据填报功能的SQL Server数据源插件，定时报告功能新增钉钉群推送渠道，优化了Playwright默认时区设置，提升定时报告的准确性和可用性。
+                    </p>
+                    <h2 id="%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E%E4%BF%AE%E5%A4%8D">安全漏洞修复</h2>
+                    <p>
+                        DataEase v2.10.21
+                        LTS版本修复了SQL注入漏洞（CVE-2026-33082、CVE-2026-33083、CVE-2026-33084、CVE-2026-33121、CVE-2026-33122和CVE-2026-33207）、任意文件读取漏洞、远程代码执行漏洞、认证伪造绕过漏洞等多项安全漏洞，进一步提升系统整体安全性。
+                    </p>
+                    <p>感谢社区用户@PineBlizz发现并向DataEase开源社区反馈上述漏洞。</p>
+                    <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
+                    <p><strong>■ DataEase Skills技能体系全新上线</strong></p>
+                    <p>
+                        DataEase v2.10.21版本新增了DataEase Skills技能，这是一个全新的AI能力扩展体系，能够为用户的数据分析工作提供丰富的预构建技能模板和自定义技能开发能力。用户可以通过DataEase
+                        Skills技能体系快速集成各种业务场景的智能化分析功能，显著降低ChatBI应用开发门槛，提升数据分析的智能化水平。DataEase Skills技能详细可参见GitHub仓库（https://github.com/dataease/DataEase-skills）。
+                    </p>
+                    <figure><img src="../images/blog/skills-20260420/dataease-003-01.png" alt="▲图1 DataEase Skills使用效果图.png" loading="lazy" /></figure>
+                    <p>▲图1 DataEase Skills使用效果示意</p>
+                    <p><strong>■ 图表新增支持多维散点图</strong></p>
+                    <p>
+                        DataEase
+                        v2.10.21版本新增多维散点图支持，能够更直观地展现多维度数据之间的复杂关系，丰富了数据可视化的表达方式。同时，DataEase新增仪表板/数据大屏默认标签字体颜色设置功能，支持明细表分页字体大小配置，让用户能够更精细化地定制图表外观，提升报表的专业性和可读性。
+                    </p>
+                    <figure><img src="../images/blog/skills-20260420/dataease-003-02.png" alt="▲图2 DataEase新增支持多维散点图.png" loading="lazy" /></figure>
+                    <p>▲图2 DataEase新增支持多维散点图</p>
+                    <p><strong>■ 移动端体验显著提升</strong></p>
+                    <p>在DataEase v2.10.21版本中，移动端新增改密功能，用户可以直接在移动设备上修改账户密码，提升了账号管理的安全性和便利性。同时新增骨架屏显示功能，有效改善了页面加载过程中的用户体验，让应用交互更加流畅自然。</p>
+                    <figure><img src="../images/blog/skills-20260420/dataease-003-03.png" alt="▲图3 DataEase移动端改密操作页面.png" loading="lazy" /></figure>
+                    <p>▲图3 DataEase移动端改密操作页面</p>
+                    <p><strong>■ X-Pack增强包：权限管控、数据填报、定时报告功能优化</strong></p>
+                    <p>在DataEase v2.10.21版本中，X-Pack增强包在权限配置中新增“手机号”字段系统变量，支持基于用户手机号进行数据权限的匹配与控制，进一步丰富了权限管控维度。</p>
+                    <p>另外，DataEase新增支持数据填报功能的SQL Server数据源插件，扩展了数据源的兼容性。定时报告功能新增钉钉群推送渠道，丰富了消息通知方式，同时优化了Playwright默认时区设置，提升了定时报告的准确性和可用性。</p>
+                    <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
+                    <p>■ refactor（仪表板、数据大屏）：升级流媒体播放器插件，新增支持H.265编码；</p>
+                    <p>■ refactor：优化组件嵌入自动适配缩放功能；</p>
+                    <p>■ refactor：优化Tab排序标题双击修改名称功能；</p>
+                    <p>■ refactor：优化图表表头样式；</p>
+                    <p>■ refactor（X-Pack）：优化第三方认证平台表单校验机制；</p>
+                    <p>■ refactor（X-Pack）：优化嵌入式Token黑名单清理机制；</p>
+                    <p>■ refactor（X-Pack）：优化定时报告的条件配置样式；</p>
+                    <p>■ refactor（X-Pack）：优化定时报告消息渠道相互阻塞的问题；</p>
+                    <p>■ refactor（X-Pack）：优化定时报告视图显示效果。</p>
+                    <h2 id="%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D">问题修复</h2>
+                    <p>■ fix（图表）：修复明细表导出时因包含隐藏字段，导致指标格式化错误的问题（#17737）；</p>
+                    <p>■ fix（图表）：修复分组堆叠柱状图的子维度或堆叠项为空时，图表渲染异常的问题；</p>
+                    <p>■ fix（图表）：修复汇总表同环比和占比计算同时开启时，占比计算错误的问题（#17995）；</p>
+                    <p>■ fix（图表）：修复明细表隐藏字段后导出失败的问题；</p>
+                    <p>■ fix（图表）：修复从支持下钻的图表下钻后切换到不支持下钻图表时，下钻路径及字段不清空的问题；</p>
+                    <p>■ fix（图表）：修复查询条件值存在单引号时，无法匹配数据的问题；</p>
+                    <p>■ fix（图表）：修复表格总计行标签复制错误的问题；</p>
+                    <p>■ fix（图表）：修复气泡地图轮播时，鼠标悬浮提示没有消失的问题；</p>
+                    <p>■ fix（图表）：修复鼠标悬浮在图表上时，轮播提示不会暂停的问题；</p>
+                    <p>■ fix（图表）：修复图表提示配置自定义显示指标字段时，非数值类型图表出现报错的问题；</p>
+                    <p>■ fix（图表）：修复Edge浏览器中公共链接图表带轮播功能时，全屏预览放大后又退出全屏，轮播提示显示位置不正确的问题；</p>
+                    <p>■ fix（图表）：修复折线图子维度为日期格式时，图例显示和提示不一致的问题；</p>
+                    <p>■ fix（图表）：修复子弹图调整图例图标时，区间背景配置会被还原的问题；</p>
+                    <p>■ fix（图表）：修复子弹图横轴标签长度限制失效的问题；</p>
+                    <p>■ fix（图表）：修复子弹图区间背景禁用区间背景提示字段后，提示依然可以显示的问题；</p>
+                    <p>■ fix（图表）：修复子弹图区间背景设置固定值后，调整图例大小导致图例显示形状变化的问题；</p>
+                    <p>■ fix（图表）：优化子弹图图例配置中图标配置选择器的长度；</p>
+                    <p>■ fix（图表）：修复明细表在开启总计状态下导出Excel时，总计没有导出的问题（#18114）；</p>
+                    <p>■ fix（地图）：修复数据大屏中默认图表尺寸无法显示世界地图边界的问题；</p>
+                    <p>■ fix（数据大屏）：修复大屏导出为模板，再应用这个模板新建大屏时，图表标题显示不全的问题；</p>
+                    <p>■ fix（数据大屏）：修复指标卡条件样式背景颜色样式不正确的问题；</p>
+                    <p>■ fix（数据大屏）：修复Tab组件三个标识颜色不统一的问题；</p>
+                    <p>■ fix（数据集）：修复过滤器筛选包含逗号的固定值时，被错误解析为多个值导致筛选失效的问题（#18082）；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复配置了查询条件后未进行查询，但放大图表时过滤条件已生效的问题（#18089）；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复图表刷新后，使用下拉树组件勾选选项，但不点击查询，图表依然会发生过滤的问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复仪表板预览界面中，跳转弹窗按钮高度较低时，无法显示完整的问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复应用跳转链接带字段时会提示“[undefined]”的问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复批量配置Tab组件边框不生效的问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复编辑状态下有查询组件的图表，在删除查询组件后，图表仍持过滤状态的问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复组合组件的嵌入式缩放问题；</p>
+                    <p>■ fix（仪表板、数据大屏）：修复跳转联动小菜单可能被上方组件遮挡的问题；</p>
+                    <p>■ fix（仪表板）：修复移动端跳转问题；</p>
+                    <p>■ fix（数据源）：修复Oracle CONCAT Function出现的问题（#18208）；</p>
+                    <p>■ fix（数据源）：修复远程Excel数据源对接大屏应用模板时匹配本地Excel数据源报错的问题（#18102）；</p>
+                    <p>■ fix：修复移动端配置过滤组件查询条件部分样式不生效的问题（#18103）；</p>
+                    <p>■ fix（X-Pack）：修复组织管理中心导航栏内容显示不全的问题；</p>
+                    <p>■ fix（X-Pack）：修复查询角色接口参数keyword失效的问题（#18001）；</p>
+                    <p>■ fix（X-Pack）：修复定时报告选择导出图表双线组合图会缺失对应图标的问题；</p>
+                    <p>■ fix（X-Pack）：修复阈值告警条件判断为空时没有提示内容的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布","item":"https://dataease.cn/blog/dataease-skills-v2-10-21-lts.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布","description":"通过DataEase Skills技能体系，快速集成各种业务场景的智能化分析功能。","url":"https://dataease.cn/blog/dataease-skills-v2-10-21-lts.html","datePublished":"2026-04-20","dateModified":"2026-04-20","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-003.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布", "item": "https://dataease.cn/blog/dataease-skills-v2-10-21-lts.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布",
+                "description": "通过DataEase Skills技能体系，快速集成各种业务场景的智能化分析功能。",
+                "url": "https://dataease.cn/blog/dataease-skills-v2-10-21-lts.html",
+                "datePublished": "2026-04-20",
+                "dateModified": "2026-04-20",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-003.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

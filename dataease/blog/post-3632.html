@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,139 +220,178 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：</em></p>
-<p><em>本文为知乎博主小敏敏的原创文章。</em></p>
-<p><em>原文链接：</em></p>
-<p><a href="https://zhuanlan.zhihu.com/p/521926246" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/521926246</a></p>
-<p>当今的社会不断发展进步，数据、信息充斥着我们的生活和工作，就算没什么相关知识基础的我，也耳濡目染了许多相关的信息。我一直在想着自学数据分析，但是对各种数据库、虚拟机、前后端代码、API数据源等这些数据方面的基本概念只了解个名称。我的大学专业和IT信息化也一点关系都没有，工作后我虽然和各种数据打交道，但大多数情况只是让专业信息技术人员给我需要的数据，所以我给自己的定位是“数据小白”。</p>
-<p>机缘巧合下，我碰到了DataEase这款开源产品。了解了它的基本信息后，觉得它上手简单方便，而且有充实的学习资料，很适合拿来作为我入门数据分析的学习工具。这篇文章就作为我通过DataEase实现数据可视化，并做出了属于我自己的仪表板的一个记录吧！希望能够给更多和我一样的“数据小白”提供一些参考。</p>
-<p>我的数据学习成长记录，主要从学习方法、动手实践、成果展示、归纳总结四个方面来进行介绍。</p>
+                    <p><em>本文为知乎博主小敏敏的原创文章。</em></p>
+                    <p><em>原文链接：</em></p>
+                    <p><a href="https://zhuanlan.zhihu.com/p/521926246" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/521926246</a></p>
+                    <p>
+                        当今的社会不断发展进步，数据、信息充斥着我们的生活和工作，就算没什么相关知识基础的我，也耳濡目染了许多相关的信息。我一直在想着自学数据分析，但是对各种数据库、虚拟机、前后端代码、API数据源等这些数据方面的基本概念只了解个名称。我的大学专业和IT信息化也一点关系都没有，工作后我虽然和各种数据打交道，但大多数情况只是让专业信息技术人员给我需要的数据，所以我给自己的定位是“数据小白”。
+                    </p>
+                    <p>
+                        机缘巧合下，我碰到了DataEase这款开源产品。了解了它的基本信息后，觉得它上手简单方便，而且有充实的学习资料，很适合拿来作为我入门数据分析的学习工具。这篇文章就作为我通过DataEase实现数据可视化，并做出了属于我自己的仪表板的一个记录吧！希望能够给更多和我一样的“数据小白”提供一些参考。
+                    </p>
+                    <p>我的数据学习成长记录，主要从学习方法、动手实践、成果展示、归纳总结四个方面来进行介绍。</p>
 
+                    <h2>学习方法</h2>
+                    <p>第一步，访问产品所属公司的官网，主要是为了了解一下产品背后的公司。<em>（FIT2CLOUD飞致云官网地址：https://www.fit2cloud.com/。）</em></p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-01.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>
+                        点进官网看到了这个公司的一句口号——“软件用起来才有价值，才有改进的机会”。这句口号让人感觉很务实。我使用过各式各样的软件，有些软件不在意用户的实际需求，改进和更新也不及时，这类软件后来都会被慢慢淘汰。所以我认为，软件怕的是没有被用起来，不可以闭门造车，只有这样才能经得起检验。
+                    </p>
+                    <p>第二步，访问DataEase产品官网，对产品进行基本的了解。<em>（DataEase官网地址：https://dataease.io/https://dataease.io/。）</em></p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-02.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>DataEase是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并且可以方便地与他人分享。</p>
+                    <p>第三步，学习DataEase产品线上文档。<em>（文档地址：https://dataease.io/docs/。）</em></p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-03.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>
+                        DataEase的官方文档写得很详细，可以充分了解产品基本信息和功能，以及该如何上手部署和使用DataEase。作为“数据小白”的我，看得最认真的部分是“功能手册”和“教学视频”。通过阅读官方文档，我的很多疑问都得到了解答，而且我发现DataEase的各种教程也非常细致，极大地减少了我的上手难度。
+                    </p>
+                    <p>通过前面几步的学习，我对DataEase有了基本的掌握，所以开始动手实践。</p>
 
-<h2>学习方法</h2>
-<p>第一步，访问产品所属公司的官网，主要是为了了解一下产品背后的公司。<em>（FIT2CLOUD飞致云官网地址：https://www.fit2cloud.com/。）</em></p>
-<figure><img src="../images/blog/news-20220706/dataease-136-01.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>点进官网看到了这个公司的一句口号——“软件用起来才有价值，才有改进的机会”。这句口号让人感觉很务实。我使用过各式各样的软件，有些软件不在意用户的实际需求，改进和更新也不及时，这类软件后来都会被慢慢淘汰。所以我认为，软件怕的是没有被用起来，不可以闭门造车，只有这样才能经得起检验。</p>
-<p>第二步，访问DataEase产品官网，对产品进行基本的了解。<em>（DataEase官网地址：https://dataease.io/https://dataease.io/。）</em></p>
-<figure><img src="../images/blog/news-20220706/dataease-136-02.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>DataEase是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并且可以方便地与他人分享。</p>
-<p>第三步，学习DataEase产品线上文档。<em>（文档地址：https://dataease.io/docs/。）</em></p>
-<figure><img src="../images/blog/news-20220706/dataease-136-03.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>DataEase的官方文档写得很详细，可以充分了解产品基本信息和功能，以及该如何上手部署和使用DataEase。作为“数据小白”的我，看得最认真的部分是“功能手册”和“教学视频”。通过阅读官方文档，我的很多疑问都得到了解答，而且我发现DataEase的各种教程也非常细致，极大地减少了我的上手难度。</p>
-<p>通过前面几步的学习，我对DataEase有了基本的掌握，所以开始动手实践。</p>
+                    <h2>动手实践</h2>
+                    <p>在动手实践之前，我准备整理一下思路。我使用DataEase的最终目的是为了产出一个数据可视化大屏，而使用DataEase制作仪表板分为四个部分：数据来源、数据连接、数据准备、仪表板制作（即数据使用）。</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-04.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p><strong>1. 数据来源</strong></p>
+                    <p>目前DataEase支持的数据源类型挺多的，具体如下图所示。</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-05.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>
+                        这里包含了各种类型的数据仓库/数据湖、OLTP型数据库、OLAP型数据库，作为“数据小白”的我的理解是，这些就像是超市的种类，就像仓储式超市、综合性超市、便利店等，只是规模大小和定位不同。数据源类型下还有数据源名称，就像是超市的不同品牌，沃尔玛、首航、家乐福等。这里还专门有一个API数据源，就像是专门给那些饭店每天（规律的阶段性）送货的超市（菜市场）。
+                    </p>
+                    <p>以上是我对数据源类型的理解，若有偏差欢迎大家指正。</p>
+                    <p><strong>2. 数据连接</strong></p>
+                    <p>
+                        找到原料在哪里之后，我们就要把原料拿或者借到自己家了。在产品里对应的就是新建数据源。这个流程就像是我们要去和超市谈合作一样，需要和超市完成对接和身份认证，超市才允许我们去里面拿东西。所以要先做好对接，后续才可以使用里面的数据。
+                    </p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-06.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>不同类型的超市需要的认证是不同的，例如数据库数据源所需要的信息就像是超市的名字、地址、类型、用户认证、密码等一系列信息。</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-07.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p><strong>3. 数据准备</strong></p>
+                    <p>数据源连接好之后，就要看看我们需要什么数据，并把这些数据提取到我们的数据集。</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-08.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>
+                        这里提到了两种连接方式，一种是直连模式，一种是定时同步模式。采用哪种模式主要是根据我们的需求来确定，就好比有些饭店是以食材新鲜为主打优势，那么他们需要的配送方式就是直接配送（直连），只要有新鲜的原料就需要立马配送给他们。而有些饭店可能每天定时配送一次原料就可以了。
+                    </p>
+                    <p>DataEase的使用流程是：数据源→数据集→仪表板。</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-09.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p><strong>4. 仪表板制作（数据使用）</strong></p>
+                    <p>在这个步骤中，DataEase引入了仪表板和视图的概念。在这里可以把仪表板理解为我们的餐桌，视图可以理解为装盘的菜。</p>
+                    <p>先说视图。在使用过程中我发现，创建视图必须先选择数据集，这是需要大家注意的。视图制作的流程如下：</p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-10.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>
+                        视图和仪表板的具体操作步骤暂时就不展开讲了，后续有机会再和大家分享。而且DataEase本身的设计构想也很简单，各种视图/组件/元素的设置都可以在右侧的功能栏中快速编辑，元素调整完图表就自动应用上了。视图/组件/元素也都是通过拖拽拉取的方式进行操作的，没有太大难度。
+                    </p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-11.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>具体的操作大家可以到飞致云学堂学习一下，操作步骤讲得很详细。实在不会的可以加入他们的社区交流群，有热心的客服小姐姐、小哥哥和自发的志愿者帮助大家解决问题。</p>
+                    <p><em>飞致云学堂地址：</em></p>
+                    <p><a href="https://edu.fit2cloud.com/page/2635108?navIndex=1" target="_blank" rel="noopener noreferrer">https://edu.fit2cloud.com/page/2635108?navIndex=1</a></p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-12.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
+                    <p>在“仪表板制作”这一步需要完成的工作就是，将我们需要展示的数据进行“装盘”（即制作视图），并在餐桌上摆放好（即制作仪表板）。大家可以根据自己的喜好进行设计和摆放。</p>
 
+                    <h2>成果展示</h2>
+                    <p>
+                        作为一个“数据小白”，我能做出一个自己可随时更改数据的数据可视化大屏，并且分享给想分享的人，也没有麻烦前后端技术人员。对我来说，这是很有成就感的一段学习经历。下图就是我使用DataEase这款开源工具制作的公司年度销售大屏。需要说明的是，其中所展示的数据仅为示意数据，并不是公司真实的经营数据。
+                    </p>
+                    <figure><img src="../images/blog/news-20220706/dataease-136-13.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
 
-<h2>动手实践</h2>
-<p>在动手实践之前，我准备整理一下思路。我使用DataEase的最终目的是为了产出一个数据可视化大屏，而使用DataEase制作仪表板分为四个部分：数据来源、数据连接、数据准备、仪表板制作（即数据使用）。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-04.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p><strong>1. 数据来源</strong></p>
-<p>目前DataEase支持的数据源类型挺多的，具体如下图所示。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-05.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>这里包含了各种类型的数据仓库/数据湖、OLTP型数据库、OLAP型数据库，作为“数据小白”的我的理解是，这些就像是超市的种类，就像仓储式超市、综合性超市、便利店等，只是规模大小和定位不同。数据源类型下还有数据源名称，就像是超市的不同品牌，沃尔玛、首航、家乐福等。这里还专门有一个API数据源，就像是专门给那些饭店每天（规律的阶段性）送货的超市（菜市场）。</p>
-<p>以上是我对数据源类型的理解，若有偏差欢迎大家指正。</p>
-<p><strong>2. 数据连接</strong></p>
-<p>找到原料在哪里之后，我们就要把原料拿或者借到自己家了。在产品里对应的就是新建数据源。这个流程就像是我们要去和超市谈合作一样，需要和超市完成对接和身份认证，超市才允许我们去里面拿东西。所以要先做好对接，后续才可以使用里面的数据。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-06.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>不同类型的超市需要的认证是不同的，例如数据库数据源所需要的信息就像是超市的名字、地址、类型、用户认证、密码等一系列信息。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-07.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p><strong>3. 数据准备</strong></p>
-<p>数据源连接好之后，就要看看我们需要什么数据，并把这些数据提取到我们的数据集。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-08.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>这里提到了两种连接方式，一种是直连模式，一种是定时同步模式。采用哪种模式主要是根据我们的需求来确定，就好比有些饭店是以食材新鲜为主打优势，那么他们需要的配送方式就是直接配送（直连），只要有新鲜的原料就需要立马配送给他们。而有些饭店可能每天定时配送一次原料就可以了。</p>
-<p>DataEase的使用流程是：数据源→数据集→仪表板。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-09.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p><strong>4. 仪表板制作（数据使用）</strong></p>
-<p>在这个步骤中，DataEase引入了仪表板和视图的概念。在这里可以把仪表板理解为我们的餐桌，视图可以理解为装盘的菜。</p>
-<p>先说视图。在使用过程中我发现，创建视图必须先选择数据集，这是需要大家注意的。视图制作的流程如下：</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-10.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>视图和仪表板的具体操作步骤暂时就不展开讲了，后续有机会再和大家分享。而且DataEase本身的设计构想也很简单，各种视图/组件/元素的设置都可以在右侧的功能栏中快速编辑，元素调整完图表就自动应用上了。视图/组件/元素也都是通过拖拽拉取的方式进行操作的，没有太大难度。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-11.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>具体的操作大家可以到飞致云学堂学习一下，操作步骤讲得很详细。实在不会的可以加入他们的社区交流群，有热心的客服小姐姐、小哥哥和自发的志愿者帮助大家解决问题。</p>
-<p><em>飞致云学堂地址：</em></p>
-<p><a href="https://edu.fit2cloud.com/page/2635108?navIndex=1" target="_blank" rel="noopener noreferrer">https://edu.fit2cloud.com/page/2635108?navIndex=1</a></p>
-<figure><img src="../images/blog/news-20220706/dataease-136-12.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-<p>在“仪表板制作”这一步需要完成的工作就是，将我们需要展示的数据进行“装盘”（即制作视图），并在餐桌上摆放好（即制作仪表板）。大家可以根据自己的喜好进行设计和摆放。</p>
-
-
-<h2>成果展示</h2>
-<p>作为一个“数据小白”，我能做出一个自己可随时更改数据的数据可视化大屏，并且分享给想分享的人，也没有麻烦前后端技术人员。对我来说，这是很有成就感的一段学习经历。下图就是我使用DataEase这款开源工具制作的公司年度销售大屏。需要说明的是，其中所展示的数据仅为示意数据，并不是公司真实的经营数据。</p>
-<figure><img src="../images/blog/news-20220706/dataease-136-13.png" alt="学习笔记｜数据小白使用DataEase制作数据大屏" loading="lazy" /></figure>
-
-
-<h2>归纳总结</h2>
-<p>DataEase开源数据可视化分析平台对于我这样的小白来说，功能操作简单，各种概念理解起来也很方便。我通过官方的线上文档和教学视频就可以做出一个简单的仪表板，可见它“人人可用”的口号是名副其实的。</p>
-<p>在实际使用的过程中，我也发现了DataEase一些可以提升的地方：</p>
-<p>■ 建议在图表颜色增加渐变色支持；</p>
-<p>■ 建议图表文字支持加粗显示。</p>
-<p>总的来说，使用DataEase进行数据分析的过程是比较轻松和友好的。无论是产品本身功能还是产品团队的支持，都把用户的体验感放在首位。我希望这款开源工具能做得越来越好，未来可以迭代开发出更多好用、强大的功能。<br /></p>
+                    <h2>归纳总结</h2>
+                    <p>DataEase开源数据可视化分析平台对于我这样的小白来说，功能操作简单，各种概念理解起来也很方便。我通过官方的线上文档和教学视频就可以做出一个简单的仪表板，可见它“人人可用”的口号是名副其实的。</p>
+                    <p>在实际使用的过程中，我也发现了DataEase一些可以提升的地方：</p>
+                    <p>■ 建议在图表颜色增加渐变色支持；</p>
+                    <p>■ 建议图表文字支持加粗显示。</p>
+                    <p>总的来说，使用DataEase进行数据分析的过程是比较轻松和友好的。无论是产品本身功能还是产品团队的支持，都把用户的体验感放在首位。我希望这款开源工具能做得越来越好，未来可以迭代开发出更多好用、强大的功能。<br /></p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"学习笔记｜数据小白使用DataEase制作数据大屏","item":"https://dataease.cn/blog/post-3632.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"学习笔记｜数据小白使用DataEase制作数据大屏","description":"没有哪款数据可视化分析软件，比“人人可用”的DataEase更适合数据小白入门学习了。","url":"https://dataease.cn/blog/post-3632.html","datePublished":"2022-07-06","dateModified":"2022-07-06","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-108.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "学习笔记｜数据小白使用DataEase制作数据大屏", "item": "https://dataease.cn/blog/post-3632.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "学习笔记｜数据小白使用DataEase制作数据大屏",
+                "description": "没有哪款数据可视化分析软件，比“人人可用”的DataEase更适合数据小白入门学习了。",
+                "url": "https://dataease.cn/blog/post-3632.html",
+                "datePublished": "2022-07-06",
+                "dateModified": "2022-07-06",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-108.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

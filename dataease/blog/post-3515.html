@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,163 +220,198 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文为知乎博主香菇鸽鸽汤的原创文章。</em></p>
-<p>原文链接：<br />https://zhuanlan.zhihu.com/p/490199145</p>
-<p>作为一个阴阳师玩家，在游戏出了“纸人神社”数据展示功能后，我的第一反应就是可以更便捷地汇总统计一下自己在阴阳师中的各种数据看看。同样，我也希望选择一个最便捷好用的数据可视化工具来进行自己的游戏数据可视化展示。</p>
-<p>经过一番考察后，我选择了号称“人人可用”的开源数据可视化工具DataEase，希望通过DataEase来方便地制作一个美观的阴阳师数据展示仪表板。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-01.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>DataEase是一款开源的软件工具。想要使用DataEase的话，可以直接去DataEase的官网（https://dataease.io/）上进行下载安装和部署，也可以在其官网提供的Demo环境中直接试操作。不过，DataEase的Demo环境中除官方示例以外所有的内容都是隔日更新，所以建议还是直接下载一个。</p>
-<p>阴阳师个人数据仪表板预览如下：</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-02.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>仪表板用的数据取材于我自己的游戏数据，数据对应时间是在不见岳活动期间。</p>
+                    <p>原文链接：<br />https://zhuanlan.zhihu.com/p/490199145</p>
+                    <p>作为一个阴阳师玩家，在游戏出了“纸人神社”数据展示功能后，我的第一反应就是可以更便捷地汇总统计一下自己在阴阳师中的各种数据看看。同样，我也希望选择一个最便捷好用的数据可视化工具来进行自己的游戏数据可视化展示。</p>
+                    <p>经过一番考察后，我选择了号称“人人可用”的开源数据可视化工具DataEase，希望通过DataEase来方便地制作一个美观的阴阳师数据展示仪表板。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-01.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>
+                        DataEase是一款开源的软件工具。想要使用DataEase的话，可以直接去DataEase的官网（https://dataease.io/）上进行下载安装和部署，也可以在其官网提供的Demo环境中直接试操作。不过，DataEase的Demo环境中除官方示例以外所有的内容都是隔日更新，所以建议还是直接下载一个。
+                    </p>
+                    <p>阴阳师个人数据仪表板预览如下：</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-02.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>仪表板用的数据取材于我自己的游戏数据，数据对应时间是在不见岳活动期间。</p>
 
+                    <h2>数据导入</h2>
+                    <p>进入DataEase的界面后，会看见下图这样的按钮分布。我们需要先从“数据导入”的步骤开始操作。</p>
+                    <p>1. 在DataEase界面上方选择“数据集”标签，然后点击“数据集”栏中的“+”，新建一个文件夹。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-03.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>2. 建好文件夹后，点文件夹一栏的“+”，在弹出的菜单中选择“添加数据集”。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-04.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>3. 选择自己要用的数据集类型。我这里使用的是Excel数据集。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-05.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>4. 点击“上传文件”按钮上传Excel数据集。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-06.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>5. 可以直接从一个Excel文件中批量选择自己需要的Sheet。建议提前给Sheet修改为比较方便确认内容的名字。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-07.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>
+                        需要注意的是，这里上传Sheet后会显示每一列数据的属性。虽然软件会根据你上传的表格内容来自动识别数据，但还是建议再确认一下属性和自己需要的数据属性是否一致。有不对的列可以点开选项按钮修改一下，不然可能会出现数据遗漏的情况。
+                    </p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-08.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
 
-<h2>数据导入</h2>
-<p>进入DataEase的界面后，会看见下图这样的按钮分布。我们需要先从“数据导入”的步骤开始操作。</p>
-<p>1. 在DataEase界面上方选择“数据集”标签，然后点击“数据集”栏中的“+”，新建一个文件夹。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-03.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>2. 建好文件夹后，点文件夹一栏的“+”，在弹出的菜单中选择“添加数据集”。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-04.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>3. 选择自己要用的数据集类型。我这里使用的是Excel数据集。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-05.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>4. 点击“上传文件”按钮上传Excel数据集。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-06.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>5. 可以直接从一个Excel文件中批量选择自己需要的Sheet。建议提前给Sheet修改为比较方便确认内容的名字。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-07.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>需要注意的是，这里上传Sheet后会显示每一列数据的属性。虽然软件会根据你上传的表格内容来自动识别数据，但还是建议再确认一下属性和自己需要的数据属性是否一致。有不对的列可以点开选项按钮修改一下，不然可能会出现数据遗漏的情况。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-08.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <h2>仪表板制作</h2>
+                    <p>将需要用到的数据全部上传后，就可以开始做仪表板了。具体步骤如下：</p>
+                    <p>1. 进入“仪表板”页面，新建一个文件夹，并在文件夹中新建仪表板。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-09.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-10.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>进入新建的仪表板后就可以看见一个空的界面，还有左侧和右上角的操作图标。</p>
+                    <p>2. 点击“视图”按钮创建一个视图。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-11.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>点击进入后，就会出现数据的选择界面，可以看到有两个步骤需要进行：</p>
+                    <p>① 选出你要做的视图需要的数据所在的表，选好之后点右下角的“下一步”按钮；</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-12.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>② 设定视图的类型，然后点击右下角的“确认”按钮。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-13.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>之后就可以看到设定视图细节的界面了。</p>
+                    <p>3. 进入具体的视图设定页面后，默认看到的是“数据”标签页（可在界面左上角进行设定）。所以，可以先通过拖拽左侧“指标”和“维度”两栏中的标签至对应（箭头指向）的空白框内。这样就可以初步生成所需的图表。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-14.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-15.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>我个人的习惯是设定一下“排序”选项，因为这样可以让生成的图表看上去更整齐一点。“维度”和“指标”栏目都可以设定数据的排序方式，这里是在“指标”一栏中设置了“升序”的排序方式。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-16.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>4. 设定好数据后，我们可以来到旁边的“样式”标签页进行设置，让视图变得更美观一点。</p>
+                    <p>视图可以设置颜色。点击“配色方案”的颜色格，可以看见跳出的弹窗中有“系统方案”和“自定义”两种设定方式。选择“系统方案”方式可以直接选用其中喜欢的模板；选择“自定义”方式则可以按顺序点击需要修改的图表颜色，自由修改和设定。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-17.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>视图也可以修改图形的大小，都可以在“样式”标签页中随意调整。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-18.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>我们可以根据提示，为图表设置数据标签。虽然可视化后的数据本身就很直观了，但加上数据标签后就可以更清楚地了解数据的真实水平。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-19.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-20.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>5. 有时表格里的数据维度有很多项内容，但我们只需要展示其中最多或最少的几项。这是就可以给图表按照“指标”大小进行排序，然后在“结果展示”一栏填入想要展示的维度项目数量就好。</p>
+                    <p>比如在这里，我就想展示自己仓库数量最多的10种御魂，只要按照降序进行排序后，再把结果展示数量更换为自定义的“10”就可以了。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-21.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>
+                        6.
+                        在“样式”标签页中设置“样式优先级”选项。因为我一般不用DataEase自带的仪表板模板，所以会选“视图”样式优先级，然后提前设置好它们的所有格式。如果设置为“仪表板”样式优先级的话，在视图中设置的这些格式在仪表板中可能不会显示出来。
+                    </p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-22.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>7. 当你确认一个视图已经制作完成，点击右上角的“确定”按钮，就会看见一个视图出现在空旷的窗口里。长按住视图就可以开始将其拖拽到仪表板上的不同位置。</p>
+                    <p>把鼠标移动到视图上，会看到除了可以调整视图大小的边框线以外，右上角会出现一排小图标，共有4个小图标。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-23.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>依次点开这些小图标的内容如下：</p>
+                    <p><strong>① 视图明细</strong></p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-24.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p><strong>② 视图排列方式</strong></p>
+                    <p>可以切换为“矩阵”或“悬浮”中的任意一种。两者的区别在于：</p>
+                    <p>
+                        ■ 矩阵：可以让视图以一定标准单位长度的倍数移动、缩放，视图之间的最小距离是固定的，而且视图不会重合。简单来说，就是可以很轻松地把它们排列得整整齐齐；而且如果两个视图靠得太近，也只会互相挤压空间后把另一个视图挤出去，不会重叠在一起。
+                    </p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-25.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>■ 悬浮：普通的排列方式，需要自己观察对齐。不过悬浮的视图可以叠在别的视图之上。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-26.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p><strong>③ 编辑</strong></p>
+                    <p>点击该按钮会直接返回到视图编辑页面，编辑好后点右上角的“确定”按钮即可回到仪表板界面。</p>
+                    <p><strong>④ 设置</strong></p>
+                    <p>点击该按钮会出现各种各样的设置选项，需要的话可以随意调整。</p>
+                    <p>8. 点击界面左侧德 “其他”选项，插入一个“文字”框和一个“时间”框。“文字”框中填写仪表板标题，“时间”框则会显示当前时刻。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-27.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>为了让“时间”框叠在标题框右侧，可以将它的背景设置为全透明，排列方式设置为悬浮。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-28.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
+                    <p>9. 设置仪表板背景。这里为了设置图片背景，我选择把所有视图和组件的背景调整为半透明。</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-29.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-30.jpg" alt="" loading="lazy" /></figure>
+                    <p>最终全屏展示的仪表板效果如下：</p>
+                    <figure><img src="../images/blog/chart-20220517/dataease-143-02.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
 
-
-<h2>仪表板制作</h2>
-<p>将需要用到的数据全部上传后，就可以开始做仪表板了。具体步骤如下：</p>
-<p>1. 进入“仪表板”页面，新建一个文件夹，并在文件夹中新建仪表板。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-09.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20220517/dataease-143-10.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>进入新建的仪表板后就可以看见一个空的界面，还有左侧和右上角的操作图标。</p>
-<p>2. 点击“视图”按钮创建一个视图。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-11.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>点击进入后，就会出现数据的选择界面，可以看到有两个步骤需要进行：</p>
-<p>① 选出你要做的视图需要的数据所在的表，选好之后点右下角的“下一步”按钮；</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-12.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>② 设定视图的类型，然后点击右下角的“确认”按钮。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-13.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>之后就可以看到设定视图细节的界面了。</p>
-<p>3. 进入具体的视图设定页面后，默认看到的是“数据”标签页（可在界面左上角进行设定）。所以，可以先通过拖拽左侧“指标”和“维度”两栏中的标签至对应（箭头指向）的空白框内。这样就可以初步生成所需的图表。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-14.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20220517/dataease-143-15.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>我个人的习惯是设定一下“排序”选项，因为这样可以让生成的图表看上去更整齐一点。“维度”和“指标”栏目都可以设定数据的排序方式，这里是在“指标”一栏中设置了“升序”的排序方式。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-16.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>4. 设定好数据后，我们可以来到旁边的“样式”标签页进行设置，让视图变得更美观一点。</p>
-<p>视图可以设置颜色。点击“配色方案”的颜色格，可以看见跳出的弹窗中有“系统方案”和“自定义”两种设定方式。选择“系统方案”方式可以直接选用其中喜欢的模板；选择“自定义”方式则可以按顺序点击需要修改的图表颜色，自由修改和设定。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-17.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>视图也可以修改图形的大小，都可以在“样式”标签页中随意调整。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-18.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>我们可以根据提示，为图表设置数据标签。虽然可视化后的数据本身就很直观了，但加上数据标签后就可以更清楚地了解数据的真实水平。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-19.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20220517/dataease-143-20.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>5. 有时表格里的数据维度有很多项内容，但我们只需要展示其中最多或最少的几项。这是就可以给图表按照“指标”大小进行排序，然后在“结果展示”一栏填入想要展示的维度项目数量就好。</p>
-<p>比如在这里，我就想展示自己仓库数量最多的10种御魂，只要按照降序进行排序后，再把结果展示数量更换为自定义的“10”就可以了。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-21.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>6. 在“样式”标签页中设置“样式优先级”选项。因为我一般不用DataEase自带的仪表板模板，所以会选“视图”样式优先级，然后提前设置好它们的所有格式。如果设置为“仪表板”样式优先级的话，在视图中设置的这些格式在仪表板中可能不会显示出来。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-22.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>7. 当你确认一个视图已经制作完成，点击右上角的“确定”按钮，就会看见一个视图出现在空旷的窗口里。长按住视图就可以开始将其拖拽到仪表板上的不同位置。</p>
-<p>把鼠标移动到视图上，会看到除了可以调整视图大小的边框线以外，右上角会出现一排小图标，共有4个小图标。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-23.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>依次点开这些小图标的内容如下：</p>
-<p><strong>① 视图明细</strong></p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-24.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p><strong>② 视图排列方式</strong></p>
-<p>可以切换为“矩阵”或“悬浮”中的任意一种。两者的区别在于：</p>
-<p>■ 矩阵：可以让视图以一定标准单位长度的倍数移动、缩放，视图之间的最小距离是固定的，而且视图不会重合。简单来说，就是可以很轻松地把它们排列得整整齐齐；而且如果两个视图靠得太近，也只会互相挤压空间后把另一个视图挤出去，不会重叠在一起。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-25.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>■ 悬浮：普通的排列方式，需要自己观察对齐。不过悬浮的视图可以叠在别的视图之上。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-26.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p><strong>③ 编辑</strong></p>
-<p>点击该按钮会直接返回到视图编辑页面，编辑好后点右上角的“确定”按钮即可回到仪表板界面。</p>
-<p><strong>④ 设置</strong></p>
-<p>点击该按钮会出现各种各样的设置选项，需要的话可以随意调整。</p>
-<p>8. 点击界面左侧德 “其他”选项，插入一个“文字”框和一个“时间”框。“文字”框中填写仪表板标题，“时间”框则会显示当前时刻。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-27.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>为了让“时间”框叠在标题框右侧，可以将它的背景设置为全透明，排列方式设置为悬浮。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-28.png" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-<p>9. 设置仪表板背景。这里为了设置图片背景，我选择把所有视图和组件的背景调整为半透明。</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-29.jpg" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20220517/dataease-143-30.jpg" alt="" loading="lazy" /></figure>
-<p>最终全屏展示的仪表板效果如下：</p>
-<figure><img src="../images/blog/chart-20220517/dataease-143-02.jpg" alt="仪表板展示｜使用DataEase开源工具制作游戏数据仪表板" loading="lazy" /></figure>
-
-
-<h2>总结</h2>
-<p>实践后可以感觉到，DataEase开源数据可视化分析工具是一款非常简洁好用的工具软件。除了以上基础操作外，DataEase其实还有很多别的功能，例如手机端观看设置、数据联动、数据下钻、简单的数据计算分析、分享链接一键生成设置等，都是我觉得比较实用的。</p>
-<p>DataEase还是一款按月迭代的开源软件，更新优化的速度非常快，基本上每个月都会新增很多功能，并肉眼可见地变得越来越便于操作。由于篇幅有限，这里就不多赘述，希望有机会能够使用DataEase进行更多尝试，探索这款软件更多的可能性。<br /></p>
+                    <h2>总结</h2>
+                    <p>
+                        实践后可以感觉到，DataEase开源数据可视化分析工具是一款非常简洁好用的工具软件。除了以上基础操作外，DataEase其实还有很多别的功能，例如手机端观看设置、数据联动、数据下钻、简单的数据计算分析、分享链接一键生成设置等，都是我觉得比较实用的。
+                    </p>
+                    <p>
+                        DataEase还是一款按月迭代的开源软件，更新优化的速度非常快，基本上每个月都会新增很多功能，并肉眼可见地变得越来越便于操作。由于篇幅有限，这里就不多赘述，希望有机会能够使用DataEase进行更多尝试，探索这款软件更多的可能性。<br />
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜使用DataEase开源工具制作游戏数据仪表板","item":"https://dataease.cn/blog/post-3515.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜使用DataEase开源工具制作游戏数据仪表板","description":"使用DataEase制作游戏数据展示仪表板。","url":"https://dataease.cn/blog/post-3515.html","datePublished":"2022-05-17","dateModified":"2022-05-17","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-139.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜使用DataEase开源工具制作游戏数据仪表板", "item": "https://dataease.cn/blog/post-3515.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜使用DataEase开源工具制作游戏数据仪表板",
+                "description": "使用DataEase制作游戏数据展示仪表板。",
+                "url": "https://dataease.cn/blog/post-3515.html",
+                "datePublished": "2022-05-17",
+                "dateModified": "2022-05-17",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-139.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

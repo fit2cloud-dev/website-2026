@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="JumpServer v3.0：一款“内外兼修”的堡垒机。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/release-20230213/cover.jpg" />
         <meta name="twitter:image:alt" content="JumpServer开源堡垒机v3.0版本设计重点解读 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"JumpServer开源堡垒机v3.0版本设计重点解读","description":"JumpServer v3.0：一款“内外兼修”的堡垒机。","datePublished":"2023-02-13T07:32:00+00:00","dateModified":"2023-02-13T07:32:00+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/release-20230213.html"},"image":["https://www.jumpserver.org/images/blog/release-20230213/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "JumpServer开源堡垒机v3.0版本设计重点解读",
+                "description": "JumpServer v3.0：一款“内外兼修”的堡垒机。",
+                "datePublished": "2023-02-13T07:32:00+00:00",
+                "dateModified": "2023-02-13T07:32:00+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/release-20230213.html" },
+                "image": ["https://www.jumpserver.org/images/blog/release-20230213/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -190,7 +218,109 @@
                     <img src="../images/blog/release-20230213/cover.jpg" alt="JumpServer开源堡垒机v3.0版本设计重点解读" loading="lazy" />
                 </header>
                 <div class="de-article-content">
-                    <p><em>编者注：在1月17日的JumpServer开源堡垒机v3.0预发布恳谈会直播中，JumpServer创始人广宏伟与大家分享了JumpServer v3.0版本的设计思路与功能亮点。在v3.0版本正式发布之前，JumpServer开源项目组基于此次直播内容为大家整理总结了JumpServer v3.0版本的设计重点，旨在帮助大家更好地理解JumpServer v3.0的重构思路。<br></em></p><p><em>《JumpServer开源堡垒机v3.0预发布恳谈会》直播回顾请访问“JumpServer开源堡垒机”视频号，在“直播回放”中观看即可。</em></p><h2 id="heading-1"><strong>核心问答</strong></h2><p><strong>问：JumpServer开源堡垒机为什么要做v3.0版本？</strong></p><p>答：自2020年6月发布V2版本至今，JumpServer坚持每月发布新版本，在V2的大版本内共累计迭代了28个版本。在这两年多的时间里，JumpServer的研发团队激进过，也妥协过，在功能迭代的过程中发现了一些产品设计不合理、冗余的地方。与此同时，长期保持每月发布一个版本的迭代速度也使得JumpServer的部分功能设计没有经过完全的深思熟虑，导致了整个系统越来越臃肿，我们必须对其做“减法”。</p><p>此外，社区用户的反馈也让我们收集到了不同规模企业用户关于JumpServer V2版本的建议和需求，一些规模较大的企业用户的部分功能需求在V2版本的技术架构下难以满足，其中的原因归结于JumpServer底层设计架构的局限。</p><p>综合以上原因，为了给广大企业用户带来更加卓越的运维安全管理体验，我们决定启动v3.0版本的研发，对JumpServer的技术架构进行重构。</p><p><strong>问：JumpServer开源堡垒机v3.0版本什么时候发布？</strong></p><p>答：JumpServer v3.0版本预计在<strong>2023年2月27日</strong>正式发布。欢迎大家在版本正式发布之后部署体验v3.0版本，除了本次直播分享的一些核心功能设计以外，还有更多的新增功能设计等待大家前去探索。而更多的社区反馈也有助于我们在未来不断完善JumpServer的功能设计和产品体验。</p><h2 id="heading-2"><strong>JumpServer v3.0：一款“内外兼修”的堡垒机</strong></h2><p>堡垒机作为一款企业IT部门高频使用的工具软件，用户的使用体验至关重要。在过去的几个月里，我们的研发团队在原有的产品设计上进行了结构化调整，重构底层技术架构，通过改变管理模型的方式来兼顾不同规模和类型用户的实际使用场景，基于用户、系统用户、资产和授权这四个维度对JumpServer中的大部分使用场景进行了重新设计。</p><p>在JumpServer开源堡垒机v3.0版本的设计过程中，我们秉持“内外兼修”的原则，旨在进一步提升用户的使用体验，真正用心做好一款开源堡垒机。</p><p><strong>内：核心功能全面优化设计</strong></p><p><strong>1. 系统用户重新设计：系统用户重构为账号，放弃系统用户中间层</strong></p><p>在JumpServer过去的版本中，系统用户承担了太多的职责。用户通过系统用户创建表单时可以看到，JumpServer的系统用户承担了包括创建账号、用户切换、自动推送、动态用户、命令过滤、AD（Active Directory）、SFTP Home在内的众多职责。这样一来，系统用户的功能显得十分臃肿，尤其企业用户使用系统改密功能时，情况会变得复杂且难以维护。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-01.png" alt="0213图1.png" loading="lazy" />▲ 图1 旧版本系统用户创建表单</p><p>JumpServer设计系统用户的初衷其实是作为账号存在的，通过特权账号创建系统用户，用户不需要在资产上一个个繁琐地添加账号， 并且包含自动创建账号和自动推送的功能，不需要进行额外的维护。这在资产规模比较小、大多数用户的账号密码相同的情况下，使用起来非常便捷。</p><p>但是随着JumpServer用户规模和使用范围的不断扩大，对于拥有大量IT资产，并且等保安全要求其资产密码都要不一样的大中型企业，这带来了比较大的困扰。当一个系统用户在不同的资产上有不同的密码需求时，系统用户功能难以满足他们的需求，难以进行授权，问题变得比较复杂。</p><p>为了解决这个问题，我们将系统用户和账号进行分离。系统用户关联资产时会产生一个账号，一个系统用户在不同的资产上允许产生不同的账号，联表计算之后形成一个账号集，即账号列表。这样做的目的是满足用户拥有大规模IT资产场景的需要，但是在用户实际的使用过程中，面对拥有几十万账号的业务场景，计算量庞大，导致搜索速度很慢，账号列表也很容易出现问题而崩溃，因此我们最终决定对系统用户进行重新设计。</p><p><strong>在JumpServer v3.0版本中，系统用户重构为账号，放弃系统用户中间层。</strong>这就意味着在JumpServer v3.0以及后续版本中，不会再有“系统用户”的概念。用户直接在资产上添加账号，在添加资产时需要添加一系列的凭证来设置账号权限，一个账号对应一个资产。这样一来，用户在登录资产时，可以直接在资产上选择有哪些权限的账号可以进行登录，省去了原来需要通过系统用户登录的中间步骤。</p><p>在比较简单的使用场景中，用户在创建资产时还可以选择账号模版，自动根据模版上的用户名密码创建账号，更为快速便捷。在进行授权时，将原先选择系统用户的步骤改为选择账号用户名，除了指定用户名以外，还设计了包括所有账号、手动账号、同名账号在内的虚拟账号，以对应不同的授权策略。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-02.png" alt="0213图2.png" loading="lazy" />▲ 图2 系统用户和账号的演变</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-03.png" alt="0213图3.png" loading="lazy" />▲ 图3 对授权策略影响的变化</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-04.png" alt="0213图4.png" loading="lazy" />▲ 图4 新版本创建资产账号界面</p><p>同时，JumpServer v3.0版本新增“账号管理”模块，通过账号列表可以看到所有的账号，由此可以开展账号收集、账号推送、账号模版、账号改密、账号备份等功能，账号推送功能也有助于我们的研发团队后续进行更多的自动化设计。</p><p>此外，特权账号功能是未来JumpServer v3.0版本发展的一个重点，我们也会围绕账号功能展开更多的安全审计工作。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-05.png" alt="0213图5.png" loading="lazy" />▲ 图5 新版本的资产列表界面</p><p><strong>2. 资产和应用合并：化繁为简</strong></p><p>起初JumpServer设计中只有资产，后来为了支持数据库连接，新增了应用，包括数据库、Kubernetes、远程应用以及其他应用。因为每种应用可能都有单独的一些字段，所以我们不得不新增了Application表，以便和资产区分开来。我们做了很多冗余的工作，这也就导致很多后端的数据关系表会和资产一样存在多份，比如授权表、系统用户关系表、命令过滤表等，数据库和API都存在冗余的现象。</p><p><strong>在JumpServer v3.0版本中，我们化繁为简，将资产和应用合并，统称为资产，强化资产平台方面的职责。</strong></p><p>根据字段属性是否大致相同，我们将之前的资产拆分为主机、数据库、网络设备、云服务、Web以及其他类别。用户在创建资产时，首先需要选择对应的平台类别，每种类别下对应更加细化的内置资产类型。</p><p>合并资产和应用之后，资产表的结构也发生了变化，用户的管理操作首先围绕通用表结构来进行，实际使用到数据库、Web、主机、网络设备、云的时候，再根据不同的类型进行详细的单独表格处理。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-06.png" alt="0213图6.png" loading="lazy" />▲ 图6 资产的演变</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-07.png" alt="0213图7.png" loading="lazy" />▲ 图7 资产类型</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-08.png" alt="0213图8.png" loading="lazy" />▲ 图8 新版本的资产列表界面</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-09.png" alt="0213图9.png" loading="lazy" />▲ 图9 创建资产时选择平台</p><p><strong>3. 资产平台重新设计：平台是资产的抽象和约束</strong></p><p>资产与应用合并之后，强化了资产平台的作用，因此我们需要对资产平台也进行重新设计，对资产进行约束。</p><p>原有的资产平台主要用来区分操作系统、编码差异以及Windows差异，本质上来说只是起到了标记的作用。而在JumpServer v3.0版本中，新平台除了可以区分资产类型，还可以定制一些功能，比如资产是否能开启网域、能进行哪些协议和配置、是否支持账号切换功能等，这些都可以直接在平台上进行定义和设置。</p><p>另外，通过新的资产平台，用户还可以灵活定义自动化配置，包括资产探活方式、改密方式、账号推送、su切换方式、收集账号、收集信息等。</p><p>我们所有的自动化功能都依赖于Ansible自动化运维工具，因此不需要我们再进行额外的Python代码填写，可以直接选择资产和账号来进行配置。这样做的优势是提升了系统的自动化程度，提高配置效率，也在一定程度上减轻了我们的工作量，让我们有更多的精力专注于更重要的功能优化。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-10.png" alt="0213图10.png" loading="lazy" />▲ 图10 资产平台的变化</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-11.png" alt="0213图11.png" loading="lazy" />▲ 图11 灵活定义自动化配置</p><p>用户连接到资产时可能某种资产或者某个协议会有一些特殊的表现需要进行设置。平台强化之后，设置项的内容更为丰富，用户可以根据资产的特点创建对应的系统平台并进行设置。</p><p>大多数相同的资产信息可以在系统平台上统一设置，对于某些资产特有的信息可以单独在某资产上进行修改；与认证有关信息的可以在账号上进行设置；对于使用同一个账号连接资产时，认证信息不一样，也可以在连接时进行配置。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-12.png" alt="0213图12.png" loading="lazy" />▲ 图12 创建系统平台界面</p><p><strong>4. RemoteApp远程应用重新设计：远程应用是未来扩展的核心</strong></p><p>JumpServer中原来的RemoteApp远程应用是一种应用类别，只是作为JumpServer的一种能力存在的。每个远程应用需要配置一个依赖的RDP资产，在资产上安装应用，然后通过托管程序拉起、这种使用方式比较基础，开发和复用起来十分麻烦。面对不同的使用场景，需要在每个客户端中进行重新配置，不便于我们进行扩展和定制开发，无法满足很多企业用户的需求，部署交付比较消耗人力。因此在JumpServer v3.0版本中，我们对远程应用进行了重新设计。</p><p>远程应用是JumpServer未来扩展的核心，也是JumpServer v3.0版本重构中非常重要的部分。我们的研发团队很重视远程应用的重新设计，在JumpServer v3.0版本中做了重大的更新。</p><p>在JumpServer v3.0版本中，RemoteApp的改变包括：</p><p>■&nbsp;RemoteApp远程应用将作为一种连接方式存在，主要用于连接资产，而不再是一种应用类型；</p><p>■&nbsp;RemoteApp的主机池由JumpServer进行统一维护，并且能定时上报状态；</p><p>■&nbsp;用户提供Windows资产并安装基础组件之后，JumpServer会在应用发布机上代理执行自动化的工作，这样一来，RemoteApp主机就可以自动部署、自动维护；</p><p>■&nbsp;密码代填功能使用Python框架完成，而不再使用AutoHotKey，准确性更强；</p><p>■&nbsp;添加RemoteApp类型后，需要声明支持的协议。</p><p><strong>新版本的JumpServer共有三种连接方式，分别是基于原始协议级实现的本地客户端连接方式、基于Web实现的Web连接方式，以及基于RemoteApp实现代理的远程应用连接方式。</strong>当用户连接资产的时候，可以根据该资产已有协议来选择连接方式，系统将会提供多种连接方式供用户选择。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-13.png" alt="0213图13.png" loading="lazy" />▲ 图13 新版本RemoteApp远程应用设计原理</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-14.png" alt="0213图14.png" loading="lazy" />▲ 图14 新版本远程应用界面</p><p><strong>外：全新UI设计，简约而直白</strong></p><p>除了内在的功能外，JumpServer v3.0的操作界面也做了全新的升级。专业设计师对JumpServer界面进行了全新的UI设计，仪表盘数据更加直观，并且重新调整了功能布局。</p><p>简约而直白的设计将大幅提升用户的使用体验。未来，我们也会提供不同的主题配色，以满足更多用户的个性化审美需求。</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-15.png" alt="0213图15.png" loading="lazy" />▲ 图15 新版本JumpServer登录界面</p><p style="text-align: center"><img src="../images/blog/release-20230213/image-16.png" alt="0213图16.png" loading="lazy" />▲ 图16 新版本JumpServer仪表盘界面</p>
+                    <p>
+                        <em
+                            >编者注：在1月17日的JumpServer开源堡垒机v3.0预发布恳谈会直播中，JumpServer创始人广宏伟与大家分享了JumpServer
+                            v3.0版本的设计思路与功能亮点。在v3.0版本正式发布之前，JumpServer开源项目组基于此次直播内容为大家整理总结了JumpServer v3.0版本的设计重点，旨在帮助大家更好地理解JumpServer v3.0的重构思路。<br
+                        /></em>
+                    </p>
+                    <p><em>《JumpServer开源堡垒机v3.0预发布恳谈会》直播回顾请访问“JumpServer开源堡垒机”视频号，在“直播回放”中观看即可。</em></p>
+                    <h2 id="heading-1"><strong>核心问答</strong></h2>
+                    <p><strong>问：JumpServer开源堡垒机为什么要做v3.0版本？</strong></p>
+                    <p>
+                        答：自2020年6月发布V2版本至今，JumpServer坚持每月发布新版本，在V2的大版本内共累计迭代了28个版本。在这两年多的时间里，JumpServer的研发团队激进过，也妥协过，在功能迭代的过程中发现了一些产品设计不合理、冗余的地方。与此同时，长期保持每月发布一个版本的迭代速度也使得JumpServer的部分功能设计没有经过完全的深思熟虑，导致了整个系统越来越臃肿，我们必须对其做“减法”。
+                    </p>
+                    <p>此外，社区用户的反馈也让我们收集到了不同规模企业用户关于JumpServer V2版本的建议和需求，一些规模较大的企业用户的部分功能需求在V2版本的技术架构下难以满足，其中的原因归结于JumpServer底层设计架构的局限。</p>
+                    <p>综合以上原因，为了给广大企业用户带来更加卓越的运维安全管理体验，我们决定启动v3.0版本的研发，对JumpServer的技术架构进行重构。</p>
+                    <p><strong>问：JumpServer开源堡垒机v3.0版本什么时候发布？</strong></p>
+                    <p>
+                        答：JumpServer
+                        v3.0版本预计在<strong>2023年2月27日</strong>正式发布。欢迎大家在版本正式发布之后部署体验v3.0版本，除了本次直播分享的一些核心功能设计以外，还有更多的新增功能设计等待大家前去探索。而更多的社区反馈也有助于我们在未来不断完善JumpServer的功能设计和产品体验。
+                    </p>
+                    <h2 id="heading-2"><strong>JumpServer v3.0：一款“内外兼修”的堡垒机</strong></h2>
+                    <p>
+                        堡垒机作为一款企业IT部门高频使用的工具软件，用户的使用体验至关重要。在过去的几个月里，我们的研发团队在原有的产品设计上进行了结构化调整，重构底层技术架构，通过改变管理模型的方式来兼顾不同规模和类型用户的实际使用场景，基于用户、系统用户、资产和授权这四个维度对JumpServer中的大部分使用场景进行了重新设计。
+                    </p>
+                    <p>在JumpServer开源堡垒机v3.0版本的设计过程中，我们秉持“内外兼修”的原则，旨在进一步提升用户的使用体验，真正用心做好一款开源堡垒机。</p>
+                    <p><strong>内：核心功能全面优化设计</strong></p>
+                    <p><strong>1. 系统用户重新设计：系统用户重构为账号，放弃系统用户中间层</strong></p>
+                    <p>
+                        在JumpServer过去的版本中，系统用户承担了太多的职责。用户通过系统用户创建表单时可以看到，JumpServer的系统用户承担了包括创建账号、用户切换、自动推送、动态用户、命令过滤、AD（Active Directory）、SFTP
+                        Home在内的众多职责。这样一来，系统用户的功能显得十分臃肿，尤其企业用户使用系统改密功能时，情况会变得复杂且难以维护。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-01.png" alt="0213图1.png" loading="lazy" />▲ 图1 旧版本系统用户创建表单</p>
+                    <p>
+                        JumpServer设计系统用户的初衷其实是作为账号存在的，通过特权账号创建系统用户，用户不需要在资产上一个个繁琐地添加账号，
+                        并且包含自动创建账号和自动推送的功能，不需要进行额外的维护。这在资产规模比较小、大多数用户的账号密码相同的情况下，使用起来非常便捷。
+                    </p>
+                    <p>
+                        但是随着JumpServer用户规模和使用范围的不断扩大，对于拥有大量IT资产，并且等保安全要求其资产密码都要不一样的大中型企业，这带来了比较大的困扰。当一个系统用户在不同的资产上有不同的密码需求时，系统用户功能难以满足他们的需求，难以进行授权，问题变得比较复杂。
+                    </p>
+                    <p>
+                        为了解决这个问题，我们将系统用户和账号进行分离。系统用户关联资产时会产生一个账号，一个系统用户在不同的资产上允许产生不同的账号，联表计算之后形成一个账号集，即账号列表。这样做的目的是满足用户拥有大规模IT资产场景的需要，但是在用户实际的使用过程中，面对拥有几十万账号的业务场景，计算量庞大，导致搜索速度很慢，账号列表也很容易出现问题而崩溃，因此我们最终决定对系统用户进行重新设计。
+                    </p>
+                    <p>
+                        <strong>在JumpServer v3.0版本中，系统用户重构为账号，放弃系统用户中间层。</strong>这就意味着在JumpServer
+                        v3.0以及后续版本中，不会再有“系统用户”的概念。用户直接在资产上添加账号，在添加资产时需要添加一系列的凭证来设置账号权限，一个账号对应一个资产。这样一来，用户在登录资产时，可以直接在资产上选择有哪些权限的账号可以进行登录，省去了原来需要通过系统用户登录的中间步骤。
+                    </p>
+                    <p>
+                        在比较简单的使用场景中，用户在创建资产时还可以选择账号模版，自动根据模版上的用户名密码创建账号，更为快速便捷。在进行授权时，将原先选择系统用户的步骤改为选择账号用户名，除了指定用户名以外，还设计了包括所有账号、手动账号、同名账号在内的虚拟账号，以对应不同的授权策略。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-02.png" alt="0213图2.png" loading="lazy" />▲ 图2 系统用户和账号的演变</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-03.png" alt="0213图3.png" loading="lazy" />▲ 图3 对授权策略影响的变化</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-04.png" alt="0213图4.png" loading="lazy" />▲ 图4 新版本创建资产账号界面</p>
+                    <p>同时，JumpServer v3.0版本新增“账号管理”模块，通过账号列表可以看到所有的账号，由此可以开展账号收集、账号推送、账号模版、账号改密、账号备份等功能，账号推送功能也有助于我们的研发团队后续进行更多的自动化设计。</p>
+                    <p>此外，特权账号功能是未来JumpServer v3.0版本发展的一个重点，我们也会围绕账号功能展开更多的安全审计工作。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-05.png" alt="0213图5.png" loading="lazy" />▲ 图5 新版本的资产列表界面</p>
+                    <p><strong>2. 资产和应用合并：化繁为简</strong></p>
+                    <p>
+                        起初JumpServer设计中只有资产，后来为了支持数据库连接，新增了应用，包括数据库、Kubernetes、远程应用以及其他应用。因为每种应用可能都有单独的一些字段，所以我们不得不新增了Application表，以便和资产区分开来。我们做了很多冗余的工作，这也就导致很多后端的数据关系表会和资产一样存在多份，比如授权表、系统用户关系表、命令过滤表等，数据库和API都存在冗余的现象。
+                    </p>
+                    <p><strong>在JumpServer v3.0版本中，我们化繁为简，将资产和应用合并，统称为资产，强化资产平台方面的职责。</strong></p>
+                    <p>根据字段属性是否大致相同，我们将之前的资产拆分为主机、数据库、网络设备、云服务、Web以及其他类别。用户在创建资产时，首先需要选择对应的平台类别，每种类别下对应更加细化的内置资产类型。</p>
+                    <p>合并资产和应用之后，资产表的结构也发生了变化，用户的管理操作首先围绕通用表结构来进行，实际使用到数据库、Web、主机、网络设备、云的时候，再根据不同的类型进行详细的单独表格处理。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-06.png" alt="0213图6.png" loading="lazy" />▲ 图6 资产的演变</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-07.png" alt="0213图7.png" loading="lazy" />▲ 图7 资产类型</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-08.png" alt="0213图8.png" loading="lazy" />▲ 图8 新版本的资产列表界面</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-09.png" alt="0213图9.png" loading="lazy" />▲ 图9 创建资产时选择平台</p>
+                    <p><strong>3. 资产平台重新设计：平台是资产的抽象和约束</strong></p>
+                    <p>资产与应用合并之后，强化了资产平台的作用，因此我们需要对资产平台也进行重新设计，对资产进行约束。</p>
+                    <p>
+                        原有的资产平台主要用来区分操作系统、编码差异以及Windows差异，本质上来说只是起到了标记的作用。而在JumpServer
+                        v3.0版本中，新平台除了可以区分资产类型，还可以定制一些功能，比如资产是否能开启网域、能进行哪些协议和配置、是否支持账号切换功能等，这些都可以直接在平台上进行定义和设置。
+                    </p>
+                    <p>另外，通过新的资产平台，用户还可以灵活定义自动化配置，包括资产探活方式、改密方式、账号推送、su切换方式、收集账号、收集信息等。</p>
+                    <p>
+                        我们所有的自动化功能都依赖于Ansible自动化运维工具，因此不需要我们再进行额外的Python代码填写，可以直接选择资产和账号来进行配置。这样做的优势是提升了系统的自动化程度，提高配置效率，也在一定程度上减轻了我们的工作量，让我们有更多的精力专注于更重要的功能优化。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-10.png" alt="0213图10.png" loading="lazy" />▲ 图10 资产平台的变化</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-11.png" alt="0213图11.png" loading="lazy" />▲ 图11 灵活定义自动化配置</p>
+                    <p>用户连接到资产时可能某种资产或者某个协议会有一些特殊的表现需要进行设置。平台强化之后，设置项的内容更为丰富，用户可以根据资产的特点创建对应的系统平台并进行设置。</p>
+                    <p>大多数相同的资产信息可以在系统平台上统一设置，对于某些资产特有的信息可以单独在某资产上进行修改；与认证有关信息的可以在账号上进行设置；对于使用同一个账号连接资产时，认证信息不一样，也可以在连接时进行配置。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-12.png" alt="0213图12.png" loading="lazy" />▲ 图12 创建系统平台界面</p>
+                    <p><strong>4. RemoteApp远程应用重新设计：远程应用是未来扩展的核心</strong></p>
+                    <p>
+                        JumpServer中原来的RemoteApp远程应用是一种应用类别，只是作为JumpServer的一种能力存在的。每个远程应用需要配置一个依赖的RDP资产，在资产上安装应用，然后通过托管程序拉起、这种使用方式比较基础，开发和复用起来十分麻烦。面对不同的使用场景，需要在每个客户端中进行重新配置，不便于我们进行扩展和定制开发，无法满足很多企业用户的需求，部署交付比较消耗人力。因此在JumpServer
+                        v3.0版本中，我们对远程应用进行了重新设计。
+                    </p>
+                    <p>远程应用是JumpServer未来扩展的核心，也是JumpServer v3.0版本重构中非常重要的部分。我们的研发团队很重视远程应用的重新设计，在JumpServer v3.0版本中做了重大的更新。</p>
+                    <p>在JumpServer v3.0版本中，RemoteApp的改变包括：</p>
+                    <p>■&nbsp;RemoteApp远程应用将作为一种连接方式存在，主要用于连接资产，而不再是一种应用类型；</p>
+                    <p>■&nbsp;RemoteApp的主机池由JumpServer进行统一维护，并且能定时上报状态；</p>
+                    <p>■&nbsp;用户提供Windows资产并安装基础组件之后，JumpServer会在应用发布机上代理执行自动化的工作，这样一来，RemoteApp主机就可以自动部署、自动维护；</p>
+                    <p>■&nbsp;密码代填功能使用Python框架完成，而不再使用AutoHotKey，准确性更强；</p>
+                    <p>■&nbsp;添加RemoteApp类型后，需要声明支持的协议。</p>
+                    <p>
+                        <strong>新版本的JumpServer共有三种连接方式，分别是基于原始协议级实现的本地客户端连接方式、基于Web实现的Web连接方式，以及基于RemoteApp实现代理的远程应用连接方式。</strong
+                        >当用户连接资产的时候，可以根据该资产已有协议来选择连接方式，系统将会提供多种连接方式供用户选择。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-13.png" alt="0213图13.png" loading="lazy" />▲ 图13 新版本RemoteApp远程应用设计原理</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-14.png" alt="0213图14.png" loading="lazy" />▲ 图14 新版本远程应用界面</p>
+                    <p><strong>外：全新UI设计，简约而直白</strong></p>
+                    <p>除了内在的功能外，JumpServer v3.0的操作界面也做了全新的升级。专业设计师对JumpServer界面进行了全新的UI设计，仪表盘数据更加直观，并且重新调整了功能布局。</p>
+                    <p>简约而直白的设计将大幅提升用户的使用体验。未来，我们也会提供不同的主题配色，以满足更多用户的个性化审美需求。</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-15.png" alt="0213图15.png" loading="lazy" />▲ 图15 新版本JumpServer登录界面</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230213/image-16.png" alt="0213图16.png" loading="lazy" />▲ 图16 新版本JumpServer仪表盘界面</p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -247,10 +377,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -261,21 +391,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

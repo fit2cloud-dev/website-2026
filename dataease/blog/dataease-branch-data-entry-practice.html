@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,219 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜DataEase企业总-分公司数据填报场景搭建实践" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>在拥有多个下设分公司的企业中，往往需要一套规范的数据统计流程来支持数据在总、分公司之间的快速流转和正规统筹。借助DataEase开源BI工具的“数据填报”与“定时报告”等功能，企业可以搭建出一个完整的数据填报场景，实现总公司自定义数据表单并定时自动下发至分公司；在分公司完成表单的数据内容填报后，DataEase能够整合汇总所有的填报数据，并且将这些数据直接展示在可视化仪表板或者数据大屏上；用户还可以通过权限设置，确保公司内的每个员工仅能看到自己权限范围内的大屏数据。</p><p>本文为您详细介绍通过DataEase搭建企业总-分公司数据填报场景的详细步骤。</p><figure><img src="../images/blog/tutorial-20260109/dataease-008-01.png" alt="▲图1 DataEase企业总-分公司数据填报总体流程图.png" loading="lazy" /></figure><p>▲图1 DataEase企业总-分公司数据填报总体流程图</p><p><span><strong>一、DataEase定时任务的下发与接收</strong></span></p><p>在搭建数据填报场景时，总公司需要通过设置DataEase定时任务的方法，将数据报表下发至下属的各个分公司，并且发出提示信息，让分公司及时填写接收到的数据表单。总公司需要设置好的定时任务包括“数据填报任务”和“定时报告任务”。</p><p><strong>数据填报任务：</strong>此任务可以将待填写的数据表单发送至分公司填报人的DataEase账号内，支持定时发送或立即发送；</p><p><strong>定时报告任务：</strong>此任务可以向分公司填报人的邮箱/企业微信/飞书/钉钉发送数据填报通知提醒，提醒填报人进行填报，支持定时发送或立即发送。</p><p><strong>1. 数据填报任务</strong></p><p>■ 数据填报任务创建</p><p>首先，总公司需要创建一个数据填报任务，并且将任务下发至分公司。</p><p>① 在DataEase的“数据准备”菜单中选择“数据填报”选项，在“数据填报”页面新建一个“正式月度经营数据填报任务”表单，并且配置表单内容，详细步骤可以参考DataEase在线文档：https://dataease.io/docs/v2/xpack/data_filing/。</p><p>表单配置完成后，选中我们创建好的表单，就可以查看表单数据、提交记录，并进行任务管理。</p><figure><img src="../images/blog/tutorial-20260109/dataease-008-02.png" alt="▲图2 数据填报表单示例.png" loading="lazy" /></figure><p>▲图2 数据填报表单示例</p><p>② 为“正式月度经营数据填报任务”表单创建一个月度经营数据填报任务，填写数据填报任务的基础信息，设置数据提交方式为“数据追加”，并且指定任务接对人。</p><figure><img src="../images/blog/tutorial-20260109/dataease-008-03.png" alt="▲图3 数据填报基础信息设置.png" loading="lazy" /></figure><p>▲图3 数据填报基础信息设置</p><p><span>③ 进行任务下发设置，设定任务的发送频率和任务下发时间，点击“确定”按钮即可成功创建下发任务；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-04.png" alt="" loading="lazy" /></figure><p><span>▲图4 数据填报任务下发设置</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-05.png" alt="" loading="lazy" /></figure><p><span>▲图5 数据填报任务执行成功示例</span></p><p><span>④ 任务创建完成后，点击任务的“执行”图标按钮，即可立即下发表单填报任务；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-06.png" alt="" loading="lazy" /></figure><p><span>▲图6 数据填报任务下发</span></p><p><span>⑤ 任务创建人可以在任务菜单中查看已经下发的任务。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-07.png" alt="" loading="lazy" /></figure><p><span> </span><span>▲图7 查看已下发的数据填报任务</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-08.png" alt="" loading="lazy" /></figure><p>▲图8 数据填报已下发任务示例</p><p>■ 数据填报任务执行</p><p>在分公司接收到总公司下发的数据填报任务后，就可以开始填报表单数据。具体步骤如下：</p><p><span>① 登录子公司填报人员的账号，在DataEase首页工作台中“我的填报”页面，可以看到总公司下发的数据填报任务；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-09.png" alt="▲图9 子公司DataEase账号查看数据填报任务.png" loading="lazy" /></figure><p>▲图9 子公司DataEase账号查看数据填报任务</p><p><span>② 点击任务右侧的“编辑”按钮，即可进行数据填报，填报人员可以在DataEase中直接添加数据，也可以选择批量上传数据；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-10.png" alt="" loading="lazy" /></figure><p><span>▲图10 子公司表单填报入口</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-11.png" alt="" loading="lazy" /></figure><p>▲图11 子公司数据填报批量上传入口</p><p><span>③ 如果填报人员需要修改已经提交的数据，可以在“数据填报”页面进行单行数据修改，也可以由总公司的DataEase管理员在“数据填报”目录下的“表单数据”页面进行批量操作。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-12.png" alt="" loading="lazy" /></figure><p><span>▲图12 填报人在“数据填报”页面进行单行填报数据修改</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-13.png" alt="" loading="lazy" /></figure><p>▲图13 DataEase管理员在“表单数据”页面批量修改填报数据</p><p><strong>2. 定时报告任务</strong></p><p>为了提醒分公司的填报人员及时进行数据填报，总公司可以在DataEase的“组织管理中心”创建一个“定时报告”任务，定时发送提示信息至填报人员的邮箱。详细步骤可以参考DataEase在线文档：https://dataease.io/docs/v2/xpack/sys_management_report/。</p><p>■ 定时报告任务发送的内容准备</p><p><span>要创建定时报告任务，需要提前准备好发送给填报人员的提示信息内容。为了帮助填报人员更顺利地填写数据，此处准备的提示信息为一个仪表板形式的数据填报教程。数据填报教程中包含数据填报的简要流程指引和数据填报所需要的数据格式。其中，“数据填报的简要流程指引”用于帮助初次接触该项目的分公司填报人熟悉操作过程，“数据填报所需要的数据格式”用于帮助分公司填报人在批量填报数据时正确使用相应的格式。</span></p><p><span>在制作数据填报教程仪表板时，可以使用富文本组件和图片组件等方式展示填报步骤，用明细表展示数据填报表单模板。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-14.png" alt="▲图14 数据填报教程仪表板.png" loading="lazy" /></figure><p>▲图14 数据填报教程仪表板</p><p>■ 配置定时报告</p><p>在DataEase“组织管理中心”菜单选择“定时报告”选项，在“定时报告”页面可以创建一个定时报告任务，并配置任务信息。具体步骤如下：</p><p><span>① 在“基础信息”页面的“图表数据”栏目中，选中数据填报教程仪表板中的明细表视图，此明细表会导出为Excel模板，作为定时报告的附件一并发送；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-15.png" alt="" loading="lazy" /></figure><p>▲图15 定时报告基础信息配置</p><p><span>② 在“接收人”页面设置定时报告的接收人，在“接收设置”栏目中选择“邮箱”方式，定时报告信息会发送至选中的接收人DataEase账号在系统中绑定的邮箱地址；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-16.png" alt="▲图16 定时报告接收人配置.png" loading="lazy" /></figure><p>▲图16 定时报告接收人配置</p><p><span>③ 在“发送设置”页面配置定时发送的具体规则，例如发送频率、任务的起止时间等。点击“确认”按钮，定时报告任务就设置好了，可以将提前准备好的提示信息按照任务设置定时发出。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-17.png" alt="" loading="lazy" /></figure><p><span>▲图17 定时报告发送设置配置</span></p><p><span>在定时报告信息接收人邮箱中收到的提示邮件样式如下。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-18.png" alt="" loading="lazy" /></figure><p>▲图18 邮箱内定时报告提示邮件示例</p><h3 id="%E4%BA%8C%E3%80%81%E7%94%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E4%BB%AA%E8%A1%A8%E6%9D%BF%E8%BF%9B%E8%A1%8C%E5%A1%AB%E6%8A%A5%E6%95%B0%E6%8D%AE%E7%9A%84%E5%B1%95%E7%A4%BA%E3%80%81%E6%A3%80%E6%9F%A5%E4%B8%8E%E4%BF%AE%E6%94%B9"><span><strong>二、用可视化的仪表板进行填报数据的展示、检查与修改</strong></span></h3><p><span>在各个分公司进行数据填报之后，总公司需要通过可视化大屏的形式展示填报数据，同时也需要对填报数据的准确性加以核查，如果发现填写数据有误，则对错误数据打回要求修改。</span></p><p><span>通过DataEase制作仪表板或数据大屏，不但可以一目了然地展示这些汇总数据，还可以方便地标记出这些数据中的错误之处。制作好的DataEase仪表板或数据大屏可以通过权限设置，限制不同员工只能看到自己权限范围内的数据信息，便于数据报表的填报人员从大屏上精准定位自己填写的错误数据并进行修改，同时也有效保障了数据的安全性。</span></p><p><span><strong>1. 创建数据集并制作仪表板</strong></span></p><p><span>① 将各个分公司提交的填报数据与总部的数据进行关联，制作关联数据集；</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-19.png" alt="" loading="lazy" /></figure><p>▲图19 制作关联数据集</p><p><span>② 新建一个数据校对仪表板，在仪表板中使用提前准备好的关联数据集制作表格图表，用报表的形式集中呈现各分公司提交的填报数据；</span></p><p><span>③ 为表格图表配置条件样式，设置好对比条件，通过对比分公司填报数据与总公司原有数据相关联的部分，对不正确的数据样式进行突出标识。此处设置为让异常数据显示为“黄底红字”的格式。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-20.png" alt="" loading="lazy" /></figure><p><span>▲图20 数据校对仪表板</span></p><p><span><strong>2. 配置数据集的行列权限</strong></span></p><p><span>在DataEase的“数据准备”菜单下，设置数据集的行列权限，确保各个分公司的填报人员在通过数据集或大屏查看数据时，只能看到自己所填报的数据。需要注意的是，数据行列权限需要对总部管理员设置白名单，使其可以看到全部数据，便于总部对数据的整体管理。</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-21.png" alt="" loading="lazy" /></figure><p><span>▲图21 行列权限配置入口</span></p><figure><img src="../images/blog/tutorial-20260109/dataease-008-22.png" alt="" loading="lazy" /></figure><p><span>▲图22 行列权限配置内容</span></p><p><span><br /><strong>3. 对错误数据进行修改</strong></span></p><p><span>分公司人员在登录DataEase查看数据校对仪表板时，可以确认自己行列权限范围内的数据内容。如果发现提交的填报数据与总部关联的数据存在出入，可以在填报任务截止之前对填报数据进行修改。填报人员可以自行进行单行数据修改，或者申请由任务的管理员批量修改数据。</span></p><p><br /></p>
+                    <p>
+                        在拥有多个下设分公司的企业中，往往需要一套规范的数据统计流程来支持数据在总、分公司之间的快速流转和正规统筹。借助DataEase开源BI工具的“数据填报”与“定时报告”等功能，企业可以搭建出一个完整的数据填报场景，实现总公司自定义数据表单并定时自动下发至分公司；在分公司完成表单的数据内容填报后，DataEase能够整合汇总所有的填报数据，并且将这些数据直接展示在可视化仪表板或者数据大屏上；用户还可以通过权限设置，确保公司内的每个员工仅能看到自己权限范围内的大屏数据。
+                    </p>
+                    <p>本文为您详细介绍通过DataEase搭建企业总-分公司数据填报场景的详细步骤。</p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-01.png" alt="▲图1 DataEase企业总-分公司数据填报总体流程图.png" loading="lazy" /></figure>
+                    <p>▲图1 DataEase企业总-分公司数据填报总体流程图</p>
+                    <p>
+                        <span><strong>一、DataEase定时任务的下发与接收</strong></span>
+                    </p>
+                    <p>在搭建数据填报场景时，总公司需要通过设置DataEase定时任务的方法，将数据报表下发至下属的各个分公司，并且发出提示信息，让分公司及时填写接收到的数据表单。总公司需要设置好的定时任务包括“数据填报任务”和“定时报告任务”。</p>
+                    <p><strong>数据填报任务：</strong>此任务可以将待填写的数据表单发送至分公司填报人的DataEase账号内，支持定时发送或立即发送；</p>
+                    <p><strong>定时报告任务：</strong>此任务可以向分公司填报人的邮箱/企业微信/飞书/钉钉发送数据填报通知提醒，提醒填报人进行填报，支持定时发送或立即发送。</p>
+                    <p><strong>1. 数据填报任务</strong></p>
+                    <p>■ 数据填报任务创建</p>
+                    <p>首先，总公司需要创建一个数据填报任务，并且将任务下发至分公司。</p>
+                    <p>① 在DataEase的“数据准备”菜单中选择“数据填报”选项，在“数据填报”页面新建一个“正式月度经营数据填报任务”表单，并且配置表单内容，详细步骤可以参考DataEase在线文档：https://dataease.io/docs/v2/xpack/data_filing/。</p>
+                    <p>表单配置完成后，选中我们创建好的表单，就可以查看表单数据、提交记录，并进行任务管理。</p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-02.png" alt="▲图2 数据填报表单示例.png" loading="lazy" /></figure>
+                    <p>▲图2 数据填报表单示例</p>
+                    <p>② 为“正式月度经营数据填报任务”表单创建一个月度经营数据填报任务，填写数据填报任务的基础信息，设置数据提交方式为“数据追加”，并且指定任务接对人。</p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-03.png" alt="▲图3 数据填报基础信息设置.png" loading="lazy" /></figure>
+                    <p>▲图3 数据填报基础信息设置</p>
+                    <p><span>③ 进行任务下发设置，设定任务的发送频率和任务下发时间，点击“确定”按钮即可成功创建下发任务；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-04.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图4 数据填报任务下发设置</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-05.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图5 数据填报任务执行成功示例</span></p>
+                    <p><span>④ 任务创建完成后，点击任务的“执行”图标按钮，即可立即下发表单填报任务；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-06.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图6 数据填报任务下发</span></p>
+                    <p><span>⑤ 任务创建人可以在任务菜单中查看已经下发的任务。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-07.png" alt="" loading="lazy" /></figure>
+                    <p><span> </span><span>▲图7 查看已下发的数据填报任务</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-08.png" alt="" loading="lazy" /></figure>
+                    <p>▲图8 数据填报已下发任务示例</p>
+                    <p>■ 数据填报任务执行</p>
+                    <p>在分公司接收到总公司下发的数据填报任务后，就可以开始填报表单数据。具体步骤如下：</p>
+                    <p><span>① 登录子公司填报人员的账号，在DataEase首页工作台中“我的填报”页面，可以看到总公司下发的数据填报任务；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-09.png" alt="▲图9 子公司DataEase账号查看数据填报任务.png" loading="lazy" /></figure>
+                    <p>▲图9 子公司DataEase账号查看数据填报任务</p>
+                    <p><span>② 点击任务右侧的“编辑”按钮，即可进行数据填报，填报人员可以在DataEase中直接添加数据，也可以选择批量上传数据；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-10.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图10 子公司表单填报入口</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-11.png" alt="" loading="lazy" /></figure>
+                    <p>▲图11 子公司数据填报批量上传入口</p>
+                    <p><span>③ 如果填报人员需要修改已经提交的数据，可以在“数据填报”页面进行单行数据修改，也可以由总公司的DataEase管理员在“数据填报”目录下的“表单数据”页面进行批量操作。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-12.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图12 填报人在“数据填报”页面进行单行填报数据修改</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-13.png" alt="" loading="lazy" /></figure>
+                    <p>▲图13 DataEase管理员在“表单数据”页面批量修改填报数据</p>
+                    <p><strong>2. 定时报告任务</strong></p>
+                    <p>
+                        为了提醒分公司的填报人员及时进行数据填报，总公司可以在DataEase的“组织管理中心”创建一个“定时报告”任务，定时发送提示信息至填报人员的邮箱。详细步骤可以参考DataEase在线文档：https://dataease.io/docs/v2/xpack/sys_management_report/。
+                    </p>
+                    <p>■ 定时报告任务发送的内容准备</p>
+                    <p>
+                        <span
+                            >要创建定时报告任务，需要提前准备好发送给填报人员的提示信息内容。为了帮助填报人员更顺利地填写数据，此处准备的提示信息为一个仪表板形式的数据填报教程。数据填报教程中包含数据填报的简要流程指引和数据填报所需要的数据格式。其中，“数据填报的简要流程指引”用于帮助初次接触该项目的分公司填报人熟悉操作过程，“数据填报所需要的数据格式”用于帮助分公司填报人在批量填报数据时正确使用相应的格式。</span
+                        >
+                    </p>
+                    <p><span>在制作数据填报教程仪表板时，可以使用富文本组件和图片组件等方式展示填报步骤，用明细表展示数据填报表单模板。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-14.png" alt="▲图14 数据填报教程仪表板.png" loading="lazy" /></figure>
+                    <p>▲图14 数据填报教程仪表板</p>
+                    <p>■ 配置定时报告</p>
+                    <p>在DataEase“组织管理中心”菜单选择“定时报告”选项，在“定时报告”页面可以创建一个定时报告任务，并配置任务信息。具体步骤如下：</p>
+                    <p><span>① 在“基础信息”页面的“图表数据”栏目中，选中数据填报教程仪表板中的明细表视图，此明细表会导出为Excel模板，作为定时报告的附件一并发送；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-15.png" alt="" loading="lazy" /></figure>
+                    <p>▲图15 定时报告基础信息配置</p>
+                    <p><span>② 在“接收人”页面设置定时报告的接收人，在“接收设置”栏目中选择“邮箱”方式，定时报告信息会发送至选中的接收人DataEase账号在系统中绑定的邮箱地址；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-16.png" alt="▲图16 定时报告接收人配置.png" loading="lazy" /></figure>
+                    <p>▲图16 定时报告接收人配置</p>
+                    <p><span>③ 在“发送设置”页面配置定时发送的具体规则，例如发送频率、任务的起止时间等。点击“确认”按钮，定时报告任务就设置好了，可以将提前准备好的提示信息按照任务设置定时发出。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-17.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图17 定时报告发送设置配置</span></p>
+                    <p><span>在定时报告信息接收人邮箱中收到的提示邮件样式如下。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-18.png" alt="" loading="lazy" /></figure>
+                    <p>▲图18 邮箱内定时报告提示邮件示例</p>
+                    <h3
+                        id="%E4%BA%8C%E3%80%81%E7%94%A8%E5%8F%AF%E8%A7%86%E5%8C%96%E7%9A%84%E4%BB%AA%E8%A1%A8%E6%9D%BF%E8%BF%9B%E8%A1%8C%E5%A1%AB%E6%8A%A5%E6%95%B0%E6%8D%AE%E7%9A%84%E5%B1%95%E7%A4%BA%E3%80%81%E6%A3%80%E6%9F%A5%E4%B8%8E%E4%BF%AE%E6%94%B9"
+                    >
+                        <span><strong>二、用可视化的仪表板进行填报数据的展示、检查与修改</strong></span>
+                    </h3>
+                    <p><span>在各个分公司进行数据填报之后，总公司需要通过可视化大屏的形式展示填报数据，同时也需要对填报数据的准确性加以核查，如果发现填写数据有误，则对错误数据打回要求修改。</span></p>
+                    <p>
+                        <span
+                            >通过DataEase制作仪表板或数据大屏，不但可以一目了然地展示这些汇总数据，还可以方便地标记出这些数据中的错误之处。制作好的DataEase仪表板或数据大屏可以通过权限设置，限制不同员工只能看到自己权限范围内的数据信息，便于数据报表的填报人员从大屏上精准定位自己填写的错误数据并进行修改，同时也有效保障了数据的安全性。</span
+                        >
+                    </p>
+                    <p>
+                        <span><strong>1. 创建数据集并制作仪表板</strong></span>
+                    </p>
+                    <p><span>① 将各个分公司提交的填报数据与总部的数据进行关联，制作关联数据集；</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-19.png" alt="" loading="lazy" /></figure>
+                    <p>▲图19 制作关联数据集</p>
+                    <p><span>② 新建一个数据校对仪表板，在仪表板中使用提前准备好的关联数据集制作表格图表，用报表的形式集中呈现各分公司提交的填报数据；</span></p>
+                    <p><span>③ 为表格图表配置条件样式，设置好对比条件，通过对比分公司填报数据与总公司原有数据相关联的部分，对不正确的数据样式进行突出标识。此处设置为让异常数据显示为“黄底红字”的格式。</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-20.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图20 数据校对仪表板</span></p>
+                    <p>
+                        <span><strong>2. 配置数据集的行列权限</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >在DataEase的“数据准备”菜单下，设置数据集的行列权限，确保各个分公司的填报人员在通过数据集或大屏查看数据时，只能看到自己所填报的数据。需要注意的是，数据行列权限需要对总部管理员设置白名单，使其可以看到全部数据，便于总部对数据的整体管理。</span
+                        >
+                    </p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-21.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图21 行列权限配置入口</span></p>
+                    <figure><img src="../images/blog/tutorial-20260109/dataease-008-22.png" alt="" loading="lazy" /></figure>
+                    <p><span>▲图22 行列权限配置内容</span></p>
+                    <p>
+                        <span><br /><strong>3. 对错误数据进行修改</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >分公司人员在登录DataEase查看数据校对仪表板时，可以确认自己行列权限范围内的数据内容。如果发现提交的填报数据与总部关联的数据存在出入，可以在填报任务截止之前对填报数据进行修改。填报人员可以自行进行单行数据修改，或者申请由任务的管理员批量修改数据。</span
+                        >
+                    </p>
+                    <p><br /></p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜DataEase企业总-分公司数据填报场景搭建实践","item":"https://dataease.cn/blog/dataease-branch-data-entry-practice.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜DataEase企业总-分公司数据填报场景搭建实践","description":"支持数据在总、分公司之间的快速流转和正规统筹。","url":"https://dataease.cn/blog/dataease-branch-data-entry-practice.html","datePublished":"2026-01-09","dateModified":"2026-01-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜DataEase企业总-分公司数据填报场景搭建实践", "item": "https://dataease.cn/blog/dataease-branch-data-entry-practice.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜DataEase企业总-分公司数据填报场景搭建实践",
+                "description": "支持数据在总、分公司之间的快速流转和正规统筹。",
+                "url": "https://dataease.cn/blog/dataease-branch-data-entry-practice.html",
+                "datePublished": "2026-01-09",
+                "dateModified": "2026-01-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

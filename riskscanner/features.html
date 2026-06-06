@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -33,9 +33,38 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="RiskScanner 功能介绍" />
         <meta name="twitter:description" content="RiskScanner 是开源的多云安全合规扫描平台，通过 Cloud Custodian 的 YAML DSL 定义扫描规则，实现对主流公(私)有云资源的安全合规扫描及使用优化建议。" />
-        <script type="application/ld+json">[{"@type":"Organization","@id":"https://fit2cloud.com/#organization","name":"FIT2CLOUD 飞致云","url":"https://fit2cloud.com/","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},{"@type":"BreadcrumbList","@id":"https://riskscanner.io/features.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"RiskScanner","item":"https://riskscanner.io/"},{"@type":"ListItem","position":2,"name":"RiskScanner 功能介绍","item":"https://riskscanner.io/features.html"}]},{"@type":"WebSite","@id":"https://riskscanner.io/#website","url":"https://riskscanner.io/","name":"RiskScanner","inLanguage":"zh-CN","publisher":{"@id":"https://fit2cloud.com/#organization"}},{"@type":"WebPage","@id":"https://riskscanner.io/features.html#webpage","url":"https://riskscanner.io/features.html","name":"RiskScanner 功能介绍","description":"RiskScanner 是开源的多云安全合规扫描平台，通过 Cloud Custodian 的 YAML DSL 定义扫描规则，实现对主流公(私)有云资源的安全合规扫描及使用优化建议。","inLanguage":"zh-CN","isPartOf":{"@id":"https://riskscanner.io/#website"},"publisher":{"@id":"https://fit2cloud.com/#organization"},"breadcrumb":{"@id":"https://riskscanner.io/features.html#breadcrumb"}}]</script>
+        <script type="application/ld+json">
+            [
+                {
+                    "@type": "Organization",
+                    "@id": "https://fit2cloud.com/#organization",
+                    "name": "FIT2CLOUD 飞致云",
+                    "url": "https://fit2cloud.com/",
+                    "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" }
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://riskscanner.io/features.html#breadcrumb",
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "RiskScanner", "item": "https://riskscanner.io/" },
+                        { "@type": "ListItem", "position": 2, "name": "RiskScanner 功能介绍", "item": "https://riskscanner.io/features.html" }
+                    ]
+                },
+                { "@type": "WebSite", "@id": "https://riskscanner.io/#website", "url": "https://riskscanner.io/", "name": "RiskScanner", "inLanguage": "zh-CN", "publisher": { "@id": "https://fit2cloud.com/#organization" } },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://riskscanner.io/features.html#webpage",
+                    "url": "https://riskscanner.io/features.html",
+                    "name": "RiskScanner 功能介绍",
+                    "description": "RiskScanner 是开源的多云安全合规扫描平台，通过 Cloud Custodian 的 YAML DSL 定义扫描规则，实现对主流公(私)有云资源的安全合规扫描及使用优化建议。",
+                    "inLanguage": "zh-CN",
+                    "isPartOf": { "@id": "https://riskscanner.io/#website" },
+                    "publisher": { "@id": "https://fit2cloud.com/#organization" },
+                    "breadcrumb": { "@id": "https://riskscanner.io/features.html#breadcrumb" }
+                }
+            ]
+        </script>
         <!-- SEO Enhancements End -->
-
     </head>
     <body>
         <header id="topnav" class="defaultscroll sticky">
@@ -80,222 +109,218 @@
                 </div>
             </div>
         </header>
-<main id="main-content">
-
-
-        <section class="bg-half bg-dark d-table w-100" style="background-image: url('images/banner/banner3.jpg')">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="page-next-level">
-                            <h1 class="heading mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">RiskScanner 功能介绍</h1>
-                            <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-8">
-                                <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="watch btn btn-primary mt-2">  演示视频</a>
+        <main id="main-content">
+            <section class="bg-half bg-dark d-table w-100" style="background-image: url('images/banner/banner3.jpg')">
+                <div class="bg-overlay"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <div class="page-next-level">
+                                <h1 class="heading mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">RiskScanner 功能介绍</h1>
+                                <div class="mt-4 pt-2 animated fadeInUpBig animation-delay-8">
+                                    <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="watch btn btn-primary mt-2"> 演示视频</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title mb-4">功能列表</h4>
+            <section class="section bg-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <div class="section-title">
+                                <h4 class="title mb-4">功能列表</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-sm-12 col-xs-12 subscription-div" style="margin-top: 0px">
+                            <table class="subscription-table">
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="6"><h5 class="title">首页</h5></td>
+
+                                        <td rowspan="4"><h6 class="title">概览</h6></td>
+                                        <td><p class="title-p">首页概览实时展示扫描资源的不合规数量与占比</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p class="title-p">实时展示不合规扫描规则</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">实时展示云账号扫描评分与资源数量</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">实时展示区域不合规资源数量</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6 class="title">历史记录</h6></td>
+                                        <td><p class="title-p">记录并展示每个云账号每日的最终扫描记录与扫描资源数量</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6 class="title">活动</h6></td>
+                                        <td><p class="title-p">展示用户在平台的所有操作记录</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="6"><h5 class="title">扫描规则</h5></td>
+
+                                        <td rowspan="2"><h6 class="title">扫描规则</h6></td>
+                                        <td><p class="title-p">系统内置云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，不可增删改</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p class="title-p">用户自定义云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，可增删改查</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2"><h6 class="title">规则标签</h6></td>
+                                        <td><p class="title-p">系统内置规则标签，给规则定义标签，不可增删改</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">用户自定义规则标签，给规则定义标签，可增删改查</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><h6 class="title">规则组</h6></td>
+                                        <td><p class="title-p">系统内置规则组，给规则分组，不可增删改</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">用户自定义规则组，给规则分组，可增删改查</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="4"><h5 class="title">扫描结果</h5></td>
+
+                                        <td rowspan="2"><h6 class="title">扫描结果</h6></td>
+                                        <td><p class="title-p">根据云平台扫描规则，扫描资源并生成扫描结果，查看扫描状态、扫描日志</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p class="title-p">查看扫描结果的不合规资源的详细信息</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2"><h6 class="title">合规报告</h6></td>
+                                        <td><p class="title-p">根据规则组、等保预检等分组显示扫描结果，根据风险条例显示扫描资源的结果与优化改进建议</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">下载合规报告</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="6"><h5 class="title">云账号</h5></td>
+
+                                        <td rowspan="2"><h6 class="title">云账号设置</h6></td>
+                                        <td><p class="title-p">创建、编辑云平台的云账号</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><p class="title-p">一键扫描、一键校验、获取区域等</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="2"><h6 class="title">定时任务</h6></td>
+                                        <td><p class="title-p">根据云账号或规则创建扫描定时任务</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">暂停启动定时任务，查看扫描详情、查看定时任务日志</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><h6 class="title">统计分析</h6></td>
+                                        <td><p class="title-p">根据云账号查看统计结果</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="title-p">根据扫描规则、规则组别、等保条例、规则标签、扫描区域、扫描资源等维度查看扫描结果统计</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td rowspan="6"><h5 class="title">系统设置</h5></td>
+
+                                        <td><h6 class="title">用户管理</h6></td>
+                                        <td><p class="title-p">创建、编辑、删除用户信息</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><h6 class="title">系统参数设置</h6></td>
+                                        <td><p class="title-p">设置邮件、企业微信、钉钉等信息</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6 class="title">消息通知</h6></td>
+                                        <td><p class="title-p">支持对安全合规规则扫描资源结果进行、邮件、企业微信、钉钉等消息通知</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6 class="title">代理设置</h6></td>
+                                        <td><p class="title-p">创建 http 或 https 类型的代理供云账号扫描使用</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h6 class="title">个人设置</h6></td>
+                                        <td><p class="title-p">编辑用户、修改密码</p></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><h6 class="title">API Keys</h6></td>
+                                        <td><p class="title-p">创建 Access Key 与 Securet Keys 供 Restful APIs 调用使用</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-12 col-sm-12 col-xs-12 subscription-div" style="margin-top: 0px">
-                        <table class="subscription-table">
-                            <tbody>
-                                <tr>
-                                    <td rowspan="6"><h5 class="title">首页</h5></td>
-
-                                    <td rowspan="4"><h6 class="title">概览</h6></td>
-                                    <td><p class="title-p">首页概览实时展示扫描资源的不合规数量与占比</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><p class="title-p">实时展示不合规扫描规则</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">实时展示云账号扫描评分与资源数量</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">实时展示区域不合规资源数量</p></td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="title">历史记录</h6></td>
-                                    <td><p class="title-p">记录并展示每个云账号每日的最终扫描记录与扫描资源数量</p></td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="title">活动</h6></td>
-                                    <td><p class="title-p">展示用户在平台的所有操作记录</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="6"><h5 class="title">扫描规则</h5></td>
-
-                                    <td rowspan="2"><h6 class="title">扫描规则</h6></td>
-                                    <td><p class="title-p">系统内置云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，不可增删改</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><p class="title-p">用户自定义云平台对应的 custodian 类型的规则，规则内容以 yaml 格式编写，可增删改查</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="2"><h6 class="title">规则标签</h6></td>
-                                    <td><p class="title-p">系统内置规则标签，给规则定义标签，不可增删改</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">用户自定义规则标签，给规则定义标签，可增删改查</p></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2"><h6 class="title">规则组</h6></td>
-                                    <td><p class="title-p">系统内置规则组，给规则分组，不可增删改</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">用户自定义规则组，给规则分组，可增删改查</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="4"><h5 class="title">扫描结果</h5></td>
-
-                                    <td rowspan="2"><h6 class="title">扫描结果</h6></td>
-                                    <td><p class="title-p">根据云平台扫描规则，扫描资源并生成扫描结果，查看扫描状态、扫描日志</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><p class="title-p">查看扫描结果的不合规资源的详细信息</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="2"><h6 class="title">合规报告</h6></td>
-                                    <td><p class="title-p">根据规则组、等保预检等分组显示扫描结果，根据风险条例显示扫描资源的结果与优化改进建议</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">下载合规报告</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="6"><h5 class="title">云账号</h5></td>
-
-                                    <td rowspan="2"><h6 class="title">云账号设置</h6></td>
-                                    <td><p class="title-p">创建、编辑云平台的云账号</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><p class="title-p">一键扫描、一键校验、获取区域等</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="2"><h6 class="title">定时任务</h6></td>
-                                    <td><p class="title-p">根据云账号或规则创建扫描定时任务</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">暂停启动定时任务，查看扫描详情、查看定时任务日志</p></td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2"><h6 class="title">统计分析</h6></td>
-                                    <td><p class="title-p">根据云账号查看统计结果</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="title-p">根据扫描规则、规则组别、等保条例、规则标签、扫描区域、扫描资源等维度查看扫描结果统计</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td rowspan="6"><h5 class="title">系统设置</h5></td>
-
-                                    <td><h6 class="title">用户管理</h6></td>
-                                    <td><p class="title-p">创建、编辑、删除用户信息</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><h6 class="title">系统参数设置</h6></td>
-                                    <td><p class="title-p">设置邮件、企业微信、钉钉等信息</p></td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="title">消息通知</h6></td>
-                                    <td><p class="title-p">支持对安全合规规则扫描资源结果进行、邮件、企业微信、钉钉等消息通知</p></td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="title">代理设置</h6></td>
-                                    <td><p class="title-p">创建 http 或 https 类型的代理供云账号扫描使用</p></td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="title">个人设置</h6></td>
-                                    <td><p class="title-p">编辑用户、修改密码</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><h6 class="title">API Keys</h6></td>
-                                    <td><p class="title-p">创建 Access Key 与 Securet Keys 供 Restful APIs 调用使用</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section bg-cta" style="background: url('images/banner/banner4.jpg') center center no-repeat" id="cta">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title title-dark text-white mb-4">演示视频</h4>
-                            <p class="text-light para-desc para-dark mx-auto">快速演示如何通过 RiskScanner 实现对主流公(私)有云资源的安全合规扫描及使用优化建议</p>
-                            <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="play-btn border border-light mt-4">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    class="feather feather-play fea icon-ex-md text-white title-dark"
-                                >
-                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                                </svg>
-                            </a>
+            <section class="section bg-cta" style="background: url('images/banner/banner4.jpg') center center no-repeat" id="cta">
+                <div class="bg-overlay"></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <div class="section-title">
+                                <h4 class="title title-dark text-white mb-4">演示视频</h4>
+                                <p class="text-light para-desc para-dark mx-auto">快速演示如何通过 RiskScanner 实现对主流公(私)有云资源的安全合规扫描及使用优化建议</p>
+                                <a target="_blank" href="https://www.bilibili.com/video/BV12p4y1b7Ud" class="play-btn border border-light mt-4">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-play fea icon-ex-md text-white title-dark"
+                                    >
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact" class="section bg-light">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title">
-                            <h4 class="title mb-4">联系我们</h4>
-                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">RiskScanner </span>? 欢迎通过如下方式联系我们。</p>
+            <section id="contact" class="section bg-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <div class="section-title">
+                                <h4 class="title mb-4">联系我们</h4>
+                                <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">RiskScanner </span>? 欢迎通过如下方式联系我们。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-top">
+                        <div class="col-lg-12 col-md-4 order-1 order-md-2 text-center mt-3">
+                            <h4 class="page-title mb-0">技术交流群</h4>
+                            <img src="./images/contact/wechat-group.jpg" alt="RiskScanner 微信咨询二维码" width="120" />
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-between align-items-top">
-                    <div class="col-lg-12 col-md-4 order-1 order-md-2 text-center mt-3">
-                        <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="./images/contact/wechat-group.jpg" alt="RiskScanner 微信咨询二维码" width="120" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-</main>
-<footer class="footer footer-bar">
+            </section>
+        </main>
+        <footer class="footer footer-bar">
             <div class="container text-center">
                 <div class="row align-items-center">
                     <div class="col">

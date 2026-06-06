@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,197 @@
                     <img src="../images/blog/case-20250124/dataease-026.jpg" alt="案例研究丨浪潮云洲通过DataEase推进多维度数据可视化建设" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>浪潮云洲工业互联网有限公司（以下简称为“浪潮云洲”）成立于2018年，定位于工业数字基础设施建设商、具有国际影响力的工业互联网平台运营商、生产性互联网头部服务商。截至目前，浪潮云洲工业互联网平台连续五年入选跨行业跨领域工业互联网平台，位居国家工业互联网平台第一梯队。</p><p><img src="../images/blog/case-20250124/dataease-026.jpg" alt="" loading="lazy" /></p><p><span><strong>一、数据分析需求与挑战</strong></span></p><p>浪潮云洲作为一家制造业智能化转型综合服务商，在经营过程中，企业内部的工业安全产品部门需要对内部数据进行分析展示；同时，企业外部的客户也需要其提供相关的数据分析服务。</p><p>具体来说，浪潮云洲在日常的经营活动中需要结合物联网平台和数字化平台（基于物联网平台制作的应用）进行数据分析并展示；也需要为客户提供数据分析相关的SaaS服务，并且按照客户需求配置相关的数据权限；在满足数据分析展示需求的前提下，浪潮云洲还需要考虑成本问题，希望有效降低数据分析服务的开发成本，并且缩短项目交付的时间周期。</p><p><span><strong>二、为什么选择DataEase？</strong></span></p><p>在初期调研阶段对比了帆软的FineBI、阿里的QuickBI等多款BI产品后，浪潮云洲最终选择了DataEase开源BI工具，作为其实现数据可视化的生产力工具。选择DataEase的主要原因有：</p><p><span><strong>■</strong></span><strong> 丰富的数据源支持，满足当前的数据库接入需求以及未来可能面临的客户需求</strong></p><p>浪潮云洲当前需要对接的数据源主要来自于物联网平台和数字化平台所使用的数据库，主要包括MySQL和PostgreSQL这两种数据库类型，后续客户可能还会有其他类型的数据源接入需求。DataEase能够接入OLAP、OLTP等多种类型的数据库，很好地满足了浪潮云洲的数据库接入需求；</p><p><span><strong>■</strong></span><strong> 多租户隔离，满足SaaS服务交付需要</strong></p><p>浪潮云洲项目交付的客户多为制造业客户，技术能力相对薄弱，交付SaaS服务的场景居多。DataEase针对租户隔离的场景支持满足了浪潮云洲的交付需求；</p><p><span><strong>■</strong></span><strong> 数据权限控制，满足数据权限管控要求</strong></p><p>针对于浪潮云洲的实际使用场景，内部人员账号和客户演示账号需要设定不同的数据查看权限，因此需要对数据权限进行控制。DataEase支持细粒度的行、列级别权限控制，可以控制不同账号的菜单权限、资源权限，让不同账号在查看同一个大屏时可以看到不同的数据；</p><p><span><strong>■</strong></span><strong> 简单易用，学习成本低，使用成本低</strong></p><p>DataEase是一款人人可用的开源BI工具，简单易用，用户的学习成本和使用成本低，可以实现快速上手，非常贴合用户诉求。</p><p><span><strong>三、应用DataEase实现的数据可视化成果</strong></span></p><p>1. 浪潮云洲使用DataEase模板市场提供的模板进行大屏制作，无需调整样式，就可以方便、高效、快捷地生成数据可视化大屏。</p><p><img src="../images/blog/case-20250124/dataease-026-02.png" alt="" loading="lazy" /></p><p><span>▲图1 浪潮云洲使用DataEase模板市场的模板制作的仪表板</span></p><p><img src="../images/blog/case-20250124/dataease-026-03.png" alt="" loading="lazy" /></p><p><span>▲图2 DataEase模板市场提供了200多款行业模板</span></p><p>2. 浪潮云洲通过DataEase制作的数据大屏，帮助其客户实现了销售、供应链、库存、生产等业务数据的监控和分析，并且可以在客户现场通过大屏投放进行展示。</p><p><img src="../images/blog/case-20250124/dataease-026-04.png" alt="" loading="lazy" /></p><p><span>▲图3 客户现场投放数据大屏</span></p><p>3. DataEase的引入降低了浪潮云洲的开发工作量，项目交付周期显著缩短，极大地提升了交付效率，快速响应项目需求。</p><p>在引入DataEase之前，浪潮云洲通过定制化开发的方式满足客户的数据可视化需求。定制化开发完成后，项目交付客户进行审核，审核不通过则需要修改代码再次进行开发，开发完成后再次审核，直至审核通过。这样的流程一方面会导致开发成本过高，交付周期过长。另一方面，不同项目的数据可视化需求不同，单次开发的页面无法复用，每个项目的数据大屏都需要进行定制化开发。</p><p><img src="../images/blog/common/dataease-026-05.png" alt="" loading="lazy" /></p><p><span>▲图4 引入DataEase前的交付流程图</span></p><p>引入DataEase后，浪潮云洲可以通过DataEase直接配置好需要的数据可视化大屏。大屏配置完成后交付客户审核，若审核不通过，只需要通过简单的拖拉拽操作修改仪表板配置即可，无需修改代码，修改完成后提交给客户再次审核，直至审核通过。另外，一个项目对接完成后，其他项目也可以复用这个成功案例。针对其他项目的需求变更，项目组只需要对DataEase仪表板配置进行调整，无需进行二次开发，开发成本大幅降低，交付效率明显提升。</p><p><img src="../images/blog/case-20250124/dataease-026-06.png" alt="" loading="lazy" /></p><p><span>▲图5 引入DataEase后的交付流程图</span></p><p>4. DataEase的权限管理功能满足了浪潮云洲对数据权限的控制需求，通过权限配置让不同的用户看到不同的菜单以及数据。</p><p><img src="../images/blog/case-20250124/dataease-026-07.png" alt="" loading="lazy" /></p><p><span>▲图6 DataEase的资源权限配置页面</span></p><p><img src="../images/blog/case-20250124/dataease-026-08.png" alt="" loading="lazy" /></p><p><span>▲图7 DataEase的菜单权限配置页面</span></p><p><span><strong>四、DataEase带来的收益</strong></span></p><p>通过使用DataEase，浪潮云洲在数据管理和数据分析方面的能力均获得了显著提升。在低成本投入的前提下，通过高效、多维度的数据展示提升了客户满意度，更好地用数据服务于业务和客户。总结来说，浪潮云洲通过DataEase获得的收益包括：</p><p><span><strong>■</strong></span><strong> 开发成本降低，交付效率提升</strong></p><p>在DataEase的帮助下，浪潮云洲的业务交付从原有的定制开发模式成功转变为灵活的拖拉拽配置实现方案。</p><p>在引入DataEase之前，向客户交付数据分析大屏的需求主要依赖于定制化开发，每个数据分析大屏开发的时间约为两周，其中数据抽取与处理工作耗时一周，大屏的开发调试工作耗时一周。引入DataEase之后，开发大屏的总体时间成本降低至3到5天（含数据抽取的时间），其中通过拖拉拽配置的方式制作大屏只需要1天的时间，节省了近80%的开发时间成本投入；</p><p><span><strong>■</strong></span><strong> 实现SaaS场景交付</strong></p><p>DataEase提供的多租户隔离体系，满足了客户对SaaS服务交付的场景需求。浪潮云洲只需要给客户开通DataEase的账号分配权限即可，无需客户单独部署BI工具，节约了服务器部署和维护的成本；</p><p><span><strong>■</strong></span><strong> 数据权限隔离控制</strong></p><p>通过DataEase的权限管理功能，浪潮云洲可以针对内部人员账号和客户演示账号分配不同的数据查看权限，实现了对不同账号的菜单权限、资源权限的控制；</p><p><span><strong>■</strong></span><strong> 项目需求响应速度显著提升</strong></p><p>使用DataEase后，浪潮云洲可以借助DataEase模板市场提供的丰富模板进行大屏制作，无需自行设计调整样式，项目推进更加高效和快捷。针对客户提出的多维度数据分析需求，浪潮云洲能够快速通过大屏制作的方式进行满足，极大地提升了项目需求响应的速度，提高了客户的服务满意度。</p>
+                    <p>
+                        浪潮云洲工业互联网有限公司（以下简称为“浪潮云洲”）成立于2018年，定位于工业数字基础设施建设商、具有国际影响力的工业互联网平台运营商、生产性互联网头部服务商。截至目前，浪潮云洲工业互联网平台连续五年入选跨行业跨领域工业互联网平台，位居国家工业互联网平台第一梯队。
+                    </p>
+                    <p><img src="../images/blog/case-20250124/dataease-026.jpg" alt="" loading="lazy" /></p>
+                    <p>
+                        <span><strong>一、数据分析需求与挑战</strong></span>
+                    </p>
+                    <p>浪潮云洲作为一家制造业智能化转型综合服务商，在经营过程中，企业内部的工业安全产品部门需要对内部数据进行分析展示；同时，企业外部的客户也需要其提供相关的数据分析服务。</p>
+                    <p>
+                        具体来说，浪潮云洲在日常的经营活动中需要结合物联网平台和数字化平台（基于物联网平台制作的应用）进行数据分析并展示；也需要为客户提供数据分析相关的SaaS服务，并且按照客户需求配置相关的数据权限；在满足数据分析展示需求的前提下，浪潮云洲还需要考虑成本问题，希望有效降低数据分析服务的开发成本，并且缩短项目交付的时间周期。
+                    </p>
+                    <p>
+                        <span><strong>二、为什么选择DataEase？</strong></span>
+                    </p>
+                    <p>在初期调研阶段对比了帆软的FineBI、阿里的QuickBI等多款BI产品后，浪潮云洲最终选择了DataEase开源BI工具，作为其实现数据可视化的生产力工具。选择DataEase的主要原因有：</p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 丰富的数据源支持，满足当前的数据库接入需求以及未来可能面临的客户需求</strong>
+                    </p>
+                    <p>
+                        浪潮云洲当前需要对接的数据源主要来自于物联网平台和数字化平台所使用的数据库，主要包括MySQL和PostgreSQL这两种数据库类型，后续客户可能还会有其他类型的数据源接入需求。DataEase能够接入OLAP、OLTP等多种类型的数据库，很好地满足了浪潮云洲的数据库接入需求；
+                    </p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 多租户隔离，满足SaaS服务交付需要</strong>
+                    </p>
+                    <p>浪潮云洲项目交付的客户多为制造业客户，技术能力相对薄弱，交付SaaS服务的场景居多。DataEase针对租户隔离的场景支持满足了浪潮云洲的交付需求；</p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 数据权限控制，满足数据权限管控要求</strong>
+                    </p>
+                    <p>
+                        针对于浪潮云洲的实际使用场景，内部人员账号和客户演示账号需要设定不同的数据查看权限，因此需要对数据权限进行控制。DataEase支持细粒度的行、列级别权限控制，可以控制不同账号的菜单权限、资源权限，让不同账号在查看同一个大屏时可以看到不同的数据；
+                    </p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 简单易用，学习成本低，使用成本低</strong>
+                    </p>
+                    <p>DataEase是一款人人可用的开源BI工具，简单易用，用户的学习成本和使用成本低，可以实现快速上手，非常贴合用户诉求。</p>
+                    <p>
+                        <span><strong>三、应用DataEase实现的数据可视化成果</strong></span>
+                    </p>
+                    <p>1. 浪潮云洲使用DataEase模板市场提供的模板进行大屏制作，无需调整样式，就可以方便、高效、快捷地生成数据可视化大屏。</p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-02.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图1 浪潮云洲使用DataEase模板市场的模板制作的仪表板</span></p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-03.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图2 DataEase模板市场提供了200多款行业模板</span></p>
+                    <p>2. 浪潮云洲通过DataEase制作的数据大屏，帮助其客户实现了销售、供应链、库存、生产等业务数据的监控和分析，并且可以在客户现场通过大屏投放进行展示。</p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-04.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图3 客户现场投放数据大屏</span></p>
+                    <p>3. DataEase的引入降低了浪潮云洲的开发工作量，项目交付周期显著缩短，极大地提升了交付效率，快速响应项目需求。</p>
+                    <p>
+                        在引入DataEase之前，浪潮云洲通过定制化开发的方式满足客户的数据可视化需求。定制化开发完成后，项目交付客户进行审核，审核不通过则需要修改代码再次进行开发，开发完成后再次审核，直至审核通过。这样的流程一方面会导致开发成本过高，交付周期过长。另一方面，不同项目的数据可视化需求不同，单次开发的页面无法复用，每个项目的数据大屏都需要进行定制化开发。
+                    </p>
+                    <p><img src="../images/blog/common/dataease-026-05.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图4 引入DataEase前的交付流程图</span></p>
+                    <p>
+                        引入DataEase后，浪潮云洲可以通过DataEase直接配置好需要的数据可视化大屏。大屏配置完成后交付客户审核，若审核不通过，只需要通过简单的拖拉拽操作修改仪表板配置即可，无需修改代码，修改完成后提交给客户再次审核，直至审核通过。另外，一个项目对接完成后，其他项目也可以复用这个成功案例。针对其他项目的需求变更，项目组只需要对DataEase仪表板配置进行调整，无需进行二次开发，开发成本大幅降低，交付效率明显提升。
+                    </p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-06.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图5 引入DataEase后的交付流程图</span></p>
+                    <p>4. DataEase的权限管理功能满足了浪潮云洲对数据权限的控制需求，通过权限配置让不同的用户看到不同的菜单以及数据。</p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-07.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图6 DataEase的资源权限配置页面</span></p>
+                    <p><img src="../images/blog/case-20250124/dataease-026-08.png" alt="" loading="lazy" /></p>
+                    <p><span>▲图7 DataEase的菜单权限配置页面</span></p>
+                    <p>
+                        <span><strong>四、DataEase带来的收益</strong></span>
+                    </p>
+                    <p>
+                        通过使用DataEase，浪潮云洲在数据管理和数据分析方面的能力均获得了显著提升。在低成本投入的前提下，通过高效、多维度的数据展示提升了客户满意度，更好地用数据服务于业务和客户。总结来说，浪潮云洲通过DataEase获得的收益包括：
+                    </p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 开发成本降低，交付效率提升</strong>
+                    </p>
+                    <p>在DataEase的帮助下，浪潮云洲的业务交付从原有的定制开发模式成功转变为灵活的拖拉拽配置实现方案。</p>
+                    <p>
+                        在引入DataEase之前，向客户交付数据分析大屏的需求主要依赖于定制化开发，每个数据分析大屏开发的时间约为两周，其中数据抽取与处理工作耗时一周，大屏的开发调试工作耗时一周。引入DataEase之后，开发大屏的总体时间成本降低至3到5天（含数据抽取的时间），其中通过拖拉拽配置的方式制作大屏只需要1天的时间，节省了近80%的开发时间成本投入；
+                    </p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 实现SaaS场景交付</strong>
+                    </p>
+                    <p>DataEase提供的多租户隔离体系，满足了客户对SaaS服务交付的场景需求。浪潮云洲只需要给客户开通DataEase的账号分配权限即可，无需客户单独部署BI工具，节约了服务器部署和维护的成本；</p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 数据权限隔离控制</strong>
+                    </p>
+                    <p>通过DataEase的权限管理功能，浪潮云洲可以针对内部人员账号和客户演示账号分配不同的数据查看权限，实现了对不同账号的菜单权限、资源权限的控制；</p>
+                    <p>
+                        <span><strong>■</strong></span
+                        ><strong> 项目需求响应速度显著提升</strong>
+                    </p>
+                    <p>
+                        使用DataEase后，浪潮云洲可以借助DataEase模板市场提供的丰富模板进行大屏制作，无需自行设计调整样式，项目推进更加高效和快捷。针对客户提出的多维度数据分析需求，浪潮云洲能够快速通过大屏制作的方式进行满足，极大地提升了项目需求响应的速度，提高了客户的服务满意度。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"案例研究丨浪潮云洲通过DataEase推进多维度数据可视化建设","item":"https://dataease.cn/blog/post-1158f931-0a28-4a39-a38f-7f6b66e1b90f.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"案例研究丨浪潮云洲通过DataEase推进多维度数据可视化建设","description":"浪潮云洲将DataEase应用于公司内部数据与客户SaaS项目数据的可视化大屏搭建。","url":"https://dataease.cn/blog/post-1158f931-0a28-4a39-a38f-7f6b66e1b90f.html","datePublished":"2025-01-24","dateModified":"2025-01-24","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/case-20250124/dataease-026.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "案例研究丨浪潮云洲通过DataEase推进多维度数据可视化建设", "item": "https://dataease.cn/blog/post-1158f931-0a28-4a39-a38f-7f6b66e1b90f.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "案例研究丨浪潮云洲通过DataEase推进多维度数据可视化建设",
+                "description": "浪潮云洲将DataEase应用于公司内部数据与客户SaaS项目数据的可视化大屏搭建。",
+                "url": "https://dataease.cn/blog/post-1158f931-0a28-4a39-a38f-7f6b66e1b90f.html",
+                "datePublished": "2025-01-24",
+                "dateModified": "2025-01-24",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/case-20250124/dataease-026.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,122 +220,151 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/release-20220606/dataease-140-01.png" alt="" loading="lazy" /></figure>
-<p>6月6日，DataEase开源数据可视化分析平台正式发布v1.11.0版本。</p>
-<p>在这一版本中，数据源支持方面，DataEase平台新增对Presto数据源的支持；仪表板方面，除了加入全新组件“富文本”和“下拉树”以外，还新增了对批量设置视图样式的支持，让用户更方便地对视图进行调整；视图方面，增加了新图表类型——符号地图，满足用户对精确定位地图的需求；此外，DataEase还实现了对视图维度自定义排序的支持；系统管理方面，新增操作日志功能，详细记录用户在DataEase中的日常操作。</p>
-<p>最后，我们还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <p>6月6日，DataEase开源数据可视化分析平台正式发布v1.11.0版本。</p>
+                    <p>
+                        在这一版本中，数据源支持方面，DataEase平台新增对Presto数据源的支持；仪表板方面，除了加入全新组件“富文本”和“下拉树”以外，还新增了对批量设置视图样式的支持，让用户更方便地对视图进行调整；视图方面，增加了新图表类型——符号地图，满足用户对精确定位地图的需求；此外，DataEase还实现了对视图维度自定义排序的支持；系统管理方面，新增操作日志功能，详细记录用户在DataEase中的日常操作。
+                    </p>
+                    <p>最后，我们还对其他一些常用的功能进行了功能优化和问题修复。</p>
 
+                    <h2>新增功能</h2>
+                    <p><strong>■ 数据源：新增Presto数据源支持</strong></p>
+                    <p>
+                        Presto项目遵循Apache开源许可协议。作为社区驱动的开源软件，Presto是一款用于大数据的高性能分布式SQL查询引擎。Presto允许用户查询各种数据源，例如Hadoop、AWS
+                        S3、Alluxio、MySQL、Cassandra、Kafka和MongoDB等，并且支持在单个查询中查询来自多个数据源的数据。
+                    </p>
+                    <p>在v1.11.0版本中，DataEase新增对Presto数据源的支持。用户可以在DataEase中连接Presto数据源，利用Presto快速查询的优点在DataEase平台对数据进行展示和分析。</p>
+                    <figure><img src="../images/blog/release-20220606/dataease-140-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 视图：新增符号地图支持</strong></p>
+                    <p>DataEase v1.11.0版本在AntV图库里新增了对符号地图的支持，用户可以根据经纬点来做标记（不同于之前根据行政区划名称进行标记），从而对点数据进行展示，体现相关对象的空间分布。</p>
+                    <figure><img src="../images/blog/release-20220606/dataease-140-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 视图：支持维度的自定义排序</strong></p>
+                    <p>
+                        当对数据进行排序操作时，通常会选择既定的顺序进行排序，或者通过排序控件按照固定的顺序（例如升序、降序、字母排序等）进行操作切换。但有时为了突出某些维度，或者希望按照某些特定顺序展示数据的时候，就非常需要对排序进行自定义的设置。
+                    </p>
+                    <p>DataEase v1.11.0版本在视图图表的维度增加了自定义排序的支持。用户可以在文本类型的维度排序中，通过拖动的方式按需调整排序的规则。</p>
+                    <figure><img src="../images/blog/release-20220606/dataease-140-04.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 系统管理：新增操作日志功能</strong></p>
+                    <p>随着平台的长时间运行，用户在DataEase平台上会产生大量的修改类操作。当管理员需要对某些系统问题进行定位，或者对用户行为进行审计的时候，平台记录的操作日志可以给管理员提供相关的信息进行参考。</p>
+                    <p>在v1.11.0版本中，DataEase在“系统管理”模块中新增操作日志功能，详细记录了操作用户、操作时间、操作类型和操作详情等信息，方便管理员清楚地了解谁在什么时间对什么资源进行了什么操作。</p>
+                    <figure><img src="../images/blog/release-20220606/dataease-140-05.png" alt="" loading="lazy" /></figure>
+                    <p>除了上述提到的新增功能外，DataEase v1.11.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
-<h2>新增功能</h2>
-<p><strong>■ 数据源：新增Presto数据源支持</strong></p>
-<p>Presto项目遵循Apache开源许可协议。作为社区驱动的开源软件，Presto是一款用于大数据的高性能分布式SQL查询引擎。Presto允许用户查询各种数据源，例如Hadoop、AWS S3、Alluxio、MySQL、Cassandra、Kafka和MongoDB等，并且支持在单个查询中查询来自多个数据源的数据。</p>
-<p>在v1.11.0版本中，DataEase新增对Presto数据源的支持。用户可以在DataEase中连接Presto数据源，利用Presto快速查询的优点在DataEase平台对数据进行展示和分析。</p>
-<figure><img src="../images/blog/release-20220606/dataease-140-02.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 视图：新增符号地图支持</strong></p>
-<p>DataEase v1.11.0版本在AntV图库里新增了对符号地图的支持，用户可以根据经纬点来做标记（不同于之前根据行政区划名称进行标记），从而对点数据进行展示，体现相关对象的空间分布。</p>
-<figure><img src="../images/blog/release-20220606/dataease-140-03.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 视图：支持维度的自定义排序</strong></p>
-<p>当对数据进行排序操作时，通常会选择既定的顺序进行排序，或者通过排序控件按照固定的顺序（例如升序、降序、字母排序等）进行操作切换。但有时为了突出某些维度，或者希望按照某些特定顺序展示数据的时候，就非常需要对排序进行自定义的设置。</p>
-<p>DataEase v1.11.0版本在视图图表的维度增加了自定义排序的支持。用户可以在文本类型的维度排序中，通过拖动的方式按需调整排序的规则。</p>
-<figure><img src="../images/blog/release-20220606/dataease-140-04.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 系统管理：新增操作日志功能</strong></p>
-<p>随着平台的长时间运行，用户在DataEase平台上会产生大量的修改类操作。当管理员需要对某些系统问题进行定位，或者对用户行为进行审计的时候，平台记录的操作日志可以给管理员提供相关的信息进行参考。</p>
-<p>在v1.11.0版本中，DataEase在“系统管理”模块中新增操作日志功能，详细记录了操作用户、操作时间、操作类型和操作详情等信息，方便管理员清楚地了解谁在什么时间对什么资源进行了什么操作。</p>
-<figure><img src="../images/blog/release-20220606/dataease-140-05.png" alt="" loading="lazy" /></figure>
-<p>除了上述提到的新增功能外，DataEase v1.11.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h2>功能优化</h2>
+                    <p>■ refactor（仪表板）：辅助方格显示的优化；</p>
+                    <p>■ refactor（仪表板）：画布内存使用优化；</p>
+                    <p>■ refactor（仪表板）：画布区域按钮样式优化；</p>
+                    <p>■ refactor（视图）：视图样式处理逻辑进行代码抽取；</p>
+                    <p>■ refactor（视图）：视图编辑工具栏宽度扩大适配；</p>
+                    <p>■ refactor：模版管理优化，系统模板的管理需要授权；</p>
+                    <p>■ refactor：SQL拼接优化；</p>
+                    <p>■ refactor：代码结构优化；</p>
+                    <p>■ refactor：优化后个人信息可以修改电话、姓名、邮箱等信息（#2237，感谢社区用户satans404的贡献）。</p>
 
-
-<h2>功能优化</h2>
-<p>■ refactor（仪表板）：辅助方格显示的优化；</p>
-<p>■ refactor（仪表板）：画布内存使用优化；</p>
-<p>■ refactor（仪表板）：画布区域按钮样式优化；</p>
-<p>■ refactor（视图）：视图样式处理逻辑进行代码抽取；</p>
-<p>■ refactor（视图）：视图编辑工具栏宽度扩大适配；</p>
-<p>■ refactor：模版管理优化，系统模板的管理需要授权；</p>
-<p>■ refactor：SQL拼接优化；</p>
-<p>■ refactor：代码结构优化；</p>
-<p>■ refactor：优化后个人信息可以修改电话、姓名、邮箱等信息（#2237，感谢社区用户satans404的贡献）。</p>
-
-
-<h2>Bug修复</h2>
-<p>■ fix：修复Fastjson反序列化漏洞（v1.2.79→v1.2.83）；</p>
-<p>■ fix：修复StarRocks字段类型判断的问题；</p>
-<p>■ fix：修复DB2 time类型的处理；</p>
-<p>■ fix：修复集群模式下，未正确更新数据源信息的问题；</p>
-<p>■ fix：修复Tab组件中放置地图钻取后查看详情图形错误的问题；</p>
-<p>■ fix：修复复制仪表板生成新仪表板后，图片组件无法更换图片的问题（#2290）；</p>
-<p>■ fix：修复复制仪表板后，指标卡中值的颜色会恢复为黑色的问题（#2286）；</p>
-<p>■ fix：修复在新建同步任务时，数据集在无数据时提示"请先完成数据同步"的问题（#2277）；</p>
-<p>■ fix：DataEase企业版X-Pack增强包中的主题设置功能，修复主题模板刷新时不显示的问题（#2234）；</p>
-<p>■ fix：修复修改数据源信息后，修复数据集中使用的数据库连接池未更新的问题（#2220）。</p>
+                    <h2>Bug修复</h2>
+                    <p>■ fix：修复Fastjson反序列化漏洞（v1.2.79→v1.2.83）；</p>
+                    <p>■ fix：修复StarRocks字段类型判断的问题；</p>
+                    <p>■ fix：修复DB2 time类型的处理；</p>
+                    <p>■ fix：修复集群模式下，未正确更新数据源信息的问题；</p>
+                    <p>■ fix：修复Tab组件中放置地图钻取后查看详情图形错误的问题；</p>
+                    <p>■ fix：修复复制仪表板生成新仪表板后，图片组件无法更换图片的问题（#2290）；</p>
+                    <p>■ fix：修复复制仪表板后，指标卡中值的颜色会恢复为黑色的问题（#2286）；</p>
+                    <p>■ fix：修复在新建同步任务时，数据集在无数据时提示"请先完成数据同步"的问题（#2277）；</p>
+                    <p>■ fix：DataEase企业版X-Pack增强包中的主题设置功能，修复主题模板刷新时不显示的问题（#2234）；</p>
+                    <p>■ fix：修复修改数据源信息后，修复数据集中使用的数据库连接池未更新的问题（#2220）。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增Presto数据源支持，新增符号地图，DataEase开源数据可视化分析平台v1.11.0发布","item":"https://dataease.cn/blog/post-3534.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增Presto数据源支持，新增符号地图，DataEase开源数据可视化分析平台v1.11.0发布","description":"仪表板方面，加入全新组件“富文本”和“下拉树”；支持视图维度自定义排序；新增操作日志功能。","url":"https://dataease.cn/blog/post-3534.html","datePublished":"2022-06-06","dateModified":"2022-06-06","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-114.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增Presto数据源支持，新增符号地图，DataEase开源数据可视化分析平台v1.11.0发布", "item": "https://dataease.cn/blog/post-3534.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增Presto数据源支持，新增符号地图，DataEase开源数据可视化分析平台v1.11.0发布",
+                "description": "仪表板方面，加入全新组件“富文本”和“下拉树”；支持视图维度自定义排序；新增操作日志功能。",
+                "url": "https://dataease.cn/blog/post-3534.html",
+                "datePublished": "2022-06-06",
+                "dateModified": "2022-06-06",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-114.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

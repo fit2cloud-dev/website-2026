@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,171 @@
                     <img src="../images/blog/common/dataease-001.png" alt="在线地图交互优化，查询组件选项值支持过滤条件，DataEase开源BI工具v2.10.19 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>2026年1月22日，人人可用的开源BI工具DataEase正式发布v2.10.19 LTS版本。</p><p>这一版本的功能更新包括：<strong>图表</strong>方面，在线地图交互优化，水波图新增同时展示具体数值和所占百分比的功能；<strong>数据大屏</strong>方面，外部参数关联查询组件支持控制其选项值的取值范围，配置跳转动作时支持自动携带查询组件的当前过滤条件至目标页面。</p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p>■ feature（图表）：在线地图在隐藏缩放按钮时自动禁用缩放及拖拽操作（#17703）；</p><p>■ feature（图表）：水波图新增同时展示具体数值和所占百分比的功能（#17726）；</p><p>■ feature（数据大屏）：外部参数关联查询组件支持控制其选项值的取值范围；</p><p>■ feature（数据大屏）：配置跳转动作时，支持自动携带查询组件的当前过滤条件至目标页面（#17595）。</p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p>■ refactor（图表）：堆叠柱状图和条形图的标签默认显示指标信息；</p><p>■ refactor（图表）：优化水波图标签的文本显示样式，提升可读性；</p><p>■ refactor（仪表板、数据大屏）：优化Tab组件标题栏的背景样式（#17672）；</p><p>■ refactor（仪表板）：复制仪表板时，其内部图表之间已配置的联动关系支持一并复制（#17770）；</p><p>■ refactor（仪表板、数据大屏）：对数字格式化功能可添加的后缀长度进行限制，避免显示异常；</p><p>■ refactor（数据大屏）：优化组合组件内右键菜单的弹出位置，使其更准确；</p><p>■ refactor（查询条件）：优化首选项默认值的处理逻辑，提升稳定性；</p><p>■ refactor（查询组件）：调整查询组件的编辑界面样式，优化操作体验；</p><p>■ refactor（查询组件）：时间范围查询组件增加“动态设置默认值”配置选项；</p><p>■ refactor（嵌入式）：通过嵌入链接或分享链接访问时，初次加载页面会增加加载动画效果；</p><p>■ refactor（嵌入式）：修复DIV嵌入模式下，切换语言后整个页面意外刷新的问题；</p><p>■ refactor（数据集）：优化保存数据集时的错误信息提示，使其更明确易懂（#17671）；</p><p>■ refactor（移动端）：将PC端工作台和移动端首页的默认页面调整为“我的收藏”页面（#17637）；</p><p>■ refactor：通过模板创建仪表板或数据大屏时，支持名称重复性校验；</p><p>■ refactor：升级Easy Excel依赖至4.0.3版本；</p><p>■ refactor：升级Spring Boot框架至3.3.13版本；</p><p>■ refactor（X-Pack）：升级APISIX网关至3.14.1版本；</p><p>■ refactor（X-Pack）：优化OAuth2认证相关的图标显示样式。</p><h2 id="%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D">问题修复</h2><p>■ fix（X-Pack）：同步管理中，修复修改字段类型时，对于不支持长度的字段类型，其字段长度值未正确清空的问题（#17698）；</p><p>■ fix（X-Pack）：同步管理中，修复处于停止状态的定时任务在服务器重启后状态误显示为“任务结束”的问题；</p><p>■ fix（X-Pack）：修复第三方客户端单点登录（SSO）时出现“账号密码错误”报错的问题；</p><p>■ fix（图表）：优化在线地图（高德、腾讯）图表导出为PNG图片时，内容图层无法导出的问题；</p><p>■ fix（图表）：修复当使用Tab组件切换显示多个地图图表时，导出整个仪表板为PNG图片后，地图图表不显示的问题（#17700）；</p><p>■ fix（图表）：修复图表自定义排序功能受“自定义SQL全局预览生效”参数影响的问题（#17734）；</p><p>■ fix（图表）：修复地图、气泡地图在禁用拖拽操作后，在移动端仍可通过双指手势进行旋转和缩放的问题；</p><p>■ fix（图表）：修复地图、气泡地图在禁用拖拽操作后，仍可通过按住鼠标右键进行拖拽的问题；</p><p>■ fix（图表）：修复地图组件风格样式显示错误的问题；</p><p>■ fix（图表）：修复堆叠柱状图和条形图中，自定义图例顺序与自定义数据排序效果冲突的问题（#17649）；</p><p>■ fix（图表）：修复天地图导出为PNG图片时，内容图层无法导出的问题；</p><p>■ fix（图表）：修复子弹图提示框中，区间值格式化无效的问题；</p><p>■ fix（图表）：修复表格类图表开启自动换行后，设置表头对齐方式可能引发异常的问题；</p><p>■ fix（图表）：修复明细表在进行单元格合并，且合并字段为单一字段时，计算结果错误的问题（#17472）；</p><p>■ fix（图表）：修复图表中最大值/最小值标签的显示可能会遮挡下方数据图形点击事件的问题；</p><p>■ fix（图表）：修复当表格的指标列被用作维度时，其单元格数值格式化失效的问题；</p><p>■ fix（图表）：修复表格中对日期字段设置条件样式时，判空条件不生效的问题（#17710）；</p><p>■ fix（图表）：修复透视表带格式导出至Excel时，空值（null）的显示与页面图表内显示不一致的问题；</p><p>■ fix（图表）：修复明细表开启换行功能后，设置表头对齐方式可能引发异常的问题；</p><p>■ fix（图表）：修复明细表在开启表头分组及合并单元格后，导出至Excel时出现的边框线条缺失问题；</p><p>■ fix（安装）：修复在WSL环境中使用Docker Desktop部署时，出现“docker.service not found”错误的问题；</p><p>■ fix（嵌入式）：修复嵌入式数据大屏在手机端无法正常显示或布局错乱的问题（#17685）；</p><p>■ fix（查询组件）：修复查询组件在iOS设备上的特定兼容性问题；</p><p>■ fix（查询组件）：修复当查询项为时间范围且默认值设为“月初至昨日”时，每月第一天无法查询到数据的问题（#17783）；</p><p>■ fix（查询组件）：修复级联查询组件在设置完成后，关联查询字段的默认值不生效的问题（#17655）；</p><p>■ fix（移动端）：修复移动端告警消息的红框提示长时间不自动消失的问题（#17740）；</p><p>■ fix（仪表板）：修复删除仪表板时，其对应的分享记录未被同步清理的问题；</p><p>■ fix：修复一处潜在的JWT Token安全漏洞；</p><p>■ fix：修复切换系统主题时导致部分个性化配置丢失的问题；</p><p>■ fix：修复图片组件因默认值排序靠前而导致后置条件判断失效，以及未对图片地址进行空值校验的问题；</p><p>■ fix：修复当存在多个外部参数时，默认值与传入值不能混合使用的问题；</p><p>■ fix：修复在富文本组件中为数值类型字段设置条件样式时，空值判断提示异常的问题；</p><p>■ fix：修复当过滤组件和图表组合后添加到Tab组件中时，在外部参数设置界面过滤组件不可见的问题；</p><p>■ fix：修复系统字体设置不支持名称中包含空格的字体的问题；</p><p>■ fix：修复从编辑界面跳转至其他仪表板后，图表放大和下载功能失效的问题；</p><p>■ fix：修复页面跳转时，部分外部参数的默认值未正确显示的问题；</p><p>■ fix：修复部分公共链接在移动端访问时参数解析出现编码错误提示的问题；</p><p>■ fix：修复部分情况下控制台因外部参数问题报错的问题；</p><p>■ fix：修复部分预览界面中过滤组件意外处于可编辑状态的问题；</p><p>■ fix：修复切换自定义国际化语言包后，登录页面未进行相应切换的问题；</p><p>■ fix：修复复制图表时，旧图表字段信息被携带导致阈值告警功能异常的问题；</p><p>■ fix：修复明细表导出数据时，进度条不显示的问题。</p>
+                    <p>2026年1月22日，人人可用的开源BI工具DataEase正式发布v2.10.19 LTS版本。</p>
+                    <p>
+                        这一版本的功能更新包括：<strong>图表</strong>方面，在线地图交互优化，水波图新增同时展示具体数值和所占百分比的功能；<strong>数据大屏</strong>方面，外部参数关联查询组件支持控制其选项值的取值范围，配置跳转动作时支持自动携带查询组件的当前过滤条件至目标页面。
+                    </p>
+                    <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
+                    <p>■ feature（图表）：在线地图在隐藏缩放按钮时自动禁用缩放及拖拽操作（#17703）；</p>
+                    <p>■ feature（图表）：水波图新增同时展示具体数值和所占百分比的功能（#17726）；</p>
+                    <p>■ feature（数据大屏）：外部参数关联查询组件支持控制其选项值的取值范围；</p>
+                    <p>■ feature（数据大屏）：配置跳转动作时，支持自动携带查询组件的当前过滤条件至目标页面（#17595）。</p>
+                    <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
+                    <p>■ refactor（图表）：堆叠柱状图和条形图的标签默认显示指标信息；</p>
+                    <p>■ refactor（图表）：优化水波图标签的文本显示样式，提升可读性；</p>
+                    <p>■ refactor（仪表板、数据大屏）：优化Tab组件标题栏的背景样式（#17672）；</p>
+                    <p>■ refactor（仪表板）：复制仪表板时，其内部图表之间已配置的联动关系支持一并复制（#17770）；</p>
+                    <p>■ refactor（仪表板、数据大屏）：对数字格式化功能可添加的后缀长度进行限制，避免显示异常；</p>
+                    <p>■ refactor（数据大屏）：优化组合组件内右键菜单的弹出位置，使其更准确；</p>
+                    <p>■ refactor（查询条件）：优化首选项默认值的处理逻辑，提升稳定性；</p>
+                    <p>■ refactor（查询组件）：调整查询组件的编辑界面样式，优化操作体验；</p>
+                    <p>■ refactor（查询组件）：时间范围查询组件增加“动态设置默认值”配置选项；</p>
+                    <p>■ refactor（嵌入式）：通过嵌入链接或分享链接访问时，初次加载页面会增加加载动画效果；</p>
+                    <p>■ refactor（嵌入式）：修复DIV嵌入模式下，切换语言后整个页面意外刷新的问题；</p>
+                    <p>■ refactor（数据集）：优化保存数据集时的错误信息提示，使其更明确易懂（#17671）；</p>
+                    <p>■ refactor（移动端）：将PC端工作台和移动端首页的默认页面调整为“我的收藏”页面（#17637）；</p>
+                    <p>■ refactor：通过模板创建仪表板或数据大屏时，支持名称重复性校验；</p>
+                    <p>■ refactor：升级Easy Excel依赖至4.0.3版本；</p>
+                    <p>■ refactor：升级Spring Boot框架至3.3.13版本；</p>
+                    <p>■ refactor（X-Pack）：升级APISIX网关至3.14.1版本；</p>
+                    <p>■ refactor（X-Pack）：优化OAuth2认证相关的图标显示样式。</p>
+                    <h2 id="%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D">问题修复</h2>
+                    <p>■ fix（X-Pack）：同步管理中，修复修改字段类型时，对于不支持长度的字段类型，其字段长度值未正确清空的问题（#17698）；</p>
+                    <p>■ fix（X-Pack）：同步管理中，修复处于停止状态的定时任务在服务器重启后状态误显示为“任务结束”的问题；</p>
+                    <p>■ fix（X-Pack）：修复第三方客户端单点登录（SSO）时出现“账号密码错误”报错的问题；</p>
+                    <p>■ fix（图表）：优化在线地图（高德、腾讯）图表导出为PNG图片时，内容图层无法导出的问题；</p>
+                    <p>■ fix（图表）：修复当使用Tab组件切换显示多个地图图表时，导出整个仪表板为PNG图片后，地图图表不显示的问题（#17700）；</p>
+                    <p>■ fix（图表）：修复图表自定义排序功能受“自定义SQL全局预览生效”参数影响的问题（#17734）；</p>
+                    <p>■ fix（图表）：修复地图、气泡地图在禁用拖拽操作后，在移动端仍可通过双指手势进行旋转和缩放的问题；</p>
+                    <p>■ fix（图表）：修复地图、气泡地图在禁用拖拽操作后，仍可通过按住鼠标右键进行拖拽的问题；</p>
+                    <p>■ fix（图表）：修复地图组件风格样式显示错误的问题；</p>
+                    <p>■ fix（图表）：修复堆叠柱状图和条形图中，自定义图例顺序与自定义数据排序效果冲突的问题（#17649）；</p>
+                    <p>■ fix（图表）：修复天地图导出为PNG图片时，内容图层无法导出的问题；</p>
+                    <p>■ fix（图表）：修复子弹图提示框中，区间值格式化无效的问题；</p>
+                    <p>■ fix（图表）：修复表格类图表开启自动换行后，设置表头对齐方式可能引发异常的问题；</p>
+                    <p>■ fix（图表）：修复明细表在进行单元格合并，且合并字段为单一字段时，计算结果错误的问题（#17472）；</p>
+                    <p>■ fix（图表）：修复图表中最大值/最小值标签的显示可能会遮挡下方数据图形点击事件的问题；</p>
+                    <p>■ fix（图表）：修复当表格的指标列被用作维度时，其单元格数值格式化失效的问题；</p>
+                    <p>■ fix（图表）：修复表格中对日期字段设置条件样式时，判空条件不生效的问题（#17710）；</p>
+                    <p>■ fix（图表）：修复透视表带格式导出至Excel时，空值（null）的显示与页面图表内显示不一致的问题；</p>
+                    <p>■ fix（图表）：修复明细表开启换行功能后，设置表头对齐方式可能引发异常的问题；</p>
+                    <p>■ fix（图表）：修复明细表在开启表头分组及合并单元格后，导出至Excel时出现的边框线条缺失问题；</p>
+                    <p>■ fix（安装）：修复在WSL环境中使用Docker Desktop部署时，出现“docker.service not found”错误的问题；</p>
+                    <p>■ fix（嵌入式）：修复嵌入式数据大屏在手机端无法正常显示或布局错乱的问题（#17685）；</p>
+                    <p>■ fix（查询组件）：修复查询组件在iOS设备上的特定兼容性问题；</p>
+                    <p>■ fix（查询组件）：修复当查询项为时间范围且默认值设为“月初至昨日”时，每月第一天无法查询到数据的问题（#17783）；</p>
+                    <p>■ fix（查询组件）：修复级联查询组件在设置完成后，关联查询字段的默认值不生效的问题（#17655）；</p>
+                    <p>■ fix（移动端）：修复移动端告警消息的红框提示长时间不自动消失的问题（#17740）；</p>
+                    <p>■ fix（仪表板）：修复删除仪表板时，其对应的分享记录未被同步清理的问题；</p>
+                    <p>■ fix：修复一处潜在的JWT Token安全漏洞；</p>
+                    <p>■ fix：修复切换系统主题时导致部分个性化配置丢失的问题；</p>
+                    <p>■ fix：修复图片组件因默认值排序靠前而导致后置条件判断失效，以及未对图片地址进行空值校验的问题；</p>
+                    <p>■ fix：修复当存在多个外部参数时，默认值与传入值不能混合使用的问题；</p>
+                    <p>■ fix：修复在富文本组件中为数值类型字段设置条件样式时，空值判断提示异常的问题；</p>
+                    <p>■ fix：修复当过滤组件和图表组合后添加到Tab组件中时，在外部参数设置界面过滤组件不可见的问题；</p>
+                    <p>■ fix：修复系统字体设置不支持名称中包含空格的字体的问题；</p>
+                    <p>■ fix：修复从编辑界面跳转至其他仪表板后，图表放大和下载功能失效的问题；</p>
+                    <p>■ fix：修复页面跳转时，部分外部参数的默认值未正确显示的问题；</p>
+                    <p>■ fix：修复部分公共链接在移动端访问时参数解析出现编码错误提示的问题；</p>
+                    <p>■ fix：修复部分情况下控制台因外部参数问题报错的问题；</p>
+                    <p>■ fix：修复部分预览界面中过滤组件意外处于可编辑状态的问题；</p>
+                    <p>■ fix：修复切换自定义国际化语言包后，登录页面未进行相应切换的问题；</p>
+                    <p>■ fix：修复复制图表时，旧图表字段信息被携带导致阈值告警功能异常的问题；</p>
+                    <p>■ fix：修复明细表导出数据时，进度条不显示的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"在线地图交互优化，查询组件选项值支持过滤条件，DataEase开源BI工具v2.10.19 LTS版本发布","item":"https://dataease.cn/blog/dataease-v2-10-19-map-filter.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"在线地图交互优化，查询组件选项值支持过滤条件，DataEase开源BI工具v2.10.19 LTS版本发布","description":"配置跳转动作时，支持自动携带查询组件的当前过滤条件至目标页面。","url":"https://dataease.cn/blog/dataease-v2-10-19-map-filter.html","datePublished":"2026-01-22","dateModified":"2026-01-22","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "在线地图交互优化，查询组件选项值支持过滤条件，DataEase开源BI工具v2.10.19 LTS版本发布", "item": "https://dataease.cn/blog/dataease-v2-10-19-map-filter.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "在线地图交互优化，查询组件选项值支持过滤条件，DataEase开源BI工具v2.10.19 LTS版本发布",
+                "description": "配置跳转动作时，支持自动携带查询组件的当前过滤条件至目标页面。",
+                "url": "https://dataease.cn/blog/dataease-v2-10-19-map-filter.html",
+                "datePublished": "2026-01-22",
+                "dateModified": "2026-01-22",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

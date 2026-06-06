@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,137 +220,175 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/release-20210809/dataease-177-01.png" alt="" loading="lazy" /></figure>
-<p>8月9日，DataEase开源数据可视化分析平台正式发布v1.1.0版本。在该版本中，新增了对Oracle数据源的支持，同时还新增两大功能：即消息中心和定时任务中心。在消息中心内，用户可以获取到系统发给自己的系统事件通知。在定时任务中心内，用户可对数据集的定时同步任务做统一的全生命周期管理。此外，我们还对数据集、视图、仪表板等常用的功能也进行了大量的优化和修复。</p>
+                    <p>
+                        8月9日，DataEase开源数据可视化分析平台正式发布v1.1.0版本。在该版本中，新增了对Oracle数据源的支持，同时还新增两大功能：即消息中心和定时任务中心。在消息中心内，用户可以获取到系统发给自己的系统事件通知。在定时任务中心内，用户可对数据集的定时同步任务做统一的全生命周期管理。此外，我们还对数据集、视图、仪表板等常用的功能也进行了大量的优化和修复。
+                    </p>
 
+                    <h3>新增功能</h3>
+                    <p><strong>■ Oracle数据源支持</strong></p>
+                    <p>作为市面上主流的关系型数据库，用户对Oracle数据源的要求非常迫切。在DataEase v1.1.0版本中，我们增加了对Oracle数据源的支持。目前已在Oracle 11和Oracle 12两个版本上完成了验证。</p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 消息中心</strong></p>
+                    <p>
+                        在DataEase
+                        v1.1.0版本中，新增了对消息中心的支持。用户可以在第一时间接收到异步任务的完成消息，以及其他用户对自己的授权通知。点击系统界面右上角的消息通知按钮，即可快速进入到消息中心。目前，消息中心支持的事件有仪表板分享、数据集同步，后续会逐步添加其他系统事件的支持。消息中心默认为每个用户开启了“仪表板分享”和“数据集同步失败”消息的订阅。如不需要相关通知，可以在“接收管理”菜单中选择关闭即可。
+                    </p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 定时任务中心</strong></p>
+                    <p>
+                        在DataEase
+                        v1.1.0版本中，新增了对定时任务中心的支持。在此之前的版本中，用户需要单独在每个数据集中去设置定时任务。定时任务多起来之后，管理起来会非常不方便。在新增的定时任务中心内，用户可以集中查看系统中所添加的所有任务的情况，包括当前执行状况、下次执行计划、任务执行历史记录等，还可以对指定任务进行启动、停止、删除等操作，极大地提升了用户的使用体验。
+                    </p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-04.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 同数据源直连数据集之间支持数据关联</strong></p>
+                    <p>
+                        在此前的版本中，DataEase支持设置数据关联关系的数据集仅包含定时同步类型的数据集和Excel数据集。在DataEase v1.1.0版本中，对于相同数据源的直连模式数据集，我们也可以设置数据集之间的关联关系，从而创建衍生的自定义数据集。
+                    </p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-06.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 视图支持更换数据集</strong></p>
+                    <p>
+                        在DataEase v1.1.0版本中新增了视图更换数据集的支持。在以往的版本中，用户创建了视图之后，如果数据集有变动或失效，就需要重新制作视图。如果该视图已经用在了多个仪表板中，则还需要去修改相关的仪表板。在DataEase
+                        v1.1.0版本中，用户可以直接编辑视图，更换相关数据集，重新制作的视图会自动更新到所有相关的仪表板中。
+                    </p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-07.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 仪表板编辑增加新建视图功能，可直接在仪表板新建视图</strong></p>
+                    <p>
+                        DataEase
+                        v1.1.0版本支持在编辑仪表板的同时新建视图的功能。用户可以更加快速方便地在仪表板中加入所需展示的视图，而无需经历进行退出仪表板→进入视图→新建视图→进入仪表板→编辑仪表板等一系列繁杂的操作，进一步提升了仪表板的开发效率。
+                    </p>
+                    <figure><img src="../images/blog/release-20210809/dataease-177-08.png" alt="" loading="lazy" /></figure>
+                    <p>除了上述提到的新增功能外，DataEase v1.1.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
-<h3>新增功能</h3>
-<p><strong>■ Oracle数据源支持</strong></p>
-<p>作为市面上主流的关系型数据库，用户对Oracle数据源的要求非常迫切。在DataEase v1.1.0版本中，我们增加了对Oracle数据源的支持。目前已在Oracle 11和Oracle 12两个版本上完成了验证。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-02.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 消息中心</strong></p>
-<p>在DataEase v1.1.0版本中，新增了对消息中心的支持。用户可以在第一时间接收到异步任务的完成消息，以及其他用户对自己的授权通知。点击系统界面右上角的消息通知按钮，即可快速进入到消息中心。目前，消息中心支持的事件有仪表板分享、数据集同步，后续会逐步添加其他系统事件的支持。消息中心默认为每个用户开启了“仪表板分享”和“数据集同步失败”消息的订阅。如不需要相关通知，可以在“接收管理”菜单中选择关闭即可。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-03.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 定时任务中心</strong></p>
-<p>在DataEase v1.1.0版本中，新增了对定时任务中心的支持。在此之前的版本中，用户需要单独在每个数据集中去设置定时任务。定时任务多起来之后，管理起来会非常不方便。在新增的定时任务中心内，用户可以集中查看系统中所添加的所有任务的情况，包括当前执行状况、下次执行计划、任务执行历史记录等，还可以对指定任务进行启动、停止、删除等操作，极大地提升了用户的使用体验。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-04.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 同数据源直连数据集之间支持数据关联</strong></p>
-<p>在此前的版本中，DataEase支持设置数据关联关系的数据集仅包含定时同步类型的数据集和Excel数据集。在DataEase v1.1.0版本中，对于相同数据源的直连模式数据集，我们也可以设置数据集之间的关联关系，从而创建衍生的自定义数据集。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-05.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/release-20210809/dataease-177-06.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 视图支持更换数据集</strong></p>
-<p>在DataEase v1.1.0版本中新增了视图更换数据集的支持。在以往的版本中，用户创建了视图之后，如果数据集有变动或失效，就需要重新制作视图。如果该视图已经用在了多个仪表板中，则还需要去修改相关的仪表板。在DataEase v1.1.0版本中，用户可以直接编辑视图，更换相关数据集，重新制作的视图会自动更新到所有相关的仪表板中。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-07.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 仪表板编辑增加新建视图功能，可直接在仪表板新建视图</strong></p>
-<p>DataEase v1.1.0版本支持在编辑仪表板的同时新建视图的功能。用户可以更加快速方便地在仪表板中加入所需展示的视图，而无需经历进行退出仪表板→进入视图→新建视图→进入仪表板→编辑仪表板等一系列繁杂的操作，进一步提升了仪表板的开发效率。</p>
-<figure><img src="../images/blog/release-20210809/dataease-177-08.png" alt="" loading="lazy" /></figure>
-<p>除了上述提到的新增功能外，DataEase v1.1.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h3>功能优化</h3>
+                    <p>■  refactor（数据集）：数据关联选择数据集Tree优化；</p>
+                    <p>■ refactor（数据集）：数据集视图底层SQL拼接使用STG重构（MySQL部分）；</p>
+                    <p>■ feat（数据集）：同步数据集预览数据从Doris中提取；</p>
+                    <p>■ feat（数据集）：添加非直连数据集时，默认全量同步一次；</p>
+                    <p>■ feat（数据集）：根据预览的前100行推断Excel类型；</p>
+                    <p>■ feat（数据集）：数据关联改为左连接等方式；</p>
+                    <p>■ refactor（视图）：视图缓存增加互斥锁，避免出现缓存击穿现象；</p>
+                    <p>■ refactor（视图）：视图UI布局调整；</p>
+                    <p>■ refactor（视图）：过滤组件条件调整；</p>
+                    <p>■ refactor（视图）：视图分组Tree优化；</p>
+                    <p>■ refactor（仪表板）：矩阵设计模式下点击一次组件也无需保存镜像；</p>
+                    <p>■ refactor（仪表板）：创建分组或者仪表板时，点击“取消”按钮，不发出目录树的请求；</p>
+                    <p>■ refactor（仪表板）：仪表板编辑不再使用右键操作，统一在组件的右上角添加设置入口；</p>
+                    <p>■ refactor（仪表板）：查看分享链接使用独立拦截器；</p>
+                    <p>■ refactor：优化任务日志查询；</p>
+                    <p>■ refactor：可配置Kettle相关的文件是否保留。</p>
 
-
-<h3>功能优化</h3>
-<p>■  refactor（数据集）：数据关联选择数据集Tree优化；</p>
-<p>■ refactor（数据集）：数据集视图底层SQL拼接使用STG重构（MySQL部分）；</p>
-<p>■ feat（数据集）：同步数据集预览数据从Doris中提取；</p>
-<p>■ feat（数据集）：添加非直连数据集时，默认全量同步一次；</p>
-<p>■ feat（数据集）：根据预览的前100行推断Excel类型；</p>
-<p>■ feat（数据集）：数据关联改为左连接等方式；</p>
-<p>■ refactor（视图）：视图缓存增加互斥锁，避免出现缓存击穿现象；</p>
-<p>■ refactor（视图）：视图UI布局调整；</p>
-<p>■ refactor（视图）：过滤组件条件调整；</p>
-<p>■ refactor（视图）：视图分组Tree优化；</p>
-<p>■ refactor（仪表板）：矩阵设计模式下点击一次组件也无需保存镜像；</p>
-<p>■ refactor（仪表板）：创建分组或者仪表板时，点击“取消”按钮，不发出目录树的请求；</p>
-<p>■ refactor（仪表板）：仪表板编辑不再使用右键操作，统一在组件的右上角添加设置入口；</p>
-<p>■ refactor（仪表板）：查看分享链接使用独立拦截器；</p>
-<p>■ refactor：优化任务日志查询；</p>
-<p>■ refactor：可配置Kettle相关的文件是否保留。</p>
-
-
-<h3>Bug 修复</h3>
-<p>■ 修复内网环境请求远程axios.js报错的问题；</p>
-<p>■ 修复部分开发环境仪表板编辑无法拖拽的问题；</p>
-<p>■ 修复文本悬浮样式组件样式穿透未生效的问题；</p>
-<p>■ 修复组件查询条件无效的问题；</p>
-<p>■ 修复矩形组件和文本组件在非自适应画布区域模式下对应悬浮组件定位的问题；</p>
-<p>■ 处理kettle tinyint识别错误的问题；</p>
-<p>■ 修复仪表板图表明细数据下载数值为0不显示的问题；</p>
-<p>■ 修复中文输入法回车键直接保存的问题；</p>
-<p>■ 修复仪表板保存直接退出的问题；</p>
-<p>■ 修复数据集字段浮点转整型的问题；</p>
-<p>■ 修复Tree搜索后无法折叠的问题；</p>
-<p>■ 修复单指标图表可能下标越界的问题；</p>
-<p>■ 修复同一张图片无法连续两次被导入到仪表板的问题；</p>
-<p>■ 修复在编辑仪表板时，复制堆叠柱状图时出错的问题；</p>
-<p>■ 修复预览模式下部分尺寸的显示屏仪表板抖动的问题；</p>
-<p>■ 修复Excel替换/追加的问题。<br /></p>
+                    <h3>Bug 修复</h3>
+                    <p>■ 修复内网环境请求远程axios.js报错的问题；</p>
+                    <p>■ 修复部分开发环境仪表板编辑无法拖拽的问题；</p>
+                    <p>■ 修复文本悬浮样式组件样式穿透未生效的问题；</p>
+                    <p>■ 修复组件查询条件无效的问题；</p>
+                    <p>■ 修复矩形组件和文本组件在非自适应画布区域模式下对应悬浮组件定位的问题；</p>
+                    <p>■ 处理kettle tinyint识别错误的问题；</p>
+                    <p>■ 修复仪表板图表明细数据下载数值为0不显示的问题；</p>
+                    <p>■ 修复中文输入法回车键直接保存的问题；</p>
+                    <p>■ 修复仪表板保存直接退出的问题；</p>
+                    <p>■ 修复数据集字段浮点转整型的问题；</p>
+                    <p>■ 修复Tree搜索后无法折叠的问题；</p>
+                    <p>■ 修复单指标图表可能下标越界的问题；</p>
+                    <p>■ 修复同一张图片无法连续两次被导入到仪表板的问题；</p>
+                    <p>■ 修复在编辑仪表板时，复制堆叠柱状图时出错的问题；</p>
+                    <p>■ 修复预览模式下部分尺寸的显示屏仪表板抖动的问题；</p>
+                    <p>■ 修复Excel替换/追加的问题。<br /></p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布","item":"https://dataease.cn/blog/post-2394.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布","description":"视图支持更换数据集。","url":"https://dataease.cn/blog/post-2394.html","datePublished":"2021-08-09","dateModified":"2021-08-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-114.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布", "item": "https://dataease.cn/blog/post-2394.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布",
+                "description": "视图支持更换数据集。",
+                "url": "https://dataease.cn/blog/post-2394.html",
+                "datePublished": "2021-08-09",
+                "dateModified": "2021-08-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-114.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

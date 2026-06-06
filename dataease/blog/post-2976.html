@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,117 +220,142 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/release-20211108/dataease-164-01.png" alt="" loading="lazy" /></figure>
-<p>11月8日，DataEase开源数据可视化分析平台正式发布v1.4.0版本。在该版本中，新增了对MongoDB和Amazon Redshift数据源的支持；视图方面增加引入了新图形库AntV，并在新图库基础上增加了对瀑布图的支持；底层数据连接方面，以阿里的druid替换了原有的c3p0，提升了数据库连接性能；仪表板方面，增加了对跳转功能的支持，并新增了一种仪表板组件（时间组件）。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <p>
+                        11月8日，DataEase开源数据可视化分析平台正式发布v1.4.0版本。在该版本中，新增了对MongoDB和Amazon
+                        Redshift数据源的支持；视图方面增加引入了新图形库AntV，并在新图库基础上增加了对瀑布图的支持；底层数据连接方面，以阿里的druid替换了原有的c3p0，提升了数据库连接性能；仪表板方面，增加了对跳转功能的支持，并新增了一种仪表板组件（时间组件）。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。
+                    </p>
 
+                    <h2>新增功能</h2>
+                    <p><strong>■ 数据源新增支持MongoDB和Amazon Redshift</strong></p>
+                    <p>在DataEase v1.4.0版本中，我们增加了对MongoDB和Amazon Redshift数据源的支持。</p>
+                    <p><em>特别感谢：社区开发者boolean-dev提供了针对Amazon Redshift数据源的功能PR。</em></p>
+                    <figure><img src="../images/blog/release-20211108/dataease-164-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 引入新图形库AntV，增加对瀑布图的支持</strong></p>
+                    <p>在DataEase v1.4.0版本中，引入了蚂蚁数据可视化解决方案AntV，在新图形库的基础上完成了对原有视图图表类型的支持，并增加了新的图表类型瀑布图。</p>
+                    <figure><img src="../images/blog/release-20211108/dataease-164-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 仪表板支持跳转</strong></p>
+                    <p>在DataEase v1.4.0版本中，仪表板新增了对跳转功能的支持，可以实现在仪表板之间的联动跳转，同时支持从仪表板视图打开指定的链接。</p>
+                    <figure><img src="../images/blog/release-20211108/dataease-164-04.png" alt="" loading="lazy" /></figure>
+                    <p>除了上述提到的新增功能外，DataEase v1.4.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
-<h2>新增功能</h2>
-<p><strong>■ 数据源新增支持MongoDB和Amazon Redshift</strong></p>
-<p>在DataEase v1.4.0版本中，我们增加了对MongoDB和Amazon Redshift数据源的支持。</p>
-<p><em>特别感谢：社区开发者boolean-dev提供了针对Amazon Redshift数据源的功能PR。</em></p>
-<figure><img src="../images/blog/release-20211108/dataease-164-02.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 引入新图形库AntV，增加对瀑布图的支持</strong></p>
-<p>在DataEase v1.4.0版本中，引入了蚂蚁数据可视化解决方案AntV，在新图形库的基础上完成了对原有视图图表类型的支持，并增加了新的图表类型瀑布图。</p>
-<figure><img src="../images/blog/release-20211108/dataease-164-03.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 仪表板支持跳转</strong></p>
-<p>在DataEase v1.4.0版本中，仪表板新增了对跳转功能的支持，可以实现在仪表板之间的联动跳转，同时支持从仪表板视图打开指定的链接。</p>
-<figure><img src="../images/blog/release-20211108/dataease-164-04.png" alt="" loading="lazy" /></figure>
-<p>除了上述提到的新增功能外，DataEase v1.4.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h2>功能优化</h2>
+                    <p>■ refactor（仪表板）：优化仪表板排序名称优先功能；</p>
+                    <p>■ refactor（仪表板）：刷新时间可以设置为秒级别，且可以设置是否显示Loading提示；</p>
+                    <p>■ refactor（仪表板）：文字组件、Tab组件可以选择设置为背景透明而文字内容不透明；</p>
+                    <p>■ refactor（仪表板）：优化仪表板视图详情中背景项为可设置跟随仪表板背景；</p>
+                    <p>■ refactor（仪表板）：增加拖拽阴影动画，以避免靠右边界矩阵组件改变大小时，可能定位不准的问题；</p>
+                    <p>■ refactor（仪表板）：优化编辑时全屏问题、Scroll时样式组件定位问题，去掉部分前端日志；</p>
+                    <p>■ refactor（仪表板）：优化编辑状态全屏错位的问题；</p>
+                    <p>■ refactor（仪表板）：优化公共链接参数长度；</p>
+                    <p>■ refactor（视图）：优化Cron组件；</p>
+                    <p>■ refactor（视图）：轴线可自定义，限制刻度数不超过100；</p>
+                    <p>■ refactor：优化任务日志的请求超时问题。</p>
 
-
-<h2>功能优化</h2>
-<p>■ refactor（仪表板）：优化仪表板排序名称优先功能；</p>
-<p>■ refactor（仪表板）：刷新时间可以设置为秒级别，且可以设置是否显示Loading提示；</p>
-<p>■ refactor（仪表板）：文字组件、Tab组件可以选择设置为背景透明而文字内容不透明；</p>
-<p>■ refactor（仪表板）：优化仪表板视图详情中背景项为可设置跟随仪表板背景；</p>
-<p>■ refactor（仪表板）：增加拖拽阴影动画，以避免靠右边界矩阵组件改变大小时，可能定位不准的问题；</p>
-<p>■ refactor（仪表板）：优化编辑时全屏问题、Scroll时样式组件定位问题，去掉部分前端日志；</p>
-<p>■ refactor（仪表板）：优化编辑状态全屏错位的问题；</p>
-<p>■ refactor（仪表板）：优化公共链接参数长度；</p>
-<p>■ refactor（视图）：优化Cron组件；</p>
-<p>■ refactor（视图）：轴线可自定义，限制刻度数不超过100；</p>
-<p>■ refactor：优化任务日志的请求超时问题。</p>
-
-
-<h2>Bug修复</h2>
-<p>■ fix：修复MySQL v5.1支持相关的问题；</p>
-<p>■ fix：修复视图复制名称过长报错的问题；</p>
-<p>■ fix：修复Elasticsearch不能支持https的问题；</p>
-<p>■ fix：修复PostgreSQL时间格式化错误的问题；</p>
-<p>■ fix：修复不能识别Elasticsearch版本的问题；</p>
-<p>■ fix：修复Elasticsearch table-info的SQL相关问题；</p>
-<p>■ fix：修复在编辑仪表板时，切换至全屏预览，边界上的视图可能错位的问题；</p>
-<p>■ fix：修复仪表板复制视图时没有复制下钻字段的问题；</p>
-<p>■ fix：修复公共链接的弹框问题；</p>
-<p>■ fix：修复仪表板属性组件显示不全的问题。</p>
+                    <h2>Bug修复</h2>
+                    <p>■ fix：修复MySQL v5.1支持相关的问题；</p>
+                    <p>■ fix：修复视图复制名称过长报错的问题；</p>
+                    <p>■ fix：修复Elasticsearch不能支持https的问题；</p>
+                    <p>■ fix：修复PostgreSQL时间格式化错误的问题；</p>
+                    <p>■ fix：修复不能识别Elasticsearch版本的问题；</p>
+                    <p>■ fix：修复Elasticsearch table-info的SQL相关问题；</p>
+                    <p>■ fix：修复在编辑仪表板时，切换至全屏预览，边界上的视图可能错位的问题；</p>
+                    <p>■ fix：修复仪表板复制视图时没有复制下钻字段的问题；</p>
+                    <p>■ fix：修复公共链接的弹框问题；</p>
+                    <p>■ fix：修复仪表板属性组件显示不全的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增支持MongoDB和Amazon Redshift数据源，DataEase开源数据可视化分析平台v1.4.0发布","item":"https://dataease.cn/blog/post-2976.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增支持MongoDB和Amazon Redshift数据源，DataEase开源数据可视化分析平台v1.4.0发布","description":"引入了新图形库AntV，增加对瀑布图的支持。","url":"https://dataease.cn/blog/post-2976.html","datePublished":"2021-11-08","dateModified":"2021-11-08","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-114.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增支持MongoDB和Amazon Redshift数据源，DataEase开源数据可视化分析平台v1.4.0发布", "item": "https://dataease.cn/blog/post-2976.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增支持MongoDB和Amazon Redshift数据源，DataEase开源数据可视化分析平台v1.4.0发布",
+                "description": "引入了新图形库AntV，增加对瀑布图的支持。",
+                "url": "https://dataease.cn/blog/post-2976.html",
+                "datePublished": "2021-11-08",
+                "dateModified": "2021-11-08",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-114.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,145 +219,174 @@
                     <img src="../images/blog/news-20221115/dataease-117.jpg" alt="通过DataEase行列权限设置实现数据权限管控" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>在企业的日常经营中，企业人数达到一定数量之后，就需要对企业的层级和部门进行细分，建立企业的树形组织架构。围绕着树形组织架构，企业能够将权限落实到个人，避免企业内部出现管理混乱等情况。而在涉及到数据分析等工作时，权限分配的重要性进一步凸显，最直接的考量就是数据安全的问题。如何保证不同层级之间的员工仅接触到自己应该看到的数据，是数据分析工具需要考虑的问题。</p>
-<p>DataEase作为一款主打“人人可用”的开源数据可视化分析工具，易用性是它最大的优点，因此受到了广大开源社区用户的喜爱。那么，当面对企业实际的应用场景，涉及到复杂的数据权限管控的需求时，DataEase开源数据可视化分析工具的表现如何呢？</p>
-<p>本文主要分享如何通过使用DataEase的行列权限功能，结合企业的树形组织架构，最终实现数据权限管控的效果。</p>
+                    <p>
+                        在企业的日常经营中，企业人数达到一定数量之后，就需要对企业的层级和部门进行细分，建立企业的树形组织架构。围绕着树形组织架构，企业能够将权限落实到个人，避免企业内部出现管理混乱等情况。而在涉及到数据分析等工作时，权限分配的重要性进一步凸显，最直接的考量就是数据安全的问题。如何保证不同层级之间的员工仅接触到自己应该看到的数据，是数据分析工具需要考虑的问题。
+                    </p>
+                    <p>
+                        DataEase作为一款主打“人人可用”的开源数据可视化分析工具，易用性是它最大的优点，因此受到了广大开源社区用户的喜爱。那么，当面对企业实际的应用场景，涉及到复杂的数据权限管控的需求时，DataEase开源数据可视化分析工具的表现如何呢？
+                    </p>
+                    <p>本文主要分享如何通过使用DataEase的行列权限功能，结合企业的树形组织架构，最终实现数据权限管控的效果。</p>
 
+                    <h2>背景介绍</h2>
+                    <p>首先来看一下企业内部常规的数据结构示例。</p>
+                    <p><strong>一、销售部门组织架构</strong></p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-01.jpg" alt="" loading="lazy" /></figure>
+                    <p><strong>二、销售部门人员具体信息（手机号码为虚拟生成号码）</strong></p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>三、销售数据</strong></p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-03.png" alt="" loading="lazy" /></figure>
+                    <p>基于这些数据，最终想要实现的效果如下：</p>
+                    <p>1. 小张、小明、小华、小李只能看到各自的销售数据；</p>
+                    <p>2. 王总、李总可以分别看到销售一部、销售二部的销售数据；</p>
+                    <p>3. 张总可以看到整个销售部的销售数据。</p>
+                    <p>4. 销售小组组员看不到手机号码相关信息，张总、王总、李总可以看到。</p>
 
-<h2>背景介绍</h2>
-<p>首先来看一下企业内部常规的数据结构示例。</p>
-<p><strong>一、销售部门组织架构</strong></p>
-<figure><img src="../images/blog/news-20221115/dataease-117-01.jpg" alt="" loading="lazy" /></figure>
-<p><strong>二、销售部门人员具体信息（手机号码为虚拟生成号码）</strong></p>
-<figure><img src="../images/blog/news-20221115/dataease-117-02.png" alt="" loading="lazy" /></figure>
-<p><strong>三、销售数据</strong></p>
-<figure><img src="../images/blog/news-20221115/dataease-117-03.png" alt="" loading="lazy" /></figure>
-<p>基于这些数据，最终想要实现的效果如下：</p>
-<p>1. 小张、小明、小华、小李只能看到各自的销售数据；</p>
-<p>2. 王总、李总可以分别看到销售一部、销售二部的销售数据；</p>
-<p>3. 张总可以看到整个销售部的销售数据。</p>
-<p>4. 销售小组组员看不到手机号码相关信息，张总、王总、李总可以看到。</p>
+                    <h2>功能介绍</h2>
+                    <p>DataEase开源数据可视化分析工具支持数据权限的相关功能。数据权限功能主要分为两部分，分别是行权限和列权限。</p>
+                    <p><strong>一、行权限</strong></p>
+                    <p>如下图所示，添加行权限时，行权限规则中有四种类型：即组织、角色、用户和系统变量。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-04.png" alt="" loading="lazy" /></figure>
+                    <p>在选择组织、角色、用户这三种行权限规则时，对目标字段可以选择特定的组织/角色/用户作为过滤条件，从而进行数据过滤，相当于在编写SQL语句的时候在添加一个“where”的条件。</p>
+                    <p>选择系统变量的行权限规则与前三种不同，系统变量规则页面如下图所示：</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-05.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        其中的用户ID、用户名、邮箱、用户来源、组织是登录用户的基本信息，可以在“用户管理“界面中查看。当选择系统变量类型的规则时，可以通过提取具体登录系统用户的信息作为过滤条件，以达到数据过滤的目的。相对于其他的几种配置方式，这种模式更加方便，不需要逐个选择用户/组织/角色去配置权限。
+                    </p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-06.png" alt="" loading="lazy" /></figure>
+                    <p><strong>二、列权限</strong></p>
+                    <p>列权限的配置和行权限在原理上大同小异，也可以从组织、角色、用户三个角度进行配置，配置页面如下图所示：</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-07.png" alt="" loading="lazy" /></figure>
+                    <p>列权限有两种表现形式：</p>
+                    <p>1. 禁用：对目标字段进行禁用的操作，无权限的用户无法看到目标字段的列数据；</p>
+                    <p>2. 脱敏：对目标字段进行脱敏的操作，无权限的用户看到目标字段的列数据会打上*号。</p>
 
+                    <h2>实际操作</h2>
+                    <p>下面我们先对示例数据进行处理。</p>
+                    <p>首先需要梳理出“领导及下属员工的关系表”，如下表所示。这时候需要注意，为了方便之后的数据处理和关联，“领导”字段的名字是无下属的员工时，“下属员工”字段则填写员工本人名字。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-08.png" alt="" loading="lazy" /></figure>
+                    <p>下一步，需要我们在“用户管理”界面中建好所需要的用户。DataEase支持“批量导入”功能，能够有效提升用户创建的效率。由于示例中“张总”的权限是最高的，所以我们使用“张总”的账号将销售数据及处理后的用户数据导入系统。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-09.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-10.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-11.png" alt="" loading="lazy" /></figure>
+                    <p>然后，针对导入的数据，需要创建关联数据集将员工和领导的关系与相关数据对应。我们将“领导及下属员工的关系表”中的“下属员工”字段与“销售数据表”中的“人员名称”字段关联到一起，形成一张新的数据表。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-13.png" alt="" loading="lazy" /></figure>
+                    <p><strong>一、添加行权限</strong></p>
+                    <p>在形成的新数据表中添加一条行权限，类型为系统变量，设置字段“领导”=“用户名”。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-14.png" alt="" loading="lazy" /></figure>
+                    <p>点击“数据预览”选项卡查看数据，发现数据已经发生了变化，用户“张总”可以看到销售部所有的数据。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-15.png" alt="" loading="lazy" /></figure>
+                    <p>再将该数据集授权给“王总”和“小华”。通过切换登录用户来查看各自的数据权限，可以看到对应用户的数据权限也已经正常过滤。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-16.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-17.png" alt="" loading="lazy" /></figure>
+                    <p><strong>二、添加列权限</strong></p>
+                    <p>接下来，我们登录“张总”的账号，创建一条列权限，针对“普通员工”角色，禁用“下属员工手机号码“这一列，如下所示：</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-18.png" alt="" loading="lazy" /></figure>
+                    <p>登录角色为“普通员工”的“小华”账号，查看最终效果。可以看到，“小华”已经没有“下属员工手机号码”这一列的查看权限了。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-19.png" alt="" loading="lazy" /></figure>
+                    <p>列权限除禁用外，还有脱敏功能。我们切换登录至“张总”的账号，将刚刚配置的禁用改为脱敏，如下所示：</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-20.png" alt="" loading="lazy" /></figure>
+                    <p>登录角色为“普通员工”的“小华”账号，查看最终效果。可以看到，“小华”的“下属员工手机号码”这一列已经被打上了*号。</p>
+                    <figure><img src="../images/blog/news-20221115/dataease-117-21.png" alt="" loading="lazy" /></figure>
 
-<h2>功能介绍</h2>
-<p>DataEase开源数据可视化分析工具支持数据权限的相关功能。数据权限功能主要分为两部分，分别是行权限和列权限。</p>
-<p><strong>一、行权限</strong></p>
-<p>如下图所示，添加行权限时，行权限规则中有四种类型：即组织、角色、用户和系统变量。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-04.png" alt="" loading="lazy" /></figure>
-<p>在选择组织、角色、用户这三种行权限规则时，对目标字段可以选择特定的组织/角色/用户作为过滤条件，从而进行数据过滤，相当于在编写SQL语句的时候在添加一个“where”的条件。</p>
-<p>选择系统变量的行权限规则与前三种不同，系统变量规则页面如下图所示：</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-05.png" alt="" loading="lazy" /></figure>
-<p>其中的用户ID、用户名、邮箱、用户来源、组织是登录用户的基本信息，可以在“用户管理“界面中查看。当选择系统变量类型的规则时，可以通过提取具体登录系统用户的信息作为过滤条件，以达到数据过滤的目的。相对于其他的几种配置方式，这种模式更加方便，不需要逐个选择用户/组织/角色去配置权限。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-06.png" alt="" loading="lazy" /></figure>
-<p><strong>二、列权限</strong></p>
-<p>列权限的配置和行权限在原理上大同小异，也可以从组织、角色、用户三个角度进行配置，配置页面如下图所示：</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-07.png" alt="" loading="lazy" /></figure>
-<p>列权限有两种表现形式：</p>
-<p>1. 禁用：对目标字段进行禁用的操作，无权限的用户无法看到目标字段的列数据；</p>
-<p>2. 脱敏：对目标字段进行脱敏的操作，无权限的用户看到目标字段的列数据会打上*号。</p>
-
-
-<h2>实际操作</h2>
-<p>下面我们先对示例数据进行处理。</p>
-<p>首先需要梳理出“领导及下属员工的关系表”，如下表所示。这时候需要注意，为了方便之后的数据处理和关联，“领导”字段的名字是无下属的员工时，“下属员工”字段则填写员工本人名字。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-08.png" alt="" loading="lazy" /></figure>
-<p>下一步，需要我们在“用户管理”界面中建好所需要的用户。DataEase支持“批量导入”功能，能够有效提升用户创建的效率。由于示例中“张总”的权限是最高的，所以我们使用“张总”的账号将销售数据及处理后的用户数据导入系统。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-09.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20221115/dataease-117-10.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20221115/dataease-117-11.png" alt="" loading="lazy" /></figure>
-<p>然后，针对导入的数据，需要创建关联数据集将员工和领导的关系与相关数据对应。我们将“领导及下属员工的关系表”中的“下属员工”字段与“销售数据表”中的“人员名称”字段关联到一起，形成一张新的数据表。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-12.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20221115/dataease-117-13.png" alt="" loading="lazy" /></figure>
-<p><strong>一、添加行权限</strong></p>
-<p>在形成的新数据表中添加一条行权限，类型为系统变量，设置字段“领导”=“用户名”。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-14.png" alt="" loading="lazy" /></figure>
-<p>点击“数据预览”选项卡查看数据，发现数据已经发生了变化，用户“张总”可以看到销售部所有的数据。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-15.png" alt="" loading="lazy" /></figure>
-<p>再将该数据集授权给“王总”和“小华”。通过切换登录用户来查看各自的数据权限，可以看到对应用户的数据权限也已经正常过滤。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-16.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20221115/dataease-117-17.png" alt="" loading="lazy" /></figure>
-<p><strong>二、添加列权限</strong></p>
-<p>接下来，我们登录“张总”的账号，创建一条列权限，针对“普通员工”角色，禁用“下属员工手机号码“这一列，如下所示：</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-18.png" alt="" loading="lazy" /></figure>
-<p>登录角色为“普通员工”的“小华”账号，查看最终效果。可以看到，“小华”已经没有“下属员工手机号码”这一列的查看权限了。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-19.png" alt="" loading="lazy" /></figure>
-<p>列权限除禁用外，还有脱敏功能。我们切换登录至“张总”的账号，将刚刚配置的禁用改为脱敏，如下所示：</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-20.png" alt="" loading="lazy" /></figure>
-<p>登录角色为“普通员工”的“小华”账号，查看最终效果。可以看到，“小华”的“下属员工手机号码”这一列已经被打上了*号。</p>
-<figure><img src="../images/blog/news-20221115/dataease-117-21.png" alt="" loading="lazy" /></figure>
-
-
-<h2>总结</h2>
-<p>通过以上步骤，我们成功使用DataEase的行列权限功能完成了对企业数据权限的管控。可以看到，整个整体的配置过程还是比较简单的。尤其是内置变量引入后，大大地减轻了我们在一些场景下的配置工作量。同时，行列权限功能均支持从多个角度进行权限管控，满足了日常生产使用过程中的多样化数据场景。希望DataEase在后续的版本中，能够支持更加丰富的脱敏规则。</p>
+                    <h2>总结</h2>
+                    <p>
+                        通过以上步骤，我们成功使用DataEase的行列权限功能完成了对企业数据权限的管控。可以看到，整个整体的配置过程还是比较简单的。尤其是内置变量引入后，大大地减轻了我们在一些场景下的配置工作量。同时，行列权限功能均支持从多个角度进行权限管控，满足了日常生产使用过程中的多样化数据场景。希望DataEase在后续的版本中，能够支持更加丰富的脱敏规则。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"通过DataEase行列权限设置实现数据权限管控","item":"https://dataease.cn/blog/post-4968.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"通过DataEase行列权限设置实现数据权限管控","description":"使用行列权限实现数据脱敏，DataEase充分保障您的数据安全！","url":"https://dataease.cn/blog/post-4968.html","datePublished":"2022-11-15","dateModified":"2022-11-15","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/news-20221115/dataease-117.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "通过DataEase行列权限设置实现数据权限管控", "item": "https://dataease.cn/blog/post-4968.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "通过DataEase行列权限设置实现数据权限管控",
+                "description": "使用行列权限实现数据脱敏，DataEase充分保障您的数据安全！",
+                "url": "https://dataease.cn/blog/post-4968.html",
+                "datePublished": "2022-11-15",
+                "dateModified": "2022-11-15",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/news-20221115/dataease-117.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

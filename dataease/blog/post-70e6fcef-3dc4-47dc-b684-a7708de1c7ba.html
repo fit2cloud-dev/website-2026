@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,141 @@
                     <img src="../images/blog/common/dataease-025.jpg" alt="仪表板展示 | DataEase看中国：2023年中国电影市场分析" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/chart-20230816/dataease-090-01.png" alt="截屏2023-08-16 11.52.46.png" loading="lazy" /></p><h2 id="heading-1">背景介绍</h2><p>随着《消失的她》、《变形金刚：超能勇士崛起》、《蜘蛛侠：纵横宇宙》、《我爱你》等国内外影片的上映，2023年上半年的电影市场也接近尾声。据国家电影专资办初步统计，上半年全国城市院线票房达262亿元，已经超过了2022年同期总票房的一半以上（2022年同期为171.81亿元，同比增长52.91%）；观影总人次为6.04亿（2022年同期为3.98亿，同比增长51.87%）。</p><p>2023年上半年票房排名前五的均为国产影片，其中《满江红》、《流浪地球2》两部影片票房都超过40亿元。截至6月30日，正在热映的影片《消失的她》累计票房约17亿元，《熊出没•伴我“熊芯”》和《人生路不熟》分别以近15亿元、11.8亿元票房排在第四、第五位。此外《无名》、《深海》、《长空之王》也在前十榜单中。进入该榜单的进口影片仅有《速度与激情10》和《铃芽之旅》两部，分别排在第六和第十位。据统计，上半年累计票房破亿元的电影共31部，其中国产片19部，进口片12部。国产影片总票房为199.44亿元（2022年同期为145.39亿元，同比增长37.17%），国产影片份额为75.92%（2022年同期为84.62%）。</p><p>为了了解我国的电影票房数据情况，我们使用DataEase开源数据可视化分析工具（<em>http://github.com/dataease/</em>）来制作一个仪表板，分析展示当前国内电影票房的指标数据。仪表板中的相关数据来源于中国电影数据信息网：<em>https://www.zgdypw.cn/</em>。</p><p>以下是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果展示：</p><p><img src="../images/blog/chart-20230816/dataease-090-02.png" alt="电影市场1.png" loading="lazy" />▲ 图1 中国电影实时票房数据</p><h2 id="heading-2">数据分析</h2><p><strong>一、月度趋势分析</strong></p><p>我们用DataEase折线图制作反映票房、人次、总场次月度变化的趋势折线图，同时使用DataEase指标卡组件，制作了2023年上半年总场次、总票房、总观影人次的数据汇总指标。</p><p>通过观察2022年和2023年的月度趋势，我们注意到2022年的春节档和2023年的春节档期间的票房数据基本一致。但是对比春节后的月度票房数据可以发现，2023年春节后的每月票房数据明显高于2022年春节后的同期票房，月度总人次趋势也显示出了相同的结果。观影人次在2023年2月至6月明显多于2022年同期，并且在月度场次数据上呈现出递增的趋势。这表明国内电影市场的活力在疫情结束后正在逐步恢复。</p><p><img src="../images/blog/chart-20230816/dataease-090-03.png" alt="电影市场2.png" loading="lazy" />▲ 图2 2023年上半年电影市场月度趋势</p><p><strong>二、实时大盘数据趋势分析</strong></p><p>我们继续使用DataEase的折线图和指标卡组件对当日的实时票房、场次、人次数据进行实时趋势分析。在大盘趋势板块可以看到2023年7月21日至2023年7月26日的票房趋势情况。票房数据在周日较周内有显著提高，反映出国众在周末的观影热情。影院可以根据大盘趋势预测未来的观影数据走势，以此辅助排片决策的执行。</p><p><img src="../images/blog/chart-20230816/dataease-090-04.png" alt="电影市场3.png" loading="lazy" />▲ 图3 中国电影当日票房数据</p><p><strong>三、实时票房排名情况</strong></p><p>我们使用DataEase的选项卡组件，分别创建影片、影院、城市的Tab标签页，每个标签页下分别放置对应的明细表视图，对视图中的数据进行排序，即可得到下图中的影片票房排名、影院票房排名以及城市票房的排行榜（实时票房统计时间为2023年8月4日）。</p><p>影片票房排名前三位的分别是：《封神第一部：朝歌风云》、《长安三万里》和《八角笼中》。通过电影的票房排名可以看出大众对不同影片的喜爱情况，影院可以据此提高热度较高的电影的排片率；</p><p>城市票房排名前三位的分别是：上海、北京、成都。以此我们可以预估不同城市的电影市场消费潜力，同时由于年轻人占观影人次的比例相对较高，可以根据城市票房排名数据推测出城市观影人群的年轻化程度；</p><p>影院票房排名前三位的分别是：广东省深圳市百老汇电影中心影城、北京金逸影城（朝阳大悦城店）、上海市永华电影城。通过将影院排名情况和城市票房排名情况进行关联分析，我们也不难看出，排名靠前的影院大部分都是出自票房排名靠前的城市。</p><p><img src="../images/blog/chart-20230816/dataease-090-05.png" alt="电影市场4.png" loading="lazy" />▲ 图4 影片票房排名</p><p><img src="../images/blog/chart-20230816/dataease-090-06.png" alt="电影市场5.png" loading="lazy" />▲ 图5 城市票房排名</p><p><img src="../images/blog/chart-20230816/dataease-090-07.png" alt="电影市场6.png" loading="lazy" />▲ 图6 影院票房排名</p><h2 id="heading-3">总结</h2><p>在以电影票房为主题的仪表板制作过程中，我们主要使用了DataEase开源数据可视化分析工具的视图组件，最终效果呈现涉及到折线图、明细表、指标卡等图表类型。通过以上对票房数据的分析，我们可以看到中国电影票房市场自疫情之后的活力回升。随着7月暑期档重头戏的开场，今年暑期档三个月总票房重回“百亿时代”和全年票房超越500亿元的目标有望实现。</p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-01.png" alt="截屏2023-08-16 11.52.46.png" loading="lazy" /></p>
+                    <h2 id="heading-1">背景介绍</h2>
+                    <p>
+                        随着《消失的她》、《变形金刚：超能勇士崛起》、《蜘蛛侠：纵横宇宙》、《我爱你》等国内外影片的上映，2023年上半年的电影市场也接近尾声。据国家电影专资办初步统计，上半年全国城市院线票房达262亿元，已经超过了2022年同期总票房的一半以上（2022年同期为171.81亿元，同比增长52.91%）；观影总人次为6.04亿（2022年同期为3.98亿，同比增长51.87%）。
+                    </p>
+                    <p>
+                        2023年上半年票房排名前五的均为国产影片，其中《满江红》、《流浪地球2》两部影片票房都超过40亿元。截至6月30日，正在热映的影片《消失的她》累计票房约17亿元，《熊出没•伴我“熊芯”》和《人生路不熟》分别以近15亿元、11.8亿元票房排在第四、第五位。此外《无名》、《深海》、《长空之王》也在前十榜单中。进入该榜单的进口影片仅有《速度与激情10》和《铃芽之旅》两部，分别排在第六和第十位。据统计，上半年累计票房破亿元的电影共31部，其中国产片19部，进口片12部。国产影片总票房为199.44亿元（2022年同期为145.39亿元，同比增长37.17%），国产影片份额为75.92%（2022年同期为84.62%）。
+                    </p>
+                    <p>
+                        为了了解我国的电影票房数据情况，我们使用DataEase开源数据可视化分析工具（<em>http://github.com/dataease/</em>）来制作一个仪表板，分析展示当前国内电影票房的指标数据。仪表板中的相关数据来源于中国电影数据信息网：<em>https://www.zgdypw.cn/</em>。
+                    </p>
+                    <p>以下是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果展示：</p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-02.png" alt="电影市场1.png" loading="lazy" />▲ 图1 中国电影实时票房数据</p>
+                    <h2 id="heading-2">数据分析</h2>
+                    <p><strong>一、月度趋势分析</strong></p>
+                    <p>我们用DataEase折线图制作反映票房、人次、总场次月度变化的趋势折线图，同时使用DataEase指标卡组件，制作了2023年上半年总场次、总票房、总观影人次的数据汇总指标。</p>
+                    <p>
+                        通过观察2022年和2023年的月度趋势，我们注意到2022年的春节档和2023年的春节档期间的票房数据基本一致。但是对比春节后的月度票房数据可以发现，2023年春节后的每月票房数据明显高于2022年春节后的同期票房，月度总人次趋势也显示出了相同的结果。观影人次在2023年2月至6月明显多于2022年同期，并且在月度场次数据上呈现出递增的趋势。这表明国内电影市场的活力在疫情结束后正在逐步恢复。
+                    </p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-03.png" alt="电影市场2.png" loading="lazy" />▲ 图2 2023年上半年电影市场月度趋势</p>
+                    <p><strong>二、实时大盘数据趋势分析</strong></p>
+                    <p>
+                        我们继续使用DataEase的折线图和指标卡组件对当日的实时票房、场次、人次数据进行实时趋势分析。在大盘趋势板块可以看到2023年7月21日至2023年7月26日的票房趋势情况。票房数据在周日较周内有显著提高，反映出国众在周末的观影热情。影院可以根据大盘趋势预测未来的观影数据走势，以此辅助排片决策的执行。
+                    </p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-04.png" alt="电影市场3.png" loading="lazy" />▲ 图3 中国电影当日票房数据</p>
+                    <p><strong>三、实时票房排名情况</strong></p>
+                    <p>
+                        我们使用DataEase的选项卡组件，分别创建影片、影院、城市的Tab标签页，每个标签页下分别放置对应的明细表视图，对视图中的数据进行排序，即可得到下图中的影片票房排名、影院票房排名以及城市票房的排行榜（实时票房统计时间为2023年8月4日）。
+                    </p>
+                    <p>影片票房排名前三位的分别是：《封神第一部：朝歌风云》、《长安三万里》和《八角笼中》。通过电影的票房排名可以看出大众对不同影片的喜爱情况，影院可以据此提高热度较高的电影的排片率；</p>
+                    <p>城市票房排名前三位的分别是：上海、北京、成都。以此我们可以预估不同城市的电影市场消费潜力，同时由于年轻人占观影人次的比例相对较高，可以根据城市票房排名数据推测出城市观影人群的年轻化程度；</p>
+                    <p>
+                        影院票房排名前三位的分别是：广东省深圳市百老汇电影中心影城、北京金逸影城（朝阳大悦城店）、上海市永华电影城。通过将影院排名情况和城市票房排名情况进行关联分析，我们也不难看出，排名靠前的影院大部分都是出自票房排名靠前的城市。
+                    </p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-05.png" alt="电影市场4.png" loading="lazy" />▲ 图4 影片票房排名</p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-06.png" alt="电影市场5.png" loading="lazy" />▲ 图5 城市票房排名</p>
+                    <p><img src="../images/blog/chart-20230816/dataease-090-07.png" alt="电影市场6.png" loading="lazy" />▲ 图6 影院票房排名</p>
+                    <h2 id="heading-3">总结</h2>
+                    <p>
+                        在以电影票房为主题的仪表板制作过程中，我们主要使用了DataEase开源数据可视化分析工具的视图组件，最终效果呈现涉及到折线图、明细表、指标卡等图表类型。通过以上对票房数据的分析，我们可以看到中国电影票房市场自疫情之后的活力回升。随着7月暑期档重头戏的开场，今年暑期档三个月总票房重回“百亿时代”和全年票房超越500亿元的目标有望实现。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示 | DataEase看中国：2023年中国电影市场分析","item":"https://dataease.cn/blog/post-70e6fcef-3dc4-47dc-b684-a7708de1c7ba.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示 | DataEase看中国：2023年中国电影市场分析","description":"电影业回温，DataEase带你分析当前国内电影市场行情。","url":"https://dataease.cn/blog/post-70e6fcef-3dc4-47dc-b684-a7708de1c7ba.html","datePublished":"2023-08-16","dateModified":"2023-08-16","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-025.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示 | DataEase看中国：2023年中国电影市场分析", "item": "https://dataease.cn/blog/post-70e6fcef-3dc4-47dc-b684-a7708de1c7ba.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示 | DataEase看中国：2023年中国电影市场分析",
+                "description": "电影业回温，DataEase带你分析当前国内电影市场行情。",
+                "url": "https://dataease.cn/blog/post-70e6fcef-3dc4-47dc-b684-a7708de1c7ba.html",
+                "datePublished": "2023-08-16",
+                "dateModified": "2023-08-16",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-025.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

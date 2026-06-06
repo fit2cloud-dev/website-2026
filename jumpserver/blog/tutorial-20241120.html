@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="JumpServer堡垒机在光伏制造业的应用" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/tutorial-20241120/cover.jpg" />
         <meta name="twitter:image:alt" content="案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践","description":"JumpServer堡垒机在光伏制造业的应用","datePublished":"2024-11-20T09:18:10.946343+00:00","dateModified":"2024-11-20T09:18:10.946343+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/tutorial-20241120.html"},"image":["https://www.jumpserver.org/images/blog/tutorial-20241120/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践",
+                "description": "JumpServer堡垒机在光伏制造业的应用",
+                "datePublished": "2024-11-20T09:18:10.946343+00:00",
+                "dateModified": "2024-11-20T09:18:10.946343+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/tutorial-20241120.html" },
+                "image": ["https://www.jumpserver.org/images/blog/tutorial-20241120/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -190,7 +218,86 @@
                     <img src="../images/blog/tutorial-20241120/cover.jpg" alt="案例研究｜阿特斯的JumpServer分布式部署和多组织管理实践" loading="lazy" />
                 </header>
                 <div class="de-article-content">
-                    <p>苏州阿特斯阳光电力科技有限公司（以下简称为阿特斯）是一家集太阳能光伏组件制造和为全球客户提供太阳能应用产品研发、设计、制造、销售的专业公司。</p><p><img src="../images/blog/tutorial-20241120/cover.jpg" alt="" loading="lazy" /></p><p>阿特斯集团总部位于加拿大，中国区总部位于江苏省苏州市。通过全球战略和多元化的市场布局，阿特斯目前在全球150个国家和地区建立了分支机构，是全球综合实力领先的太阳能光伏发电整体解决方案提供商。</p><h1 style="" id="%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4%E7%97%9B%E7%82%B9%E5%92%8C%E9%9C%80%E6%B1%82">系统运维痛点和需求</h1><p>业务的迅速发展给阿特斯IT系统的日常运维管理工作带来了很多问题和挑战，可以简单概括为以下几个方面：</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 服务器管理模式需要转变</strong></span></p><p>原先阿特斯各个基地的服务器都是由各个基地进行独立管理的，这种分散式的管理方式效率低，且难以形成统一的管理标准和规范。为了提升管理效率，确保服务器的稳定性和安全性，阿特斯希望将各个基地的服务器管理工作收归集团总部进行统一管理；</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 账密管理混乱，存在安全隐患</strong></span></p><p>过去阿特斯各事业部的账号和密码设置缺乏统一标准，导致登录账号密码的管理比较混乱。此外，生产系统登录权限的管理也相对松散，没有严格的审批流程和监控机制。任何人都可以随意登录系统，这样的登录方式给系统的安全性带来了威胁。</p><p>阿特斯希望通过引入堡垒机来解决这一问题，建立严格的登录审批制度和监控机制，确保只有经过授权的人员才能登录到指定系统；</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 需要满足审计要求，实现合规运营</strong></span></p><p>随着业务的发展和监管要求的日益严格，阿特斯现有的服务器和登录管理方式已经无法满足审计的相关要求，并且缺乏统一的审计标准和流程。阿特斯希望可以在公司内部建立完善的审计制度与审计流程，确保日常操作符合相关法规和审计的要求。</p><h1 style="" id="%E5%A0%A1%E5%9E%92%E6%9C%BA%E9%80%89%E5%9E%8B%E6%80%9D%E8%B7%AF">堡垒机选型思路</h1><p>阿特斯的运维管理员在多年前就已经接触并使用了JumpServer堡垒机开源版，对JumpServer简洁直观的用户界面和能够快速上手的操作流程印象深刻。同时，JumpServer在账号管理、权限分配，以及日志审计等方面的功能性都非常符合公司日常运维管理的需要。除此之外，JumpServer还是一款按月迭代的产品，以非常快的速度持续改进。</p><p>伴随着业务规模的扩大，阿特斯逐渐意识到传统集中式堡垒机在性能上的局限性。尤其是在多事业部、多节点的场景下，传统堡垒机往往会因为文件传输和登录操作的延迟而带来不好的用户体验。为此，阿特斯开始考察能够支持分布式部署的堡垒机。</p><p>在国内市场上，能够提供分布式堡垒机解决方案的厂商并不多，经过多轮筛选和测试，阿特斯的运维团队发现JumpServer堡垒机可以很好地满足公司分布式管理的需求。</p><p>在选型过程中，阿特斯的运维团队尤为关注堡垒机一键式脚本部署的功能和运维的便利性。对于非专业的运维人员来说，复杂的部署和运维流程无疑会增加工作负担。因此，阿特斯更倾向于选择那些能够提供一键式脚本部署和简单运维操作的堡垒机产品。JumpServer可以很好地满足这些需求，其一键式脚本部署功能可以快速完成安装工作，简单的运维操作界面能够帮助用户在日常的工作中节省大量的时间和精力。</p><h1 style="" id="jumpserver%E7%9A%84%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">JumpServer的架构设计</h1><p>阿特斯根据生产环境的实际需求，选择了分布式架构的部署方案，希望能够高效管理其庞大且分散的IT资产。每个事业部都配备了与其业务需求相互匹配的登录入口，各个事业部的用户通过各自专属的入口进行登录操作。这样的堡垒机部署架构不仅提升了系统的灵活性和可扩展性，还有效降低了用户在进行各项操作时可能面临的延迟问题。</p><p>另外，定制化的访问入口设计，使得用户的请求能够更直接地传输到负责处理该请求的服务节点上。同时，分布式的部署架构通过负载均衡机制，智能分配请求至负载较轻的服务器上进行处理，进一步缩短了响应时间。即便是在高并发访问的情况下，也能保持系统的流畅运行。</p><p style="text-align: center; ; "><img src="../images/blog/tutorial-20241120/image.png" alt="" loading="lazy" />▲图1 阿特斯JumpServer架构设计</p><p>需要强调的是，借助JumpServer的多组织管理功能，每个事业部的用户和资产实现了有效隔离，避免了因误操作或权限管理不当所导致的敏感信息泄露风险。每个组织都可以实施更为精细化的权限控制策略，确保只有被授权的用户才能访问特定资源，从而增强了系统整体的安全性。</p><p style="text-align: center; ; "><img src="../images/blog/tutorial-20241120/image.png" alt="" loading="lazy" />▲图2 阿特斯JumpServer多组织管理架构</p><h1 style="" id="jumpserver%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BA%AE%E7%82%B9">JumpServer的功能亮点</h1><p>在日常运维工作中，阿特斯的运维团队对JumpServer的一些特色功能给予了很高的评价：</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 多组织管理</strong></span></p><p>在分布式部署架构中，阿特斯各个事业部享有高度的自治权，由其各自指定的管理员负责日常的运营与维护工作。这种多组织的管理方式不仅提高了工作效率，还增强了组织的灵活性和响应速度。</p><p>与此同时，总部的系统具备强大的组织切换功能，能够轻松实现对各分节点堡垒机配置的全面监控与审查。无论是查看实时系统状态、调整安全策略，还是进行故障排查与性能优化，总部都能够迅速切换至对应的组织，获取详尽的配置信息。这种便捷性极大地提升了公司整体系统的管理效率和安全性；</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 远程应用</strong></span></p><p>用户可以自助式地通过JumpServer访问远程应用，通过客户端或者Web端进行远程应用访问，无需在本地环境安装相关客户端，只需要通过JumpServer的用户认证体系，就可以直接实现连接；</p><p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 命令过滤</strong></span></p><p>针对用户可能因为不熟悉系统或误操作而引发安全风险的问题，阿特斯通过JumpServer制定了严格的危险命令限制策略。通过智能识别与命令拦截机制，JumpServer可以自动阻止用户执行危险命令。这样一来，就显著降低了因误操作导致的系统故障和数据丢失风险，为用户提供一个更加安全可靠的操作环境。</p><h1 style="" id="jumpserver%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BB%B7%E5%80%BC%E6%94%B6%E7%9B%8A">JumpServer带来的价值收益</h1><p>JumpServer堡垒机在阿特斯集团内应用落地后，为其带来了一系列的价值收益。</p><p><strong>首先是满足安全审计要求方面。</strong>通过集成日志记录与分析能力，JumpServer堡垒机能够详细记录每一次用户登录访问、操作行为以及系统状态变化等关键信息，为公司后续的审计和合规性检查提供了坚实的数据支撑。JumpServer全面的审计能力不仅有助于及时发现潜在的安全漏洞和违规操作，还能在发生安全事件时提供准确的追溯依据，确保企业能够迅速响应并采取相应的补救措施。</p><p><strong>其次是有效降低了系统安全运维的风险。</strong>JumpServer严格的权限划分和审核机制，能够有效避免因权限过大而导致的潜在安全威胁，例如数据泄露、系统破坏等。这种精细化的管理方式在保证系统整体安全性的同时，还有助于明确用户之间的职责，并提高协作效率。</p><p><strong>最后是系统运维管理与协作效率的整体提升。</strong> JumpServer为阿特斯各事业部提供了一套统一且易于操作的授权管理系统，确保了授权管理的规范性和准确性，同时减少了总部在授权审核、权限调整等方面的直接参与。这样一来，不仅大大降低了总部的运维管理压力，还促进了各基地之间的信息共享和协同工作，整个组织的运营效率显著提升。</p>
+                    <p>苏州阿特斯阳光电力科技有限公司（以下简称为阿特斯）是一家集太阳能光伏组件制造和为全球客户提供太阳能应用产品研发、设计、制造、销售的专业公司。</p>
+                    <p><img src="../images/blog/tutorial-20241120/cover.jpg" alt="" loading="lazy" /></p>
+                    <p>阿特斯集团总部位于加拿大，中国区总部位于江苏省苏州市。通过全球战略和多元化的市场布局，阿特斯目前在全球150个国家和地区建立了分支机构，是全球综合实力领先的太阳能光伏发电整体解决方案提供商。</p>
+                    <h1 style="" id="%E7%B3%BB%E7%BB%9F%E8%BF%90%E7%BB%B4%E7%97%9B%E7%82%B9%E5%92%8C%E9%9C%80%E6%B1%82">系统运维痛点和需求</h1>
+                    <p>业务的迅速发展给阿特斯IT系统的日常运维管理工作带来了很多问题和挑战，可以简单概括为以下几个方面：</p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 服务器管理模式需要转变</strong></span>
+                    </p>
+                    <p>
+                        原先阿特斯各个基地的服务器都是由各个基地进行独立管理的，这种分散式的管理方式效率低，且难以形成统一的管理标准和规范。为了提升管理效率，确保服务器的稳定性和安全性，阿特斯希望将各个基地的服务器管理工作收归集团总部进行统一管理；
+                    </p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 账密管理混乱，存在安全隐患</strong></span>
+                    </p>
+                    <p>
+                        过去阿特斯各事业部的账号和密码设置缺乏统一标准，导致登录账号密码的管理比较混乱。此外，生产系统登录权限的管理也相对松散，没有严格的审批流程和监控机制。任何人都可以随意登录系统，这样的登录方式给系统的安全性带来了威胁。
+                    </p>
+                    <p>阿特斯希望通过引入堡垒机来解决这一问题，建立严格的登录审批制度和监控机制，确保只有经过授权的人员才能登录到指定系统；</p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 需要满足审计要求，实现合规运营</strong></span>
+                    </p>
+                    <p>
+                        随着业务的发展和监管要求的日益严格，阿特斯现有的服务器和登录管理方式已经无法满足审计的相关要求，并且缺乏统一的审计标准和流程。阿特斯希望可以在公司内部建立完善的审计制度与审计流程，确保日常操作符合相关法规和审计的要求。
+                    </p>
+                    <h1 style="" id="%E5%A0%A1%E5%9E%92%E6%9C%BA%E9%80%89%E5%9E%8B%E6%80%9D%E8%B7%AF">堡垒机选型思路</h1>
+                    <p>
+                        阿特斯的运维管理员在多年前就已经接触并使用了JumpServer堡垒机开源版，对JumpServer简洁直观的用户界面和能够快速上手的操作流程印象深刻。同时，JumpServer在账号管理、权限分配，以及日志审计等方面的功能性都非常符合公司日常运维管理的需要。除此之外，JumpServer还是一款按月迭代的产品，以非常快的速度持续改进。
+                    </p>
+                    <p>
+                        伴随着业务规模的扩大，阿特斯逐渐意识到传统集中式堡垒机在性能上的局限性。尤其是在多事业部、多节点的场景下，传统堡垒机往往会因为文件传输和登录操作的延迟而带来不好的用户体验。为此，阿特斯开始考察能够支持分布式部署的堡垒机。
+                    </p>
+                    <p>在国内市场上，能够提供分布式堡垒机解决方案的厂商并不多，经过多轮筛选和测试，阿特斯的运维团队发现JumpServer堡垒机可以很好地满足公司分布式管理的需求。</p>
+                    <p>
+                        在选型过程中，阿特斯的运维团队尤为关注堡垒机一键式脚本部署的功能和运维的便利性。对于非专业的运维人员来说，复杂的部署和运维流程无疑会增加工作负担。因此，阿特斯更倾向于选择那些能够提供一键式脚本部署和简单运维操作的堡垒机产品。JumpServer可以很好地满足这些需求，其一键式脚本部署功能可以快速完成安装工作，简单的运维操作界面能够帮助用户在日常的工作中节省大量的时间和精力。
+                    </p>
+                    <h1 style="" id="jumpserver%E7%9A%84%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1">JumpServer的架构设计</h1>
+                    <p>
+                        阿特斯根据生产环境的实际需求，选择了分布式架构的部署方案，希望能够高效管理其庞大且分散的IT资产。每个事业部都配备了与其业务需求相互匹配的登录入口，各个事业部的用户通过各自专属的入口进行登录操作。这样的堡垒机部署架构不仅提升了系统的灵活性和可扩展性，还有效降低了用户在进行各项操作时可能面临的延迟问题。
+                    </p>
+                    <p>
+                        另外，定制化的访问入口设计，使得用户的请求能够更直接地传输到负责处理该请求的服务节点上。同时，分布式的部署架构通过负载均衡机制，智能分配请求至负载较轻的服务器上进行处理，进一步缩短了响应时间。即便是在高并发访问的情况下，也能保持系统的流畅运行。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241120/image.png" alt="" loading="lazy" />▲图1 阿特斯JumpServer架构设计</p>
+                    <p>
+                        需要强调的是，借助JumpServer的多组织管理功能，每个事业部的用户和资产实现了有效隔离，避免了因误操作或权限管理不当所导致的敏感信息泄露风险。每个组织都可以实施更为精细化的权限控制策略，确保只有被授权的用户才能访问特定资源，从而增强了系统整体的安全性。
+                    </p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241120/image.png" alt="" loading="lazy" />▲图2 阿特斯JumpServer多组织管理架构</p>
+                    <h1 style="" id="jumpserver%E7%9A%84%E5%8A%9F%E8%83%BD%E4%BA%AE%E7%82%B9">JumpServer的功能亮点</h1>
+                    <p>在日常运维工作中，阿特斯的运维团队对JumpServer的一些特色功能给予了很高的评价：</p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>1. 多组织管理</strong></span>
+                    </p>
+                    <p>在分布式部署架构中，阿特斯各个事业部享有高度的自治权，由其各自指定的管理员负责日常的运营与维护工作。这种多组织的管理方式不仅提高了工作效率，还增强了组织的灵活性和响应速度。</p>
+                    <p>
+                        与此同时，总部的系统具备强大的组织切换功能，能够轻松实现对各分节点堡垒机配置的全面监控与审查。无论是查看实时系统状态、调整安全策略，还是进行故障排查与性能优化，总部都能够迅速切换至对应的组织，获取详尽的配置信息。这种便捷性极大地提升了公司整体系统的管理效率和安全性；
+                    </p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>2. 远程应用</strong></span>
+                    </p>
+                    <p>用户可以自助式地通过JumpServer访问远程应用，通过客户端或者Web端进行远程应用访问，无需在本地环境安装相关客户端，只需要通过JumpServer的用户认证体系，就可以直接实现连接；</p>
+                    <p>
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>3. 命令过滤</strong></span>
+                    </p>
+                    <p>
+                        针对用户可能因为不熟悉系统或误操作而引发安全风险的问题，阿特斯通过JumpServer制定了严格的危险命令限制策略。通过智能识别与命令拦截机制，JumpServer可以自动阻止用户执行危险命令。这样一来，就显著降低了因误操作导致的系统故障和数据丢失风险，为用户提供一个更加安全可靠的操作环境。
+                    </p>
+                    <h1 style="" id="jumpserver%E5%B8%A6%E6%9D%A5%E7%9A%84%E4%BB%B7%E5%80%BC%E6%94%B6%E7%9B%8A">JumpServer带来的价值收益</h1>
+                    <p>JumpServer堡垒机在阿特斯集团内应用落地后，为其带来了一系列的价值收益。</p>
+                    <p>
+                        <strong>首先是满足安全审计要求方面。</strong
+                        >通过集成日志记录与分析能力，JumpServer堡垒机能够详细记录每一次用户登录访问、操作行为以及系统状态变化等关键信息，为公司后续的审计和合规性检查提供了坚实的数据支撑。JumpServer全面的审计能力不仅有助于及时发现潜在的安全漏洞和违规操作，还能在发生安全事件时提供准确的追溯依据，确保企业能够迅速响应并采取相应的补救措施。
+                    </p>
+                    <p>
+                        <strong>其次是有效降低了系统安全运维的风险。</strong
+                        >JumpServer严格的权限划分和审核机制，能够有效避免因权限过大而导致的潜在安全威胁，例如数据泄露、系统破坏等。这种精细化的管理方式在保证系统整体安全性的同时，还有助于明确用户之间的职责，并提高协作效率。
+                    </p>
+                    <p>
+                        <strong>最后是系统运维管理与协作效率的整体提升。</strong>
+                        JumpServer为阿特斯各事业部提供了一套统一且易于操作的授权管理系统，确保了授权管理的规范性和准确性，同时减少了总部在授权审核、权限调整等方面的直接参与。这样一来，不仅大大降低了总部的运维管理压力，还促进了各基地之间的信息共享和协同工作，整个组织的运营效率显著提升。
+                    </p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -247,10 +354,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -261,21 +368,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

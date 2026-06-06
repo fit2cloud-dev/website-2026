@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,199 @@
                     <img src="../images/blog/case-20240723/dataease-048.png" alt="案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>柯尼卡美能达软件开发（大连）有限公司于2007年5月25日注册成立。公司以“洞悉在工作的人们真实情况，探寻他们的愿望，持续提供使人们更加幸福的服务”为使命，致力于系统品质测试服务、软件开发服务、IT安全服务、高级BPO服务等领域，专注为客户提供最契合的优质服务。</p><p><img src="../images/blog/case-20240723/dataease-048.png" alt="" loading="lazy" /></p><p><span><strong>一、数据可视化的痛点</strong></span></p><p>对于公司的数据分析团队来说，日常的数据分析和数据可视化工作存在一些急需解决的痛点和挑战：</p><p><span><strong>■ </strong></span><span><strong>IT部门数据繁杂，需要整合不同数据源的数据</strong></span></p><p>数字化业务场景繁多，涉及SCCM（微软系统中心配置管理器）、SEP（赛门铁克杀毒软件）、IMS（信息管理系统）等多个业务系统的数据库以及线下Excel数据等。IT部门难以在多场景的数据来源中协调数据，并且使其具有一致性和可比性；</p><p><span><strong>■ </strong></span><span><strong>内部专业系统软件学习成本高，数据查看过程复杂</strong></span></p><p>公司内部使用的SCCM等工具比较专业，对普通员工来说学习和使用的成本较高。公司希望能够为普通员工提供简单、直观的数据呈现，来协助员工理清复杂的业务数据。而公司现有的数据查阅方式与员工预期存在较大的差距，数据的实际价值难以得到完全释放；</p><p><span><strong>■ </strong></span><span><strong>数据处理工作量大，人工成本高，数据处理过程需简化</strong></span></p><p>随着系统内部数据量的迅速攀升，需要投入大量的人工作业以进行传统的数据分析和展示。但是随着数据种类的增多，数据报告的生成过程越来越复杂，公司的数据分析团队难以实现数据工作流程的自动化，工作效率受到严重限制，陷入了重复性劳动的循环。</p><p><span><strong>二、选择DataEase的原因</strong></span></p><p>柯尼卡美能达软件开发（大连）有限公司经过一段时间的考察选型，最终决定引入DataEase这款简单易用、上手快的开源数据可视化分析工具，用于公司内部的数据汇总与展示。</p><p>对于柯尼卡美能达软件开发（大连）有限公司来说，选择DataEase的原因有以下几点：</p><p><span><strong>■ </strong></span><span><strong>简化专业软件查看数据的复杂性</strong></span></p><p>通过DataEase汇总处理后的数据呈现直观且简单，让企业可以轻松搭建风格统一的数据可视化体系，方便员工查看想要的数据；</p><p><span><strong>■ </strong></span><span><strong>简化数据的处理过程</strong></span></p><p>借助DataEase，公司大幅简化了数据处理的流程。数据团队将DataEase与内部自开发应用相结合，先通过自开发应用程序爬取数据，再通过洗数程序对爬取的数据做简单的清洗处理，然后将清洗好的数据落库，最后使用DataEase对落库后的数据进行分析，实现复杂场景下的业务处理和分析。</p><p>针对多个来源的数据，数据团队也能够通过DataEase的关联数据集功能，将这些来源各异的数据集进行关联统一，然后从统一的数据集中快速清洗出想要的数据；</p><p><span><strong>■ </strong></span><span><strong>学习成本低</strong></span></p><p>DataEase的使用简单快捷，学习成本低。普通员工不需要安装客户端软件，只需IT部门在公司服务器内安装部署好DataEase后，普通员工就可以通过网页端访问DataEase进行操作使用。</p><p><span><strong>■ </strong></span><span><strong>服务高效</strong></span></p><p>DataEase企业版用户拥有原厂提供的企业级支持服务，在遇到平台升级、故障排查等问题时，可以得到DataEase客户成功团队的快速响应。</p><p><span><strong>三、DataEase的使用场景示例</strong></span></p><p>公司IT部门负责监管公司的资产。公司购入收费软件后，IT部门就需要对这些软件的总安装量、剩余可用量、违规安装情况，以及安装的明细情况等进行统一管理。</p><p>柯尼卡美能达软件开发（大连）有限公司需要汇总管理的数据主要包括：</p><p><span>■</span> 软件购买台账，包含软件的基本信息以及购买的许可证数量；</p><p><span>■</span> 申请单台账，包含申请安装软件的名称、用途、安装软件的电脑、申请人信息等；</p><p><span>■</span> 电脑安装软件的信息列表。</p><p>在引入数据可视化工具之前，公司的资产数据处理方式如图1所示。数据团队需要先在SCCM系统中将所有电脑软件安装的信息导出，然后逐一检索每一款软件安装在哪些电脑中，并与实际申请的软件安装台账进行对比，核对分筛出合规安装与违规安装。除此之外，数据团队还需要统计软件剩余可用量，确认已安装软件的资产数量和购买台账对比有没有超额。整套流程十分繁琐，且工作量极大。</p><p><img src="../images/blog/case-20240723/dataease-048-02.png" alt="" loading="lazy" />▲ 图1 柯尼卡美能达软件开发（大连）有限公司传统软件安装数据处理流程</p><p>引入DataEase后，数据团队通过DataEase制作了运用支援平台数据大屏。这个数据大屏清晰直观地展示了资产的补丁安装情况、软件更新情报、PC在线情况、资产情报、软件授权情况等多项可视化数据，如图2所示。这一数据大屏的搭建展示极大地提升了公司IT部门查询软件安装数据的便捷性，减少了无意义的重复劳动，有效帮助数据处理和数据查询的员工提高了工作效率。</p><p><img src="../images/blog/case-20240723/dataease-048-03.png" alt="" loading="lazy" />▲ 图2 柯尼卡美能达软件开发（大连）有限公司运用支援平台大屏</p><p>在运用支援平台数据大屏中，用户还可以点击不同图表的标题，向其他数据大屏进行跳转。例如，点击“软件授权管理”图表的标题，就可以跳转到软件授权管理大屏，如图3所示。在软件授权管理大屏中，IT部门可以查看各软件的安装数量、收费软件超额使用列表、未经申请审批的违规安装软件列表、软件安装的明细情况，以及收费软件的安装数量和License（许可证）残量，同时还可以通过告警线对License残量进行预警。</p><p><img src="../images/blog/case-20240723/dataease-048-04.png" alt="" loading="lazy" />▲ 图3 柯尼卡美能达软件开发（大连）有限公司软件授权管理大屏</p><p><span><strong>四、使用DataEase后的成果和收益</strong></span></p><p><span><strong>■ </strong></span><span><strong>简化数据处理过程，降低查看数据的复杂度</strong></span></p><p><span>DataEase在数据分析与可视化方面为柯尼卡美能达软件开发（大连）有限公司的数据团队提供了强大的支持，帮助其整合来自各个数据源的数据，简化了数据处理过程，降低了查看数据的复杂性，让数据分析的价值惠及每一位员工；</span></p><p><span><strong>■ </strong></span><span><strong>辅助决策，提升决策的质量</strong></span></p><p><span>通过基于DataEase搭建的动态数据可视化大屏，管理者和决策者可以快速掌握关键的业务指标及趋势，从而做出更加明智的战略决策和业务决策；</span></p><p><span><strong>■ </strong></span><span><strong>增进团队间的沟通，提升协作效率</strong></span></p><p><span>在DataEase平台之上，各个部门和团队都可以轻松访问权限范围内的实时数据，并且可以利用DataEase创建自定义报告与仪表板。此举促进了团队内及团队间的信息共享与合作，有助于各方更好地了解整体业务状况，并且可以根据可视化图表数据的提示及时做出相应的业务调整，提高办公中的沟通和协作效率；</span></p><p><span><strong>■ </strong></span><span><strong>减少资产和软件管理的成本</strong></span></p><p><span>通过使用DataEase数据可视化分析工具，公司各团队的数据分析能力和决策能力均得以提升，数据管理所需的人力成本与时间成本也显著下降。这样一来，公司就可以在团队协作能力和用户服务水平更进一步的同时，减少软件管理的成本。</span></p>
+                    <p>
+                        柯尼卡美能达软件开发（大连）有限公司于2007年5月25日注册成立。公司以“洞悉在工作的人们真实情况，探寻他们的愿望，持续提供使人们更加幸福的服务”为使命，致力于系统品质测试服务、软件开发服务、IT安全服务、高级BPO服务等领域，专注为客户提供最契合的优质服务。
+                    </p>
+                    <p><img src="../images/blog/case-20240723/dataease-048.png" alt="" loading="lazy" /></p>
+                    <p>
+                        <span><strong>一、数据可视化的痛点</strong></span>
+                    </p>
+                    <p>对于公司的数据分析团队来说，日常的数据分析和数据可视化工作存在一些急需解决的痛点和挑战：</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>IT部门数据繁杂，需要整合不同数据源的数据</strong></span>
+                    </p>
+                    <p>数字化业务场景繁多，涉及SCCM（微软系统中心配置管理器）、SEP（赛门铁克杀毒软件）、IMS（信息管理系统）等多个业务系统的数据库以及线下Excel数据等。IT部门难以在多场景的数据来源中协调数据，并且使其具有一致性和可比性；</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>内部专业系统软件学习成本高，数据查看过程复杂</strong></span>
+                    </p>
+                    <p>
+                        公司内部使用的SCCM等工具比较专业，对普通员工来说学习和使用的成本较高。公司希望能够为普通员工提供简单、直观的数据呈现，来协助员工理清复杂的业务数据。而公司现有的数据查阅方式与员工预期存在较大的差距，数据的实际价值难以得到完全释放；
+                    </p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>数据处理工作量大，人工成本高，数据处理过程需简化</strong></span>
+                    </p>
+                    <p>
+                        随着系统内部数据量的迅速攀升，需要投入大量的人工作业以进行传统的数据分析和展示。但是随着数据种类的增多，数据报告的生成过程越来越复杂，公司的数据分析团队难以实现数据工作流程的自动化，工作效率受到严重限制，陷入了重复性劳动的循环。
+                    </p>
+                    <p>
+                        <span><strong>二、选择DataEase的原因</strong></span>
+                    </p>
+                    <p>柯尼卡美能达软件开发（大连）有限公司经过一段时间的考察选型，最终决定引入DataEase这款简单易用、上手快的开源数据可视化分析工具，用于公司内部的数据汇总与展示。</p>
+                    <p>对于柯尼卡美能达软件开发（大连）有限公司来说，选择DataEase的原因有以下几点：</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>简化专业软件查看数据的复杂性</strong></span>
+                    </p>
+                    <p>通过DataEase汇总处理后的数据呈现直观且简单，让企业可以轻松搭建风格统一的数据可视化体系，方便员工查看想要的数据；</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>简化数据的处理过程</strong></span>
+                    </p>
+                    <p>
+                        借助DataEase，公司大幅简化了数据处理的流程。数据团队将DataEase与内部自开发应用相结合，先通过自开发应用程序爬取数据，再通过洗数程序对爬取的数据做简单的清洗处理，然后将清洗好的数据落库，最后使用DataEase对落库后的数据进行分析，实现复杂场景下的业务处理和分析。
+                    </p>
+                    <p>针对多个来源的数据，数据团队也能够通过DataEase的关联数据集功能，将这些来源各异的数据集进行关联统一，然后从统一的数据集中快速清洗出想要的数据；</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>学习成本低</strong></span>
+                    </p>
+                    <p>DataEase的使用简单快捷，学习成本低。普通员工不需要安装客户端软件，只需IT部门在公司服务器内安装部署好DataEase后，普通员工就可以通过网页端访问DataEase进行操作使用。</p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>服务高效</strong></span>
+                    </p>
+                    <p>DataEase企业版用户拥有原厂提供的企业级支持服务，在遇到平台升级、故障排查等问题时，可以得到DataEase客户成功团队的快速响应。</p>
+                    <p>
+                        <span><strong>三、DataEase的使用场景示例</strong></span>
+                    </p>
+                    <p>公司IT部门负责监管公司的资产。公司购入收费软件后，IT部门就需要对这些软件的总安装量、剩余可用量、违规安装情况，以及安装的明细情况等进行统一管理。</p>
+                    <p>柯尼卡美能达软件开发（大连）有限公司需要汇总管理的数据主要包括：</p>
+                    <p><span>■</span> 软件购买台账，包含软件的基本信息以及购买的许可证数量；</p>
+                    <p><span>■</span> 申请单台账，包含申请安装软件的名称、用途、安装软件的电脑、申请人信息等；</p>
+                    <p><span>■</span> 电脑安装软件的信息列表。</p>
+                    <p>
+                        在引入数据可视化工具之前，公司的资产数据处理方式如图1所示。数据团队需要先在SCCM系统中将所有电脑软件安装的信息导出，然后逐一检索每一款软件安装在哪些电脑中，并与实际申请的软件安装台账进行对比，核对分筛出合规安装与违规安装。除此之外，数据团队还需要统计软件剩余可用量，确认已安装软件的资产数量和购买台账对比有没有超额。整套流程十分繁琐，且工作量极大。
+                    </p>
+                    <p><img src="../images/blog/case-20240723/dataease-048-02.png" alt="" loading="lazy" />▲ 图1 柯尼卡美能达软件开发（大连）有限公司传统软件安装数据处理流程</p>
+                    <p>
+                        引入DataEase后，数据团队通过DataEase制作了运用支援平台数据大屏。这个数据大屏清晰直观地展示了资产的补丁安装情况、软件更新情报、PC在线情况、资产情报、软件授权情况等多项可视化数据，如图2所示。这一数据大屏的搭建展示极大地提升了公司IT部门查询软件安装数据的便捷性，减少了无意义的重复劳动，有效帮助数据处理和数据查询的员工提高了工作效率。
+                    </p>
+                    <p><img src="../images/blog/case-20240723/dataease-048-03.png" alt="" loading="lazy" />▲ 图2 柯尼卡美能达软件开发（大连）有限公司运用支援平台大屏</p>
+                    <p>
+                        在运用支援平台数据大屏中，用户还可以点击不同图表的标题，向其他数据大屏进行跳转。例如，点击“软件授权管理”图表的标题，就可以跳转到软件授权管理大屏，如图3所示。在软件授权管理大屏中，IT部门可以查看各软件的安装数量、收费软件超额使用列表、未经申请审批的违规安装软件列表、软件安装的明细情况，以及收费软件的安装数量和License（许可证）残量，同时还可以通过告警线对License残量进行预警。
+                    </p>
+                    <p><img src="../images/blog/case-20240723/dataease-048-04.png" alt="" loading="lazy" />▲ 图3 柯尼卡美能达软件开发（大连）有限公司软件授权管理大屏</p>
+                    <p>
+                        <span><strong>四、使用DataEase后的成果和收益</strong></span>
+                    </p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>简化数据处理过程，降低查看数据的复杂度</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >DataEase在数据分析与可视化方面为柯尼卡美能达软件开发（大连）有限公司的数据团队提供了强大的支持，帮助其整合来自各个数据源的数据，简化了数据处理过程，降低了查看数据的复杂性，让数据分析的价值惠及每一位员工；</span
+                        >
+                    </p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>辅助决策，提升决策的质量</strong></span>
+                    </p>
+                    <p><span>通过基于DataEase搭建的动态数据可视化大屏，管理者和决策者可以快速掌握关键的业务指标及趋势，从而做出更加明智的战略决策和业务决策；</span></p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>增进团队间的沟通，提升协作效率</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >在DataEase平台之上，各个部门和团队都可以轻松访问权限范围内的实时数据，并且可以利用DataEase创建自定义报告与仪表板。此举促进了团队内及团队间的信息共享与合作，有助于各方更好地了解整体业务状况，并且可以根据可视化图表数据的提示及时做出相应的业务调整，提高办公中的沟通和协作效率；</span
+                        >
+                    </p>
+                    <p>
+                        <span><strong>■ </strong></span><span><strong>减少资产和软件管理的成本</strong></span>
+                    </p>
+                    <p>
+                        <span
+                            >通过使用DataEase数据可视化分析工具，公司各团队的数据分析能力和决策能力均得以提升，数据管理所需的人力成本与时间成本也显著下降。这样一来，公司就可以在团队协作能力和用户服务水平更进一步的同时，减少软件管理的成本。</span
+                        >
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系","item":"https://dataease.cn/blog/post-2e46436d-a023-4255-9ac5-253f8c26ee04.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系","description":"欢迎同样有DataEase应用需求的企业与柯尼卡美能达软件开发（大连）有限公司交流沟通。","url":"https://dataease.cn/blog/post-2e46436d-a023-4255-9ac5-253f8c26ee04.html","datePublished":"2024-07-23","dateModified":"2024-07-23","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/case-20240723/dataease-048.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系", "item": "https://dataease.cn/blog/post-2e46436d-a023-4255-9ac5-253f8c26ee04.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系",
+                "description": "欢迎同样有DataEase应用需求的企业与柯尼卡美能达软件开发（大连）有限公司交流沟通。",
+                "url": "https://dataease.cn/blog/post-2e46436d-a023-4255-9ac5-253f8c26ee04.html",
+                "datePublished": "2024-07-23",
+                "dateModified": "2024-07-23",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/case-20240723/dataease-048.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

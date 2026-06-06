@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,177 +220,204 @@
                 </header>
                 <div class="de-article-content">
                     <p>本文使用DataEase工具，通过对中国人口普查数据、诺贝尔奖获奖数据、福布斯富豪排行榜以及北京几所大学新生数据进行统计，制作了一个关于星座分析的仪表板大屏。下面来详细介绍整个仪表板的制作过程。</p>
-<p>DataEase是一款人人可用的开源数据可视化分析工具，可以帮助用户快速分析业务数据并洞察其趋势，为企业的业务改进与优化提供支持。DataEase支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并且可以方便地与他人进行分享。</p>
-<p>使用DataEase制作的星座排行榜仪表板如下：</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-01.png" alt="" loading="lazy" /></figure>
-<p>十二星座的人口分布是十分有趣的。比如说，通过中国人口普查星座数据图可以发现，在我国，11月和12月出生的天蝎座和射手座是最多的。是什么影响了不同星座宝宝的出生比例呢？</p>
-<p>我们可以根据孩子们出生的月份来反推一下。大家都知道怀孕到生宝宝需要10个月，大概280天左右。10月底到12月初之间出生的天蝎座和射手座，他们的爸爸妈妈基本都是在1、2月左右怀上宝宝的。再具体一点，我们就可以联想到“春节”这个能让外出辛苦工作一年的家庭成员团聚的节日了。在这难得的闲暇假日中，团聚的小两口会更有余裕去考虑要小孩的事。10个月后，就会有一波天蝎和射手宝宝出生了。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-02.png" alt="" loading="lazy" /></figure>
-<p>下图是福布斯星座财务排行数据统计，取材于2021福布斯排行榜。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-03.png" alt="" loading="lazy" /></figure>
-<p>本次调查样本描述：考察样品100人，取样2021福布斯排行榜顺位前100名的首富们。其中有效样本共55人，一些家族及继承人样本15人（已排除在统计之外），未知样本30人。</p>
-<p>有效样本55人中，风象星座16人，土象星座14人，火象星座14人，水象星座11人。</p>
-<p>■ 风向星座中：双子6人，水瓶6人，天秤4人；</p>
-<p>■ 火象星座中：白羊6人，狮子6人，射手2人；</p>
-<p>■ 水象星座中：天蝎5人，巨蟹3人，双鱼3人；</p>
-<p>■ 土象星座中：金牛6人，摩羯5人，处女3人。</p>
-<p>可以看出，没有具有唯一最强企业运的星座，传言中强势深沉的天蝎和摩羯也并没有多么特殊。但有较差企业运的星座，首富中巨蟹、双鱼、处女、射手有明显的数量劣势。平和佛系的天秤倒是很符合自己的特点，处于比较中间的水平。</p>
-<p>通过对清华大学、北京大学、北京理工大学三所学校的新生大数据进行数据分析，发现排在前三名的学霸星座分别是天蝎座、狮子座、双子座。我们来看看这三个星座身上都拥有着哪些学霸特性。</p>
-<p>■<strong> 双子座：</strong></p>
-<p>充满求知欲的双子一直十二个星座中排名靠前的学霸。永远追求着新鲜和刺激的他们在学习中也是如此，一直孜孜不倦探索着世界的奥秘。虽然他们的爱好过于广泛，显得有些三分钟热度。但也正因如此，双子的视野非常宽广，能比其他星座看见更加广阔的风景，能更加全面地去了解这个世界。灵活的思维也使得他们能够更加高效快捷地处事或沟通，加快知识的交汇和理解。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-04.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 天蝎座：</strong></p>
-<p>聪明狡黠的天蝎不论在什么领域都容易成为佼佼者。天蝎是一个心理相对来说较为上位的星座，这种上位体现在为人处事中，天蝎往往会潜移默化地以自己的思路引导他人、不动声色地控制全局；也体现在天蝎不懈求知以获取知识和智慧，使自己在与人、与事对峙时永远游刃有余占取上风。天蝎会清醒地认识到，获取知识也是强化自己头脑的重要步骤。且对“未知”和“神秘”的渴求，也使得天蝎心甘情愿沉浸在知识的神秘海洋。这样才成就了“腹黑”却魅力十足的天蝎座。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-05.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 狮子座：</strong></p>
-<p>从小到大，狮子都是不容置疑的优等生。天生好胜的狮子座，对自己的高标准严要求使得他们绝不会懈怠、也绝不会认输。当有了自己的目标之后，他们就会想尽一切办法达到。所以当狮子以最强为目的，一心发奋图强起来时，他们的成绩也绝不会给狮子的骄傲蒙羞。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-06.png" alt="" loading="lazy" /></figure>
-<p>下图为12星座在诺贝尔奖各领域的获奖情况（单位：人次）。我们可以看出在诺贝尔奖得主中：</p>
-<p>■ 冠军：双子座(74)</p>
-<p>■ 亚军：天蝎座(73)</p>
-<p>■ 季军：处女座(67)</p>
-<p>同时可以发现：</p>
-<p>■ 物理研究的优胜者：想象能力出众的巨蟹座；</p>
-<p>■ 化学研究的优胜者：一丝不苟的处女座；</p>
-<p>■ 生物学/医学研究的优胜者：对生命研究乐此不疲的天蝎座；</p>
-<p>■ 文学创作的优胜者：浪漫又才华横溢的天秤座；</p>
-<p>■ 政治方面的执旗者：擅长弄权的摩羯座；</p>
-<p>■ 经济学方面的优胜者：极具领袖魅力的狮子座（让人惊讶的是，这一奖项的优胜者不是理财能手金牛座。也许是因为相比于金牛，狮子更擅长在宏观方面的经济学统筹）。</p>
-<p>这一份数据中可以看出来，这个奖项大多由双子座、天蝎座、处女座、巨蟹座、天秤座、摩羯座这些星座所占据。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-07.png" alt="" loading="lazy" /></figure>
-<p>下面我们就来介绍使用DataEase开源数据可视化分析工具制作星座仪表板的方法。</p>
+                    <p>
+                        DataEase是一款人人可用的开源数据可视化分析工具，可以帮助用户快速分析业务数据并洞察其趋势，为企业的业务改进与优化提供支持。DataEase支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并且可以方便地与他人进行分享。
+                    </p>
+                    <p>使用DataEase制作的星座排行榜仪表板如下：</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-01.png" alt="" loading="lazy" /></figure>
+                    <p>十二星座的人口分布是十分有趣的。比如说，通过中国人口普查星座数据图可以发现，在我国，11月和12月出生的天蝎座和射手座是最多的。是什么影响了不同星座宝宝的出生比例呢？</p>
+                    <p>
+                        我们可以根据孩子们出生的月份来反推一下。大家都知道怀孕到生宝宝需要10个月，大概280天左右。10月底到12月初之间出生的天蝎座和射手座，他们的爸爸妈妈基本都是在1、2月左右怀上宝宝的。再具体一点，我们就可以联想到“春节”这个能让外出辛苦工作一年的家庭成员团聚的节日了。在这难得的闲暇假日中，团聚的小两口会更有余裕去考虑要小孩的事。10个月后，就会有一波天蝎和射手宝宝出生了。
+                    </p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-02.png" alt="" loading="lazy" /></figure>
+                    <p>下图是福布斯星座财务排行数据统计，取材于2021福布斯排行榜。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-03.png" alt="" loading="lazy" /></figure>
+                    <p>本次调查样本描述：考察样品100人，取样2021福布斯排行榜顺位前100名的首富们。其中有效样本共55人，一些家族及继承人样本15人（已排除在统计之外），未知样本30人。</p>
+                    <p>有效样本55人中，风象星座16人，土象星座14人，火象星座14人，水象星座11人。</p>
+                    <p>■ 风向星座中：双子6人，水瓶6人，天秤4人；</p>
+                    <p>■ 火象星座中：白羊6人，狮子6人，射手2人；</p>
+                    <p>■ 水象星座中：天蝎5人，巨蟹3人，双鱼3人；</p>
+                    <p>■ 土象星座中：金牛6人，摩羯5人，处女3人。</p>
+                    <p>可以看出，没有具有唯一最强企业运的星座，传言中强势深沉的天蝎和摩羯也并没有多么特殊。但有较差企业运的星座，首富中巨蟹、双鱼、处女、射手有明显的数量劣势。平和佛系的天秤倒是很符合自己的特点，处于比较中间的水平。</p>
+                    <p>通过对清华大学、北京大学、北京理工大学三所学校的新生大数据进行数据分析，发现排在前三名的学霸星座分别是天蝎座、狮子座、双子座。我们来看看这三个星座身上都拥有着哪些学霸特性。</p>
+                    <p>■<strong> 双子座：</strong></p>
+                    <p>
+                        充满求知欲的双子一直十二个星座中排名靠前的学霸。永远追求着新鲜和刺激的他们在学习中也是如此，一直孜孜不倦探索着世界的奥秘。虽然他们的爱好过于广泛，显得有些三分钟热度。但也正因如此，双子的视野非常宽广，能比其他星座看见更加广阔的风景，能更加全面地去了解这个世界。灵活的思维也使得他们能够更加高效快捷地处事或沟通，加快知识的交汇和理解。
+                    </p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-04.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 天蝎座：</strong></p>
+                    <p>
+                        聪明狡黠的天蝎不论在什么领域都容易成为佼佼者。天蝎是一个心理相对来说较为上位的星座，这种上位体现在为人处事中，天蝎往往会潜移默化地以自己的思路引导他人、不动声色地控制全局；也体现在天蝎不懈求知以获取知识和智慧，使自己在与人、与事对峙时永远游刃有余占取上风。天蝎会清醒地认识到，获取知识也是强化自己头脑的重要步骤。且对“未知”和“神秘”的渴求，也使得天蝎心甘情愿沉浸在知识的神秘海洋。这样才成就了“腹黑”却魅力十足的天蝎座。
+                    </p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-05.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 狮子座：</strong></p>
+                    <p>
+                        从小到大，狮子都是不容置疑的优等生。天生好胜的狮子座，对自己的高标准严要求使得他们绝不会懈怠、也绝不会认输。当有了自己的目标之后，他们就会想尽一切办法达到。所以当狮子以最强为目的，一心发奋图强起来时，他们的成绩也绝不会给狮子的骄傲蒙羞。
+                    </p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-06.png" alt="" loading="lazy" /></figure>
+                    <p>下图为12星座在诺贝尔奖各领域的获奖情况（单位：人次）。我们可以看出在诺贝尔奖得主中：</p>
+                    <p>■ 冠军：双子座(74)</p>
+                    <p>■ 亚军：天蝎座(73)</p>
+                    <p>■ 季军：处女座(67)</p>
+                    <p>同时可以发现：</p>
+                    <p>■ 物理研究的优胜者：想象能力出众的巨蟹座；</p>
+                    <p>■ 化学研究的优胜者：一丝不苟的处女座；</p>
+                    <p>■ 生物学/医学研究的优胜者：对生命研究乐此不疲的天蝎座；</p>
+                    <p>■ 文学创作的优胜者：浪漫又才华横溢的天秤座；</p>
+                    <p>■ 政治方面的执旗者：擅长弄权的摩羯座；</p>
+                    <p>■ 经济学方面的优胜者：极具领袖魅力的狮子座（让人惊讶的是，这一奖项的优胜者不是理财能手金牛座。也许是因为相比于金牛，狮子更擅长在宏观方面的经济学统筹）。</p>
+                    <p>这一份数据中可以看出来，这个奖项大多由双子座、天蝎座、处女座、巨蟹座、天秤座、摩羯座这些星座所占据。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-07.png" alt="" loading="lazy" /></figure>
+                    <p>下面我们就来介绍使用DataEase开源数据可视化分析工具制作星座仪表板的方法。</p>
 
+                    <h2>安装部署</h2>
+                    <p>■ DataEase在GitHub的地址：<em>https://github.com/dataease/dataease</em><em>.git</em>。</p>
+                    <p>■ DataEase官方文档：<em>https://dataease.io/docs</em>。</p>
+                    <p>■ 安装部署可到官方文档（<em>https://dataease.io/docs</em>）中查看具体安装部署步骤。</p>
 
-<h2>安装部署</h2>
-<p>■ DataEase在GitHub的地址：<em>https://github.com/dataease/dataease</em><em>.git</em>。</p>
-<p>■ DataEase官方文档：<em>https://dataease.io/docs</em>。</p>
-<p>■ 安装部署可到官方文档（<em>https://dataease.io/docs</em>）中查看具体安装部署步骤。</p>
+                    <h2>数据准备</h2>
+                    <p>将从网上获取的数据进行整理，整理出与星座相关的数据。</p>
+                    <p>本文提取了以下几种维度的数据集，将它们在本地Excel里进行维护后，上传到了DataEase的数据集中。</p>
+                    <p>■ 福布斯财务榜星座数据；</p>
+                    <p>■ 中国人口普查星座数据；</p>
+                    <p>■ 诺贝尔奖星座数据；</p>
+                    <p>■ 清华大学新生星座数据；</p>
+                    <p>■ 北京大学新生星座数据；</p>
+                    <p>■ 北京理工大学新生星座数据。</p>
 
+                    <h2>数据导入</h2>
+                    <p>本文中的数据导入直接使用的是Excel导入的方式添加的数据。</p>
+                    <p><strong>操作步骤：</strong>数据集创建→数据集分组→添加数据集→Excel数据集。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-08.png" alt="" loading="lazy" /></figure>
 
-<h2>数据准备</h2>
-<p>将从网上获取的数据进行整理，整理出与星座相关的数据。</p>
-<p>本文提取了以下几种维度的数据集，将它们在本地Excel里进行维护后，上传到了DataEase的数据集中。</p>
-<p>■ 福布斯财务榜星座数据；</p>
-<p>■ 中国人口普查星座数据；</p>
-<p>■ 诺贝尔奖星座数据；</p>
-<p>■ 清华大学新生星座数据；</p>
-<p>■ 北京大学新生星座数据；</p>
-<p>■ 北京理工大学新生星座数据。</p>
+                    <h2>视图制作</h2>
+                    <p>创建视图。</p>
+                    <p><strong>操作步骤：</strong>视图→创建视图分组→添加视图。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-09.png" alt="" loading="lazy" /></figure>
+                    <p>选择“矩形树图”图表类型，将字段“星座”拖入维度框里，将值“数量”拖到“指标”框里，效果如图：</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-10.png" alt="" loading="lazy" /></figure>
 
+                    <h2>制作瀑布图</h2>
+                    <p>为了能够更加直观地看出北京理工大学新生中哪个星座的人数最多，这里选择使用瀑布图。通过对比每一个柱体的垂直高度，一眼就可以看出“狮子”和“天蝎”的人数占比最高。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-11.png" alt="" loading="lazy" /></figure>
 
-<h2>数据导入</h2>
-<p>本文中的数据导入直接使用的是Excel导入的方式添加的数据。</p>
-<p><strong>操作步骤：</strong>数据集创建→数据集分组→添加数据集→Excel数据集。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-08.png" alt="" loading="lazy" /></figure>
+                    <h2>制作仪表板</h2>
+                    <p>新增仪表板。</p>
+                    <p><strong>操作路径：</strong>仪表板→新建目录→新建仪表板。</p>
+                    <p>点击“仪表板”菜单，选择“新建仪表板”按钮，添加视图，然后就可以直接将做好的视图拖到仪表板中。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-12.png" alt="" loading="lazy" /></figure>
 
+                    <h2>联动设置</h2>
+                    <p>设置联动字段，可设置一个图与多个图进行联动。设置时追加联动依赖字段，可实现联动效果。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-13.png" alt="" loading="lazy" /></figure>
+                    <p><strong>仪表板效果：</strong></p>
+                    <p>如下图，点击“清华大学新生星座”视图的“白羊”数据，联动的视图只展示“白羊”的联动字段数据。如果想取消联动效果，点击页面右上角的“清除所有联动”按钮即可。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-14.png" alt="" loading="lazy" /></figure>
 
-<h2>视图制作</h2>
-<p>创建视图。</p>
-<p><strong>操作步骤：</strong>视图→创建视图分组→添加视图。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-09.png" alt="" loading="lazy" /></figure>
-<p>选择“矩形树图”图表类型，将字段“星座”拖入维度框里，将值“数量”拖到“指标”框里，效果如图：</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-10.png" alt="" loading="lazy" /></figure>
-
-
-<h2>制作瀑布图</h2>
-<p>为了能够更加直观地看出北京理工大学新生中哪个星座的人数最多，这里选择使用瀑布图。通过对比每一个柱体的垂直高度，一眼就可以看出“狮子”和“天蝎”的人数占比最高。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-11.png" alt="" loading="lazy" /></figure>
-
-
-<h2>制作仪表板</h2>
-<p>新增仪表板。</p>
-<p><strong>操作路径：</strong>仪表板→新建目录→新建仪表板。</p>
-<p>点击“仪表板”菜单，选择“新建仪表板”按钮，添加视图，然后就可以直接将做好的视图拖到仪表板中。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-12.png" alt="" loading="lazy" /></figure>
-
-
-<h2>联动设置</h2>
-<p>设置联动字段，可设置一个图与多个图进行联动。设置时追加联动依赖字段，可实现联动效果。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-13.png" alt="" loading="lazy" /></figure>
-<p><strong>仪表板效果：</strong></p>
-<p>如下图，点击“清华大学新生星座”视图的“白羊”数据，联动的视图只展示“白羊”的联动字段数据。如果想取消联动效果，点击页面右上角的“清除所有联动”按钮即可。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-14.png" alt="" loading="lazy" /></figure>
-
-
-<h2>跳转设置</h2>
-<p>首先，再新创建一个诺贝尔星座详情仪表板，内容为各个星座获奖的详细数据。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-15.png" alt="" loading="lazy" /></figure>
-<p>如果要看诺贝奖获奖星座中某一种星座获得的诺贝奖分布数据，可针对仪表盘中视图设置跳转，即从一个仪表板跳转到另一个仪表板。</p>
-<p>选择“启用跳转”选项，勾选“星座”字段，选择打开方式（包括“当前页面”和“新开页面”）和链接类型（包括“外部链接”和“仪表板”）。选择联动视图和跳转的仪表板，并追加跳转联动依赖字段，就可实现两个仪表板之间的跳转查询功能。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-16.png" alt="" loading="lazy" /></figure>
-<p>然后，在仪表板中点击“历届诺贝尔奖获奖星座统计”视图中的星座，就能直接跳转到新的仪表盘中，并会按照点击的星座进行筛选。例如点击“白羊”后，跳转入白羊座的诺贝尔奖学科分布相关仪表板。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-17.png" alt="" loading="lazy" /></figure>
-<p>点击后可以跳转到“诺贝尔奖星座获奖详情”仪表板，并只显示出白羊座的获奖详情。</p>
-<figure><img src="../images/blog/chart-20211221/dataease-159-18.png" alt="" loading="lazy" /></figure>
+                    <h2>跳转设置</h2>
+                    <p>首先，再新创建一个诺贝尔星座详情仪表板，内容为各个星座获奖的详细数据。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-15.png" alt="" loading="lazy" /></figure>
+                    <p>如果要看诺贝奖获奖星座中某一种星座获得的诺贝奖分布数据，可针对仪表盘中视图设置跳转，即从一个仪表板跳转到另一个仪表板。</p>
+                    <p>选择“启用跳转”选项，勾选“星座”字段，选择打开方式（包括“当前页面”和“新开页面”）和链接类型（包括“外部链接”和“仪表板”）。选择联动视图和跳转的仪表板，并追加跳转联动依赖字段，就可实现两个仪表板之间的跳转查询功能。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-16.png" alt="" loading="lazy" /></figure>
+                    <p>然后，在仪表板中点击“历届诺贝尔奖获奖星座统计”视图中的星座，就能直接跳转到新的仪表盘中，并会按照点击的星座进行筛选。例如点击“白羊”后，跳转入白羊座的诺贝尔奖学科分布相关仪表板。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-17.png" alt="" loading="lazy" /></figure>
+                    <p>点击后可以跳转到“诺贝尔奖星座获奖详情”仪表板，并只显示出白羊座的获奖详情。</p>
+                    <figure><img src="../images/blog/chart-20211221/dataease-159-18.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜DataEase可视化数据分析工具中的仪表板跳转和联动设置","item":"https://dataease.cn/blog/post-3135.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜DataEase可视化数据分析工具中的仪表板跳转和联动设置","description":"各场合中不同星座人数分布的仪表板。","url":"https://dataease.cn/blog/post-3135.html","datePublished":"2021-12-21","dateModified":"2021-12-21","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜DataEase可视化数据分析工具中的仪表板跳转和联动设置", "item": "https://dataease.cn/blog/post-3135.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜DataEase可视化数据分析工具中的仪表板跳转和联动设置",
+                "description": "各场合中不同星座人数分布的仪表板。",
+                "url": "https://dataease.cn/blog/post-3135.html",
+                "datePublished": "2021-12-21",
+                "dateModified": "2021-12-21",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

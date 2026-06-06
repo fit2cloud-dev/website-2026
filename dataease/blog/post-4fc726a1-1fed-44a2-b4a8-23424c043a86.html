@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,167 @@
                     <img src="../images/blog/common/dataease-001.png" alt="新增模板中心和系统设置模块，支持飞书平台对接，DataEase开源数据可视化分析平台v2.1.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>这一版本的功能升级包括：新增<strong><span>模板中心</span></strong>，用户可以通过模板中心的模板快速创建仪表板和数据大屏；新增<strong><span>“系统设置”</span></strong>功能模块，该模块包含<strong><span>系统参数</span></strong>、<strong><span>认证设置</span></strong>、<strong><span>嵌入式管理</span></strong>、<strong><span>平台对接</span></strong>四个子模块。在<strong><span>“系统参数”</span></strong>子模块中，用户可以对常用的系统设置项进行管理，<strong><span>“认证设置”</span></strong>子模块支持CAS（中央认证服务）、LDAP（轻量级目录访问协议）、OIDC（开放ID连接）等常用认证协议的对接，在<strong><span>“嵌入式管理”</span></strong>子模块中用户可以创建嵌入式应用，通过嵌入式应用将DataEase嵌入到第三方平台中，<strong><span>“平台对接”</span></strong>子模块目前已支持飞书平台的接入，用户可以通过飞书扫码的方式快速登录到DataEase平台；<strong><span>数据准备</span></strong>方面，新版DataEase支持数据集和数据源的复制功能，方便用户快速创建类似的数据资源。</p><p>此外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</p><h2 id="heading-1">新增功能</h2><p><strong><span>■ 模板中心：内置“模板中心”，快速创建仪表板和数据大屏</span></strong></p><p>DataEase“模板中心”汇总了DataEase在线“模板市场”，以及用户自身的“模板管理”模块中的自有模板，用户可以在“模板中心”页面查找符合自己需求的模板，快速创建仪表板和数据大屏。</p><p><img src="../images/blog/template-20231211/dataease-080-01.png" alt="1 模板中心.png" loading="lazy" />▲ 图1 DataEase模板中心</p><p><strong><span>■ 平台对接：支持飞书平台的接入</span></strong></p><p>DataEase v2.1.0版本新增“系统设置”功能模块，该模块包含系统参数、认证设置、嵌入式管理、平台对接四个子模块。其中，“平台对接”子模块支持飞书平台的接入，系统管理员在DataEase中设置好飞书应用的配置后，用户即可通过飞书扫码来登录对应的DataEase账号。</p><p><img src="../images/blog/template-20231211/dataease-080-02.png" alt="2 飞书.png" loading="lazy" />▲ 图2 通过“平台对接”子模块将飞书平台接入DataEase</p><p><strong><span>■ 嵌入式管理：通过嵌入式应用将DataEase嵌入第三方平台</span></strong></p><p>在DataEase在v2.1.0版本新增的“系统设置”功能模块的“嵌入式管理”子模块中，用户可以创建嵌入式应用，并通过该嵌入式应用对应的APP ID和APP Secret来将DataEase接入到第三方平台，从而实现DataEase与用户自有系统的无缝结合。</p><p>目前，DataEase v2.1.0版本支持图表、仪表板、数据大屏、仪表板和数据大屏编辑器等页面在第三方平台的嵌入。</p><p><img src="../images/blog/template-20231211/dataease-080-03.png" alt="3 嵌入式.png" loading="lazy" />▲ 图3 在“嵌入式管理”子模块新建嵌入式应用</p><p>除了上述新增功能外，DataEase v2.1.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p><h2 id="heading-2">功能优化</h2><p><span>■</span> refactor（工作台）：优化最近使用记录的查询逻辑；</p><p><span>■</span> refactor（图表）：组合图默认第一个指标用于柱状图，第二个指标用于折线图；</p><p><span>■</span> refactor（图表）：优化富文本、表格等视图在模板中的适配度；</p><p><span>■</span> refactor（仪表板）：仪表板、数据大屏中的图表联动字段可以使用已参与图表制作的字段；</p><p><span>■</span> refactor（仪表板）：社区版仪表板无需展示创建者；</p><p><span>■</span> refactor（数据大屏）：编辑中的数据大屏，在预览状态下禁用鼠标比例伸缩功能；</p><p><span>■</span> refactor：优化<em>dectl</em>命令状态的检查方法；</p><p><span>■</span> refactor：APISIX新增支持Origin请求头穿透功能；</p><p><span>■</span> refactor：新增askToken认证机制；</p><p><span>■</span> refactor：菜单缓存机制禁止持久化。</p><h2 id="heading-3">Bug修复</h2><p><span>■</span> fix（图表）：修复地图导出图片为PDF格式时出现区域空白的问题；</p><p><span>■</span> fix（图表）：修复富文本图表不识别“记录数”这一字段的问题；</p><p><span>■</span> fix（查询组件）：修复查询组件参数化后未能及时获取最新数据的问题；</p><p><span>■</span> fix（查询组件）：修复通过外部参数的数字区间来查询组件数值时匹配不正确的问题；</p><p><span>■</span> fix（查询组件）：去除查询组件配置过程中产生的缓存；</p><p><span>■</span> fix（查询组件）：修复查询条件中设置默认值为固定时间，保存后默认值被置空的问题；</p><p><span>■</span> fix（媒体组件）：修复反复切换图片组件样式时缩略图没有变化的问题；</p><p><span>■</span> fix（仪表板）：修复编辑仪表板时，对新添加的图表进行设置操作导致原有图表的联动、跳转标识丢失的问题；</p><p><span>■</span> fix（仪表板）：修复空值联动异常的问题；</p><p><span>■</span> fix（数据大屏）：修复大屏伸缩比例调整时直接输入数值，调整无法生效的问题；</p><p><span>■</span> fix（数据大屏）：修复使用快捷键反复切换桌面应用导致的数据大屏组件移动失效问题；</p><p><span>■</span> fix（数据集）：修复在数据集中重命名的字段名称过长的情况下，右侧功能菜单消失，无法进行其他操作的问题；</p><p><span>■</span> fix（数据集）：修复在自定义SQL编辑页无法调节左侧侧边栏宽度的问题 （#6535）；</p><p><span>■</span> fix（数据源）：修复初始化数据引擎失败的问题；</p><p><span>■</span> fix（X-Pack）：修复嵌入式的场景下部分静态资源无法加载的问题；</p><p><span>■</span> fix（X-Pack）：修复列权限中自定义脱敏格式显示不正确的问题；</p><p><span>■</span> fix（X-Pack）：修复删除用户后其名下资源无法查看的问题；</p><p><span>■</span> fix（X-Pack）：修复某些情况下无法切换组织的问题；</p><p><span>■</span> fix（X-Pack）：修复用户批量导入失败的问题。</p>
+                    <p>
+                        这一版本的功能升级包括：新增<strong><span>模板中心</span></strong
+                        >，用户可以通过模板中心的模板快速创建仪表板和数据大屏；新增<strong><span>“系统设置”</span></strong
+                        >功能模块，该模块包含<strong><span>系统参数</span></strong
+                        >、<strong><span>认证设置</span></strong
+                        >、<strong><span>嵌入式管理</span></strong
+                        >、<strong><span>平台对接</span></strong
+                        >四个子模块。在<strong><span>“系统参数”</span></strong
+                        >子模块中，用户可以对常用的系统设置项进行管理，<strong><span>“认证设置”</span></strong
+                        >子模块支持CAS（中央认证服务）、LDAP（轻量级目录访问协议）、OIDC（开放ID连接）等常用认证协议的对接，在<strong><span>“嵌入式管理”</span></strong
+                        >子模块中用户可以创建嵌入式应用，通过嵌入式应用将DataEase嵌入到第三方平台中，<strong><span>“平台对接”</span></strong
+                        >子模块目前已支持飞书平台的接入，用户可以通过飞书扫码的方式快速登录到DataEase平台；<strong><span>数据准备</span></strong
+                        >方面，新版DataEase支持数据集和数据源的复制功能，方便用户快速创建类似的数据资源。
+                    </p>
+                    <p>此外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <h2 id="heading-1">新增功能</h2>
+                    <p>
+                        <strong><span>■ 模板中心：内置“模板中心”，快速创建仪表板和数据大屏</span></strong>
+                    </p>
+                    <p>DataEase“模板中心”汇总了DataEase在线“模板市场”，以及用户自身的“模板管理”模块中的自有模板，用户可以在“模板中心”页面查找符合自己需求的模板，快速创建仪表板和数据大屏。</p>
+                    <p><img src="../images/blog/template-20231211/dataease-080-01.png" alt="1 模板中心.png" loading="lazy" />▲ 图1 DataEase模板中心</p>
+                    <p>
+                        <strong><span>■ 平台对接：支持飞书平台的接入</span></strong>
+                    </p>
+                    <p>
+                        DataEase
+                        v2.1.0版本新增“系统设置”功能模块，该模块包含系统参数、认证设置、嵌入式管理、平台对接四个子模块。其中，“平台对接”子模块支持飞书平台的接入，系统管理员在DataEase中设置好飞书应用的配置后，用户即可通过飞书扫码来登录对应的DataEase账号。
+                    </p>
+                    <p><img src="../images/blog/template-20231211/dataease-080-02.png" alt="2 飞书.png" loading="lazy" />▲ 图2 通过“平台对接”子模块将飞书平台接入DataEase</p>
+                    <p>
+                        <strong><span>■ 嵌入式管理：通过嵌入式应用将DataEase嵌入第三方平台</span></strong>
+                    </p>
+                    <p>在DataEase在v2.1.0版本新增的“系统设置”功能模块的“嵌入式管理”子模块中，用户可以创建嵌入式应用，并通过该嵌入式应用对应的APP ID和APP Secret来将DataEase接入到第三方平台，从而实现DataEase与用户自有系统的无缝结合。</p>
+                    <p>目前，DataEase v2.1.0版本支持图表、仪表板、数据大屏、仪表板和数据大屏编辑器等页面在第三方平台的嵌入。</p>
+                    <p><img src="../images/blog/template-20231211/dataease-080-03.png" alt="3 嵌入式.png" loading="lazy" />▲ 图3 在“嵌入式管理”子模块新建嵌入式应用</p>
+                    <p>除了上述新增功能外，DataEase v2.1.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h2 id="heading-2">功能优化</h2>
+                    <p><span>■</span> refactor（工作台）：优化最近使用记录的查询逻辑；</p>
+                    <p><span>■</span> refactor（图表）：组合图默认第一个指标用于柱状图，第二个指标用于折线图；</p>
+                    <p><span>■</span> refactor（图表）：优化富文本、表格等视图在模板中的适配度；</p>
+                    <p><span>■</span> refactor（仪表板）：仪表板、数据大屏中的图表联动字段可以使用已参与图表制作的字段；</p>
+                    <p><span>■</span> refactor（仪表板）：社区版仪表板无需展示创建者；</p>
+                    <p><span>■</span> refactor（数据大屏）：编辑中的数据大屏，在预览状态下禁用鼠标比例伸缩功能；</p>
+                    <p><span>■</span> refactor：优化<em>dectl</em>命令状态的检查方法；</p>
+                    <p><span>■</span> refactor：APISIX新增支持Origin请求头穿透功能；</p>
+                    <p><span>■</span> refactor：新增askToken认证机制；</p>
+                    <p><span>■</span> refactor：菜单缓存机制禁止持久化。</p>
+                    <h2 id="heading-3">Bug修复</h2>
+                    <p><span>■</span> fix（图表）：修复地图导出图片为PDF格式时出现区域空白的问题；</p>
+                    <p><span>■</span> fix（图表）：修复富文本图表不识别“记录数”这一字段的问题；</p>
+                    <p><span>■</span> fix（查询组件）：修复查询组件参数化后未能及时获取最新数据的问题；</p>
+                    <p><span>■</span> fix（查询组件）：修复通过外部参数的数字区间来查询组件数值时匹配不正确的问题；</p>
+                    <p><span>■</span> fix（查询组件）：去除查询组件配置过程中产生的缓存；</p>
+                    <p><span>■</span> fix（查询组件）：修复查询条件中设置默认值为固定时间，保存后默认值被置空的问题；</p>
+                    <p><span>■</span> fix（媒体组件）：修复反复切换图片组件样式时缩略图没有变化的问题；</p>
+                    <p><span>■</span> fix（仪表板）：修复编辑仪表板时，对新添加的图表进行设置操作导致原有图表的联动、跳转标识丢失的问题；</p>
+                    <p><span>■</span> fix（仪表板）：修复空值联动异常的问题；</p>
+                    <p><span>■</span> fix（数据大屏）：修复大屏伸缩比例调整时直接输入数值，调整无法生效的问题；</p>
+                    <p><span>■</span> fix（数据大屏）：修复使用快捷键反复切换桌面应用导致的数据大屏组件移动失效问题；</p>
+                    <p><span>■</span> fix（数据集）：修复在数据集中重命名的字段名称过长的情况下，右侧功能菜单消失，无法进行其他操作的问题；</p>
+                    <p><span>■</span> fix（数据集）：修复在自定义SQL编辑页无法调节左侧侧边栏宽度的问题 （#6535）；</p>
+                    <p><span>■</span> fix（数据源）：修复初始化数据引擎失败的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复嵌入式的场景下部分静态资源无法加载的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复列权限中自定义脱敏格式显示不正确的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复删除用户后其名下资源无法查看的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复某些情况下无法切换组织的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复用户批量导入失败的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增模板中心和系统设置模块，支持飞书平台对接，DataEase开源数据可视化分析平台v2.1.0发布","item":"https://dataease.cn/blog/post-4fc726a1-1fed-44a2-b4a8-23424c043a86.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增模板中心和系统设置模块，支持飞书平台对接，DataEase开源数据可视化分析平台v2.1.0发布","description":"支持通过嵌入式应用将DataEase嵌入第三方平台。","url":"https://dataease.cn/blog/post-4fc726a1-1fed-44a2-b4a8-23424c043a86.html","datePublished":"2023-12-11","dateModified":"2023-12-11","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增模板中心和系统设置模块，支持飞书平台对接，DataEase开源数据可视化分析平台v2.1.0发布", "item": "https://dataease.cn/blog/post-4fc726a1-1fed-44a2-b4a8-23424c043a86.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增模板中心和系统设置模块，支持飞书平台对接，DataEase开源数据可视化分析平台v2.1.0发布",
+                "description": "支持通过嵌入式应用将DataEase嵌入第三方平台。",
+                "url": "https://dataease.cn/blog/post-4fc726a1-1fed-44a2-b4a8-23424c043a86.html",
+                "datePublished": "2023-12-11",
+                "dateModified": "2023-12-11",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

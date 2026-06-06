@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,177 @@
                     <img src="../images/blog/common/dataease-001.png" alt="新增多种图表类型，新增插件管理模块，DataEase开源数据可视化分析工具v2.8.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>2024年7月8日，人人可用的开源数据可视化分析工具DataEase正式发布v2.8.0版本。</p><p>这一版本的功能变动包括：<strong><span>图表</span></strong>方面，新增组合图、热力地图、符号地图、K线图等图表类型，并对已有的仪表盘、明细表、指标卡、富文本等图表类型进行了功能增强和优化；<strong><span>仪表板和数据大屏</span></strong>方面，新增一键全屏预览和大屏刻度尺功能，分享链接支持Ticket设置。</p><p><strong><span>X-Pack增强包</span></strong>方面，新增插件管理模块，支持自定义图表插件和数据源插件；CAS（Central Authentication Service，即中央认证服务）新增支持https模式；定时报告中支持使用过滤组件功能。</p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p><strong><span>■ 图表：支持分组柱线组合图、堆叠柱线组合图、热力地图、符号地图和K线图</span></strong></p><p>DataEase v2.8.0版本中新增分组柱线组合图、堆叠柱线组合图、热力地图、符号地图和K线图。DataEase正在持续丰富图表图库，增强数据的展示能力，为数据在对比、空间、分布等场景下的呈现提供更多的选择。</p><p><img src="../images/blog/release-20240708/dataease-051-01.png" alt="" loading="lazy" />▲ 图1 分组柱线组合图、堆叠柱线组合图、热力地图、符号地图、K线图编辑页面</p><p><strong><span>■ 仪表板和数据大屏：支持全屏预览和大屏刻度尺</span></strong></p><p>在DataEase v2.8.0版本中，仪表板和数据大屏新增支持一键全屏预览，用户可以快速查看仪表板和大屏的展示效果；新增大屏刻度尺功能，用户可以在设计大屏时快速定位和确定组件的大小。</p><p>另外，DataEase数据大屏还新增了复用功能，让大屏的制作更加快捷方便。</p><p><img src="../images/blog/release-20240708/dataease-051-02.png" alt="" loading="lazy" />▲ 图2 DataEase数据大屏刻度尺效果</p><p><strong><span>■ 仪表板和数据大屏：分享链接支持Ticket设置</span></strong></p><p>在DataEase v2.8.0版本中，仪表板和数据大屏中新增分享链接的Ticket设置功能。</p><p><img src="../images/blog/release-20240708/dataease-051-03.png" alt="" loading="lazy" />▲ 图3 分享链接支持Ticket设置</p><p><strong><span>■ X-Pack增强包：新增插件管理模块，支持自定义图表和数据源</span></strong></p><p>为了满足企业的个性化需求，DataEase v2.8.0版本推出插件管理模块，支持用户自定义图表插件和数据源插件。</p><p><img src="../images/blog/release-20240708/dataease-051-04.png" alt="" loading="lazy" />▲ 图4 DataEase插件管理页面</p><p>除了上述新增功能外，DataEase v2.8.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p><span>■ </span>refactor（仪表板）：仪表板的导出权限增加对图表数据导出权限的控制（#9836）；</p><p><span>■</span> refactor（仪表板）：优化初始化矩阵排序，解决仪表板保存后再次编辑可能出现的图表位置错乱问题；</p><p><span>■ </span>refactor（仪表板）：优化仪表板缩放模式，解决仪表板所在的屏幕浏览器高度尺寸变小时，视图高度自适应导致视图内容展示不全的问题；</p><p><span>■ </span>refactor（数据大屏）：优化新建组件时存在的主题适配问题；</p><p><span>■</span> refactor（数据大屏）：优化跑马灯组件的滚动速度计算方式，消除组件大小缩放对滚动速度与展现效果的影响；</p><p><span>■</span> refactor（数据大屏）：优化跑马灯组件的初始化位置等问题；</p><p><span>■</span> refactor（图表）：优化同环比日期字段的过滤逻辑；</p><p><span>■</span> perf（图表）：优化折线图渐变色的显示效果；</p><p><span>■</span> refactor（图表）：指标卡背景默认为透明格式；</p><p><span>■</span> perf（图表）：透视表支持导出透视表样式的表格；</p><p><span>■</span> perf（图表）：区间条形图去除轴值设置功能；</p><p><span>■</span> refactor（图表）：图表详情的表格关闭滚动动作；</p><p><span>■</span> refactor（数据集）：优化计算字段中聚合函数的匹配逻辑；</p><p><span>■</span> refactor（数据集）：移除SQL参数配置界面中，参数类型下拉框中的滚动条（#10758）；</p><p><span>■</span> perf（X-Pack）：嵌入式版本新增数据集限制功能（#10459）；</p><p><span>■</span> refactor（X-Pack）：处理APISIX Key中可能包含的无法使用的字符；</p><p><span>■</span> refactor（X-Pack）：优化仪表板大屏定时报告的预览样式；</p><p><span>■</span> refactor（X-Pack）：行列权限配置权限规则时可选择默认角色。</p><h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2><p><span>■</span> fix（仪表板）：修复历史主题未适配高级配置的问题；</p><p><span>■</span> fix（仪表板）：修复数据大屏查询组件中，点击“确定”按钮保存失败的问题（#10291）；</p><p><span>■</span> fix（仪表板）：公共链接兼容DataEase v2.4之前版本（#9755）；</p><p><span>■</span> fix（数据大屏）：修复数据大屏导入模板后，组合图层大小不一致的问题（#10144）；</p><p><span>■</span> fix（数据大屏）：修复直接拖动左侧图层排序无法触发“保存”按钮事件的问题（#10254）；</p><p><span>■</span> fix（图表）：修复下钻日期SQL拼接错误的问题；</p><p><span>■</span> fix（图表）：修复象限图无法触发联动的问题；</p><p><span>■</span> fix（图表）：修复散点图提示显示值不正确的问题；</p><p><span>■</span> fix（图表）：修复散点图设置气泡大小失败的问题；</p><p><span>■</span> fix（图表）：修复玫瑰图、饼图时间字段排序无效的问题；</p><p><span>■</span> fix（图表）：修复仪表盘标签字体大小无效的问题；</p><p><span>■</span> fix（数据集）：在SQL数据集中新增字段，不会影响到历史字段的使用；</p><p><span>■</span> fix（数据集）：修复多个数据节点关联时，SQL数据节点在映射过程中会导致该数据节点丢失的问题（#9973）；</p><p><span>■</span> fix（数据集）：修复不能跨组织创建同名数据集和目录的问题；</p><p><span>■</span> fix（数据集）：修复创建Oracle数据集时出现的系统崩溃问题（#9307）；</p><p><span>■</span> fix（数据集）：在数据集编辑自定义SQL时，增加表结构Comment备注提示（#10022）；</p><p><span>■</span> fix（数据源）：修复数据源定时检测失败的问题；</p><p><span>■</span> fix（系统设置）：修复数据导出中心没有所属组织的问题；</p><p><span>■</span> fix（移动端）：修复数据大屏的公共链接通过手机打开会显示“资源不存在或已经被删除”提示信息的问题（#9971）；</p><p><span>■</span> fix（嵌入式）：修复仪表板目录树以iframe方式嵌入时，仪表板预览页的“全屏”按钮失效的问题；</p><p><span>■</span> fix（嵌入式）：修复仪表板目录树以DIV方式嵌入时，仪表板预览界面缺少全屏、预览、编辑功能的问题；</p><p><span>■</span> fix（嵌入式）：修复通过iframe方式嵌入的数据集页面，在编辑好数据集并保存、退出后页面一直在滚动的问题；</p><p><span>■</span> fix（X-Pack）：修复CAS不能使用https方式的问题；</p><p><span>■</span> fix（X-Pack）：修复企业微信编辑页面标题显示错误的问题（#10764）。</p>
+                    <p>2024年7月8日，人人可用的开源数据可视化分析工具DataEase正式发布v2.8.0版本。</p>
+                    <p>
+                        这一版本的功能变动包括：<strong><span>图表</span></strong
+                        >方面，新增组合图、热力地图、符号地图、K线图等图表类型，并对已有的仪表盘、明细表、指标卡、富文本等图表类型进行了功能增强和优化；<strong><span>仪表板和数据大屏</span></strong
+                        >方面，新增一键全屏预览和大屏刻度尺功能，分享链接支持Ticket设置。
+                    </p>
+                    <p>
+                        <strong><span>X-Pack增强包</span></strong
+                        >方面，新增插件管理模块，支持自定义图表插件和数据源插件；CAS（Central Authentication Service，即中央认证服务）新增支持https模式；定时报告中支持使用过滤组件功能。
+                    </p>
+                    <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
+                    <p>
+                        <strong><span>■ 图表：支持分组柱线组合图、堆叠柱线组合图、热力地图、符号地图和K线图</span></strong>
+                    </p>
+                    <p>DataEase v2.8.0版本中新增分组柱线组合图、堆叠柱线组合图、热力地图、符号地图和K线图。DataEase正在持续丰富图表图库，增强数据的展示能力，为数据在对比、空间、分布等场景下的呈现提供更多的选择。</p>
+                    <p><img src="../images/blog/release-20240708/dataease-051-01.png" alt="" loading="lazy" />▲ 图1 分组柱线组合图、堆叠柱线组合图、热力地图、符号地图、K线图编辑页面</p>
+                    <p>
+                        <strong><span>■ 仪表板和数据大屏：支持全屏预览和大屏刻度尺</span></strong>
+                    </p>
+                    <p>在DataEase v2.8.0版本中，仪表板和数据大屏新增支持一键全屏预览，用户可以快速查看仪表板和大屏的展示效果；新增大屏刻度尺功能，用户可以在设计大屏时快速定位和确定组件的大小。</p>
+                    <p>另外，DataEase数据大屏还新增了复用功能，让大屏的制作更加快捷方便。</p>
+                    <p><img src="../images/blog/release-20240708/dataease-051-02.png" alt="" loading="lazy" />▲ 图2 DataEase数据大屏刻度尺效果</p>
+                    <p>
+                        <strong><span>■ 仪表板和数据大屏：分享链接支持Ticket设置</span></strong>
+                    </p>
+                    <p>在DataEase v2.8.0版本中，仪表板和数据大屏中新增分享链接的Ticket设置功能。</p>
+                    <p><img src="../images/blog/release-20240708/dataease-051-03.png" alt="" loading="lazy" />▲ 图3 分享链接支持Ticket设置</p>
+                    <p>
+                        <strong><span>■ X-Pack增强包：新增插件管理模块，支持自定义图表和数据源</span></strong>
+                    </p>
+                    <p>为了满足企业的个性化需求，DataEase v2.8.0版本推出插件管理模块，支持用户自定义图表插件和数据源插件。</p>
+                    <p><img src="../images/blog/release-20240708/dataease-051-04.png" alt="" loading="lazy" />▲ 图4 DataEase插件管理页面</p>
+                    <p>除了上述新增功能外，DataEase v2.8.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
+                    <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
+                    <p><span>■ </span>refactor（仪表板）：仪表板的导出权限增加对图表数据导出权限的控制（#9836）；</p>
+                    <p><span>■</span> refactor（仪表板）：优化初始化矩阵排序，解决仪表板保存后再次编辑可能出现的图表位置错乱问题；</p>
+                    <p><span>■ </span>refactor（仪表板）：优化仪表板缩放模式，解决仪表板所在的屏幕浏览器高度尺寸变小时，视图高度自适应导致视图内容展示不全的问题；</p>
+                    <p><span>■ </span>refactor（数据大屏）：优化新建组件时存在的主题适配问题；</p>
+                    <p><span>■</span> refactor（数据大屏）：优化跑马灯组件的滚动速度计算方式，消除组件大小缩放对滚动速度与展现效果的影响；</p>
+                    <p><span>■</span> refactor（数据大屏）：优化跑马灯组件的初始化位置等问题；</p>
+                    <p><span>■</span> refactor（图表）：优化同环比日期字段的过滤逻辑；</p>
+                    <p><span>■</span> perf（图表）：优化折线图渐变色的显示效果；</p>
+                    <p><span>■</span> refactor（图表）：指标卡背景默认为透明格式；</p>
+                    <p><span>■</span> perf（图表）：透视表支持导出透视表样式的表格；</p>
+                    <p><span>■</span> perf（图表）：区间条形图去除轴值设置功能；</p>
+                    <p><span>■</span> refactor（图表）：图表详情的表格关闭滚动动作；</p>
+                    <p><span>■</span> refactor（数据集）：优化计算字段中聚合函数的匹配逻辑；</p>
+                    <p><span>■</span> refactor（数据集）：移除SQL参数配置界面中，参数类型下拉框中的滚动条（#10758）；</p>
+                    <p><span>■</span> perf（X-Pack）：嵌入式版本新增数据集限制功能（#10459）；</p>
+                    <p><span>■</span> refactor（X-Pack）：处理APISIX Key中可能包含的无法使用的字符；</p>
+                    <p><span>■</span> refactor（X-Pack）：优化仪表板大屏定时报告的预览样式；</p>
+                    <p><span>■</span> refactor（X-Pack）：行列权限配置权限规则时可选择默认角色。</p>
+                    <h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2>
+                    <p><span>■</span> fix（仪表板）：修复历史主题未适配高级配置的问题；</p>
+                    <p><span>■</span> fix（仪表板）：修复数据大屏查询组件中，点击“确定”按钮保存失败的问题（#10291）；</p>
+                    <p><span>■</span> fix（仪表板）：公共链接兼容DataEase v2.4之前版本（#9755）；</p>
+                    <p><span>■</span> fix（数据大屏）：修复数据大屏导入模板后，组合图层大小不一致的问题（#10144）；</p>
+                    <p><span>■</span> fix（数据大屏）：修复直接拖动左侧图层排序无法触发“保存”按钮事件的问题（#10254）；</p>
+                    <p><span>■</span> fix（图表）：修复下钻日期SQL拼接错误的问题；</p>
+                    <p><span>■</span> fix（图表）：修复象限图无法触发联动的问题；</p>
+                    <p><span>■</span> fix（图表）：修复散点图提示显示值不正确的问题；</p>
+                    <p><span>■</span> fix（图表）：修复散点图设置气泡大小失败的问题；</p>
+                    <p><span>■</span> fix（图表）：修复玫瑰图、饼图时间字段排序无效的问题；</p>
+                    <p><span>■</span> fix（图表）：修复仪表盘标签字体大小无效的问题；</p>
+                    <p><span>■</span> fix（数据集）：在SQL数据集中新增字段，不会影响到历史字段的使用；</p>
+                    <p><span>■</span> fix（数据集）：修复多个数据节点关联时，SQL数据节点在映射过程中会导致该数据节点丢失的问题（#9973）；</p>
+                    <p><span>■</span> fix（数据集）：修复不能跨组织创建同名数据集和目录的问题；</p>
+                    <p><span>■</span> fix（数据集）：修复创建Oracle数据集时出现的系统崩溃问题（#9307）；</p>
+                    <p><span>■</span> fix（数据集）：在数据集编辑自定义SQL时，增加表结构Comment备注提示（#10022）；</p>
+                    <p><span>■</span> fix（数据源）：修复数据源定时检测失败的问题；</p>
+                    <p><span>■</span> fix（系统设置）：修复数据导出中心没有所属组织的问题；</p>
+                    <p><span>■</span> fix（移动端）：修复数据大屏的公共链接通过手机打开会显示“资源不存在或已经被删除”提示信息的问题（#9971）；</p>
+                    <p><span>■</span> fix（嵌入式）：修复仪表板目录树以iframe方式嵌入时，仪表板预览页的“全屏”按钮失效的问题；</p>
+                    <p><span>■</span> fix（嵌入式）：修复仪表板目录树以DIV方式嵌入时，仪表板预览界面缺少全屏、预览、编辑功能的问题；</p>
+                    <p><span>■</span> fix（嵌入式）：修复通过iframe方式嵌入的数据集页面，在编辑好数据集并保存、退出后页面一直在滚动的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复CAS不能使用https方式的问题；</p>
+                    <p><span>■</span> fix（X-Pack）：修复企业微信编辑页面标题显示错误的问题（#10764）。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增多种图表类型，新增插件管理模块，DataEase开源数据可视化分析工具v2.8.0发布","item":"https://dataease.cn/blog/post-aa9974ae-e59d-4c02-9ab1-048ec5b3c45e.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增多种图表类型，新增插件管理模块，DataEase开源数据可视化分析工具v2.8.0发布","description":"新增一键全屏预览和大屏刻度尺功能。","url":"https://dataease.cn/blog/post-aa9974ae-e59d-4c02-9ab1-048ec5b3c45e.html","datePublished":"2024-07-08","dateModified":"2024-07-08","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增多种图表类型，新增插件管理模块，DataEase开源数据可视化分析工具v2.8.0发布", "item": "https://dataease.cn/blog/post-aa9974ae-e59d-4c02-9ab1-048ec5b3c45e.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增多种图表类型，新增插件管理模块，DataEase开源数据可视化分析工具v2.8.0发布",
+                "description": "新增一键全屏预览和大屏刻度尺功能。",
+                "url": "https://dataease.cn/blog/post-aa9974ae-e59d-4c02-9ab1-048ec5b3c45e.html",
+                "datePublished": "2024-07-08",
+                "dateModified": "2024-07-08",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

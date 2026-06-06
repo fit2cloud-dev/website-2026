@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,156 +219,177 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>最近使用DataEase做了一组2021年8月居民消费价格数据分析的图表。DataEase是开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并且可以方便的与他人分享。 </p>
-<p>本文介绍DataEase工具的使用，重点来介绍“视图钻取”和“联动设置”两个功能。通过使用“钻取”功能可以展示图表的子级类目数据；通过使用“联动”功能能够实现多表数据相互联动的效果。希望本文可以帮助更多人学会使用DataEase工具，做出精彩的可视化数据分析图表。</p>
-<p>首先展示一下通过DataEase制作完成的《2021年8月居民消费价格》趋势分析图。下面会从数据准备、需求分析、视图制作、仪盘板制作等几个方面展示DataEase的具体使用方法。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-01.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        最近使用DataEase做了一组2021年8月居民消费价格数据分析的图表。DataEase是开源的数据可视化分析工具，可以帮助用户快速分析数据并洞察业务趋势，实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并且可以方便的与他人分享。 
+                    </p>
+                    <p>
+                        本文介绍DataEase工具的使用，重点来介绍“视图钻取”和“联动设置”两个功能。通过使用“钻取”功能可以展示图表的子级类目数据；通过使用“联动”功能能够实现多表数据相互联动的效果。希望本文可以帮助更多人学会使用DataEase工具，做出精彩的可视化数据分析图表。
+                    </p>
+                    <p>首先展示一下通过DataEase制作完成的《2021年8月居民消费价格》趋势分析图。下面会从数据准备、需求分析、视图制作、仪盘板制作等几个方面展示DataEase的具体使用方法。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-01.png" alt="" loading="lazy" /></figure>
 
+                    <h2>数据准备</h2>
+                    <p>从国家统计局官网获取到“2021年8月份居民消费价格”数据，包含2021年8月全国居民消费价格同比、环比涨跌幅；各类商品及服务价格同比、环比变动情况；以及居民消费价格主要数据等。</p>
 
-<h2>数据准备</h2>
-<p>从国家统计局官网获取到“2021年8月份居民消费价格”数据，包含2021年8月全国居民消费价格同比、环比涨跌幅；各类商品及服务价格同比、环比变动情况；以及居民消费价格主要数据等。</p>
+                    <h2>需求分析</h2>
+                    <p>在获取到的众多数据中，需要整理出重要的、有价值的、以及你需要的数据。我提取了以下几种维度的数据集，将它们在本地Excel里进行维护，再上传到DataEase。</p>
+                    <p>■ 全国居民消费价格涨跌幅；</p>
+                    <p>■ 居民消费价格同比分布；</p>
+                    <p>■ 居民消费价格环比分布；</p>
+                    <p>■ 分类别整体同比涨跌幅；</p>
+                    <p>■ 分类别整体环比涨跌幅；</p>
+                    <p>■ 分类别-交通通信类；</p>
+                    <p>■ 分类别-居住类；</p>
+                    <p>■ 分类别-食品烟酒类；</p>
+                    <p>■ 分类别-医疗保健；</p>
+                    <p>■ 分类别-生活用品及服务类。</p>
 
+                    <h2>数据导入</h2>
+                    <p><strong>操作路径：</strong>在DataEase中依次选择数据集→创建数据集分组→添加数据集→Excel数据集→上传文件导入。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-02.png" alt="" loading="lazy" /></figure>
+                    <p>按照此操作把所有数据集导入进来。除了使用Excel文件，还可以通过数据库导入数据集。DataEase支持MySQL、Oracle、SQL Server、PostgreSQL等多种数据源。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-03.png" alt="" loading="lazy" /></figure>
 
-<h2>需求分析</h2>
-<p>在获取到的众多数据中，需要整理出重要的、有价值的、以及你需要的数据。我提取了以下几种维度的数据集，将它们在本地Excel里进行维护，再上传到DataEase。</p>
-<p>■ 全国居民消费价格涨跌幅；</p>
-<p>■ 居民消费价格同比分布；</p>
-<p>■ 居民消费价格环比分布；</p>
-<p>■ 分类别整体同比涨跌幅；</p>
-<p>■ 分类别整体环比涨跌幅；</p>
-<p>■ 分类别-交通通信类；</p>
-<p>■ 分类别-居住类；</p>
-<p>■ 分类别-食品烟酒类；</p>
-<p>■ 分类别-医疗保健；</p>
-<p>■ 分类别-生活用品及服务类。</p>
+                    <h2>视图制作</h2>
+                    <p><strong>操作路径：</strong>依次选择视图→创建视图分组→添加视图。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-04.png" alt="" loading="lazy" /></figure>
+                    <p>导入数据后，把维度和指标拖拽到对应的类别轴和值轴里，右侧生成图表。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-05.png" alt="" loading="lazy" /></figure>
 
+                    <h2>样式优化</h2>
+                    <p>在DataEase的“样式”模块中，可以对图形属性和组件样式进行优化调整。通过自定义，可设置图表展示哪些重要数据并隐藏非重要信息。同时进行图表美化，可以打造自己喜欢的风格。</p>
+                    <p>以下列举出几张图表样式的对比图：</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-07.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-08.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-09.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-10.png" alt="" loading="lazy" /></figure>
 
-<h2>数据导入</h2>
-<p><strong>操作路径：</strong>在DataEase中依次选择数据集→创建数据集分组→添加数据集→Excel数据集→上传文件导入。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-02.png" alt="" loading="lazy" /></figure>
-<p>按照此操作把所有数据集导入进来。除了使用Excel文件，还可以通过数据库导入数据集。DataEase支持MySQL、Oracle、SQL Server、PostgreSQL等多种数据源。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-03.png" alt="" loading="lazy" /></figure>
+                    <h2>视图钻取</h2>
+                    <p><strong>操作路径：</strong>编辑视图/编辑仪表板。</p>
+                    <p><strong>1. 设置钻取目录</strong></p>
+                    <p>生成一级视图后，拖拽钻取字段至“钻取/维度”标签。请注意：下钻目录与拖入的字段顺序有关，如下图所示，自上而下依次下钻。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-11.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2. 下钻</strong></p>
+                    <p>以下图为例，点击“食品烟酒”选项。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-12.png" alt="" loading="lazy" /></figure>
+                    <p>下钻结果如下图，展示食品烟酒类别下所有的二级分类数据。如果想返回上一级，可点击视图左下角的“全部”选项，返回一级视图。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-13.png" alt="" loading="lazy" /></figure>
 
+                    <h2>制作仪表板</h2>
+                    <p><strong>操作路径：</strong>依次选择仪表板→新建目录→新建仪表板。</p>
+                    <p><strong>1. 添加视图</strong></p>
+                    <p>在下图目录中，新建仪表板“2021年8月份居民消费价格”目录，添加视图。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-14.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-15.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2. 设计仪表板</strong></p>
+                    <p>将视图在画板中排列。可以通过左侧的“组件”、“其他”选项来调整仪表板样式，也可以对每张视图进行编辑。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-16.png" alt="" loading="lazy" /></figure>
 
-<h2>视图制作</h2>
-<p><strong>操作路径：</strong>依次选择视图→创建视图分组→添加视图。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-04.png" alt="" loading="lazy" /></figure>
-<p>导入数据后，把维度和指标拖拽到对应的类别轴和值轴里，右侧生成图表。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-05.png" alt="" loading="lazy" /></figure>
-
-
-<h2>样式优化</h2>
-<p>在DataEase的“样式”模块中，可以对图形属性和组件样式进行优化调整。通过自定义，可设置图表展示哪些重要数据并隐藏非重要信息。同时进行图表美化，可以打造自己喜欢的风格。</p>
-<p>以下列举出几张图表样式的对比图：</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-06.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20211102/dataease-165-07.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20211102/dataease-165-08.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20211102/dataease-165-09.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20211102/dataease-165-10.png" alt="" loading="lazy" /></figure>
-
-
-<h2>视图钻取</h2>
-<p><strong>操作路径：</strong>编辑视图/编辑仪表板。</p>
-<p><strong>1. 设置钻取目录</strong></p>
-<p>生成一级视图后，拖拽钻取字段至“钻取/维度”标签。请注意：下钻目录与拖入的字段顺序有关，如下图所示，自上而下依次下钻。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-11.png" alt="" loading="lazy" /></figure>
-<p><strong>2. 下钻</strong></p>
-<p>以下图为例，点击“食品烟酒”选项。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-12.png" alt="" loading="lazy" /></figure>
-<p>下钻结果如下图，展示食品烟酒类别下所有的二级分类数据。如果想返回上一级，可点击视图左下角的“全部”选项，返回一级视图。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-13.png" alt="" loading="lazy" /></figure>
-
-
-<h2>制作仪表板</h2>
-<p><strong>操作路径：</strong>依次选择仪表板→新建目录→新建仪表板。</p>
-<p><strong>1. 添加视图</strong></p>
-<p>在下图目录中，新建仪表板“2021年8月份居民消费价格”目录，添加视图。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-14.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20211102/dataease-165-15.png" alt="" loading="lazy" /></figure>
-<p><strong>2. 设计仪表板</strong></p>
-<p>将视图在画板中排列。可以通过左侧的“组件”、“其他”选项来调整仪表板样式，也可以对每张视图进行编辑。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-16.png" alt="" loading="lazy" /></figure>
-
-
-<h2>联动设置</h2>
-<p><strong>1. 联动设置</strong></p>
-<p>如下图，点击展开功能菜单，点击“联动设置”选项。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-17.png" alt="" loading="lazy" /></figure>
-<p><strong>2. 设置联动字段</strong></p>
-<p>当设置两个视图联动时，设置相对应的数据集的联动字段。设置完成后，点击“确定”按钮，联动设置完成。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-18.png" alt="" loading="lazy" /></figure>
-<p><strong>3. 仪表板效果</strong></p>
-<p>如下图，点击“食品烟酒类”视图的“鲜菜”数据，联动的视图只展示“鲜菜”数据的联动字段数据。如果想取消联动效果，可点击页面右上角的“清除所有联动”选项。</p>
-<figure><img src="../images/blog/chart-20211102/dataease-165-19.png" alt="" loading="lazy" /></figure>
+                    <h2>联动设置</h2>
+                    <p><strong>1. 联动设置</strong></p>
+                    <p>如下图，点击展开功能菜单，点击“联动设置”选项。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-17.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2. 设置联动字段</strong></p>
+                    <p>当设置两个视图联动时，设置相对应的数据集的联动字段。设置完成后，点击“确定”按钮，联动设置完成。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-18.png" alt="" loading="lazy" /></figure>
+                    <p><strong>3. 仪表板效果</strong></p>
+                    <p>如下图，点击“食品烟酒类”视图的“鲜菜”数据，联动的视图只展示“鲜菜”数据的联动字段数据。如果想取消联动效果，可点击页面右上角的“清除所有联动”选项。</p>
+                    <figure><img src="../images/blog/chart-20211102/dataease-165-19.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置","item":"https://dataease.cn/blog/post-2940.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置","description":"用DataEase开源工具分析CPI趋势。","url":"https://dataease.cn/blog/post-2940.html","datePublished":"2021-11-02","dateModified":"2021-11-02","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置", "item": "https://dataease.cn/blog/post-2940.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置",
+                "description": "用DataEase开源工具分析CPI趋势。",
+                "url": "https://dataease.cn/blog/post-2940.html",
+                "datePublished": "2021-11-02",
+                "dateModified": "2021-11-02",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

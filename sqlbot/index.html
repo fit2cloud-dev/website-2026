@@ -1,246 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网</title>
-    <meta name="description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。">
-    <meta name="keywords" content="ChatBI,SQLBot,Text2SQL,NL2SQL,text-to-sql,Data Agent">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="./images/favicon.png" />
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网</title>
+        <meta name="description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。" />
+        <meta name="keywords" content="ChatBI,SQLBot,Text2SQL,NL2SQL,text-to-sql,Data Agent" />
 
-    <!-- SEO Enhancements Start -->
-    <meta name="author" content="FIT2CLOUD 飞致云" />
-    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="//www.google-analytics.com" />
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="canonical" href="https://sqlbot.org/" />
-    <meta property="og:site_name" content="SQLBot" />
-    <meta property="og:title" content="SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网" />
-    <meta property="og:description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sqlbot.org/" />
-    <meta property="og:image" content="https://sqlbot.org/images/logo.png" />
-    <meta property="og:image:alt" content="SQLBot - 基于大模型和 RAG 的智能问数系统" />
-    <meta property="og:locale" content="zh_CN" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网" />
-    <meta name="twitter:description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。" />
-    <meta name="twitter:image" content="https://sqlbot.org/images/logo.png" />
-    <meta name="twitter:image:alt" content="SQLBot - 基于大模型和 RAG 的智能问数系统" />
-    <script type="application/ld+json">[{"@type":"Organization","@id":"https://fit2cloud.com/#organization","name":"FIT2CLOUD 飞致云","url":"https://fit2cloud.com/","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},{"@type":"WebSite","@id":"https://sqlbot.org/#website","url":"https://sqlbot.org/","name":"SQLBot","inLanguage":"zh-CN","publisher":{"@id":"https://fit2cloud.com/#organization"}},{"@type":"SoftwareApplication","@id":"https://sqlbot.org/#product","name":"SQLBot","url":"https://sqlbot.org/","description":"SQLBot 是一款基于大模型和 RAG 的智能问数系统。","image":"https://sqlbot.org/images/logo.png","applicationCategory":"BusinessApplication","operatingSystem":"Web, Linux","publisher":{"@id":"https://fit2cloud.com/#organization"}},{"@type":"WebPage","@id":"https://sqlbot.org/#webpage","url":"https://sqlbot.org/","name":"SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网","description":"SQLBot 是一款基于大模型和 RAG 的智能问数系统。","inLanguage":"zh-CN","isPartOf":{"@id":"https://sqlbot.org/#website"},"publisher":{"@id":"https://fit2cloud.com/#organization"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://sqlbot.org/images/logo.png"}}]</script>
-    <!-- SEO Enhancements End -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9362Z0KNSP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+        <!-- Favicon -->
+        <link rel="icon" href="./images/favicon.png" />
 
-        gtag('config', 'G-9362Z0KNSP');
-    </script>
-</head>
-<body>
-    <!-- Top Bar -->
-    <div class="top-bar" id="top-bar">
-        <div class="top-bar-container">
-            <div class="top-bar-left">
-                <a href="https://www.fit2cloud.com/" class="top-bar-brand">
-                    <img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" style="height: 20px; width: auto;" />
-                </a>
-            </div>
-            <div class="top-bar-right">
-                <div class="top-bar-dropdown" id="topBarDropdown">
-                    <button class="top-bar-dropdown-btn" id="dropdownBtn">
-                        飞致云旗下开源产品 <span class="dropdown-arrow">▼</span>
-                    </button>
-                    <div class="top-bar-dropdown-content" id="dropdownContent">
-                        <a href="https://1panel.cn" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">1Panel</div>
-                            <div class="dropdown-item-desc">现代化、开源的 Linux 面板</div>
-                        </a>
-                        <a href="https://cordys.cn/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">Cordys</div>
-                            <div class="dropdown-item-desc">新一代的开源 AI CRM 系统</div>
-                        </a>
-                        <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">JumpServer</div>
-                            <div class="dropdown-item-desc">广受欢迎的开源堡垒机</div>
-                        </a>
-                        <a href="https://maxkb.cn/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">MaxKB</div>
-                            <div class="dropdown-item-desc">强大易用的企业级智能体平台</div>
-                        </a>
-                        <a href="https://dataease.cn/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">DataEase</div>
-                            <div class="dropdown-item-desc">人人可用的开源 BI 工具</div>
-                        </a>
-                        <a href="https://sqlbot.org/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">SQLBot</div>
-                            <div class="dropdown-item-desc">基于大模型的开源智能问数系统</div>
-                        </a>
-                        <a href="https://metersphere.io/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">MeterSphere</div>
-                            <div class="dropdown-item-desc">新一代的开源持续测试工具</div>
-                        </a>
-                        <a href="https://halo.run/" class="top-bar-dropdown-item">
-                            <div class="dropdown-item-name">Halo</div>
-                            <div class="dropdown-item-desc">强大易用的开源建站工具</div>
-                        </a>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- SEO Enhancements Start -->
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://sqlbot.org/" />
+        <meta property="og:site_name" content="SQLBot" />
+        <meta property="og:title" content="SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网" />
+        <meta property="og:description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sqlbot.org/" />
+        <meta property="og:image" content="https://sqlbot.org/images/logo.png" />
+        <meta property="og:image:alt" content="SQLBot - 基于大模型和 RAG 的智能问数系统" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网" />
+        <meta name="twitter:description" content="SQLBot 是一款基于大模型和 RAG 的智能问数系统。" />
+        <meta name="twitter:image" content="https://sqlbot.org/images/logo.png" />
+        <meta name="twitter:image:alt" content="SQLBot - 基于大模型和 RAG 的智能问数系统" />
+        <script type="application/ld+json">
+            [
+                {
+                    "@type": "Organization",
+                    "@id": "https://fit2cloud.com/#organization",
+                    "name": "FIT2CLOUD 飞致云",
+                    "url": "https://fit2cloud.com/",
+                    "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" }
+                },
+                { "@type": "WebSite", "@id": "https://sqlbot.org/#website", "url": "https://sqlbot.org/", "name": "SQLBot", "inLanguage": "zh-CN", "publisher": { "@id": "https://fit2cloud.com/#organization" } },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://sqlbot.org/#product",
+                    "name": "SQLBot",
+                    "url": "https://sqlbot.org/",
+                    "description": "SQLBot 是一款基于大模型和 RAG 的智能问数系统。",
+                    "image": "https://sqlbot.org/images/logo.png",
+                    "applicationCategory": "BusinessApplication",
+                    "operatingSystem": "Web, Linux",
+                    "publisher": { "@id": "https://fit2cloud.com/#organization" }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://sqlbot.org/#webpage",
+                    "url": "https://sqlbot.org/",
+                    "name": "SQLBot - 基于大模型和 RAG 的智能问数系统 - 官网",
+                    "description": "SQLBot 是一款基于大模型和 RAG 的智能问数系统。",
+                    "inLanguage": "zh-CN",
+                    "isPartOf": { "@id": "https://sqlbot.org/#website" },
+                    "publisher": { "@id": "https://fit2cloud.com/#organization" },
+                    "primaryImageOfPage": { "@type": "ImageObject", "url": "https://sqlbot.org/images/logo.png" }
+                }
+            ]
+        </script>
+        <!-- SEO Enhancements End -->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9362Z0KNSP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-9362Z0KNSP');
+        </script>
+    </head>
+    <body>
+        <!-- Top Bar -->
+        <div class="top-bar" id="top-bar">
+            <div class="top-bar-container">
+                <div class="top-bar-left">
+                    <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                        <img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" style="height: 20px; width: auto" />
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-dropdown" id="topBarDropdown">
+                        <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span class="dropdown-arrow">▼</span></button>
+                        <div class="top-bar-dropdown-content" id="dropdownContent">
+                            <a href="https://1panel.cn" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">1Panel</div>
+                                <div class="dropdown-item-desc">现代化、开源的 Linux 面板</div>
+                            </a>
+                            <a href="https://cordys.cn/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">Cordys</div>
+                                <div class="dropdown-item-desc">新一代的开源 AI CRM 系统</div>
+                            </a>
+                            <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">JumpServer</div>
+                                <div class="dropdown-item-desc">广受欢迎的开源堡垒机</div>
+                            </a>
+                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">MaxKB</div>
+                                <div class="dropdown-item-desc">强大易用的企业级智能体平台</div>
+                            </a>
+                            <a href="https://dataease.cn/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">DataEase</div>
+                                <div class="dropdown-item-desc">人人可用的开源 BI 工具</div>
+                            </a>
+                            <a href="https://sqlbot.org/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">SQLBot</div>
+                                <div class="dropdown-item-desc">基于大模型的开源智能问数系统</div>
+                            </a>
+                            <a href="https://metersphere.io/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">MeterSphere</div>
+                                <div class="dropdown-item-desc">新一代的开源持续测试工具</div>
+                            </a>
+                            <a href="https://halo.run/" class="top-bar-dropdown-item">
+                                <div class="dropdown-item-name">Halo</div>
+                                <div class="dropdown-item-desc">强大易用的开源建站工具</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="nav__brand">
-                    <a href="https://sqlbot.org/" class="nav__logo">
-                        <img src="images/favicon.png" alt="SQLBot Logo" style="height: 48px; margin-right: 0.5em;" />
-                        <span class="logo__text">SQLBot</span>
-                    </a>
-                </div>
-
-                <div class="nav__center">
-                    <a href="https://sqlbot.org/docs/" target="_blank" class="nav__link">在线文档</a>
-                    <a href="https://www.bilibili.com/video/BV1SBtizgED4/" target="_blank" class="nav__link">教学视频</a>
-                    <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="nav__link">预约演示</a>
-                    <a href="https://fit2cloud.com/about/index.html" target="_blank" class="nav__link">关于飞致云</a>
-                </div>
-
-                <div class="nav__right">
-                    <a href="https://github.com/dataease/SQLBot/" target="_blank" class="nav__button nav__button--outline">
-                        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                        代码仓库
-                    </a>
-                    <a href="https://community.fit2cloud.com/#/products/sqlbot/downloads" target="_blank" class="nav__button nav__button--primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download h-4 w-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>
-                        免费下载
-                    </a>                   
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main">
-
-
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero__background">
-                <div class="hero__shape hero__shape--1"></div>
-                <div class="hero__shape hero__shape--2"></div>
-                <div class="hero__shape hero__shape--3"></div>
-            </div>
-            
+        <!-- Header -->
+        <header class="header" id="header">
             <div class="container">
-                <div class="hero__container">
-                    <div class="hero__content">
-                        <div class="hero__left">
-                            <h1 class="hero__title">
-                                开源 <span class="hero__title--highlight">智能问数</span> Agent
-                            </h1>
-                            <p class="hero__subtitle">
-                                SQLBot 是一款基于大模型和 RAG 的智能问数系统，是对话式数据分析（ChatBI）神器，由飞致云匠心出品。
-                            </p>
-                            <div class="hero__features">
-                                <div class="feature__item">
-                                    <div class="feature__icon">🚀</div>
-                                    <span>开箱即用</span>
-                                </div>
-                                <div class="feature__item">
-                                    <div class="feature__icon">🛠️</div>
-                                    <span>易于集成</span>
-                                </div>
-                              
-                            </div>
-                            <div class="hero__features">
+                <nav class="nav">
+                    <div class="nav__brand">
+                        <a href="https://sqlbot.org/" class="nav__logo">
+                            <img src="images/favicon.png" alt="SQLBot Logo" style="height: 48px; margin-right: 0.5em" />
+                            <span class="logo__text">SQLBot</span>
+                        </a>
+                    </div>
 
-                                <div class="feature__item">
-                                    <div class="feature__icon">🔐</div>
-                                    <span>安全可控</span>
-                                </div>
-                                <div class="feature__item">
-                                    <div class="feature__icon">🎯</div>
-                                    <span>越问越准</span>
-                                </div>                                
-                            </div>                            
-                        </div>
-                        
-                        <div class="hero__right">
-                            <div class="beta__card">
-                                <div class="beta__header">
-                                    <div class="beta__status">
-                                        <span class="beta__dot"></span>
-                                        <span class="beta__text">GitHub Star 6k+</span>
+                    <div class="nav__center">
+                        <a href="https://sqlbot.org/docs/" target="_blank" class="nav__link">在线文档</a>
+                        <a href="https://www.bilibili.com/video/BV1SBtizgED4/" target="_blank" class="nav__link">教学视频</a>
+                        <a href="https://partner.fit2cloud.com/yuyuechanpinyanshi" target="_blank" class="nav__link">预约演示</a>
+                        <a href="https://fit2cloud.com/about/index.html" target="_blank" class="nav__link">关于飞致云</a>
+                    </div>
+
+                    <div class="nav__right">
+                        <a href="https://github.com/dataease/SQLBot/" target="_blank" class="nav__button nav__button--outline">
+                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                ></path>
+                            </svg>
+                            代码仓库
+                        </a>
+                        <a href="https://community.fit2cloud.com/#/products/sqlbot/downloads" target="_blank" class="nav__button nav__button--primary">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-download h-4 w-4"
+                            >
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" x2="12" y1="15" y2="3"></line>
+                            </svg>
+                            免费下载
+                        </a>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero__background">
+                    <div class="hero__shape hero__shape--1"></div>
+                    <div class="hero__shape hero__shape--2"></div>
+                    <div class="hero__shape hero__shape--3"></div>
+                </div>
+
+                <div class="container">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <div class="hero__left">
+                                <h1 class="hero__title">开源 <span class="hero__title--highlight">智能问数</span> Agent</h1>
+                                <p class="hero__subtitle">SQLBot 是一款基于大模型和 RAG 的智能问数系统，是对话式数据分析（ChatBI）神器，由飞致云匠心出品。</p>
+                                <div class="hero__features">
+                                    <div class="feature__item">
+                                        <div class="feature__icon">🚀</div>
+                                        <span>开箱即用</span>
+                                    </div>
+                                    <div class="feature__item">
+                                        <div class="feature__icon">🛠️</div>
+                                        <span>易于集成</span>
                                     </div>
                                 </div>
-                                
-                                <h3 class="beta__title">加入 SQLBot 交流群</h3>
-                                <p class="beta__description">
-                                    第一时间体验最新功能，与开发者直接交流。
-                                </p>
-                                
-                                <div class="qr__container">
-                                    <div class="qr__code">
+                                <div class="hero__features">
+                                    <div class="feature__item">
+                                        <div class="feature__icon">🔐</div>
+                                        <span>安全可控</span>
+                                    </div>
+                                    <div class="feature__item">
+                                        <div class="feature__icon">🎯</div>
+                                        <span>越问越准</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero__right">
+                                <div class="beta__card">
+                                    <div class="beta__header">
+                                        <div class="beta__status">
+                                            <span class="beta__dot"></span>
+                                            <span class="beta__text">GitHub Star 6k+</span>
+                                        </div>
+                                    </div>
+
+                                    <h3 class="beta__title">加入 SQLBot 交流群</h3>
+                                    <p class="beta__description">第一时间体验最新功能，与开发者直接交流。</p>
+
+                                    <div class="qr__container">
+                                        <div class="qr__code">
                                             <img src="images/qrcode.png" alt="SQLBot 二维码" />
+                                        </div>
+                                        <p class="qr__label">微信扫码加群</p>
                                     </div>
-                                    <p class="qr__label">微信扫码加群</p>
-                                </div>
-                                
-                                <div class="beta__info">
-                                    <div class="info__item">
-                                        <span class="info__label">当前最新版本</span>
-                                        <span class="info__value">v1.8</span>
-                                    </div>
-                                    <div class="info__item">
-                                        <span class="info__label">累计下载安装</span>
-                                        <span class="info__value">25万+</span>
+
+                                    <div class="beta__info">
+                                        <div class="info__item">
+                                            <span class="info__label">当前最新版本</span>
+                                            <span class="info__value">v1.8</span>
+                                        </div>
+                                        <div class="info__item">
+                                            <span class="info__label">累计下载安装</span>
+                                            <span class="info__value">25万+</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <p><a href="https://beian.miit.gov.cn/" target="_blank"><span style="color: white;">浙ICP备14038283号</span></a></p>
-                <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
-                <p align="center">
-                  <a href="https://trendshift.io/repositories/14540" target="_blank"><img src="https://trendshift.io/api/badge/repositories/14540" alt="dataease%2FSQLBot | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-                </p>                
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p>
+                        <a href="https://beian.miit.gov.cn/" target="_blank"><span style="color: white">浙ICP备14038283号</span></a>
+                    </p>
+                    <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    <p align="center">
+                        <a href="https://trendshift.io/repositories/14540" target="_blank"
+                            ><img src="https://trendshift.io/api/badge/repositories/14540" alt="dataease%2FSQLBot | Trendshift" style="width: 250px; height: 55px" width="250" height="55"
+                        /></a>
+                    </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+    </body>
 </html>

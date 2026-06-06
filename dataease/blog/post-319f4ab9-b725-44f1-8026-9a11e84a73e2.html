@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,228 @@
                     <img src="../images/blog/common/dataease-001.png" alt="新增同步管理、操作日志模块，支持公共链接分享，DataEase开源数据可视化分析平台v2.3.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><span><br />2024年2月5日，DataEase开源数据可视化分析平台正式发布v2.3.0版本。</span></p><p><span>这一版本的功能升级包括：</span><strong><span>新增“同步管理”功能模块</span></strong>，用户可通过此模块，将传统数据库中的数据定时同步到Apache Doris中，让数据分析更快速；<strong><span>新增“操作日志”功能模块</span></strong>，用户可以在此模块查看自己在DataEase中的所有操作记录，方便用户对日常操作进行审计；仪表板方面，<strong><span>支持对指定的仪表板或数据大屏进行公共链接分享</span></strong>；图表方面，<span>新增</span><strong><span>支持透视表和指标卡</span></strong>，让仪表板和数据大屏的展现能力更加丰富；数据源方面，<span>新增</span><strong><span>支持v11及以上版本的DB2数据源</span></strong>，进一步增强了数据处理的能力；在新版本中，DataEase还增加了对水印设置、API文档、日期范围组件等的支持。</p><p><span>此外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</span></p><h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2><p><strong><span>■ 同步管理：支持将传统数据库中的数据定时同步至Apache Doris</span></strong></p><p><span>DataEase v2.3.0版本新增“同步管理”功能模块，支持用户将传统数据库（例如Oracle、MySQL、SQL Server、DB2等）中的数据，通过设置定时同步任务的方式，定期同步到Apache Doris这样高性能、实时的分析型数据库中，以提升数据分析的性能。</span></p><p><img src="../images/blog/release-20240206/dataease-075-01.png" alt="" loading="lazy" />▲ 图1 DataEase“同步管理”功能模块的概览页面</p><p><img src="../images/blog/release-20240206/dataease-075-02.png" alt="" loading="lazy" />▲ 图2 DataEase“同步管理”功能模块的任务管理页面</p><p><strong><span>■ 操作日志：支持用户查看在DataEase平台内的相关操作记录</span></strong></p><p><span>DataEase v2.3.0版本新增“操作日志”模块，用户可以通过此模块，对自己在DataEase平台内的所有操作记录进行查询，方便日后的审计。</span></p><p><span>DataEase目前支持对用户、角色、组织在仪表板、数据大屏、数据集、数据源功能模块所执行的相关操作进行查询。系统管理员还可以从系统整体角度对DataEase平台内所有用户的操作日志进行查询。</span></p><p><img src="../images/blog/release-20240206/dataease-075-03.png" alt="" loading="lazy" />▲ 图3 操作日志访问入口</p><p><img src="../images/blog/release-20240206/dataease-075-04.png" alt="" loading="lazy" />▲ 图4 操作日志页面</p><p><strong><span>■ 仪表板：支持公共链接分享</span></strong></p><p><span>在DataEase v2.3.0版本中，新增“公共链接分享”功能，用户可以在仪表板和数据大屏的管理页面，对指定的仪表板或数据大屏创建供外部访问的公共链接。用户也可以为分享的仪表板或数据大屏公共链接设置有效期、访问密码等相关参数。</span></p><p><img src="../images/blog/release-20240206/dataease-075-05.png" alt="" loading="lazy" />▲ 图5 公共链接设置页面</p><p><strong><span>■ 数据源：新增支持DB2数据源</span></strong></p><p><span>在DataEase v2.3.0版本中，新增对DB2数据源v11及其以上版本的支持。</span></p><p><img src="../images/blog/release-20240206/dataease-075-06.png" alt="" loading="lazy" />▲ 图6 DataEase目前支持的OLTP数据源列表</p><p><strong><span>■ 图表：新增支持透视表、指标卡</span></strong></p><p><span>在DataEase v2.3.0版本中，新增支持透视表和指标卡两种图表类型。</span></p><p><img src="../images/blog/release-20240206/dataease-075-07.png" alt="" loading="lazy" />▲ 图7 透视表编辑页面</p><p><img src="../images/blog/release-20240206/dataease-075-08.png" alt="" loading="lazy" />▲ 图8 指标卡编辑页面</p><p><span>除了上述新增功能外，DataEase v2.3.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</span></p><h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2><p><span>■ </span>refactor（仪表板）：优化仪表板样式的缩放比例，以及组件内边距的缩放比例；</p><p><span>■ </span>refactor（仪表板）：Tab标题新增字符长度限制为50；</p><p><span>■ </span>refactor（仪表板）：修改仪表板保存按钮的文字大小为12px；</p><p><span>■ </span>refactor（数据大屏）：优化组合相关操作；</p><p><span>■ </span>refactor（数据大屏）：数据大屏上的位置定位数据变更为原始数据后，展示出的数据格式不再随图表缩放而改变；</p><p><span>■ </span>refactor（数据大屏）：调整屏幕尺寸的上限；</p><p><span>■ </span>refactor（数据大屏）：优化大屏样式；</p><p><span>■ </span>refactor（数据大屏）：优化批量操作功能；</p><p><span>■ </span>refactor（数据大屏）：调整画布样式逻辑；</p><p><span>■ </span>refactor（图表）：优化指标卡批量操作逻辑；</p><p><span>■ </span>refactor（图表）：图表放大时禁用联动跳转等操作；</p><p><span>■ </span>refactor（图表）：富文本新增字体“阿里巴巴普惠体”；</p><p><span>■ </span>refactor（工作台）：工作台菜单下的“推荐模板”模块中可以展示自定义的用户模板；</p><p><span>■ </span>refactor（模板管理）：优化“模板管理”模块中的命名限制；</p><p><span>■ </span>refactor（模板管理）：模板管理预览列表中加入过滤条件的查询入口；</p><p><span>■ </span>refactor：左侧菜单树界面UI去掉描边；</p><p><span>■ </span>refactor：优化模板按钮的显示样式；</p><p><span>■ </span>refactor：优化“工具箱”界面样式；</p><p><span>■ </span>refactor：优化“系统设置”界面样式；</p><p><span>■ </span>refactor：解决了系统升级后，静态资源可能还是使用了历史缓存版本造成错误的问题；</p><p><span>■ </span>refactor：优化<em><span>dectl</span></em><span>脚本，获取当前版本的同时可以查询最新版本（#7492）；</span></p><p><span>■ </span>refactor：镜像未变化时，升级安装不重复加载镜像文件；</p><p><span>■ </span>refactor：帮助文档popover可以通过使用hover触发；</p><p><span>■ </span>refactor：升级JSONPath依赖；</p><p><span>■ </span>refactor：移除Hutool lib库。</p><h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2><p><span>■ </span>fix（数据源）：修复API数据源数据表的请求参数全部填满后，最后一条参数无法删除的问题（#7336）；</p><p><span>■ </span>fix（数据源）：修复Excel数据源替换数据时，文件较大导致加载时间长，且没有加载图标，体验不佳的问题；</p><p><span>■ </span>fix（数据源）：修复重命名数据源名称与编辑数据源名称的长度限制规则不一致的问题；</p><p><span>■ </span>fix（数据源）：修复数据源日志报错的问题；</p><p><span>■ </span>fix（数据源）：修复数据源校验返回信息错误的问题；</p><p><span>■ </span>fix（数据源）：修复CSV字段类型识别错误的问题；</p><p><span>■ </span>fix（数据源）：修复没有数据源的空文件夹不显示在列表的问题；</p><p><span>■ </span>fix（数据源）：限制MySQL非法参数；</p><p><span>■ </span>fix（数据源）：修复本地Excel文件创建的数据源数据预览为空的问题；</p><p><span>■ </span>fix（数据集）：修复数据集预览时提示报错的问题；</p><p><span>■ </span>fix（数据集）：修复不同数据源下同名的表无法被选中做关联的问题；</p><p><span>■ </span>fix（数据集）：修复批量管理新建的计算字段时，字段类型不显示的问题；</p><p><span>■ </span>fix（数据集）：修复数据源名称过长，创建数据集选择数据源时勾选框与数据源名称重叠的问题；</p><p><span>■ </span>fix（仪表板）：修复仪表板Tab内外相同字号在预览界面显示大小不同的问题；</p><p><span>■ </span>fix（仪表板）：修复通过“仪表板配置”功能设置历史仪表板的图表标题字号，只有个别图表生效的问题；</p><p><span>■ </span>fix（仪表板）：修复点击删除查询条件后，右侧对应的“编辑”操作栏还存在的问题；</p><p><span>■ </span>fix（仪表板）：修复查询组件下，组件间间隔不一致的问题；</p><p><span>■ </span>fix（数据大屏）：修复创建组合以后，手动编辑组合的宽度或高度，改变的只有组合框，组合内的组件无大小变化的问题；</p><p><span>■ </span>fix（数据大屏）：修复分组中的富文本组件在编辑状态下还可以自由移动的问题；</p><p><span>■ </span>fix（数据大屏）：修复在数据大屏中通过键盘移动组件，移动后没有触发保存的问题（#7695）；</p><p><span>■ </span>fix（数据大屏）：修复icon色值不对，暗色下异常对应了“N600-DARK”颜色的问题（#A6A6A6）；</p><p><span>■ </span>fix（数据大屏）：修复鼠标右键点击图标后，左键点击图层位置，组件处弹出的菜单栏不会隐藏的问题；</p><p><span>■ </span>fix（数据大屏）：修复图表被剪切后，选择其他组件可以直接与该被剪切图表组合并显示的问题；</p><p><span>■ </span>fix（数据大屏）：修复大尺寸数据大屏初始化后未移动到中心点，则可能把位置坐标置空的问题；</p><p><span>■ </span>fix（数据大屏）：修复对数据大屏中的非图表组件输入样式后，回车出现异常跳转的问题；</p><p><span>■ </span>fix（图表）：修复水波图数值过大会显示异常的问题；</p><p><span>■ </span>fix（图表）：修复表格横向拖动滚动条时，表头显示异常的问题（#7510）；</p><p><span>■ </span>fix：修复仪表板、数据大屏预览页的标题栏未垂直居中对齐的问题；</p><p><span>■ </span>fix：修复在仪表板、数据大屏内修改图表名称时出现的提示内容错误；</p><p><span>■ </span>fix：修复新建可视化资源控制台时，有异常错误信息提示的问题；</p><p><span>■ </span>fix（模板中心）：修复部分场景下模板中心没有出现“应用”按钮的问题；</p><p><span>■ </span>fix（系统设置）：修复查看世界村地图数据时，加载时间过长，可能导致浏览器崩溃的问题；</p><p><span>■ </span>fix（嵌入式）：修复无法预览展示数据大屏中已设置组合的图表的问题；</p><p><span>■ </span>fix（嵌入式）：修复嵌入式字体样式异常的问题；</p><p><span>■ </span>fix（嵌入式）：修复嵌入式权限异常的问题；</p><p><span>■ </span>fix（嵌入式）：修复嵌入式下组合图的显示与操作中出现的问题；</p><p><span>■ </span>fix（X-Pack）：修复复制可视化资源时出现权限变更的问题；</p><p><span>■ </span>fix（X-Pack）：修复没有仪表板创建权限，却可以在工作台点击使用模板新建仪表板，并跳转到创建页面的问题；</p><p><span>■ </span>fix（X-Pack）：修复认证设置同步失败的问题；</p><p><span>■ </span>fix：优化了<em><span>dectl</span></em><span>脚本执行条件的判断逻辑；</span></p><p><span>■ </span>fix：修复搜索结果页的标题显示与设计稿不符的问题；</p><p><span>■ </span>fix：修复登录日志导致社区版在无License情况下无法登录的问题。</p>
+                    <p>
+                        <span><br />2024年2月5日，DataEase开源数据可视化分析平台正式发布v2.3.0版本。</span>
+                    </p>
+                    <p>
+                        <span>这一版本的功能升级包括：</span><strong><span>新增“同步管理”功能模块</span></strong
+                        >，用户可通过此模块，将传统数据库中的数据定时同步到Apache Doris中，让数据分析更快速；<strong><span>新增“操作日志”功能模块</span></strong
+                        >，用户可以在此模块查看自己在DataEase中的所有操作记录，方便用户对日常操作进行审计；仪表板方面，<strong><span>支持对指定的仪表板或数据大屏进行公共链接分享</span></strong
+                        >；图表方面，<span>新增</span><strong><span>支持透视表和指标卡</span></strong
+                        >，让仪表板和数据大屏的展现能力更加丰富；数据源方面，<span>新增</span><strong><span>支持v11及以上版本的DB2数据源</span></strong
+                        >，进一步增强了数据处理的能力；在新版本中，DataEase还增加了对水印设置、API文档、日期范围组件等的支持。
+                    </p>
+                    <p><span>此外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</span></p>
+                    <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
+                    <p>
+                        <strong><span>■ 同步管理：支持将传统数据库中的数据定时同步至Apache Doris</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >DataEase v2.3.0版本新增“同步管理”功能模块，支持用户将传统数据库（例如Oracle、MySQL、SQL Server、DB2等）中的数据，通过设置定时同步任务的方式，定期同步到Apache
+                            Doris这样高性能、实时的分析型数据库中，以提升数据分析的性能。</span
+                        >
+                    </p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-01.png" alt="" loading="lazy" />▲ 图1 DataEase“同步管理”功能模块的概览页面</p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-02.png" alt="" loading="lazy" />▲ 图2 DataEase“同步管理”功能模块的任务管理页面</p>
+                    <p>
+                        <strong><span>■ 操作日志：支持用户查看在DataEase平台内的相关操作记录</span></strong>
+                    </p>
+                    <p><span>DataEase v2.3.0版本新增“操作日志”模块，用户可以通过此模块，对自己在DataEase平台内的所有操作记录进行查询，方便日后的审计。</span></p>
+                    <p><span>DataEase目前支持对用户、角色、组织在仪表板、数据大屏、数据集、数据源功能模块所执行的相关操作进行查询。系统管理员还可以从系统整体角度对DataEase平台内所有用户的操作日志进行查询。</span></p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-03.png" alt="" loading="lazy" />▲ 图3 操作日志访问入口</p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-04.png" alt="" loading="lazy" />▲ 图4 操作日志页面</p>
+                    <p>
+                        <strong><span>■ 仪表板：支持公共链接分享</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >在DataEase
+                            v2.3.0版本中，新增“公共链接分享”功能，用户可以在仪表板和数据大屏的管理页面，对指定的仪表板或数据大屏创建供外部访问的公共链接。用户也可以为分享的仪表板或数据大屏公共链接设置有效期、访问密码等相关参数。</span
+                        >
+                    </p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-05.png" alt="" loading="lazy" />▲ 图5 公共链接设置页面</p>
+                    <p>
+                        <strong><span>■ 数据源：新增支持DB2数据源</span></strong>
+                    </p>
+                    <p><span>在DataEase v2.3.0版本中，新增对DB2数据源v11及其以上版本的支持。</span></p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-06.png" alt="" loading="lazy" />▲ 图6 DataEase目前支持的OLTP数据源列表</p>
+                    <p>
+                        <strong><span>■ 图表：新增支持透视表、指标卡</span></strong>
+                    </p>
+                    <p><span>在DataEase v2.3.0版本中，新增支持透视表和指标卡两种图表类型。</span></p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-07.png" alt="" loading="lazy" />▲ 图7 透视表编辑页面</p>
+                    <p><img src="../images/blog/release-20240206/dataease-075-08.png" alt="" loading="lazy" />▲ 图8 指标卡编辑页面</p>
+                    <p><span>除了上述新增功能外，DataEase v2.3.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</span></p>
+                    <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
+                    <p><span>■ </span>refactor（仪表板）：优化仪表板样式的缩放比例，以及组件内边距的缩放比例；</p>
+                    <p><span>■ </span>refactor（仪表板）：Tab标题新增字符长度限制为50；</p>
+                    <p><span>■ </span>refactor（仪表板）：修改仪表板保存按钮的文字大小为12px；</p>
+                    <p><span>■ </span>refactor（数据大屏）：优化组合相关操作；</p>
+                    <p><span>■ </span>refactor（数据大屏）：数据大屏上的位置定位数据变更为原始数据后，展示出的数据格式不再随图表缩放而改变；</p>
+                    <p><span>■ </span>refactor（数据大屏）：调整屏幕尺寸的上限；</p>
+                    <p><span>■ </span>refactor（数据大屏）：优化大屏样式；</p>
+                    <p><span>■ </span>refactor（数据大屏）：优化批量操作功能；</p>
+                    <p><span>■ </span>refactor（数据大屏）：调整画布样式逻辑；</p>
+                    <p><span>■ </span>refactor（图表）：优化指标卡批量操作逻辑；</p>
+                    <p><span>■ </span>refactor（图表）：图表放大时禁用联动跳转等操作；</p>
+                    <p><span>■ </span>refactor（图表）：富文本新增字体“阿里巴巴普惠体”；</p>
+                    <p><span>■ </span>refactor（工作台）：工作台菜单下的“推荐模板”模块中可以展示自定义的用户模板；</p>
+                    <p><span>■ </span>refactor（模板管理）：优化“模板管理”模块中的命名限制；</p>
+                    <p><span>■ </span>refactor（模板管理）：模板管理预览列表中加入过滤条件的查询入口；</p>
+                    <p><span>■ </span>refactor：左侧菜单树界面UI去掉描边；</p>
+                    <p><span>■ </span>refactor：优化模板按钮的显示样式；</p>
+                    <p><span>■ </span>refactor：优化“工具箱”界面样式；</p>
+                    <p><span>■ </span>refactor：优化“系统设置”界面样式；</p>
+                    <p><span>■ </span>refactor：解决了系统升级后，静态资源可能还是使用了历史缓存版本造成错误的问题；</p>
+                    <p>
+                        <span>■ </span>refactor：优化<em><span>dectl</span></em
+                        ><span>脚本，获取当前版本的同时可以查询最新版本（#7492）；</span>
+                    </p>
+                    <p><span>■ </span>refactor：镜像未变化时，升级安装不重复加载镜像文件；</p>
+                    <p><span>■ </span>refactor：帮助文档popover可以通过使用hover触发；</p>
+                    <p><span>■ </span>refactor：升级JSONPath依赖；</p>
+                    <p><span>■ </span>refactor：移除Hutool lib库。</p>
+                    <h2 id="bug%E4%BF%AE%E5%A4%8D">Bug修复</h2>
+                    <p><span>■ </span>fix（数据源）：修复API数据源数据表的请求参数全部填满后，最后一条参数无法删除的问题（#7336）；</p>
+                    <p><span>■ </span>fix（数据源）：修复Excel数据源替换数据时，文件较大导致加载时间长，且没有加载图标，体验不佳的问题；</p>
+                    <p><span>■ </span>fix（数据源）：修复重命名数据源名称与编辑数据源名称的长度限制规则不一致的问题；</p>
+                    <p><span>■ </span>fix（数据源）：修复数据源日志报错的问题；</p>
+                    <p><span>■ </span>fix（数据源）：修复数据源校验返回信息错误的问题；</p>
+                    <p><span>■ </span>fix（数据源）：修复CSV字段类型识别错误的问题；</p>
+                    <p><span>■ </span>fix（数据源）：修复没有数据源的空文件夹不显示在列表的问题；</p>
+                    <p><span>■ </span>fix（数据源）：限制MySQL非法参数；</p>
+                    <p><span>■ </span>fix（数据源）：修复本地Excel文件创建的数据源数据预览为空的问题；</p>
+                    <p><span>■ </span>fix（数据集）：修复数据集预览时提示报错的问题；</p>
+                    <p><span>■ </span>fix（数据集）：修复不同数据源下同名的表无法被选中做关联的问题；</p>
+                    <p><span>■ </span>fix（数据集）：修复批量管理新建的计算字段时，字段类型不显示的问题；</p>
+                    <p><span>■ </span>fix（数据集）：修复数据源名称过长，创建数据集选择数据源时勾选框与数据源名称重叠的问题；</p>
+                    <p><span>■ </span>fix（仪表板）：修复仪表板Tab内外相同字号在预览界面显示大小不同的问题；</p>
+                    <p><span>■ </span>fix（仪表板）：修复通过“仪表板配置”功能设置历史仪表板的图表标题字号，只有个别图表生效的问题；</p>
+                    <p><span>■ </span>fix（仪表板）：修复点击删除查询条件后，右侧对应的“编辑”操作栏还存在的问题；</p>
+                    <p><span>■ </span>fix（仪表板）：修复查询组件下，组件间间隔不一致的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复创建组合以后，手动编辑组合的宽度或高度，改变的只有组合框，组合内的组件无大小变化的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复分组中的富文本组件在编辑状态下还可以自由移动的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复在数据大屏中通过键盘移动组件，移动后没有触发保存的问题（#7695）；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复icon色值不对，暗色下异常对应了“N600-DARK”颜色的问题（#A6A6A6）；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复鼠标右键点击图标后，左键点击图层位置，组件处弹出的菜单栏不会隐藏的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复图表被剪切后，选择其他组件可以直接与该被剪切图表组合并显示的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复大尺寸数据大屏初始化后未移动到中心点，则可能把位置坐标置空的问题；</p>
+                    <p><span>■ </span>fix（数据大屏）：修复对数据大屏中的非图表组件输入样式后，回车出现异常跳转的问题；</p>
+                    <p><span>■ </span>fix（图表）：修复水波图数值过大会显示异常的问题；</p>
+                    <p><span>■ </span>fix（图表）：修复表格横向拖动滚动条时，表头显示异常的问题（#7510）；</p>
+                    <p><span>■ </span>fix：修复仪表板、数据大屏预览页的标题栏未垂直居中对齐的问题；</p>
+                    <p><span>■ </span>fix：修复在仪表板、数据大屏内修改图表名称时出现的提示内容错误；</p>
+                    <p><span>■ </span>fix：修复新建可视化资源控制台时，有异常错误信息提示的问题；</p>
+                    <p><span>■ </span>fix（模板中心）：修复部分场景下模板中心没有出现“应用”按钮的问题；</p>
+                    <p><span>■ </span>fix（系统设置）：修复查看世界村地图数据时，加载时间过长，可能导致浏览器崩溃的问题；</p>
+                    <p><span>■ </span>fix（嵌入式）：修复无法预览展示数据大屏中已设置组合的图表的问题；</p>
+                    <p><span>■ </span>fix（嵌入式）：修复嵌入式字体样式异常的问题；</p>
+                    <p><span>■ </span>fix（嵌入式）：修复嵌入式权限异常的问题；</p>
+                    <p><span>■ </span>fix（嵌入式）：修复嵌入式下组合图的显示与操作中出现的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复复制可视化资源时出现权限变更的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复没有仪表板创建权限，却可以在工作台点击使用模板新建仪表板，并跳转到创建页面的问题；</p>
+                    <p><span>■ </span>fix（X-Pack）：修复认证设置同步失败的问题；</p>
+                    <p>
+                        <span>■ </span>fix：优化了<em><span>dectl</span></em
+                        ><span>脚本执行条件的判断逻辑；</span>
+                    </p>
+                    <p><span>■ </span>fix：修复搜索结果页的标题显示与设计稿不符的问题；</p>
+                    <p><span>■ </span>fix：修复登录日志导致社区版在无License情况下无法登录的问题。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增同步管理、操作日志模块，支持公共链接分享，DataEase开源数据可视化分析平台v2.3.0发布","item":"https://dataease.cn/blog/post-319f4ab9-b725-44f1-8026-9a11e84a73e2.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增同步管理、操作日志模块，支持公共链接分享，DataEase开源数据可视化分析平台v2.3.0发布","description":"数据源新增支持DB2数据源，图表新增支持透视表、指标卡。","url":"https://dataease.cn/blog/post-319f4ab9-b725-44f1-8026-9a11e84a73e2.html","datePublished":"2024-02-06","dateModified":"2024-02-06","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增同步管理、操作日志模块，支持公共链接分享，DataEase开源数据可视化分析平台v2.3.0发布", "item": "https://dataease.cn/blog/post-319f4ab9-b725-44f1-8026-9a11e84a73e2.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增同步管理、操作日志模块，支持公共链接分享，DataEase开源数据可视化分析平台v2.3.0发布",
+                "description": "数据源新增支持DB2数据源，图表新增支持透视表、指标卡。",
+                "url": "https://dataease.cn/blog/post-319f4ab9-b725-44f1-8026-9a11e84a73e2.html",
+                "datePublished": "2024-02-06",
+                "dateModified": "2024-02-06",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

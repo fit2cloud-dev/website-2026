@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,137 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜DataEase看中国：数据呈现中国资本市场" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><em>编者注：本文为知乎博主“数据分析小能手”的原创文章。</em></p><p><em>原文链接：</em></p><p><a href="https://zhuanlan.zhihu.com/p/540255698" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/540255698</a></p><h2 id="heading-1">背景介绍</h2><p>1990年12月，沪深证券交易所先后成立，标志着中国资本市场正式形成。至今，中国资本市场已经走过了32年的风雨历程，从无到有、从小到大、从区域到全国乃至国外，一次又一次地实现了自身的发展突破和转折性的变化。中国资本市场的发展进程既是中国经济改革开放的历史缩影，也是中国经济从计划经济向市场经济体制转型的重要标志。</p><p><img src="../images/blog/chart-20220804/dataease-132-01.png" alt="" loading="lazy" />▲ 图1 中国股市历史进程</p><p>在本文中，我将使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）对中国股市的相关数据进行分析展示，并简单描述一下我对现阶段中国资本市场的看法。</p><p>下图是我基于从同花顺PC端应用（Windows版）获取到的数据，采用DataEase开源工具制作的仪表板（数据截止时间为2022年7月8日）。</p><p><img src="../images/blog/chart-20220804/dataease-132-02.png" alt="" loading="lazy" />▲ 图2 现阶段的中国资本市场概览（DataEase制作）</p><h2 id="heading-2">数据分析</h2><p>经历了三十余载的光阴，中国股市的成员从最初的“老八股”发展至现在的4840家上市公司，总市值超过93.41万亿元。从数据上看，已经有31%的上市公司市值达到了100亿元以上，其中千亿级市值的公司有148家，甚至有7家公司的市值已经达到了万亿市值的级别。</p><p><img src="../images/blog/chart-20220804/dataease-132-03.png" alt="" loading="lazy" />▲ 图3 上市公司市值分布</p><p>从股市发展的第二个十年开始，上市公司的数量开始以迅猛之势增长。从2010年至2022年7月8日，共有3202家公司在A股上市，平均每年上市267家公司。这既是企业经济发展历程中的必然趋势，也体现了优质企业在融资方面的实际需求。</p><p><img src="../images/blog/chart-20220804/dataease-132-04.png" alt="" loading="lazy" />▲ 图4 上市企业上市年份分布</p><p>在4840家上市公司中，有1659家挂在上交所主板，占比34.28%，深交所主板紧随其后，占比30.64%；从市值上来看，上交所的所有上市公司总市值达到50.93万亿元，占当前A股总市值（93.41万亿元）一半有余。另外，北交所于2021年9月成立，经过10个月的时间积累，已经有102家公司在其上市，累计总市值达0.21万亿元。</p><p><img src="../images/blog/chart-20220804/dataease-132-05.png" alt="" loading="lazy" />▲ 图5 上市公司板块分布</p><p><img src="../images/blog/chart-20220804/dataease-132-06.png" alt="" loading="lazy" />▲ 图6 上市公司市值分布</p><p>截至2022年7月8日收盘，股价主要在10-50元范围内的企业，占比48.02%；0-10元股价范围内的企业占比42.85%；此外，股价在100元以上的企业有162家。其中百元股在上交所科创板占比最多，占比达45.96%，共有74家。</p><p><img src="../images/blog/chart-20220804/dataease-132-07.png" alt="" loading="lazy" />▲ 图7 上市公司股价分布</p><p><img src="../images/blog/chart-20220804/dataease-132-08.png" alt="" loading="lazy" />▲ 图8 百元股上市板块分布</p><p>从城市上看，城市上市企业数量排名中，北京、上海和深圳位列前三，紧随其后的是杭州、苏州和广州。</p><p><img src="../images/blog/chart-20220804/dataease-132-09.png" alt="" loading="lazy" />▲ 图9 城市上市企业数量排名TOP20</p><p>行业分布方面，电力设备、计算机应用、化学制品、汽车零部件类型的行业上市公司最多，其次是专用设备、半导体及元件以及通用设备。</p><p>另外，从行业以及市值角度上看，银行行业总市值最高，其次就是电力设备、饮料制造以及半导体及元件行业。</p><p><img src="../images/blog/chart-20220804/dataease-132-10.png" alt="" loading="lazy" />▲ 图10 拥有超过100家上市公司的行业</p><p><img src="../images/blog/chart-20220804/dataease-132-11.png" alt="" loading="lazy" />▲ 图11 上市企业总市值排名前十的行业</p><h2 id="heading-3">总结</h2><p>通过对中国股市相关数据进行分析，我们可以看到，在中国资本市场发展的历史里，优质的企业会会变得更加优质，不少后起之秀的企业也在迎头赶上。整个中国资本市场正在沿着社会经济发展的路径稳健前行。由于发展时间短，中国资本市场可能还不够健全，但是相信中国股市在政府政策支持、企业持续改进以及公众监督的共同作用下，一定会日渐完善，愈来愈好。</p><p>最后，感谢DataEase开源项目为我提供了一个简单易用的数据可视化分析平台。它能够支持多种数据源，并且提供丰富的图表，帮助我在数据分析的道路上走得更加顺利。</p>
+                    <p><em>编者注：本文为知乎博主“数据分析小能手”的原创文章。</em></p>
+                    <p><em>原文链接：</em></p>
+                    <p><a href="https://zhuanlan.zhihu.com/p/540255698" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/540255698</a></p>
+                    <h2 id="heading-1">背景介绍</h2>
+                    <p>
+                        1990年12月，沪深证券交易所先后成立，标志着中国资本市场正式形成。至今，中国资本市场已经走过了32年的风雨历程，从无到有、从小到大、从区域到全国乃至国外，一次又一次地实现了自身的发展突破和转折性的变化。中国资本市场的发展进程既是中国经济改革开放的历史缩影，也是中国经济从计划经济向市场经济体制转型的重要标志。
+                    </p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-01.png" alt="" loading="lazy" />▲ 图1 中国股市历史进程</p>
+                    <p>在本文中，我将使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）对中国股市的相关数据进行分析展示，并简单描述一下我对现阶段中国资本市场的看法。</p>
+                    <p>下图是我基于从同花顺PC端应用（Windows版）获取到的数据，采用DataEase开源工具制作的仪表板（数据截止时间为2022年7月8日）。</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-02.png" alt="" loading="lazy" />▲ 图2 现阶段的中国资本市场概览（DataEase制作）</p>
+                    <h2 id="heading-2">数据分析</h2>
+                    <p>
+                        经历了三十余载的光阴，中国股市的成员从最初的“老八股”发展至现在的4840家上市公司，总市值超过93.41万亿元。从数据上看，已经有31%的上市公司市值达到了100亿元以上，其中千亿级市值的公司有148家，甚至有7家公司的市值已经达到了万亿市值的级别。
+                    </p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-03.png" alt="" loading="lazy" />▲ 图3 上市公司市值分布</p>
+                    <p>从股市发展的第二个十年开始，上市公司的数量开始以迅猛之势增长。从2010年至2022年7月8日，共有3202家公司在A股上市，平均每年上市267家公司。这既是企业经济发展历程中的必然趋势，也体现了优质企业在融资方面的实际需求。</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-04.png" alt="" loading="lazy" />▲ 图4 上市企业上市年份分布</p>
+                    <p>
+                        在4840家上市公司中，有1659家挂在上交所主板，占比34.28%，深交所主板紧随其后，占比30.64%；从市值上来看，上交所的所有上市公司总市值达到50.93万亿元，占当前A股总市值（93.41万亿元）一半有余。另外，北交所于2021年9月成立，经过10个月的时间积累，已经有102家公司在其上市，累计总市值达0.21万亿元。
+                    </p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-05.png" alt="" loading="lazy" />▲ 图5 上市公司板块分布</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-06.png" alt="" loading="lazy" />▲ 图6 上市公司市值分布</p>
+                    <p>截至2022年7月8日收盘，股价主要在10-50元范围内的企业，占比48.02%；0-10元股价范围内的企业占比42.85%；此外，股价在100元以上的企业有162家。其中百元股在上交所科创板占比最多，占比达45.96%，共有74家。</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-07.png" alt="" loading="lazy" />▲ 图7 上市公司股价分布</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-08.png" alt="" loading="lazy" />▲ 图8 百元股上市板块分布</p>
+                    <p>从城市上看，城市上市企业数量排名中，北京、上海和深圳位列前三，紧随其后的是杭州、苏州和广州。</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-09.png" alt="" loading="lazy" />▲ 图9 城市上市企业数量排名TOP20</p>
+                    <p>行业分布方面，电力设备、计算机应用、化学制品、汽车零部件类型的行业上市公司最多，其次是专用设备、半导体及元件以及通用设备。</p>
+                    <p>另外，从行业以及市值角度上看，银行行业总市值最高，其次就是电力设备、饮料制造以及半导体及元件行业。</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-10.png" alt="" loading="lazy" />▲ 图10 拥有超过100家上市公司的行业</p>
+                    <p><img src="../images/blog/chart-20220804/dataease-132-11.png" alt="" loading="lazy" />▲ 图11 上市企业总市值排名前十的行业</p>
+                    <h2 id="heading-3">总结</h2>
+                    <p>
+                        通过对中国股市相关数据进行分析，我们可以看到，在中国资本市场发展的历史里，优质的企业会会变得更加优质，不少后起之秀的企业也在迎头赶上。整个中国资本市场正在沿着社会经济发展的路径稳健前行。由于发展时间短，中国资本市场可能还不够健全，但是相信中国股市在政府政策支持、企业持续改进以及公众监督的共同作用下，一定会日渐完善，愈来愈好。
+                    </p>
+                    <p>最后，感谢DataEase开源项目为我提供了一个简单易用的数据可视化分析平台。它能够支持多种数据源，并且提供丰富的图表，帮助我在数据分析的道路上走得更加顺利。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜DataEase看中国：数据呈现中国资本市场","item":"https://dataease.cn/blog/post-3701.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜DataEase看中国：数据呈现中国资本市场","description":"大跌还是反弹？开源数据可视化分析工具DataEase带你分析国内股市和资本市场的现状和发展。","url":"https://dataease.cn/blog/post-3701.html","datePublished":"2022-08-04","dateModified":"2022-08-04","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜DataEase看中国：数据呈现中国资本市场", "item": "https://dataease.cn/blog/post-3701.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜DataEase看中国：数据呈现中国资本市场",
+                "description": "大跌还是反弹？开源数据可视化分析工具DataEase带你分析国内股市和资本市场的现状和发展。",
+                "url": "https://dataease.cn/blog/post-3701.html",
+                "datePublished": "2022-08-04",
+                "dateModified": "2022-08-04",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

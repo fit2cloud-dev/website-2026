@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,158 +219,187 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示丨用DataEase开源工具构建MeterSphere仪表板" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>为了进行测试用例管理并对接口和性能进行测试，公司去年开始使用飞致云旗下开源持续测试产品MeterSphere。在MeterSphere的使用过程中领导比较关注一些实际数据概览，例如测试人员完成用例的平均所用时长、各个级别的缺陷数量、用例或者缺陷的数量走势等。MeterSphere自带了一些维度的图表展示，效果很不错。</p>
-<p>随着公司的业务发展，公司需要更多维度、更丰富好看的大屏展示。于是我咨询了飞致云的相关人员，提出我们的诉求。经交谈，了解到近期他们上线了一款新的开源产品——DataEase开源数据可视化分析工具，它支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并可以方便地与他人分享，满足了我公司基于业务情况自主定制仪表板的需求。</p>
+                    <p>
+                        为了进行测试用例管理并对接口和性能进行测试，公司去年开始使用飞致云旗下开源持续测试产品MeterSphere。在MeterSphere的使用过程中领导比较关注一些实际数据概览，例如测试人员完成用例的平均所用时长、各个级别的缺陷数量、用例或者缺陷的数量走势等。MeterSphere自带了一些维度的图表展示，效果很不错。
+                    </p>
+                    <p>
+                        随着公司的业务发展，公司需要更多维度、更丰富好看的大屏展示。于是我咨询了飞致云的相关人员，提出我们的诉求。经交谈，了解到近期他们上线了一款新的开源产品——DataEase开源数据可视化分析工具，它支持丰富的数据源连接，能够通过拖拉拽的方式快速制作图表，并可以方便地与他人分享，满足了我公司基于业务情况自主定制仪表板的需求。
+                    </p>
 
+                    <h2>DataEase简介</h2>
+                    <p>
+                        DataEase是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。详情可参考社区文档：<em>https://github.com/dataease/</em>。
+                    </p>
 
-<h2>DataEase简介</h2>
-<p>DataEase是开源的数据可视化分析工具，帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。详情可参考社区文档：<em>https://github.com/dataease/</em>。</p>
+                    <h2>MeterSphere简介</h2>
+                    <p>
+                        MeterSphere是一款一站式的开源持续测试平台，MeterSphere遵循GPL
+                        v2开源许可协议，涵盖测试跟踪、接口测试、性能测试、团队协作等功能，兼容JMeter等开源标准，致力于帮助企业的开发和测试团队充分利用云的弹性进行高度可扩展的自动化测试，加速高质量软件的交付进程。详情可参考社区文档：<em>https://github.com/metersphere/</em>。
+                    </p>
 
+                    <h2>梳理需要展示的数据内容</h2>
+                    <p><strong>一、测试用例数据仪表板</strong></p>
+                    <p><strong>1. 测试计划状态分布</strong>：了解目前待开始、正在进行以及已完成的测试计划数量及占比；</p>
+                    <p><strong>2. 测试用例走势</strong>：按照创建日期统计用例数量，了解用例创建走势；</p>
+                    <p><strong>3. 测试用例创建时间分布</strong>：以一天24小时进行统计，了解测试人员创建用例的集中工作时间；</p>
+                    <p><strong>4. 用例维护人创建用例数量统计</strong>：实时查看各个测试人员提交测试用例的总数；</p>
+                    <p><strong>5. 测试用例等级分布</strong>：查看各个等级下的用例数量，了解各等级用例分布情况；</p>
+                    <p><strong>6. 各用例维护人完成单测试用例的平均用时</strong>：通过统计各个测试人员完成用例的平均时长，了解其熟练程度。<br /></p>
+                    <p><strong>二、缺陷管理数据仪表板</strong></p>
+                    <p><strong>1. 缺</strong><strong>陷总数/新建数/已解决数/已关闭数</strong>：展示系统当前缺陷总数及各个状态下缺陷的数量分布；</p>
+                    <p><strong>2. 缺陷数量走势</strong>：按照创建日期统计缺陷的数量，了解缺陷的创建走势；</p>
+                    <p><strong>3. 缺陷处理人缺陷数量统计</strong>：实时查看各开发人员的缺陷的数量；</p>
+                    <p><strong>4. 缺</strong><strong>陷数量最多的测试用例TOP</strong>：展示哪些测试用例缺陷较多；</p>
+                    <p><strong>5. 各</strong><strong>测试人员创建的各等级缺陷数量</strong>：展示每个创建人创建的各个等级的缺陷情况。</p>
 
-<h2>MeterSphere简介</h2>
-<p>MeterSphere是一款一站式的开源持续测试平台，MeterSphere遵循GPL v2开源许可协议，涵盖测试跟踪、接口测试、性能测试、团队协作等功能，兼容JMeter等开源标准，致力于帮助企业的开发和测试团队充分利用云的弹性进行高度可扩展的自动化测试，加速高质量软件的交付进程。详情可参考社区文档：<em>https://github.com/metersphere/</em>。</p>
+                    <h2>页面排版设计</h2>
+                    <p>■ <strong>测试用例概览页版面设计</strong></p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-01.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>缺陷管理概览页版面设计</strong></p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-02.png" alt="" loading="lazy" /></figure>
 
-
-<h2>梳理需要展示的数据内容</h2>
-<p><strong>一、测试用例数据仪表板</strong></p>
-<p><strong>1. 测试计划状态分布</strong>：了解目前待开始、正在进行以及已完成的测试计划数量及占比；</p>
-<p><strong>2. 测试用例走势</strong>：按照创建日期统计用例数量，了解用例创建走势；</p>
-<p><strong>3. 测试用例创建时间分布</strong>：以一天24小时进行统计，了解测试人员创建用例的集中工作时间；</p>
-<p><strong>4. 用例维护人创建用例数量统计</strong>：实时查看各个测试人员提交测试用例的总数；</p>
-<p><strong>5. 测试用例等级分布</strong>：查看各个等级下的用例数量，了解各等级用例分布情况；</p>
-<p><strong>6. 各用例维护人完成单测试用例的平均用时</strong>：通过统计各个测试人员完成用例的平均时长，了解其熟练程度。<br /></p>
-<p><strong>二、缺陷管理数据仪表板</strong></p>
-<p><strong>1. 缺</strong><strong>陷总数/新建数/已解决数/已关闭数</strong>：展示系统当前缺陷总数及各个状态下缺陷的数量分布；</p>
-<p><strong>2. 缺陷数量走势</strong>：按照创建日期统计缺陷的数量，了解缺陷的创建走势；</p>
-<p><strong>3. 缺陷处理人缺陷数量统计</strong>：实时查看各开发人员的缺陷的数量；</p>
-<p><strong>4. 缺</strong><strong>陷数量最多的测试用例TOP</strong>：展示哪些测试用例缺陷较多；</p>
-<p><strong>5. 各</strong><strong>测试人员创建的各等级缺陷数量</strong>：展示每个创建人创建的各个等级的缺陷情况。</p>
-
-
-<h2>页面排版设计</h2>
-<p>■ <strong>测试用例概览页版面设计</strong></p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-01.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>缺陷管理概览页版面设计</strong></p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-02.png" alt="" loading="lazy" /></figure>
-
-
-<h2>用DataEase定制MeterSphere大屏</h2>
-<p><strong>一、创建数据源</strong></p>
-<p>DataEase支持多种数据库链接，MeterSphere使用MySQL并且和DataEase网络连通，故直接在数据源菜单下补充保存MeterSphere数据库信息即可。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-03.png" alt="" loading="lazy" /></figure>
-<p><strong>二、创建数据集</strong></p>
-<p>数据集支持直接使用数据库表、SQL数据集、Excel数据集以及自定义数据集。本次我们主要用到数据库数据集及SQL数据集，数据来源于刚刚所创建的MeterSphere数据源。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-04.png" alt="" loading="lazy" /></figure>
-<p>这里和大家分享一些用到的表，根据展示需求，可以直接引入单表，或者编写SQL来准备各个数据集，以供后续视图使用。</p>
-<p>1. test_case测试用例管理表</p>
-<p>2. test_case_issues测试用例缺陷关联表</p>
-<p>3. issues缺陷管理表</p>
-<p>4. test_case_review测试用例计划管理表</p>
-<p>5. operating_log操作日志记录表</p>
-<p><strong>三、创建视图</strong></p>
-<p>做好数据的准备工作后就可以开始视图的制作了。该步骤的目的在于将前面准备的数据集通过合适的图表可视化呈现出来。过程也比较简单，创建视图时选择一个相关的数据集，之后对图表类型、指标、维度、字体、颜色等进行调整即可。</p>
-<p>为保证本次仪表板的协调及可观赏性，在各视图的创建过程中保持了以下元素的一致性：</p>
-<p>1. 样式优先级选择“视图”标签，以保证每次对各个元素视图做修改后仪表板会跟随变化；</p>
-<p>2. 视图标题颜色均为#715C7E，字体大小为16且加粗；</p>
-<p>3. 图例位置选择垂直且居于右上方；</p>
-<p>4. 背景色为白色，不透明度为100%；</p>
-<p>5. 图表配色方案选择“明亮”为主，使图表整体色调一致。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-05.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>测试计划状态分布</strong></p>
-<p>为表现不同类目在总和中的占比，更适合采用饼图的展现形式。通过适当调整了内外半径值，使饼图呈现环状，进一步丰富了整体图表的样式。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-06.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>测试用例日期分布</strong></p>
-<p>按照日期对测试用例数量进行统计。以日期为维度，数量为指标，将折线调整为平滑的样式，清晰可见测试用例数量的走势。如果只需某一段时间范围内的数据，可增加过滤器做处理。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-07.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>各测试人员提出各等级缺陷数量</strong></p>
-<p>如在同一维度下有多个指标需要展示，可依次拖入指标框类，便能形成多类别条形图或者堆叠条形图。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-08.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>总缺陷数、新建缺陷数量、已解决缺陷数量、已关闭缺陷数量</strong></p>
-<p>这几项数据均可使用同一数据集（缺陷表），通过添加过滤器对缺陷状态进行过滤即可。新建、已解决、已关闭对应的字段值分别为new、resolved、closed。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-09.png" alt="" loading="lazy" /></figure>
-<p><strong>四、创建仪表板</strong></p>
-<p>一切准备就绪，接下来是最后一步，按照最初的版面设计组装仪表板。</p>
-<p>1. 首先从测试用例仪表板开始，在仪表板菜单下新建一个自定义的全新仪表板。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-10.png" alt="" loading="lazy" /></figure>
-<p>2. 调整仪表板背景色为MeterSphere同色系，以给人视觉上更多的相关性。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-11.png" alt="" loading="lazy" /></figure>
-<p>3. 本次我们选择关闭仪表板的矩阵设计，将已完成的视图依次拖入仪表板工作区内，根据计划的版面进行摆放。</p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-12.png" alt="" loading="lazy" /></figure>
-<p>4. 最后拖入文字，添加标题，调整字体大小、颜色、间距。选择Logo图片文件作为图片元素拖入仪表板，放置在左上角。若视图需要再修改，可以点击仪表板右上角的“菜单”按钮，再点击“编辑”选项，即可进行快速调整。</p>
-<p><strong>五、最终效果</strong></p>
-<p>■ <strong>测试用例仪表板</strong></p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-13.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>缺陷管理仪表板</strong></p>
-<figure><img src="../images/blog/chart-20210901/dataease-172-14.png" alt="" loading="lazy" /></figure>
+                    <h2>用DataEase定制MeterSphere大屏</h2>
+                    <p><strong>一、创建数据源</strong></p>
+                    <p>DataEase支持多种数据库链接，MeterSphere使用MySQL并且和DataEase网络连通，故直接在数据源菜单下补充保存MeterSphere数据库信息即可。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-03.png" alt="" loading="lazy" /></figure>
+                    <p><strong>二、创建数据集</strong></p>
+                    <p>数据集支持直接使用数据库表、SQL数据集、Excel数据集以及自定义数据集。本次我们主要用到数据库数据集及SQL数据集，数据来源于刚刚所创建的MeterSphere数据源。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-04.png" alt="" loading="lazy" /></figure>
+                    <p>这里和大家分享一些用到的表，根据展示需求，可以直接引入单表，或者编写SQL来准备各个数据集，以供后续视图使用。</p>
+                    <p>1. test_case测试用例管理表</p>
+                    <p>2. test_case_issues测试用例缺陷关联表</p>
+                    <p>3. issues缺陷管理表</p>
+                    <p>4. test_case_review测试用例计划管理表</p>
+                    <p>5. operating_log操作日志记录表</p>
+                    <p><strong>三、创建视图</strong></p>
+                    <p>做好数据的准备工作后就可以开始视图的制作了。该步骤的目的在于将前面准备的数据集通过合适的图表可视化呈现出来。过程也比较简单，创建视图时选择一个相关的数据集，之后对图表类型、指标、维度、字体、颜色等进行调整即可。</p>
+                    <p>为保证本次仪表板的协调及可观赏性，在各视图的创建过程中保持了以下元素的一致性：</p>
+                    <p>1. 样式优先级选择“视图”标签，以保证每次对各个元素视图做修改后仪表板会跟随变化；</p>
+                    <p>2. 视图标题颜色均为#715C7E，字体大小为16且加粗；</p>
+                    <p>3. 图例位置选择垂直且居于右上方；</p>
+                    <p>4. 背景色为白色，不透明度为100%；</p>
+                    <p>5. 图表配色方案选择“明亮”为主，使图表整体色调一致。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-05.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>测试计划状态分布</strong></p>
+                    <p>为表现不同类目在总和中的占比，更适合采用饼图的展现形式。通过适当调整了内外半径值，使饼图呈现环状，进一步丰富了整体图表的样式。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-06.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>测试用例日期分布</strong></p>
+                    <p>按照日期对测试用例数量进行统计。以日期为维度，数量为指标，将折线调整为平滑的样式，清晰可见测试用例数量的走势。如果只需某一段时间范围内的数据，可增加过滤器做处理。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-07.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>各测试人员提出各等级缺陷数量</strong></p>
+                    <p>如在同一维度下有多个指标需要展示，可依次拖入指标框类，便能形成多类别条形图或者堆叠条形图。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-08.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>总缺陷数、新建缺陷数量、已解决缺陷数量、已关闭缺陷数量</strong></p>
+                    <p>这几项数据均可使用同一数据集（缺陷表），通过添加过滤器对缺陷状态进行过滤即可。新建、已解决、已关闭对应的字段值分别为new、resolved、closed。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-09.png" alt="" loading="lazy" /></figure>
+                    <p><strong>四、创建仪表板</strong></p>
+                    <p>一切准备就绪，接下来是最后一步，按照最初的版面设计组装仪表板。</p>
+                    <p>1. 首先从测试用例仪表板开始，在仪表板菜单下新建一个自定义的全新仪表板。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-10.png" alt="" loading="lazy" /></figure>
+                    <p>2. 调整仪表板背景色为MeterSphere同色系，以给人视觉上更多的相关性。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-11.png" alt="" loading="lazy" /></figure>
+                    <p>3. 本次我们选择关闭仪表板的矩阵设计，将已完成的视图依次拖入仪表板工作区内，根据计划的版面进行摆放。</p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-12.png" alt="" loading="lazy" /></figure>
+                    <p>4. 最后拖入文字，添加标题，调整字体大小、颜色、间距。选择Logo图片文件作为图片元素拖入仪表板，放置在左上角。若视图需要再修改，可以点击仪表板右上角的“菜单”按钮，再点击“编辑”选项，即可进行快速调整。</p>
+                    <p><strong>五、最终效果</strong></p>
+                    <p>■ <strong>测试用例仪表板</strong></p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-13.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>缺陷管理仪表板</strong></p>
+                    <figure><img src="../images/blog/chart-20210901/dataease-172-14.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示丨用DataEase开源工具构建MeterSphere仪表板","item":"https://dataease.cn/blog/post-2596.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示丨用DataEase开源工具构建MeterSphere仪表板","description":"通过DataEase定制MeterSphere仪表板。","url":"https://dataease.cn/blog/post-2596.html","datePublished":"2021-09-01","dateModified":"2021-09-01","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示丨用DataEase开源工具构建MeterSphere仪表板", "item": "https://dataease.cn/blog/post-2596.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示丨用DataEase开源工具构建MeterSphere仪表板",
+                "description": "通过DataEase定制MeterSphere仪表板。",
+                "url": "https://dataease.cn/blog/post-2596.html",
+                "datePublished": "2021-09-01",
+                "dateModified": "2021-09-01",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

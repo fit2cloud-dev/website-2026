@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,157 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程 | DataEase基于插件实现数据源与飞书多维表格的对接" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>在用户需要通过DataEase开源BI工具对飞书多维表格中的数据进行数据分析与可视化时，有两种方法可以将待分析的飞书多维表格作为数据源接入到DataEase。 一种是将飞书多维表格数据作为普通的API数据源接入DataEase；另一种则是使用DataEase专业版和企业版所提供的飞书多维表格插件，通过该插件提供的“飞书多维表格”数据源选项，让DataEase直接与用户的飞书多维表格进行数据对接。该插件所提供的“飞书多维表格”数据源接入方式相比普通的API数据源接入更加便捷。</p><p>本文为您详细介绍DataEase飞书多维表格插件（DataEase专业版和企业版提供）的配置、使用方法，以及在DataEase中接入飞书多维表格数据源的具体步骤。</p><p><strong>一、飞书平台与DataEase的对接</strong></p><p>要利用插件实现飞书多维表格与DataEase数据源的对接，首先需要进行飞书平台与DataEase的对接设置。具体步骤可以参见官方文档：</p><p>https://dataease.io/docs/v2/xpack/platform_abutment/#3。</p><p><strong>二、飞书应用的权限设置</strong></p><p>将飞书平台与DataEase对接完成后，飞书平台的工作台中会出现一个用于与DataEase对接的应用。其名称是在上一步的对接操作中设置好的，这里我们将这个应用命名为“dataease测试”。我们需要在“dataease测试”应用的“权限管理”设置中进行应用的相关授权，开通“查看、评论、编辑和管理多维表格”和“查看、评论和导出多维表格”这两项权限。</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-01.png" alt="▲图1 飞书平台中“dataease测试”应用的权限开通.png" loading="lazy" /></figure><p>▲图1 飞书平台中“dataease测试”应用的权限开通</p><p><strong>三、在DataEase中配置插件，并对接飞书多维表格数据源</strong></p><p><strong>1. 下载并安装飞书多维表格插件</strong></p><p>飞书多维表格插件下载完成后，可以用DataEase系统管理员的账号，将下载好的插件JAR包导入DataEase。具体步骤如下：</p><p>① 进入DataEase“系统设置”页面；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-02.png" alt="▲图2 “系统设置”页面入口.png" loading="lazy" /></figure><p>▲图2 “系统设置”页面入口</p><p>② 进入“系统设置”菜单下的“插件管理”页面，选择通过“本地安装”途径安装飞书多维表格插件；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-03.png" alt="▲图3 飞书多维表格插件安装路径.png" loading="lazy" /></figure><p>▲图3 飞书多维表格插件安装路径</p><p>③ 选择相应的插件JAR包，点击“打开”按钮将其导入DataEase，提示“安装成功”则代表安装已完成。</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-04.png" alt="▲图4 安装插件JAR包.png" loading="lazy" /></figure><p>▲图4 安装插件JAR包</p><p><strong>2. 创建飞书多维表格数据源</strong></p><p>① 成功安装插件后，返回DataEase的“数据源“页面。点击“数据准备”菜单下的“新建数据源”按钮，进入“创建数据源”页面。在“API数据”分类下，可以看到数据源选项中增加了一个名为“飞书多维表格”的选项；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-05.png" alt="▲图5 API数据源中新增飞书多维表格数据源.png" loading="lazy" /></figure><p>▲图5 API数据源中新增飞书多维表格数据源</p><p>② 点击“飞书多维表格”数据源选项，进入数据源配置信息界面，填写数据源名称后，点击“添加”按钮添加数据源；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-06.png" alt="▲图6 飞书多维表格数据源的配置信息.png" loading="lazy" /></figure><p>▲图6 飞书多维表格数据源的配置信息</p><p>③ 进入数据表添加页面后，在“连接API”步骤，填写名称和app_token（app_token获取手册参见：https://open.feishu.cn/document/server-docs/docs/bitable-v1/bitable-overview#-752212c）信息。如果前两项信息填写无误，则可以在“数据表”项目中点击“获取数据表”链接选中所需的数据表，在“视图”项目中点击“获取视图”链接选择对应的视图；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-07.png" alt="▲图7 连接数据表API.png" loading="lazy" /></figure><p>▲图7 连接数据表API</p><p>④ 输入所有的基础信息后，点击“校验”按钮。如果校验无误，即可点击“下一步”按钮，在得到的返回数据中选择所需数据，并且可以在下拉页面中预览选中的数据；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-08.png" alt="▲图8 选择所需的数据  .png" loading="lazy" /></figure><p>▲图8 选择所需的数据</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-09.png" alt="▲图9 预览选中数据.png" loading="lazy" /></figure><p>▲图9 预览选中数据</p><p>⑤ 确认选择的数据无误后，点击“保存”按钮，完成数据表的添加，然后点击“下一步”按钮；</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-10.png" alt="▲图10 数据表添加完成.png" loading="lazy" /></figure><p>▲图10 数据表添加完成</p><p>⑥ 现在我们进行数据更新设置。此处设置数据更新方式为“全量更新”，更新频率为“简单重复”，将更新的“设置规则”调整为“每1分钟更新一次”，并且配置好开始时间与结束时间，然后点击“检验”按钮，如果校验无误即可保存数据源。</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-11.png" alt="▲图11 数据更新设置.png" loading="lazy" /></figure><p>▲图11 数据更新设置</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-12.png" alt="▲图12 确认新建数据源.png" loading="lazy" /></figure><p>▲图12 确认新建数据源</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-13.png" alt="▲图13 数据源创建成功.png" loading="lazy" /></figure><p>▲图13 数据源创建成功</p><figure><img src="../images/blog/tutorial-20260311/dataease-005-14.png" alt="▲图14 飞书多维表格数据源基础信息页面.png" loading="lazy" /></figure><p>▲图14 飞书多维表格数据源基础信息页面</p><p>通过以上步骤，就可以成功在DataEase中配置好飞书多维表格插件了。通过添加“飞书多维表格”数据源，我们可以通过DataEase对飞书多维表格数据开展可视化分析与数据洞察。</p>
+                    <p>
+                        在用户需要通过DataEase开源BI工具对飞书多维表格中的数据进行数据分析与可视化时，有两种方法可以将待分析的飞书多维表格作为数据源接入到DataEase。
+                        一种是将飞书多维表格数据作为普通的API数据源接入DataEase；另一种则是使用DataEase专业版和企业版所提供的飞书多维表格插件，通过该插件提供的“飞书多维表格”数据源选项，让DataEase直接与用户的飞书多维表格进行数据对接。该插件所提供的“飞书多维表格”数据源接入方式相比普通的API数据源接入更加便捷。
+                    </p>
+                    <p>本文为您详细介绍DataEase飞书多维表格插件（DataEase专业版和企业版提供）的配置、使用方法，以及在DataEase中接入飞书多维表格数据源的具体步骤。</p>
+                    <p><strong>一、飞书平台与DataEase的对接</strong></p>
+                    <p>要利用插件实现飞书多维表格与DataEase数据源的对接，首先需要进行飞书平台与DataEase的对接设置。具体步骤可以参见官方文档：</p>
+                    <p>https://dataease.io/docs/v2/xpack/platform_abutment/#3。</p>
+                    <p><strong>二、飞书应用的权限设置</strong></p>
+                    <p>
+                        将飞书平台与DataEase对接完成后，飞书平台的工作台中会出现一个用于与DataEase对接的应用。其名称是在上一步的对接操作中设置好的，这里我们将这个应用命名为“dataease测试”。我们需要在“dataease测试”应用的“权限管理”设置中进行应用的相关授权，开通“查看、评论、编辑和管理多维表格”和“查看、评论和导出多维表格”这两项权限。
+                    </p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-01.png" alt="▲图1 飞书平台中“dataease测试”应用的权限开通.png" loading="lazy" /></figure>
+                    <p>▲图1 飞书平台中“dataease测试”应用的权限开通</p>
+                    <p><strong>三、在DataEase中配置插件，并对接飞书多维表格数据源</strong></p>
+                    <p><strong>1. 下载并安装飞书多维表格插件</strong></p>
+                    <p>飞书多维表格插件下载完成后，可以用DataEase系统管理员的账号，将下载好的插件JAR包导入DataEase。具体步骤如下：</p>
+                    <p>① 进入DataEase“系统设置”页面；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-02.png" alt="▲图2 “系统设置”页面入口.png" loading="lazy" /></figure>
+                    <p>▲图2 “系统设置”页面入口</p>
+                    <p>② 进入“系统设置”菜单下的“插件管理”页面，选择通过“本地安装”途径安装飞书多维表格插件；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-03.png" alt="▲图3 飞书多维表格插件安装路径.png" loading="lazy" /></figure>
+                    <p>▲图3 飞书多维表格插件安装路径</p>
+                    <p>③ 选择相应的插件JAR包，点击“打开”按钮将其导入DataEase，提示“安装成功”则代表安装已完成。</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-04.png" alt="▲图4 安装插件JAR包.png" loading="lazy" /></figure>
+                    <p>▲图4 安装插件JAR包</p>
+                    <p><strong>2. 创建飞书多维表格数据源</strong></p>
+                    <p>① 成功安装插件后，返回DataEase的“数据源“页面。点击“数据准备”菜单下的“新建数据源”按钮，进入“创建数据源”页面。在“API数据”分类下，可以看到数据源选项中增加了一个名为“飞书多维表格”的选项；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-05.png" alt="▲图5 API数据源中新增飞书多维表格数据源.png" loading="lazy" /></figure>
+                    <p>▲图5 API数据源中新增飞书多维表格数据源</p>
+                    <p>② 点击“飞书多维表格”数据源选项，进入数据源配置信息界面，填写数据源名称后，点击“添加”按钮添加数据源；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-06.png" alt="▲图6 飞书多维表格数据源的配置信息.png" loading="lazy" /></figure>
+                    <p>▲图6 飞书多维表格数据源的配置信息</p>
+                    <p>
+                        ③
+                        进入数据表添加页面后，在“连接API”步骤，填写名称和app_token（app_token获取手册参见：https://open.feishu.cn/document/server-docs/docs/bitable-v1/bitable-overview#-752212c）信息。如果前两项信息填写无误，则可以在“数据表”项目中点击“获取数据表”链接选中所需的数据表，在“视图”项目中点击“获取视图”链接选择对应的视图；
+                    </p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-07.png" alt="▲图7 连接数据表API.png" loading="lazy" /></figure>
+                    <p>▲图7 连接数据表API</p>
+                    <p>④ 输入所有的基础信息后，点击“校验”按钮。如果校验无误，即可点击“下一步”按钮，在得到的返回数据中选择所需数据，并且可以在下拉页面中预览选中的数据；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-08.png" alt="▲图8 选择所需的数据  .png" loading="lazy" /></figure>
+                    <p>▲图8 选择所需的数据</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-09.png" alt="▲图9 预览选中数据.png" loading="lazy" /></figure>
+                    <p>▲图9 预览选中数据</p>
+                    <p>⑤ 确认选择的数据无误后，点击“保存”按钮，完成数据表的添加，然后点击“下一步”按钮；</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-10.png" alt="▲图10 数据表添加完成.png" loading="lazy" /></figure>
+                    <p>▲图10 数据表添加完成</p>
+                    <p>⑥ 现在我们进行数据更新设置。此处设置数据更新方式为“全量更新”，更新频率为“简单重复”，将更新的“设置规则”调整为“每1分钟更新一次”，并且配置好开始时间与结束时间，然后点击“检验”按钮，如果校验无误即可保存数据源。</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-11.png" alt="▲图11 数据更新设置.png" loading="lazy" /></figure>
+                    <p>▲图11 数据更新设置</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-12.png" alt="▲图12 确认新建数据源.png" loading="lazy" /></figure>
+                    <p>▲图12 确认新建数据源</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-13.png" alt="▲图13 数据源创建成功.png" loading="lazy" /></figure>
+                    <p>▲图13 数据源创建成功</p>
+                    <figure><img src="../images/blog/tutorial-20260311/dataease-005-14.png" alt="▲图14 飞书多维表格数据源基础信息页面.png" loading="lazy" /></figure>
+                    <p>▲图14 飞书多维表格数据源基础信息页面</p>
+                    <p>通过以上步骤，就可以成功在DataEase中配置好飞书多维表格插件了。通过添加“飞书多维表格”数据源，我们可以通过DataEase对飞书多维表格数据开展可视化分析与数据洞察。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程 | DataEase基于插件实现数据源与飞书多维表格的对接","item":"https://dataease.cn/blog/dataease-feishu-bitable-plugin.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程 | DataEase基于插件实现数据源与飞书多维表格的对接","description":"DataEase快速对接飞书多维表格","url":"https://dataease.cn/blog/dataease-feishu-bitable-plugin.html","datePublished":"2026-03-11","dateModified":"2026-03-11","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程 | DataEase基于插件实现数据源与飞书多维表格的对接", "item": "https://dataease.cn/blog/dataease-feishu-bitable-plugin.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程 | DataEase基于插件实现数据源与飞书多维表格的对接",
+                "description": "DataEase快速对接飞书多维表格",
+                "url": "https://dataease.cn/blog/dataease-feishu-bitable-plugin.html",
+                "datePublished": "2026-03-11",
+                "dateModified": "2026-03-11",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

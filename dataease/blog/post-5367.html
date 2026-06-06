@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,146 @@
                     <img src="../images/blog/common/dataease-025.jpg" alt="仪表板展示｜DataEase看中国：数据呈现中国能源发展情况" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/chart-20230131/dataease-110-01.png" alt="" loading="lazy" /></p><h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D">背景介绍</h2><p>能源是经济发展的基石，能源的供给与人们生活和经济发展息息相关。二十大报告强调：“要积极稳妥推进碳达峰碳中和，立足我国能源资源禀赋，坚持先立后破，有计划分步骤地实施碳达峰行动。深入推进能源革命，加强煤炭清洁高效利用，加快规划建设新型能源体系，积极参与应对气候变化全球治理。”在过去的十年里，我国的能源自主保障能力显著提升，建成了全球最大的清洁发电体系，能源结构不断优化，有力地保障了国民经济的稳定运行。</p><p>为了了解我国能源结构及供给情况，我们使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）来制作一个仪表板，分析展示近几年电能、石油、煤炭等能源的指标数据。数据源自国家统计局官方网站，由于最新的统计数据尚未披露，目前使用的数据统计截止至2020年。</p><p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p><p><img src="../images/blog/chart-20230131/dataease-110-02.jpg" alt="" loading="lazy" /></p><h2 id="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</h2><p><strong>一、电产量</strong></p><p>从历年电产量和电产量占比趋势中可以看到，2012年我国核电产量973.9亿千瓦小时，占比1.96%，风电产量959.8亿千瓦小时，占比1.94%，水电产量8721.1亿千瓦小时，占比17.59%，火电产量38928.1亿千瓦小时，占比78.51%。</p><p>2020年，核电产量3662.5亿千瓦小时，占比4.87%，风电产量4664.7亿千瓦小时，占比6.2%，水电产量13552.1亿千瓦小时，占比18.03%，火电产量53302.5亿千瓦时，占比70.9%。</p><p><img src="../images/blog/chart-20230131/dataease-110-03.png" alt="" loading="lazy" /></p><p>2012年除火电外的三种清洁能源电产量占比为21.49%。而到了2020年，除火电外的三种清洁能源电产量占比则提升至29.1%。</p><p>九年间，虽然火电依然是主体，但核能、风能、水能三种清洁能源的总发电量从2012年的10654.8亿千瓦小时提高到了2020年的21879.3亿千瓦小时，实现了产量翻倍。其中，核电产量翻了近三倍，风电产量翻了近四倍。</p><p>2022年的北京冬奥会，三大赛区26个场馆全部实现了绿色供电。这些绿色供电主要是由河北张家口的光伏发电和风力发电提供，可以说是我国多年来大力发展可再生能源成就的一个缩影。</p><p>不仅如此，尽管我国发电量持续增长，但火电机组的二氧化碳、氮氧化物和烟尘排放量均大幅下降。2019年10月7日，英国《自然·能源》杂志发表报告称，中国针对燃煤火电机组采取的超低排放改造措施已取得显著成效。</p><p><img src="../images/blog/chart-20230131/dataease-110-04.png" alt="" loading="lazy" /></p><p><strong>二、电消费</strong></p><p>从历年电消费量和消费占比中可以看到，2012年我国工业电消费量为36232.2亿千瓦小时，占比72.81%，居民生活电消费量为6219亿千瓦小时，占比12.5%，其他行业电消费量为3083.6亿千瓦小时，占比14.69%。</p><p>2020年，工业电消费量为52353.4亿千瓦小时，占比67.45%，居民生活电消费量增长至11396.5亿千瓦小时，占比14.68%，其他行业电消费量为6517亿千瓦小时，占比17.87%。</p><p><img src="../images/blog/chart-20230131/dataease-110-05.png" alt="" loading="lazy" /></p><p><img src="../images/blog/chart-20230131/dataease-110-06.png" alt="" loading="lazy" /></p><p>从电消费的增长趋势可以看出，2014年至2015年我国电力消费增长缓慢，尤其是2015年工业电能消费出现了负增长。</p><p>中国电力企业联合会发布的《2016年度全国电力供需形势分析预测报告》指出：2015年，受宏观经济尤其是重化工业生产下滑、产业结构调整、工业转型升级以及气温等因素影响，全社会用电量增速回落，第二产业用电量40年来首次负增长。而固定资产投资特别是房地产投资增速持续放缓，导致黑色金属冶炼和建材行业用电均出现下滑，两个行业用电下降是工业用电量下降、全社会用电量低速增长的主要原因。</p><p><img src="../images/blog/chart-20230131/dataease-110-07.png" alt="" loading="lazy" /></p><p><strong>三、能源结构</strong></p><p>从能源结构分析中可以看出，2012年到2021年的十年间，煤炭占比从68.5%下降到了56%，天然气从4.8%上涨到了8.9%，一次电力（即核电、水电、风电以及太阳能发电所发出的电力）及其他能源则从9.7%上涨到了16.6%。我国的能源结构优化成果显著。</p><p><img src="../images/blog/chart-20230131/dataease-110-08.png" alt="" loading="lazy" /></p><p><strong>四、能源对外依存度</strong></p><p>能源对外依存度指的是每年总的能源消耗中有多少能源是进口的，占比越大说明能源对外依存度越高。本文使用的对外依存度计算公式为：能源对外依存度=能源进口量/国内能源消费总量*100%。</p><p>在仪表板中可以看到，2012年，我国煤炭进口量为28841万吨，对外依存度为5.72%；原油进口量为27103万吨，对外依存度为57.52%；天然气进口量为421亿立方米，对外依存度为23.23%。而到了2020年，煤炭进口量为30361万吨，对外依存度为7.5%，涨幅较小；天然气进口量为1397亿立方米，对外依存度为41.83%，相较于2012年，进口量增长了两倍多，对外依存度则增长了近18.6个百分点；原油进口量为54201万吨，较2012年进口量增长了近一倍，对外依存度则增长了20.29个百分点，达到了78.01%。</p><p><img src="../images/blog/chart-20230131/dataease-110-09.png" alt="" loading="lazy" /></p><h2 id="%E6%80%BB%E7%BB%93">总结</h2><p>在这个能源主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的视图组件，其中涉及到基础折线图、玫瑰图、面积图等图表类型，通过不同的视图全方位呈现了中国能源行业近十年来的变化和进步。</p><p>该仪表板主要使用DataEase模板市场中的《双碳及能源情况概览》模板进行制作，仪表板的整体配色及背景、图片装饰、边框等内容均来源于此模板。更多精美模板可以访问DataEase模板市场：<em>https://dataease.io/templates/</em>，欢迎自行选择下载使用。</p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-01.png" alt="" loading="lazy" /></p>
+                    <h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D">背景介绍</h2>
+                    <p>
+                        能源是经济发展的基石，能源的供给与人们生活和经济发展息息相关。二十大报告强调：“要积极稳妥推进碳达峰碳中和，立足我国能源资源禀赋，坚持先立后破，有计划分步骤地实施碳达峰行动。深入推进能源革命，加强煤炭清洁高效利用，加快规划建设新型能源体系，积极参与应对气候变化全球治理。”在过去的十年里，我国的能源自主保障能力显著提升，建成了全球最大的清洁发电体系，能源结构不断优化，有力地保障了国民经济的稳定运行。
+                    </p>
+                    <p>
+                        为了了解我国能源结构及供给情况，我们使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）来制作一个仪表板，分析展示近几年电能、石油、煤炭等能源的指标数据。数据源自国家统计局官方网站，由于最新的统计数据尚未披露，目前使用的数据统计截止至2020年。
+                    </p>
+                    <p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-02.jpg" alt="" loading="lazy" /></p>
+                    <h2 id="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</h2>
+                    <p><strong>一、电产量</strong></p>
+                    <p>从历年电产量和电产量占比趋势中可以看到，2012年我国核电产量973.9亿千瓦小时，占比1.96%，风电产量959.8亿千瓦小时，占比1.94%，水电产量8721.1亿千瓦小时，占比17.59%，火电产量38928.1亿千瓦小时，占比78.51%。</p>
+                    <p>2020年，核电产量3662.5亿千瓦小时，占比4.87%，风电产量4664.7亿千瓦小时，占比6.2%，水电产量13552.1亿千瓦小时，占比18.03%，火电产量53302.5亿千瓦时，占比70.9%。</p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-03.png" alt="" loading="lazy" /></p>
+                    <p>2012年除火电外的三种清洁能源电产量占比为21.49%。而到了2020年，除火电外的三种清洁能源电产量占比则提升至29.1%。</p>
+                    <p>九年间，虽然火电依然是主体，但核能、风能、水能三种清洁能源的总发电量从2012年的10654.8亿千瓦小时提高到了2020年的21879.3亿千瓦小时，实现了产量翻倍。其中，核电产量翻了近三倍，风电产量翻了近四倍。</p>
+                    <p>2022年的北京冬奥会，三大赛区26个场馆全部实现了绿色供电。这些绿色供电主要是由河北张家口的光伏发电和风力发电提供，可以说是我国多年来大力发展可再生能源成就的一个缩影。</p>
+                    <p>不仅如此，尽管我国发电量持续增长，但火电机组的二氧化碳、氮氧化物和烟尘排放量均大幅下降。2019年10月7日，英国《自然·能源》杂志发表报告称，中国针对燃煤火电机组采取的超低排放改造措施已取得显著成效。</p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-04.png" alt="" loading="lazy" /></p>
+                    <p><strong>二、电消费</strong></p>
+                    <p>从历年电消费量和消费占比中可以看到，2012年我国工业电消费量为36232.2亿千瓦小时，占比72.81%，居民生活电消费量为6219亿千瓦小时，占比12.5%，其他行业电消费量为3083.6亿千瓦小时，占比14.69%。</p>
+                    <p>2020年，工业电消费量为52353.4亿千瓦小时，占比67.45%，居民生活电消费量增长至11396.5亿千瓦小时，占比14.68%，其他行业电消费量为6517亿千瓦小时，占比17.87%。</p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-05.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-06.png" alt="" loading="lazy" /></p>
+                    <p>从电消费的增长趋势可以看出，2014年至2015年我国电力消费增长缓慢，尤其是2015年工业电能消费出现了负增长。</p>
+                    <p>
+                        中国电力企业联合会发布的《2016年度全国电力供需形势分析预测报告》指出：2015年，受宏观经济尤其是重化工业生产下滑、产业结构调整、工业转型升级以及气温等因素影响，全社会用电量增速回落，第二产业用电量40年来首次负增长。而固定资产投资特别是房地产投资增速持续放缓，导致黑色金属冶炼和建材行业用电均出现下滑，两个行业用电下降是工业用电量下降、全社会用电量低速增长的主要原因。
+                    </p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-07.png" alt="" loading="lazy" /></p>
+                    <p><strong>三、能源结构</strong></p>
+                    <p>
+                        从能源结构分析中可以看出，2012年到2021年的十年间，煤炭占比从68.5%下降到了56%，天然气从4.8%上涨到了8.9%，一次电力（即核电、水电、风电以及太阳能发电所发出的电力）及其他能源则从9.7%上涨到了16.6%。我国的能源结构优化成果显著。
+                    </p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-08.png" alt="" loading="lazy" /></p>
+                    <p><strong>四、能源对外依存度</strong></p>
+                    <p>能源对外依存度指的是每年总的能源消耗中有多少能源是进口的，占比越大说明能源对外依存度越高。本文使用的对外依存度计算公式为：能源对外依存度=能源进口量/国内能源消费总量*100%。</p>
+                    <p>
+                        在仪表板中可以看到，2012年，我国煤炭进口量为28841万吨，对外依存度为5.72%；原油进口量为27103万吨，对外依存度为57.52%；天然气进口量为421亿立方米，对外依存度为23.23%。而到了2020年，煤炭进口量为30361万吨，对外依存度为7.5%，涨幅较小；天然气进口量为1397亿立方米，对外依存度为41.83%，相较于2012年，进口量增长了两倍多，对外依存度则增长了近18.6个百分点；原油进口量为54201万吨，较2012年进口量增长了近一倍，对外依存度则增长了20.29个百分点，达到了78.01%。
+                    </p>
+                    <p><img src="../images/blog/chart-20230131/dataease-110-09.png" alt="" loading="lazy" /></p>
+                    <h2 id="%E6%80%BB%E7%BB%93">总结</h2>
+                    <p>在这个能源主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的视图组件，其中涉及到基础折线图、玫瑰图、面积图等图表类型，通过不同的视图全方位呈现了中国能源行业近十年来的变化和进步。</p>
+                    <p>
+                        该仪表板主要使用DataEase模板市场中的《双碳及能源情况概览》模板进行制作，仪表板的整体配色及背景、图片装饰、边框等内容均来源于此模板。更多精美模板可以访问DataEase模板市场：<em>https://dataease.io/templates/</em>，欢迎自行选择下载使用。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜DataEase看中国：数据呈现中国能源发展情况","item":"https://dataease.cn/blog/post-5367.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜DataEase看中国：数据呈现中国能源发展情况","description":"响应碳中和号召，DataEase带你看看中国能源发展情况。","url":"https://dataease.cn/blog/post-5367.html","datePublished":"2023-01-31","dateModified":"2023-01-31","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-025.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜DataEase看中国：数据呈现中国能源发展情况", "item": "https://dataease.cn/blog/post-5367.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜DataEase看中国：数据呈现中国能源发展情况",
+                "description": "响应碳中和号召，DataEase带你看看中国能源发展情况。",
+                "url": "https://dataease.cn/blog/post-5367.html",
+                "datePublished": "2023-01-31",
+                "dateModified": "2023-01-31",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-025.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

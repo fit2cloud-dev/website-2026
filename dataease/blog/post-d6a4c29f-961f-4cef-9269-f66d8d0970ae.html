@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,206 @@
                     <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂｜DataEase地图视图功能详解" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a href="https://dataease.io/templates/" target="_blank" rel="noopener noreferrer">https://dataease.io/templates/</a>）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。</p><h2 id="2023%E5%B9%B45%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF"><strong>2023年5月上新模板</strong></h2><p>DataEase模板市场定期进行模板上新。2023年5月共上新5个模板，涉及舆情管理、论坛运营、电力、电影票房分析、网络运营管理主题，欢迎大家在DataEase模板市场下载使用。</p><p><img src="../images/blog/template-20230613/dataease-098-01.png" alt="图01-gctu.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-02.png" alt="图02-edfk.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-03.png" alt="图03-ogxy.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-04.png" alt="图04-sbzs.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-05.png" alt="图05-rgcq.png" loading="lazy" /></p><h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7"><strong>模板技巧</strong></h2><p>本月的模板技巧为大家介绍DataEase的地图视图功能，以及在数据可视化分析过程中如何选择合适的地图视图。</p><p>地图视图在数据可视化分析中起着至关重要的作用，它提供了一种直观而有力的方式来展示和理解地理位置与数据之间的关系，帮助我们发现地理趋势、空间分布和地域差异。无论是按国家、省份的绘制数据，还是按城市、区县的绘制数据，地图视图都能够帮助我们更好地了解数据的空间分布情况。这些区域数据的数据集，如果使用条形图、饼图、表格都会显得很拥挤，但在地图视图中显示相同的数据却可以清晰直观且赏心悦目。</p><p><strong>DataEase提供了四种类型的地图视图，具体为：地图（区域地图）、气泡地图、流向地图和符号地图。</strong>接下来，我们就为大家详细介绍这四种地图视图及其使用场景。</p><p><img src="../images/blog/template-20230613/dataease-098-06.png" alt="图01-eyle.png" loading="lazy" /></p><p><strong>一、地图（区域地图）</strong></p><p>区域地图是最常见和基本的地图视图形式，它展示了不同地区的边界和地理特征。该视图适用于展示地理区域的数据分布和差异。通过不同颜色或阴影的填充，可以表示不同地区的数据值或指标。区域地图常用于政治、人口、经济等领域的数据分析，例如显示不同国家、省市的统计信息、人口分布、经济发展情况等。</p><p>■ 数据集格式示例：</p><p><img src="../images/blog/template-20230613/dataease-098-07.png" alt="1-zsgt.png" loading="lazy" /></p><p>■ 操作示例：</p><p>在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“ECharts”图库菜单中的图表类型选择“地图”选项，数据设计中地区范围选择“中华人民共和国”（如需按照城市展示，可选择对应的省份地图），将“pronvince”（省份）和“gdp”字段分别拖到维度框（地区）与指标框（数据）。如果需要实现区域下钻的效果，需要将对应的层级区域放置到钻取框中。</p><p><img src="../images/blog/template-20230613/dataease-098-08.png" alt="图02-yush.png" loading="lazy" /></p><p>地图（区域地图）还支持经纬度数据，可以将经度和维度字段拉入维度框进行地理标记，也可以在已有地区维度数据的基数上增加经纬度数据，既能反映出数据的分布情况又具备标识的功能。此外，在数据设计为经纬度字段时，在样式设计中还支持对特定的值进行标记设置。</p><p><img src="../images/blog/template-20230613/dataease-098-09.png" alt="图04-pras.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-10.png" alt="图05-ibdq.png" loading="lazy" /></p><p>■ 地图（区域地图）的优点：</p><p>1. 易于理解：区域地图以地理区域的形式展示数据，对于大多数人来说，地理位置是一种熟悉且易于理解的概念，通过直观地展现大量的数据，让用户更加容易理解；</p><p>2. 可视化比较：区域地图能够清晰地比较不同地区的数据差异，通过选择不同的配色方案，帮助用户快速了解数据在地理空间上的分布情况；</p><p>3. 便于交互：支持多种交互方式，例如鼠标悬停、区域下钻等，帮助用户深入了解细节。</p><p>■ 地图（区域地图）的缺点：</p><p>1. 信息过载：当地理区域较多或数据量较大时，区域地图可能会面临信息过载的问题。过多的区域和数据点可能会导致图表变得混乱和难以解读；</p><p>2. 数据不完整性：区域地图在某些情况下可能无法准确展示数据的完整性。例如，在某个地区没有数据或数据不可用时，该区域可能会被留空或无法表示，导致信息的缺失；</p><p>3. 数据量大时性能下降：当要展示的数据较多时，ECharts的区域地图的性能会有所下降，导致渲染速度变慢。</p><p><strong>二、气泡地图</strong></p><p>气泡地图通过在地图上放置不同大小和颜色的气泡来表示数据指标。气泡的大小通常代表数据的数量或大小，而颜色则可以表示另一个维度的数据。这种视图适用于比较不同地区的数据，并且突出显示数据的相对值。例如，可以使用气泡地图来显示城市的人口数量，其中以气泡的大小表示人口数量，颜色表示平均收入水平。</p><p>■ 数据集格式示例：</p><p><img src="../images/blog/template-20230613/dataease-098-11.png" alt="2-soqz.png" loading="lazy" /></p><p>■ 操作示例：</p><p>在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“ECharts”图库菜单中图表类型选择“气泡地图”选项，数据设计中地区范围选择“中华人民共和国”（如需按照城市展示，可选择对应的省份地图），将“pronvince”（省份）和“gdp”字段分别拖到维度框（地区）与指标框（气泡大小）。如果需要实现区域下钻，同样需要将对应的层级区域放到钻取框里。</p><p><img src="../images/blog/template-20230613/dataease-098-12.png" alt="图06-owzu.png" loading="lazy" /></p><p>■ 气泡地图的优点：</p><p>1. 直观易懂：通过使用不同大小和颜色的圆形，可以很直观地展示不同地区的数据差异；</p><p>2. 可视化层次：用户同样可以通过鼠标悬停或点击圆形下钻来查看具体数据，从而实现更好的数据交互。</p><p>■ 气泡地图的缺点：</p><p>1. 数据覆盖：数据密集时可读性差，当气泡地图中的气泡数量非常多时，特别是当气泡重叠在一起时，可读性下降；</p><p>2. 数据分析效果弱：主要适用于展示地理位置数据的分布情况，对于复杂的数据分析和关系展示可能不够灵活。气泡地图的气泡大小并不一定代表准确的数据量，而是相对的比例关系。气泡地图相对于一些更为复杂的图表类型，例如散点图或网络图，其数据处理能力相对较弱。</p><p><strong>三、流向地图</strong></p><p>流向地图主要用于可视化物体或信息的移动路径和方向。它显示了物体从一个地点到另一个地点的流动情况。这种地图视图对于显示交通流量、人员迁移、贸易路径等具有很大的价值。通过使用流向地图，用户可以更好地理解和分析物流、迁徙、供应链等与地理位置相关的数据。</p><p>■ 数据集格式示例：</p><p><img src="../images/blog/template-20230613/dataease-098-13.png" alt="3-nvoq.png" loading="lazy" /></p><p>需要注意的是，流向地图的数据集中起点经纬度和终点经纬度各自是两个字段。</p><p>■ 操作示例：</p><p>在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“AntV”图库菜单中图表类型选择“流向地图”选项，将“出发地经度”和“出发地纬度”字段拖入“起点经纬度/维度”的维度框，将“目的地经度”和“目的地纬度”字段拖入“终点经纬度/维度”的维度框。注意：流向地图不支持地图下钻。</p><p><img src="../images/blog/template-20230613/dataease-098-14.png" alt="图07-jjmt.png" loading="lazy" /></p><p>■ 流向地图的优点：</p><p>1. 直观易懂：流向地图提供了直观的可视化方式，使复杂的数据流动模式易于理解和解读；</p><p>2. 强调关系：流向地图能够凸显不同地理区域之间的关联和相互作用，有助于发现隐藏的关系和趋势；</p><p>3. 视觉冲击力：流向地图的动态效果和色彩搭配能够吸引观众的注意力，增强数据传达的效果。</p><p>■ 流向地图的缺点：</p><p>1. 数据精确度限制：流向地图在处理数据时需要进行数据预处理和格式转换，以符合地图所要求的数据准确性，数据处理过程复杂；</p><p>2. 空间限制：当流向路径较多或交叉重叠时，可能会导致可视化的混乱和信息重叠，难以准确理解和分析每个流向路径的细节和特征。</p><p><strong>四、符号地图</strong></p><p>符号地图使用各种符号、图标或图形来表示地理位置上的特定事件、地点或现象。每个符号代表一个数据点，并根据特定的规则或条件进行放置和标记。这种地图视图通常用于展示特定地点的分布、事件发生的位置或者标记重要的地理要素。符号地图适用于显示商店分布、地震发生地、旅游景点等内容。</p><p>■ 数据集格式示例：</p><p><img src="../images/blog/template-20230613/dataease-098-15.png" alt="4-hbii.png" loading="lazy" /></p><p>■ 操作示例：</p><p>在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“AntV”图库菜单中图表类型选择“符号地图”选项，将“经度”和“纬度“字段分别拖入对应的维度框，将“GDP”字段拖入对应的指标框（气泡大小/指标）。注意：符号地图不支持地图下钻。</p><p><img src="../images/blog/template-20230613/dataease-098-16.png" alt="图09-opvv.png" loading="lazy" /></p><p>■ 符号地图的优点：</p><p>1. 精准空间维度：使用经纬度坐标可以更准确地展示数据分布和位置信息，提供更加精细和精确的定位；</p><p>2. 可视化多维数据：符号地图可以利用符号的大小、形状、颜色和位置等特征来表示多维数据。通过组合不同的符号属性，可以将多个变量或指标在地图上进行可视化展示，提供更丰富的信息；</p><p>3. 强调空间分布：符号地图可以展示数据在地理空间上的分布和趋势。通过将符号放置在地图上的特定位置，可以帮助用户快速理解数据的空间关系和集中度。</p><p>■ 符号地图的缺点：</p><p>1. 符号重叠：当数据点非常密集或符号的大小相对较大时，符号地图可能会出现符号重叠的问题。这会导致部分数据点无法准确显示或难以区分，降低了图表的可读性和准确性；</p><p>2. 数据格式有要求：符号地图使用经纬度坐标数据，如果原始数据不符合这些格式，跟流向地图一样就需要进行数据格式转换或预处理；</p><p>3. 数据难以整理：当数据量较大或分散在多个地理区域时，无法进行数据聚合和分组操作。</p><h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2><p>DataEase是一款人人可用的开源数据可视化分析工具，它为用户提供了丰富多样的地图视图，包括地图（区域地图）、气泡地图、流向地图和符号地图。地图视图的优势在于它们能够将复杂的数据转化为直观易懂的图形，让用户能够更深入地理解数据背后的含义和趋势。</p><p>未来，DataEase还将持续更新和提供更多的视图类型和功能，以满足用户不断变化的数据分析需求。无论是地理分布、趋势分析还是关联关系的发现，DataEase都将为用户带来更多的可能性和便利。</p>
+                    <p>
+                        DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a href="https://dataease.io/templates/" target="_blank" rel="noopener noreferrer">https://dataease.io/templates/</a
+                        >）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。
+                    </p>
+                    <h2 id="2023%E5%B9%B45%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF"><strong>2023年5月上新模板</strong></h2>
+                    <p>DataEase模板市场定期进行模板上新。2023年5月共上新5个模板，涉及舆情管理、论坛运营、电力、电影票房分析、网络运营管理主题，欢迎大家在DataEase模板市场下载使用。</p>
+                    <p>
+                        <img src="../images/blog/template-20230613/dataease-098-01.png" alt="图01-gctu.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-02.png" alt="图02-edfk.png" loading="lazy" /><img
+                            src="../images/blog/template-20230613/dataease-098-03.png"
+                            alt="图03-ogxy.png"
+                            loading="lazy"
+                        /><img src="../images/blog/template-20230613/dataease-098-04.png" alt="图04-sbzs.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-05.png" alt="图05-rgcq.png" loading="lazy" />
+                    </p>
+                    <h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7"><strong>模板技巧</strong></h2>
+                    <p>本月的模板技巧为大家介绍DataEase的地图视图功能，以及在数据可视化分析过程中如何选择合适的地图视图。</p>
+                    <p>
+                        地图视图在数据可视化分析中起着至关重要的作用，它提供了一种直观而有力的方式来展示和理解地理位置与数据之间的关系，帮助我们发现地理趋势、空间分布和地域差异。无论是按国家、省份的绘制数据，还是按城市、区县的绘制数据，地图视图都能够帮助我们更好地了解数据的空间分布情况。这些区域数据的数据集，如果使用条形图、饼图、表格都会显得很拥挤，但在地图视图中显示相同的数据却可以清晰直观且赏心悦目。
+                    </p>
+                    <p><strong>DataEase提供了四种类型的地图视图，具体为：地图（区域地图）、气泡地图、流向地图和符号地图。</strong>接下来，我们就为大家详细介绍这四种地图视图及其使用场景。</p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-06.png" alt="图01-eyle.png" loading="lazy" /></p>
+                    <p><strong>一、地图（区域地图）</strong></p>
+                    <p>
+                        区域地图是最常见和基本的地图视图形式，它展示了不同地区的边界和地理特征。该视图适用于展示地理区域的数据分布和差异。通过不同颜色或阴影的填充，可以表示不同地区的数据值或指标。区域地图常用于政治、人口、经济等领域的数据分析，例如显示不同国家、省市的统计信息、人口分布、经济发展情况等。
+                    </p>
+                    <p>■ 数据集格式示例：</p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-07.png" alt="1-zsgt.png" loading="lazy" /></p>
+                    <p>■ 操作示例：</p>
+                    <p>
+                        在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“ECharts”图库菜单中的图表类型选择“地图”选项，数据设计中地区范围选择“中华人民共和国”（如需按照城市展示，可选择对应的省份地图），将“pronvince”（省份）和“gdp”字段分别拖到维度框（地区）与指标框（数据）。如果需要实现区域下钻的效果，需要将对应的层级区域放置到钻取框中。
+                    </p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-08.png" alt="图02-yush.png" loading="lazy" /></p>
+                    <p>
+                        地图（区域地图）还支持经纬度数据，可以将经度和维度字段拉入维度框进行地理标记，也可以在已有地区维度数据的基数上增加经纬度数据，既能反映出数据的分布情况又具备标识的功能。此外，在数据设计为经纬度字段时，在样式设计中还支持对特定的值进行标记设置。
+                    </p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-09.png" alt="图04-pras.png" loading="lazy" /><img src="../images/blog/template-20230613/dataease-098-10.png" alt="图05-ibdq.png" loading="lazy" /></p>
+                    <p>■ 地图（区域地图）的优点：</p>
+                    <p>1. 易于理解：区域地图以地理区域的形式展示数据，对于大多数人来说，地理位置是一种熟悉且易于理解的概念，通过直观地展现大量的数据，让用户更加容易理解；</p>
+                    <p>2. 可视化比较：区域地图能够清晰地比较不同地区的数据差异，通过选择不同的配色方案，帮助用户快速了解数据在地理空间上的分布情况；</p>
+                    <p>3. 便于交互：支持多种交互方式，例如鼠标悬停、区域下钻等，帮助用户深入了解细节。</p>
+                    <p>■ 地图（区域地图）的缺点：</p>
+                    <p>1. 信息过载：当地理区域较多或数据量较大时，区域地图可能会面临信息过载的问题。过多的区域和数据点可能会导致图表变得混乱和难以解读；</p>
+                    <p>2. 数据不完整性：区域地图在某些情况下可能无法准确展示数据的完整性。例如，在某个地区没有数据或数据不可用时，该区域可能会被留空或无法表示，导致信息的缺失；</p>
+                    <p>3. 数据量大时性能下降：当要展示的数据较多时，ECharts的区域地图的性能会有所下降，导致渲染速度变慢。</p>
+                    <p><strong>二、气泡地图</strong></p>
+                    <p>
+                        气泡地图通过在地图上放置不同大小和颜色的气泡来表示数据指标。气泡的大小通常代表数据的数量或大小，而颜色则可以表示另一个维度的数据。这种视图适用于比较不同地区的数据，并且突出显示数据的相对值。例如，可以使用气泡地图来显示城市的人口数量，其中以气泡的大小表示人口数量，颜色表示平均收入水平。
+                    </p>
+                    <p>■ 数据集格式示例：</p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-11.png" alt="2-soqz.png" loading="lazy" /></p>
+                    <p>■ 操作示例：</p>
+                    <p>
+                        在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“ECharts”图库菜单中图表类型选择“气泡地图”选项，数据设计中地区范围选择“中华人民共和国”（如需按照城市展示，可选择对应的省份地图），将“pronvince”（省份）和“gdp”字段分别拖到维度框（地区）与指标框（气泡大小）。如果需要实现区域下钻，同样需要将对应的层级区域放到钻取框里。
+                    </p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-12.png" alt="图06-owzu.png" loading="lazy" /></p>
+                    <p>■ 气泡地图的优点：</p>
+                    <p>1. 直观易懂：通过使用不同大小和颜色的圆形，可以很直观地展示不同地区的数据差异；</p>
+                    <p>2. 可视化层次：用户同样可以通过鼠标悬停或点击圆形下钻来查看具体数据，从而实现更好的数据交互。</p>
+                    <p>■ 气泡地图的缺点：</p>
+                    <p>1. 数据覆盖：数据密集时可读性差，当气泡地图中的气泡数量非常多时，特别是当气泡重叠在一起时，可读性下降；</p>
+                    <p>
+                        2.
+                        数据分析效果弱：主要适用于展示地理位置数据的分布情况，对于复杂的数据分析和关系展示可能不够灵活。气泡地图的气泡大小并不一定代表准确的数据量，而是相对的比例关系。气泡地图相对于一些更为复杂的图表类型，例如散点图或网络图，其数据处理能力相对较弱。
+                    </p>
+                    <p><strong>三、流向地图</strong></p>
+                    <p>
+                        流向地图主要用于可视化物体或信息的移动路径和方向。它显示了物体从一个地点到另一个地点的流动情况。这种地图视图对于显示交通流量、人员迁移、贸易路径等具有很大的价值。通过使用流向地图，用户可以更好地理解和分析物流、迁徙、供应链等与地理位置相关的数据。
+                    </p>
+                    <p>■ 数据集格式示例：</p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-13.png" alt="3-nvoq.png" loading="lazy" /></p>
+                    <p>需要注意的是，流向地图的数据集中起点经纬度和终点经纬度各自是两个字段。</p>
+                    <p>■ 操作示例：</p>
+                    <p>
+                        在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“AntV”图库菜单中图表类型选择“流向地图”选项，将“出发地经度”和“出发地纬度”字段拖入“起点经纬度/维度”的维度框，将“目的地经度”和“目的地纬度”字段拖入“终点经纬度/维度”的维度框。注意：流向地图不支持地图下钻。
+                    </p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-14.png" alt="图07-jjmt.png" loading="lazy" /></p>
+                    <p>■ 流向地图的优点：</p>
+                    <p>1. 直观易懂：流向地图提供了直观的可视化方式，使复杂的数据流动模式易于理解和解读；</p>
+                    <p>2. 强调关系：流向地图能够凸显不同地理区域之间的关联和相互作用，有助于发现隐藏的关系和趋势；</p>
+                    <p>3. 视觉冲击力：流向地图的动态效果和色彩搭配能够吸引观众的注意力，增强数据传达的效果。</p>
+                    <p>■ 流向地图的缺点：</p>
+                    <p>1. 数据精确度限制：流向地图在处理数据时需要进行数据预处理和格式转换，以符合地图所要求的数据准确性，数据处理过程复杂；</p>
+                    <p>2. 空间限制：当流向路径较多或交叉重叠时，可能会导致可视化的混乱和信息重叠，难以准确理解和分析每个流向路径的细节和特征。</p>
+                    <p><strong>四、符号地图</strong></p>
+                    <p>
+                        符号地图使用各种符号、图标或图形来表示地理位置上的特定事件、地点或现象。每个符号代表一个数据点，并根据特定的规则或条件进行放置和标记。这种地图视图通常用于展示特定地点的分布、事件发生的位置或者标记重要的地理要素。符号地图适用于显示商店分布、地震发生地、旅游景点等内容。
+                    </p>
+                    <p>■ 数据集格式示例：</p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-15.png" alt="4-hbii.png" loading="lazy" /></p>
+                    <p>■ 操作示例：</p>
+                    <p>
+                        在DataEase仪表板编辑页面点击“视图”选项，选择数据集后，在“AntV”图库菜单中图表类型选择“符号地图”选项，将“经度”和“纬度“字段分别拖入对应的维度框，将“GDP”字段拖入对应的指标框（气泡大小/指标）。注意：符号地图不支持地图下钻。
+                    </p>
+                    <p><img src="../images/blog/template-20230613/dataease-098-16.png" alt="图09-opvv.png" loading="lazy" /></p>
+                    <p>■ 符号地图的优点：</p>
+                    <p>1. 精准空间维度：使用经纬度坐标可以更准确地展示数据分布和位置信息，提供更加精细和精确的定位；</p>
+                    <p>2. 可视化多维数据：符号地图可以利用符号的大小、形状、颜色和位置等特征来表示多维数据。通过组合不同的符号属性，可以将多个变量或指标在地图上进行可视化展示，提供更丰富的信息；</p>
+                    <p>3. 强调空间分布：符号地图可以展示数据在地理空间上的分布和趋势。通过将符号放置在地图上的特定位置，可以帮助用户快速理解数据的空间关系和集中度。</p>
+                    <p>■ 符号地图的缺点：</p>
+                    <p>1. 符号重叠：当数据点非常密集或符号的大小相对较大时，符号地图可能会出现符号重叠的问题。这会导致部分数据点无法准确显示或难以区分，降低了图表的可读性和准确性；</p>
+                    <p>2. 数据格式有要求：符号地图使用经纬度坐标数据，如果原始数据不符合这些格式，跟流向地图一样就需要进行数据格式转换或预处理；</p>
+                    <p>3. 数据难以整理：当数据量较大或分散在多个地理区域时，无法进行数据聚合和分组操作。</p>
+                    <h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2>
+                    <p>
+                        DataEase是一款人人可用的开源数据可视化分析工具，它为用户提供了丰富多样的地图视图，包括地图（区域地图）、气泡地图、流向地图和符号地图。地图视图的优势在于它们能够将复杂的数据转化为直观易懂的图形，让用户能够更深入地理解数据背后的含义和趋势。
+                    </p>
+                    <p>未来，DataEase还将持续更新和提供更多的视图类型和功能，以满足用户不断变化的数据分析需求。无论是地理分布、趋势分析还是关联关系的发现，DataEase都将为用户带来更多的可能性和便利。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂｜DataEase地图视图功能详解","item":"https://dataease.cn/blog/post-d6a4c29f-961f-4cef-9269-f66d8d0970ae.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂｜DataEase地图视图功能详解","description":"模板市场上新！还有利用地图视图实现数据可视化教学！","url":"https://dataease.cn/blog/post-d6a4c29f-961f-4cef-9269-f66d8d0970ae.html","datePublished":"2023-06-13","dateModified":"2023-06-13","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-028.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "模板学堂｜DataEase地图视图功能详解", "item": "https://dataease.cn/blog/post-d6a4c29f-961f-4cef-9269-f66d8d0970ae.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "模板学堂｜DataEase地图视图功能详解",
+                "description": "模板市场上新！还有利用地图视图实现数据可视化教学！",
+                "url": "https://dataease.cn/blog/post-d6a4c29f-961f-4cef-9269-f66d8d0970ae.html",
+                "datePublished": "2023-06-13",
+                "dateModified": "2023-06-13",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-028.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

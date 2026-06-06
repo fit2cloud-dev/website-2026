@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="希望本文对广大企业的运维人员提升日常运维管理效率有所帮助。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/tutorial-20240410/cover.jpg" />
         <meta name="twitter:image:alt" content="干货分享｜JumpServer三种常见的文件传输方式效果对比 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"干货分享｜JumpServer三种常见的文件传输方式效果对比","description":"希望本文对广大企业的运维人员提升日常运维管理效率有所帮助。","datePublished":"2024-04-10T10:10:00+00:00","dateModified":"2024-04-10T10:10:00+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/tutorial-20240410.html"},"image":["https://www.jumpserver.org/images/blog/tutorial-20240410/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "干货分享｜JumpServer三种常见的文件传输方式效果对比",
+                "description": "希望本文对广大企业的运维人员提升日常运维管理效率有所帮助。",
+                "datePublished": "2024-04-10T10:10:00+00:00",
+                "dateModified": "2024-04-10T10:10:00+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/tutorial-20240410.html" },
+                "image": ["https://www.jumpserver.org/images/blog/tutorial-20240410/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -190,7 +218,116 @@
                     <img src="../images/blog/tutorial-20240410/cover.jpg" alt="干货分享｜JumpServer三种常见的文件传输方式效果对比" loading="lazy" />
                 </header>
                 <div class="de-article-content">
-                    <p style="text-align: start; "></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">JumpServer开源堡垒机支持对文件的上传和下载，并对传输记录进⾏审计。JumpServer的文件传输功能是用户使用频率较高的功能，</span><strong><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">常见的文件传输方式包括：rz和sz命令方式、文件管理方式和客户端工具方式。</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在使用JumpServer进行文件传输的时候，常常有用户向JumpServer开源项目组反馈出现文件大小受限、传输卡顿、传输不稳定等情况，实际上这与用户所选择的文件传输方式有一定的关系。</span></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">本文将重点对比上述三种用户常用的JumpServer文件传输方式，并且测试验证JumpServer文件传输的实际效果，以便用户后续在传输文件时能够选用更为有效的文件传输方式。希望本文对广大企业的运维人员提升日常运维管理效率有所帮助。</span></p><h2 style="" id="%E4%B8%80%E3%80%81%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">一、测试准备</span></h2><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">准备以下测试环境以及测试文件：</span></p><p><img src="../images/blog/tutorial-20240410/image-01.png" alt="" loading="lazy" /></p><h2 style="" id="%E4%BA%8C%E3%80%81%E4%B8%8D%E5%90%8C%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8F%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%AF%94"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">二、不同文件传输方式测试对比</span></h2><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">1. rz和sz命令方式</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">用户连接资产后，使用rz和sz命令，直接拖动文件进行文件上传/下载（秒表计时）。</span></p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">分别测试不同尺寸的测试文件，传输效果如表1所示：</span></p><p style="text-align: center; "><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" />▲ 表1 不同尺寸的文件通过rz和sz命令传输文件的效果对比</p><p style="text-align: start; ">注意：</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 上传155MB大小的文件时，传输文件容易出现卡住并最终会断开会话的情况，显示文件传输失败；</p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> rz和sz命令文件传输方式有文件大小的限制，传输文件的上限为500MB。</p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; "><strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">2. 文件管理方式</span></strong></p><p style="text-align: start; ">用户选择通过SFTP协议连接资产，进行文件传输。具体步骤如下：</p><p style="text-align: start; ">① 打开JumpServer的Web终端连接页面，选择需要连接的服务器，选择“Web SFTP”连接方式；</p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; ">② 进入文件传输页面后，直接拖动文件到窗口中，即可将文件上传至对应目录；</p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; ">③ 右键点击需要下载的文件，在打开的右键菜单中选择“下载”选项即可进行文件下载。</p><p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p><p style="text-align: start; ">分别测试不同尺寸的测试文件，传输效果如表2所示：</p><p style="text-align: center; "><img src="../images/blog/tutorial-20240410/image-10.png" alt="" loading="lazy" />▲ 表2 不同尺寸的文件通过SFTP文件管理方式传输文件的效果对比</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">注意：</span></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 相比rz和sz命令的文件传输方式，通过SFTP文件管理方式传输文件时，传输页面会显示文件传输进度条，方便用户了解传输进度（由于时长原因，本次测试未对后两个文件进行计时）；</p><p><img src="../images/blog/tutorial-20240410/image-11.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 受Nginx上传/下载文件的大小限制，通过JumpServer文件管理方式传输文件的文件尺寸初始默认为4096MB，即“CLIENT_MAX_BODY_SIZE=4096m”，文件尺寸可以进行修改。</p><p style="text-align: start; "><strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">3. 客户端工具方式</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">用户使用客户端工具通过JumpServer进行文件传输，以FileZilla、SecureCRT工具为例，具体步骤如下：</span></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■ </span><strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">FileZilla工具：</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">① 点击FileZilla工具的“站点管理器”，填写相关信息，点击“连接”按钮，输入JumpServer的登录密码和MFA验证码，连接JumpServer堡垒机；</span></p><p><img src="../images/blog/tutorial-20240410/image-12.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image-13.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image-14.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image-15.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">② 连接成功后，选择需要上传文件的服务器和资产账号目录，拖动文件直接上传，系统会弹窗要求用户再次输入JumpServer登录密码和MFA验证码，确认后即可开始文件传输；</span></p><p><img src="../images/blog/tutorial-20240410/image-16.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image-17.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">③ 在操作页面底部会显示文件传输状态，包括用时、完成进度、传输速率。</span></p><p><img src="../images/blog/tutorial-20240410/image-18.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■ </span><strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">SecureCRT工具：</span></strong></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">① 在SecureCRT工具中输入JumpServer的用户登录密码及MFA验证码，登录至JumpServer堡垒机；</span></p><p><img src="../images/blog/tutorial-20240410/image-19.png" alt="" loading="lazy" /></p><p><img src="../images/blog/tutorial-20240410/image-20.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">② 登录成功后，用户选择需要连接的资产和所使用的资产账号；</span></p><p><img src="../images/blog/tutorial-20240410/image-21.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">③ 输入rz命令，选择需要上传的文件，点击“OK”按钮，即可进行文件传输；</span></p><p><img src="../images/blog/tutorial-20240410/image-22.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">④ 操作页面将会显示文件的传输进度、传输速率、预计剩余时间。</span></p><p><img src="../images/blog/tutorial-20240410/image-23.png" alt="" loading="lazy" /></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">分别测试不同尺寸的测试文件，传输效果如表3所示：</span></p><p style="text-align: center; "><img src="../images/blog/tutorial-20240410/image-24.png" alt="" loading="lazy" />▲ 表3 不同尺寸的文件通过客户端工具传输文件的效果对比</p><p style="text-align: start; ">注意：</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> SecureCRT工具使用ZModem协议上传文件时，只能传输4GB以内的文件（受传输协议限制）。</p><p><img src="../images/blog/tutorial-20240410/image-25.png" alt="" loading="lazy" /></p><h2 style="" id="%E4%B8%89%E3%80%81%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">三、测试总结</span></h2><p style="text-align: start; "><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">经过上述一系列测试，JumServer开源项目组总结了一些文件传输的经验和建议，希望对广大用户有所帮助：</span></p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 当用户需要临时传输一些占用空间较小的文件时，可以使用rz和sz命令方式来传输文件，其上传文件的大小限制为500MB，传输较为方便快捷；</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 文件管理方式和客户端传输方式的传输速度差不多，在一定程度上会受到网速的影响。客户端工具使用SFTP协议进行文件传输时，没有文件大小的限制，并且能够显示文件的传输速度，建议用户在传输较大的文件时，可以选择客户端连接的传输方式，方便用户了解传输的进度，避免用户误认为传输任务出现卡死等情况；</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 使用客户端传输方式时，需要确认用户所使用的客户端本身是否具有文件大小限制的情况，例如通过SecureCRT工具使用ZModem协议来传输文件时，文件大小限制不能超过4GB；</p><p style="text-align: start; "><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 在进行文件传输之前，用户需要检查自身的网络情况，网速状况不同，文件传输的效果和用时差异也会较大。</p>
+                    <p style="text-align: start"></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">JumpServer开源堡垒机支持对文件的上传和下载，并对传输记录进⾏审计。JumpServer的文件传输功能是用户使用频率较高的功能，</span
+                        ><strong><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">常见的文件传输方式包括：rz和sz命令方式、文件管理方式和客户端工具方式。</span></strong>
+                    </p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"
+                            >在使用JumpServer进行文件传输的时候，常常有用户向JumpServer开源项目组反馈出现文件大小受限、传输卡顿、传输不稳定等情况，实际上这与用户所选择的文件传输方式有一定的关系。</span
+                        >
+                    </p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"
+                            >本文将重点对比上述三种用户常用的JumpServer文件传输方式，并且测试验证JumpServer文件传输的实际效果，以便用户后续在传输文件时能够选用更为有效的文件传输方式。希望本文对广大企业的运维人员提升日常运维管理效率有所帮助。</span
+                        >
+                    </p>
+                    <h2 style="" id="%E4%B8%80%E3%80%81%E6%B5%8B%E8%AF%95%E5%87%86%E5%A4%87"><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">一、测试准备</span></h2>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">准备以下测试环境以及测试文件：</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-01.png" alt="" loading="lazy" /></p>
+                    <h2 style="" id="%E4%BA%8C%E3%80%81%E4%B8%8D%E5%90%8C%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E6%96%B9%E5%BC%8F%E6%B5%8B%E8%AF%95%E5%AF%B9%E6%AF%94">
+                        <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">二、不同文件传输方式测试对比</span>
+                    </h2>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">1. rz和sz命令方式</span></strong>
+                    </p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">用户连接资产后，使用rz和sz命令，直接拖动文件进行文件上传/下载（秒表计时）。</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(62, 62, 62)" style="color: rgb(62, 62, 62)">分别测试不同尺寸的测试文件，传输效果如表1所示：</span></p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" />▲ 表1 不同尺寸的文件通过rz和sz命令传输文件的效果对比</p>
+                    <p style="text-align: start">注意：</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 上传155MB大小的文件时，传输文件容易出现卡住并最终会断开会话的情况，显示文件传输失败；</p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> rz和sz命令文件传输方式有文件大小的限制，传输文件的上限为500MB。</p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">2. 文件管理方式</span></strong>
+                    </p>
+                    <p style="text-align: start">用户选择通过SFTP协议连接资产，进行文件传输。具体步骤如下：</p>
+                    <p style="text-align: start">① 打开JumpServer的Web终端连接页面，选择需要连接的服务器，选择“Web SFTP”连接方式；</p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">② 进入文件传输页面后，直接拖动文件到窗口中，即可将文件上传至对应目录；</p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">③ 右键点击需要下载的文件，在打开的右键菜单中选择“下载”选项即可进行文件下载。</p>
+                    <p><img src="../images/blog/tutorial-20240410/image.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">分别测试不同尺寸的测试文件，传输效果如表2所示：</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240410/image-10.png" alt="" loading="lazy" />▲ 表2 不同尺寸的文件通过SFTP文件管理方式传输文件的效果对比</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">注意：</span></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span>
+                        相比rz和sz命令的文件传输方式，通过SFTP文件管理方式传输文件时，传输页面会显示文件传输进度条，方便用户了解传输进度（由于时长原因，本次测试未对后两个文件进行计时）；
+                    </p>
+                    <p><img src="../images/blog/tutorial-20240410/image-11.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span>
+                        受Nginx上传/下载文件的大小限制，通过JumpServer文件管理方式传输文件的文件尺寸初始默认为4096MB，即“CLIENT_MAX_BODY_SIZE=4096m”，文件尺寸可以进行修改。
+                    </p>
+                    <p style="text-align: start">
+                        <strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">3. 客户端工具方式</span></strong>
+                    </p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">用户使用客户端工具通过JumpServer进行文件传输，以FileZilla、SecureCRT工具为例，具体步骤如下：</span></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■ </span><strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">FileZilla工具：</span></strong>
+                    </p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">① 点击FileZilla工具的“站点管理器”，填写相关信息，点击“连接”按钮，输入JumpServer的登录密码和MFA验证码，连接JumpServer堡垒机；</span>
+                    </p>
+                    <p><img src="../images/blog/tutorial-20240410/image-12.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-13.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-14.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-15.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"
+                            >② 连接成功后，选择需要上传文件的服务器和资产账号目录，拖动文件直接上传，系统会弹窗要求用户再次输入JumpServer登录密码和MFA验证码，确认后即可开始文件传输；</span
+                        >
+                    </p>
+                    <p><img src="../images/blog/tutorial-20240410/image-16.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-17.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">③ 在操作页面底部会显示文件传输状态，包括用时、完成进度、传输速率。</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-18.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■ </span><strong><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">SecureCRT工具：</span></strong>
+                    </p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">① 在SecureCRT工具中输入JumpServer的用户登录密码及MFA验证码，登录至JumpServer堡垒机；</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-19.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-20.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">② 登录成功后，用户选择需要连接的资产和所使用的资产账号；</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-21.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">③ 输入rz命令，选择需要上传的文件，点击“OK”按钮，即可进行文件传输；</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-22.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">④ 操作页面将会显示文件的传输进度、传输速率、预计剩余时间。</span></p>
+                    <p><img src="../images/blog/tutorial-20240410/image-23.png" alt="" loading="lazy" /></p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">分别测试不同尺寸的测试文件，传输效果如表3所示：</span></p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240410/image-24.png" alt="" loading="lazy" />▲ 表3 不同尺寸的文件通过客户端工具传输文件的效果对比</p>
+                    <p style="text-align: start">注意：</p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> SecureCRT工具使用ZModem协议上传文件时，只能传输4GB以内的文件（受传输协议限制）。</p>
+                    <p><img src="../images/blog/tutorial-20240410/image-25.png" alt="" loading="lazy" /></p>
+                    <h2 style="" id="%E4%B8%89%E3%80%81%E6%B5%8B%E8%AF%95%E6%80%BB%E7%BB%93"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">三、测试总结</span></h2>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">经过上述一系列测试，JumServer开源项目组总结了一些文件传输的经验和建议，希望对广大用户有所帮助：</span></p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 当用户需要临时传输一些占用空间较小的文件时，可以使用rz和sz命令方式来传输文件，其上传文件的大小限制为500MB，传输较为方便快捷；
+                    </p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span>
+                        文件管理方式和客户端传输方式的传输速度差不多，在一定程度上会受到网速的影响。客户端工具使用SFTP协议进行文件传输时，没有文件大小的限制，并且能够显示文件的传输速度，建议用户在传输较大的文件时，可以选择客户端连接的传输方式，方便用户了解传输的进度，避免用户误认为传输任务出现卡死等情况；
+                    </p>
+                    <p style="text-align: start">
+                        <span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span>
+                        使用客户端传输方式时，需要确认用户所使用的客户端本身是否具有文件大小限制的情况，例如通过SecureCRT工具使用ZModem协议来传输文件时，文件大小限制不能超过4GB；
+                    </p>
+                    <p style="text-align: start"><span fontsize="" color="rgb(0, 150, 136)" style="color: rgb(0, 150, 136)">■</span> 在进行文件传输之前，用户需要检查自身的网络情况，网速状况不同，文件传输的效果和用时差异也会较大。</p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -247,10 +384,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -261,21 +398,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

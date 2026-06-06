@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,151 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程 | 在DataEase中嵌入SQLBot开源智能问数系统" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>SQLBot是一款基于大语言模型（Large Language Model，LLM）和RAG（Retrieval Augmented Generation，检索增强生成）的开源智能问数系统。借助SQLBot，用户可以实现数据的即问即答，快速提炼获取所需的数据信息及可视化图表，并且支持进一步的智能数据分析。</p><p>SQLBot（https://github.com/dataease/SQLBot）是飞致云旗下DataEase开源项目组发起的智能问数项目，于2025年8月7日正式发布。截至2025年10月，SQLBot已经在GitHub上收获了超过3,000个Star，累计安装部署次数突破120,000次。</p><p>通过将SQLBot应用嵌入DataEase开源BI工具，可以让DataEase快速构建智能问数能力，从而实现BI工具与AI工具的智能协同，让用户的数据分析工作更加简单和轻松。本文将为您详细介绍将SQLBot嵌入DataEase的具体操作步骤。</p><p><img src="../images/blog/tutorial-20251015/dataease-015-01.png" alt="" loading="lazy" /></p><p>▲图1 在DataEase中嵌入SQLBot智能问数系统</p><p><strong>一、将DataEase和SQLBot升级至最新版本</strong></p><p>为了将SQLBot嵌入至DataEase，用户首先需要将DataEase升级至v2.10.13或以上版本，同时将SQLBot升级至v1.1.2或以上版本。</p><p>用户可以通过1Panel开源面板，对DataEase和SQLBot进行一键升级。</p><p><strong>二、在SQLBot创建高级应用</strong></p><p>在SQLBot中可以通过创建应用的方式，将SQLBot的智能问数能力嵌入至其他的软件或者系统。要将SQLBot嵌入DataEase，需要先创建一个高级的小助手应用。</p><p><strong>1. 创建高级应用</strong></p><p>在SQLBot中选择“系统管理”→“嵌入式管理”，进入“小助手嵌入”选项卡，在这里创建一个可以满足DataEase数据校验要求的高级应用，我们将其命名为“DataEase”。</p><p><img src="../images/blog/tutorial-20251015/dataease-015-02.png" alt="" loading="lazy" />▲图2 SQLBot“系统管理”界面</p><p><img src="../images/blog/tutorial-20251015/dataease-015-03.png" alt="" loading="lazy" />▲图3 在SQLBot中创建高级应用</p><p><strong>2. 填写应用信息</strong></p><p>① 填写应用的名称“DataEase”；</p><p>② 在“跨域设置”输入框中填写DataEase的服务器URL，并且点击“下一步”按钮；</p><p><img src="../images/blog/tutorial-20251015/dataease-015-04.png" alt="" loading="lazy" />▲图4 填写应用的基础信息</p><p>③ 填写“接口URL”，以定位DataEase中的数据资源；</p><p><img src="../images/blog/tutorial-20251015/dataease-015-05.png" alt="" loading="lazy" />▲图5 填写接口URL</p><p>④ 添加接口凭证，在接口凭证编辑框中填写如下信息：</p><p>凭证名称：user.token</p><p>源系统凭证类型：localStorage</p><p>目标凭证名称：x-de-token</p><p>目标凭证位置：header</p><p>目标凭证：JSON.parse(`${source_val}`)['v'].replace(/^['\"]|['\"]$/g, '')</p><p><img src="../images/blog/tutorial-20251015/dataease-015-06.png" alt="" loading="lazy" />▲图6 添加接口凭证</p><p><img src="../images/blog/tutorial-20251015/dataease-015-07.png" alt="" loading="lazy" />▲图7 编辑接口凭证信息</p><p><strong>三、将SQLBot应用嵌入DataEase</strong></p><p>我们已经在SQLBot中创建好名为“DataEase”的高级应用，接下来就可以将其嵌入信息填入DataEase的“第三方嵌入”界面，从而实现SQLBot在DataEase中的嵌入了。</p><p><strong>1. 调取SQLBot应用信息</strong></p><p>点击SQLBot中名为“DataEase”应用的“嵌入第三方”按钮，调取应用中的“SQLBot的服务器URL”和“应用ID”信息。</p><p><img src="../images/blog/tutorial-20251015/dataease-015-08.png" alt="" loading="lazy" />▲图8 SQLBot“嵌入式管理”界面</p><p><img src="../images/blog/tutorial-20251015/dataease-015-09.png" alt="" loading="lazy" />▲图9 SQLBot嵌入DataEase的应用信息</p><p><strong>2. 在DataEase中嵌入SQLBot应用</strong></p><p>① 进入DataEase的“系统设置”菜单，在“系统参数”页面选择“第三方嵌入”选项卡，在其中点击“嵌入”选项，嵌入SQLBot应用；</p><p><img src="../images/blog/tutorial-20251015/dataease-015-10.png" alt="" loading="lazy" />▲图10 DataEase“第三方嵌入”界面</p><p><img src="../images/blog/tutorial-20251015/dataease-015-11.png" alt="" loading="lazy" />▲图11 在DataEase中第三方嵌入SQLBot应用</p><p>② 将之前在SQLBot中创建好的“DataEase”应用中“SQLBot服务器URL”和“应用ID”填入对应的输入框中，校验成功并保存设置；</p><p><img src="../images/blog/tutorial-20251015/dataease-015-12.png" alt="" loading="lazy" />▲图12 在DataEase中填写SQLBot应用嵌入信息</p><p>③ 打开第三方嵌入应用的开关。</p><p><img src="../images/blog/tutorial-20251015/dataease-015-13.png" alt="" loading="lazy" />▲图13 打开SQLBot第三方嵌入应用开关</p><p><strong>四、在DataEase中进行SQLBot智能问数</strong></p><p>在上述步骤完成后，我们就可以在DataEase中开启自己的智能问数之旅了。</p><p>在DataEase首页的菜单栏，点击界面顶部的SQLBot图标，进入智能问数界面，即可通过自然语言提问的方式，对DataEase中的数据进行智能问数。用户可以基于数据直接生成可视化图表，并且可以让大模型对问数的结果进行进一步的数据分析。</p><p><img src="../images/blog/tutorial-20251015/dataease-015-14.png" alt="" loading="lazy" />▲图14 在DataEase中进行智能问数</p>
+                    <p>
+                        SQLBot是一款基于大语言模型（Large Language Model，LLM）和RAG（Retrieval Augmented
+                        Generation，检索增强生成）的开源智能问数系统。借助SQLBot，用户可以实现数据的即问即答，快速提炼获取所需的数据信息及可视化图表，并且支持进一步的智能数据分析。
+                    </p>
+                    <p>SQLBot（https://github.com/dataease/SQLBot）是飞致云旗下DataEase开源项目组发起的智能问数项目，于2025年8月7日正式发布。截至2025年10月，SQLBot已经在GitHub上收获了超过3,000个Star，累计安装部署次数突破120,000次。</p>
+                    <p>通过将SQLBot应用嵌入DataEase开源BI工具，可以让DataEase快速构建智能问数能力，从而实现BI工具与AI工具的智能协同，让用户的数据分析工作更加简单和轻松。本文将为您详细介绍将SQLBot嵌入DataEase的具体操作步骤。</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-01.png" alt="" loading="lazy" /></p>
+                    <p>▲图1 在DataEase中嵌入SQLBot智能问数系统</p>
+                    <p><strong>一、将DataEase和SQLBot升级至最新版本</strong></p>
+                    <p>为了将SQLBot嵌入至DataEase，用户首先需要将DataEase升级至v2.10.13或以上版本，同时将SQLBot升级至v1.1.2或以上版本。</p>
+                    <p>用户可以通过1Panel开源面板，对DataEase和SQLBot进行一键升级。</p>
+                    <p><strong>二、在SQLBot创建高级应用</strong></p>
+                    <p>在SQLBot中可以通过创建应用的方式，将SQLBot的智能问数能力嵌入至其他的软件或者系统。要将SQLBot嵌入DataEase，需要先创建一个高级的小助手应用。</p>
+                    <p><strong>1. 创建高级应用</strong></p>
+                    <p>在SQLBot中选择“系统管理”→“嵌入式管理”，进入“小助手嵌入”选项卡，在这里创建一个可以满足DataEase数据校验要求的高级应用，我们将其命名为“DataEase”。</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-02.png" alt="" loading="lazy" />▲图2 SQLBot“系统管理”界面</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-03.png" alt="" loading="lazy" />▲图3 在SQLBot中创建高级应用</p>
+                    <p><strong>2. 填写应用信息</strong></p>
+                    <p>① 填写应用的名称“DataEase”；</p>
+                    <p>② 在“跨域设置”输入框中填写DataEase的服务器URL，并且点击“下一步”按钮；</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-04.png" alt="" loading="lazy" />▲图4 填写应用的基础信息</p>
+                    <p>③ 填写“接口URL”，以定位DataEase中的数据资源；</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-05.png" alt="" loading="lazy" />▲图5 填写接口URL</p>
+                    <p>④ 添加接口凭证，在接口凭证编辑框中填写如下信息：</p>
+                    <p>凭证名称：user.token</p>
+                    <p>源系统凭证类型：localStorage</p>
+                    <p>目标凭证名称：x-de-token</p>
+                    <p>目标凭证位置：header</p>
+                    <p>目标凭证：JSON.parse(`${source_val}`)['v'].replace(/^['\"]|['\"]$/g, '')</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-06.png" alt="" loading="lazy" />▲图6 添加接口凭证</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-07.png" alt="" loading="lazy" />▲图7 编辑接口凭证信息</p>
+                    <p><strong>三、将SQLBot应用嵌入DataEase</strong></p>
+                    <p>我们已经在SQLBot中创建好名为“DataEase”的高级应用，接下来就可以将其嵌入信息填入DataEase的“第三方嵌入”界面，从而实现SQLBot在DataEase中的嵌入了。</p>
+                    <p><strong>1. 调取SQLBot应用信息</strong></p>
+                    <p>点击SQLBot中名为“DataEase”应用的“嵌入第三方”按钮，调取应用中的“SQLBot的服务器URL”和“应用ID”信息。</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-08.png" alt="" loading="lazy" />▲图8 SQLBot“嵌入式管理”界面</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-09.png" alt="" loading="lazy" />▲图9 SQLBot嵌入DataEase的应用信息</p>
+                    <p><strong>2. 在DataEase中嵌入SQLBot应用</strong></p>
+                    <p>① 进入DataEase的“系统设置”菜单，在“系统参数”页面选择“第三方嵌入”选项卡，在其中点击“嵌入”选项，嵌入SQLBot应用；</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-10.png" alt="" loading="lazy" />▲图10 DataEase“第三方嵌入”界面</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-11.png" alt="" loading="lazy" />▲图11 在DataEase中第三方嵌入SQLBot应用</p>
+                    <p>② 将之前在SQLBot中创建好的“DataEase”应用中“SQLBot服务器URL”和“应用ID”填入对应的输入框中，校验成功并保存设置；</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-12.png" alt="" loading="lazy" />▲图12 在DataEase中填写SQLBot应用嵌入信息</p>
+                    <p>③ 打开第三方嵌入应用的开关。</p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-13.png" alt="" loading="lazy" />▲图13 打开SQLBot第三方嵌入应用开关</p>
+                    <p><strong>四、在DataEase中进行SQLBot智能问数</strong></p>
+                    <p>在上述步骤完成后，我们就可以在DataEase中开启自己的智能问数之旅了。</p>
+                    <p>
+                        在DataEase首页的菜单栏，点击界面顶部的SQLBot图标，进入智能问数界面，即可通过自然语言提问的方式，对DataEase中的数据进行智能问数。用户可以基于数据直接生成可视化图表，并且可以让大模型对问数的结果进行进一步的数据分析。
+                    </p>
+                    <p><img src="../images/blog/tutorial-20251015/dataease-015-14.png" alt="" loading="lazy" />▲图14 在DataEase中进行智能问数</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程 | 在DataEase中嵌入SQLBot开源智能问数系统","item":"https://dataease.cn/blog/post-837dab0a-d140-48ea-a57c-38ac0b6095b9.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程 | 在DataEase中嵌入SQLBot开源智能问数系统","description":"让BI分析工具快速获得智能问数能力。","url":"https://dataease.cn/blog/post-837dab0a-d140-48ea-a57c-38ac0b6095b9.html","datePublished":"2025-10-15","dateModified":"2025-10-15","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程 | 在DataEase中嵌入SQLBot开源智能问数系统", "item": "https://dataease.cn/blog/post-837dab0a-d140-48ea-a57c-38ac0b6095b9.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程 | 在DataEase中嵌入SQLBot开源智能问数系统",
+                "description": "让BI分析工具快速获得智能问数能力。",
+                "url": "https://dataease.cn/blog/post-837dab0a-d140-48ea-a57c-38ac0b6095b9.html",
+                "datePublished": "2025-10-15",
+                "dateModified": "2025-10-15",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,164 +219,279 @@
                     <img src="../images/blog/common/dataease-112.jpg" alt="模板学堂丨DataEase用户操作日志分析大屏" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<em>https://dataease.io/templates/</em>）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。</p>
-<p>在11月7日发布的DataEase v1.16.0版本中，上线了一个全新的版块——应用。用户可通过创建应用，简单填入数据库对应的连接信息，DataEase将会根据应用内置的仪表板模板，自动创建出仪表板，以及该仪表板展示数据所依赖的数据集和数据源，让仪表板的创建更加快捷。</p>
-<p>多个DataEase环境中的仪表板迁移工作也可以通过“应用”功能来实现。用户可以在仪表板页面中选择将仪表板导出为“应用”，然后在另一个DataEase环境中导入该应用即可。</p>
+                    <p>
+                        DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<em>https://dataease.io/templates/</em>）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。
+                    </p>
+                    <p>
+                        在11月7日发布的DataEase
+                        v1.16.0版本中，上线了一个全新的版块——应用。用户可通过创建应用，简单填入数据库对应的连接信息，DataEase将会根据应用内置的仪表板模板，自动创建出仪表板，以及该仪表板展示数据所依赖的数据集和数据源，让仪表板的创建更加快捷。
+                    </p>
+                    <p>多个DataEase环境中的仪表板迁移工作也可以通过“应用”功能来实现。用户可以在仪表板页面中选择将仪表板导出为“应用”，然后在另一个DataEase环境中导入该应用即可。</p>
 
+                    <h2>
+                        <strong><em>模板与应用的区别</em></strong>
+                    </h2>
+                    <p><strong>1. 使用模板和应用创建仪表板的区别</strong></p>
+                    <p><strong>模板：</strong>DataEase生成仪表板并附带示例数据，用户在创建自己的仪表板时需要根据自己的数据情况自行手动创建数据源和数据集，并需要将仪表板中的示例数据替换为自己的真实数据；</p>
+                    <p><strong>应用：</strong>DataEase生成仪表板的同时生成其所对应的数据集和用户填入的数据源，无需用户再手动替换数据。</p>
+                    <p><strong>2. 两种文件在导出时有什么不同</strong></p>
+                    <p><strong>模板：</strong>所有仪表板均支持导出为模板，导出的模板文件附带示例数据，无相关联的数据集信息；</p>
+                    <p><strong>应用：</strong>导出的应用文件附带仪表板所需的数据集信息，使用Excel与API数据源的仪表板不支持导出为应用。</p>
+                    <p><strong>3. 模板和应用在使用场景上的倾向性</strong></p>
+                    <p><strong>模板：</strong>其面向的用户群体注重仪表板本身的样式设计布局等内容，不关心仪表板原本所连接的数据，使用范围更广；</p>
+                    <p><strong>应用：</strong>其面向的用户群体注重完整的一套对接及展示方案，有一定的针对性，适用于应用系统的对接，例如JumpServer应用、Zabbix应用等。</p>
 
-<h2><strong><em>模板与应用的区别</em></strong></h2>
-<p><strong>1. 使用模板和应用创建仪表板的区别</strong></p>
-<p><strong>模板：</strong>DataEase生成仪表板并附带示例数据，用户在创建自己的仪表板时需要根据自己的数据情况自行手动创建数据源和数据集，并需要将仪表板中的示例数据替换为自己的真实数据；</p>
-<p><strong>应用：</strong>DataEase生成仪表板的同时生成其所对应的数据集和用户填入的数据源，无需用户再手动替换数据。</p>
-<p><strong>2. 两种文件在导出时有什么不同</strong></p>
-<p><strong>模板：</strong>所有仪表板均支持导出为模板，导出的模板文件附带示例数据，无相关联的数据集信息；</p>
-<p><strong>应用：</strong>导出的应用文件附带仪表板所需的数据集信息，使用Excel与API数据源的仪表板不支持导出为应用。</p>
-<p><strong>3. 模板和应用在使用场景上的倾向性</strong></p>
-<p><strong>模板：</strong>其面向的用户群体注重仪表板本身的样式设计布局等内容，不关心仪表板原本所连接的数据，使用范围更广；</p>
-<p><strong>应用：</strong>其面向的用户群体注重完整的一套对接及展示方案，有一定的针对性，适用于应用系统的对接，例如JumpServer应用、Zabbix应用等。</p>
+                    <h2>
+                        <strong><em>11月上新模板</em></strong>
+                    </h2>
+                    <p>DataEase模板市场定期进行模板上新，11月共上新5个模板，涉及销售运营、运维安全审计、餐饮外卖等主题，应用软件大屏模板新增DataEase用户操作日志分析大屏，欢迎大家在DataEase模板市场下载使用。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-02.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-05.png" alt="" loading="lazy" /></figure>
 
+                    <h2>
+                        <strong><em>11月精选模板</em></strong>
+                    </h2>
+                    <p>
+                        本月为大家推荐的精选模板是DataEase用户操作日志分析大屏。DataEase是一款主打“人人可用”的开源数据可视化分析工具，它能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。
+                    </p>
+                    <p><strong>1. 大屏信息</strong></p>
+                    <p>■ 产品版本号：DataEase开源数据可视化分析平台 v1.16.0版本。</p>
+                    <p>■ 此次共统计13项指标，各指标项具情况体如下：</p>
+                    <figure>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>指标项</th>
+                                    <th>展示类型</th>
+                                    <th>图表类型</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>总用户数</td>
+                                    <td>数值</td>
+                                    <td>指标卡</td>
+                                </tr>
+                                <tr>
+                                    <td>今日活跃用户</td>
+                                    <td>数值</td>
+                                    <td>指标卡</td>
+                                </tr>
+                                <tr>
+                                    <td>近7日活跃用户</td>
+                                    <td>数值</td>
+                                    <td>指标卡</td>
+                                </tr>
+                                <tr>
+                                    <td>近30日活跃用户</td>
+                                    <td>数值</td>
+                                    <td>指标卡</td>
+                                </tr>
+                                <tr>
+                                    <td>近30日系统登录走势</td>
+                                    <td>趋势</td>
+                                    <td>折线图</td>
+                                </tr>
+                                <tr>
+                                    <td>PC端访问次数最多仪表板</td>
+                                    <td>比较</td>
+                                    <td>横向柱状图</td>
+                                </tr>
+                                <tr>
+                                    <td>移动端访问次数最多仪表板</td>
+                                    <td>比较</td>
+                                    <td>横向柱状图</td>
+                                </tr>
+                                <tr>
+                                    <td>仪表板资源各项操作总次数</td>
+                                    <td>比较</td>
+                                    <td>柱状图</td>
+                                </tr>
+                                <tr>
+                                    <td>近30日未使用用户</td>
+                                    <td>比较</td>
+                                    <td>表格</td>
+                                </tr>
+                                <tr>
+                                    <td>高频分享仪表板</td>
+                                    <td>比较</td>
+                                    <td>表格</td>
+                                </tr>
+                                <tr>
+                                    <td>高频授权仪表板</td>
+                                    <td>比较</td>
+                                    <td>表格</td>
+                                </tr>
+                                <tr>
+                                    <td>资源删除操作信息（实时）</td>
+                                    <td>信息</td>
+                                    <td>表格</td>
+                                </tr>
+                                <tr>
+                                    <td>高频编辑仪表板</td>
+                                    <td>比较</td>
+                                    <td>词云图</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </figure>
+                    <p><strong>2. 大屏展示</strong></p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
 
-<h2><strong><em>11月上新模板</em></strong></h2>
-<p>DataEase模板市场定期进行模板上新，11月共上新5个模板，涉及销售运营、运维安全审计、餐饮外卖等主题，应用软件大屏模板新增DataEase用户操作日志分析大屏，欢迎大家在DataEase模板市场下载使用。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-02.jpg" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-03.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-04.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-05.png" alt="" loading="lazy" /></figure>
-
-
-<h2><strong><em>11月精选模板</em></strong></h2>
-<p>本月为大家推荐的精选模板是DataEase用户操作日志分析大屏。DataEase是一款主打“人人可用”的开源数据可视化分析工具，它能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便地与他人分享。</p>
-<p><strong>1. 大屏信息</strong></p>
-<p>■ 产品版本号：DataEase开源数据可视化分析平台 v1.16.0版本。</p>
-<p>■ 此次共统计13项指标，各指标项具情况体如下：</p>
-<figure><table><thead><tr><th>指标项</th><th>展示类型</th><th>图表类型</th></tr></thead><tbody><tr><td>总用户数</td><td>数值</td><td>指标卡</td></tr><tr><td>今日活跃用户</td><td>数值</td><td>指标卡</td></tr><tr><td>近7日活跃用户</td><td>数值</td><td>指标卡</td></tr><tr><td>近30日活跃用户</td><td>数值</td><td>指标卡</td></tr><tr><td>近30日系统登录走势</td><td>趋势</td><td>折线图</td></tr><tr><td>PC端访问次数最多仪表板</td><td>比较</td><td>横向柱状图</td></tr><tr><td>移动端访问次数最多仪表板</td><td>比较</td><td>横向柱状图</td></tr><tr><td>仪表板资源各项操作总次数</td><td>比较</td><td>柱状图</td></tr><tr><td>近30日未使用用户</td><td>比较</td><td>表格</td></tr><tr><td>高频分享仪表板</td><td>比较</td><td>表格</td></tr><tr><td>高频授权仪表板</td><td>比较</td><td>表格</td></tr><tr><td>资源删除操作信息（实时）</td><td>信息</td><td>表格</td></tr><tr><td>高频编辑仪表板</td><td>比较</td><td>词云图</td></tr></tbody></table></figure>
-<p><strong>2. 大屏展示</strong></p>
-<figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
-
-
-<h2><strong><em>应用使用指南</em></strong></h2>
-<p>接下来，为大家详细讲解DataEase应用的管理与使用，以及如何使用“应用”功能来制作DataEase用户操作日志分析大屏。</p>
-<p><strong>1. 使用模板创建仪表板</strong></p>
-<p><strong>1.1 模板市场下载应用</strong></p>
-<p>访问DataEase在线模板市场（<em>https://dataease.io/templates/</em>），选择一个系统对接类的模板，详情页面右侧有“模板下载”与“应用下载”两个按钮，点击“应用下载”按钮即可将其对应的应用文件下载到本地。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-07.png" alt="" loading="lazy" /></figure>
-<p>只有系统对接类的仪表板才会提供应用文件，您也可以点击“应用下载”标签，该标签下的大屏均同时提供模板下载与应用下载。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-08.png" alt="" loading="lazy" /></figure>
-<p>其他模板仍然只提供模板文件的下载。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-09.jpg" alt="" loading="lazy" /></figure>
-<p><strong>1.2 DataEase导出应用</strong></p>
-<p>在DataEase中的“仪表板”页面选择“导出为应用”选项，将DataEase中制作好的仪表板导出为应用。需要注意的是，可以导出为应用的仪表板所使用的数据集不能来自Excel或API，且所有数据集均来源于同一个数据源。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-10.png" alt="" loading="lazy" /></figure>
-<p>应用导出前，需要填写应用名称、应用版本、DataEase最低版本、作者等信息，填写完成后点击“导出”按钮，即可导出该仪表板所对应的应用文件至本地。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-11.png" alt="" loading="lazy" /></figure>
-<p><strong>2. 应用的上传与管理</strong></p>
-<p>选择“系统管理”→“应用管理”，在设置页面中支持维护应用分类、上传应用、更新应用、卸载应用等功能。</p>
-<p><strong>2.1 添加应用分类</strong></p>
-<p>在“应用管理”页面中选择新增一个DataEase主题的应用分类，用来放置与DataEase相关的应用文件。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-12.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-13.png" alt="" loading="lazy" /></figure>
-<p><strong>2.2 上传应用</strong></p>
-<p>接下来，把从模板市场上下载的“DataEase用户操作日志分析.zip”文件上传至新建的分类目录下，上传时可配置应用名称，同时可预览仪表板效果。确认无误后点击“确定”按钮。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-14.png" alt="" loading="lazy" /></figure>
-<p><strong>2.3 更新应用</strong></p>
-<p>在后续使用的过程中，如果应用文件有版本更新，直接在原应用上进行更新。在“应用管理”页面中，选择应用后点击“更新”按钮即可。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-15.png" alt="" loading="lazy" /></figure>
-<p><strong>2.4 卸载应用</strong></p>
-<p>如果该应用后续不再需要，可以进行卸载操作。在“应用管理”页面中，选择应用后点击“卸载”按钮即可。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-16.png" alt="" loading="lazy" /></figure>
-<p><strong>3. 应用的使用</strong></p>
-<p>在DataEase中切换至“应用”页面，可以看到已经维护好的应用分类与应用文件。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-17.png" alt="" loading="lazy" /></figure>
-<p><strong>3.1 预览应用</strong></p>
-<p>选择一个应用文件，点击“预览”按钮，可进一步放大查看仪表板的内容。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-18.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-19.png" alt="" loading="lazy" /></figure>
-<p><strong>3.2 使用应用</strong></p>
-<p>在DataEase的“应用”页面中，选择一个需要使用的应用文件，点击“应用”按钮。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-20.png" alt="" loading="lazy" /></figure>
-<p>点击“应用”按钮后右侧会弹出需要配置的信息框，使用者可进一步设置生成的仪表板所需要放置的位置、生成仪表板的名称、生成的数据集组所需放置的位置、生成的数据集组名称等基本信息。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-21.png" alt="" loading="lazy" /></figure>
-<p>下拉该信息框，可以进一步配置数据源信息。该内容为仪表板生成后的数据链接来源，比如示例链接的是DataEase数据库的仪表板，所以配置DataEase本身的数据库链接信息即可。此处的配置信息与在数据源模块配置数据源的参数一致。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-22.png" alt="" loading="lazy" /></figure>
-<p>配置完成后，可以点击“校验”按钮确认配置的数据源是否正确与连通，确认无误后点击“保存”按钮。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-23.png" alt="" loading="lazy" /></figure>
-<p>系统根据上述配置将会生成对应的仪表板、数据集组、数据源以及相关的关联信息。此时已经可以看到新创建的DataEase日志仪表板展示的已经是我们自己的DataEase数据信息了。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-24.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-25.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/template-20221129/dataease-115-26.png" alt="" loading="lazy" /></figure>
-<p><strong>4. 最终效果</strong></p>
-<p>完成上述步骤后，属于自己的DataEase用户操作日志分析大屏就完成了。如果我们还想做一些别的调整，可以根据自己的需求进行修改。所有新生成的仪表板、数据集、数据源都已经成为我们自己DataEase中的新资源，和其他可操作的资源是一致的。</p>
-<figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
+                    <h2>
+                        <strong><em>应用使用指南</em></strong>
+                    </h2>
+                    <p>接下来，为大家详细讲解DataEase应用的管理与使用，以及如何使用“应用”功能来制作DataEase用户操作日志分析大屏。</p>
+                    <p><strong>1. 使用模板创建仪表板</strong></p>
+                    <p><strong>1.1 模板市场下载应用</strong></p>
+                    <p>访问DataEase在线模板市场（<em>https://dataease.io/templates/</em>），选择一个系统对接类的模板，详情页面右侧有“模板下载”与“应用下载”两个按钮，点击“应用下载”按钮即可将其对应的应用文件下载到本地。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-07.png" alt="" loading="lazy" /></figure>
+                    <p>只有系统对接类的仪表板才会提供应用文件，您也可以点击“应用下载”标签，该标签下的大屏均同时提供模板下载与应用下载。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-08.png" alt="" loading="lazy" /></figure>
+                    <p>其他模板仍然只提供模板文件的下载。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-09.jpg" alt="" loading="lazy" /></figure>
+                    <p><strong>1.2 DataEase导出应用</strong></p>
+                    <p>在DataEase中的“仪表板”页面选择“导出为应用”选项，将DataEase中制作好的仪表板导出为应用。需要注意的是，可以导出为应用的仪表板所使用的数据集不能来自Excel或API，且所有数据集均来源于同一个数据源。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-10.png" alt="" loading="lazy" /></figure>
+                    <p>应用导出前，需要填写应用名称、应用版本、DataEase最低版本、作者等信息，填写完成后点击“导出”按钮，即可导出该仪表板所对应的应用文件至本地。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-11.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2. 应用的上传与管理</strong></p>
+                    <p>选择“系统管理”→“应用管理”，在设置页面中支持维护应用分类、上传应用、更新应用、卸载应用等功能。</p>
+                    <p><strong>2.1 添加应用分类</strong></p>
+                    <p>在“应用管理”页面中选择新增一个DataEase主题的应用分类，用来放置与DataEase相关的应用文件。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-13.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2.2 上传应用</strong></p>
+                    <p>接下来，把从模板市场上下载的“DataEase用户操作日志分析.zip”文件上传至新建的分类目录下，上传时可配置应用名称，同时可预览仪表板效果。确认无误后点击“确定”按钮。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-14.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2.3 更新应用</strong></p>
+                    <p>在后续使用的过程中，如果应用文件有版本更新，直接在原应用上进行更新。在“应用管理”页面中，选择应用后点击“更新”按钮即可。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-15.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2.4 卸载应用</strong></p>
+                    <p>如果该应用后续不再需要，可以进行卸载操作。在“应用管理”页面中，选择应用后点击“卸载”按钮即可。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-16.png" alt="" loading="lazy" /></figure>
+                    <p><strong>3. 应用的使用</strong></p>
+                    <p>在DataEase中切换至“应用”页面，可以看到已经维护好的应用分类与应用文件。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-17.png" alt="" loading="lazy" /></figure>
+                    <p><strong>3.1 预览应用</strong></p>
+                    <p>选择一个应用文件，点击“预览”按钮，可进一步放大查看仪表板的内容。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-18.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-19.png" alt="" loading="lazy" /></figure>
+                    <p><strong>3.2 使用应用</strong></p>
+                    <p>在DataEase的“应用”页面中，选择一个需要使用的应用文件，点击“应用”按钮。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-20.png" alt="" loading="lazy" /></figure>
+                    <p>点击“应用”按钮后右侧会弹出需要配置的信息框，使用者可进一步设置生成的仪表板所需要放置的位置、生成仪表板的名称、生成的数据集组所需放置的位置、生成的数据集组名称等基本信息。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-21.png" alt="" loading="lazy" /></figure>
+                    <p>下拉该信息框，可以进一步配置数据源信息。该内容为仪表板生成后的数据链接来源，比如示例链接的是DataEase数据库的仪表板，所以配置DataEase本身的数据库链接信息即可。此处的配置信息与在数据源模块配置数据源的参数一致。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-22.png" alt="" loading="lazy" /></figure>
+                    <p>配置完成后，可以点击“校验”按钮确认配置的数据源是否正确与连通，确认无误后点击“保存”按钮。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-23.png" alt="" loading="lazy" /></figure>
+                    <p>系统根据上述配置将会生成对应的仪表板、数据集组、数据源以及相关的关联信息。此时已经可以看到新创建的DataEase日志仪表板展示的已经是我们自己的DataEase数据信息了。</p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-24.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-25.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-26.png" alt="" loading="lazy" /></figure>
+                    <p><strong>4. 最终效果</strong></p>
+                    <p>
+                        完成上述步骤后，属于自己的DataEase用户操作日志分析大屏就完成了。如果我们还想做一些别的调整，可以根据自己的需求进行修改。所有新生成的仪表板、数据集、数据源都已经成为我们自己DataEase中的新资源，和其他可操作的资源是一致的。
+                    </p>
+                    <figure><img src="../images/blog/template-20221129/dataease-115-01.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂丨DataEase用户操作日志分析大屏","item":"https://dataease.cn/blog/post-5131.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂丨DataEase用户操作日志分析大屏","description":"DataEase用户操作日志分析大屏上线，看看如何使用最新“应用”功能制作大屏！","url":"https://dataease.cn/blog/post-5131.html","datePublished":"2022-11-29","dateModified":"2022-11-29","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-112.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "模板学堂丨DataEase用户操作日志分析大屏", "item": "https://dataease.cn/blog/post-5131.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "模板学堂丨DataEase用户操作日志分析大屏",
+                "description": "DataEase用户操作日志分析大屏上线，看看如何使用最新“应用”功能制作大屏！",
+                "url": "https://dataease.cn/blog/post-5131.html",
+                "datePublished": "2022-11-29",
+                "dateModified": "2022-11-29",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-112.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

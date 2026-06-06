@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,202 @@
                     <img src="../images/blog/news-20240612/dataease-054.jpg" alt="学习笔记丨嵌入式BI分析的12个关键功能" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><em>编者注：以下内容节选编译自嵌入式分析厂商Qrvey发表的《What is Embedded Analytics?》（什么是嵌入式分析）一文（</em><a href="https://qrvey.com/blog/what-is-embedded-analytics/?ref=hackernoon.com" target="_blank" rel="noopener noreferrer"><em>https://qrvey.com/blog/what-is-embedded-analytics/?ref=hackernoon.com</em></a><em>），作者为Qrvey产品市场主管Brian Dreyer。</em></p><h2 id="%E4%BB%80%E4%B9%88%E6%98%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%88%86%E6%9E%90%EF%BC%9F"><span>什么是嵌入式分析？</span></h2><p><span>嵌入式分析是指能够将数据分析的特性和功能纳入到某个应用程序内部的技术能力。</span></p><p><span>根据咨询机构Dresner于2023年发布的嵌入式BI市场研究显示，当前市场中嵌入式BI的使用率为49%，且技术采纳的需求仍然旺盛。同时，有86%的行业受访者表示，嵌入式BI是关键或者是非常重要的。</span></p><p><img src="../images/blog/news-20240612/dataease-054-01.jpg" alt="" loading="lazy" /></p><h2 id="%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%88%86%E6%9E%90%E7%9A%8412%E4%B8%AA%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD"><span>嵌入式分析的12个关键功能</span></h2><p><strong><span>1. 自助式、易于构建的图表和仪表板</span></strong></p><p><span>用户通过简单的点击操作就可以制作出美观的数据可视化大屏。一款自助式、可交互的图表工具一定是易于使用的，并且包含多种仪表板生成组件，以方便用户自定义制作仪表板和报告。</span></p><p><strong><span>2. 支持多种数据类型</span></strong></p><p><span>由于大多数的传统数据分析工具只适用于对结构化数据的分析，这就导致有超过70%的业务数据并未被分析利用。为了获得充分的数据洞察，用户需要整合所有的数据资源，其中就包含半结构化数据源（例如表单）和非结构化数据源（例如图像）。</span></p><p><strong><span>3. 工作流与自动化</span></strong></p><p><span>比起用户自己在嵌入式分析平台中发现新的数据洞察，由平台自动识别并展现的数据洞察更加受到用户的青睐。自动化的嵌入式分析可以在满足条件时提醒用户，当到达一定的阈值时则可以触发工作流。</span></p><p><span>在自助式工作流构建工具的帮助下，没有技术背景的用户也可以轻松地自动化执行常规任务，并且在条件发生改变时执行其他指定的操作。自动化操作可以在接收到新数据或者达到用户自定义的指标和阈值条件时触发，允许创建各种类型的数据驱动的应用。</span></p><p><span>条件规则和ML模型的设置可以为工作流与应用引入强大的业务逻辑。自动化能力让你的分析平台实现24小时不间断工作。</span></p><p><strong><span>4. 可共享的洞察</span></strong></p><p><span>在获取到了有价值的数据洞察后，用户要能够轻松地共享和传播这些洞察。嵌入式分析平台需要具备完整的互动性，并内置数据安全性的“多页与多标签页报告”等功能。经过内容推送设置等功能，嵌入式分析平台能够以设定好的频率向特定租户推送模板和仪表板。</span></p><p><strong><span>5. 交互性，例如数据的下钻和钻取</span></strong></p><p><span>用户需要能够与数据报告产生交互，从而轻松地按需访问更进一步的数据信息。嵌入式BI的下钻功能让用户可以从级别较高的维度深入至更细粒度的数据信息（例如从国家深入至省份）；钻取功能则让用户可以在分析同一数据集时，从当前数据分析页面直接跳转至与之相关的另一报告页面。最后，高级过滤选项可以帮助用户精准筛选报告中所呈现的数据。</span></p><p><strong><span>6. 数据安全性和托管访问控制</span></strong></p><p><span>为了确保记录数据与列数据的安全性，嵌入式分析平台允许管理员为数据集粒度级别的数据设置访问限制，这样每个用户只能访问其自身权限以内的数据信息。用户对数据、洞察以及应用程序的访问权限均与管理员设置的用户权限保持一致。</span></p><p><span>用户可以通过单点登录的方式，将嵌入式分析平台无缝集成到SaaS应用中。前提是要确保该嵌入式分析平台的安全工具与功能支持多租户SaaS应用，并且最好继承包括所有规则与策略在内的原有安全模型。</span></p><p><img src="../images/blog/news-20240612/dataease-054-02.jpg" alt="" loading="lazy" /></p><p><strong><span>7. 可以部署至SaaS环境</span></strong></p><p><span>为更好地管理数据，实现数据安全最大化，将嵌入式分析软件部署至私有环境的能力是非常重要的。此外，这种嵌入式部署方案还需要能够继承用户现有的安全政策，用户无需额外使用第三方软件来管控自己的数据。</span></p><p><span>将嵌入式分析能力部署到用户自己的云，用户的数据可以永久保存在其自己的账户中。这使得用户可以无后顾之忧地管理和分析私有环境中的数据。</span></p><p><span>为了适应软件开发生命周期（Software Development Life Cycle，即SDLC），用户还需要能够将嵌入式分析软件部署至代码仓库与多个开发环境中。</span></p><p><strong><span>8. 白标定制和UI定制</span></strong></p><p><span>与自研相比，按需选用第三方嵌入式产品具有多方面的优势。为了对用户做到无感知，嵌入式分析软件应该是高度可定制的，CSS（层叠样式表单）、主题等都可以根据用户的需求更新，确保嵌入式分析能力能够无缝融入SaaS应用中。用户体验需要保持一致性，白标嵌入也是不错的选择。</span></p><p><strong><span>9. 原生的多租户体系</span></strong></p><p><span>内置开箱即用的多租户体系对于嵌入式分析至关重要。相较于许多需要大量定制开发才能实现多租户的解决方案，原生的多租户体系可以有效加速应用上线进程。</span></p><p><strong><span>10. 无限制的用户许可</span></strong></p><p><span>预测到底有多少用户会在SaaS应用中使用到嵌入式分析功能是不现实的。因此，理想的解决方案是提供无限制的用户许可。大多数传统的BI解决方案提供的是约束性的用户许可机制，这无疑将阻碍产品在客户侧的采纳。基于用户数的许可机制是一个重要的成本驱动因素，它可能会阻碍厂商获得积极的投资回报率。</span></p><p><strong><span>11. 一切皆可嵌入</span></strong></p><p><span>一个合格的嵌入式分析解决方案应该提供多个完全可通过JavaScript而非iframe嵌入的组件，以实现无缝的用户体验。这些可嵌入的组件包括图表组件、仪表板与数据大屏设计器、数据管理中心、自动化规则管理中心等。</span></p><p><strong><span>12. 易于集成数据</span></strong></p><p><span>嵌入式分析的预置数据库连接器和方便易用的API对于快速集成与产品快速上线而言至关重要。此外，对结构化数据（SQL）与半结构化数据（NoSQL）的原生支持意味着嵌入式分析解决方案具有更高的灵活性，可以减少无用的转换和流程处理操作。</span></p><p>DataEase嵌入式版（官方主页：<a href="https://dataease.io/embedded-bi.html" target="_blank" rel="noopener noreferrer"><em>https://dataease.io/embedded-bi.html</em></a>）已正式上线，欢迎广大ISV伙伴前来DataEase嵌入式分析体验环境（<a href="https://embedded-bi.dataease.cn/" target="_blank" rel="noopener noreferrer"><em>https://embedded-bi.dataease.cn/</em></a>）体验试用。</p><p><br /></p>
+                    <p>
+                        <em>编者注：以下内容节选编译自嵌入式分析厂商Qrvey发表的《What is Embedded Analytics?》（什么是嵌入式分析）一文（</em
+                        ><a href="https://qrvey.com/blog/what-is-embedded-analytics/?ref=hackernoon.com" target="_blank" rel="noopener noreferrer"><em>https://qrvey.com/blog/what-is-embedded-analytics/?ref=hackernoon.com</em></a
+                        ><em>），作者为Qrvey产品市场主管Brian Dreyer。</em>
+                    </p>
+                    <h2 id="%E4%BB%80%E4%B9%88%E6%98%AF%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%88%86%E6%9E%90%EF%BC%9F"><span>什么是嵌入式分析？</span></h2>
+                    <p><span>嵌入式分析是指能够将数据分析的特性和功能纳入到某个应用程序内部的技术能力。</span></p>
+                    <p><span>根据咨询机构Dresner于2023年发布的嵌入式BI市场研究显示，当前市场中嵌入式BI的使用率为49%，且技术采纳的需求仍然旺盛。同时，有86%的行业受访者表示，嵌入式BI是关键或者是非常重要的。</span></p>
+                    <p><img src="../images/blog/news-20240612/dataease-054-01.jpg" alt="" loading="lazy" /></p>
+                    <h2 id="%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%88%86%E6%9E%90%E7%9A%8412%E4%B8%AA%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD"><span>嵌入式分析的12个关键功能</span></h2>
+                    <p>
+                        <strong><span>1. 自助式、易于构建的图表和仪表板</span></strong>
+                    </p>
+                    <p><span>用户通过简单的点击操作就可以制作出美观的数据可视化大屏。一款自助式、可交互的图表工具一定是易于使用的，并且包含多种仪表板生成组件，以方便用户自定义制作仪表板和报告。</span></p>
+                    <p>
+                        <strong><span>2. 支持多种数据类型</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >由于大多数的传统数据分析工具只适用于对结构化数据的分析，这就导致有超过70%的业务数据并未被分析利用。为了获得充分的数据洞察，用户需要整合所有的数据资源，其中就包含半结构化数据源（例如表单）和非结构化数据源（例如图像）。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>3. 工作流与自动化</span></strong>
+                    </p>
+                    <p><span>比起用户自己在嵌入式分析平台中发现新的数据洞察，由平台自动识别并展现的数据洞察更加受到用户的青睐。自动化的嵌入式分析可以在满足条件时提醒用户，当到达一定的阈值时则可以触发工作流。</span></p>
+                    <p>
+                        <span
+                            >在自助式工作流构建工具的帮助下，没有技术背景的用户也可以轻松地自动化执行常规任务，并且在条件发生改变时执行其他指定的操作。自动化操作可以在接收到新数据或者达到用户自定义的指标和阈值条件时触发，允许创建各种类型的数据驱动的应用。</span
+                        >
+                    </p>
+                    <p><span>条件规则和ML模型的设置可以为工作流与应用引入强大的业务逻辑。自动化能力让你的分析平台实现24小时不间断工作。</span></p>
+                    <p>
+                        <strong><span>4. 可共享的洞察</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >在获取到了有价值的数据洞察后，用户要能够轻松地共享和传播这些洞察。嵌入式分析平台需要具备完整的互动性，并内置数据安全性的“多页与多标签页报告”等功能。经过内容推送设置等功能，嵌入式分析平台能够以设定好的频率向特定租户推送模板和仪表板。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>5. 交互性，例如数据的下钻和钻取</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >用户需要能够与数据报告产生交互，从而轻松地按需访问更进一步的数据信息。嵌入式BI的下钻功能让用户可以从级别较高的维度深入至更细粒度的数据信息（例如从国家深入至省份）；钻取功能则让用户可以在分析同一数据集时，从当前数据分析页面直接跳转至与之相关的另一报告页面。最后，高级过滤选项可以帮助用户精准筛选报告中所呈现的数据。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>6. 数据安全性和托管访问控制</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >为了确保记录数据与列数据的安全性，嵌入式分析平台允许管理员为数据集粒度级别的数据设置访问限制，这样每个用户只能访问其自身权限以内的数据信息。用户对数据、洞察以及应用程序的访问权限均与管理员设置的用户权限保持一致。</span
+                        >
+                    </p>
+                    <p><span>用户可以通过单点登录的方式，将嵌入式分析平台无缝集成到SaaS应用中。前提是要确保该嵌入式分析平台的安全工具与功能支持多租户SaaS应用，并且最好继承包括所有规则与策略在内的原有安全模型。</span></p>
+                    <p><img src="../images/blog/news-20240612/dataease-054-02.jpg" alt="" loading="lazy" /></p>
+                    <p>
+                        <strong><span>7. 可以部署至SaaS环境</span></strong>
+                    </p>
+                    <p><span>为更好地管理数据，实现数据安全最大化，将嵌入式分析软件部署至私有环境的能力是非常重要的。此外，这种嵌入式部署方案还需要能够继承用户现有的安全政策，用户无需额外使用第三方软件来管控自己的数据。</span></p>
+                    <p><span>将嵌入式分析能力部署到用户自己的云，用户的数据可以永久保存在其自己的账户中。这使得用户可以无后顾之忧地管理和分析私有环境中的数据。</span></p>
+                    <p><span>为了适应软件开发生命周期（Software Development Life Cycle，即SDLC），用户还需要能够将嵌入式分析软件部署至代码仓库与多个开发环境中。</span></p>
+                    <p>
+                        <strong><span>8. 白标定制和UI定制</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >与自研相比，按需选用第三方嵌入式产品具有多方面的优势。为了对用户做到无感知，嵌入式分析软件应该是高度可定制的，CSS（层叠样式表单）、主题等都可以根据用户的需求更新，确保嵌入式分析能力能够无缝融入SaaS应用中。用户体验需要保持一致性，白标嵌入也是不错的选择。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>9. 原生的多租户体系</span></strong>
+                    </p>
+                    <p><span>内置开箱即用的多租户体系对于嵌入式分析至关重要。相较于许多需要大量定制开发才能实现多租户的解决方案，原生的多租户体系可以有效加速应用上线进程。</span></p>
+                    <p>
+                        <strong><span>10. 无限制的用户许可</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >预测到底有多少用户会在SaaS应用中使用到嵌入式分析功能是不现实的。因此，理想的解决方案是提供无限制的用户许可。大多数传统的BI解决方案提供的是约束性的用户许可机制，这无疑将阻碍产品在客户侧的采纳。基于用户数的许可机制是一个重要的成本驱动因素，它可能会阻碍厂商获得积极的投资回报率。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>11. 一切皆可嵌入</span></strong>
+                    </p>
+                    <p><span>一个合格的嵌入式分析解决方案应该提供多个完全可通过JavaScript而非iframe嵌入的组件，以实现无缝的用户体验。这些可嵌入的组件包括图表组件、仪表板与数据大屏设计器、数据管理中心、自动化规则管理中心等。</span></p>
+                    <p>
+                        <strong><span>12. 易于集成数据</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >嵌入式分析的预置数据库连接器和方便易用的API对于快速集成与产品快速上线而言至关重要。此外，对结构化数据（SQL）与半结构化数据（NoSQL）的原生支持意味着嵌入式分析解决方案具有更高的灵活性，可以减少无用的转换和流程处理操作。</span
+                        >
+                    </p>
+                    <p>
+                        DataEase嵌入式版（官方主页：<a href="https://dataease.io/embedded-bi.html" target="_blank" rel="noopener noreferrer"><em>https://dataease.io/embedded-bi.html</em></a
+                        >）已正式上线，欢迎广大ISV伙伴前来DataEase嵌入式分析体验环境（<a href="https://embedded-bi.dataease.cn/" target="_blank" rel="noopener noreferrer"><em>https://embedded-bi.dataease.cn/</em></a
+                        >）体验试用。
+                    </p>
+                    <p><br /></p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"学习笔记丨嵌入式BI分析的12个关键功能","item":"https://dataease.cn/blog/post-66758c79-8677-4819-bdec-3dea99362f18.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"学习笔记丨嵌入式BI分析的12个关键功能","description":"研究显示，当前市场中嵌入式BI的使用率为49%，且技术采纳的需求仍然旺盛。","url":"https://dataease.cn/blog/post-66758c79-8677-4819-bdec-3dea99362f18.html","datePublished":"2024-06-12","dateModified":"2024-06-12","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/news-20240612/dataease-054.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "学习笔记丨嵌入式BI分析的12个关键功能", "item": "https://dataease.cn/blog/post-66758c79-8677-4819-bdec-3dea99362f18.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "学习笔记丨嵌入式BI分析的12个关键功能",
+                "description": "研究显示，当前市场中嵌入式BI的使用率为49%，且技术采纳的需求仍然旺盛。",
+                "url": "https://dataease.cn/blog/post-66758c79-8677-4819-bdec-3dea99362f18.html",
+                "datePublished": "2024-06-12",
+                "dateModified": "2024-06-12",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/news-20240612/dataease-054.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

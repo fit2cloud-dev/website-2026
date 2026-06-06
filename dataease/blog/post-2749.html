@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,161 +219,189 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>最近在逛掘金的时候发现Java分类的Github Trending榜单上出现了一个名为DataEase的项目。看名字原以为是一个大数据处理框架之类的项目，点进去看了一下，才发现原来是个开源的数据可视化平台，再到项目官网的Demo环境看了一眼，瞬间就来劲了，官方提供的几个示例仪表盘属实酷炫，秉着学无止境的态度，我准备上手体验一下。</p>
+                    <p>
+                        最近在逛掘金的时候发现Java分类的Github
+                        Trending榜单上出现了一个名为DataEase的项目。看名字原以为是一个大数据处理框架之类的项目，点进去看了一下，才发现原来是个开源的数据可视化平台，再到项目官网的Demo环境看了一眼，瞬间就来劲了，官方提供的几个示例仪表盘属实酷炫，秉着学无止境的态度，我准备上手体验一下。
+                    </p>
 
+                    <h2>项目简介</h2>
+                    <p>DataEase是开源的数据可视化分析工具，能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。</p>
+                    <p><strong>DataEase的功能：</strong></p>
+                    <p><strong>1. 图表展示：</strong>支持PC端、移动端及大屏;</p>
+                    <p><strong>2. 图表制作：</strong>支持丰富的图表类型（基于Apache ECharts实现）、支持拖拉拽方式快速制作仪表板;</p>
+                    <p><strong>3. 数据引擎：</strong>支持直连模式、本地模式（基于Apache Doris/Kettle实现）;</p>
+                    <p><strong>4. 数据连接：</strong>支持关系型数据库、Excel等文件、Hadoop等大数据平台、NoSQL等各种数据源。</p>
+                    <p><strong>DataEase的优势：</strong></p>
+                    <p><strong>1. 开源开放：</strong>零门槛，线上快速获取和安装；快速获取用户反馈、按月发布新版本；</p>
+                    <p><strong>2. 简单易用：</strong>极易上手，通过鼠标点击和拖拽即可完成分析；</p>
+                    <p><strong>3. 秒级响应：</strong>集成Apache Doris，超大数据量下秒级查询返回延时；</p>
+                    <p><strong>4. 安全分享：</strong>支持多种数据分享方式，确保数据安全。</p>
 
-<h2>项目简介</h2>
-<p>DataEase是开源的数据可视化分析工具，能够帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。</p>
-<p><strong>DataEase的功能：</strong></p>
-<p><strong>1. 图表展示：</strong>支持PC端、移动端及大屏;</p>
-<p><strong>2. 图表制作：</strong>支持丰富的图表类型（基于Apache ECharts实现）、支持拖拉拽方式快速制作仪表板;</p>
-<p><strong>3. 数据引擎：</strong>支持直连模式、本地模式（基于Apache Doris/Kettle实现）;</p>
-<p><strong>4. 数据连接：</strong>支持关系型数据库、Excel等文件、Hadoop等大数据平台、NoSQL等各种数据源。</p>
-<p><strong>DataEase的优势：</strong></p>
-<p><strong>1. 开源开放：</strong>零门槛，线上快速获取和安装；快速获取用户反馈、按月发布新版本；</p>
-<p><strong>2. 简单易用：</strong>极易上手，通过鼠标点击和拖拽即可完成分析；</p>
-<p><strong>3. 秒级响应：</strong>集成Apache Doris，超大数据量下秒级查询返回延时；</p>
-<p><strong>4. 安全分享：</strong>支持多种数据分享方式，确保数据安全。</p>
+                    <h2>实现流程</h2>
+                    <p>总的来说，这次使用DataEase开源数据可视化工具制作王者荣耀游戏数据的仪表板，主要分为以下几个步骤：</p>
+                    <p>1. 使用抓包工具Charles来获取接口；</p>
+                    <p>2. 将接口导入开源持续测试平台MeterSphere，测试接口，并提取所需参数，通过后置的Python脚本处理数据；</p>
+                    <p>3. 通过MeterSphere将处理完成后的数据保存至MySQL数据源；</p>
+                    <p>4. 通过开源数据可视化平台DataEase制作仪表板来展示游戏数据。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-01.png" alt="" loading="lazy" /></figure>
 
+                    <h2>确定展示内容</h2>
+                    <p>
+                        根据官网的介绍和文档，做了几个简单的图表之后，发现这个DataEase确实有点意思，点一点，拖拽一下就能做出简洁明了的数据面板。刚好最近公司在举办王者荣耀大赛，突然想到能不能用这个DataEase做一个展示个人战绩的大屏？心动不如行动，马上安排！
+                    </p>
+                    <p>关于环境搭建的部分，由于官网提供了一键安装部署的脚本，直接运行就可以，这边就不再展示安装过程了。</p>
+                    <p>然后根据我的理解，要展示一个玩家的战绩主要可以从两个方面入手，第一个是英雄数据，第二个是战斗数据。当然，如果能拿到一些有趣的数据的话也可以展示出来，比如皮肤数数量、各时间段胜率等。</p>
+                    <p>
+                        关于英雄数据的话，主要可以展示英雄的数量、类型分布还有战斗次数，从这几个数据就能看出玩家大致的技术类型，也就是常说的ADC、上单、打野、辅助、中单。关于战斗数据的话，主要就是展示玩家的战绩了，比如不同英雄类型的胜率、总体胜率、近期K/D/A和近期胜率等。
+                    </p>
 
-<h2>实现流程</h2>
-<p>总的来说，这次使用DataEase开源数据可视化工具制作王者荣耀游戏数据的仪表板，主要分为以下几个步骤：</p>
-<p>1. 使用抓包工具Charles来获取接口；</p>
-<p>2. 将接口导入开源持续测试平台MeterSphere，测试接口，并提取所需参数，通过后置的Python脚本处理数据；</p>
-<p>3. 通过MeterSphere将处理完成后的数据保存至MySQL数据源；</p>
-<p>4. 通过开源数据可视化平台DataEase制作仪表板来展示游戏数据。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-01.png" alt="" loading="lazy" /></figure>
+                    <h2>确定数据源</h2>
+                    <p>数据源我选择的是平时使用比较多的王者营地APP，因为上面的数据还是比较全面的。既然是使用APP作为数据源，就免不了要用抓包工具来获取数据了，所以在开始前需要做一些简单的准备工作。</p>
+                    <p><strong>1. 抓包工具Charles</strong></p>
+                    <p>这个工具应该很多人都用过，因为需要抓的接口都是走的Https协议，所以需要把Charles根证书导出来备用，如下图。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-02.jpg" alt="" loading="lazy" /></figure>
+                    <p><strong>2. 可抓Https包的安卓环境</strong></p>
+                    <p>
+                        谷歌在安卓7.0之后限制了自签名证书的使用限制，不过现在许多安卓模拟器都带了Root权限，还是有办法解决这个问题的。证书的安装可以参考这篇文章（<em>https://www.jianshu.com/p/561b5beeec22</em>），第二步那边我直接用“RE管理器”替代了。读写挂载和权限需注意下图中红圈部分。
+                    </p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-03.png" alt="" loading="lazy" /></figure>
 
+                    <h2>数据获取</h2>
+                    <p>我原本的思路是用Python模拟请求，然后将数据处理完成之后存到数据库中。目前需要的数据主要有三个：一个是账号的总体数据，一个是英雄数据，最后是战斗数据。</p>
+                    <p>不过，我了解到最近我司正在使用的开源测试平台MeterSphere既可以调试接口，又可以调用Python和SQL脚本，于是我就把整套流程都放在MeterSphere上完成了。</p>
+                    <p>获取账号信息和英雄信息的接口比较简单，这边主要需要说一下获取战斗信息的接口，因为这个接口和前面两个接口差别较大，除了主机地址不同之外，还涉及到分页。我这边使用全局环境变量加上循环控制来处理，详细内容如下：</p>
+                    <p>1. 首先转到自动化测试这边，创建一个场景；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-04.png" alt="" loading="lazy" /></figure>
+                    <p>2. 在环境配置中，定义一个全局变量，名称设置为“lastTime”，因为这个分页接口使用的是时间戳作为分页的下标，如下图，值可以随意设置，我们在一开始会重置这个值；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-05.png" alt="" loading="lazy" /></figure>
+                    <p>3. 然后添加一个Python类型的自定义脚本，在场景一开始就重置lastTime为0；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-06.png" alt="" loading="lazy" /></figure>
+                    <p>4. 接着增加两个SQL脚本，分别是“建表”和“清空表”；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-07.png" alt="" loading="lazy" /></figure>
+                    <p>5. 然后创建一个While类型的循环控制器，内容如下，表示的是当list变量不为空时，就一直循环，每次循环这个值都会变；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-08.png" alt="" loading="lazy" /></figure>
+                    <p>6. 紧接着创建一个接口，地址为 <em>https://kohcamp.qq.com/game/morebattlelist</em>，具体内容如下，注意那个“lastTime”，每次脚本都会修改这个变量；</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-09.png" alt="" loading="lazy" /></figure>
+                    <p>7. 最后，在这个接口下添加两个步骤。先是是参数提取，将战斗记录list和上次请求的lastTime提取出来存到变量中，然后在脚本中将数据处理完成后插入到数据库中，注意脚本最后一句“更新了全局的lastTime变量”。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-10.png" alt="" loading="lazy" /></figure>
+                    <p>总体流程如下图，注意层级关系。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-11.png" alt="" loading="lazy" /></figure>
+                    <p>获取到的部分数据如下：</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-13.png" alt="" loading="lazy" /></figure>
 
-<h2>确定展示内容</h2>
-<p>根据官网的介绍和文档，做了几个简单的图表之后，发现这个DataEase确实有点意思，点一点，拖拽一下就能做出简洁明了的数据面板。刚好最近公司在举办王者荣耀大赛，突然想到能不能用这个DataEase做一个展示个人战绩的大屏？心动不如行动，马上安排！</p>
-<p>关于环境搭建的部分，由于官网提供了一键安装部署的脚本，直接运行就可以，这边就不再展示安装过程了。</p>
-<p>然后根据我的理解，要展示一个玩家的战绩主要可以从两个方面入手，第一个是英雄数据，第二个是战斗数据。当然，如果能拿到一些有趣的数据的话也可以展示出来，比如皮肤数数量、各时间段胜率等。</p>
-<p>关于英雄数据的话，主要可以展示英雄的数量、类型分布还有战斗次数，从这几个数据就能看出玩家大致的技术类型，也就是常说的ADC、上单、打野、辅助、中单。关于战斗数据的话，主要就是展示玩家的战绩了，比如不同英雄类型的胜率、总体胜率、近期K/D/A和近期胜率等。</p>
-
-
-<h2>确定数据源</h2>
-<p>数据源我选择的是平时使用比较多的王者营地APP，因为上面的数据还是比较全面的。既然是使用APP作为数据源，就免不了要用抓包工具来获取数据了，所以在开始前需要做一些简单的准备工作。</p>
-<p><strong>1. 抓包工具Charles</strong></p>
-<p>这个工具应该很多人都用过，因为需要抓的接口都是走的Https协议，所以需要把Charles根证书导出来备用，如下图。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-02.jpg" alt="" loading="lazy" /></figure>
-<p><strong>2. 可抓Https包的安卓环境</strong></p>
-<p>谷歌在安卓7.0之后限制了自签名证书的使用限制，不过现在许多安卓模拟器都带了Root权限，还是有办法解决这个问题的。证书的安装可以参考这篇文章（<em>https://www.jianshu.com/p/561b5beeec22</em>），第二步那边我直接用“RE管理器”替代了。读写挂载和权限需注意下图中红圈部分。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-03.png" alt="" loading="lazy" /></figure>
-
-
-<h2>数据获取</h2>
-<p>我原本的思路是用Python模拟请求，然后将数据处理完成之后存到数据库中。目前需要的数据主要有三个：一个是账号的总体数据，一个是英雄数据，最后是战斗数据。</p>
-<p>不过，我了解到最近我司正在使用的开源测试平台MeterSphere既可以调试接口，又可以调用Python和SQL脚本，于是我就把整套流程都放在MeterSphere上完成了。</p>
-<p>获取账号信息和英雄信息的接口比较简单，这边主要需要说一下获取战斗信息的接口，因为这个接口和前面两个接口差别较大，除了主机地址不同之外，还涉及到分页。我这边使用全局环境变量加上循环控制来处理，详细内容如下：</p>
-<p>1. 首先转到自动化测试这边，创建一个场景；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-04.png" alt="" loading="lazy" /></figure>
-<p>2. 在环境配置中，定义一个全局变量，名称设置为“lastTime”，因为这个分页接口使用的是时间戳作为分页的下标，如下图，值可以随意设置，我们在一开始会重置这个值；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-05.png" alt="" loading="lazy" /></figure>
-<p>3. 然后添加一个Python类型的自定义脚本，在场景一开始就重置lastTime为0；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-06.png" alt="" loading="lazy" /></figure>
-<p>4. 接着增加两个SQL脚本，分别是“建表”和“清空表”；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-07.png" alt="" loading="lazy" /></figure>
-<p>5. 然后创建一个While类型的循环控制器，内容如下，表示的是当list变量不为空时，就一直循环，每次循环这个值都会变；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-08.png" alt="" loading="lazy" /></figure>
-<p>6. 紧接着创建一个接口，地址为 <em>https://kohcamp.qq.com/game/morebattlelist</em>，具体内容如下，注意那个“lastTime”，每次脚本都会修改这个变量；</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-09.png" alt="" loading="lazy" /></figure>
-<p>7. 最后，在这个接口下添加两个步骤。先是是参数提取，将战斗记录list和上次请求的lastTime提取出来存到变量中，然后在脚本中将数据处理完成后插入到数据库中，注意脚本最后一句“更新了全局的lastTime变量”。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-10.png" alt="" loading="lazy" /></figure>
-<p>总体流程如下图，注意层级关系。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-11.png" alt="" loading="lazy" /></figure>
-<p>获取到的部分数据如下：</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-12.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20210922/dataease-169-13.png" alt="" loading="lazy" /></figure>
-
-
-<h2>表盘制作</h2>
-<p>根据一开始定的展示内容，结合获取到的数据，制作出以下7个表盘：</p>
-<p>■ <strong>玩家信息总览：</strong>主要展示玩家的总体游戏数据，参考王者营地APP。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-14.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>英雄游戏局数：</strong>展示玩家各个英雄上场的局数，包括总数、胜局和败局。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-15.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>英雄类型胜率：</strong>展示玩家各个类型的英雄的总体胜率。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-16.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>英雄总览：</strong>展示玩家英雄的总体数据，包括胜率、战力、皮肤数量等。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-17.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>英雄类型局数分布：</strong>展示各个类型的英雄的上场局数，这个可以看出玩家的技术类型。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-18.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>近期胜率：</strong>展示玩家最近的实力状态，包含了对局的数量。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-19.png" alt="" loading="lazy" /></figure>
-<p>■ <strong>近期K/D/A：</strong>和近期胜率相结合可以反映出对局的状态，是Carry还是躺赢。</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-20.png" alt="" loading="lazy" /></figure>
-<p>制作完成的仪表板如下：</p>
-<figure><img src="../images/blog/chart-20210922/dataease-169-21.png" alt="" loading="lazy" /></figure>
+                    <h2>表盘制作</h2>
+                    <p>根据一开始定的展示内容，结合获取到的数据，制作出以下7个表盘：</p>
+                    <p>■ <strong>玩家信息总览：</strong>主要展示玩家的总体游戏数据，参考王者营地APP。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-14.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>英雄游戏局数：</strong>展示玩家各个英雄上场的局数，包括总数、胜局和败局。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-15.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>英雄类型胜率：</strong>展示玩家各个类型的英雄的总体胜率。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-16.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>英雄总览：</strong>展示玩家英雄的总体数据，包括胜率、战力、皮肤数量等。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-17.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>英雄类型局数分布：</strong>展示各个类型的英雄的上场局数，这个可以看出玩家的技术类型。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-18.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>近期胜率：</strong>展示玩家最近的实力状态，包含了对局的数量。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-19.png" alt="" loading="lazy" /></figure>
+                    <p>■ <strong>近期K/D/A：</strong>和近期胜率相结合可以反映出对局的状态，是Carry还是躺赢。</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-20.png" alt="" loading="lazy" /></figure>
+                    <p>制作完成的仪表板如下：</p>
+                    <figure><img src="../images/blog/chart-20210922/dataease-169-21.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩","item":"https://dataease.cn/blog/post-2749.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩","description":"王者荣耀中英雄数据与战斗数据的仪表板展示。","url":"https://dataease.cn/blog/post-2749.html","datePublished":"2021-09-22","dateModified":"2021-09-22","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩", "item": "https://dataease.cn/blog/post-2749.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜用DataEase开源工具秀出你的王者荣耀战绩",
+                "description": "王者荣耀中英雄数据与战斗数据的仪表板展示。",
+                "url": "https://dataease.cn/blog/post-2749.html",
+                "datePublished": "2021-09-22",
+                "dateModified": "2021-09-22",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

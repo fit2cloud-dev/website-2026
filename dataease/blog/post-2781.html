@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,143 +219,169 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜使用DataEase开源工具进行肉禽养殖数据分析" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>闲暇之余，用DataEase开源数据可视化分析工具帮某农场养殖公司制作了一个关于2020年度肉禽养殖数据统计分析的仪表板大屏。本文主要介绍了使用DataEase导入数据、制作视图，并最终生成仪表板的过程。如果您也有类似进行数据分析、数据可视化的需求，欢迎参考。</p>
-<p>为了便于理解，进入正题之前，先对DataEase进行如下的简单说明。DataEase是一款开源的数据可视化分析工具，它遵循GPL v2开源许可协议，使用SpringBoot/Vue.js进行开发，支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。</p>
-<p>下面就是我们基于DataEase开源数据可视化分析工具制作《2020年度肉禽养殖数据统计分析》仪表板的具体过程。</p>
+                    <p>
+                        闲暇之余，用DataEase开源数据可视化分析工具帮某农场养殖公司制作了一个关于2020年度肉禽养殖数据统计分析的仪表板大屏。本文主要介绍了使用DataEase导入数据、制作视图，并最终生成仪表板的过程。如果您也有类似进行数据分析、数据可视化的需求，欢迎参考。
+                    </p>
+                    <p>
+                        为了便于理解，进入正题之前，先对DataEase进行如下的简单说明。DataEase是一款开源的数据可视化分析工具，它遵循GPL
+                        v2开源许可协议，使用SpringBoot/Vue.js进行开发，支持丰富的数据源连接，能够通过拖拉拽方式快速制作图表，并可以方便的与他人分享。
+                    </p>
+                    <p>下面就是我们基于DataEase开源数据可视化分析工具制作《2020年度肉禽养殖数据统计分析》仪表板的具体过程。</p>
 
+                    <h2>数据获取</h2>
+                    <p>
+                        从某农场养殖公司获取到一份《2020年度肉禽养殖回收结算单分析》的数据。该数据是该公司2020年度肉禽养殖的结算明细数据，包括了每个业务员、每个养殖户养殖的肉禽的饲养天数、合同数量、回收数量、合同金额、回收单价、饲料重量、饲料金额、药品金额、各类补助金额、单只利润等信息。
+                    </p>
 
-<h2>数据获取</h2>
-<p>从某农场养殖公司获取到一份《2020年度肉禽养殖回收结算单分析》的数据。该数据是该公司2020年度肉禽养殖的结算明细数据，包括了每个业务员、每个养殖户养殖的肉禽的饲养天数、合同数量、回收数量、合同金额、回收单价、饲料重量、饲料金额、药品金额、各类补助金额、单只利润等信息。</p>
+                    <h2>需求分析</h2>
+                    <p>从该农场养殖公司的负责人处了解到，其数据可视化的需求内容如下：</p>
+                    <p>1. 养殖户数、总利润、总补助、雏苗只数、应回收只数、实际回收只数；</p>
+                    <p>2. 单只补助分布-按区间计数；</p>
+                    <p>3. 单只利润分布-按区间计数；</p>
+                    <p>4. 总补助分布-按月份；</p>
+                    <p>5. 总利润分布-按月份；</p>
+                    <p>6. 肉料比占比区间-按区间；</p>
+                    <p>7. 不同月份各类补助对比情况-按月份补充。</p>
 
+                    <h2>数据分析</h2>
+                    <p>分析当前已有的数据是否可以满足上述统计需求。分析后发现，缺少月份、肉料比区间、单只利润区间、单只补助区间、总利润、总补助等字段。</p>
 
-<h2>需求分析</h2>
-<p>从该农场养殖公司的负责人处了解到，其数据可视化的需求内容如下：</p>
-<p>1. 养殖户数、总利润、总补助、雏苗只数、应回收只数、实际回收只数；</p>
-<p>2. 单只补助分布-按区间计数；</p>
-<p>3. 单只利润分布-按区间计数；</p>
-<p>4. 总补助分布-按月份；</p>
-<p>5. 总利润分布-按月份；</p>
-<p>6. 肉料比占比区间-按区间；</p>
-<p>7. 不同月份各类补助对比情况-按月份补充。</p>
+                    <h2>数据预备处理</h2>
+                    <p>根据上述分析结果，进行如下数据处理操作：</p>
+                    <p>1. 添加月份字段，并计算其值；</p>
+                    <p>2. 添加肉料比区间字段，并计算其值；</p>
+                    <p>3. 增加单只利润区间字段，并赋值如下：0以下、0-1、1-2、2-3、3-4、4-5、5以上；</p>
+                    <p>4. 增加单只补助区间字段，并赋值如下：0以下、0-1、1-2、2-3、3-4、4以上；</p>
+                    <p>5. 增加总补助和总利润字段，并计算相应数据；</p>
+                    <p>6. 补充其他补助字段，并计算相应数据。</p>
 
+                    <h2>数据导入</h2>
+                    <p>在“数据集”菜单下创建农场养殖数据统计的分组，在此分组下点击“+”→“添加数据集”→“Excel数据集”完成Excel数据导入。</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-01.png" alt="" loading="lazy" /></figure>
 
-<h2>数据分析</h2>
-<p>分析当前已有的数据是否可以满足上述统计需求。分析后发现，缺少月份、肉料比区间、单只利润区间、单只补助区间、总利润、总补助等字段。</p>
+                    <h2>视图制作</h2>
+                    <p>在“视图”菜单下创建农场养殖数据统计的分组，在此分组下点击“+”→“添加视图”，创建一个视图，点击“确认”按钮后完成视图创建。</p>
+                    <p>
+                        根据可视化需求，分别创建“养殖户户数”、“总利润”、“总补助”、“雏苗总只数”、“应回收指数”、“实际回收只数”、“养殖户单只补助分布”、“养殖户单只利润分布”、“养殖户总补助分布”、“2020年度养殖户总利润分布”、“2020年度肉料比占比区间分布”、“不同月份各类补助的对比情况“等视图。
+                    </p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-03.png" alt="" loading="lazy" /></figure>
 
+                    <h2>视图效果调整</h2>
+                    <p>1. 通过将维度和指标拖动到右侧的类别轴和值轴，实现横纵坐标的定义；</p>
+                    <p>2. 通过切换图表类型，实现图表类型的定义；</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-04.png" alt="" loading="lazy" /></figure>
+                    <p>3. 点击“样式”标签页，定义样式优先级，设置图形属性和组件属性。图形属性包括：颜色、大小、标签、提示；组件属性包括：横轴、纵轴、标题、图例、背景。</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-05.png" alt="" loading="lazy" /></figure>
 
-<h2>数据预备处理</h2>
-<p>根据上述分析结果，进行如下数据处理操作：</p>
-<p>1. 添加月份字段，并计算其值；</p>
-<p>2. 添加肉料比区间字段，并计算其值；</p>
-<p>3. 增加单只利润区间字段，并赋值如下：0以下、0-1、1-2、2-3、3-4、4-5、5以上；</p>
-<p>4. 增加单只补助区间字段，并赋值如下：0以下、0-1、1-2、2-3、3-4、4以上；</p>
-<p>5. 增加总补助和总利润字段，并计算相应数据；</p>
-<p>6. 补充其他补助字段，并计算相应数据。</p>
+                    <h2>仪表板制作</h2>
+                    <p>1. 在“仪表板”菜单下创建农场养殖数据统计的目录。在此目录下点击“+”→“新建仪表板”，开始创建一个仪表板，点击“确认”按钮后完成仪表板创建；</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-06.png" alt="" loading="lazy" /></figure>
+                    <p>2. 将上一步制作完成的视图拖拽到仪表板设计区域，完成仪表板的制作。</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-07.png" alt="" loading="lazy" /></figure>
 
+                    <h2>仪表板预览</h2>
+                    <p>最终生成的2020年度肉禽养殖仪表板如下：</p>
+                    <figure><img src="../images/blog/chart-20210928/dataease-168-08.png" alt="" loading="lazy" /></figure>
 
-<h2>数据导入</h2>
-<p>在“数据集”菜单下创建农场养殖数据统计的分组，在此分组下点击“+”→“添加数据集”→“Excel数据集”完成Excel数据导入。</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-01.png" alt="" loading="lazy" /></figure>
-
-
-<h2>视图制作</h2>
-<p>在“视图”菜单下创建农场养殖数据统计的分组，在此分组下点击“+”→“添加视图”，创建一个视图，点击“确认”按钮后完成视图创建。</p>
-<p>根据可视化需求，分别创建“养殖户户数”、“总利润”、“总补助”、“雏苗总只数”、“应回收指数”、“实际回收只数”、“养殖户单只补助分布”、“养殖户单只利润分布”、“养殖户总补助分布”、“2020年度养殖户总利润分布”、“2020年度肉料比占比区间分布”、“不同月份各类补助的对比情况“等视图。</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-02.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/chart-20210928/dataease-168-03.png" alt="" loading="lazy" /></figure>
-
-
-<h2>视图效果调整</h2>
-<p>1. 通过将维度和指标拖动到右侧的类别轴和值轴，实现横纵坐标的定义；</p>
-<p>2. 通过切换图表类型，实现图表类型的定义；</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-04.png" alt="" loading="lazy" /></figure>
-<p>3. 点击“样式”标签页，定义样式优先级，设置图形属性和组件属性。图形属性包括：颜色、大小、标签、提示；组件属性包括：横轴、纵轴、标题、图例、背景。</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-05.png" alt="" loading="lazy" /></figure>
-
-
-<h2>仪表板制作</h2>
-<p>1. 在“仪表板”菜单下创建农场养殖数据统计的目录。在此目录下点击“+”→“新建仪表板”，开始创建一个仪表板，点击“确认”按钮后完成仪表板创建；</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-06.png" alt="" loading="lazy" /></figure>
-<p>2. 将上一步制作完成的视图拖拽到仪表板设计区域，完成仪表板的制作。</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-07.png" alt="" loading="lazy" /></figure>
-
-
-<h2>仪表板预览</h2>
-<p>最终生成的2020年度肉禽养殖仪表板如下：</p>
-<figure><img src="../images/blog/chart-20210928/dataease-168-08.png" alt="" loading="lazy" /></figure>
-
-
-<h2>使用感想</h2>
-<p>DataEase真的是一款人人可用的代码开发平台的产品，就算是完全不懂代码开发的人，也可以利用不到一天的时间制作出一个不错的仪表板大屏。正如知名市场研究机构Forrester的分析师近期所指出的，“在企业未来的数字化转型的实践中，低代码开发平台将有机会成为帮助业务专家实践的工具，帮助企业提高业务效率，降低经营成本，有效地提升企业利润。”</p>
+                    <h2>使用感想</h2>
+                    <p>
+                        DataEase真的是一款人人可用的代码开发平台的产品，就算是完全不懂代码开发的人，也可以利用不到一天的时间制作出一个不错的仪表板大屏。正如知名市场研究机构Forrester的分析师近期所指出的，“在企业未来的数字化转型的实践中，低代码开发平台将有机会成为帮助业务专家实践的工具，帮助企业提高业务效率，降低经营成本，有效地提升企业利润。”
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜使用DataEase开源工具进行肉禽养殖数据分析","item":"https://dataease.cn/blog/post-2781.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜使用DataEase开源工具进行肉禽养殖数据分析","description":"用DataEase制作农业主题的仪表板。","url":"https://dataease.cn/blog/post-2781.html","datePublished":"2021-09-28","dateModified":"2021-09-28","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜使用DataEase开源工具进行肉禽养殖数据分析", "item": "https://dataease.cn/blog/post-2781.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜使用DataEase开源工具进行肉禽养殖数据分析",
+                "description": "用DataEase制作农业主题的仪表板。",
+                "url": "https://dataease.cn/blog/post-2781.html",
+                "datePublished": "2021-09-28",
+                "dateModified": "2021-09-28",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

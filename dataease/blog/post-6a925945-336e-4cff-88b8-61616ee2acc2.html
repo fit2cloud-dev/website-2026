@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,13 +219,84 @@
                     <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜基于DataEase用RFM分析法分析零售交易数据" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><span>DataEase开源BI工具可以在店铺运营的数据分析及可视化方面提供非常大的帮助。同样，在用于客户评估的RFM（即Recency、Frequency和Monetary的简称）分析中，DataEase也可以发挥出积极的价值，通过数据可视化大屏的方式实时展示分析结果，让业务数据在没有损耗准确性和时效性的前提下，以更加直观易懂的方式呈现。</span></p><p><span><strong><em>关于RFM分析法</em></strong></span></p><p><span>RFM分析法是一种经典的客户价值评估模型，广泛应用于市场营销和客户关系管理领域。通过分析客户最近一次的</span><span><strong>消费时间（Recency）、消费频率（Frequency）</strong></span><span>以及</span><strong>消费金额（Monetary）</strong>，RFM模型能够精准识别客户的价值和行为特征。这一方法在零售、新消费和电商行业尤为普遍和通用，可以帮助企业识别高价值客户、制定个性化营销策略、提升客户满意度和忠诚度，并且优化资源配置，从而显著提升整体销售业绩和市场竞争力。</p><p><span>RFM分析不仅为企业提供了科学的数据支持，还在客户关系管理中起到了关键的指导作用。其中，针对“R”、“F”和“M”这三个维度，可以根据如下标准来做出评估：</span></p><p><span><strong>1. R（Recency）：</strong>表示客户最近一次购买时间距离当前时间的间隔天数。时间越短，客户的活跃度越高，越有可能再次购买；</span></p><p><span><strong>2. F（Frequency）：</strong>表示客户在特定时间段内的购买次数。次数越多，说明客户与公司的互动越频繁，忠诚度越高；</span></p><p><span><strong>3. M（Monetary）：</strong>表示客户在特定时间段内的总消费金额。金额越高，客户的价值越大，越会成为公司重要的利润来源。</span></p><p><span><strong><em>通过DataEase对数据进行RFM分析</em></strong></span></p><p><span>本文为您介绍通过DataEase对数据开展RFM分析的方法，涵盖了数据收集、处理，到客户分群和策略制定的完整步骤。</span></p><p><span><strong>一、数据收集</strong></span></p><p><span>在进行具体的数据分析之前，首先需要采集、整理好待分析的客户交易数据，包括每笔交易的日期、交易金额和客户ID等字段。</span></p><p><span>以下是模拟的一份零售交易数据示例。</span></p><p>▲图1 模拟零售交易数据</p><p><span>将获得的数据导入数据库。此处我们将模拟生成的数据加载至Oracle数据库中，具体步骤如下：</span></p><p><span>1. 通过SQL命令语句创建生成数据表。</span></p><shiki-code><pre><code>CREATE TABLE transactions (
+                    <p>
+                        <span
+                            >DataEase开源BI工具可以在店铺运营的数据分析及可视化方面提供非常大的帮助。同样，在用于客户评估的RFM（即Recency、Frequency和Monetary的简称）分析中，DataEase也可以发挥出积极的价值，通过数据可视化大屏的方式实时展示分析结果，让业务数据在没有损耗准确性和时效性的前提下，以更加直观易懂的方式呈现。</span
+                        >
+                    </p>
+                    <p>
+                        <span
+                            ><strong><em>关于RFM分析法</em></strong></span
+                        >
+                    </p>
+                    <p>
+                        <span>RFM分析法是一种经典的客户价值评估模型，广泛应用于市场营销和客户关系管理领域。通过分析客户最近一次的</span><span><strong>消费时间（Recency）、消费频率（Frequency）</strong></span
+                        ><span>以及</span
+                        ><strong>消费金额（Monetary）</strong
+                        >，RFM模型能够精准识别客户的价值和行为特征。这一方法在零售、新消费和电商行业尤为普遍和通用，可以帮助企业识别高价值客户、制定个性化营销策略、提升客户满意度和忠诚度，并且优化资源配置，从而显著提升整体销售业绩和市场竞争力。
+                    </p>
+                    <p><span>RFM分析不仅为企业提供了科学的数据支持，还在客户关系管理中起到了关键的指导作用。其中，针对“R”、“F”和“M”这三个维度，可以根据如下标准来做出评估：</span></p>
+                    <p>
+                        <span><strong>1. R（Recency）：</strong>表示客户最近一次购买时间距离当前时间的间隔天数。时间越短，客户的活跃度越高，越有可能再次购买；</span>
+                    </p>
+                    <p>
+                        <span><strong>2. F（Frequency）：</strong>表示客户在特定时间段内的购买次数。次数越多，说明客户与公司的互动越频繁，忠诚度越高；</span>
+                    </p>
+                    <p>
+                        <span><strong>3. M（Monetary）：</strong>表示客户在特定时间段内的总消费金额。金额越高，客户的价值越大，越会成为公司重要的利润来源。</span>
+                    </p>
+                    <p>
+                        <span
+                            ><strong><em>通过DataEase对数据进行RFM分析</em></strong></span
+                        >
+                    </p>
+                    <p><span>本文为您介绍通过DataEase对数据开展RFM分析的方法，涵盖了数据收集、处理，到客户分群和策略制定的完整步骤。</span></p>
+                    <p>
+                        <span><strong>一、数据收集</strong></span>
+                    </p>
+                    <p><span>在进行具体的数据分析之前，首先需要采集、整理好待分析的客户交易数据，包括每笔交易的日期、交易金额和客户ID等字段。</span></p>
+                    <p><span>以下是模拟的一份零售交易数据示例。</span></p>
+                    <p>▲图1 模拟零售交易数据</p>
+                    <p><span>将获得的数据导入数据库。此处我们将模拟生成的数据加载至Oracle数据库中，具体步骤如下：</span></p>
+                    <p><span>1. 通过SQL命令语句创建生成数据表。</span></p>
+                    <shiki-code>
+                        <pre><code>CREATE TABLE transactions (
        transaction_id NUMBER PRIMARY KEY,
        customer_id NUMBER NOT NULL,
        product_id NUMBER NOT NULL,
        transaction_time TIMESTAMP NOT NULL,
        total_amount NUMBER(10, 2) NOT NULL
-);</code></pre></shiki-code><p><span>2. 将待分析的数据导入至生成好的数据表“TRANSACTIONS”中。</span></p><p><img src="../images/blog/tutorial-20241008/dataease-036-01.png" alt="" loading="lazy" />▲图2 将数据导入数据库的数据表</p><p><span><strong>二、数据处理与计算</strong></span></p><p><span>本次我们将通过DataEase开源BI工具来进行RFM分析数据的大屏制作，以实现数据的直观展示与分析。</span></p><p><span>具体步骤如下：</span></p><p><span>1. 在DataEase的“数据源配置”页面，选择连接对应的Oracle数据库。</span></p><p><img src="../images/blog/tutorial-20241008/dataease-036-02.png" alt="" loading="lazy" />▲图3 连接Oracle数据源</p><p><span>2. 使用Oracle数据源中预先准备好的数据表“TRANSACTIONS”，创建数据集。</span></p><p>▲图4 数据集创建操作</p><p><span>3. 从数据表“TRANSACTIONS”中拆分出具体的“R”、“F”、“M”三个维度，并根据它们各自的指示特征，对数据进行进一步的筛选和加工处理。</span></p><p><span>■</span> R：用当前时间减去最近交易时间，并将结果向上取整，获取上次消费间隔天数；</p><shiki-code><pre><code>CEIL(SYSDATE - MAX(TRANSACTION_TIME)) AS R</code></pre></shiki-code><p><span>■</span> F：当月内的发生交易次数；</p><shiki-code><pre><code>COUNT(1) AS F</code></pre></shiki-code><p><span>■</span> M：当月内消费金额合计。</p><shiki-code><pre><code>SUM(TOTAL_AMOUNT) AS M</code></pre></shiki-code><p><span>在DataEase中，可以便利地通过“新建计算字段”功能来加工以上字段，实现数据的快速处理。</span></p><p>▲图5 DataEase的“新建计算字段”功能</p><p><span>4. 按照客户ID来汇总数据，并对数据进行排序，取得可以用于RFM分析的数据集。</span></p><shiki-code><pre><code>SELECT
+);</code></pre>
+                    </shiki-code>
+                    <p><span>2. 将待分析的数据导入至生成好的数据表“TRANSACTIONS”中。</span></p>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-01.png" alt="" loading="lazy" />▲图2 将数据导入数据库的数据表</p>
+                    <p>
+                        <span><strong>二、数据处理与计算</strong></span>
+                    </p>
+                    <p><span>本次我们将通过DataEase开源BI工具来进行RFM分析数据的大屏制作，以实现数据的直观展示与分析。</span></p>
+                    <p><span>具体步骤如下：</span></p>
+                    <p><span>1. 在DataEase的“数据源配置”页面，选择连接对应的Oracle数据库。</span></p>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-02.png" alt="" loading="lazy" />▲图3 连接Oracle数据源</p>
+                    <p><span>2. 使用Oracle数据源中预先准备好的数据表“TRANSACTIONS”，创建数据集。</span></p>
+                    <p>▲图4 数据集创建操作</p>
+                    <p><span>3. 从数据表“TRANSACTIONS”中拆分出具体的“R”、“F”、“M”三个维度，并根据它们各自的指示特征，对数据进行进一步的筛选和加工处理。</span></p>
+                    <p><span>■</span> R：用当前时间减去最近交易时间，并将结果向上取整，获取上次消费间隔天数；</p>
+                    <shiki-code>
+                        <pre><code>CEIL(SYSDATE - MAX(TRANSACTION_TIME)) AS R</code></pre>
+                    </shiki-code>
+                    <p><span>■</span> F：当月内的发生交易次数；</p>
+                    <shiki-code>
+                        <pre><code>COUNT(1) AS F</code></pre>
+                    </shiki-code>
+                    <p><span>■</span> M：当月内消费金额合计。</p>
+                    <shiki-code>
+                        <pre><code>SUM(TOTAL_AMOUNT) AS M</code></pre>
+                    </shiki-code>
+                    <p><span>在DataEase中，可以便利地通过“新建计算字段”功能来加工以上字段，实现数据的快速处理。</span></p>
+                    <p>▲图5 DataEase的“新建计算字段”功能</p>
+                    <p><span>4. 按照客户ID来汇总数据，并对数据进行排序，取得可以用于RFM分析的数据集。</span></p>
+                    <shiki-code>
+                        <pre><code>SELECT
        CUSTOMER_ID,
        CEIL(SYSDATE - MAX(TRANSACTION_TIME)) AS R,
        COUNT(1) AS F,
@@ -224,7 +306,15 @@ FROM
 GROUP BY
        CUSTOMER_ID
 ORDER BY
-       CUSTOMER_ID</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-03.png" alt="" loading="lazy" />▲图6 用于RFM分析的数据集</p><p><span><strong>三、数据标准划分</strong></span></p><p><span>使用SQL语句，对待分析的数据进行进一步的处理，根据客户行为指标所在的数值区间分出计分等级。</span></p><shiki-code><pre><code>SELECT
+       CUSTOMER_ID</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-03.png" alt="" loading="lazy" />▲图6 用于RFM分析的数据集</p>
+                    <p>
+                        <span><strong>三、数据标准划分</strong></span>
+                    </p>
+                    <p><span>使用SQL语句，对待分析的数据进行进一步的处理，根据客户行为指标所在的数值区间分出计分等级。</span></p>
+                    <shiki-code>
+                        <pre><code>SELECT
        MIN(t.R) 最小最近间隔天数,
        MAX(t.R) 最大最近间隔天数,
        MIN(t.F) 最小消费次数,
@@ -243,7 +333,35 @@ FROM
        GROUP BY
               CUSTOMER_ID
        ORDER BY
-              CUSTOMER_ID)t</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-04.png" alt="" loading="lazy" />▲图7 数据计分标准参考</p><p><span>此处我们使用均等分层的方式，将客户交易数据分出等级，作为顺序数据计分。</span></p><p><span>■</span> R：</p><p><span>5分：1-4天</span></p><p><span>4分：5-8天</span></p><p><span>3分：9-12天</span></p><p><span>2分：13-16天</span></p><p><span>1分：17天以上</span></p><p><span>■</span> F：</p><p><span>5分：20次以上</span></p><p><span>4分：16-20次</span></p><p><span>3分：11-15次</span></p><p><span>2分：6-10次</span></p><p><span>1分：1-5次</span></p><p><span>■</span> M：</p><p><span>5分：8001以上</span></p><p><span>4分：6001-8000元</span></p><p><span>3分：4001-6000元</span></p><p><span>2分：2001-4000元</span></p><p><span>1分：1-2000元</span></p><p><span><strong>四、客户分群</strong></span></p><p><span>根据已经确定的数据标准，使用SQL语句对数据进行如下分类。</span></p><p><span>1. 为R、F、M数值分别分层计分，所得R、F、M数值对应的分数分别记录为计分字段“R_GRD”、“F_GRD”、“M_GRD”。</span></p><shiki-code><pre><code>SELECT
+              CUSTOMER_ID)t</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-04.png" alt="" loading="lazy" />▲图7 数据计分标准参考</p>
+                    <p><span>此处我们使用均等分层的方式，将客户交易数据分出等级，作为顺序数据计分。</span></p>
+                    <p><span>■</span> R：</p>
+                    <p><span>5分：1-4天</span></p>
+                    <p><span>4分：5-8天</span></p>
+                    <p><span>3分：9-12天</span></p>
+                    <p><span>2分：13-16天</span></p>
+                    <p><span>1分：17天以上</span></p>
+                    <p><span>■</span> F：</p>
+                    <p><span>5分：20次以上</span></p>
+                    <p><span>4分：16-20次</span></p>
+                    <p><span>3分：11-15次</span></p>
+                    <p><span>2分：6-10次</span></p>
+                    <p><span>1分：1-5次</span></p>
+                    <p><span>■</span> M：</p>
+                    <p><span>5分：8001以上</span></p>
+                    <p><span>4分：6001-8000元</span></p>
+                    <p><span>3分：4001-6000元</span></p>
+                    <p><span>2分：2001-4000元</span></p>
+                    <p><span>1分：1-2000元</span></p>
+                    <p>
+                        <span><strong>四、客户分群</strong></span>
+                    </p>
+                    <p><span>根据已经确定的数据标准，使用SQL语句对数据进行如下分类。</span></p>
+                    <p><span>1. 为R、F、M数值分别分层计分，所得R、F、M数值对应的分数分别记录为计分字段“R_GRD”、“F_GRD”、“M_GRD”。</span></p>
+                    <shiki-code>
+                        <pre><code>SELECT
        t.CUSTOMER_ID,
        t.R,
        CASE
@@ -281,7 +399,12 @@ FROM
        GROUP BY
               CUSTOMER_ID
        ORDER BY
-              CUSTOMER_ID)t</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-05.png" alt="" loading="lazy" />▲图8 新增“GRD”计分字段</p><p><span>2. 分别计算出“R_GRD”、“F_GRD”、“M_GRD”三个字段的平均值。</span></p><shiki-code><pre><code>SELECT
+              CUSTOMER_ID)t</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-05.png" alt="" loading="lazy" />▲图8 新增“GRD”计分字段</p>
+                    <p><span>2. 分别计算出“R_GRD”、“F_GRD”、“M_GRD”三个字段的平均值。</span></p>
+                    <shiki-code>
+                        <pre><code>SELECT
        AVG(ag.R_Grd) R_avg,
        AVG(ag.F_Grd) F_avg,
        AVG(ag.M_Grd) M_avg
@@ -325,7 +448,12 @@ FROM
               GROUP BY
                      CUSTOMER_ID
               ORDER BY
-                     CUSTOMER_ID)t)ag</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-06.png" alt="" loading="lazy" />▲图9 计算“GRD”字段平均值</p><p><span>3. 将“R_GRD”、“F_GRD”、“M_GRD”分数与各自的字段平均值进行对比，得出对应的等级字段“R_RNK”、“F_RNK”、“M_RNK”。若“GRD”分数高于平均值，则记录“RNK”为“高”，反之则记录“RNK”为“低”。</span></p><shiki-code><pre><code>SELECT
+                     CUSTOMER_ID)t)ag</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-06.png" alt="" loading="lazy" />▲图9 计算“GRD”字段平均值</p>
+                    <p><span>3. 将“R_GRD”、“F_GRD”、“M_GRD”分数与各自的字段平均值进行对比，得出对应的等级字段“R_RNK”、“F_RNK”、“M_RNK”。若“GRD”分数高于平均值，则记录“RNK”为“高”，反之则记录“RNK”为“低”。</span></p>
+                    <shiki-code>
+                        <pre><code>SELECT
        t.CUSTOMER_ID,
        t.R,
        CASE
@@ -393,7 +521,17 @@ FROM
        GROUP BY
               CUSTOMER_ID
        ORDER BY
-              CUSTOMER_ID)t</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-07.png" alt="" loading="lazy" />▲图10 新增“RNK”等级字段</p><p><span><strong>五、分析与策略</strong></span></p><p><span>根据上一步获得的“RNK”等级评估标准对用户类型进行细分，获取用户画像，并且分别制定对应的策略。</span></p><p><img src="../images/blog/tutorial-20241008/dataease-036-08.png" alt="" loading="lazy" /></p><p>基于用户画像分析，在数据表中新增“RFM-RNK”（客户分类）字段，定位客户类型。</p><shiki-code><pre><code>SELECT
+              CUSTOMER_ID)t</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-07.png" alt="" loading="lazy" />▲图10 新增“RNK”等级字段</p>
+                    <p>
+                        <span><strong>五、分析与策略</strong></span>
+                    </p>
+                    <p><span>根据上一步获得的“RNK”等级评估标准对用户类型进行细分，获取用户画像，并且分别制定对应的策略。</span></p>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-08.png" alt="" loading="lazy" /></p>
+                    <p>基于用户画像分析，在数据表中新增“RFM-RNK”（客户分类）字段，定位客户类型。</p>
+                    <shiki-code>
+                        <pre><code>SELECT
        rfm.*,
        CASE
               WHEN rfm.R_RNK = '高'
@@ -491,76 +629,116 @@ FROM
        GROUP BY
               CUSTOMER_ID
        ORDER BY
-              CUSTOMER_ID)t)rfm</code></pre></shiki-code><p><img src="../images/blog/tutorial-20241008/dataease-036-09.png" alt="" loading="lazy" />▲图11 新增“RFM-RNK”客户分类字段</p><p><span><strong>六、用户画像可视化</strong></span></p><p>基于前述数据分析的结果，并且结合店铺自身的业务场景，我们可以引入VIP客户占比、沉睡客户占比等关键绩效指标。这些指标对于深入了解客户群体结构和行为模式至关重要，能够帮助我们更加精准地把握营销侧重的方向。</p><p>针对以上整个RFM分析中的关键数据指标，我们可以利用DataEase强大的数据可视化呈现能力构建如下定制化的数据大屏，综合展示这些关键指标的实时动态，为运营人员提供一目了然的可视化效果，并且通过多维度的数据透视和交互功能，深入挖掘数据背后的潜在业务价值。</p><p>我们也可以通过定期更新的数据大屏，去实时监控不同类型客户的活跃度和贡献度，识别并维护高价值客户。同时，通过沉睡客户的占比分析，我们可以制定针对性的激活策略，挖掘潜在的客户消费机会。</p><p><img src="../images/blog/tutorial-20241008/dataease-036-10.png" alt="" loading="lazy" />▲图12 基于DataEase构建的“用户画像-RFM分析法”数据大屏</p><p><span>RFM分析数据大屏的构建有助于我们更精准地了解客户需求和市场变化，也能为制定更加细致的市场运营策略提供坚实的数据基础，让营销决策变得更加高效和科学。</span></p><p><span><em>注：本文所引用的RFM分析相关定义来源于《数据分析思维：分析方法和业务知识》一书，猴子.数据分析学院著。</em></span></p>
+              CUSTOMER_ID)t)rfm</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-09.png" alt="" loading="lazy" />▲图11 新增“RFM-RNK”客户分类字段</p>
+                    <p>
+                        <span><strong>六、用户画像可视化</strong></span>
+                    </p>
+                    <p>基于前述数据分析的结果，并且结合店铺自身的业务场景，我们可以引入VIP客户占比、沉睡客户占比等关键绩效指标。这些指标对于深入了解客户群体结构和行为模式至关重要，能够帮助我们更加精准地把握营销侧重的方向。</p>
+                    <p>
+                        针对以上整个RFM分析中的关键数据指标，我们可以利用DataEase强大的数据可视化呈现能力构建如下定制化的数据大屏，综合展示这些关键指标的实时动态，为运营人员提供一目了然的可视化效果，并且通过多维度的数据透视和交互功能，深入挖掘数据背后的潜在业务价值。
+                    </p>
+                    <p>我们也可以通过定期更新的数据大屏，去实时监控不同类型客户的活跃度和贡献度，识别并维护高价值客户。同时，通过沉睡客户的占比分析，我们可以制定针对性的激活策略，挖掘潜在的客户消费机会。</p>
+                    <p><img src="../images/blog/tutorial-20241008/dataease-036-10.png" alt="" loading="lazy" />▲图12 基于DataEase构建的“用户画像-RFM分析法”数据大屏</p>
+                    <p><span>RFM分析数据大屏的构建有助于我们更精准地了解客户需求和市场变化，也能为制定更加细致的市场运营策略提供坚实的数据基础，让营销决策变得更加高效和科学。</span></p>
+                    <p>
+                        <span><em>注：本文所引用的RFM分析相关定义来源于《数据分析思维：分析方法和业务知识》一书，猴子.数据分析学院著。</em></span>
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜基于DataEase用RFM分析法分析零售交易数据","item":"https://dataease.cn/blog/post-6a925945-336e-4cff-88b8-61616ee2acc2.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜基于DataEase用RFM分析法分析零售交易数据","description":"DataEase助力用户画像分析。","url":"https://dataease.cn/blog/post-6a925945-336e-4cff-88b8-61616ee2acc2.html","datePublished":"2024-10-08","dateModified":"2024-10-08","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-005.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜基于DataEase用RFM分析法分析零售交易数据", "item": "https://dataease.cn/blog/post-6a925945-336e-4cff-88b8-61616ee2acc2.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜基于DataEase用RFM分析法分析零售交易数据",
+                "description": "DataEase助力用户画像分析。",
+                "url": "https://dataease.cn/blog/post-6a925945-336e-4cff-88b8-61616ee2acc2.html",
+                "datePublished": "2024-10-08",
+                "dateModified": "2024-10-08",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-005.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

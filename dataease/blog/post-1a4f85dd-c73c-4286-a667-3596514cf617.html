@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,224 @@
                     <img src="../images/blog/case-20240301/dataease-072.jpg" alt="案例研究｜DataEase助力众陶联应对产业链数据可视化挑战" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>佛山众陶联供应链服务有限公司（以下简称为“众陶联”）成立于2016年，是由34家陶瓷企业共同创办的建陶行业工业互联网平台，股东产值占整个行业的22.5%。众陶联以数据赋能为核心，积极探索新的交易和服务模式，构建B2B交易平台并推出撮合交易、集中采购、源头交易、竞价交易和委托交易等交易和采购模式，同时在行业创新的场景下深度关注产业数据价值的挖掘和释放。在产业数字化转型、数据要素化和数据资产市场化方面，众陶联探索出一条创新之路，成为广东供给侧结构性改革的领军者和示范案例。</p><p><img src="../images/blog/case-20240301/dataease-072.jpg" alt="" loading="lazy" /></p><p>众陶联建立了陶瓷行业标准、数据标准和交易标准，构建了可信的数字环境，有效解决了陶瓷行业长期存在的经营模式不规范、原材料交易成本难以确定、企业经营成本居高不下等问题。通过数字技术和区块链可信技术，众陶联通过合同、物料、资金和物流等四个台账构建交易链条，确保验证过的数据不会被篡改，并且能够进行交叉验证。通过这四本台账的建设，众陶联为陶瓷企业提供了成本认定和完税途径，实现了陶瓷产业链的高效协同、降本增效和高质量发展。</p><p><strong><span>一、数据可视化的需求与痛点</span></strong></p><p>随着数据场景和数据量的急剧增加，众陶联对于数据的需求与应用也日益扩大。在利用数据进行决策和业务优化的过程中，众陶联面对着一系列的挑战和难题。</p><p>具体到数据可视化方面，众陶联面临的主要挑战包括：</p><p><strong><span>■</span> 人力成本高，重复性工作多</strong></p><p>随着数据量的迅速攀升，传统的数据分析和展示方式往往需要大量的人工干预。数据报告的生成过程越来越复杂，无法实现流程的自动化，数据分析师的工作效率受到严重限制，陷入了重复性劳动的循环；</p><p><strong><span>■</span> 用户期望高，但现有能力不足</strong></p><p>传统的报表和数据展示方式难以满足用户对于数据直观、个性化展示的需求，导致用户体验严重不佳。用户渴望通过简单、直接的数据可视化界面轻松理解复杂的业务数据，但现有的技术能力与用户的预期存在较大差距，数据的实际价值难以完全释放；</p><p><strong><span>■</span> 数据来源多样且复杂</strong></p><p>作为专注于建陶行业的工业互联网平台，众陶联的数字化业务场景繁多，涉及区块链链上数据、业务数据库以及线下Excel数据等。在多场景的数据来源中协调数据，使其具有一致性和可比性，成为众陶联亟需解决的难题；</p><p><strong><span>■</span> 数据安全和隐私保护问题</strong></p><p>随着数据使用的范围和频率不断增加，数据安全和隐私保护问题需要受到重视。在数据存储、使用和共享的同时，众陶联对数据的安全性提出了更高的要求。确保数据的保密性和完整性成为数据管理流程中的必要环节。</p><p><strong><span>二、选择DataEase的原因</span></strong></p><p>众陶联拥有丰富的数字化资产，涉及线上线下融合、可信区块链数据环境，以及全方位的产业场景。在对众多数据可视化工具软件进行深入调研后，众陶联选择了DataEase开源数据可视化分析平台作为其首选的数据处理工具。</p><p>在工具选型过程中，众陶联主要是基于以下几个方面考虑：</p><p><strong><span>■</span> 简单易用，减少工作量</strong></p><p>DataEase的界面设计和功能逻辑简洁直观，数据分析团队可以轻松上手，数据分析和可视化展示工作变得轻松而高效。通过自动化的数据分析和可视化，众陶联数据分析团队的工作效率大幅提升，能够投入更多的时间和精力挖掘业务数据的价值；</p><p><strong><span>■</span> 丰富的大屏模板和实时数据展示</strong></p><p>DataEase拥有丰富的图库和大屏模板，为众陶联的业务数据呈现提供了多样化的选择，能够满足不同业务场景的需求。DataEase的实时数据展示功能让众陶联能够随时随地获取最新的业务数据，有助于众陶联迅速做出决策、发现问题和把握业务机会；</p><p><strong><span>■</span> 便捷的系统集成能力，降低开发成本</strong></p><p>DataEase的仪表板可以通过iframe（嵌入式标签）的方式轻松嵌入到众陶联自身的业务系统中。这种便捷的集成能力有效降低了开发成本，让众陶联能够更迅速地将数据可视化整合到其现有的业务流程中，实现更为高效的数据管理和分析；</p><p><strong><span>■</span> 强大的权限管理功能</strong></p><p>DataEase提供了灵活而强大的权限管理功能，能够对不同级别的组织、角色和用户，进行不同颗粒度的权限精确管控。这一能力有助于众陶联确保业务数据的安全性，有效防范数据泄露。</p><p><strong><span>三、DataEase在众陶联的使用场景</span></strong></p><p>众陶联的数据环境相对复杂，涉及到设计、采购、生产、销售、物流等多个环节，数据规模庞大。为了有效管理和处理这些多来源、大规模的业务数据，众陶联先是利用数据中台对数据进行整合、分类和建模，为后续的数据利用奠定基础。然后，众陶联的数据分析团队利用DataEase连接了多种数据源，包括Doris、MySQL和Excel，使得后续的数据展示更加高效、灵活。</p><p>众陶联的主要数据可视化场景包括：</p><p><strong><span>■</span> 官网首页的交易大厅仪表板</strong></p><p>众陶联官网的交易大厅不仅仅是一个平台，更是一个实时展示平台贸易交易数据的窗口。通过DataEase展示众陶联的平台贸易交易数据，平台用户能够随时获取最新的贸易信息，从而更有针对性地做出商业决策。这对于提升用户体验、增强平台吸引力具有重要意义。</p><p><img src="../images/blog/case-20240301/dataease-072-02.png" alt="" loading="lazy" />▲ 图1 共青城众陶联交易大厅大屏</p><p><img src="../images/blog/case-20240301/dataease-072-03.png" alt="" loading="lazy" />▲ 图2 众料联交易大厅大屏</p><p><img src="../images/blog/case-20240301/dataease-072-04.png" alt="" loading="lazy" />▲ 图3 交易证据链证书交易看板大屏</p><p><strong><span>■</span> 展厅数据大屏</strong></p><p>为了向外部展示陶瓷行业的数据情况，众陶联在线下展厅搭建数据大屏。DataEase搭建的数据大屏不仅提供了全面的陶瓷产品相关信息，还以直观的方式呈现了行业数据趋势和关键性能指标。这有助于提高陶瓷产品的市场透明度，促进潜在客户更多地了解陶瓷行业现状。</p><p><img src="../images/blog/case-20240301/dataease-072-05.jpg" alt="" loading="lazy" />▲ 图4 广州数据交易所陶瓷行业数据空间大屏线下展示</p><p><img src="../images/blog/case-20240301/dataease-072-06.jpg" alt="" loading="lazy" />▲ 图5 DataEase数据大屏在众陶联的对外展示</p><p><strong><span>■</span> 内部业务部门业绩看板和报表</strong></p><p>除了对外展示业务状况的仪表板和数据大屏外，DataEase还服务于众陶联的内部业务。众陶联基于DataEase构建内部业绩看板和报表，详细展示业绩目标、人员业绩达成等关键指标。这样一来，管理层可以快速、直观地了解各个部门的绩效，并进行实时的业务监控。内部业绩看板已经成为众陶联业务决策的重要支撑，有助于更精准地优化资源分配，推动团队目标的落地实现。</p><p><img src="../images/blog/case-20240301/dataease-072-07.png" alt="" loading="lazy" />▲ 图6 企业员工业绩看板大屏</p><p><span>除了上述应用场景外，众陶联后续还将利用DataEase实现工厂生产线全流程的可视化，包括生产设备、能源、工艺数据的实时监控和预警等。工厂数据的全面可视化有望进一步提高生产效率，降低潜在风险，并为生产决策提供实时的支持。</span></p><p><strong><span>四、使用DataEase后的成果和收益</span></strong></p><p><span>2022年12月，DataEase在众陶联的业务环境落地，经历了测试、部署、迁移等多阶段。DataEase的引入不仅使众陶联在数据分析和决策方面取得了巨大进展，同时在提高客户满意度和应对市场变化方面也发挥了重要的作用。使用DataEase开源数据可视化分析工具后，众陶联数据分析团队的工作效率大幅提升，同时也有效降低了业务数据分析利用的成本。</span></p><p><strong><span>■</span> 提升效率，降低成本</strong></p><p><span>通过引入自助式的分析系统和可视化展示，众陶联数据分析师的工作效率得到了显著提升，报表制作和大屏开发的工作量明显减少。自动化的分析过程也减少了对人力的依赖，降低了整个数据分析团队的工作负担；</span></p><p><strong><span>■</span> 数据智能引导智慧决策</strong></p><p><span>DataEase为各业务中心管理层和决策者提供了强大的数据分析和可视化能力，方便管理层迅速获取关键的业务指标和趋势，以便快速、精准制定相关业务决策；</span></p><p><strong><span>■</span> 数据共享促进团队协作</strong></p><p><span>众陶联通过DataEase实现了各部门和团队之间的实时数据共享。团队成员可以利用DataEase平台创建自定义的报告和仪表板，此举促进了信息共享和团队合作，团队之间的协作效率显著提升；</span></p><p><strong><span>■</span> 数据安全和隐私保护</strong></p><p><span>为了保障数据的安全性，众陶联将DataEase部署在企业内网。DataEase强大的数据访问控制和权限管理功能确保只有授权人员可以访问敏感数据，有效防范了数据泄露以及相关的安全风险，公司的商业机密和客户信息得到了可靠保障。</span></p><p><span>跟随全国数据要素市场建设的步伐，众陶联始终秉持创新之路，致力于构建陶瓷全产业链，建成数据生态，并以数据生态催生新业态。在未来，DataEase将继续助力众陶联拓展数字化发展的新篇章，为实现陶瓷产业链的高效协同和可持续发展贡献更多力量。</span></p>
+                    <p>
+                        佛山众陶联供应链服务有限公司（以下简称为“众陶联”）成立于2016年，是由34家陶瓷企业共同创办的建陶行业工业互联网平台，股东产值占整个行业的22.5%。众陶联以数据赋能为核心，积极探索新的交易和服务模式，构建B2B交易平台并推出撮合交易、集中采购、源头交易、竞价交易和委托交易等交易和采购模式，同时在行业创新的场景下深度关注产业数据价值的挖掘和释放。在产业数字化转型、数据要素化和数据资产市场化方面，众陶联探索出一条创新之路，成为广东供给侧结构性改革的领军者和示范案例。
+                    </p>
+                    <p><img src="../images/blog/case-20240301/dataease-072.jpg" alt="" loading="lazy" /></p>
+                    <p>
+                        众陶联建立了陶瓷行业标准、数据标准和交易标准，构建了可信的数字环境，有效解决了陶瓷行业长期存在的经营模式不规范、原材料交易成本难以确定、企业经营成本居高不下等问题。通过数字技术和区块链可信技术，众陶联通过合同、物料、资金和物流等四个台账构建交易链条，确保验证过的数据不会被篡改，并且能够进行交叉验证。通过这四本台账的建设，众陶联为陶瓷企业提供了成本认定和完税途径，实现了陶瓷产业链的高效协同、降本增效和高质量发展。
+                    </p>
+                    <p>
+                        <strong><span>一、数据可视化的需求与痛点</span></strong>
+                    </p>
+                    <p>随着数据场景和数据量的急剧增加，众陶联对于数据的需求与应用也日益扩大。在利用数据进行决策和业务优化的过程中，众陶联面对着一系列的挑战和难题。</p>
+                    <p>具体到数据可视化方面，众陶联面临的主要挑战包括：</p>
+                    <p>
+                        <strong><span>■</span> 人力成本高，重复性工作多</strong>
+                    </p>
+                    <p>随着数据量的迅速攀升，传统的数据分析和展示方式往往需要大量的人工干预。数据报告的生成过程越来越复杂，无法实现流程的自动化，数据分析师的工作效率受到严重限制，陷入了重复性劳动的循环；</p>
+                    <p>
+                        <strong><span>■</span> 用户期望高，但现有能力不足</strong>
+                    </p>
+                    <p>
+                        传统的报表和数据展示方式难以满足用户对于数据直观、个性化展示的需求，导致用户体验严重不佳。用户渴望通过简单、直接的数据可视化界面轻松理解复杂的业务数据，但现有的技术能力与用户的预期存在较大差距，数据的实际价值难以完全释放；
+                    </p>
+                    <p>
+                        <strong><span>■</span> 数据来源多样且复杂</strong>
+                    </p>
+                    <p>作为专注于建陶行业的工业互联网平台，众陶联的数字化业务场景繁多，涉及区块链链上数据、业务数据库以及线下Excel数据等。在多场景的数据来源中协调数据，使其具有一致性和可比性，成为众陶联亟需解决的难题；</p>
+                    <p>
+                        <strong><span>■</span> 数据安全和隐私保护问题</strong>
+                    </p>
+                    <p>随着数据使用的范围和频率不断增加，数据安全和隐私保护问题需要受到重视。在数据存储、使用和共享的同时，众陶联对数据的安全性提出了更高的要求。确保数据的保密性和完整性成为数据管理流程中的必要环节。</p>
+                    <p>
+                        <strong><span>二、选择DataEase的原因</span></strong>
+                    </p>
+                    <p>众陶联拥有丰富的数字化资产，涉及线上线下融合、可信区块链数据环境，以及全方位的产业场景。在对众多数据可视化工具软件进行深入调研后，众陶联选择了DataEase开源数据可视化分析平台作为其首选的数据处理工具。</p>
+                    <p>在工具选型过程中，众陶联主要是基于以下几个方面考虑：</p>
+                    <p>
+                        <strong><span>■</span> 简单易用，减少工作量</strong>
+                    </p>
+                    <p>
+                        DataEase的界面设计和功能逻辑简洁直观，数据分析团队可以轻松上手，数据分析和可视化展示工作变得轻松而高效。通过自动化的数据分析和可视化，众陶联数据分析团队的工作效率大幅提升，能够投入更多的时间和精力挖掘业务数据的价值；
+                    </p>
+                    <p>
+                        <strong><span>■</span> 丰富的大屏模板和实时数据展示</strong>
+                    </p>
+                    <p>
+                        DataEase拥有丰富的图库和大屏模板，为众陶联的业务数据呈现提供了多样化的选择，能够满足不同业务场景的需求。DataEase的实时数据展示功能让众陶联能够随时随地获取最新的业务数据，有助于众陶联迅速做出决策、发现问题和把握业务机会；
+                    </p>
+                    <p>
+                        <strong><span>■</span> 便捷的系统集成能力，降低开发成本</strong>
+                    </p>
+                    <p>DataEase的仪表板可以通过iframe（嵌入式标签）的方式轻松嵌入到众陶联自身的业务系统中。这种便捷的集成能力有效降低了开发成本，让众陶联能够更迅速地将数据可视化整合到其现有的业务流程中，实现更为高效的数据管理和分析；</p>
+                    <p>
+                        <strong><span>■</span> 强大的权限管理功能</strong>
+                    </p>
+                    <p>DataEase提供了灵活而强大的权限管理功能，能够对不同级别的组织、角色和用户，进行不同颗粒度的权限精确管控。这一能力有助于众陶联确保业务数据的安全性，有效防范数据泄露。</p>
+                    <p>
+                        <strong><span>三、DataEase在众陶联的使用场景</span></strong>
+                    </p>
+                    <p>
+                        众陶联的数据环境相对复杂，涉及到设计、采购、生产、销售、物流等多个环节，数据规模庞大。为了有效管理和处理这些多来源、大规模的业务数据，众陶联先是利用数据中台对数据进行整合、分类和建模，为后续的数据利用奠定基础。然后，众陶联的数据分析团队利用DataEase连接了多种数据源，包括Doris、MySQL和Excel，使得后续的数据展示更加高效、灵活。
+                    </p>
+                    <p>众陶联的主要数据可视化场景包括：</p>
+                    <p>
+                        <strong><span>■</span> 官网首页的交易大厅仪表板</strong>
+                    </p>
+                    <p>
+                        众陶联官网的交易大厅不仅仅是一个平台，更是一个实时展示平台贸易交易数据的窗口。通过DataEase展示众陶联的平台贸易交易数据，平台用户能够随时获取最新的贸易信息，从而更有针对性地做出商业决策。这对于提升用户体验、增强平台吸引力具有重要意义。
+                    </p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-02.png" alt="" loading="lazy" />▲ 图1 共青城众陶联交易大厅大屏</p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-03.png" alt="" loading="lazy" />▲ 图2 众料联交易大厅大屏</p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-04.png" alt="" loading="lazy" />▲ 图3 交易证据链证书交易看板大屏</p>
+                    <p>
+                        <strong><span>■</span> 展厅数据大屏</strong>
+                    </p>
+                    <p>
+                        为了向外部展示陶瓷行业的数据情况，众陶联在线下展厅搭建数据大屏。DataEase搭建的数据大屏不仅提供了全面的陶瓷产品相关信息，还以直观的方式呈现了行业数据趋势和关键性能指标。这有助于提高陶瓷产品的市场透明度，促进潜在客户更多地了解陶瓷行业现状。
+                    </p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-05.jpg" alt="" loading="lazy" />▲ 图4 广州数据交易所陶瓷行业数据空间大屏线下展示</p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-06.jpg" alt="" loading="lazy" />▲ 图5 DataEase数据大屏在众陶联的对外展示</p>
+                    <p>
+                        <strong><span>■</span> 内部业务部门业绩看板和报表</strong>
+                    </p>
+                    <p>
+                        除了对外展示业务状况的仪表板和数据大屏外，DataEase还服务于众陶联的内部业务。众陶联基于DataEase构建内部业绩看板和报表，详细展示业绩目标、人员业绩达成等关键指标。这样一来，管理层可以快速、直观地了解各个部门的绩效，并进行实时的业务监控。内部业绩看板已经成为众陶联业务决策的重要支撑，有助于更精准地优化资源分配，推动团队目标的落地实现。
+                    </p>
+                    <p><img src="../images/blog/case-20240301/dataease-072-07.png" alt="" loading="lazy" />▲ 图6 企业员工业绩看板大屏</p>
+                    <p>
+                        <span
+                            >除了上述应用场景外，众陶联后续还将利用DataEase实现工厂生产线全流程的可视化，包括生产设备、能源、工艺数据的实时监控和预警等。工厂数据的全面可视化有望进一步提高生产效率，降低潜在风险，并为生产决策提供实时的支持。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>四、使用DataEase后的成果和收益</span></strong>
+                    </p>
+                    <p>
+                        <span
+                            >2022年12月，DataEase在众陶联的业务环境落地，经历了测试、部署、迁移等多阶段。DataEase的引入不仅使众陶联在数据分析和决策方面取得了巨大进展，同时在提高客户满意度和应对市场变化方面也发挥了重要的作用。使用DataEase开源数据可视化分析工具后，众陶联数据分析团队的工作效率大幅提升，同时也有效降低了业务数据分析利用的成本。</span
+                        >
+                    </p>
+                    <p>
+                        <strong><span>■</span> 提升效率，降低成本</strong>
+                    </p>
+                    <p><span>通过引入自助式的分析系统和可视化展示，众陶联数据分析师的工作效率得到了显著提升，报表制作和大屏开发的工作量明显减少。自动化的分析过程也减少了对人力的依赖，降低了整个数据分析团队的工作负担；</span></p>
+                    <p>
+                        <strong><span>■</span> 数据智能引导智慧决策</strong>
+                    </p>
+                    <p><span>DataEase为各业务中心管理层和决策者提供了强大的数据分析和可视化能力，方便管理层迅速获取关键的业务指标和趋势，以便快速、精准制定相关业务决策；</span></p>
+                    <p>
+                        <strong><span>■</span> 数据共享促进团队协作</strong>
+                    </p>
+                    <p><span>众陶联通过DataEase实现了各部门和团队之间的实时数据共享。团队成员可以利用DataEase平台创建自定义的报告和仪表板，此举促进了信息共享和团队合作，团队之间的协作效率显著提升；</span></p>
+                    <p>
+                        <strong><span>■</span> 数据安全和隐私保护</strong>
+                    </p>
+                    <p>
+                        <span
+                            >为了保障数据的安全性，众陶联将DataEase部署在企业内网。DataEase强大的数据访问控制和权限管理功能确保只有授权人员可以访问敏感数据，有效防范了数据泄露以及相关的安全风险，公司的商业机密和客户信息得到了可靠保障。</span
+                        >
+                    </p>
+                    <p>
+                        <span
+                            >跟随全国数据要素市场建设的步伐，众陶联始终秉持创新之路，致力于构建陶瓷全产业链，建成数据生态，并以数据生态催生新业态。在未来，DataEase将继续助力众陶联拓展数字化发展的新篇章，为实现陶瓷产业链的高效协同和可持续发展贡献更多力量。</span
+                        >
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"案例研究｜DataEase助力众陶联应对产业链数据可视化挑战","item":"https://dataease.cn/blog/post-1a4f85dd-c73c-4286-a667-3596514cf617.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"案例研究｜DataEase助力众陶联应对产业链数据可视化挑战","description":"DataEase助力众陶联的数据生态建设，同时满足数据大屏对外展示与内部应用需求。","url":"https://dataease.cn/blog/post-1a4f85dd-c73c-4286-a667-3596514cf617.html","datePublished":"2024-03-01","dateModified":"2024-03-01","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/case-20240301/dataease-072.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "案例研究｜DataEase助力众陶联应对产业链数据可视化挑战", "item": "https://dataease.cn/blog/post-1a4f85dd-c73c-4286-a667-3596514cf617.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "案例研究｜DataEase助力众陶联应对产业链数据可视化挑战",
+                "description": "DataEase助力众陶联的数据生态建设，同时满足数据大屏对外展示与内部应用需求。",
+                "url": "https://dataease.cn/blog/post-1a4f85dd-c73c-4286-a667-3596514cf617.html",
+                "datePublished": "2024-03-01",
+                "dateModified": "2024-03-01",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/case-20240301/dataease-072.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

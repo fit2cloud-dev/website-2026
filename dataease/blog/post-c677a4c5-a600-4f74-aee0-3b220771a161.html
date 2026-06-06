@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,176 @@
                     <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂｜BI大屏制作十大高频问题的解决技巧" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a href="https://dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。" target="_blank" rel="noopener noreferrer">https://dataease.io/templates/</a>）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。</p><h2 id="2023%E5%B9%B44%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF"><strong>2023年4月上新模板</strong></h2><p>DataEase模板市场定期进行模板上新。2023年4月共上新4个模板，涉及销售运营、安全审计和开源社区运营等主题，欢迎大家在DataEase模板市场下载使用。</p><p><img src="../images/blog/template-20230509/dataease-101-01.png" alt="FIT2CLOUD 开源大屏.png" loading="lazy" /><img src="../images/blog/template-20230509/dataease-101-02.png" alt="运维审计看板.png" loading="lazy" /><img src="../images/blog/template-20230509/dataease-101-03.png" alt="02-连锁店线上运营驾驶舱.png" loading="lazy" /><img src="../images/blog/template-20230509/dataease-101-04.png" alt="销售运营报表.png" loading="lazy" /></p><h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7"><strong>模板技巧</strong></h2><p>本月为大家推荐的模板技巧是，针对大家平常在数据可视化大屏制作过程中容易遇到的十大高频问题给出相应的解决方法。</p><p>每天都有不少新用户加入到DataEase开源社区的交流群中，大家刚开始碰到的问题都大同小异，所以为了方便用户查阅并减少学习成本，我们为大家整理了新用户最容易碰到的大屏制作十大问题，并提供对应的功能和实现技巧，希望帮助用户可以更加轻松地完成自己的目标大屏。</p><p><strong>问题一：仪表板内容过多导致版面拥挤</strong></p><p>仪表板内容较多时，如果在一个页面上展示所有内容，可能会使界面显得过于拥挤，影响用户的使用体验。为了解决这个问题，<strong>可以通过将仪表板内容分散到不同的Tab中，然后设置自动轮播功能来切换Tab</strong>，以展示不同的信息。这样既能充分展示所有内容，又不会使界面过于拥挤。</p><p>DataEase提供了自动轮播的功能，用户只需要在设置Tab时选择“自动轮播”功能，并设置时间间隔即可。这种方式操作简单，不需要编写代码，适用于非开发人员使用BI工具的情况。</p><p><strong>问题二：视图外间距不合理，可视化效果不佳</strong></p><p>对于视图展示效果不佳的问题，<strong>通过调整视图外间距可以改善该问题</strong>。视图外间距指的是图表展示区域上下左右的外间距，调整视图外间距可以使视图之间的关系更加清晰，增加可读性和美感。一般来说，视图外间距过小会让视图之间的内容过于密集，影响用户的视觉体验和理解效果；而视图外间距过大则会使页面显得稀疏，缺乏整体感。</p><p>通过适当地调整视图外间距，可以使视图之间的关系更加清晰明了，让用户更容易理解数据呈现的含义，从而提高数据分析的效率。</p><p><strong>问题三：指标太专业用户可读性差</strong></p><p>对于一些比较专业的指标，用户可能不太容易理解其含义和作用。此时，我们可以通过在仪表板视图中<strong>增加标题备注</strong>的方法，对指标进行解释和说明，帮助用户更好地理解和使用指标。</p><p>在DataEase中，可以设置标题备注，备注可以是文字、图片或者其他形式的媒介，通过简单明了的表述或图示，向用户解释指标的含义、计算方法、应用场景等信息，从而提高仪表板的实用性和用户体验。</p><p><strong>问题四：数据相关性强无法快速联动</strong></p><p>数据联动分析是指通过一个视图的数据指标来直接或者有条件地调用联动其他视图的数据指标，从而进行数据分析以揭示数据之间的相互关系和影响。这种方法可以帮助人们更好地理解数据之间关联性。</p><p>在DataEase中，<strong>可以通过设置视图联动来实现</strong>。视图联动是指在一个仪表板中，当一个视图选中某个数据时，其他视图会自动根据选中数据进行直接或者有条件的更新，从而达到数据联动分析的效果。</p><p>通过设置视图联动，可以方便快捷地进行数据联动分析，提高数据分析的效率。同时，视图联动也可以帮助用户快速发现数据之间的关联性，深入挖掘数据背后的含义，为业务决策提供更有价值的参考。</p><p><strong>问题五：没有配色基础，视图配色不好看</strong></p><p>视图的配色是很重要的，因为它会直接影响到用户对数据的认知和理解。如果配色不好看，用户可能无法轻松地阅读和理解数据。在数据可视化过程中，没有色彩搭配基础的用户往往对配色问题一筹莫展，而<strong>自定义分离渐变色是一种可以用来优化视图配色的快捷方法</strong>。</p><p>分离渐变色是指将一个颜色渐变范围分成多个部分，每个部分使用不同的颜色。通过这种方式，可以让数据更加直观地呈现出来，同时也能让视图更加美观。DataEase提供多种分离渐变色方案，同时用户也可以自定义选择主色调和配色风格，快速生成合适的仪表板配色方案。</p><p><strong>问题六：横轴维度数据太多无法展示</strong></p><p>在DataEase中，如果横轴数据过多，<strong>可以使用缩略轴来实现自由变换</strong>。缩略轴可以自由拖动实现拉伸或缩放数据可视化范围，同时可以方便地展示维度较多的大量数据，方便用户快捷高效地浏览指定范围内的数据，使得数据分析更加高效和精确。</p><p><strong>问题七：数据存在层级关系无法逐级剖析</strong></p><p>在DataEase中，<strong>可以通过视图下钻来实现多层级关系数据的逐级分析查看</strong>。“视图下钻”是指，在一个视图中当用户点击某个维度时可以逐级下钻到下级维度视图，以实现数据的逐层分析。</p><p>视图下钻通过设置多级钻取/维度实现，可以拖动包含层级关系的多个维度完成数据逐级分析的设置。通过视图下钻分析，可以使数据分析更加精细化和深入化。</p><p><strong>问题八：时间粒度太细数据太多，不好聚合</strong></p><p>DataEase提供了时间聚合的功能，<strong>可以通过快速聚合时间维度数据，减少时间维度数据过多的情况</strong>。通过时间自由聚合，可以将细粒度过多的时间维度数据聚合成大粒度较少的数据，便于仪表板的展示和分析，同时数据可按照日、月、年等不同维度实现快速聚合。</p><p><strong>问题九：指标信息量大，无法快速辅助决策</strong></p><p>辅助线是用于标识某个指标或者维度的参考辅助信息。一旦该指标或维度的值超过或者低于该参考辅助值，就需要发出预警或者采取相关措施。在DataEase中，<strong>可以通过辅助线设置固定或者动态辅助线来实现决策辅助</strong>。</p><p>通过辅助线的设置，可以清晰地展示出指标或维度的预警或辅助决策信息，帮助用户更好地掌握数据的趋势和变化，及时进行调整和优化决策。</p><p><strong>问题十：数据维度太多无法突出重点</strong></p><p>当视图里的数据量太大时，该如何轻松展示重点数据呢？可以通过TOP数据进行展示。在DataEase中，<strong>展示TOP数据可以通过设置“排序+结果展示”参数的方法来实现</strong>。</p><p>首先，对数据进行排序，找出前几条数据，使数据按照想要的顺序进行排序。排序完成后，可以使用结果展示来筛选出TOP数据。在DataEase的结果展示视图中，可以设置展示维度数据的数量来进行数据筛选。通过以上两个步骤，就可以在仪表板中展示TOP数据了，让数据展示更加直观清晰。</p><h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2><p>本期为大家介绍的模板技巧都是通过DataEase开源数据可视化分析工具自带的功能实现的，可以解决用户在使用过程中最容易遇到的问题。DataEase长期践行“人人可用”的目标，将用户的需求放在首位，产品功能不断多元化，帮助用户轻松实现高效的数据可视化。</p><p>用户在使用过程中可以不断探索DataEase的功能用法，DataEase也将继续为大家提供更多的新功能介绍和使用技巧，更好地满足广大用户在数据可视化工具易用性和实用性方面的实际需求，努力打造一款“人人可用的开源数据可视化分析工具”。</p>
+                    <p>
+                        DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a
+                            href="https://dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >https://dataease.io/templates/</a
+                        >）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。
+                    </p>
+                    <h2 id="2023%E5%B9%B44%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF"><strong>2023年4月上新模板</strong></h2>
+                    <p>DataEase模板市场定期进行模板上新。2023年4月共上新4个模板，涉及销售运营、安全审计和开源社区运营等主题，欢迎大家在DataEase模板市场下载使用。</p>
+                    <p>
+                        <img src="../images/blog/template-20230509/dataease-101-01.png" alt="FIT2CLOUD 开源大屏.png" loading="lazy" /><img
+                            src="../images/blog/template-20230509/dataease-101-02.png"
+                            alt="运维审计看板.png"
+                            loading="lazy"
+                        /><img src="../images/blog/template-20230509/dataease-101-03.png" alt="02-连锁店线上运营驾驶舱.png" loading="lazy" /><img
+                            src="../images/blog/template-20230509/dataease-101-04.png"
+                            alt="销售运营报表.png"
+                            loading="lazy"
+                        />
+                    </p>
+                    <h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7"><strong>模板技巧</strong></h2>
+                    <p>本月为大家推荐的模板技巧是，针对大家平常在数据可视化大屏制作过程中容易遇到的十大高频问题给出相应的解决方法。</p>
+                    <p>
+                        每天都有不少新用户加入到DataEase开源社区的交流群中，大家刚开始碰到的问题都大同小异，所以为了方便用户查阅并减少学习成本，我们为大家整理了新用户最容易碰到的大屏制作十大问题，并提供对应的功能和实现技巧，希望帮助用户可以更加轻松地完成自己的目标大屏。
+                    </p>
+                    <p><strong>问题一：仪表板内容过多导致版面拥挤</strong></p>
+                    <p>
+                        仪表板内容较多时，如果在一个页面上展示所有内容，可能会使界面显得过于拥挤，影响用户的使用体验。为了解决这个问题，<strong>可以通过将仪表板内容分散到不同的Tab中，然后设置自动轮播功能来切换Tab</strong>，以展示不同的信息。这样既能充分展示所有内容，又不会使界面过于拥挤。
+                    </p>
+                    <p>DataEase提供了自动轮播的功能，用户只需要在设置Tab时选择“自动轮播”功能，并设置时间间隔即可。这种方式操作简单，不需要编写代码，适用于非开发人员使用BI工具的情况。</p>
+                    <p><strong>问题二：视图外间距不合理，可视化效果不佳</strong></p>
+                    <p>
+                        对于视图展示效果不佳的问题，<strong>通过调整视图外间距可以改善该问题</strong>。视图外间距指的是图表展示区域上下左右的外间距，调整视图外间距可以使视图之间的关系更加清晰，增加可读性和美感。一般来说，视图外间距过小会让视图之间的内容过于密集，影响用户的视觉体验和理解效果；而视图外间距过大则会使页面显得稀疏，缺乏整体感。
+                    </p>
+                    <p>通过适当地调整视图外间距，可以使视图之间的关系更加清晰明了，让用户更容易理解数据呈现的含义，从而提高数据分析的效率。</p>
+                    <p><strong>问题三：指标太专业用户可读性差</strong></p>
+                    <p>对于一些比较专业的指标，用户可能不太容易理解其含义和作用。此时，我们可以通过在仪表板视图中<strong>增加标题备注</strong>的方法，对指标进行解释和说明，帮助用户更好地理解和使用指标。</p>
+                    <p>在DataEase中，可以设置标题备注，备注可以是文字、图片或者其他形式的媒介，通过简单明了的表述或图示，向用户解释指标的含义、计算方法、应用场景等信息，从而提高仪表板的实用性和用户体验。</p>
+                    <p><strong>问题四：数据相关性强无法快速联动</strong></p>
+                    <p>数据联动分析是指通过一个视图的数据指标来直接或者有条件地调用联动其他视图的数据指标，从而进行数据分析以揭示数据之间的相互关系和影响。这种方法可以帮助人们更好地理解数据之间关联性。</p>
+                    <p>在DataEase中，<strong>可以通过设置视图联动来实现</strong>。视图联动是指在一个仪表板中，当一个视图选中某个数据时，其他视图会自动根据选中数据进行直接或者有条件的更新，从而达到数据联动分析的效果。</p>
+                    <p>通过设置视图联动，可以方便快捷地进行数据联动分析，提高数据分析的效率。同时，视图联动也可以帮助用户快速发现数据之间的关联性，深入挖掘数据背后的含义，为业务决策提供更有价值的参考。</p>
+                    <p><strong>问题五：没有配色基础，视图配色不好看</strong></p>
+                    <p>
+                        视图的配色是很重要的，因为它会直接影响到用户对数据的认知和理解。如果配色不好看，用户可能无法轻松地阅读和理解数据。在数据可视化过程中，没有色彩搭配基础的用户往往对配色问题一筹莫展，而<strong>自定义分离渐变色是一种可以用来优化视图配色的快捷方法</strong>。
+                    </p>
+                    <p>
+                        分离渐变色是指将一个颜色渐变范围分成多个部分，每个部分使用不同的颜色。通过这种方式，可以让数据更加直观地呈现出来，同时也能让视图更加美观。DataEase提供多种分离渐变色方案，同时用户也可以自定义选择主色调和配色风格，快速生成合适的仪表板配色方案。
+                    </p>
+                    <p><strong>问题六：横轴维度数据太多无法展示</strong></p>
+                    <p>
+                        在DataEase中，如果横轴数据过多，<strong>可以使用缩略轴来实现自由变换</strong>。缩略轴可以自由拖动实现拉伸或缩放数据可视化范围，同时可以方便地展示维度较多的大量数据，方便用户快捷高效地浏览指定范围内的数据，使得数据分析更加高效和精确。
+                    </p>
+                    <p><strong>问题七：数据存在层级关系无法逐级剖析</strong></p>
+                    <p>在DataEase中，<strong>可以通过视图下钻来实现多层级关系数据的逐级分析查看</strong>。“视图下钻”是指，在一个视图中当用户点击某个维度时可以逐级下钻到下级维度视图，以实现数据的逐层分析。</p>
+                    <p>视图下钻通过设置多级钻取/维度实现，可以拖动包含层级关系的多个维度完成数据逐级分析的设置。通过视图下钻分析，可以使数据分析更加精细化和深入化。</p>
+                    <p><strong>问题八：时间粒度太细数据太多，不好聚合</strong></p>
+                    <p>
+                        DataEase提供了时间聚合的功能，<strong>可以通过快速聚合时间维度数据，减少时间维度数据过多的情况</strong>。通过时间自由聚合，可以将细粒度过多的时间维度数据聚合成大粒度较少的数据，便于仪表板的展示和分析，同时数据可按照日、月、年等不同维度实现快速聚合。
+                    </p>
+                    <p><strong>问题九：指标信息量大，无法快速辅助决策</strong></p>
+                    <p>辅助线是用于标识某个指标或者维度的参考辅助信息。一旦该指标或维度的值超过或者低于该参考辅助值，就需要发出预警或者采取相关措施。在DataEase中，<strong>可以通过辅助线设置固定或者动态辅助线来实现决策辅助</strong>。</p>
+                    <p>通过辅助线的设置，可以清晰地展示出指标或维度的预警或辅助决策信息，帮助用户更好地掌握数据的趋势和变化，及时进行调整和优化决策。</p>
+                    <p><strong>问题十：数据维度太多无法突出重点</strong></p>
+                    <p>当视图里的数据量太大时，该如何轻松展示重点数据呢？可以通过TOP数据进行展示。在DataEase中，<strong>展示TOP数据可以通过设置“排序+结果展示”参数的方法来实现</strong>。</p>
+                    <p>
+                        首先，对数据进行排序，找出前几条数据，使数据按照想要的顺序进行排序。排序完成后，可以使用结果展示来筛选出TOP数据。在DataEase的结果展示视图中，可以设置展示维度数据的数量来进行数据筛选。通过以上两个步骤，就可以在仪表板中展示TOP数据了，让数据展示更加直观清晰。
+                    </p>
+                    <h2 id="%E6%80%BB%E7%BB%93"><strong>总结</strong></h2>
+                    <p>
+                        本期为大家介绍的模板技巧都是通过DataEase开源数据可视化分析工具自带的功能实现的，可以解决用户在使用过程中最容易遇到的问题。DataEase长期践行“人人可用”的目标，将用户的需求放在首位，产品功能不断多元化，帮助用户轻松实现高效的数据可视化。
+                    </p>
+                    <p>
+                        用户在使用过程中可以不断探索DataEase的功能用法，DataEase也将继续为大家提供更多的新功能介绍和使用技巧，更好地满足广大用户在数据可视化工具易用性和实用性方面的实际需求，努力打造一款“人人可用的开源数据可视化分析工具”。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂｜BI大屏制作十大高频问题的解决技巧","item":"https://dataease.cn/blog/post-c677a4c5-a600-4f74-aee0-3b220771a161.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂｜BI大屏制作十大高频问题的解决技巧","description":"模板市场上新！大屏制作十大高频问题教你小妙招！","url":"https://dataease.cn/blog/post-c677a4c5-a600-4f74-aee0-3b220771a161.html","datePublished":"2023-05-09","dateModified":"2023-05-09","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-028.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "模板学堂｜BI大屏制作十大高频问题的解决技巧", "item": "https://dataease.cn/blog/post-c677a4c5-a600-4f74-aee0-3b220771a161.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "模板学堂｜BI大屏制作十大高频问题的解决技巧",
+                "description": "模板市场上新！大屏制作十大高频问题教你小妙招！",
+                "url": "https://dataease.cn/blog/post-c677a4c5-a600-4f74-aee0-3b220771a161.html",
+                "datePublished": "2023-05-09",
+                "dateModified": "2023-05-09",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-028.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

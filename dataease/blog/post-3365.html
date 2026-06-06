@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,144 +219,177 @@
                     <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜用DataEase可视化分析2022年北京冬奥会数据" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>2022年北京冬奥会刚刚落下帷幕，我作为一个奥运迷，既为能够无时差享受比赛感到满足，也为我们国家能够圆满地举办感到骄傲。看完闭幕式，我就想如何能够以自己的方式来纪念这一届意义非凡的冬奥会，用可视化的方式来展示冬奥会的成绩和成果。</p>
-<p>我在网上找了很多数据可视化的工具，经过多方比较和选择，最后选择了DataEase开源数据可视化分析平台 v1.7.0版本。DataEase的口号是“人人可用的开源数据可视化分析工具”。这个项目附带有完整的指导文档和手册，有解决不了的问题还可以加入开源群询问各路大神，特别适合我这种什么都不会的小白。</p>
-<p>以下是我最终选择使用DataEase进行数据可视化分析的主要原因：</p>
-<p>■ <strong>开源是最大的亮点</strong>。目前市面上很多数据分析软件，不少都是要收费的，因此完全免费的开源系统非常适合我这种使用频率不高的人；</p>
-<p>■ <strong>支持多种数据源</strong>，比如数据库、Excel表格等；</p>
-<p>■ <strong>制作简单</strong>，在制作的过程中，以拖拉拽的方式生成图表，操作简单易上手；</p>
-<p>■ <strong>有丰富的组件元素</strong>，可以在仪表板上插入文本、形状、时间、图片和视频等。</p>
+                    <p>
+                        2022年北京冬奥会刚刚落下帷幕，我作为一个奥运迷，既为能够无时差享受比赛感到满足，也为我们国家能够圆满地举办感到骄傲。看完闭幕式，我就想如何能够以自己的方式来纪念这一届意义非凡的冬奥会，用可视化的方式来展示冬奥会的成绩和成果。
+                    </p>
+                    <p>
+                        我在网上找了很多数据可视化的工具，经过多方比较和选择，最后选择了DataEase开源数据可视化分析平台
+                        v1.7.0版本。DataEase的口号是“人人可用的开源数据可视化分析工具”。这个项目附带有完整的指导文档和手册，有解决不了的问题还可以加入开源群询问各路大神，特别适合我这种什么都不会的小白。
+                    </p>
+                    <p>以下是我最终选择使用DataEase进行数据可视化分析的主要原因：</p>
+                    <p>■ <strong>开源是最大的亮点</strong>。目前市面上很多数据分析软件，不少都是要收费的，因此完全免费的开源系统非常适合我这种使用频率不高的人；</p>
+                    <p>■ <strong>支持多种数据源</strong>，比如数据库、Excel表格等；</p>
+                    <p>■ <strong>制作简单</strong>，在制作的过程中，以拖拉拽的方式生成图表，操作简单易上手；</p>
+                    <p>■ <strong>有丰富的组件元素</strong>，可以在仪表板上插入文本、形状、时间、图片和视频等。</p>
 
+                    <h2>确定主题</h2>
+                    <p>首先我制作了一个思维导图，确定我想要展示的内容。冬奥主题仪表板的内容包括：</p>
+                    <p>■ 展示冬奥会赛事的最终成绩：一方面是展示国际上各个参赛国的获奖情况，另一方面是了解中国在此项赛事中的排名情况；</p>
+                    <p><strong>■ </strong>中国代表团在冬奥会上的表现；</p>
+                    <p><strong>■ </strong>其他一些重要的数据，比如：中国为冬奥会的举办做了哪些贡献？冬奥会有哪些收获？有多少志愿者为了赛事而辛苦努力？</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-01.png" alt="" loading="lazy" /></figure>
 
-<h2>确定主题</h2>
-<p>首先我制作了一个思维导图，确定我想要展示的内容。冬奥主题仪表板的内容包括：</p>
-<p>■ 展示冬奥会赛事的最终成绩：一方面是展示国际上各个参赛国的获奖情况，另一方面是了解中国在此项赛事中的排名情况；</p>
-<p><strong>■ </strong>中国代表团在冬奥会上的表现；</p>
-<p><strong>■ </strong>其他一些重要的数据，比如：中国为冬奥会的举办做了哪些贡献？冬奥会有哪些收获？有多少志愿者为了赛事而辛苦努力？</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-01.png" alt="" loading="lazy" /></figure>
+                    <h2>数据准备</h2>
+                    <p>
+                        数据的主要来源是媒体新闻和北京冬奥会官网。对数据进行整理之后，将提炼出的有价值的数据导入到数据库或者Excel中。在进行数据抓取和过滤的过程中，我发现DataEase对于数据库的数据变更，有个“同步更新”的功能非常方便。在数据有变动的情况下，只需要点击
+                        “同步更新”就可以一键更新数据。
+                    </p>
+                    <p>下面是数据来源的部分链接：</p>
+                    <p><strong>北京冬奥会官网：</strong></p>
+                    <p><a href="https://www.beijing2022.cn/" target="_blank" rel="noopener noreferrer">https://www.beijing2022.cn/</a></p>
+                    <p><strong>人民网：</strong></p>
+                    <p><a href="http://ent.people.com.cn/n1/2022/0223/c1012-32357941.html" target="_blank" rel="noopener noreferrer">http://ent.people.com.cn/n1/2022/0223/c1012-32357941.html</a></p>
+                    <p><strong>澎湃新闻：</strong></p>
+                    <p><a href="https://m.thepaper.cn/newsDetail_forward_16816956" target="_blank" rel="noopener noreferrer">https://m.thepaper.cn/newsDetail_forward_16816956</a></p>
+                    <p><strong>网易：</strong></p>
+                    <p><a href="https://www.163.com/dy/article/H0R1RB230550HKM7.html" target="_blank" rel="noopener noreferrer">https://www.163.com/dy/article/H0R1RB230550HKM7.html</a></p>
+                    <p><strong>知乎：</strong></p>
+                    <p><a href="https://www.zhihu.com/question/440795598/answer/2309135978" target="_blank" rel="noopener noreferrer">https://www.zhihu.com/question/440795598/answer/2309135978</a></p>
 
+                    <h2>制作仪表板</h2>
+                    <p>本次仪表板的制作步骤是：创建数据源→创建数据集→创建视图→导入视频→制作仪表板。</p>
+                    <p><strong>■ 创建数据源</strong></p>
+                    <p>本文使用了数据库和Excel作为数据源。目前，DataEase v1.7.0版本已经支持MySQL、Apache Hive、Oracle、SQL Server、PostgreSQL、MariaDB、Elasticsearch、Apache Doris、ClickHouse、AWS Redshift、MongoDB、DB2等数据源。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 创建数据集</strong></p>
+                    <p>创建数据库数据集：选择添加“数据库数据集”选项，在其页面中勾选选定的数据库下的数据表。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-03.png" alt="" loading="lazy" /></figure>
+                    <p>在数据集导入后，核对“字段管理”标签页中的字段名、字段类型和维度及指标的位置情况。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-04.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 创建视图</strong></p>
+                    <p>
+                        所谓“视图”就是把数据集中的数据用图表的方式展示出来。我比较关心的是，可视化工具是否能够提供足够多的视图类型，足够我展示出自己想要表达的内容。比如，我想展示数据的变化趋势时需要使用折线图，展示数据的分布情况时需要使用柱状图等。
+                    </p>
+                    <p>
+                        DataEase提供的图表类型很丰富，目前已经支持的视图种类包括：明细表、指标卡、基础柱状图、堆叠柱状图、横向柱状图、横向堆叠柱状图、基础折线图、堆叠折线图、饼图、南丁格尔玫瑰图、漏斗图、雷达图、仪表盘、中国地图、散点图、气泡图、矩形树图等。DataEase开源项目组也承诺每月进行迭代更新，持续增加支持更多的视图种类。
+                    </p>
+                    <p>下面以展示冬奥会奖牌榜为例来说明仪表板的制作过程。</p>
+                    <p><strong>Step1：</strong>输入新建视图标题→选择数据集→选择合适的图表类型。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-05.png" alt="" loading="lazy" /></figure>
+                    <p><strong>Step2：</strong>配置维度和指标信息，以及对样式进行调整，使视图的色调样式做到整体协调。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-06.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 视频导入</strong></p>
+                    <p>在DataEase仪表板上放置视频有两种方式：1.获取网络上的视频地址直接使用 ；2.自己搭建一个视频服务器上传获取地址。</p>
+                    <p>本次我采用了自己搭建视频服务器上传的方式。视频导入的步骤为：获取到适配格式的视频（mp4、webw等）→导入到视频服务器（可供网络访问的视频即可）→通过视频组件加入到仪表板。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-07.png" alt="" loading="lazy" /></figure>
+                    <p>如下图所示，把视频组件“拖拽”出来后可以设置视频链接。我这里放了北京冬奥会的宣传片和闭幕式两个视频，并设置成循环播放。DataEase默认打开仪表盘的时候视频是静音的，这点也非常人性化。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-08.png" alt="" loading="lazy" /></figure>
+                    <p><strong>■ 制作仪表板</strong></p>
+                    <p><strong>Step1：</strong>选择背景、色调和布局。我在制作的时候选择蓝和白作为主要的底色，仪表板中视图标题颜色统一设置为#0482FC。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-09.png" alt="" loading="lazy" /></figure>
+                    <p><strong>Step2：</strong>将对应的元素排列到画布中，调整各个元素的样式，组成仪表板，效果如下图。</p>
+                    <figure><img src="../images/blog/chart-20220303/dataease-154-10.png" alt="" loading="lazy" /></figure>
 
-<h2>数据准备</h2>
-<p>数据的主要来源是媒体新闻和北京冬奥会官网。对数据进行整理之后，将提炼出的有价值的数据导入到数据库或者Excel中。在进行数据抓取和过滤的过程中，我发现DataEase对于数据库的数据变更，有个“同步更新”的功能非常方便。在数据有变动的情况下，只需要点击 “同步更新”就可以一键更新数据。</p>
-<p>下面是数据来源的部分链接：</p>
-<p><strong>北京冬奥会官网：</strong></p>
-<p><a href="https://www.beijing2022.cn/" target="_blank" rel="noopener noreferrer">https://www.beijing2022.cn/</a></p>
-<p><strong>人民网：</strong></p>
-<p><a href="http://ent.people.com.cn/n1/2022/0223/c1012-32357941.html" target="_blank" rel="noopener noreferrer">http://ent.people.com.cn/n1/2022/0223/c1012-32357941.html</a></p>
-<p><strong>澎湃新闻：</strong></p>
-<p><a href="https://m.thepaper.cn/newsDetail_forward_16816956" target="_blank" rel="noopener noreferrer">https://m.thepaper.cn/newsDetail_forward_16816956</a></p>
-<p><strong>网易：</strong></p>
-<p><a href="https://www.163.com/dy/article/H0R1RB230550HKM7.html" target="_blank" rel="noopener noreferrer">https://www.163.com/dy/article/H0R1RB230550HKM7.html</a></p>
-<p><strong>知乎：</strong></p>
-<p><a href="https://www.zhihu.com/question/440795598/answer/2309135978" target="_blank" rel="noopener noreferrer">https://www.zhihu.com/question/440795598/answer/2309135978</a></p>
-
-
-<h2>制作仪表板</h2>
-<p>本次仪表板的制作步骤是：创建数据源→创建数据集→创建视图→导入视频→制作仪表板。</p>
-<p><strong>■ 创建数据源</strong></p>
-<p>本文使用了数据库和Excel作为数据源。目前，DataEase v1.7.0版本已经支持MySQL、Apache Hive、Oracle、SQL Server、PostgreSQL、MariaDB、Elasticsearch、Apache Doris、ClickHouse、AWS Redshift、MongoDB、DB2等数据源。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-02.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 创建数据集</strong></p>
-<p>创建数据库数据集：选择添加“数据库数据集”选项，在其页面中勾选选定的数据库下的数据表。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-03.png" alt="" loading="lazy" /></figure>
-<p>在数据集导入后，核对“字段管理”标签页中的字段名、字段类型和维度及指标的位置情况。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-04.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 创建视图</strong></p>
-<p>所谓“视图”就是把数据集中的数据用图表的方式展示出来。我比较关心的是，可视化工具是否能够提供足够多的视图类型，足够我展示出自己想要表达的内容。比如，我想展示数据的变化趋势时需要使用折线图，展示数据的分布情况时需要使用柱状图等。</p>
-<p>DataEase提供的图表类型很丰富，目前已经支持的视图种类包括：明细表、指标卡、基础柱状图、堆叠柱状图、横向柱状图、横向堆叠柱状图、基础折线图、堆叠折线图、饼图、南丁格尔玫瑰图、漏斗图、雷达图、仪表盘、中国地图、散点图、气泡图、矩形树图等。DataEase开源项目组也承诺每月进行迭代更新，持续增加支持更多的视图种类。</p>
-<p>下面以展示冬奥会奖牌榜为例来说明仪表板的制作过程。</p>
-<p><strong>Step1：</strong>输入新建视图标题→选择数据集→选择合适的图表类型。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-05.png" alt="" loading="lazy" /></figure>
-<p><strong>Step2：</strong>配置维度和指标信息，以及对样式进行调整，使视图的色调样式做到整体协调。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-06.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 视频导入</strong></p>
-<p>在DataEase仪表板上放置视频有两种方式：1.获取网络上的视频地址直接使用 ；2.自己搭建一个视频服务器上传获取地址。</p>
-<p>本次我采用了自己搭建视频服务器上传的方式。视频导入的步骤为：获取到适配格式的视频（mp4、webw等）→导入到视频服务器（可供网络访问的视频即可）→通过视频组件加入到仪表板。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-07.png" alt="" loading="lazy" /></figure>
-<p>如下图所示，把视频组件“拖拽”出来后可以设置视频链接。我这里放了北京冬奥会的宣传片和闭幕式两个视频，并设置成循环播放。DataEase默认打开仪表盘的时候视频是静音的，这点也非常人性化。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-08.png" alt="" loading="lazy" /></figure>
-<p><strong>■ 制作仪表板</strong></p>
-<p><strong>Step1：</strong>选择背景、色调和布局。我在制作的时候选择蓝和白作为主要的底色，仪表板中视图标题颜色统一设置为#0482FC。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-09.png" alt="" loading="lazy" /></figure>
-<p><strong>Step2：</strong>将对应的元素排列到画布中，调整各个元素的样式，组成仪表板，效果如下图。</p>
-<figure><img src="../images/blog/chart-20220303/dataease-154-10.png" alt="" loading="lazy" /></figure>
-
-
-<h2>使用心得</h2>
-<p>使用了DataEase开源数据可视化工具后，我也收获了一些仪表板制作的心得体会，在这里分享给大家：</p>
-<p><strong>■ 明确仪表板要表达的主题</strong></p>
-<p>我们制作仪表板应该有一个明确的主题，明确主题后我们可以使用各个合适的视图元素来“表达”数据。DataEase对于初学者十分友好，是真正“人人可用”的数据可视化分析工具；</p>
-<p><strong>■ 关注数据所能传达的内容</strong></p>
-<p>仪表板的各个元素应该让人能够更直观地感受到数据的魅力。比如这次冬奥会仪表板中中国历届冬奥会获得奖牌数量的折线图，展示了我们国家在冬奥会参赛过程中的进步成果，体现了“更快、更高、更强、更团结”的奥林匹克格言。</p>
+                    <h2>使用心得</h2>
+                    <p>使用了DataEase开源数据可视化工具后，我也收获了一些仪表板制作的心得体会，在这里分享给大家：</p>
+                    <p><strong>■ 明确仪表板要表达的主题</strong></p>
+                    <p>我们制作仪表板应该有一个明确的主题，明确主题后我们可以使用各个合适的视图元素来“表达”数据。DataEase对于初学者十分友好，是真正“人人可用”的数据可视化分析工具；</p>
+                    <p><strong>■ 关注数据所能传达的内容</strong></p>
+                    <p>仪表板的各个元素应该让人能够更直观地感受到数据的魅力。比如这次冬奥会仪表板中中国历届冬奥会获得奖牌数量的折线图，展示了我们国家在冬奥会参赛过程中的进步成果，体现了“更快、更高、更强、更团结”的奥林匹克格言。</p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"仪表板展示｜用DataEase可视化分析2022年北京冬奥会数据","item":"https://dataease.cn/blog/post-3365.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"仪表板展示｜用DataEase可视化分析2022年北京冬奥会数据","description":"使用DataEase可视化北京冬奥会重要数据。","url":"https://dataease.cn/blog/post-3365.html","datePublished":"2022-03-03","dateModified":"2022-03-03","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "仪表板展示｜用DataEase可视化分析2022年北京冬奥会数据", "item": "https://dataease.cn/blog/post-3365.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "仪表板展示｜用DataEase可视化分析2022年北京冬奥会数据",
+                "description": "使用DataEase可视化北京冬奥会重要数据。",
+                "url": "https://dataease.cn/blog/post-3365.html",
+                "datePublished": "2022-03-03",
+                "dateModified": "2022-03-03",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

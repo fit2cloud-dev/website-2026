@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
@@ -43,11 +43,26 @@
         <meta name="twitter:description" content="JumpServer命令过滤器支持关联节点。" />
         <meta name="twitter:image" content="https://www.jumpserver.org/images/blog/release-20221121/cover.jpg" />
         <meta name="twitter:image:alt" content="重构Magnus数据库连接组件，JumpServer堡垒机v2.27.0发布 - JumpServer 产品动态" />
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"重构Magnus数据库连接组件，JumpServer堡垒机v2.27.0发布","description":"JumpServer命令过滤器支持关联节点。","datePublished":"2022-10-24T03:04:16+00:00","dateModified":"2022-10-24T03:04:16+00:00","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云","logo":{"@type":"ImageObject","url":"https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.jumpserver.org/blog/release-20221024.html"},"image":["https://www.jumpserver.org/images/blog/release-20221121/cover.jpg"]}</script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "重构Magnus数据库连接组件，JumpServer堡垒机v2.27.0发布",
+                "description": "JumpServer命令过滤器支持关联节点。",
+                "datePublished": "2022-10-24T03:04:16+00:00",
+                "dateModified": "2022-10-24T03:04:16+00:00",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" } },
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.jumpserver.org/blog/release-20221024.html" },
+                "image": ["https://www.jumpserver.org/images/blog/release-20221121/cover.jpg"]
+            }
+        </script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ZRQ481R4Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
+            function gtag() {
+                dataLayer.push(arguments);
+            }
             gtag('js', new Date());
             gtag('config', 'G-2ZRQ481R4Z');
         </script>
@@ -63,11 +78,20 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
-                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl"><div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div></button>
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
+                                </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
                                         <ul class="mega-nav-list">
@@ -134,7 +158,13 @@
                         <img src="../images/logo/logo-light-JumpServer.svg" class="l-light" height="35" alt="JumpServer Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -168,8 +198,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-                        
-
 
                         <li>
                             <div class="mt-3 menu-mt-pnone">
@@ -191,215 +219,226 @@
                 </header>
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image-01.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>2022年10月24日，JumpServer开源堡垒机正式发布v2.27.0版本。在这一版本中，我们重构了Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库。在之前的版本中，Magnus组件只支持代理连接Oracle 11g、Oracle 12c版本，限制了一些用户因使用Oracle 12c（不含）以上版本的数据库导致无法连接的问题。在新版本中，通过Magnus组件连接Oracle数据库将不会受到版本限制。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        2022年10月24日，JumpServer开源堡垒机正式发布v2.27.0版本。在这一版本中，我们重构了Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库。在之前的版本中，Magnus组件只支持代理连接Oracle 11g、Oracle
+                        12c版本，限制了一些用户因使用Oracle 12c（不含）以上版本的数据库导致无法连接的问题。在新版本中，通过Magnus组件连接Oracle数据库将不会受到版本限制。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>另外，在这一版本中，JumpServer命令过滤器支持关联节点，该节点及子节点的资产都会受到此命令过滤器规则的限制。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>另外，在这一版本中，JumpServer命令过滤器支持关联节点，该节点及子节点的资产都会受到此命令过滤器规则的限制。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>新增功能</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>新增功能</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p><strong>1. 重构Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>1. 重构Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.27.0版本中，我们重构了Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库。在之前的版本中，Magnus组件只支持代理连接Oracle 11g、Oracle 12c数据库，当有些用户使用Oracle 12c（不含）以上的数据库时，就会遇到无法连接的情况。在新版本中，用户通过Magnus组件连接Oracle数据库将不会受到版本限制。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        在JumpServer v2.27.0版本中，我们重构了Magnus数据库连接组件，支持代理连接Oracle 11g（含）以上版本的数据库。在之前的版本中，Magnus组件只支持代理连接Oracle 11g、Oracle 12c数据库，当有些用户使用Oracle
+                        12c（不含）以上的数据库时，就会遇到无法连接的情况。在新版本中，用户通过Magnus组件连接Oracle数据库将不会受到版本限制。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>相关注意事项如下：</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>相关注意事项如下：</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;Magnus默认开启的数据库端口是100个，如数据库超过100个时，需修改配置文件：<em>vim<br><br>/opt/jumpserver/config/config.txt</em>，修改启用端口数据量：<em>MAGNUS_PORTS=30000-30200</em>；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        ■&nbsp;Magnus默认开启的数据库端口是100个，如数据库超过100个时，需修改配置文件：<em>vim<br /><br />/opt/jumpserver/config/config.txt</em>，修改启用端口数据量：<em>MAGNUS_PORTS=30000-30200</em>；
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;重构后的Magnus组件代理连接Oracle数据库时，我们只支持客户端OCI（Oracle Call Interface，Oracle调用接口）连接方式，暂不支持Thin连接方式；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;重构后的Magnus组件代理连接Oracle数据库时，我们只支持客户端OCI（Oracle Call Interface，Oracle调用接口）连接方式，暂不支持Thin连接方式；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;在Windows环境下，一些客户端工具会出现OCI版本过低的问题，并因此导致Oracle连接失败。需要用户手动下载19c（含）以上版本的OCI，进行替换。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;在Windows环境下，一些客户端工具会出现OCI版本过低的问题，并因此导致Oracle连接失败。需要用户手动下载19c（含）以上版本的OCI，进行替换。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4866,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.jpg" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4866,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.jpg" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 图1 创建Oracle数据库时无需再指定版本</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 图1 创建Oracle数据库时无需再指定版本</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4867,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4867,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲图2 获取Oracle连接信息</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲图2 获取Oracle连接信息</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4868,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4868,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 图3 Magnus代理连接多版本Oracle数据库（命令行连接方式）</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 图3 Magnus代理连接多版本Oracle数据库（命令行连接方式）</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4869,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4869,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 图4 Magnus代理连接多版本Oracle数据库 （使用Navicat客户端工具连接方式）</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 图4 Magnus代理连接多版本Oracle数据库 （使用Navicat客户端工具连接方式）</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p><strong>2. 命令过滤器支持关联节点</strong></p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p><strong>2. 命令过滤器支持关联节点</strong></p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在JumpServer v2.27.0版本中，命令过滤器支持关联节点，该节点及子节点的资产都受此命令过滤器规则的限制。在实际使用过程中，用户会不断添加资产到指定的节点，单独授权节点会导致每次新添加资产时都需要额外进行授权规则修改或者命令过滤器修改，如果忘记了容易出现安全事故。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>
+                        在JumpServer
+                        v2.27.0版本中，命令过滤器支持关联节点，该节点及子节点的资产都受此命令过滤器规则的限制。在实际使用过程中，用户会不断添加资产到指定的节点，单独授权节点会导致每次新添加资产时都需要额外进行授权规则修改或者命令过滤器修改，如果忘记了容易出现安全事故。
+                    </p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>在该新版本中，JumpServer新增支持关联节点。将资产添加到节点中，将会自动继承节点的命令过滤规则，极大地方便了用户安全运维，能够有效避免一些因高危命令导致的安全事故。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>在该新版本中，JumpServer新增支持关联节点。将资产添加到节点中，将会自动继承节点的命令过滤规则，极大地方便了用户安全运维，能够有效避免一些因高危命令导致的安全事故。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>管理员选择“资产管理”→“命令过滤”，在创建命令过滤器的表单上可关联节点。授权节点后，连接该节点的资产或者子节点的资产，输入命令规则的命令，即会受到该命令过滤器规则的限制。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>管理员选择“资产管理”→“命令过滤”，在创建命令过滤器的表单上可关联节点。授权节点后，连接该节点的资产或者子节点的资产，输入命令规则的命令，即会受到该命令过滤器规则的限制。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4870,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4870,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲ 图5 管理员创建命令过滤器时，可关联节点</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲ 图5 管理员创建命令过滤器时，可关联节点</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":4871,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
-<!-- /wp:image -->
+                    <!-- wp:image {"id":4871,"sizeSlug":"large"} -->
+                    <figure class="wp-block-image size-large"><img src="../images/blog/release-20221024/image.png" alt="" loading="lazy" /></figure>
+                    <!-- /wp:image -->
 
-<!-- wp:paragraph -->
-<p>▲图6 测试命令过滤器中关联节点的资产，输入命令规则的命令，受该命令过滤器的限制</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>▲图6 测试命令过滤器中关联节点的资产，输入命令规则的命令，受该命令过滤器的限制</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>功能优化</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>功能优化</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化创建⽤户时，默认勾选登录后需要修改密码；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化创建⽤户时，默认勾选登录后需要修改密码；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化后端⾃动⽣成密码时，⾸位不使⽤特殊字符；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化后端⾃动⽣成密码时，⾸位不使⽤特殊字符；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化终端端点的数据库端口配置⽅式；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化终端端点的数据库端口配置⽅式；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化通过Web CLI⽅式连接资产时，⽀持⼀键恢复到默认主题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化通过Web CLI⽅式连接资产时，⽀持⼀键恢复到默认主题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化页⾯点击按钮时，顶部只显⽰⼀条弹出消息的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化页⾯点击按钮时，顶部只显⽰⼀条弹出消息的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化Lion组件连接Windows资产进⾏操作时出现的卡键情况；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化Lion组件连接Windows资产进⾏操作时出现的卡键情况；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化后端服务创建⽬录时指定权限为755；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化后端服务创建⽬录时指定权限为755；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化各组件命令上传逻辑，当Elasticsearch服务停⽌时，⾃动将命令上传至本地数据库存储；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化各组件命令上传逻辑，当Elasticsearch服务停⽌时，⾃动将命令上传至本地数据库存储；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化重构Magnus后端数据库会话处理逻辑（Magnus组件）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化重构Magnus后端数据库会话处理逻辑（Magnus组件）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化创建Oracle数据库应⽤时，不需要填写数据库版本（X-Pack增强包内）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化创建Oracle数据库应⽤时，不需要填写数据库版本（X-Pack增强包内）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化Razor组件的内存使⽤机制，减少多会话并发时发⽣OOM（Out Of Memory，内存溢出）异常的问题（Razor组件，X-Pack增强包内）；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化Razor组件的内存使⽤机制，减少多会话并发时发⽣OOM（Out Of Memory，内存溢出）异常的问题（Razor组件，X-Pack增强包内）；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;优化云同步的同步实例列表不显⽰多选框的问题（X-Pack增强包内）。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;优化云同步的同步实例列表不显⽰多选框的问题（X-Pack增强包内）。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>Bug修复</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>Bug修复</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复Celery任务丢失⼼跳不会重连的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复Celery任务丢失⼼跳不会重连的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复Celery定时任务会⾃动停⽌不执⾏的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复Celery定时任务会⾃动停⽌不执⾏的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复任务列表⽆法查看Ansible任务执⾏⽇志信息的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复任务列表⽆法查看Ansible任务执⾏⽇志信息的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复国密加密中，密码末尾是空格导致解密失败的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复国密加密中，密码末尾是空格导致解密失败的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复Elasticsearch命令存储失效时，查看会话列表、命令记录列表等失败的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复Elasticsearch命令存储失效时，查看会话列表、命令记录列表等失败的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复OAuth2认证的⽤户被管理员本地被禁⽤后，页⾯会⼀直跳转的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复OAuth2认证的⽤户被管理员本地被禁⽤后，页⾯会⼀直跳转的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复⽤户个⼈页⾯信息更新不及时的问题，例如⽤户⾓⾊的显⽰；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复⽤户个⼈页⾯信息更新不及时的问题，例如⽤户⾓⾊的显⽰；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复刷新页⾯时，出现空⽩页⾯闪现的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复刷新页⾯时，出现空⽩页⾯闪现的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复本地客户端连接Windows 2008资产时，录像引起服务异常退出的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复本地客户端连接Windows 2008资产时，录像引起服务异常退出的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复资产详情查看授权⽤户页⾯报错的问题；</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复资产详情查看授权⽤户页⾯报错的问题；</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
-<p>■&nbsp;修复全局组织下的⼀些资源不能创建、更新的问题（X-Pack增强包内）。</p>
-<!-- /wp:paragraph -->
+                    <!-- wp:paragraph -->
+                    <p>■&nbsp;修复全局组织下的⼀些资源不能创建、更新的问题（X-Pack增强包内）。</p>
+                    <!-- /wp:paragraph -->
 
-<!-- wp:heading -->
-<h2>直播预告</h2>
-<!-- /wp:heading -->
+                    <!-- wp:heading -->
+                    <h2>直播预告</h2>
+                    <!-- /wp:heading -->
 
-<!-- wp:paragraph -->
+                    <!-- wp:paragraph -->
 
-<!-- /wp:paragraph -->
+                    <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -456,10 +495,10 @@
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jinshuju.net/f/kyOYpi" class="footer-text-color">申请企业版试用</a></h4>
                                 </div>
-                            </div>                                          
+                            </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
@@ -470,21 +509,75 @@
                         <a class="de-footer-logo" href="../index.html"><img src="../images/logo/logo-dark-JumpServer.svg" alt="JumpServer Logo" /></a>
                         <p class="de-footer-desc">广受欢迎的开源堡垒机，由飞致云匠心出品。</p>
                         <div class="de-footer-social" aria-label="JumpServer 社交媒体链接">
-                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z" /></svg></a>
-                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z" /></svg></a>
-                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z" /></svg></a>
+                            <a href="https://github.com/jumpserver/jumpserver" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 .5a12 12 0 0 0-3.8 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.41-4.04-1.41-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.92 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23A11.45 11.45 0 0 1 12 6.82c1.02.01 2.05.14 3.01.41 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M4.5 4h15A2.5 2.5 0 0 1 22 6.5v8a2.5 2.5 0 0 1-2.5 2.5H9.2l-5.02 3.58A.75.75 0 0 1 3 19.97V6.5A2.5 2.5 0 0 1 4.5 4Zm0 1.5a1 1 0 0 0-1 1v12.01l4.99-3.56c.13-.1.28-.15.44-.15H19.5a1 1 0 0 0 1-1V6.5a1 1 0 0 0-1-1h-15Zm2.75 3.25h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1 0-1.5Zm0 4h6.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5Z"
+                                    /></svg
+                            ></a>
+                            <a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer" aria-label="FIT2CLOUD"
+                                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.93 9.25h-3.18a15.9 15.9 0 0 0-1.18-5.2 8.53 8.53 0 0 1 4.36 5.2ZM12 3.5c.6.88 1.87 3.04 2.22 7.75H9.78C10.13 6.54 11.4 4.38 12 3.5ZM3.57 12.75h4.66c.05 2.07.35 3.85.78 5.2a8.52 8.52 0 0 1-5.44-5.2Zm4.66-1.5H3.57a8.52 8.52 0 0 1 5.44-5.2 15.97 15.97 0 0 0-.78 5.2Zm1.5 1.5h4.54c-.12 4.22-1.56 6.73-2.27 7.75-.71-1.02-2.15-3.53-2.27-7.75Zm4.54-1.5H9.73C9.85 7.03 11.29 4.52 12 3.5c.71 1.02 2.15 3.53 2.27 7.75Zm.72 6.7c.43-1.35.73-3.13.78-5.2h4.66a8.52 8.52 0 0 1-5.44 5.2Z"
+                                    /></svg
+                            ></a>
                         </div>
                     </div>
                     <div class="de-footer-nav">
-                        <div><h5 class="de-footer-title">产品</h5><ul class="de-footer-links"><li><a href="../whyjumpserver.html">产品优势</a></li><li><a href="../customers.html">客户案例</a></li><li><a href="../enterprise.html">企业版</a></li><li><a href="../blog.html">产品动态</a></li></ul></div>
-                        <div><h5 class="de-footer-title">资源</h5><ul class="de-footer-links"><li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li><li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li></ul></div>
-                        <div><h5 class="de-footer-title">解决方案</h5><ul class="de-footer-links"><li><a href="../xinchuang.html">信创堡垒机</a></li><li><a href="../distributed.html">分布式</a></li><li><a href="../remoteapp.html">应用虚拟化</a></li><li><a href="../database.html">数据库运维安全审计</a></li><li><a href="../pam.html">PAM 特权账号管理</a></li></ul></div>
-                        <div><h5 class="de-footer-title">联系</h5><ul class="de-footer-links"><li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li><li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li><li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li><li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li></ul></div>
+                        <div>
+                            <h5 class="de-footer-title">产品</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../whyjumpserver.html">产品优势</a></li>
+                                <li><a href="../customers.html">客户案例</a></li>
+                                <li><a href="../enterprise.html">企业版</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">资源</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="http://docs.jumpserver.org/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" target="_blank" rel="noopener noreferrer">免费下载</a></li>
+                                <li><a href="https://kb.fit2cloud.com/categories/jumpserver" target="_blank" rel="noopener noreferrer">知识库</a></li>
+                                <li><a href="https://whitepaper.jumpserver.org/" target="_blank" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a href="https://github.com/jumpserver/jumpserver/" target="_blank" rel="noopener noreferrer">GitHub 项目地址</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">解决方案</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="../xinchuang.html">信创堡垒机</a></li>
+                                <li><a href="../distributed.html">分布式</a></li>
+                                <li><a href="../remoteapp.html">应用虚拟化</a></li>
+                                <li><a href="../database.html">数据库运维安全审计</a></li>
+                                <li><a href="../pam.html">PAM 特权账号管理</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 class="de-footer-title">联系</h5>
+                            <ul class="de-footer-links">
+                                <li><a href="https://jinshuju.net/f/sQ91MK" target="_blank" rel="noopener noreferrer">提交技术咨询</a></li>
+                                <li><a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/js/5" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a href="https://www.jumpserver.com" target="_blank" rel="noopener noreferrer">English Website</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="de-footer-bottom">
-                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
-                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a></div>
+                    <div>
+                        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p>
+                        <p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    </div>
+                    <div class="de-footer-bottom-links">
+                        <a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_parent">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_parent">社区软件许可协议</a>
+                    </div>
                 </div>
             </div>
         </footer>

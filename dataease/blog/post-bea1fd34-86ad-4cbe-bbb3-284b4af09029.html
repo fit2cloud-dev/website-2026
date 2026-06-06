@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,76 +219,152 @@
                     <img src="../images/blog/common/dataease-001.png" alt="新增动态排序图、桑基图、AntV组合图，DataEase开源数据可视化分析平台v1.18.10发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/release-20230914/dataease-087-01.png" alt="截屏2023-09-14 17.42.06.png" loading="lazy" />2023年9月14日，DataEase开源数据可视化分析平台正式发布v1.18.10版本。</p><p>这一版本的功能升级包括：<strong><span>数据集</span></strong>方面，对字段管理的后台保存做了相关优化，降低了资源消耗；<strong><span>仪表板</span></strong>方面，对联动、查询结果以及过滤组件等进行了调整优化，避免系统卡顿情况的发生；<strong><span>视图</span></strong>方面，新增ECharts动态排序图、AntV组合图、AntV桑基图三种视图类型，并对词云图、文本卡、指标卡等已有视图类型做了功能增强，更加贴近用户的使用场景；<strong><span>系统管理</span></strong>方面，可以通过配置客户端访问模式，支持在电视端等客户端上使用PC模式访问DataEase；<strong><span>安全</span></strong>方面，当登录失败次数过多时可以通过邮件通知管理员，防止来自外部的恶意入侵。</p><p>另外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</p><h2 id="heading-1">新增功能</h2><p><strong><span>■ 仪表板：复用时支持选择适应当前主题和保持源样式，背景支持颜色透明度设置</span></strong></p><p>在DataEase v1.18.10版本中，用户可以在复用已有视图时，选择让复用的视图自适应目标仪表板主题，或者保持复用视图原有的样式，以满足不同场景的不同样式设置需求。</p><p><img src="../images/blog/release-20230914/dataease-087-02.png" alt="1 复用.png" loading="lazy" />当仪表板背景为颜色时，用户可以通过调节背景色的透明度来达到预期的显示效果。</p><p><img src="../images/blog/release-20230914/dataease-087-03.png" alt="2 透明.png" loading="lazy" /><strong><span>■ 视图：新增ECharts动态排序图、AntV组合图和AntV桑基图</span></strong></p><p>DataEase v1.18.10版本新增了ECharts动态排序图、AntV组合图、AntV桑基图三个视图类型，持续丰富视图图库，增强数据的展示能力。</p><p><img src="../images/blog/release-20230914/dataease-087-04.png" alt="3 三个视图.png" loading="lazy" /><strong><span>■ 视图：优化仪表盘、词云图、文本卡、指标卡的使用</span></strong></p><p>近期社区用户向DataEase项目组反馈了一些问题，例如仪表盘的刻度标签显示、词云图文字大小及文字间距相关视觉效果、文本卡和指标卡的名称及值的分别设置等，DataEase在v1.18.10版本都进行了相关的优化。</p><p><img src="../images/blog/release-20230914/dataease-087-05.png" alt="5 视图优化.png" loading="lazy" />除了上述新增功能外，DataEase v1.18.10版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p><h2 id="heading-2">功能优化</h2><p><span>■</span> refactor（数据集）：计算字段表达式与视图中使用的不匹配，则标记为红色（#5658）；</p><p><br /><span>■</span> refactor（数据集）：字段管理修改名称、维度指标时不进行语法校验（#5696，#5836）；</p><p><br /><span>■</span> refactor（数据集）：在数据集导出时，点击“确认”按钮后增加遮罩层，出错时可以给出提示（#4961）；</p><p><br /><span>■</span> refactor（仪表板）：外部参数配置时，在参数联动字段已经配置了某一视图的情况下，该参数再次选择视图进行配置的选项中不再重复出现已配置视图（#5697）；</p><p><br /><span>■</span> refactor（仪表板）：联动配置初始化时只保留有效的联动字段，优化页面卡顿现象（#5926）；</p><p><br /><span>■</span> refactor（仪表板）：解决仪表板页面因刷新导致的仪表板数据经常被还原为默认值的问题（#5304）；</p><p><br /><span>■</span> refactor（视图）：词云图增加字号区间控制和文字间隔控制（#5590）；</p><p><br /><span>■</span> refactor（视图）：文本/指标卡部分属性功能入口位置编辑调整（#5978）；</p><p><br /><span>■</span> refactor：支持账号以数字作为开头（#5763）；</p><p><br /><span>■</span> refactor：地图设置中提示不使用156、000开头的区域代码（#5979）。</p><h2 id="heading-3">Bug修复</h2><p><span>■</span> fix（数据集）：修复“数据集导出”功能中选择条件导出时无反应的问题（#5808）；</p><p><br /><span>■</span> fix（数据集）：修复原本的定时同步SQL数据集编辑替换为其他数据源后，定时同步模式就变成直连模式的问题（#5225，#5932）；</p><p><br /><span>■</span> fix（数据集）：修复上传Excel数据集报错的问题（#5912）；</p><p><br /><span>■</span> fix（仪表板）：修复仪表板制作页面使用“撤销”操作后，视图的操作列表消失的问题（#4335）；</p><p><br /><span>■</span> fix（仪表板）：修复辅助网格设计开关显示可能与主题不同步的问题（#5665）；</p><p><br /><span>■</span> fix（仪表板）：修复通过静态文件获取接口可以跨目录访问其他文件的问题（#5864）；</p><p><br /><span>■</span> fix（视图）：修复计算字段弹窗热键冲突的问题（#5501）；</p><p><br /><span>■</span> fix（视图）：修复在视图中设置显示名后，单击“回车”键会刷新页面，并且访问路径发生变化的问题（#5771）；</p><p><br /><span>■</span> fix（视图）：修复表格下钻页码不从第一页开始的问题（#5922）；</p><p><br /><span>■</span> fix：修复集群模式下已经配置好Redis，升级后“dataease.properties”文件会还原的问题（#5870）。</p><h2 id="heading-4">直播链接</h2><p><a href="http://live.bilibili.com/23979618" target="_blank" rel="noopener noreferrer">http://live.bilibili.com/23979618</a></p>
+                    <p><img src="../images/blog/release-20230914/dataease-087-01.png" alt="截屏2023-09-14 17.42.06.png" loading="lazy" />2023年9月14日，DataEase开源数据可视化分析平台正式发布v1.18.10版本。</p>
+                    <p>
+                        这一版本的功能升级包括：<strong><span>数据集</span></strong
+                        >方面，对字段管理的后台保存做了相关优化，降低了资源消耗；<strong><span>仪表板</span></strong
+                        >方面，对联动、查询结果以及过滤组件等进行了调整优化，避免系统卡顿情况的发生；<strong><span>视图</span></strong
+                        >方面，新增ECharts动态排序图、AntV组合图、AntV桑基图三种视图类型，并对词云图、文本卡、指标卡等已有视图类型做了功能增强，更加贴近用户的使用场景；<strong><span>系统管理</span></strong
+                        >方面，可以通过配置客户端访问模式，支持在电视端等客户端上使用PC模式访问DataEase；<strong><span>安全</span></strong
+                        >方面，当登录失败次数过多时可以通过邮件通知管理员，防止来自外部的恶意入侵。
+                    </p>
+                    <p>另外，DataEase开源项目组还对其他一些常用的功能进行了功能优化和问题修复。</p>
+                    <h2 id="heading-1">新增功能</h2>
+                    <p>
+                        <strong><span>■ 仪表板：复用时支持选择适应当前主题和保持源样式，背景支持颜色透明度设置</span></strong>
+                    </p>
+                    <p>在DataEase v1.18.10版本中，用户可以在复用已有视图时，选择让复用的视图自适应目标仪表板主题，或者保持复用视图原有的样式，以满足不同场景的不同样式设置需求。</p>
+                    <p><img src="../images/blog/release-20230914/dataease-087-02.png" alt="1 复用.png" loading="lazy" />当仪表板背景为颜色时，用户可以通过调节背景色的透明度来达到预期的显示效果。</p>
+                    <p>
+                        <img src="../images/blog/release-20230914/dataease-087-03.png" alt="2 透明.png" loading="lazy" /><strong><span>■ 视图：新增ECharts动态排序图、AntV组合图和AntV桑基图</span></strong>
+                    </p>
+                    <p>DataEase v1.18.10版本新增了ECharts动态排序图、AntV组合图、AntV桑基图三个视图类型，持续丰富视图图库，增强数据的展示能力。</p>
+                    <p>
+                        <img src="../images/blog/release-20230914/dataease-087-04.png" alt="3 三个视图.png" loading="lazy" /><strong><span>■ 视图：优化仪表盘、词云图、文本卡、指标卡的使用</span></strong>
+                    </p>
+                    <p>近期社区用户向DataEase项目组反馈了一些问题，例如仪表盘的刻度标签显示、词云图文字大小及文字间距相关视觉效果、文本卡和指标卡的名称及值的分别设置等，DataEase在v1.18.10版本都进行了相关的优化。</p>
+                    <p>
+                        <img src="../images/blog/release-20230914/dataease-087-05.png" alt="5 视图优化.png" loading="lazy" />除了上述新增功能外，DataEase
+                        v1.18.10版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。
+                    </p>
+                    <h2 id="heading-2">功能优化</h2>
+                    <p><span>■</span> refactor（数据集）：计算字段表达式与视图中使用的不匹配，则标记为红色（#5658）；</p>
+                    <p><br /><span>■</span> refactor（数据集）：字段管理修改名称、维度指标时不进行语法校验（#5696，#5836）；</p>
+                    <p><br /><span>■</span> refactor（数据集）：在数据集导出时，点击“确认”按钮后增加遮罩层，出错时可以给出提示（#4961）；</p>
+                    <p><br /><span>■</span> refactor（仪表板）：外部参数配置时，在参数联动字段已经配置了某一视图的情况下，该参数再次选择视图进行配置的选项中不再重复出现已配置视图（#5697）；</p>
+                    <p><br /><span>■</span> refactor（仪表板）：联动配置初始化时只保留有效的联动字段，优化页面卡顿现象（#5926）；</p>
+                    <p><br /><span>■</span> refactor（仪表板）：解决仪表板页面因刷新导致的仪表板数据经常被还原为默认值的问题（#5304）；</p>
+                    <p><br /><span>■</span> refactor（视图）：词云图增加字号区间控制和文字间隔控制（#5590）；</p>
+                    <p><br /><span>■</span> refactor（视图）：文本/指标卡部分属性功能入口位置编辑调整（#5978）；</p>
+                    <p><br /><span>■</span> refactor：支持账号以数字作为开头（#5763）；</p>
+                    <p><br /><span>■</span> refactor：地图设置中提示不使用156、000开头的区域代码（#5979）。</p>
+                    <h2 id="heading-3">Bug修复</h2>
+                    <p><span>■</span> fix（数据集）：修复“数据集导出”功能中选择条件导出时无反应的问题（#5808）；</p>
+                    <p><br /><span>■</span> fix（数据集）：修复原本的定时同步SQL数据集编辑替换为其他数据源后，定时同步模式就变成直连模式的问题（#5225，#5932）；</p>
+                    <p><br /><span>■</span> fix（数据集）：修复上传Excel数据集报错的问题（#5912）；</p>
+                    <p><br /><span>■</span> fix（仪表板）：修复仪表板制作页面使用“撤销”操作后，视图的操作列表消失的问题（#4335）；</p>
+                    <p><br /><span>■</span> fix（仪表板）：修复辅助网格设计开关显示可能与主题不同步的问题（#5665）；</p>
+                    <p><br /><span>■</span> fix（仪表板）：修复通过静态文件获取接口可以跨目录访问其他文件的问题（#5864）；</p>
+                    <p><br /><span>■</span> fix（视图）：修复计算字段弹窗热键冲突的问题（#5501）；</p>
+                    <p><br /><span>■</span> fix（视图）：修复在视图中设置显示名后，单击“回车”键会刷新页面，并且访问路径发生变化的问题（#5771）；</p>
+                    <p><br /><span>■</span> fix（视图）：修复表格下钻页码不从第一页开始的问题（#5922）；</p>
+                    <p><br /><span>■</span> fix：修复集群模式下已经配置好Redis，升级后“dataease.properties”文件会还原的问题（#5870）。</p>
+                    <h2 id="heading-4">直播链接</h2>
+                    <p><a href="http://live.bilibili.com/23979618" target="_blank" rel="noopener noreferrer">http://live.bilibili.com/23979618</a></p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"新增动态排序图、桑基图、AntV组合图，DataEase开源数据可视化分析平台v1.18.10发布","item":"https://dataease.cn/blog/post-bea1fd34-86ad-4cbe-bbb3-284b4af09029.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"新增动态排序图、桑基图、AntV组合图，DataEase开源数据可视化分析平台v1.18.10发布","description":"仪表板、数据集性能多处优化。","url":"https://dataease.cn/blog/post-bea1fd34-86ad-4cbe-bbb3-284b4af09029.html","datePublished":"2023-09-14","dateModified":"2023-09-14","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-001.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "新增动态排序图、桑基图、AntV组合图，DataEase开源数据可视化分析平台v1.18.10发布", "item": "https://dataease.cn/blog/post-bea1fd34-86ad-4cbe-bbb3-284b4af09029.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "新增动态排序图、桑基图、AntV组合图，DataEase开源数据可视化分析平台v1.18.10发布",
+                "description": "仪表板、数据集性能多处优化。",
+                "url": "https://dataease.cn/blog/post-bea1fd34-86ad-4cbe-bbb3-284b4af09029.html",
+                "datePublished": "2023-09-14",
+                "dateModified": "2023-09-14",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-001.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

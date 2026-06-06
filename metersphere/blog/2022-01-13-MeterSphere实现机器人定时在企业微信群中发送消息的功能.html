@@ -1,53 +1,143 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="utf-8" />
-    <title>MeterSphere实现机器人定时在企业微信群中发送消息的功能 - MeterSphere 产品动态</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="icon" href="../images/favicon.ico" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <style>
-        body { background: #f8f9fc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
-        .blog-article { max-width: 800px; margin: 0 auto; padding: 32px 24px; }
-        .blog-article-nav { text-align: center; padding: 24px 0; }
-        .blog-article-nav a { color: #783887; text-decoration: none; font-size: 15px; }
-        .blog-article-nav a:hover { text-decoration: underline; }
-        .blog-article h1 { font-size: 2em; font-weight: 700; color: #1a1a2e; margin-bottom: 12px; line-height: 1.3; }
-        .blog-article .blog-meta { color: #783887; font-size: 14px; margin-bottom: 32px; }
-        .blog-article .blog-content { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); line-height: 1.8; color: #333; }
-        .blog-article .blog-content h2 { font-size: 1.5em; font-weight: 600; color: #1a1a2e; margin: 32px 0 16px; padding-top: 8px; }
-        .blog-article .blog-content h3 { font-size: 1.2em; font-weight: 600; color: #333; margin: 24px 0 12px; }
-        .blog-article .blog-content p { margin-bottom: 16px; font-size: 16px; }
-        .blog-article .blog-content img { max-width: 100%; height: auto; border-radius: 8px; margin: 16px 0; }
-        .blog-article .blog-content ul, .blog-article .blog-content ol { margin-bottom: 16px; padding-left: 24px; }
-        .blog-article .blog-content li { margin-bottom: 8px; font-size: 15px; }
-        .blog-article .blog-content blockquote { border-left: 3px solid #783887; padding: 12px 20px; margin: 16px 0; background: #faf5ff; border-radius: 0 8px 8px 0; }
-        .blog-article .blog-content figure { margin: 20px 0; text-align: center; }
-        .blog-article .blog-content figcaption { font-size: 13px; color: #888; margin-top: 8px; }
-        .blog-source-link { text-align: center; margin: 32px 0 16px; }
-        .blog-source-link a { color: #783887; text-decoration: none; font-size: 14px; border: 1px solid #783887; padding: 8px 20px; border-radius: 6px; transition: all 0.3s; }
-        .blog-source-link a:hover { background: #783887; color: #fff; }
-        @media (max-width: 768px) {
-            .blog-article h1 { font-size: 1.5em; }
-            .blog-article .blog-content { padding: 24px 20px; }
-        }
-    </style>
-</head>
-<body>
-    <div class="blog-article-nav">
-        <a href="../blog.html">← 返回产品动态</a>
-    </div>
-    <article class="blog-article">
-        <h1>MeterSphere实现机器人定时在企业微信群中发送消息的功能</h1>
-        <p class="blog-meta">发布于 2022年1月13日</p>
-        <div class="blog-content">
-            <p>文章内容请访问原始链接查看。</p>
+    <head>
+        <meta charset="utf-8" />
+        <title>MeterSphere实现机器人定时在企业微信群中发送消息的功能 - MeterSphere 产品动态</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="icon" href="../images/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+        <style>
+            body {
+                background: #f8f9fc;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            }
+            .blog-article {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 32px 24px;
+            }
+            .blog-article-nav {
+                text-align: center;
+                padding: 24px 0;
+            }
+            .blog-article-nav a {
+                color: #783887;
+                text-decoration: none;
+                font-size: 15px;
+            }
+            .blog-article-nav a:hover {
+                text-decoration: underline;
+            }
+            .blog-article h1 {
+                font-size: 2em;
+                font-weight: 700;
+                color: #1a1a2e;
+                margin-bottom: 12px;
+                line-height: 1.3;
+            }
+            .blog-article .blog-meta {
+                color: #783887;
+                font-size: 14px;
+                margin-bottom: 32px;
+            }
+            .blog-article .blog-content {
+                background: #fff;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+                line-height: 1.8;
+                color: #333;
+            }
+            .blog-article .blog-content h2 {
+                font-size: 1.5em;
+                font-weight: 600;
+                color: #1a1a2e;
+                margin: 32px 0 16px;
+                padding-top: 8px;
+            }
+            .blog-article .blog-content h3 {
+                font-size: 1.2em;
+                font-weight: 600;
+                color: #333;
+                margin: 24px 0 12px;
+            }
+            .blog-article .blog-content p {
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+            .blog-article .blog-content img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                margin: 16px 0;
+            }
+            .blog-article .blog-content ul,
+            .blog-article .blog-content ol {
+                margin-bottom: 16px;
+                padding-left: 24px;
+            }
+            .blog-article .blog-content li {
+                margin-bottom: 8px;
+                font-size: 15px;
+            }
+            .blog-article .blog-content blockquote {
+                border-left: 3px solid #783887;
+                padding: 12px 20px;
+                margin: 16px 0;
+                background: #faf5ff;
+                border-radius: 0 8px 8px 0;
+            }
+            .blog-article .blog-content figure {
+                margin: 20px 0;
+                text-align: center;
+            }
+            .blog-article .blog-content figcaption {
+                font-size: 13px;
+                color: #888;
+                margin-top: 8px;
+            }
+            .blog-source-link {
+                text-align: center;
+                margin: 32px 0 16px;
+            }
+            .blog-source-link a {
+                color: #783887;
+                text-decoration: none;
+                font-size: 14px;
+                border: 1px solid #783887;
+                padding: 8px 20px;
+                border-radius: 6px;
+                transition: all 0.3s;
+            }
+            .blog-source-link a:hover {
+                background: #783887;
+                color: #fff;
+            }
+            @media (max-width: 768px) {
+                .blog-article h1 {
+                    font-size: 1.5em;
+                }
+                .blog-article .blog-content {
+                    padding: 24px 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blog-article-nav">
+            <a href="../blog.html">← 返回产品动态</a>
         </div>
-        <div class="blog-source-link">
-            <a href="https://blog.fit2cloud.com/?p=3229" target="_blank">在原文阅读完整文章 →</a>
-        </div>
-    </article>
-</body>
+        <article class="blog-article">
+            <h1>MeterSphere实现机器人定时在企业微信群中发送消息的功能</h1>
+            <p class="blog-meta">发布于 2022年1月13日</p>
+            <div class="blog-content">
+                <p>文章内容请访问原始链接查看。</p>
+            </div>
+            <div class="blog-source-link">
+                <a href="https://blog.fit2cloud.com/?p=3229" target="_blank">在原文阅读完整文章 →</a>
+            </div>
+        </article>
+    </body>
 </html>

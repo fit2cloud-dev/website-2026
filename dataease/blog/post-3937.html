@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,121 +220,155 @@
                 </header>
                 <div class="de-article-content">
                     <p>作为一款开源的数据可视化分析工具，DataEase（https://dataease.io）可以用于各行各业。下面我们就以零售行业为例，看看DataEase是如何帮助经营者对店铺的经营数据进行可视化分析，并且快速找出店铺运营问题的根结所在的。</p>
-<p><em>编者注：本案例主体内容来自于《数据分析思维——分析方法和业务知识》一书。</em></p>
+                    <p><em>编者注：本案例主体内容来自于《数据分析思维——分析方法和业务知识》一书。</em></p>
 
+                    <h2>背景信息</h2>
+                    <p>陈先生经营着一家店铺，年初的时候基于上一年的经营情况，制定了今年全年实现6000万元利润的目标。然而今年已经过半，离半年3000万元利润的阶段性目标还有很大差距。如果按照目前的销售进度，到年底肯定没有办法完成既定目标。</p>
+                    <p>陈先生百思不得其解。从店里的忙碌情况来看，今年和去年的情况是差不多的，肯定是哪个环节出了问题。陈先生需要对店铺内各项可能会影响经营利润的数据进行逐一分析。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-01.jpg" alt="图片" loading="lazy" /></figure>
 
-<h2>背景信息</h2>
-<p>陈先生经营着一家店铺，年初的时候基于上一年的经营情况，制定了今年全年实现6000万元利润的目标。然而今年已经过半，离半年3000万元利润的阶段性目标还有很大差距。如果按照目前的销售进度，到年底肯定没有办法完成既定目标。</p>
-<p>陈先生百思不得其解。从店里的忙碌情况来看，今年和去年的情况是差不多的，肯定是哪个环节出了问题。陈先生需要对店铺内各项可能会影响经营利润的数据进行逐一分析。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-01.jpg" alt="图片" loading="lazy" /></figure>
+                    <h2>排查问题</h2>
+                    <p>
+                        首先，需要确定到哪些指标会影响到店铺的经营利润。通过列出利润的基本公式，可以看到：<em>利润=销售收入-销售成本-营业外支出</em>。然而，这些因素不足以分析利润下降的具体原因，所以需要对“销售收入”和“销售成本”两个指标做进一步的拆解和分析。
+                    </p>
+                    <p>通过多维度对业务指标进行拆解，可以把“销售收入”拆解为“客单价”和“用户数”的乘积，而“销售成本”则等于“销售费用”和“商品采购成本”的总和。拆解到这一步，指标已经足够细化，可以对这些潜在因素进行逐个分析了。</p>
+                    <p>
+                        如下图所示，指标箭头表示上升或下降，即利润的下降可能是由于销售收入下降或销售成本上升或营业外支出上升。再对指标概念进一步拆解后，可以看到利润下降的原因可能是因为客单价或用户数的下降，也可能是因为销售费用或商品采购成本上升。
+                    </p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-02.jpg" alt="图片" loading="lazy" /></figure>
+                    <p>在确定了影响利润的最小指标后，需要对它们进行逐一地分析。而数据分析最有效的方法就是将数据进行可视化，这样就可以直观地看到数据的变化。</p>
+                    <p>陈先生使用DataEase开源数据分析可视化工具来进行数据分析。这款开源工具对于初学者非常友好，很适合第一次接触数据可视化分析的人群。下面和大家分享陈先生进行数据分析的具体过程。</p>
 
+                    <h2>数据分析过程</h2>
+                    <p><strong>假设一：营业外支出上涨导致利润下降（不成立）</strong></p>
+                    <p>由整理出来的数据可知，营业外支出的数据对利润并没有产生影响，所以可以排除这一假设。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-03.jpg" alt="图片" loading="lazy" /></figure>
+                    <p><strong>假设二：销售费用上涨导致利润下降（不成立）</strong></p>
+                    <p>
+                        从下图可以看出，今年的销售成本在后几个月稍高一些，但是费率比（即销售费用与营业收入的比率）实际上是下降的。费率比体现的是企业为取得单位收入所花费的单位销售费用，或者销售费用占据了营业收入的比例。所以，总体分析来看并不是销售费用的上涨导致了利润的下降。
+                    </p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-04.jpg" alt="图片" loading="lazy" /></figure>
+                    <p><strong>假设三：商品采购成本上涨导致利润下降（不成立）</strong></p>
+                    <p>由下图中的图表可以看出，今年商品采购成本与去年同期相比，有5个月的成本都低于去年同期。而超过去年同期的那个月所超出的成本也并不多。因此，商品采购成本的影响也可以排除。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-05.jpg" alt="图片" loading="lazy" /></figure>
+                    <p><strong>假设四：客单价下降导致利润下降（不成立）</strong></p>
+                    <p>由下图可以看出，今年的客单价在大多数情况下是明显要高于去年同期的，因此客单价下降导致利润的减少显然也是不成立的。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-06.jpg" alt="图片" loading="lazy" /></figure>
+                    <p><strong>假设五：用户数量下降导致利润下降（成立）</strong></p>
+                    <p>从下图可以看出，今年店铺的用户数量长期低于去年。在客单价相差不大的情况下，今年的销售收入是远不如去年的，由此可以判断“用户数量的下降”是利润未达预期的重要原因。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-07.jpg" alt="图片" loading="lazy" /></figure>
 
-<h2>排查问题</h2>
-<p>首先，需要确定到哪些指标会影响到店铺的经营利润。通过列出利润的基本公式，可以看到：<em>利润=销售收入-销售成本-营业外支出</em>。然而，这些因素不足以分析利润下降的具体原因，所以需要对“销售收入”和“销售成本”两个指标做进一步的拆解和分析。</p>
-<p>通过多维度对业务指标进行拆解，可以把“销售收入”拆解为“客单价”和“用户数”的乘积，而“销售成本”则等于“销售费用”和“商品采购成本”的总和。拆解到这一步，指标已经足够细化，可以对这些潜在因素进行逐个分析了。</p>
-<p>如下图所示，指标箭头表示上升或下降，即利润的下降可能是由于销售收入下降或销售成本上升或营业外支出上升。再对指标概念进一步拆解后，可以看到利润下降的原因可能是因为客单价或用户数的下降，也可能是因为销售费用或商品采购成本上升。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-02.jpg" alt="图片" loading="lazy" /></figure>
-<p>在确定了影响利润的最小指标后，需要对它们进行逐一地分析。而数据分析最有效的方法就是将数据进行可视化，这样就可以直观地看到数据的变化。</p>
-<p>陈先生使用DataEase开源数据分析可视化工具来进行数据分析。这款开源工具对于初学者非常友好，很适合第一次接触数据可视化分析的人群。下面和大家分享陈先生进行数据分析的具体过程。</p>
-
-
-<h2>数据分析过程</h2>
-<p><strong>假设一：营业外支出上涨导致利润下降（不成立）</strong></p>
-<p>由整理出来的数据可知，营业外支出的数据对利润并没有产生影响，所以可以排除这一假设。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-03.jpg" alt="图片" loading="lazy" /></figure>
-<p><strong>假设二：销售费用上涨导致利润下降（不成立）</strong></p>
-<p>从下图可以看出，今年的销售成本在后几个月稍高一些，但是费率比（即销售费用与营业收入的比率）实际上是下降的。费率比体现的是企业为取得单位收入所花费的单位销售费用，或者销售费用占据了营业收入的比例。所以，总体分析来看并不是销售费用的上涨导致了利润的下降。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-04.jpg" alt="图片" loading="lazy" /></figure>
-<p><strong>假设三：商品采购成本上涨导致利润下降（不成立）</strong></p>
-<p>由下图中的图表可以看出，今年商品采购成本与去年同期相比，有5个月的成本都低于去年同期。而超过去年同期的那个月所超出的成本也并不多。因此，商品采购成本的影响也可以排除。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-05.jpg" alt="图片" loading="lazy" /></figure>
-<p><strong>假设四：客单价下降导致利润下降（不成立）</strong></p>
-<p>由下图可以看出，今年的客单价在大多数情况下是明显要高于去年同期的，因此客单价下降导致利润的减少显然也是不成立的。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-06.jpg" alt="图片" loading="lazy" /></figure>
-<p><strong>假设五：用户数量下降导致利润下降（成立）</strong></p>
-<p>从下图可以看出，今年店铺的用户数量长期低于去年。在客单价相差不大的情况下，今年的销售收入是远不如去年的，由此可以判断“用户数量的下降”是利润未达预期的重要原因。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-07.jpg" alt="图片" loading="lazy" /></figure>
-
-
-<h2>总结</h2>
-<p>通过对店铺经营数据进行可视化分析，可以快速找出店铺运营的症结所在。店铺的经营者还可以对经营数据进行实时监控和告警，有效防范经营过程中潜在型问题的发生，迅速优化经营状况。</p>
-<p>对于数据分析的新手或者初学者来说，DataEase开源数据可视化分析工具非常具有亲和力且操作便捷。借助DataEase，人人都可以制作出精美的数据分析仪表板，大大降低了普通用户进行数据分析与展示操作的门槛。</p>
-<figure><img src="../images/blog/common/dataease-108.png" alt="图片" loading="lazy" /></figure>
-<p><strong><em>仪表板展示</em></strong></p>
-<p>下图是陈先生分析过程使用的所有图表。</p>
-<figure><img src="../images/blog/news-20220929/dataease-123-09.jpg" alt="图片" loading="lazy" /></figure>
-<p>通过将图表进行进一步优化和布局，使用DataEase开源数据可视化分析工具即可制作出店铺经营情况监控大屏。</p>
-<p>日常管理时，只需要登录监控大屏，陈先生就能够实时掌握店铺的经营情况，对于店铺数据的异常情况起到了预警的效果。针对异常数据，可以将大屏点对点分享给对应部门和人员，用以指导下一步的工作。通过使用DataEase开源工具进行数据可视化分析，能够有效辅助店铺制定合理的业务规划和决策。<br /></p>
-<figure><img src="../images/blog/news-20220929/dataease-123-10.png" alt="图片" loading="lazy" /><figcaption>▲ 基于DataEase制作的店铺经营分析仪表板</figcaption></figure>
+                    <h2>总结</h2>
+                    <p>通过对店铺经营数据进行可视化分析，可以快速找出店铺运营的症结所在。店铺的经营者还可以对经营数据进行实时监控和告警，有效防范经营过程中潜在型问题的发生，迅速优化经营状况。</p>
+                    <p>对于数据分析的新手或者初学者来说，DataEase开源数据可视化分析工具非常具有亲和力且操作便捷。借助DataEase，人人都可以制作出精美的数据分析仪表板，大大降低了普通用户进行数据分析与展示操作的门槛。</p>
+                    <figure><img src="../images/blog/common/dataease-108.png" alt="图片" loading="lazy" /></figure>
+                    <p>
+                        <strong><em>仪表板展示</em></strong>
+                    </p>
+                    <p>下图是陈先生分析过程使用的所有图表。</p>
+                    <figure><img src="../images/blog/news-20220929/dataease-123-09.jpg" alt="图片" loading="lazy" /></figure>
+                    <p>通过将图表进行进一步优化和布局，使用DataEase开源数据可视化分析工具即可制作出店铺经营情况监控大屏。</p>
+                    <p>
+                        日常管理时，只需要登录监控大屏，陈先生就能够实时掌握店铺的经营情况，对于店铺数据的异常情况起到了预警的效果。针对异常数据，可以将大屏点对点分享给对应部门和人员，用以指导下一步的工作。通过使用DataEase开源工具进行数据可视化分析，能够有效辅助店铺制定合理的业务规划和决策。<br />
+                    </p>
+                    <figure>
+                        <img src="../images/blog/news-20220929/dataease-123-10.png" alt="图片" loading="lazy" />
+                        <figcaption>▲ 基于DataEase制作的店铺经营分析仪表板</figcaption>
+                    </figure>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"店铺营收未达预期，用DataEase开源BI工具分析原因所在","item":"https://dataease.cn/blog/post-3937.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"店铺营收未达预期，用DataEase开源BI工具分析原因所在","description":"使用DataEase开源数据可视化分析工具构建体系监控大屏。","url":"https://dataease.cn/blog/post-3937.html","datePublished":"2022-09-29","dateModified":"2022-09-29","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-108.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "店铺营收未达预期，用DataEase开源BI工具分析原因所在", "item": "https://dataease.cn/blog/post-3937.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "店铺营收未达预期，用DataEase开源BI工具分析原因所在",
+                "description": "使用DataEase开源数据可视化分析工具构建体系监控大屏。",
+                "url": "https://dataease.cn/blog/post-3937.html",
+                "datePublished": "2022-09-29",
+                "dateModified": "2022-09-29",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-108.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,127 +220,164 @@
                 </header>
                 <div class="de-article-content">
                     <figure><img src="../images/blog/news-20220901/dataease-128-01.png" alt="" loading="lazy" /></figure>
-<p>又是一年丰收季，国以民为本，民以食为天。粮食是维系国计民生的重要战略物资，粮食安全与社会的和谐、政治的稳定和经济的持续发展息息相关。</p>
-<p>根据国家公布的统计数据，我国已经连续五年小麦产量达到了1.3亿吨。7月20日，国务院新闻办公室公布了2022年上半年农业农村经济运行情况。数据显示：2022年夏粮生产经受了去年罕见秋汛、新冠肺炎疫情散发、农资价格上涨等多重考验，在去年高基数上再夺丰收。夏粮产量达到2948亿斤，增加28.7亿斤。其中，小麦产量2715亿斤，增加25.7亿斤，优质专用品种占比38.5%，占比较上年提升1.2%。</p>
-<p>为了了解我国农业经济运行的全貌，我们使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）来制作一个仪表板，分析展示近几年小麦、玉米、稻谷等农作物的指标数据。由于今年秋收的相关数据还没出来，所以目前的数据统计截止至2021年（<em>数据来源于国家统计局官网：http://www.stats.gov.cn/</em>）。</p>
-<p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-02.png" alt="" loading="lazy" /></figure>
+                    <p>又是一年丰收季，国以民为本，民以食为天。粮食是维系国计民生的重要战略物资，粮食安全与社会的和谐、政治的稳定和经济的持续发展息息相关。</p>
+                    <p>
+                        根据国家公布的统计数据，我国已经连续五年小麦产量达到了1.3亿吨。7月20日，国务院新闻办公室公布了2022年上半年农业农村经济运行情况。数据显示：2022年夏粮生产经受了去年罕见秋汛、新冠肺炎疫情散发、农资价格上涨等多重考验，在去年高基数上再夺丰收。夏粮产量达到2948亿斤，增加28.7亿斤。其中，小麦产量2715亿斤，增加25.7亿斤，优质专用品种占比38.5%，占比较上年提升1.2%。
+                    </p>
+                    <p>
+                        为了了解我国农业经济运行的全貌，我们使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）来制作一个仪表板，分析展示近几年小麦、玉米、稻谷等农作物的指标数据。由于今年秋收的相关数据还没出来，所以目前的数据统计截止至2021年（<em>数据来源于国家统计局官网：http://www.stats.gov.cn/</em>）。
+                    </p>
+                    <p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-02.png" alt="" loading="lazy" /></figure>
 
+                    <h2>数据分析</h2>
+                    <p>本次数据分析主要从小麦、玉米、稻谷的历年播种面积、历年产量、单位面积亩产、集贸市场价格和农产品生产者价格指数这五个方面来进行分析研究。</p>
+                    <p><strong>一、播种面积和产量</strong></p>
+                    <p>从仪表板里可以看到2021年产量前三的作物分别是：</p>
+                    <p>TOP1：玉米产量27255.06万吨，在小麦、玉米、稻谷这三种主要作物内占比为43.79%;</p>
+                    <p>TOP2：稻谷产量21284.24万吨，在小麦、玉米、稻谷这三种主要作物内占比为34.2%;</p>
+                    <p>TOP3：小麦产量13694.45万吨，在小麦、玉米、稻谷这三种主要作物内占比为22.01%。</p>
+                    <p>为什么玉米和稻谷的产量都比小麦高呢？</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-03.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        首先，我们看一下2002年至2021年小麦的播种面积和产量趋势。从小麦播种面积和产量图表中可以看到，小麦播种面积最低的是2004年，播种面积为21625.97千公顷，播种面积最高的是2016年的24665.78千公顷。小麦产量最低的是2003年，产量为8648.85万吨，产量最高的是2021年，产量为13694.45万吨。
+                    </p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-07.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        从玉米播种面积和产量图表中可以看到，玉米播种面积最低的是2003年，播种面积为24068.16千公顷，播种面积最高的是2015年，播种面积为44968.39千公顷。玉米产量最低的是2003年，产量为11583.02万吨，产量最高的是2021年，产量为27255.06万吨。
+                    </p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-08.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-09.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-10.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-11.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        从稻谷播种面积和产量图表中可以看到，稻谷播种面积最低的是2003年，播种面积为26507.83千公顷，播种面积最高的是2015年，播种面积为30784.09千公顷。稻谷产量最低的是2003年，产量为16065.56万吨，产量最高的是2021年，产量为21284.24万吨。
+                    </p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-12.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-13.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-14.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-15.png" alt="图片" loading="lazy" /></figure>
+                    <p>从上面几组数据可以看出，玉米和稻谷的播种面积都高于小麦的播种面积，因此获得了更多的产量。</p>
+                    <p>从小麦、玉米、稻谷的图表中可以看到，2016年、2017年开始农作物的播种面积是呈下降趋势的，但是产量却呈上升趋势。另外，从单位面积产量的维度，可以看到小麦、玉米、稻谷整体的单位面积亩产量均呈现上升趋势。</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-16.png" alt="图片" loading="lazy" /></figure>
+                    <p><strong>二、粮食价格</strong></p>
+                    <p>分析完了播种面积和产量，下面我们再来看一下粮食的价格情况。</p>
+                    <p>
+                        农产品生产者价格指数是反映一定时期内，农产品生产者出售农产品价格水平变动趋势及幅度的相对数，该指数可以客观反映全国农产品生产价格水平和结构变动情况，满足农业与国民经济核算需要。其中，农产品生产价格是指农产品生产者第一手（直接）出售其产品时实际获得的单位产品价格。
+                    </p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-17.png" alt="图片" loading="lazy" /></figure>
+                    <p>从“农产品生产者价格指数趋势”图中可以看到，2022年第二季度国内小麦价格不断冲击历史新高，生产者价格指数由第一季度的104.4上涨到117.6，价格同比涨幅创下近20年来最大涨幅。</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-18.png" alt="图片" loading="lazy" /></figure>
+                    <p>从数据图表中可以看到，2021年第一季度玉米生产者价格指数达到了141.3，这主要是受到供需关系的影响。</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-19.png" alt="图片" loading="lazy" /></figure>
+                    <p>从集贸市场价格统计的近三年的数据中，可以看到从2019年8月至2022年7月，小麦、玉米价格都呈现上升趋势，其中玉米在2019年至2021年1月上涨幅度较大，而2021年至2022年7月价格整体呈缓慢上涨的趋势。</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-20.png" alt="图片" loading="lazy" /></figure>
+                    <p>籼稻和粳稻的价格整体也呈现了上涨趋势，相对于玉米和小麦来说上涨幅度较小。</p>
+                    <figure><img src="../images/blog/news-20220901/dataease-128-21.png" alt="图片" loading="lazy" /></figure>
+                    <p>当前仪表板只是就小麦、玉米、稻谷的相关数据进行了分析展示，大家想了解其他相关数据可以访问国家统计局官方网站进行查询搜索。</p>
 
-<h2>数据分析</h2>
-<p>本次数据分析主要从小麦、玉米、稻谷的历年播种面积、历年产量、单位面积亩产、集贸市场价格和农产品生产者价格指数这五个方面来进行分析研究。</p>
-<p><strong>一、播种面积和产量</strong></p>
-<p>从仪表板里可以看到2021年产量前三的作物分别是：</p>
-<p>TOP1：玉米产量27255.06万吨，在小麦、玉米、稻谷这三种主要作物内占比为43.79%;</p>
-<p>TOP2：稻谷产量21284.24万吨，在小麦、玉米、稻谷这三种主要作物内占比为34.2%;</p>
-<p>TOP3：小麦产量13694.45万吨，在小麦、玉米、稻谷这三种主要作物内占比为22.01%。</p>
-<p>为什么玉米和稻谷的产量都比小麦高呢？</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-03.png" alt="" loading="lazy" /></figure>
-<p>首先，我们看一下2002年至2021年小麦的播种面积和产量趋势。从小麦播种面积和产量图表中可以看到，小麦播种面积最低的是2004年，播种面积为21625.97千公顷，播种面积最高的是2016年的24665.78千公顷。小麦产量最低的是2003年，产量为8648.85万吨，产量最高的是2021年，产量为13694.45万吨。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-04.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-05.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-06.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-07.png" alt="" loading="lazy" /></figure>
-<p>从玉米播种面积和产量图表中可以看到，玉米播种面积最低的是2003年，播种面积为24068.16千公顷，播种面积最高的是2015年，播种面积为44968.39千公顷。玉米产量最低的是2003年，产量为11583.02万吨，产量最高的是2021年，产量为27255.06万吨。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-08.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-09.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-10.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-11.png" alt="" loading="lazy" /></figure>
-<p>从稻谷播种面积和产量图表中可以看到，稻谷播种面积最低的是2003年，播种面积为26507.83千公顷，播种面积最高的是2015年，播种面积为30784.09千公顷。稻谷产量最低的是2003年，产量为16065.56万吨，产量最高的是2021年，产量为21284.24万吨。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-12.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-13.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-14.png" alt="图片" loading="lazy" /></figure>
-<figure><img src="../images/blog/news-20220901/dataease-128-15.png" alt="图片" loading="lazy" /></figure>
-<p>从上面几组数据可以看出，玉米和稻谷的播种面积都高于小麦的播种面积，因此获得了更多的产量。</p>
-<p>从小麦、玉米、稻谷的图表中可以看到，2016年、2017年开始农作物的播种面积是呈下降趋势的，但是产量却呈上升趋势。另外，从单位面积产量的维度，可以看到小麦、玉米、稻谷整体的单位面积亩产量均呈现上升趋势。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-16.png" alt="图片" loading="lazy" /></figure>
-<p><strong>二、粮食价格</strong></p>
-<p>分析完了播种面积和产量，下面我们再来看一下粮食的价格情况。</p>
-<p>农产品生产者价格指数是反映一定时期内，农产品生产者出售农产品价格水平变动趋势及幅度的相对数，该指数可以客观反映全国农产品生产价格水平和结构变动情况，满足农业与国民经济核算需要。其中，农产品生产价格是指农产品生产者第一手（直接）出售其产品时实际获得的单位产品价格。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-17.png" alt="图片" loading="lazy" /></figure>
-<p>从“农产品生产者价格指数趋势”图中可以看到，2022年第二季度国内小麦价格不断冲击历史新高，生产者价格指数由第一季度的104.4上涨到117.6，价格同比涨幅创下近20年来最大涨幅。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-18.png" alt="图片" loading="lazy" /></figure>
-<p>从数据图表中可以看到，2021年第一季度玉米生产者价格指数达到了141.3，这主要是受到供需关系的影响。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-19.png" alt="图片" loading="lazy" /></figure>
-<p>从集贸市场价格统计的近三年的数据中，可以看到从2019年8月至2022年7月，小麦、玉米价格都呈现上升趋势，其中玉米在2019年至2021年1月上涨幅度较大，而2021年至2022年7月价格整体呈缓慢上涨的趋势。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-20.png" alt="图片" loading="lazy" /></figure>
-<p>籼稻和粳稻的价格整体也呈现了上涨趋势，相对于玉米和小麦来说上涨幅度较小。</p>
-<figure><img src="../images/blog/news-20220901/dataease-128-21.png" alt="图片" loading="lazy" /></figure>
-<p>当前仪表板只是就小麦、玉米、稻谷的相关数据进行了分析展示，大家想了解其他相关数据可以访问国家统计局官方网站进行查询搜索。</p>
-
-
-<h2>总结</h2>
-<p>在这个农业主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的自定义视图组件，其中涉及到折线图、玫瑰图等多种图表类型，视图支持联动和下钻。</p>
-<p>该仪表板在“玫瑰图”视图组件设置了仪表板跳转，点击玫瑰图可跳转至农产品产量详情的仪表板；在“数据来源”文字组件上设置了超链接，点击文字可跳转至国家统计局官方网站；使用“选项卡”组件将小麦、玉米、稻谷三种粮食的播种面积和产量做了隔离展示，使数据展示更加清晰和独立；在“仪表板分享”时使用了仪表板的公共链接分享，使没有账号的人员也可以访问仪表板。</p>
+                    <h2>总结</h2>
+                    <p>在这个农业主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的自定义视图组件，其中涉及到折线图、玫瑰图等多种图表类型，视图支持联动和下钻。</p>
+                    <p>
+                        该仪表板在“玫瑰图”视图组件设置了仪表板跳转，点击玫瑰图可跳转至农产品产量详情的仪表板；在“数据来源”文字组件上设置了超链接，点击文字可跳转至国家统计局官方网站；使用“选项卡”组件将小麦、玉米、稻谷三种粮食的播种面积和产量做了隔离展示，使数据展示更加清晰和独立；在“仪表板分享”时使用了仪表板的公共链接分享，使没有账号的人员也可以访问仪表板。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"DataEase看中国：数据呈现中国农业经济发展情况","item":"https://dataease.cn/blog/post-3830.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"DataEase看中国：数据呈现中国农业经济发展情况","description":"又是一年丰收季，DataEase带你看看中国农业经济有多行。","url":"https://dataease.cn/blog/post-3830.html","datePublished":"2022-09-01","dateModified":"2022-09-01","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-128.png","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "DataEase看中国：数据呈现中国农业经济发展情况", "item": "https://dataease.cn/blog/post-3830.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "DataEase看中国：数据呈现中国农业经济发展情况",
+                "description": "又是一年丰收季，DataEase带你看看中国农业经济有多行。",
+                "url": "https://dataease.cn/blog/post-3830.html",
+                "datePublished": "2022-09-01",
+                "dateModified": "2022-09-01",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-128.png",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

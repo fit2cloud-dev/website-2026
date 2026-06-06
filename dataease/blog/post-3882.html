@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -209,166 +220,203 @@
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文选自DataEase官方知识库。</em></p>
-<p><em>原文链接：<br />https://kb.fit2cloud.com/archives/122</em></p>
-<p>在企业日常的使用中，经常有将DataEase开源数据可视化分析平台嵌入到第三方系统的需求。这样一来，DataEase就可以作为第三方系统中的某个菜单项，在点击相关选项后即可直接打开DataEase页面，并进行相关操作。</p>
-<p>DataEase开源工具嵌入第三方系统的效果示意图如下：</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-01.png" alt="" loading="lazy" /></figure>
-<p>本文主要分享如何通过单点登录和模拟登录两种方式进行接口对接，从而实现将DataEase嵌入到第三方系统的实际效果。为了方便描述，本文将所示例的第三方系统统一称为“A系统”。</p>
+                    <p>
+                        <em>原文链接：<br />https://kb.fit2cloud.com/archives/122</em>
+                    </p>
+                    <p>在企业日常的使用中，经常有将DataEase开源数据可视化分析平台嵌入到第三方系统的需求。这样一来，DataEase就可以作为第三方系统中的某个菜单项，在点击相关选项后即可直接打开DataEase页面，并进行相关操作。</p>
+                    <p>DataEase开源工具嵌入第三方系统的效果示意图如下：</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-01.png" alt="" loading="lazy" /></figure>
+                    <p>本文主要分享如何通过单点登录和模拟登录两种方式进行接口对接，从而实现将DataEase嵌入到第三方系统的实际效果。为了方便描述，本文将所示例的第三方系统统一称为“A系统”。</p>
 
+                    <h2>方案概述</h2>
+                    <p>DataEase支持使用iframe嵌套到第三方系统中，关键问题在于如何统一两个系统的用户认证，即用户在A系统中打开DataEase系统时，无需再次登录，DataEase可以自动登录至A系统中的账户。目前有两种解决方案：即单点登录和模拟登录。</p>
+                    <p><strong>1.1 单点登录</strong></p>
+                    <p>使用支持OIDC或CAS协议的系统作为统一登录平台，A系统与DataEase全部对接到同一个单点平台，实现只需一次登录就可访问两个系统，即单点登录（Single Sign On，SSO)。</p>
+                    <p>
+                        单点登录方式是DataEase原生支持的用户登录集成方式，仅需修改前端iframe嵌套即可。使用单点登录的方式，用户可以使用同一个密码登录两个平台，DataEase中不存在的用户在登录时会自动创建。单点登录方式在配置和使用方面更加方便，是比较推荐的方式。
+                    </p>
+                    <p><strong>1.2 模拟登录</strong></p>
+                    <p>A系统后台请求DataEase的登录接口，将登录成功的Token写入Cookie中，以模拟用户登录的过程，省去用户自己输入密码登录的过程。</p>
+                    <p>有些情况下受限于业务系统，部分用户的第三方系统没有对接SSO系统，这种情况下可以使用模拟登录的方式，通过做一些开发实现想要的效果。</p>
 
-<h2>方案概述</h2>
-<p>DataEase支持使用iframe嵌套到第三方系统中，关键问题在于如何统一两个系统的用户认证，即用户在A系统中打开DataEase系统时，无需再次登录，DataEase可以自动登录至A系统中的账户。目前有两种解决方案：即单点登录和模拟登录。</p>
-<p><strong>1.1 单点登录</strong></p>
-<p>使用支持OIDC或CAS协议的系统作为统一登录平台，A系统与DataEase全部对接到同一个单点平台，实现只需一次登录就可访问两个系统，即单点登录（Single Sign On，SSO)。</p>
-<p>单点登录方式是DataEase原生支持的用户登录集成方式，仅需修改前端iframe嵌套即可。使用单点登录的方式，用户可以使用同一个密码登录两个平台，DataEase中不存在的用户在登录时会自动创建。单点登录方式在配置和使用方面更加方便，是比较推荐的方式。</p>
-<p><strong>1.2 模拟登录</strong></p>
-<p>A系统后台请求DataEase的登录接口，将登录成功的Token写入Cookie中，以模拟用户登录的过程，省去用户自己输入密码登录的过程。</p>
-<p>有些情况下受限于业务系统，部分用户的第三方系统没有对接SSO系统，这种情况下可以使用模拟登录的方式，通过做一些开发实现想要的效果。</p>
+                    <h2>单点登录方式的实现过程</h2>
+                    <p><strong>2.1 流程描述</strong></p>
+                    <p>目前，DataEase开源数据可视化分析平台支持OIDC、CAS协议，如果DataEase与A系统均已对接同一个单点登录系统，那么通过单点登录方案集成嵌入DataEase的整体流程如下：</p>
+                    <p>1. 用户通过单点登录系统登录至A系统；</p>
+                    <p>2. 用户点击相应菜单项，访问DataEase系统；</p>
+                    <p>3. DataEase通过单点登录系统获取到当前登录用户信息，自动登录并重定向至DataEase首页；</p>
+                    <p>4. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-02.png" alt="" loading="lazy" /></figure>
+                    <p><strong>2.2 配置指南</strong></p>
+                    <p>1. 配置OIDC或CAS；</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-03.png" alt="" loading="lazy" /></figure>
+                    <p>2. 默认登录方式修改为“OIDC”；</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-04.png" alt="" loading="lazy" /></figure>
+                    <p>3. 单点登录配置好后，在A系统中使用iframe地址访问DataEase地址即可。</p>
 
+                    <h2>模拟登录方式的实现过程</h2>
+                    <p><strong>3.1 流程描述</strong></p>
+                    <p>1. 用户登录A系统；</p>
+                    <p>2. 用户在A系统中通过iframe访问A系统的模拟登录接口；</p>
+                    <p>3. A系统根据已登录的用户信息请求DataEase的用户查询接口，获取到DataEase系统中对应的用户ID；</p>
+                    <p>4. A系统根据用户ID调用DataEase的用户密码修改接口，修改用户密码；</p>
+                    <p>5. A系统调用DataEase的模拟登录接口获取Token；</p>
+                    <p>6. A系统将Token写入Cookie中，并重定向至DataEase页面（当浏览器Cookie中存在Token时，访问DataEase便不再需要认证）；</p>
+                    <p>7. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-05.png" alt="" loading="lazy" /></figure>
+                    <p><strong>3.2 开发指南</strong></p>
+                    <p>此方案需要A系统提供一个模拟登录接口，并且在登录前修改DataEase中的用户密码以保证模拟登录成功。由于模拟登录是使用Cookie来实现，所以需要保证A系统与DataEase处于同一个根域名下。</p>
+                    <p><strong>3.2.1 DataEase提供的接口</strong></p>
+                    <p>1. API认证方式</p>
+                    <p>DataEase接口调用时需要在请求头中传递accessKey和signature。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-06.png" alt="" loading="lazy" /></figure>
+                    <p>其中accessKey为下图中的Access Key的值，Access Key和Secret Key获取方式如下图所示。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-07.png" alt="" loading="lazy" /></figure>
+                    <p>signature为Access Key和Secrent Key拼接后使用AES加密计算出的结果，计算方式如下：</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-08.png" alt="" loading="lazy" /></figure>
+                    <p>
+                        图示代码可参考此链接：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</em>
+                    </p>
+                    <p>2. 用户查询接口</p>
+                    <p>由于修改用户密码接口需要使用用户ID，我们首先需要使用用户查询接口获取用户ID。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-09.png" alt="" loading="lazy" /></figure>
+                    <p>其中operator的取值可参考源码，比如“eq”代表SQL中的“=”。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-10.png" alt="" loading="lazy" /></figure>
+                    <p>field取值参考数据库中sys_user表的字段名，例如username、nick_name等。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-11.png" alt="" loading="lazy" /></figure>
+                    <p>3. 修改用户密码接口</p>
+                    <p>通过用户密码修改接口，修改用户密码。此处请求参数中的userId为上一步返回值中获取到的userId。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-12.png" alt="" loading="lazy" /></figure>
+                    <p>4. 登录接口</p>
+                    <p>使用登录接口可获取到Token，将Token放入浏览器Cookie中后访问DataEase便不再需要登录认证。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-13.png" alt="" loading="lazy" /></figure>
+                    <p>登录接口中的password和username均需使用RSA加密，加密密钥取自DataEase源码中application.properties文件。</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-14.png" alt="" loading="lazy" /></figure>
+                    <p>加密方式如下：</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-15.png" alt="" loading="lazy" /></figure>
+                    <p>图示代码可参考此链接：</p>
+                    <p>
+                        <a href="https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。" target="_blank" rel="noopener noreferrer"
+                            >https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</a
+                        >
+                    </p>
+                    <p><strong>3.2.2 嵌套对接示例代码</strong></p>
+                    <p>
+                        基于以上接口，我们就可以实现将DataEase嵌入第三方系统。我写了一个Demo示例（下称Demo系统）供大家参考：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo。</em>
+                    </p>
+                    <p>使用此示例需注意以下事项：</p>
+                    <p>1. Demo系统必须与DataEase处于同一域名下；</p>
+                    <p>你可以通过修改本地hosts文件来实现，比如我进行测试时在/etc/hosts中添加了如下映射：</p>
+                    <shiki-code>
+                        <pre><code>127.0.0.1 localhost.fit2cloud.com
+10.2.3.23 edu.fit2cloud.com</code></pre>
+                    </shiki-code>
+                    <p>2. 启动前，需要修改Demo系统代码，填充DataEaseLoginController中的变量值；</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-16.png" alt="" loading="lazy" /></figure>
+                    <p>3. 页面嵌套参考如下代码，iframe中的src配置为后端的模拟登录地址；</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-17.png" alt="" loading="lazy" /></figure>
+                    <p>4. 在A系统登出时，需清除Cookie，否则DataEase中的用户不会退出登录；</p>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-18.png" alt="" loading="lazy" /></figure>
+                    <figure><img src="../images/blog/tutorial-20220915/dataease-125-19.png" alt="" loading="lazy" /></figure>
 
-<h2>单点登录方式的实现过程</h2>
-<p><strong>2.1 流程描述</strong></p>
-<p>目前，DataEase开源数据可视化分析平台支持OIDC、CAS协议，如果DataEase与A系统均已对接同一个单点登录系统，那么通过单点登录方案集成嵌入DataEase的整体流程如下：</p>
-<p>1. 用户通过单点登录系统登录至A系统；</p>
-<p>2. 用户点击相应菜单项，访问DataEase系统；</p>
-<p>3. DataEase通过单点登录系统获取到当前登录用户信息，自动登录并重定向至DataEase首页；</p>
-<p>4. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-02.png" alt="" loading="lazy" /></figure>
-<p><strong>2.2 配置指南</strong></p>
-<p>1. 配置OIDC或CAS；</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-03.png" alt="" loading="lazy" /></figure>
-<p>2. 默认登录方式修改为“OIDC”；</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-04.png" alt="" loading="lazy" /></figure>
-<p>3. 单点登录配置好后，在A系统中使用iframe地址访问DataEase地址即可。</p>
-
-
-<h2>模拟登录方式的实现过程</h2>
-<p><strong>3.1 流程描述</strong></p>
-<p>1. 用户登录A系统；</p>
-<p>2. 用户在A系统中通过iframe访问A系统的模拟登录接口；</p>
-<p>3. A系统根据已登录的用户信息请求DataEase的用户查询接口，获取到DataEase系统中对应的用户ID；</p>
-<p>4. A系统根据用户ID调用DataEase的用户密码修改接口，修改用户密码；</p>
-<p>5. A系统调用DataEase的模拟登录接口获取Token；</p>
-<p>6. A系统将Token写入Cookie中，并重定向至DataEase页面（当浏览器Cookie中存在Token时，访问DataEase便不再需要认证）；</p>
-<p>7. 用户在A系统Web页面通过iframe嵌套使用DataEase系统功能。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-05.png" alt="" loading="lazy" /></figure>
-<p><strong>3.2 开发指南</strong></p>
-<p>此方案需要A系统提供一个模拟登录接口，并且在登录前修改DataEase中的用户密码以保证模拟登录成功。由于模拟登录是使用Cookie来实现，所以需要保证A系统与DataEase处于同一个根域名下。</p>
-<p><strong>3.2.1 DataEase提供的接口</strong></p>
-<p>1. API认证方式</p>
-<p>DataEase接口调用时需要在请求头中传递accessKey和signature。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-06.png" alt="" loading="lazy" /></figure>
-<p>其中accessKey为下图中的Access Key的值，Access Key和Secret Key获取方式如下图所示。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-07.png" alt="" loading="lazy" /></figure>
-<p>signature为Access Key和Secrent Key拼接后使用AES加密计算出的结果，计算方式如下：</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-08.png" alt="" loading="lazy" /></figure>
-<p>图示代码可参考此链接：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</em></p>
-<p>2. 用户查询接口</p>
-<p>由于修改用户密码接口需要使用用户ID，我们首先需要使用用户查询接口获取用户ID。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-09.png" alt="" loading="lazy" /></figure>
-<p>其中operator的取值可参考源码，比如“eq”代表SQL中的“=”。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-10.png" alt="" loading="lazy" /></figure>
-<p>field取值参考数据库中sys_user表的字段名，例如username、nick_name等。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-11.png" alt="" loading="lazy" /></figure>
-<p>3. 修改用户密码接口</p>
-<p>通过用户密码修改接口，修改用户密码。此处请求参数中的userId为上一步返回值中获取到的userId。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-12.png" alt="" loading="lazy" /></figure>
-<p>4. 登录接口</p>
-<p>使用登录接口可获取到Token，将Token放入浏览器Cookie中后访问DataEase便不再需要登录认证。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-13.png" alt="" loading="lazy" /></figure>
-<p>登录接口中的password和username均需使用RSA加密，加密密钥取自DataEase源码中application.properties文件。</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-14.png" alt="" loading="lazy" /></figure>
-<p>加密方式如下：</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-15.png" alt="" loading="lazy" /></figure>
-<p>图示代码可参考此链接：</p>
-<p><a href="https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。" target="_blank" rel="noopener noreferrer">https://github.com/liuboF2c/dataease-login-adpter-demo/blob/main/src/main/java/dataease/lboo/demo/controller/DataEaseLoginController.java。</a></p>
-<p><strong>3.2.2 嵌套对接示例代码</strong></p>
-<p>基于以上接口，我们就可以实现将DataEase嵌入第三方系统。我写了一个Demo示例（下称Demo系统）供大家参考：<em><br />https://github.com/liuboF2c/dataease-login-adpter-demo。</em></p>
-<p>使用此示例需注意以下事项：</p>
-<p>1. Demo系统必须与DataEase处于同一域名下；</p>
-<p>你可以通过修改本地hosts文件来实现，比如我进行测试时在/etc/hosts中添加了如下映射：</p>
-<shiki-code><pre><code>127.0.0.1 localhost.fit2cloud.com
-10.2.3.23 edu.fit2cloud.com</code></pre></shiki-code>
-<p>2. 启动前，需要修改Demo系统代码，填充DataEaseLoginController中的变量值；</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-16.png" alt="" loading="lazy" /></figure>
-<p>3. 页面嵌套参考如下代码，iframe中的src配置为后端的模拟登录地址；</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-17.png" alt="" loading="lazy" /></figure>
-<p>4. 在A系统登出时，需清除Cookie，否则DataEase中的用户不会退出登录；</p>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-18.png" alt="" loading="lazy" /></figure>
-<figure><img src="../images/blog/tutorial-20220915/dataease-125-19.png" alt="" loading="lazy" /></figure>
-
-
-<h2>总结</h2>
-<p>DataEase支持使用iframe将系统嵌套到第三方系统中，同时DataEase还支持OIDC、CAS协议的单点登录系统的对接。通过单点登录或者模拟登录的方式，解决了两个系统用户认证的问题，从而实现了在第三方系统已登录时无需再次认证即可直接打开DataEase进行操作的效果。</p>
+                    <h2>总结</h2>
+                    <p>
+                        DataEase支持使用iframe将系统嵌套到第三方系统中，同时DataEase还支持OIDC、CAS协议的单点登录系统的对接。通过单点登录或者模拟登录的方式，解决了两个系统用户认证的问题，从而实现了在第三方系统已登录时无需再次认证即可直接打开DataEase进行操作的效果。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"操作教程｜如何将DataEase开源工具嵌入第三方系统？","item":"https://dataease.cn/blog/post-3882.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"操作教程｜如何将DataEase开源工具嵌入第三方系统？","description":"在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！","url":"https://dataease.cn/blog/post-3882.html","datePublished":"2022-09-15","dateModified":"2022-09-15","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-125.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "操作教程｜如何将DataEase开源工具嵌入第三方系统？", "item": "https://dataease.cn/blog/post-3882.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "操作教程｜如何将DataEase开源工具嵌入第三方系统？",
+                "description": "在第三方系统已登录时无需再次认证直接打开DataEase进行操作，更方便快捷！",
+                "url": "https://dataease.cn/blog/post-3882.html",
+                "datePublished": "2022-09-15",
+                "dateModified": "2022-09-15",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-125.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">

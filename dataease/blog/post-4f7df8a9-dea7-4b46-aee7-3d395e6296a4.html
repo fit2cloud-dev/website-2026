@@ -78,10 +78,15 @@
                             <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
-                            <p class="mega-nav-tagline"><span class="visible-xs text-muted">飞致云旗下开源产品</span></p>
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
                                 <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
-                                    <div class="mega-nav-ctrl-items"><span class="mega-nav-icon-outline"><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg><span class="visuallyhidden">Open</span></span></div>
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline"
+                                            ><svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg
+                                            ><span class="visuallyhidden">Open</span></span
+                                        >
+                                    </div>
                                 </button>
                                 <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
                                     <div class="mega-nav-body">
@@ -149,7 +154,13 @@
                         <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
-                <div class="menu-extras"><div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div></div>
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle"
+                            ><div class="lines"><span></span><span></span><span></span></div
+                        ></a>
+                    </div>
+                </div>
                 <div id="navigation">
                     <ul class="navigation-menu nav-light">
                         <li><a href="../index.html">首页</a></li>
@@ -208,11 +219,55 @@
                     <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂｜DataEase协助电商企业开展用户运营" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p>DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a href="https://dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。目前，DataEase模板市场的模板数量已经超过了100个。" target="_blank" rel="noopener noreferrer">https://dataease.io/templates/）</a>。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。目前，DataEase模板市场的模板数量已经超过了100个。</p><h2 id="heading-1">2023年9月上新模板</h2><p>DataEase模板市场定期进行模板上新。2023年9月共上新6个模板，涉及能源、交通、直播运营、地产运营等主题，欢迎大家在DataEase模板市场下载使用。</p><p><img src="../images/blog/template-20231017/dataease-085-01.png" alt="1 某城市智慧电力监控平台.png" loading="lazy" /><img src="../images/blog/template-20231017/dataease-085-02.png" alt="3 新能源汽车工业经济运行情况.png" loading="lazy" /><img src="../images/blog/template-20231017/dataease-085-03.png" alt="4 视频号助手直播数据大屏.png" loading="lazy" /><img src="../images/blog/template-20231017/dataease-085-04.png" alt="2 电力检修智慧云平台.png" loading="lazy" /><img src="../images/blog/common/dataease-049-03.png" alt="5 小区物业消防巡检状态看板.png" loading="lazy" /><img src="../images/blog/template-20231017/dataease-085-06.png" alt="6 物业车位管理看板.png" loading="lazy" /></p><h2 id="heading-2">模板技巧</h2><p>本月的模版技巧和大家分享一下如何使用DataEase开源数据可视化分析工具进行电商行业的用户运营分析。</p><p><strong><span>一、数据来源</span></strong></p><p>数据来源：<em>https://tianchi.aliyun.com/dataset/649</em> （阿里天池数据集：淘宝用户行为数据）</p><p><strong>1. 字段定义</strong></p><p><img src="../images/blog/template-20231017/dataease-085-07.png" alt="截屏2023-10-17 11.23.22.png" loading="lazy" /><strong>2. 用户行为类型定义</strong></p><p><img src="../images/blog/template-20231017/dataease-085-08.png" alt="截屏2023-10-17 11.23.33.png" loading="lazy" /><strong><span>二、数据清洗</span></strong></p><p><strong>1. 列名的重命名</strong></p><p>将获取的原数据导入到数据库中生成数据集时，原数据集中不包含表头。因此需要为列名进行重命名操作。</p><shiki-code><pre><code>ALTER TABLE userbehavior CHANGE COLUMN `1` user_id VARCHAR(255);
+                    <p>
+                        DataEase开源数据可视化分析平台于2022年6月正式发布模板市场（<a
+                            href="https://dataease.io/templates/）。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。目前，DataEase模板市场的模板数量已经超过了100个。"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >https://dataease.io/templates/）</a
+                        >。模板市场旨在为DataEase用户提供专业、美观、拿来即用的仪表板模板，方便用户根据自身的业务需求和使用场景选择对应的仪表板模板，并在优质模板的基础上轻松制作自己的仪表板。目前，DataEase模板市场的模板数量已经超过了100个。
+                    </p>
+                    <h2 id="heading-1">2023年9月上新模板</h2>
+                    <p>DataEase模板市场定期进行模板上新。2023年9月共上新6个模板，涉及能源、交通、直播运营、地产运营等主题，欢迎大家在DataEase模板市场下载使用。</p>
+                    <p>
+                        <img src="../images/blog/template-20231017/dataease-085-01.png" alt="1 某城市智慧电力监控平台.png" loading="lazy" /><img
+                            src="../images/blog/template-20231017/dataease-085-02.png"
+                            alt="3 新能源汽车工业经济运行情况.png"
+                            loading="lazy"
+                        /><img src="../images/blog/template-20231017/dataease-085-03.png" alt="4 视频号助手直播数据大屏.png" loading="lazy" /><img
+                            src="../images/blog/template-20231017/dataease-085-04.png"
+                            alt="2 电力检修智慧云平台.png"
+                            loading="lazy"
+                        /><img src="../images/blog/common/dataease-049-03.png" alt="5 小区物业消防巡检状态看板.png" loading="lazy" /><img
+                            src="../images/blog/template-20231017/dataease-085-06.png"
+                            alt="6 物业车位管理看板.png"
+                            loading="lazy"
+                        />
+                    </p>
+                    <h2 id="heading-2">模板技巧</h2>
+                    <p>本月的模版技巧和大家分享一下如何使用DataEase开源数据可视化分析工具进行电商行业的用户运营分析。</p>
+                    <p>
+                        <strong><span>一、数据来源</span></strong>
+                    </p>
+                    <p>数据来源：<em>https://tianchi.aliyun.com/dataset/649</em> （阿里天池数据集：淘宝用户行为数据）</p>
+                    <p><strong>1. 字段定义</strong></p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-07.png" alt="截屏2023-10-17 11.23.22.png" loading="lazy" /><strong>2. 用户行为类型定义</strong></p>
+                    <p>
+                        <img src="../images/blog/template-20231017/dataease-085-08.png" alt="截屏2023-10-17 11.23.33.png" loading="lazy" /><strong><span>二、数据清洗</span></strong>
+                    </p>
+                    <p><strong>1. 列名的重命名</strong></p>
+                    <p>将获取的原数据导入到数据库中生成数据集时，原数据集中不包含表头。因此需要为列名进行重命名操作。</p>
+                    <shiki-code>
+                        <pre><code>ALTER TABLE userbehavior CHANGE COLUMN `1` user_id VARCHAR(255);
 ALTER TABLE userbehavior CHANGE COLUMN `2268318` item_id VARCHAR(255);
 ALTER TABLE userbehavior CHANGE COLUMN `2520377` cat_id VARCHAR(255);
 ALTER TABLE userbehavior CHANGE COLUMN pv behavior_type VARCHAR(255);
-ALTER TABLE userbehavior CHANGE COLUMN `1511544070` time_stamp VARCHAR(255);</code></pre></shiki-code><p><strong>2. 重复值与缺失值检验</strong></p><p>导入数据后，需要先检查数据集中是否包含重复值或是否有缺失值。</p><shiki-code><pre><code># 重复值检验
+ALTER TABLE userbehavior CHANGE COLUMN `1511544070` time_stamp VARCHAR(255);</code></pre>
+                    </shiki-code>
+                    <p><strong>2. 重复值与缺失值检验</strong></p>
+                    <p>导入数据后，需要先检查数据集中是否包含重复值或是否有缺失值。</p>
+                    <shiki-code>
+                        <pre><code># 重复值检验
 SELECT *
 FROM userbehavior
 GROUP BY user_id,item_id,cat_id,time_stamp
@@ -223,7 +278,13 @@ SELECT   COUNT(user_id) AS 用户数量
          ,COUNT(cat_id) AS 商品类目数量
          ,COUNT(behavior_type) AS 用户行为数量
          ,COUNT(time_stamp) AS 时间戳数量
-FROM userbehavior;</code></pre></shiki-code><p>根据查询结果，数据集中并不包含重复值，也不存在缺失值。</p><p><strong>3. 时间戳格式化</strong></p><p>需要将原数据集中的时间戳格式转换为日期的时间格式，以便后续分析处理。</p><shiki-code><pre><code># 新增日期列
+FROM userbehavior;</code></pre>
+                    </shiki-code>
+                    <p>根据查询结果，数据集中并不包含重复值，也不存在缺失值。</p>
+                    <p><strong>3. 时间戳格式化</strong></p>
+                    <p>需要将原数据集中的时间戳格式转换为日期的时间格式，以便后续分析处理。</p>
+                    <shiki-code>
+                        <pre><code># 新增日期列
 ALTER TABLE userbehavior ADD COLUMN `date` VARCHAR(255);
 UPDATE userbehavior SET `date`=FROM_UNIXTIME(time_stamp,'%Y-%m-%d');
 # 新增时间列
@@ -231,21 +292,67 @@ ALTER TABLE userbehavior ADD COLUMN `time` VARCHAR(255);
 UPDATE userbehavior SET `time`=FROM_UNIXTIME(time_stamp,'%H:%i:%s');
 # 新增小时列
 ALTER TABLE userbehavior ADD COLUMN `hour` VARCHAR(255);
-UPDATE userbehavior SET `hour`=hour(time);</code></pre></shiki-code><p><strong><span>三、数据分析</span></strong></p><p><strong>1. 用户访问分析</strong></p><p>1）数据预处理</p><p>将新建的SQL数据集导入DataEase后，在DataEase的数据集“字段管理”页面可以看到各字段均为初始的“文本”类型，需要数据集创建者自行将字段修改为合适的字段类型。如下图所示，将“date”和“time”修改为对应的时间格式，将“user_id”和“item_id”转换为维度。</p><p><img src="../images/blog/template-20231017/dataease-085-09.png" alt="7 数据预处理.png" loading="lazy" />2）视图设计</p><p>在DataEase中新建仪表板。选择刚创建的数据集userbehavior，在仪表板中新建名为“用户访问分析”的组合图。如下图所示，在仪表板制作页面右侧编辑栏的空白框中拖入对应字段并进行修改。</p><p>视图中需要展示的指标及其含义为：</p><p><span>■</span> UV（Unique Visitor）：即独立访客。访问某网站的1台电脑客户端即为1个独立访客；</p><p><span>■</span> PV（Page View）：即页面浏览量，或点击量。用户每1次对网站中的每个网页访问均被记录1次。</p><p>具体操作步骤如下：</p><p>① 将字段“data”拖入“类别轴/维度”空白框中，并设置排序为“升序”；</p><p>② 将字段“user_id”拖入“主轴值/指标”空白框中，设置汇总方式为“计数”，并将显示名改为“PV”；</p><p>③ 将字段“user_id”拖入“副轴值/指标”空白框中，选择汇总方式为“去重计数”，并将显示名改为“UV”；</p><p>④ 将字段“date”和字段“hour”按顺序拖入“钻取/维度”空白框中。</p><p><img src="../images/blog/template-20231017/dataease-085-10.png" alt="8 视图设计.png" loading="lazy" />3）分析结果</p><p>配置视图下钻后，点击视图中想要查看的数据点，视图将根据下钻结果跳转至该日期的具体时段数据，以便于观看者查看“UV”和“PV”两项指标的当日数据趋势变化。</p><p>从折线图中可以看出：11月25日至12月1日的PV和UV数据波动相对稳定，12月2日至12月3日的PV、UV数据曲线则有明显增幅。其中11月25至26日和12月2至3日均为周末，但11月25、26日和工作日的PV、UV数据相近，而12月2日至3日却有明显增幅。</p><p><strong>2. 用户留存分析</strong></p><p>1）数据预处理</p><p>① 设定自11月25日起新登录的用户为新增用户，查询每位新增用户第一次登录的日期；</p><shiki-code><pre><code># 创建视图，查询用户第一次登录的日期
+UPDATE userbehavior SET `hour`=hour(time);</code></pre>
+                    </shiki-code>
+                    <p>
+                        <strong><span>三、数据分析</span></strong>
+                    </p>
+                    <p><strong>1. 用户访问分析</strong></p>
+                    <p>1）数据预处理</p>
+                    <p>
+                        将新建的SQL数据集导入DataEase后，在DataEase的数据集“字段管理”页面可以看到各字段均为初始的“文本”类型，需要数据集创建者自行将字段修改为合适的字段类型。如下图所示，将“date”和“time”修改为对应的时间格式，将“user_id”和“item_id”转换为维度。
+                    </p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-09.png" alt="7 数据预处理.png" loading="lazy" />2）视图设计</p>
+                    <p>在DataEase中新建仪表板。选择刚创建的数据集userbehavior，在仪表板中新建名为“用户访问分析”的组合图。如下图所示，在仪表板制作页面右侧编辑栏的空白框中拖入对应字段并进行修改。</p>
+                    <p>视图中需要展示的指标及其含义为：</p>
+                    <p><span>■</span> UV（Unique Visitor）：即独立访客。访问某网站的1台电脑客户端即为1个独立访客；</p>
+                    <p><span>■</span> PV（Page View）：即页面浏览量，或点击量。用户每1次对网站中的每个网页访问均被记录1次。</p>
+                    <p>具体操作步骤如下：</p>
+                    <p>① 将字段“data”拖入“类别轴/维度”空白框中，并设置排序为“升序”；</p>
+                    <p>② 将字段“user_id”拖入“主轴值/指标”空白框中，设置汇总方式为“计数”，并将显示名改为“PV”；</p>
+                    <p>③ 将字段“user_id”拖入“副轴值/指标”空白框中，选择汇总方式为“去重计数”，并将显示名改为“UV”；</p>
+                    <p>④ 将字段“date”和字段“hour”按顺序拖入“钻取/维度”空白框中。</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-10.png" alt="8 视图设计.png" loading="lazy" />3）分析结果</p>
+                    <p>配置视图下钻后，点击视图中想要查看的数据点，视图将根据下钻结果跳转至该日期的具体时段数据，以便于观看者查看“UV”和“PV”两项指标的当日数据趋势变化。</p>
+                    <p>
+                        从折线图中可以看出：11月25日至12月1日的PV和UV数据波动相对稳定，12月2日至12月3日的PV、UV数据曲线则有明显增幅。其中11月25至26日和12月2至3日均为周末，但11月25、26日和工作日的PV、UV数据相近，而12月2日至3日却有明显增幅。
+                    </p>
+                    <p><strong>2. 用户留存分析</strong></p>
+                    <p>1）数据预处理</p>
+                    <p>① 设定自11月25日起新登录的用户为新增用户，查询每位新增用户第一次登录的日期；</p>
+                    <shiki-code>
+                        <pre><code># 创建视图，查询用户第一次登录的日期
 CREATE VIEW first_log
 AS
 SELECT user_id,MIN(date) first_logday
-FROM userbehaviorGROUP BY user_id;</code></pre></shiki-code><p>数据预览如下：</p><p><img src="../images/blog/template-20231017/dataease-085-11.png" alt="10 登陆日期.png" loading="lazy" /></p><p>② 查询每日新增用户数；</p><shiki-code><pre><code>SELECT first_logday,COUNT(user_id) 日新增用户
+FROM userbehaviorGROUP BY user_id;</code></pre>
+                    </shiki-code>
+                    <p>数据预览如下：</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-11.png" alt="10 登陆日期.png" loading="lazy" /></p>
+                    <p>② 查询每日新增用户数；</p>
+                    <shiki-code>
+                        <pre><code>SELECT first_logday,COUNT(user_id) 日新增用户
 FROM first_log
 GROUP BY first_logday
-ORDER BY first_logday;</code></pre></shiki-code><p>数据预览如下：</p><p><img src="../images/blog/template-20231017/dataease-085-12.png" alt="11 每日新增用户数.png" loading="lazy" />③ 创建视图，查询用户登录当天与第一次登录的间隔天数；</p><shiki-code><pre><code># 创建视图，查询用户登录当天与第一次登录间隔天数
+ORDER BY first_logday;</code></pre>
+                    </shiki-code>
+                    <p>数据预览如下：</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-12.png" alt="11 每日新增用户数.png" loading="lazy" />③ 创建视图，查询用户登录当天与第一次登录的间隔天数；</p>
+                    <shiki-code>
+                        <pre><code># 创建视图，查询用户登录当天与第一次登录间隔天数
 CREATE VIEW day_diffAS
 SELECT a.user_id,b.first_logday,
 DATEDIFF(a.date,first_logday) day_diff
 FROM userbehavior a
 INNER JOIN first_log b
 ON a.user_id=b.user_id
-GROUP BY a.user_id,a.date;</code></pre></shiki-code><p>数据预览如下：</p><p><img src="../images/blog/template-20231017/dataease-085-13.png" alt="12 登录间隔天数.png" loading="lazy" /></p><p>④ 在DataEase中新建SQL数据集，查询不同登录日期的用户每日留存统计。</p><shiki-code><pre><code>SELECT first_logday,
+GROUP BY a.user_id,a.date;</code></pre>
+                    </shiki-code>
+                    <p>数据预览如下：</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-13.png" alt="12 登录间隔天数.png" loading="lazy" /></p>
+                    <p>④ 在DataEase中新建SQL数据集，查询不同登录日期的用户每日留存统计。</p>
+                    <shiki-code>
+                        <pre><code>SELECT first_logday,
 SUM(CASE day_diff WHEN 0 THEN 1 ELSE 0 END) day_0,
 SUM(CASE day_diff WHEN 1 THEN 1 ELSE 0 END) day_1,
 SUM(CASE day_diff WHEN 2 THEN 1 ELSE 0 END) day_2,
@@ -257,88 +364,154 @@ SUM(CASE day_diff WHEN 7 THEN 1 ELSE 0 END) day_7,
 SUM(CASE day_diff WHEN 8 THEN 1 ELSE 0 END) day_8
 FROM day_diff
 GROUP BY first_logday
-ORDER BY first_logday;</code></pre></shiki-code><p>2）视图设计</p><p>在仪表板中新建“明细表”视图，选择刚创建的用户每日留存统计SQL数据集，并按下图所示将各字段拖入“数据列/维度或指标”空白框中。</p><p><img src="../images/blog/template-20231017/dataease-085-14.png" alt="13 明细表.png" loading="lazy" />3）分析结果</p><p>在11月25日至30日之间首日登录的用户，在12月2日之前每日的留存率在50%-80%之间浮动；而在12月2日至3日不同批次的用户留存率均有大幅提升（超过90%），可能是由于平台或店铺推出了促销活动，或者每日打卡积分活动等提升了用户活跃度与留存率。</p><p><strong>3. 用户复购分析</strong></p><p>1）数据预处理</p><p>① 在DataEase中新建SQL数据集，查询用户的购买次数；</p><shiki-code><pre><code># 查询用户的购买次数
+ORDER BY first_logday;</code></pre>
+                    </shiki-code>
+                    <p>2）视图设计</p>
+                    <p>在仪表板中新建“明细表”视图，选择刚创建的用户每日留存统计SQL数据集，并按下图所示将各字段拖入“数据列/维度或指标”空白框中。</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-14.png" alt="13 明细表.png" loading="lazy" />3）分析结果</p>
+                    <p>
+                        在11月25日至30日之间首日登录的用户，在12月2日之前每日的留存率在50%-80%之间浮动；而在12月2日至3日不同批次的用户留存率均有大幅提升（超过90%），可能是由于平台或店铺推出了促销活动，或者每日打卡积分活动等提升了用户活跃度与留存率。
+                    </p>
+                    <p><strong>3. 用户复购分析</strong></p>
+                    <p>1）数据预处理</p>
+                    <p>① 在DataEase中新建SQL数据集，查询用户的购买次数；</p>
+                    <shiki-code>
+                        <pre><code># 查询用户的购买次数
 SELECT user_id,COUNT(user_id) AS 购买次数
 FROM userbehavior
 WHERE behavior_type='buy'
 GROUP BY user_id
-ORDER BY 购买次数 DESC;</code></pre></shiki-code><p>② 选择“字段管理”→“新建计算字段”，对购买频次做数据映射；</p><p><span>■</span> 字段名称：用户分层</p><p><span>■</span> 字段表达式，具体如下图所示：</p><shiki-code><pre><code>CASE WHEN [购买次数] &gt;=1 AND [购买次数] &lt;= 4 THEN '1-4'
+ORDER BY 购买次数 DESC;</code></pre>
+                    </shiki-code>
+                    <p>② 选择“字段管理”→“新建计算字段”，对购买频次做数据映射；</p>
+                    <p><span>■</span> 字段名称：用户分层</p>
+                    <p><span>■</span> 字段表达式，具体如下图所示：</p>
+                    <shiki-code>
+                        <pre><code>CASE WHEN [购买次数] &gt;=1 AND [购买次数] &lt;= 4 THEN '1-4'
 WHEN [购买次数] &gt;=5 AND [购买次数] &lt;= 9 THEN '5-9'
 WHEN [购买次数] &gt;=10 AND [购买次数] &lt;= 14 THEN '10-14'
 WHEN [购买次数] &gt;=15 AND [购买次数] &lt;= 19 THEN '15-19'
 WHEN [购买次数] &gt;=20 AND [购买次数] &lt;= 24 THEN '20-24'
 WHEN [购买次数] &gt;=25 AND [购买次数] &lt;= 29 THEN '25-29'
 ELSE '&gt;30'
-END</code></pre></shiki-code><p><img src="../images/blog/template-20231017/dataease-085-15.png" alt="14 新建计算字段.png" loading="lazy" />数据预览如下：</p><p><img src="../images/blog/template-20231017/dataease-085-16.png" alt="15 数据预览.png" loading="lazy" />2）视图设计</p><p>在仪表板中新建“基础柱状图”视图，选择刚创建的用户购买次数数据集。如下图所示，在“仪表板制作”页面右侧的编辑栏中将对应的字段拖入空白框并做修改。</p><p>① 将新建的“用户分层”字段拖入“类别轴/维度”空白框中；</p><p>② 将“购买次数”字段拖入“值轴/指标”空白框中，选择汇总方式为“求和”；</p><p>③ 将“记录数”字段拖入“值轴/指标”空白框中，选择汇总方式为“计数”，并将显示名修改为“购买人数”。</p><p><img src="../images/blog/template-20231017/dataease-085-17.png" alt="16 基础柱状图.jpg" loading="lazy" />3）分析结果</p><p>有超过66%的用户发生过复购行为，但多数用户复购次数不超过5次，商家在提升用户复购意愿方面仍有进步空间。</p><p><strong>4. 用户转化分析</strong></p><p>1）视图设计</p><p>新建“漏斗图”视图，选择userbehavior数据集。如下图所示，将对应字段拖入到“仪表板制作”页面右侧编辑栏的空白框中。</p><p>① 将“behavior_type”字段拖入“漏斗分层/维度”空白框中，并将显示名修改为“行为类型”；</p><p>② 将“user_id”字段拖入“漏斗层宽/指标”中，选择汇总方式为“计数”，并将显示名修改为“用户数”。</p><p><img src="../images/blog/template-20231017/dataease-085-18.png" alt="17 漏斗图.png" loading="lazy" />2）分析结果</p><p>从漏斗图中可知，从“点击”到“收藏”的路径中用户流失较多，而“添加购物车”到“购买”的路径中用户流失极少。</p><h2 id="heading-3">总结</h2><p>随着“社交电商”、“直播电商”等一次次的电商转型升级，电商平台不仅为企业提供了全新的商业模式，也为消费者带来了更为便捷和多样化的购物体验。然而，随着电商市场竞争的日益激烈，“如何更好地进行用户运营，满足用户需求，提升用户忠诚度”，就成为了电商企业亟需解决的关键问题之一。</p><p>数据分析与数据可视化作为强有力的工具，为电商企业开展用户运营提供了深入洞察消费者行为、趋势和偏好的途径。通过DataEase开源数据可视化分析工具进行仪表板制作与展示，电商企业可以对用户数据进行更为全面的分析，并且更准确地了解用户的购物习惯、兴趣爱好，甚至是情感态度。这些数据及其可视化视图不仅有助于企业优化产品和服务，更为重要的是，可以帮助电商企业制定精准的用户运营策略，从而更好地吸引、留存和发展用户群体。</p>
+END</code></pre>
+                    </shiki-code>
+                    <p><img src="../images/blog/template-20231017/dataease-085-15.png" alt="14 新建计算字段.png" loading="lazy" />数据预览如下：</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-16.png" alt="15 数据预览.png" loading="lazy" />2）视图设计</p>
+                    <p>在仪表板中新建“基础柱状图”视图，选择刚创建的用户购买次数数据集。如下图所示，在“仪表板制作”页面右侧的编辑栏中将对应的字段拖入空白框并做修改。</p>
+                    <p>① 将新建的“用户分层”字段拖入“类别轴/维度”空白框中；</p>
+                    <p>② 将“购买次数”字段拖入“值轴/指标”空白框中，选择汇总方式为“求和”；</p>
+                    <p>③ 将“记录数”字段拖入“值轴/指标”空白框中，选择汇总方式为“计数”，并将显示名修改为“购买人数”。</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-17.png" alt="16 基础柱状图.jpg" loading="lazy" />3）分析结果</p>
+                    <p>有超过66%的用户发生过复购行为，但多数用户复购次数不超过5次，商家在提升用户复购意愿方面仍有进步空间。</p>
+                    <p><strong>4. 用户转化分析</strong></p>
+                    <p>1）视图设计</p>
+                    <p>新建“漏斗图”视图，选择userbehavior数据集。如下图所示，将对应字段拖入到“仪表板制作”页面右侧编辑栏的空白框中。</p>
+                    <p>① 将“behavior_type”字段拖入“漏斗分层/维度”空白框中，并将显示名修改为“行为类型”；</p>
+                    <p>② 将“user_id”字段拖入“漏斗层宽/指标”中，选择汇总方式为“计数”，并将显示名修改为“用户数”。</p>
+                    <p><img src="../images/blog/template-20231017/dataease-085-18.png" alt="17 漏斗图.png" loading="lazy" />2）分析结果</p>
+                    <p>从漏斗图中可知，从“点击”到“收藏”的路径中用户流失较多，而“添加购物车”到“购买”的路径中用户流失极少。</p>
+                    <h2 id="heading-3">总结</h2>
+                    <p>
+                        随着“社交电商”、“直播电商”等一次次的电商转型升级，电商平台不仅为企业提供了全新的商业模式，也为消费者带来了更为便捷和多样化的购物体验。然而，随着电商市场竞争的日益激烈，“如何更好地进行用户运营，满足用户需求，提升用户忠诚度”，就成为了电商企业亟需解决的关键问题之一。
+                    </p>
+                    <p>
+                        数据分析与数据可视化作为强有力的工具，为电商企业开展用户运营提供了深入洞察消费者行为、趋势和偏好的途径。通过DataEase开源数据可视化分析工具进行仪表板制作与展示，电商企业可以对用户数据进行更为全面的分析，并且更准确地了解用户的购物习惯、兴趣爱好，甚至是情感态度。这些数据及其可视化视图不仅有助于企业优化产品和服务，更为重要的是，可以帮助电商企业制定精准的用户运营策略，从而更好地吸引、留存和发展用户群体。
+                    </p>
                 </div>
             </article>
         </main>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dataease.cn/"},{"@type":"ListItem","position":2,"name":"产品动态","item":"https://dataease.cn/blog.html"},{"@type":"ListItem","position":3,"name":"模板学堂｜DataEase协助电商企业开展用户运营","item":"https://dataease.cn/blog/post-4f7df8a9-dea7-4b46-aee7-3d395e6296a4.html"}]}</script>
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"模板学堂｜DataEase协助电商企业开展用户运营","description":"9月DataEase模板市场上新。","url":"https://dataease.cn/blog/post-4f7df8a9-dea7-4b46-aee7-3d395e6296a4.html","datePublished":"2023-10-17","dateModified":"2023-10-17","inLanguage":"zh-CN","image":"https://dataease.cn/images/blog/common/dataease-028.jpg","articleSection":"DataEase 产品动态","author":{"@type":"Organization","name":"FIT2CLOUD 飞致云"},"publisher":{"@type":"Organization","name":"FIT2CLOUD 飞致云"}}</script>
-                
-            <section class="section bg-light" id="contact">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 text-center">
-                            <div class="section-title">
-                                <h4 class="title mb-4">联系我们</h4>
-                                <p class="text-muted para-desc mx-auto mb-4">
-                                    想要进一步了解
-                                    <span class="text-primary font-weight-bold">DataEase</span>
-                                    ? 欢迎通过如下方式联系我们。
-                                </p>
-                            </div>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                    { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://dataease.cn/blog.html" },
+                    { "@type": "ListItem", "position": 3, "name": "模板学堂｜DataEase协助电商企业开展用户运营", "item": "https://dataease.cn/blog/post-4f7df8a9-dea7-4b46-aee7-3d395e6296a4.html" }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                "headline": "模板学堂｜DataEase协助电商企业开展用户运营",
+                "description": "9月DataEase模板市场上新。",
+                "url": "https://dataease.cn/blog/post-4f7df8a9-dea7-4b46-aee7-3d395e6296a4.html",
+                "datePublished": "2023-10-17",
+                "dateModified": "2023-10-17",
+                "inLanguage": "zh-CN",
+                "image": "https://dataease.cn/images/blog/common/dataease-028.jpg",
+                "articleSection": "DataEase 产品动态",
+                "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" },
+                "publisher": { "@type": "Organization", "name": "FIT2CLOUD 飞致云" }
+            }
+        </script>
+
+        <section class="section bg-light" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="title mb-4">联系我们</h4>
+                            <p class="text-muted para-desc mx-auto mb-4">
+                                想要进一步了解
+                                <span class="text-primary font-weight-bold">DataEase</span>
+                                ? 欢迎通过如下方式联系我们。
+                            </p>
                         </div>
                     </div>
-                    <div class="row justify-content-between align-items-top">
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">购买咨询</h4>
-                            <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
-                            <h4 class="page-title mb-0">技术交流群</h4>
-                            <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
-                        </div>
-                        <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
-                            <div class="title-heading ml-lg-4">
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
-                                    </div>
+                </div>
+                <div class="row justify-content-between align-items-top">
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">购买咨询</h4>
+                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
+                        <h4 class="page-title mb-0">技术交流群</h4>
+                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                    </div>
+                    <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
+                        <div class="title-heading ml-lg-4">
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
-                                    </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
                                 </div>
-                                <div class="media contact-detail align-items-center mt-2">
-                                    <div class="icon">
-                                        <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                    </div>
-                                    <div class="media-body content">
-                                        <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
-                                    </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
+                                </div>
+                            </div>
+                            <div class="media contact-detail align-items-center mt-2">
+                                <div class="icon">
+                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
+                                </div>
+                                <div class="media-body content">
+                                    <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-<footer class="footer footer-bar de-site-footer">
+            </div>
+        </section>
+        <footer class="footer footer-bar de-site-footer">
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
