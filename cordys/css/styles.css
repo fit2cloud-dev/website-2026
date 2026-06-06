@@ -466,6 +466,132 @@ body {
 }
 
 /* ==========================================================================
+   Contact Section Styles
+   ========================================================================== */
+
+.section--contact {
+    background: var(--bg-secondary);
+    padding: 80px 0;
+}
+
+.contact__card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    padding: 48px 40px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.contact__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact__column--info {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contact__label {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.contact__qr {
+    width: 140px;
+    height: 140px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 8px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+.contact__info-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact__info-item a:hover {
+    color: #008A8E;
+    text-decoration: underline;
+}
+
+.contact__info-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.contact__info-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 768px) {
+    .section--contact {
+        padding: 60px 0;
+    }
+
+    .contact__card {
+        padding: 32px 24px;
+    }
+
+    .contact__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .contact__column--info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact__info-item {
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
    Footer Styles
    ========================================================================== */
 
