@@ -841,3 +841,131 @@
         justify-content: flex-start;
     }
 }
+
+/* ============================================================
+ * 联系我们
+ * ============================================================ */
+.contact-section {
+    background-color: #f6f7f9;
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 12px;
+}
+
+.contact-subtitle {
+    font-size: 16px;
+    color: #636e72;
+    margin-bottom: 30px;
+}
+
+.contact-highlight {
+    color: #ef4c4f;
+    font-weight: 500;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 60px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-left {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-qr-label {
+    font-size: 15px;
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.contact-qr-wrap {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-qr-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #2d3436;
+    border: 1px solid #eee;
+}
+
+.contact-item a {
+    color: #2d3436;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-item a:hover {
+    color: #ef4c4f;
+    text-decoration: underline;
+}
+
+.contact-icon {
+    font-size: 18px;
+    color: #636e72;
+    width: 22px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    .contact-left {
+        align-self: center;
+    }
+    .contact-title {
+        font-size: 26px;
+    }
+}
