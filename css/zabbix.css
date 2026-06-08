@@ -301,13 +301,13 @@
 }
 
 .zabbix-icon-efficiency {
-    background: linear-gradient(135deg, rgba(12, 123, 224, 0.1), rgba(51, 61, 255, 0.05));
-    color: #0c7be0;
+    background: linear-gradient(135deg, rgba(var(--zabbix-red-rgb), 0.1), rgba(var(--zabbix-red-rgb), 0.05));
+    color: var(--zabbix-red);
 }
 
 .zabbix-icon-reliability {
-    background: linear-gradient(135deg, rgba(43, 147, 124, 0.1), rgba(43, 147, 124, 0.05));
-    color: #2b937c;
+    background: linear-gradient(135deg, rgba(var(--zabbix-red-rgb), 0.1), rgba(var(--zabbix-red-rgb), 0.05));
+    color: var(--zabbix-red);
 }
 
 .zabbix-value-lead {
