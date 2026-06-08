@@ -197,10 +197,48 @@
                 <h1 class="article-title">中国 CRM 市场的前世今生，以及 Cordys CRM 如何以「开源+AI」改变游戏规则</h1>
                 <p class="article-summary">深度分析中国 CRM 市场二十年的演进历程、竞争格局与核心矛盾，解读 Cordys CRM 以开源免费增值、私有化部署、L2C 三层架构、AI Coding+FDE 和 CRM Skills 五个支点破局中国 CRM 市场的战略逻辑。</p>
                 <div class="article-meta"><time datetime="2026-06-08">2026年06月08日</time></div>
-                <img src="../images/blog/cordys-12.png" alt="中国 CRM 市场的前世今生，以及 Cordys CRM 如何以「开源+AI」改变游戏规则" class="article-cover" />
+                <nav class="article-toc" aria-label="文章目录">
+                    <h2 class="article-toc__title">目录</h2>
+                    <ol class="article-toc__list">
+                        <li class="article-toc__item article-toc__item--h2">
+                            <a href="#toc-intro">引言</a>
+                        </li>
+                        <li class="article-toc__item article-toc__item--h2">
+                            <a href="#toc-market-history">一、中国 CRM 市场的前世今生</a>
+                            <ol class="article-toc__sublist">
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-stages">1.1 五个发展阶段：从舶来品到国产崛起</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-scale">1.2 市场规模与增长轨迹</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-landscape">1.3 竞争格局：三股势力的角力</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-tech-waves">1.4 技术演进的五波浪潮</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-contradictions">1.5 中国 CRM 市场的三大核心矛盾</a></li>
+                            </ol>
+                        </li>
+                        <li class="article-toc__item article-toc__item--h2">
+                            <a href="#toc-fit2cloud">二、飞致云与 Cordys CRM：「开源 + AI」的破局图景</a>
+                            <ol class="article-toc__sublist">
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-anti-consensus">2.1 飞致云：一个"反共识"的开源软件样本</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-architecture">2.2 Cordys CRM 的产品逻辑：三层架构的递进</a></li>
+                            </ol>
+                        </li>
+                        <li class="article-toc__item article-toc__item--h2">
+                            <a href="#toc-five-pillars">三、五个支点：Cordys CRM 如何改变游戏规则</a>
+                            <ol class="article-toc__sublist">
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-pillar-1">3.1 开源免费增值，直面中国企业"付费困难"</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-pillar-2">3.2 L2C 是地基，信息化不扎实就无法智能化</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-pillar-3">3.3 AI 时代，私有化部署和数据主权被重新定价</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-pillar-4">3.4 开源 + AI Coding + FDE 重新定义定制范式</a></li>
+                                <li class="article-toc__item article-toc__item--h3"><a href="#toc-pillar-5">3.5 Skills 生态决定 CRM 新入口的未来</a></li>
+                            </ol>
+                        </li>
+                        <li class="article-toc__item article-toc__item--h2">
+                            <a href="#toc-conclusion">四、结语：AI 时代 CRM 的经济模型正在被重新书写</a>
+                        </li>
+                    </ol>
+                </nav>
+
                 <div class="article-content">
 
-                    <h2>引言</h2>
+                    <h2 id="toc-intro">引言</h2>
 
                     <p>如果从 Siebel 在中国签下第一张大单算起，CRM（Customer Relationship Management，客户关系管理）这个品类进入中国市场已经超过二十年。这二十年里，CRM 在中国经历了从舶来品到本土化、从本地部署到 SaaS 订阅、从流程工具到智能平台的数次范式迁移。每一次技术浪潮的冲击，都在重塑这个市场的竞争版图。</p>
 
@@ -210,9 +248,9 @@
 
                     <hr />
 
-                    <h2>一、中国 CRM 市场的前世今生</h2>
+                    <h2 id="toc-market-history">一、中国 CRM 市场的前世今生</h2>
 
-                    <h3>1.1 五个发展阶段：从舶来品到国产崛起</h3>
+                    <h3 id="toc-stages">1.1 五个发展阶段：从舶来品到国产崛起</h3>
 
                     <p>回顾中国 CRM 市场的发展历程，大致可以划分为五个阶段，每个阶段都有其独特的技术背景和市场驱动力。</p>
 
@@ -248,13 +286,13 @@
 
                     <p>第一，国产替代从政策倡导进入实质推进阶段。以"2+8"安全可控体系为框架，国有企业、金融机构、政府单位对国产化软件的需求从"能用"升级为"好用"。第二，中国企业出海潮涌，跨境销售管理产生了对 CRM 的新需求维度。第三，开源模式在企业级软件领域的影响力持续扩大——飞致云 Cordys CRM 于 2025 年 8 月公测、11 月代码开源，以此为标志，开源 AI CRM 这个新物种正式进入中国市场的牌桌。</p>
 
-                    <h3>1.2 市场规模与增长轨迹</h3>
+                    <h3 id="toc-scale">1.2 市场规模与增长轨迹</h3>
 
                     <p>中国 CRM 市场的增长曲线在过去十年间始终保持陡峭。从绝对值来看——2021 年中国 CRM 市场规模约 156 亿元人民币，同比增长 16.5%；2022 年 CRM SaaS 子市场达到 11.6 亿美元，同比增长 25.4%，占中国整体 SaaS 市场的 24%；2023 年行业整体规模突破 38 亿美元（约 270 亿元人民币）；2024 年预计突破 250 亿元人民币；到 2025 年，市场规模增速达 28%，成为全球增速最快的区域市场，规模接近 294 亿元人民币。IDC 预测，2027 年中国 CRM SaaS 市场规模有望达到 85 亿美元，年复合增长率约 38.9%。</p>
 
                     <p>这些数字背后有几个值得注意的结构性特征。首先，中国 CRM 市场的增速一直高于全球平均水平，这意味着中国不存在"CRM 需求不足"的问题——问题出在供给侧的匹配度上。其次，SaaS 订阅模式的渗透率仍然偏低，大量民营企业尤其是制造业企业仍以本地部署或半定制化开发为主，这为"开源+私有化部署"模式留下了巨大的替代空间。第三，中小企业的 CRM 需求长期处于"被忽略"状态——传统 SaaS 厂商因获客成本（CAC）过高而无力覆盖，导致市场存在一个巨大的供给缺口。</p>
 
-                    <h3>1.3 竞争格局：三股势力的角力</h3>
+                    <h3 id="toc-landscape">1.3 竞争格局：三股势力的角力</h3>
 
                     <p>当前中国 CRM 市场的竞争格局可以概括为三股势力的角力。</p>
 
@@ -264,7 +302,7 @@
 
                     <p><strong>本土新势力</strong>是近年来最值得关注的变量。飞致云 Cordys CRM、简道云、悟空 CRM 等玩家，分别以开源、低代码、免费增值等差异化策略切入市场。这一阵营的共同特征是"轻资产、广覆盖"——不做重直销，依赖社区口碑和产品自增长获取用户；不做高门槛定价，通过免费或极低价的基础版本建立用户池。他们的目标客群与头部 SaaS 厂商形成错位竞争：后者瞄准中大型付费客户，新势力则覆盖被传统 SaaS 忽视的长尾市场。</p>
 
-                    <h3>1.4 技术演进的五波浪潮</h3>
+                    <h3 id="toc-tech-waves">1.4 技术演进的五波浪潮</h3>
 
                     <p>CRM 产品形态的演进，本质上是技术基础设施迭代的投影。回溯这二十年的历史，可以清晰地看到五波技术浪潮的叠加效应。</p>
 
@@ -278,7 +316,7 @@
 
                     <p>第五波是 <strong>人工智能</strong>。2023 年之后，大模型技术的突破让 CRM 的智能化从"辅助性功能"升级为"原生能力"。AI 不再只是给 CRM 加点推荐算法或自动化规则——它正在从根本上改变人机交互方式：从点击菜单到自然语言对话，从被动记录到主动洞察，从事后分析到实时决策辅助。</p>
 
-                    <h3>1.5 中国 CRM 市场的三大核心矛盾</h3>
+                    <h3 id="toc-contradictions">1.5 中国 CRM 市场的三大核心矛盾</h3>
 
                     <p>尽管市场规模持续扩张，中国 CRM 产业在过去二十年中始终受到三个深层次矛盾的制约。理解这些矛盾，是理解 Cordys 战略逻辑的前提。</p>
 
@@ -302,9 +340,9 @@
 
                     <hr />
 
-                    <h2>二、飞致云与 Cordys CRM：「开源 + AI」的破局图景</h2>
+                    <h2 id="toc-fit2cloud">二、飞致云与 Cordys CRM：「开源 + AI」的破局图景</h2>
 
-                    <h3>2.1 飞致云：一个"反共识"的开源软件样本</h3>
+                    <h3 id="toc-anti-consensus">2.1 飞致云：一个"反共识"的开源软件样本</h3>
 
                     <p>飞致云（FIT2CLOUD）创立于 2014 年，公司核心价值观是一个朴素的判断——"软件用起来才有价值，才有改进的机会"。从这句话里，可以读出飞致云与其他企业级软件公司的根本差异：大多数软件公司的商业逻辑是"付费才能用"，飞致云的逻辑是"先用起来，价值自然兑现"。</p>
 
@@ -316,7 +354,7 @@
 
                     <p>这条路径的前提是产品本身要有"自传播"能力——免费版必须有足够强的独立价值，让用户在没有任何销售接触的情况下自发使用并推荐。这对于产品力的要求，远比传统 SaaS 模式苛刻。</p>
 
-                    <h3>2.2 Cordys CRM 的产品逻辑：三层架构的递进</h3>
+                    <h3 id="toc-architecture">2.2 Cordys CRM 的产品逻辑：三层架构的递进</h3>
 
                     <p>Cordys CRM 的品牌命名本身就是一个宣言。"Cordys"（/ˈkɔːrdɪs/）由"Cord"（连接之绳）与"System"（系统）融合而成，寓意"关系的纽带系统"。这个命名隐含了对 CRM 本质的回归——CRM 的核心不是"管理控制"，而是"连接客户、缔造价值"。</p>
 
@@ -334,9 +372,9 @@
 
                     <hr />
 
-                    <h2>三、五个支点：Cordys CRM 如何改变游戏规则</h2>
+                    <h2 id="toc-five-pillars">三、五个支点：Cordys CRM 如何改变游戏规则</h2>
 
-                    <h3>3.1 支点一：开源免费增值，直面中国企业"付费困难"的结构性难题</h3>
+                    <h3 id="toc-pillar-1">3.1 支点一：开源免费增值，直面中国企业"付费困难"的结构性难题</h3>
 
                     <p>如果只能挑出中国 CRM 市场最核心的一个矛盾，那就是前文所述的需求与付费之间的背离。传统 SaaS CRM 厂商对这个矛盾的应对方式本质上是一种"筛选"——用高客单价筛选出有付费意愿和能力的客户，放弃长尾市场。这不是错误的策略，甚至是在既定模式下的理性选择。但它的结果是，中国超过 3000 万中小企业的 CRM 需求长期无法被满足。</p>
 
@@ -348,7 +386,7 @@
 
                     <p>从更宏观的视角看，免费增值模式回应的是中国企业级软件市场的一个根本性特征——"先用后买"是中国企业采购软件的基本行为模式。与其用销售话术去对抗这个行为模式，不如顺应它——让产品本身的体验成为最好的销售。</p>
 
-                    <h3>3.2 支点二：L2C 是地基，信息化不扎实，数字化和智能化就是空中楼阁</h3>
+                    <h3 id="toc-pillar-2">3.2 支点二：L2C 是地基，信息化不扎实，数字化和智能化就是空中楼阁</h3>
 
                     <p>当下 CRM 行业的叙事焦点毫无疑问在 AI 上。各种产品的宣传语中，"AI 驱动""智能推荐""销售预测"已经成为标配。但一个容易被忽略的基本事实是：AI 的输出质量与输入数据质量直接相关。如果 CRM 底层的数据采集不规范、流程覆盖不完整、数据口径不统一，再先进的模型也只能产生低质量的输出——业界称之为"Garbage In, Garbage Out"。</p>
 
@@ -360,7 +398,7 @@
 
                     <p>这三项设计的共同目标是：让 CRM 真正"跑"起来。只有当销售团队在日常工作中真正使用 CRM 来管理线索、跟进商机、签约合同、追踪回款时，CRM 中沉淀的才是真实的业务数据，而非为了应付管理层检查而事后补录的"垃圾数据"。</p>
 
-                    <h3>3.3 支点三：AI 时代，私有化部署和数据主权的重要性被重新定价</h3>
+                    <h3 id="toc-pillar-3">3.3 支点三：AI 时代，私有化部署和数据主权的重要性被重新定价</h3>
 
                     <p>在传统 SaaS 时代，"数据安全"主要是一个合规议题——数据存储在哪里、是否加密传输、是否符合《个人信息保护法》或 GDPR。但在 AI 时代，这个命题的内涵发生了深刻的变化。</p>
 
@@ -372,7 +410,7 @@
 
                     <p>一个值得关注的趋势是：随着开源大模型（如 Llama、通义千问、DeepSeek 等）的成熟和本地推理成本的持续下降，"数据不出门，AI 在本地"的技术条件正在迅速成熟。这一趋势将进一步放大私有化部署的战略价值——当企业可以在自己的服务器上运行一套完整的"AI CRM"而不依赖任何外部云服务时，数据主权的概念就从"合规要求"变成了"竞争优势"。</p>
 
-                    <h3>3.4 支点四：开源 + AI Coding + FDE，重新定义企业级软件的定制范式</h3>
+                    <h3 id="toc-pillar-4">3.4 支点四：开源 + AI Coding + FDE，重新定义企业级软件的定制范式</h3>
 
                     <p>定制化是中国 CRM 市场绕不开的话题。几乎所有的中国企业——不论规模大小——在使用标准化 CRM 时都会面临"水土不服"的问题：家电行业的销售流程和软件公司完全不同，B2B 建材和 B2C 零售的 CRM 需求几乎可以视为两种产品。</p>
 
@@ -390,7 +428,7 @@
 
                     <p>这三个要素的组合，将 CRM 定制的经济模型从"高门槛、长周期、大投入"转变为"低门槛、短周期、小投入"。这不是渐进式优化，而是范式的跃迁。</p>
 
-                    <h3>3.5 支点五：OpenClaw 和 WorkBuddy 正在成为 CRM 的新入口——Skills 生态决定未来</h3>
+                    <h3 id="toc-pillar-5">3.5 支点五：OpenClaw 和 WorkBuddy 正在成为 CRM 的新入口——Skills 生态决定未来</h3>
 
                     <p>如果前四个支点是在"CRM 产品"的框架内进行优化，第五个支点则是在挑战这个框架本身——CRM 的入口正在从"网页端+移动 App"向"AI 智能体（AI Agent）"迁移。</p>
 
@@ -406,7 +444,7 @@
 
                     <hr />
 
-                    <h2>四、结语：AI 时代，CRM 的经济模型和使用范式正在被重新书写</h2>
+                    <h2 id="toc-conclusion">四、结语：AI 时代，CRM 的经济模型和使用范式正在被重新书写</h2>
 
                     <p>回顾中国 CRM 市场二十年的演进，从 Siebel 的"布道"到 XTools 的"试错"，从纷享销客和销售易的"移动崛起"到 Salesforce 的"中国市场折戟"，一个反复被验证的事实是：单纯将海外的 CRM 产品模式或 SaaS 商业模式"平移"到中国，从来都不会成功。中国企业有自己独特的购买决策逻辑、使用行为模式、行业需求特征和合规约束条件，这些因素共同塑造了一个高度异质化的市场。</p>
 
