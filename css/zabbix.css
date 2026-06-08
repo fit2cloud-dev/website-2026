@@ -1,0 +1,716 @@
+/* ============================================
+   Zabbix 信创一体机 Landing Page Styles
+   与现有站点风格保持一致，融合 Zabbix 品牌色
+   ============================================ */
+
+:root {
+    --zabbix-red: #D40000;
+    --zabbix-red-rgb: 212, 0, 0;
+    --zabbix-dark: #1a1a2e;
+    --zabbix-dark-rgb: 26, 26, 46;
+    --zabbix-gray: #6c7280;
+    --zabbix-light: #f9fafb;
+}
+
+/* ---- Decorative Blob ---- */
+.blob-bg-zabbix {
+    background: rgba(var(--zabbix-red-rgb), 0.04);
+    width: 600px;
+    height: 600px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -2;
+}
+
+/* ---- Hero Section ---- */
+.zabbix-hero {
+    position: relative;
+    padding: 160px 0 80px;
+    overflow: hidden;
+}
+
+.zabbix-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse 80% 60% at 80% 30%, rgba(212, 0, 0, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 20% 70%, rgba(12, 123, 224, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.zabbix-hero-badge {
+    margin-bottom: 20px;
+}
+
+.zabbix-partner-badge {
+    display: inline-block;
+    background: rgba(var(--zabbix-red-rgb), 0.08);
+    color: var(--zabbix-red);
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.15);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 18px;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+
+.zabbix-hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--zabbix-dark);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+}
+
+.zabbix-hero-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--zabbix-red);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.zabbix-hero-desc {
+    font-size: 17px;
+    color: var(--zabbix-gray);
+    line-height: 1.8;
+    margin-bottom: 32px;
+}
+
+.zabbix-hero-actions .btn-lg {
+    --bs-btn-padding-y: 14px;
+    --bs-btn-padding-x: 28px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.zabbix-cta-btn {
+    background: linear-gradient(135deg, var(--zabbix-red) 0%, #e63946 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(var(--zabbix-red-rgb), 0.25);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zabbix-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(var(--zabbix-red-rgb), 0.35);
+}
+
+/* ---- Hero Visual (Right Side) ---- */
+.zabbix-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 360px;
+}
+
+.zabbix-hero-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 380px;
+    animation: zabbix-card-float 6s ease-in-out infinite;
+}
+
+@keyframes zabbix-card-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.zabbix-hero-card-inner {
+    padding: 40px 32px;
+    text-align: center;
+}
+
+.zabbix-logo-group {
+    margin-bottom: 24px;
+}
+
+.zabbix-spec-pills {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.zabbix-pill {
+    display: inline-block;
+    background: rgba(var(--zabbix-red-rgb), 0.06);
+    color: var(--zabbix-dark);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.1);
+}
+
+.zabbix-hero-icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.zabbix-mini-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: var(--zabbix-gray);
+}
+
+.zabbix-mini-icon .mdi {
+    font-size: 24px;
+    color: var(--zabbix-red);
+}
+
+.zabbix-mini-icon small {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Floating decor elements */
+.zabbix-float {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 5s ease-in-out infinite;
+}
+
+.zabbix-float .mdi {
+    font-size: 20px;
+    color: var(--zabbix-red);
+}
+
+.zabbix-float-1 {
+    width: 48px;
+    height: 48px;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.zabbix-float-2 {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: 0%;
+    animation-delay: 1.2s;
+}
+
+.zabbix-float-3 {
+    width: 36px;
+    height: 36px;
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 2.4s;
+}
+
+/* ---- Hero Wave ---- */
+.zabbix-hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    pointer-events: none;
+}
+
+.zabbix-hero-wave svg {
+    width: 100%;
+    height: 80px;
+}
+
+/* ---- Partner Note ---- */
+.zabbix-partner-note {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: var(--zabbix-gray);
+    line-height: 1.8;
+    padding: 24px 32px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.08);
+}
+
+/* ---- Section Labels ---- */
+.zabbix-section-label {
+    display: inline-block;
+    background: rgba(var(--zabbix-red-rgb), 0.07);
+    color: var(--zabbix-red);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.zabbix-section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--zabbix-dark);
+    margin-bottom: 0;
+}
+
+/* ---- Value Cards ---- */
+.zabbix-value-card {
+    height: 100%;
+    border-radius: 20px !important;
+    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+}
+
+.zabbix-value-card:hover {
+    border-color: rgba(var(--zabbix-red-rgb), 0.1) !important;
+}
+
+.zabbix-value-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.zabbix-value-icon .mdi {
+    font-size: 26px;
+}
+
+.zabbix-icon-compliance {
+    background: linear-gradient(135deg, rgba(212, 0, 0, 0.1), rgba(212, 0, 0, 0.05));
+    color: var(--zabbix-red);
+}
+
+.zabbix-icon-efficiency {
+    background: linear-gradient(135deg, rgba(12, 123, 224, 0.1), rgba(51, 61, 255, 0.05));
+    color: #0c7be0;
+}
+
+.zabbix-icon-reliability {
+    background: linear-gradient(135deg, rgba(43, 147, 124, 0.1), rgba(43, 147, 124, 0.05));
+    color: #2b937c;
+}
+
+.zabbix-value-lead {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--zabbix-dark);
+    margin-bottom: 16px;
+}
+
+.zabbix-value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zabbix-value-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--zabbix-gray);
+    line-height: 1.7;
+}
+
+.zabbix-value-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--zabbix-red);
+    opacity: 0.6;
+}
+
+.zabbix-value-list li em {
+    font-style: normal;
+    color: var(--zabbix-red);
+    font-weight: 600;
+}
+
+.zabbix-value-list li strong {
+    color: var(--zabbix-dark);
+}
+
+/* ---- Advantage Cards ---- */
+.zabbix-advantage-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 36px 32px;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zabbix-advantage-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(var(--zabbix-red-rgb), 0.1);
+}
+
+.zabbix-advantage-number {
+    font-size: 56px;
+    font-weight: 800;
+    color: rgba(var(--zabbix-red-rgb), 0.08);
+    line-height: 1;
+    margin-bottom: 12px;
+    letter-spacing: -2px;
+}
+
+.zabbix-advantage-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--zabbix-dark);
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.zabbix-tech-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.zabbix-tech-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 16px;
+    background: rgba(var(--zabbix-red-rgb), 0.02);
+    border-radius: 12px;
+    border-left: 3px solid rgba(var(--zabbix-red-rgb), 0.2);
+    transition: all 0.3s ease;
+}
+
+.zabbix-tech-item:hover {
+    background: rgba(var(--zabbix-red-rgb), 0.04);
+    border-left-color: var(--zabbix-red);
+}
+
+.zabbix-tech-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--zabbix-red);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.zabbix-tech-value {
+    font-size: 14px;
+    color: var(--zabbix-gray);
+    line-height: 1.6;
+}
+
+.zabbix-tech-value em {
+    font-style: normal;
+    color: var(--zabbix-red);
+    font-weight: 600;
+}
+
+/* ---- Configuration Table ---- */
+.zabbix-config-table-wrapper {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.zabbix-config-table {
+    margin-bottom: 0;
+}
+
+.zabbix-config-table thead th {
+    background: rgba(var(--zabbix-red-rgb), 0.04);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--zabbix-dark);
+    border-bottom: 2px solid rgba(var(--zabbix-red-rgb), 0.1);
+    padding: 16px 24px;
+}
+
+.zabbix-config-table tbody td {
+    padding: 20px 24px;
+    font-size: 14px;
+    color: var(--zabbix-gray);
+    vertical-align: top;
+    border-color: rgba(0, 0, 0, 0.04);
+}
+
+.zabbix-config-table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.zabbix-config-table tbody tr:hover {
+    background: rgba(var(--zabbix-red-rgb), 0.015);
+}
+
+.zabbix-config-category {
+    font-weight: 600 !important;
+    color: var(--zabbix-dark) !important;
+    font-size: 15px !important;
+    white-space: nowrap;
+}
+
+.zabbix-config-category .mdi {
+    color: var(--zabbix-red);
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.zabbix-config-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zabbix-config-list li {
+    padding: 4px 0;
+    line-height: 1.7;
+    color: var(--zabbix-gray);
+}
+
+.zabbix-config-list li strong {
+    color: var(--zabbix-dark);
+}
+
+/* ---- CTA Section ---- */
+.zabbix-cta-card {
+    background: linear-gradient(135deg, var(--zabbix-dark) 0%, #16213e 100%);
+    border-radius: 24px;
+    padding: 56px 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(var(--zabbix-dark-rgb), 0.2);
+}
+
+.zabbix-cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(var(--zabbix-red-rgb), 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.zabbix-cta-card::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(12, 123, 224, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.zabbix-cta-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.zabbix-cta-lead {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.zabbix-cta-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.zabbix-cta-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.zabbix-cta-features span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.zabbix-cta-features .mdi {
+    color: var(--zabbix-red);
+    font-size: 18px;
+}
+
+.zabbix-qr-placeholder {
+    position: relative;
+    z-index: 1;
+}
+
+.zabbix-qr-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 32px 24px;
+    display: inline-block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.zabbix-qr-box:hover {
+    transform: scale(1.05);
+}
+
+/* ---- Twin Star ---- */
+.zabbix-twinstar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.zabbix-twinstar-item {
+    text-align: center;
+}
+
+.zabbix-twinstar-icon {
+    margin-bottom: 16px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.zabbix-twinstar-icon:hover {
+    transform: scale(1.1);
+}
+
+.zabbix-twinstar-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--zabbix-dark);
+    margin-bottom: 4px;
+}
+
+.zabbix-twinstar-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zabbix-twinstar-plus .mdi {
+    font-size: 36px;
+    color: rgba(var(--zabbix-red-rgb), 0.3);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+    .zabbix-hero {
+        padding: 140px 0 60px;
+    }
+
+    .zabbix-hero-title {
+        font-size: 38px;
+    }
+
+    .zabbix-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .zabbix-hero-desc {
+        font-size: 15px;
+    }
+
+    .zabbix-section-title {
+        font-size: 28px;
+    }
+
+    .zabbix-cta-card {
+        padding: 40px 28px;
+    }
+
+    .zabbix-cta-title {
+        font-size: 26px;
+    }
+
+    .zabbix-config-table-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .zabbix-hero-title {
+        font-size: 32px;
+    }
+
+    .zabbix-section-title {
+        font-size: 24px;
+    }
+
+    .zabbix-cta-card {
+        padding: 32px 20px;
+        border-radius: 16px;
+    }
+
+    .zabbix-twinstar {
+        gap: 24px;
+    }
+}
+
+/* ---- Reveal stagger: Hero elements animate in sequence ---- */
+.zabbix-hero .slide-down .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: zabbix-reveal-up 0.6s ease-out forwards;
+}
+
+.zabbix-hero .slide-down .reveal:nth-child(1) { animation-delay: 0.3s; }
+.zabbix-hero .slide-down .reveal:nth-child(2) { animation-delay: 0.45s; }
+.zabbix-hero .slide-down .reveal:nth-child(3) { animation-delay: 0.6s; }
+.zabbix-hero .slide-down .reveal:nth-child(4) { animation-delay: 0.75s; }
+.zabbix-hero .slide-down .reveal:nth-child(5) { animation-delay: 0.9s; }
+
+@keyframes zabbix-reveal-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Override reveal from IntersectionObserver for hero elements already animated */
+.zabbix-hero .slide-down .reveal.active {
+    transition: none;
+}
