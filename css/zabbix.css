@@ -733,3 +733,11 @@
 .zabbix-hero .slide-down .reveal.active {
     transition: none;
 }
+
+/* ---- Integrations Collage Image ---- */
+.zabbix-integrations-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
