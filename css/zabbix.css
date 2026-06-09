@@ -686,7 +686,26 @@
     }
 
     .zabbix-twinstar {
-        gap: 24px;
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+
+    .zabbix-twinstar-item h4 {
+        font-size: 16px;
+    }
+
+    .zabbix-twinstar-item p {
+        font-size: 12px;
+    }
+
+    .zabbix-twinstar-icon svg,
+    .zabbix-twinstar-icon img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .zabbix-twinstar-plus .mdi {
+        font-size: 24px;
     }
 }
 
