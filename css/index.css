@@ -252,6 +252,7 @@ body {
 
 .sub-title {
     color: var(--bs-gray-900);
+    font-weight: bold;
 }
 
 /* nav */
