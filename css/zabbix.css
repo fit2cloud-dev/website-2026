@@ -4,12 +4,51 @@
    ============================================ */
 
 :root {
-    --zabbix-red: #D40000;
+    --zabbix-red: #d40000;
     --zabbix-red-rgb: 212, 0, 0;
     --zabbix-dark: #1a1a2e;
     --zabbix-dark-rgb: 26, 26, 46;
     --zabbix-gray: #6c7280;
     --zabbix-light: #f9fafb;
+    --zabbix-blue: #0c7be0;
+    --zabbix-green: #2b937c;
+    --zabbix-line: rgba(var(--zabbix-dark-rgb), 0.08);
+    --zabbix-surface: #ffffff;
+    --zabbix-surface-soft: rgba(255, 255, 255, 0.74);
+    --zabbix-shadow: 0 18px 48px rgba(0, 27, 91, 0.08);
+}
+
+body.antialiased {
+    background: linear-gradient(180deg, #edf5ff 0%, #fbfdff 42%, #f7fbff 100%);
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+body > .position-fixed.inset-0 {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#main-content .bg-light {
+    background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%) !important;
+}
+
+#navigation .navbar-nav > li > a {
+    white-space: nowrap;
+}
+
+#wechat-customer {
+    right: 24px !important;
+    bottom: 24px !important;
+}
+
+#config,
+#cta-section {
+    scroll-margin-top: 130px;
 }
 
 /* ---- Decorative Blob ---- */
@@ -26,8 +65,12 @@
 /* ---- Hero Section ---- */
 .zabbix-hero {
     position: relative;
-    padding: 160px 0 80px;
+    padding: 158px 0 92px;
     overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(212, 0, 0, 0.06) 0%, rgba(212, 0, 0, 0) 44%),
+        linear-gradient(225deg, rgba(12, 123, 224, 0.08) 0%, rgba(12, 123, 224, 0) 45%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.78);
 }
 
 .zabbix-hero::before {
@@ -36,11 +79,18 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(ellipse 80% 60% at 80% 30%, rgba(212, 0, 0, 0.06) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 50% at 20% 70%, rgba(12, 123, 224, 0.05) 0%, transparent 70%);
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(12, 123, 224, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(12, 123, 224, 0.06) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.48), transparent 76%);
     pointer-events: none;
+}
+
+.zabbix-hero .container {
+    position: relative;
+    z-index: 1;
 }
 
 .zabbix-hero-badge {
@@ -49,23 +99,24 @@
 
 .zabbix-partner-badge {
     display: inline-block;
-    background: rgba(var(--zabbix-red-rgb), 0.08);
+    background: rgba(var(--zabbix-red-rgb), 0.09);
     color: var(--zabbix-red);
     border: 1px solid rgba(var(--zabbix-red-rgb), 0.15);
     font-size: 14px;
-    font-weight: 500;
-    padding: 6px 18px;
+    font-weight: 600;
+    padding: 7px 18px;
     border-radius: 50px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0;
+    box-shadow: 0 8px 24px rgba(var(--zabbix-red-rgb), 0.08);
 }
 
 .zabbix-hero-title {
     font-size: 56px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--zabbix-dark);
-    line-height: 1.2;
+    line-height: 1.12;
     margin-bottom: 16px;
-    letter-spacing: -1px;
+    letter-spacing: 0;
 }
 
 .zabbix-hero-subtitle {
@@ -81,6 +132,7 @@
     color: var(--zabbix-gray);
     line-height: 1.8;
     margin-bottom: 32px;
+    max-width: 720px;
 }
 
 .zabbix-hero-actions .btn-lg {
@@ -93,7 +145,7 @@
 .zabbix-cta-btn {
     background: linear-gradient(135deg, var(--zabbix-red) 0%, #e63946 100%) !important;
     border: none !important;
-    box-shadow: 0 4px 20px rgba(var(--zabbix-red-rgb), 0.25);
+    box-shadow: 0 12px 30px rgba(var(--zabbix-red-rgb), 0.22);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -108,28 +160,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 360px;
+    min-height: 380px;
 }
 
 .zabbix-hero-card {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(250, 252, 255, 0.9) 100%);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: 0 26px 60px rgba(0, 27, 91, 0.12);
     width: 100%;
-    max-width: 380px;
-    animation: zabbix-card-float 6s ease-in-out infinite;
+    max-width: 420px;
+    overflow: hidden;
+    animation: zabbix-card-float 8s ease-in-out infinite;
 }
 
 @keyframes zabbix-card-float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
 }
 
 .zabbix-hero-card-inner {
-    padding: 40px 32px;
+    position: relative;
+    padding: 36px 32px 32px;
     text-align: center;
 }
 
@@ -137,37 +191,63 @@
     margin-bottom: 24px;
 }
 
+.zabbix-brand-mark {
+    padding: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+    border: 1px solid var(--zabbix-line);
+    border-radius: 14px;
+}
+
+.zabbix-brand-mark svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
 .zabbix-spec-pills {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
     margin-bottom: 28px;
-    flex-wrap: wrap;
 }
 
 .zabbix-pill {
-    display: inline-block;
-    background: rgba(var(--zabbix-red-rgb), 0.06);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    background: #ffffff;
     color: var(--zabbix-dark);
     font-size: 13px;
-    font-weight: 500;
-    padding: 5px 14px;
-    border-radius: 20px;
-    border: 1px solid rgba(var(--zabbix-red-rgb), 0.1);
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--zabbix-line);
+    box-shadow: 0 8px 18px rgba(0, 27, 91, 0.04);
+    text-align: center;
 }
 
 .zabbix-hero-icon-row {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
 }
 
 .zabbix-mini-icon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     color: var(--zabbix-gray);
+    min-height: 88px;
+    justify-content: center;
+    background: rgba(var(--zabbix-red-rgb), 0.035);
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.08);
+    border-radius: 12px;
 }
 
 .zabbix-mini-icon .mdi {
@@ -177,15 +257,17 @@
 
 .zabbix-mini-icon small {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--zabbix-dark);
 }
 
 /* Floating decor elements */
 .zabbix-float {
     position: absolute;
-    border-radius: 50%;
+    border-radius: 14px;
     background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 12px 30px rgba(0, 27, 91, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,27 +280,23 @@
 }
 
 .zabbix-float-1 {
-    width: 48px;
-    height: 48px;
-    top: 10%;
-    left: 5%;
+    width: 52px;
+    height: 52px;
+    top: 8%;
+    left: 1%;
     animation-delay: 0s;
 }
 
 .zabbix-float-2 {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
     top: 60%;
     right: 0%;
     animation-delay: 1.2s;
 }
 
 .zabbix-float-3 {
-    width: 36px;
-    height: 36px;
-    bottom: 15%;
-    left: 15%;
-    animation-delay: 2.4s;
+    display: none;
 }
 
 /* ---- Hero Wave ---- */
@@ -237,16 +315,33 @@
 }
 
 /* ---- Partner Note ---- */
+.zabbix-partner-section {
+    padding-top: 56px;
+}
+
 .zabbix-partner-note {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     font-size: 15px;
     color: var(--zabbix-gray);
     line-height: 1.8;
-    padding: 24px 32px;
-    background: rgba(255, 255, 255, 0.6);
+    padding: 26px 32px;
+    background: var(--zabbix-surface-soft);
     border-radius: 16px;
-    border: 1px solid rgba(var(--zabbix-red-rgb), 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--zabbix-shadow);
+    text-align: left;
+}
+
+.zabbix-partner-note strong {
+    color: var(--zabbix-dark);
+}
+
+.zabbix-partner-note .zabbix-section-label {
+    margin: 0 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 /* ---- Section Labels ---- */
@@ -259,32 +354,59 @@
     padding: 4px 16px;
     border-radius: 50px;
     margin-bottom: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
 .zabbix-section-title {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--zabbix-dark);
     margin-bottom: 0;
+    letter-spacing: 0;
+}
+
+.zabbix-section-heading p,
+.zabbix-section-intro {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.zabbix-twinstar-intro {
+    margin-bottom: 40px;
+}
+
+.zabbix-integrations-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 /* ---- Value Cards ---- */
 .zabbix-value-card {
     height: 100%;
-    border-radius: 20px !important;
-    border: 1px solid rgba(0, 0, 0, 0.04) !important;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 16px !important;
+    border: 1px solid var(--zabbix-line) !important;
+    box-shadow: var(--zabbix-shadow);
 }
 
 .zabbix-value-card:hover {
     border-color: rgba(var(--zabbix-red-rgb), 0.1) !important;
 }
 
+.zabbix-value-card .card-body {
+    padding: 34px 32px 32px;
+}
+
 .zabbix-value-icon {
     width: 52px;
     height: 52px;
-    border-radius: 14px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,13 +423,13 @@
 }
 
 .zabbix-icon-efficiency {
-    background: linear-gradient(135deg, rgba(var(--zabbix-red-rgb), 0.1), rgba(var(--zabbix-red-rgb), 0.05));
-    color: var(--zabbix-red);
+    background: linear-gradient(135deg, rgba(12, 123, 224, 0.12), rgba(12, 123, 224, 0.05));
+    color: var(--zabbix-blue);
 }
 
 .zabbix-icon-reliability {
-    background: linear-gradient(135deg, rgba(var(--zabbix-red-rgb), 0.1), rgba(var(--zabbix-red-rgb), 0.05));
-    color: var(--zabbix-red);
+    background: linear-gradient(135deg, rgba(43, 147, 124, 0.12), rgba(43, 147, 124, 0.05));
+    color: var(--zabbix-green);
 }
 
 .zabbix-value-lead {
@@ -340,8 +462,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--zabbix-red);
-    opacity: 0.6;
+    background: linear-gradient(135deg, var(--zabbix-red), var(--zabbix-blue));
 }
 
 .zabbix-value-list li em {
@@ -356,14 +477,16 @@
 
 /* ---- Advantage Cards ---- */
 .zabbix-advantage-card {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    padding: 36px 32px;
+    background: var(--zabbix-surface-soft);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    padding: 34px 30px;
     height: 100%;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--zabbix-shadow);
+    cursor: default;
 }
 
 .zabbix-advantage-card:hover {
@@ -372,12 +495,20 @@
 }
 
 .zabbix-advantage-number {
-    font-size: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 62px;
+    height: 38px;
+    font-size: 18px;
     font-weight: 800;
-    color: rgba(var(--zabbix-red-rgb), 0.08);
+    color: var(--zabbix-red);
     line-height: 1;
-    margin-bottom: 12px;
-    letter-spacing: -2px;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+    background: rgba(var(--zabbix-red-rgb), 0.08);
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.14);
+    border-radius: 999px;
 }
 
 .zabbix-advantage-title {
@@ -391,7 +522,7 @@
 .zabbix-tech-stack {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 
 .zabbix-tech-item {
@@ -401,6 +532,7 @@
     padding: 14px 16px;
     background: rgba(var(--zabbix-red-rgb), 0.02);
     border-radius: 12px;
+    border: 0;
     border-left: 3px solid rgba(var(--zabbix-red-rgb), 0.2);
     transition: all 0.3s ease;
 }
@@ -414,8 +546,8 @@
     font-size: 11px;
     font-weight: 600;
     color: var(--zabbix-red);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    text-transform: none;
+    letter-spacing: 0;
 }
 
 .zabbix-tech-value {
@@ -432,24 +564,26 @@
 
 /* ---- Configuration Table ---- */
 .zabbix-config-table-wrapper {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: var(--zabbix-surface-soft);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.86);
     overflow: hidden;
+    box-shadow: var(--zabbix-shadow);
 }
 
 .zabbix-config-table {
     margin-bottom: 0;
+    min-width: 760px;
 }
 
 .zabbix-config-table thead th {
-    background: rgba(var(--zabbix-red-rgb), 0.04);
+    background: linear-gradient(90deg, rgba(var(--zabbix-red-rgb), 0.06), rgba(12, 123, 224, 0.05));
     font-weight: 600;
     font-size: 15px;
     color: var(--zabbix-dark);
-    border-bottom: 2px solid rgba(var(--zabbix-red-rgb), 0.1);
+    border-bottom: 1px solid rgba(var(--zabbix-red-rgb), 0.12);
     padding: 16px 24px;
 }
 
@@ -458,7 +592,7 @@
     font-size: 14px;
     color: var(--zabbix-gray);
     vertical-align: top;
-    border-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(var(--zabbix-dark-rgb), 0.06);
 }
 
 .zabbix-config-table tbody tr {
@@ -474,6 +608,7 @@
     color: var(--zabbix-dark) !important;
     font-size: 15px !important;
     white-space: nowrap;
+    width: 180px;
 }
 
 .zabbix-config-category .mdi {
@@ -489,9 +624,21 @@
 }
 
 .zabbix-config-list li {
-    padding: 4px 0;
+    position: relative;
+    padding: 4px 0 4px 18px;
     line-height: 1.7;
     color: var(--zabbix-gray);
+}
+
+.zabbix-config-list li::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(var(--zabbix-red-rgb), 0.58);
 }
 
 .zabbix-config-list li strong {
@@ -500,33 +647,38 @@
 
 /* ---- CTA Section ---- */
 .zabbix-cta-card {
-    background: linear-gradient(135deg, var(--zabbix-dark) 0%, #16213e 100%);
-    border-radius: 24px;
+    background:
+        linear-gradient(135deg, rgba(212, 0, 0, 0.22) 0%, rgba(212, 0, 0, 0) 36%),
+        linear-gradient(135deg, var(--zabbix-dark) 0%, #1f2945 58%, #151b2d 100%);
+    border-radius: 18px;
     padding: 56px 48px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(var(--zabbix-dark-rgb), 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .zabbix-cta-card::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(var(--zabbix-red-rgb), 0.15) 0%, transparent 70%);
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.16), transparent 72%);
     pointer-events: none;
 }
 
 .zabbix-cta-card::after {
     content: '';
     position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(12, 123, 224, 0.1) 0%, transparent 70%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 42%;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.08) 100%);
+    transform: skewX(-12deg) translateX(26%);
     pointer-events: none;
 }
 
@@ -559,20 +711,33 @@
 .zabbix-cta-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
     position: relative;
     z-index: 1;
 }
 
-.zabbix-cta-features span {
+.zabbix-cta-features > span {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.78);
     font-size: 14px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
 }
 
 .zabbix-cta-features .mdi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
     color: var(--zabbix-red);
     font-size: 18px;
 }
@@ -584,15 +749,25 @@
 
 .zabbix-qr-box {
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 32px 24px;
+    border-radius: 16px;
+    padding: 26px 22px;
     display: inline-block;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.86);
 }
 
 .zabbix-qr-box:hover {
     transform: scale(1.05);
+}
+
+.zabbix-qr-img {
+    border-radius: 8px;
+}
+
+.zabbix-qr-title {
+    font-weight: 600;
+    color: var(--zabbix-dark);
 }
 
 /* ---- Twin Star ---- */
@@ -600,12 +775,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 
 .zabbix-twinstar-item {
     text-align: center;
+    min-width: 240px;
+    padding: 28px 36px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    border-radius: 16px;
+    box-shadow: var(--zabbix-shadow);
 }
 
 .zabbix-twinstar-icon {
@@ -629,17 +810,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(var(--zabbix-red-rgb), 0.08);
+    border: 1px solid rgba(var(--zabbix-red-rgb), 0.12);
+    border-radius: 50%;
 }
 
 .zabbix-twinstar-plus .mdi {
-    font-size: 36px;
-    color: rgba(var(--zabbix-red-rgb), 0.3);
+    font-size: 30px;
+    color: var(--zabbix-red);
 }
 
 /* ---- Responsive ---- */
 @media (max-width: 991px) {
     .zabbix-hero {
-        padding: 140px 0 60px;
+        padding: 134px 0 62px;
     }
 
     .zabbix-hero-title {
@@ -669,9 +855,28 @@
     .zabbix-config-table-wrapper {
         overflow-x: auto;
     }
+
+}
+
+@media (min-width: 992px) and (max-width: 1360px) {
+    .f2c-header-card .logo {
+        margin-right: 42px;
+    }
+
+    #navigation .navbar-nav > li > a {
+        padding: 0 12px;
+    }
 }
 
 @media (max-width: 768px) {
+    .zabbix-partner-section {
+        padding-top: 44px;
+    }
+
+    .zabbix-partner-note {
+        padding: 22px 22px;
+    }
+
     .zabbix-hero-title {
         font-size: 32px;
     }
@@ -685,9 +890,24 @@
         border-radius: 16px;
     }
 
+    .zabbix-cta-features {
+        gap: 10px;
+    }
+
+    .zabbix-cta-features > span {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     .zabbix-twinstar {
-        gap: 12px;
-        flex-wrap: nowrap;
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    .zabbix-twinstar-item {
+        width: 100%;
+        min-width: 0;
+        max-width: 360px;
     }
 
     .zabbix-twinstar-item h4 {
@@ -707,6 +927,21 @@
     .zabbix-twinstar-plus .mdi {
         font-size: 24px;
     }
+}
+
+@media (max-width: 575px) {
+    .zabbix-hero {
+        padding: 124px 0 52px;
+    }
+
+    .zabbix-hero-actions .btn-lg {
+        width: 100%;
+    }
+
+    .zabbix-config-table {
+        min-width: 680px;
+    }
+
 }
 
 /* ---- Reveal stagger: Hero elements animate in sequence ---- */
@@ -732,12 +967,4 @@
 /* Override reveal from IntersectionObserver for hero elements already animated */
 .zabbix-hero .slide-down .reveal.active {
     transition: none;
-}
-
-/* ---- Integrations Collage Image ---- */
-.zabbix-integrations-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
 }
