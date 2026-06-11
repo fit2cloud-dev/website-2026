@@ -5418,3 +5418,60 @@ a:focus {
         padding: 14px;
     }
 }
+
+/* ---- JumpServer Twin Star Section ---- */
+.js-twinstar-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.js-twinstar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.js-twinstar-item {
+    text-align: center;
+    padding: 32px 40px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    background: #fff;
+    min-width: 200px;
+}
+
+.js-twinstar-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.js-twinstar-item p {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.js-twinstar-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .js-twinstar {
+        gap: 24px;
+    }
+
+    .js-twinstar-item {
+        padding: 24px 28px;
+        min-width: 140px;
+    }
+
+    .js-twinstar-item h4 {
+        font-size: 18px;
+    }
+}
+}
