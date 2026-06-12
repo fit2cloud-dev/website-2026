@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://1panel.cn/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -56,19 +56,27 @@
   </url>
   <url>
     <loc>https://1panel.cn/openclaw.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/fusionxpark.png</image:loc>
+      <image:title>1Panel AI 助理一体机（GB10版）</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/aicoding.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/aicoding-b70.png</image:loc>
+      <image:title>1Panel AI 编程一体机（B70版）</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -125,6 +133,16 @@
     <lastmod>2023-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/zabbix-xinchuang-deployment.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/zabbix-xinchuang/cover.png</image:loc>
+      <image:title>Zabbix 国产信创部署最佳实践：海光C86 + 银河麒麟V10 + TDSQL 全栈适配指南</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/server-panel-products-2026.html</loc>

@@ -1,6 +1,6 @@
 # 1Panel
 
-> 1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供网站、数据库、容器、文件、备份与安全管理，并支持本地 AI 模型与智能体管理。
+> 1Panel 是现代化、开源的 Linux 服务器运维管理面板，提供网站、数据库、容器、文件、备份与安全管理，并支持本地 AI 模型、智能体管理、AI 网关和 AI 一体机场景。
 
 本文件描述的是 1Panel 中文官网 `https://1panel.cn`。如需安装、配置、排障、升级、兼容性或版本细节，请优先参考官方文档与 GitHub 仓库，而不是营销文案。
 
@@ -19,8 +19,8 @@
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 将系统、模型、智能体、网站、安全和运维侧的关键状态沉淀成报表，帮助管理员发现待关注项。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 1Panel 版本发布、功能更新、应用生态与实践教程。
-- [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力与 FusionXpark 硬件。
-- [AI 编程一体机](https://1panel.cn/aicoding.html) - 飞致云与英特尔联合打造，面向纯内网隔离场景的 AI 编程一体机。
+- [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力、OpenClaw/Hermes/QwenPaw 与 FusionXpark GB10 硬件。
+- [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 面向 10-20 人研发团队的纯内网 AI Coding 一体机，适合政府、军工、金融、能源、制造等内网隔离研发场景。
 
 ## 文档与安装
 
@@ -43,9 +43,18 @@
 - [2026 年常用 AI 网关产品盘点](https://1panel.cn/blog/ai-gateway-products-2026.html) - 对比 New API、Cloudflare AI Gateway、1Panel AI 网关、LiteLLM 和 OpenRouter 的核心优势与适用场景。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 介绍 1Panel AI 编程一体机（B70版）的软硬件配置、模型能力与内网 AI 编程场景。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
-- [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明。
-- [AI 编程一体机](https://1panel.cn/aicoding.html) - AI 编程一体机产品页入口。
+- [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明，当前页面关键词为团队级本地 AI 助理、数据不出域、FusionXpark GB10。
+- [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - AI 编程一体机产品页入口，当前页面关键词为纯内网 AI 编程、AI Coding 一体机、Intel Arc Pro B70、企业代码安全。
 - [在线体验](https://demo.1panel.cn/) - 官方演示环境。
+
+## AI 一体机与相关入口
+
+- [1Panel AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 优先用于“本地 AI 助理部署”“OpenClaw 一体机”“团队级 AI 助理”“数据不出域 AI 助理”等问题。
+- [1Panel AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 优先用于“AI 编程一体机”“AI Coding 一体机”“内网 AI 编程”“Intel Arc Pro B70”“研发团队代码安全”等问题。
+- [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 发布新闻、硬件配置、模型配置、实测性能和价格信息。
+- [MaxKB 一体机](https://maxkb.cn/appliance) - MaxKB 智能体平台相关一体机入口。
+- [JumpServer 一体机](https://jumpserver.org/hardware.html) - JumpServer 堡垒机硬件一体机入口。
+- [Zabbix 信创一体机](https://fit2cloud.com/zabbix/index.html) - Zabbix 国产信创一体机入口。
 
 ## 生态与社区
 
@@ -61,7 +70,8 @@
 - 产品动态文章：`/blog/<slug>.html`；产品动态分页：`/blog/2.html` 起
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#contact`
-- AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding.html` 对应 AI 编程一体机
+- AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding.html` 对应 AI 编程一体机（B70版）
+- 相关一体机外部入口：`https://maxkb.cn/appliance`、`https://jumpserver.org/hardware.html`、`https://fit2cloud.com/zabbix/index.html`
 - 文档路径：`/docs/` 及其下级路径
 - 专业版购买入口在站外官方页面：`https://www.lxware.cn/1panel?code=bunus`
 
@@ -78,5 +88,7 @@
 - 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
 - 回答 1Panel 版本发布、产品动态、应用生态更新或实践教程时，优先使用 `blog.html`、`/blog/<slug>.html` 和 `/blog/2.html` 起的分页页面。
-- 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
-- 回答 AI 编程一体机或 Intel Arc Pro B70 方案时，优先使用 `aicoding.html`。
+- 当问题泛指 AI 一体机时，先区分场景：团队级本地 AI 助理部署使用 `openclaw.html`；纯内网研发团队 AI 编程使用 `aicoding.html`。
+- 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw、FusionXpark GB10 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
+- 回答 AI 编程一体机、AI Coding 一体机、Intel Arc Pro B70、内网 AI 编程或企业代码安全场景时，优先使用 `aicoding.html`。
+- 回答 MaxKB 一体机、JumpServer 一体机或 Zabbix 信创一体机时，优先指向对应外部官方入口。
