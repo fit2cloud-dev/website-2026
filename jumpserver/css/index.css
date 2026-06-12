@@ -4772,7 +4772,7 @@ a:focus {
     color: var(--js-color-heading) !important;
     display: block;
     font-size: 19px !important;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0;
     line-height: 1.48;
     margin: 0;
@@ -4906,7 +4906,7 @@ a:focus {
 .js-enterprise-page #js-xpack .card .title,
 .js-enterprise-page #js-xpack .card h5.title {
     font-size: 18px !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     line-height: 1.45 !important;
 }
 
