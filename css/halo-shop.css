@@ -1,0 +1,1149 @@
+/* ============================================
+   Halo 商城版 Landing Page Styles
+   与现有站点风格保持一致，融合 Halo 品牌蓝色主题
+   ============================================ */
+
+:root {
+    --halo-blue: #0c7be0;
+    --halo-blue-rgb: 12, 123, 224;
+    --halo-dark: #1a1a2e;
+    --halo-dark-rgb: 26, 26, 46;
+    --halo-gray: #6c7280;
+    --halo-light: #f9fafb;
+    --halo-purple: #5a55fa;
+    --halo-green: #2b937c;
+    --halo-line: rgba(var(--halo-dark-rgb), 0.08);
+    --halo-surface: #ffffff;
+    --halo-surface-soft: rgba(255, 255, 255, 0.74);
+    --halo-shadow: 0 18px 48px rgba(0, 27, 91, 0.08);
+}
+
+body.antialiased {
+    background: linear-gradient(180deg, #edf5ff 0%, #fbfdff 42%, #f7fbff 100%);
+}
+
+#main-content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+body > .position-fixed.inset-0 {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#main-content .bg-light {
+    background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%) !important;
+}
+
+#navigation .navbar-nav > li > a {
+    white-space: nowrap;
+}
+
+#wechat-customer {
+    right: 24px !important;
+    bottom: 24px !important;
+}
+
+#pricing,
+#cta-section {
+    scroll-margin-top: 130px;
+}
+
+/* ---- Decorative Blob ---- */
+.blob-bg-halo {
+    background: rgba(var(--halo-blue-rgb), 0.04);
+    width: 600px;
+    height: 600px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -2;
+}
+
+/* ---- Hero Section ---- */
+.halo-hero {
+    position: relative;
+    padding: 158px 0 92px;
+    overflow: hidden;
+    background:
+        linear-gradient(135deg, rgba(12, 123, 224, 0.06) 0%, rgba(12, 123, 224, 0) 44%),
+        linear-gradient(225deg, rgba(90, 85, 250, 0.06) 0%, rgba(90, 85, 250, 0) 45%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.78);
+}
+
+.halo-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(12, 123, 224, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(12, 123, 224, 0.06) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.48), transparent 76%);
+    pointer-events: none;
+}
+
+.halo-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.halo-hero-badge {
+    margin-bottom: 20px;
+}
+
+.halo-partner-badge {
+    display: inline-block;
+    background: rgba(var(--halo-blue-rgb), 0.09);
+    color: var(--halo-blue);
+    border: 1px solid rgba(var(--halo-blue-rgb), 0.15);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 50px;
+    letter-spacing: 0;
+    box-shadow: 0 8px 24px rgba(var(--halo-blue-rgb), 0.08);
+}
+
+.halo-hero-title {
+    font-size: 56px;
+    font-weight: 800;
+    color: var(--halo-dark);
+    line-height: 1.12;
+    margin-bottom: 16px;
+    letter-spacing: 0;
+}
+
+.halo-hero-subtitle {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--halo-blue);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.halo-hero-desc {
+    font-size: 17px;
+    color: var(--halo-gray);
+    line-height: 1.8;
+    margin-bottom: 32px;
+    max-width: 720px;
+}
+
+.halo-hero-actions .btn-lg {
+    --bs-btn-padding-y: 14px;
+    --bs-btn-padding-x: 28px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.halo-cta-btn {
+    background: linear-gradient(135deg, var(--halo-blue) 0%, #333dff 100%) !important;
+    border: none !important;
+    box-shadow: 0 12px 30px rgba(var(--halo-blue-rgb), 0.22);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.halo-cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(var(--halo-blue-rgb), 0.35);
+}
+
+/* ---- Hero Visual (Right Side) ---- */
+.halo-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 380px;
+}
+
+.halo-hero-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(250, 252, 255, 0.9) 100%);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: 0 26px 60px rgba(0, 27, 91, 0.12);
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    animation: halo-card-float 8s ease-in-out infinite;
+}
+
+@keyframes halo-card-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.halo-hero-card-inner {
+    position: relative;
+    padding: 36px 32px 32px;
+    text-align: center;
+}
+
+.halo-logo-group {
+    margin-bottom: 24px;
+}
+
+.halo-brand-mark {
+    padding: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+    border: 1px solid var(--halo-line);
+    border-radius: 14px;
+}
+
+.halo-brand-mark svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.halo-spec-pills {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.halo-pill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    background: #ffffff;
+    color: var(--halo-dark);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.4;
+    padding: 7px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--halo-line);
+    box-shadow: 0 8px 18px rgba(0, 27, 91, 0.04);
+    text-align: center;
+}
+
+.halo-hero-icon-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.halo-mini-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    color: var(--halo-gray);
+    min-height: 88px;
+    justify-content: center;
+    background: rgba(var(--halo-blue-rgb), 0.035);
+    border: 1px solid rgba(var(--halo-blue-rgb), 0.08);
+    border-radius: 12px;
+}
+
+.halo-mini-icon .mdi {
+    font-size: 24px;
+    color: var(--halo-blue);
+}
+
+.halo-mini-icon small {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--halo-dark);
+}
+
+/* Floating decor elements */
+.halo-float {
+    position: absolute;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 12px 30px rgba(0, 27, 91, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 5s ease-in-out infinite;
+}
+
+.halo-float .mdi {
+    font-size: 20px;
+    color: var(--halo-blue);
+}
+
+.halo-float-1 {
+    width: 52px;
+    height: 52px;
+    top: 8%;
+    left: 1%;
+    animation-delay: 0s;
+}
+
+.halo-float-2 {
+    width: 46px;
+    height: 46px;
+    top: 60%;
+    right: 0%;
+    animation-delay: 1.2s;
+}
+
+.halo-float-3 {
+    display: none;
+}
+
+/* ---- Hero Wave ---- */
+.halo-hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 0;
+    pointer-events: none;
+}
+
+.halo-hero-wave svg {
+    width: 100%;
+    height: 80px;
+}
+
+/* ---- Partner Note ---- */
+.halo-partner-section {
+    padding-top: 56px;
+}
+
+.halo-partner-note {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: var(--halo-gray);
+    line-height: 1.8;
+    padding: 26px 32px;
+    background: var(--halo-surface-soft);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--halo-shadow);
+    text-align: left;
+}
+
+.halo-partner-note strong {
+    color: var(--halo-dark);
+}
+
+.halo-partner-note .halo-section-label {
+    margin: 0 4px;
+    padding: 2px 8px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+/* ---- Section Labels ---- */
+.halo-section-label {
+    display: inline-block;
+    background: rgba(var(--halo-blue-rgb), 0.07);
+    color: var(--halo-blue);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.halo-section-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--halo-dark);
+    margin-bottom: 0;
+    letter-spacing: 0;
+}
+
+.halo-section-heading p,
+.halo-section-intro {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.halo-integrations-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: var(--halo-shadow);
+}
+
+/* ---- Value Cards ---- */
+.halo-value-card {
+    height: 100%;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 16px !important;
+    border: 1px solid var(--halo-line) !important;
+    box-shadow: var(--halo-shadow);
+}
+
+.halo-value-card:hover {
+    border-color: rgba(var(--halo-blue-rgb), 0.1) !important;
+}
+
+.halo-value-card .card-body {
+    padding: 34px 32px 32px;
+}
+
+.halo-value-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.halo-value-icon .mdi {
+    font-size: 26px;
+}
+
+.halo-icon-commerce {
+    background: linear-gradient(135deg, rgba(12, 123, 224, 0.1), rgba(12, 123, 224, 0.05));
+    color: var(--halo-blue);
+}
+
+.halo-icon-payment {
+    background: linear-gradient(135deg, rgba(90, 85, 250, 0.12), rgba(90, 85, 250, 0.05));
+    color: var(--halo-purple);
+}
+
+.halo-icon-theme {
+    background: linear-gradient(135deg, rgba(43, 147, 124, 0.12), rgba(43, 147, 124, 0.05));
+    color: var(--halo-green);
+}
+
+.halo-value-lead {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--halo-dark);
+    margin-bottom: 16px;
+}
+
+.halo-value-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.halo-value-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--halo-gray);
+    line-height: 1.7;
+}
+
+.halo-value-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--halo-blue), var(--halo-purple));
+}
+
+.halo-value-list li em {
+    font-style: normal;
+    color: var(--halo-blue);
+    font-weight: 600;
+}
+
+.halo-value-list li strong {
+    color: var(--halo-dark);
+}
+
+/* ---- Feature Cards ---- */
+.halo-feature-card {
+    background: var(--halo-surface-soft);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.82);
+    padding: 34px 30px;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--halo-shadow);
+    cursor: default;
+}
+
+.halo-feature-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    border-color: rgba(var(--halo-blue-rgb), 0.1);
+}
+
+.halo-feature-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 62px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--halo-blue);
+    line-height: 1;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+    background: rgba(var(--halo-blue-rgb), 0.08);
+    border: 1px solid rgba(var(--halo-blue-rgb), 0.14);
+    border-radius: 999px;
+}
+
+.halo-feature-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--halo-dark);
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.halo-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.halo-feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 16px;
+    background: rgba(var(--halo-blue-rgb), 0.02);
+    border-radius: 12px;
+    border: 0;
+    border-left: 3px solid rgba(var(--halo-blue-rgb), 0.2);
+    transition: all 0.3s ease;
+}
+
+.halo-feature-item:hover {
+    background: rgba(var(--halo-blue-rgb), 0.04);
+    border-left-color: var(--halo-blue);
+}
+
+.halo-feature-label {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--halo-blue) !important;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.halo-feature-value {
+    font-size: 14px;
+    color: var(--halo-gray);
+    line-height: 1.6;
+}
+
+.halo-feature-value em {
+    font-style: normal;
+    color: var(--halo-blue);
+    font-weight: 600;
+}
+
+/* ---- Pricing Section ---- */
+.halo-pricing-card {
+    background: var(--halo-surface-soft);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    padding: 0;
+    height: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--halo-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.halo-pricing-card:hover {
+    box-shadow: 0 20px 60px rgba(0, 27, 91, 0.12);
+    transform: translateY(-4px);
+}
+
+.halo-pricing-card.popular {
+    border: 2px solid rgba(var(--halo-blue-rgb), 0.3);
+    box-shadow: 0 20px 60px rgba(var(--halo-blue-rgb), 0.15);
+}
+
+.halo-pricing-header {
+    padding: 32px 28px 24px;
+    text-align: center;
+    border-bottom: 1px solid var(--halo-line);
+}
+
+.halo-pricing-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--halo-dark);
+    margin-bottom: 16px;
+}
+
+.halo-pricing-price {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--halo-dark);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.halo-pricing-price .currency {
+    font-size: 28px;
+    font-weight: 600;
+    vertical-align: super;
+    margin-right: 2px;
+}
+
+.halo-pricing-price .period {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--halo-gray);
+    margin-left: 4px;
+}
+
+.halo-pricing-desc {
+    font-size: 14px;
+    color: var(--halo-gray);
+    margin-top: 8px;
+}
+
+.halo-pricing-body {
+    padding: 24px 28px;
+    flex: 1;
+}
+
+.halo-pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.halo-pricing-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--halo-dark);
+    line-height: 1.6;
+}
+
+.halo-pricing-features li .mdi {
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.halo-pricing-features li .check-green {
+    color: var(--halo-green);
+}
+
+.halo-pricing-features li .check-blue {
+    color: var(--halo-blue);
+}
+
+.halo-pricing-features li .check-purple {
+    color: var(--halo-purple);
+}
+
+.halo-pricing-footer {
+    padding: 0 28px 28px;
+}
+
+.halo-pricing-btn {
+    display: block;
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.halo-pricing-btn-green {
+    background: linear-gradient(135deg, #2b937c 0%, #3db89a 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(43, 147, 124, 0.25);
+}
+
+.halo-pricing-btn-green:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(43, 147, 124, 0.35);
+    color: #fff;
+}
+
+.halo-pricing-btn-blue {
+    background: linear-gradient(135deg, var(--halo-blue) 0%, var(--halo-purple) 100%);
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(var(--halo-blue-rgb), 0.25);
+}
+
+.halo-pricing-btn-blue:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(var(--halo-blue-rgb), 0.35);
+    color: #fff;
+}
+
+.halo-pricing-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.halo-pricing-badge-new {
+    background: rgba(212, 0, 0, 0.1);
+    color: #d40000;
+}
+
+.halo-pricing-badge-fire {
+    background: rgba(255, 140, 0, 0.1);
+    color: #ff8c00;
+}
+
+.halo-pricing-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid var(--halo-line);
+    border-radius: 50px;
+    padding: 4px;
+    margin-bottom: 24px;
+}
+
+.halo-pricing-toggle-btn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    color: var(--halo-gray);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.halo-pricing-toggle-btn.active {
+    background: linear-gradient(135deg, var(--halo-blue) 0%, var(--halo-purple) 100%);
+    color: #fff;
+}
+
+/* ---- Screenshot Cards ---- */
+.halo-screenshot-card {
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid rgba(12, 123, 224, 0.1);
+    overflow: hidden;
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.04),
+        0 8px 32px rgba(12, 123, 224, 0.06);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.halo-screenshot-card:hover {
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.06),
+        0 16px 48px rgba(12, 123, 224, 0.12);
+    transform: translateY(-5px);
+    border-color: rgba(12, 123, 224, 0.18);
+}
+
+.halo-screenshot-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 20px 0 20px;
+    background: linear-gradient(180deg, #eef5ff 0%, #f7fbff 30%, #ffffff 60%);
+    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+}
+
+.halo-screenshot-caption {
+    padding: 18px 24px 22px;
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+}
+
+.halo-screenshot-caption::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--halo-blue), var(--halo-purple));
+    border-radius: 3px;
+}
+
+.halo-screenshot-caption h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--halo-dark);
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.halo-screenshot-caption p {
+    font-size: 14px;
+    color: var(--halo-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.halo-screenshot-caption {
+    padding: 18px 24px 22px;
+    text-align: center;
+    background: #ffffff;
+    position: relative;
+    z-index: 3;
+}
+
+.halo-screenshot-caption h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--halo-dark);
+    margin-bottom: 6px;
+}
+
+.halo-screenshot-caption p {
+    font-size: 14px;
+    color: var(--halo-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---- CTA Section ---- */
+.halo-cta-card {
+    background:
+        linear-gradient(135deg, rgba(12, 123, 224, 0.22) 0%, rgba(12, 123, 224, 0) 36%),
+        linear-gradient(135deg, var(--halo-dark) 0%, #1f2945 58%, #151b2d 100%);
+    border-radius: 18px;
+    padding: 56px 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(var(--halo-dark-rgb), 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.halo-cta-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.16), transparent 72%);
+    pointer-events: none;
+}
+
+.halo-cta-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 42%;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.08) 100%);
+    transform: skewX(-12deg) translateX(26%);
+    pointer-events: none;
+}
+
+.halo-cta-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.halo-cta-lead {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 8px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.halo-cta-desc {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.halo-cta-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.halo-cta-features > span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 14px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+}
+
+.halo-cta-features .mdi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    color: var(--halo-blue);
+    font-size: 18px;
+}
+
+.halo-qr-placeholder {
+    position: relative;
+    z-index: 1;
+}
+
+.halo-qr-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 26px 22px;
+    display: inline-block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.86);
+}
+
+.halo-qr-box:hover {
+    transform: scale(1.05);
+}
+
+.halo-qr-img {
+    border-radius: 8px;
+}
+
+.halo-qr-title {
+    font-weight: 600;
+    color: var(--halo-dark);
+}
+
+/* ---- Twin Star ---- */
+.halo-twinstar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.halo-twinstar-item {
+    text-align: center;
+    min-width: 240px;
+    padding: 28px 36px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    border-radius: 16px;
+    box-shadow: var(--halo-shadow);
+}
+
+.halo-twinstar-item h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--halo-dark);
+    margin-bottom: 4px;
+}
+
+.halo-twinstar-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(var(--halo-blue-rgb), 0.08);
+    border: 1px solid rgba(var(--halo-blue-rgb), 0.12);
+    border-radius: 50%;
+}
+
+.halo-twinstar-plus .mdi {
+    font-size: 30px;
+    color: var(--halo-blue);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 991px) {
+    .halo-hero {
+        padding: 134px 0 62px;
+    }
+
+    .halo-hero-title {
+        font-size: 38px;
+    }
+
+    .halo-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .halo-hero-desc {
+        font-size: 15px;
+    }
+
+    .halo-section-title {
+        font-size: 28px;
+    }
+
+    .halo-cta-card {
+        padding: 40px 28px;
+    }
+
+    .halo-cta-title {
+        font-size: 26px;
+    }
+
+    .halo-pricing-card {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1360px) {
+    .f2c-header-card .logo {
+        margin-right: 42px;
+    }
+
+    #navigation .navbar-nav > li > a {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .halo-partner-section {
+        padding-top: 44px;
+    }
+
+    .halo-partner-note {
+        padding: 22px 22px;
+    }
+
+    .halo-hero-title {
+        font-size: 32px;
+    }
+
+    .halo-section-title {
+        font-size: 24px;
+    }
+
+    .halo-cta-card {
+        padding: 32px 20px;
+        border-radius: 16px;
+    }
+
+    .halo-cta-features {
+        gap: 10px;
+    }
+
+    .halo-cta-features > span {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .halo-twinstar {
+        gap: 14px;
+        flex-direction: column;
+    }
+
+    .halo-twinstar-item {
+        width: 100%;
+        min-width: 0;
+        max-width: 360px;
+    }
+
+    .halo-twinstar-item h4 {
+        font-size: 16px;
+    }
+
+    .halo-twinstar-item p {
+        font-size: 12px;
+    }
+
+    .halo-pricing-price {
+        font-size: 36px;
+    }
+
+    .halo-pricing-price .currency {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .halo-hero {
+        padding: 124px 0 52px;
+    }
+
+    .halo-hero-actions .btn-lg {
+        width: 100%;
+    }
+}
+
+/* ---- Reveal stagger: Hero elements animate in sequence ---- */
+.halo-hero .slide-down .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: halo-reveal-up 0.6s ease-out forwards;
+}
+
+.halo-hero .slide-down .reveal:nth-child(1) { animation-delay: 0.3s; }
+.halo-hero .slide-down .reveal:nth-child(2) { animation-delay: 0.45s; }
+.halo-hero .slide-down .reveal:nth-child(3) { animation-delay: 0.6s; }
+.halo-hero .slide-down .reveal:nth-child(4) { animation-delay: 0.75s; }
+.halo-hero .slide-down .reveal:nth-child(5) { animation-delay: 0.9s; }
+
+@keyframes halo-reveal-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Override reveal from IntersectionObserver for hero elements already animated */
+.halo-hero .slide-down .reveal.active {
+    transition: none;
+}

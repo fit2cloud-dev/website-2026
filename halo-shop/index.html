@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halo 商城版 - 专为中国商家打造的在线商城解决方案 | FIT2CLOUD 飞致云</title>
+        <meta name="description" content="Halo 商城版是专为中国商家打造的在线商城解决方案。无平台佣金，支持支付宝、微信支付等国内主流支付方式，简单易用，支持实体商品和虚拟商品。" />
+        <meta name="keywords" content="Halo 商城版,Java商城,开源商城系统,Java商城系统" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <link rel="icon" href="../images/logo/favicon.ico" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../css/index.css" rel="stylesheet" type="text/css" />
+        <link href="../css/f2c-style.css" rel="stylesheet" type="text/css" />
+        <link href="../css/halo-shop.css" rel="stylesheet" type="text/css" />
+        <link rel="canonical" href="https://fit2cloud.com/halo/" />
+        <meta property="og:site_name" content="FIT2CLOUD 飞致云" />
+        <meta property="og:title" content="Halo 商城版 - 专为中国商家打造的在线商城解决方案" />
+        <meta property="og:description" content="无平台佣金，支持支付宝、微信支付等国内主流支付方式，简单易用，支持实体商品和虚拟商品。" />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content="https://fit2cloud.com/halo/" />
+        <meta property="og:locale" content="zh_CN" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7D2ZT7VWRV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-7D2ZT7VWRV');
+        </script>
+    </head>
+    <body class="antialiased">
+        <!-- Decorative Background Elements -->
+        <div class="position-fixed inset-0">
+            <div class="blob blob-bg-blue"></div>
+            <div class="blob blob-bg-purple"></div>
+            <div class="blob blob-bg-halo"></div>
+        </div>
+
+        <header class="fixed-top">
+            <nav class="f2c-header-card container navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="logo" href="https://fit2cloud.com">
+                        <img src="../images/logo/logo-dark-FIT2CLOUD.svg" height="18" alt="FIT2CLOUD 飞致云 Logo" />
+                    </a>
+                    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav navbar-nav-scroll list-unstyled">
+                            <li><a href="../index.html">首页</a></li>
+                            <li class="has-submenu">
+                                <a href="javascript:void(0)">开源产品 <span class="mdi mdi-chevron-down menu-arrow"></span></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="https://1panel.cn" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/1panel.ico" width="20" alt="1Panel Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>1Panel</b></p>
+                                                    <p class="text-muted small">现代化、开源的 Linux 面板</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://cordys.cn/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/cordys.png" width="20" alt="Cordys CRM Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>Cordys</b></p>
+                                                    <p class="text-muted small">新一代的开源 AI CRM 系统</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.jumpserver.org/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/jumpserver.ico" width="20" alt="JumpServer Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>JumpServer</b></p>
+                                                    <p class="text-muted small">广受欢迎的开源堡垒机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://maxkb.cn/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/maxkb.ico" width="20" alt="MaxKB Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>MaxKB</b></p>
+                                                    <p class="text-muted small">强大易用的企业级智能体平台</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://dataease.cn/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/dataease.ico" width="20" alt="DataEase Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>DataEase</b></p>
+                                                    <p class="text-muted small">人人可用的开源 BI 工具</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://sqlbot.org/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/sqlbot.ico" width="20" alt="SQLBot Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>SQLBot</b></p>
+                                                    <p class="text-muted small">基于大模型的智能问数系统</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://metersphere.io/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/metersphere.ico" width="20" alt="MeterSphere Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>MeterSphere</b></p>
+                                                    <p class="text-muted small">新一代的开源持续测试工具</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://halo.run/" target="_blank">
+                                            <div class="d-flex">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/halo.ico" width="20" alt="Halo Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title"><b>Halo</b></p>
+                                                    <p class="text-muted small">强大易用的开源建站工具</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="javascript:void(0)">一体机 <span class="mdi mdi-chevron-down menu-arrow"></span></a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="https://jumpserver.org/hardware.html" target="_blank">
+                                            <div class="d-flex align-items-center">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/jumpserver.ico" width="20" alt="JumpServer Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title">JumpServer 一体机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="../zabbix/index.html">
+                                            <div class="d-flex align-items-center">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/zabbix.ico" width="20" alt="Zabbix Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title">Zabbix 信创一体机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://maxkb.cn/appliance" target="_blank">
+                                            <div class="d-flex align-items-center">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/maxkb.ico" width="20" alt="MaxKB Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title">MaxKB AI 一体机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://1panel.cn/openclaw.html" target="_blank">
+                                            <div class="d-flex align-items-center">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/1panel.ico" width="20" alt="1Panel Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title">1Panel AI 助理一体机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://1panel.cn/aicoding.html" target="_blank">
+                                            <div class="d-flex align-items-center">
+                                                <div class="border rounded p-10-12 bg-white">
+                                                    <img src="../images/logo/1panel.ico" width="20" alt="1Panel Logo" />
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="title">1Panel AI 编程一体机</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="../purchase/index.html">如何购买</a></li>
+                            <li><a href="../customers/index.html">案例中心</a></li>
+                            <li><a href="../partners/index.html">合作伙伴</a></li>
+                            <li class="has-submenu">
+                                <a href="javascript:void(0)">关于飞致云 <span class="mdi mdi-chevron-down menu-arrow"></span></a>
+                                <ul class="submenu">
+                                    <li><a class="dropdown-item" href="../about/index.html">公司介绍</a></li>
+                                    <li><a class="dropdown-item" href="https://blog.fit2cloud.com/" target="_blank">新闻动态</a></li>
+                                    <li><a class="dropdown-item" href="https://community.fit2cloud.com/" target="_blank">开源社区</a></li>
+                                    <li><a class="dropdown-item" href="https://edu.fit2cloud.com/" target="_blank">培训认证</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link" href="tel:400-052-0755" style="color: #1a1a2e; font-weight: 600;">
+                                <span class="mdi mdi-phone"></span> 400-052-0755
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <!-- Hero / Banner -->
+            <section class="halo-hero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 slide-down">
+                            <div class="halo-hero-badge reveal">
+                                <span class="halo-partner-badge">专为中国商家打造</span>
+                            </div>
+                            <h1 class="halo-hero-title reveal">
+                                Halo 商城版
+                            </h1>
+                            <p class="halo-hero-subtitle reveal">
+                                专为中国商家打造的在线商城解决方案
+                            </p>
+                            <p class="halo-hero-desc reveal">
+                                相比于 Shopify，无平台佣金；相比于 WordPress，更简单易用。
+                            </p>
+                            <div class="halo-hero-actions reveal">
+                                <a target="_blank" href="https://www.lxware.cn/halo" class="btn btn-primary halo-cta-btn btn-lg">
+                                    <span class="fw-semibold">在线购买</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-none d-lg-block">
+                            <div class="halo-hero-visual reveal">
+                                <div class="halo-hero-card">
+                                    <div class="halo-hero-card-inner">
+                                        <div class="halo-logo-group">
+                                            <div class="halo-brand-mark">
+                                                <svg viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="2" y="2" width="36" height="36" rx="6" fill="#0c7be0"/>
+                                                    <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="18">H</text>
+                                                    <text x="50" y="26" fill="#1a1a2e" font-family="Arial, sans-serif" font-weight="bold" font-size="20">Halo 商城版</text>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="halo-spec-pills">
+                                            <span class="halo-pill">支付宝支付</span>
+                                            <span class="halo-pill">微信支付</span>
+                                            <span class="halo-pill">实体商品</span>
+                                            <span class="halo-pill">虚拟商品</span>
+                                        </div>
+                                        <div class="halo-hero-icon-row">
+                                            <div class="halo-mini-icon">
+                                                <span class="mdi mdi-store-outline"></span>
+                                                <small>在线商城</small>
+                                            </div>
+                                            <div class="halo-mini-icon">
+                                                <span class="mdi mdi-credit-card-outline"></span>
+                                                <small>多支付方式</small>
+                                            </div>
+                                            <div class="halo-mini-icon">
+                                                <span class="mdi mdi-palette-outline"></span>
+                                                <small>电商主题</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Decorative floating elements -->
+                                <div class="halo-float halo-float-1">
+                                    <span class="mdi mdi-cart-outline"></span>
+                                </div>
+                                <div class="halo-float halo-float-2">
+                                    <span class="mdi mdi-package-variant"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero bottom wave -->
+                <div class="halo-hero-wave">
+                    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0,60 C240,120 480,0 720,60 C960,120 1200,0 1440,60 L1440,120 L0,120 Z" fill="rgba(255,255,255,0.5)"/>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- 为什么选择 Halo 搭建商城 -->
+            <section class="section halo-partner-section reveal">
+                <div class="container text-center">
+                    <span class="halo-section-label">为什么选择 Halo 搭建商城？</span>
+                    <h2 class="halo-section-title mb-4">更懂中国商家的建站工具</h2>
+                    <p class="text-muted halo-section-intro mb-5">
+                        Halo 商城版深度适配国内电商运营场景，从支付方式到商品类型，从主题设计到运维管理，全方位满足中国商家的实际需求。
+                    </p>
+                    <div class="row row-cols-1 row-cols-lg-2 g-4">
+                        <div class="col">
+                            <div class="card hover border-radius-20 translate-y halo-value-card">
+                                <div class="card-body text-start">
+                                    <div class="halo-value-icon halo-icon-commerce">
+                                        <span class="mdi mdi-cash-remove"></span>
+                                    </div>
+                                    <h5 class="card-title mb-3">相比于 Shopify</h5>
+                                    <p class="halo-value-lead">无平台佣金，成本更可控</p>
+                                    <ul class="halo-value-list">
+                                        <li><strong>零平台佣金：</strong>无需向平台支付高额交易手续费，利润完全归自己所有</li>
+                                        <li><strong>国内支付原生支持：</strong>内置支付宝、微信支付等国内主流支付方式，无需额外插件</li>
+                                        <li><strong>数据自主可控：</strong>数据完全存储在自己的服务器上，安全无忧</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card hover border-radius-20 translate-y halo-value-card">
+                                <div class="card-body text-start">
+                                    <div class="halo-value-icon halo-icon-theme">
+                                        <span class="mdi mdi-leaf-circle-outline"></span>
+                                    </div>
+                                    <h5 class="card-title mb-3">相比于 WordPress</h5>
+                                    <p class="halo-value-lead">更简单易用，功能开箱即用</p>
+                                    <ul class="halo-value-list">
+                                        <li><strong>极简操作体验：</strong>无需复杂配置，可视化界面即可完成商城搭建</li>
+                                        <li><strong>商品类型全覆盖：</strong>实体商品、虚拟商品、外部链接商品都能轻松上架</li>
+                                        <li><strong>原生电商能力：</strong>电商功能内置于核心，无需依赖众多第三方插件</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心能力展示 -->
+            <section class="section reveal">
+                <div class="container">
+                    <div class="text-center mb-5 halo-section-heading">
+                        <span class="halo-section-label">Halo 商城版的强大能力</span>
+                        <h2 class="halo-section-title">四大核心能力，构建完整电商闭环</h2>
+                        <p class="text-muted mt-3">从商品上架到支付收款，从主题设计到运维管理，一站式满足电商全场景需求</p>
+                    </div>
+
+                    <!-- 能力 1: 多种商品类型 -->
+                    <div class="row align-items-center mb-5 g-4">
+                        <div class="col-lg-6 reveal">
+                            <span class="halo-section-label">商品管理</span>
+                            <h3 class="halo-feature-title" style="margin-bottom: 16px;">支持上架多种类型商品</h3>
+                            <p class="text-muted mb-4">无论是实物发货还是数字化交付，Halo 商城版都能完美支持，满足不同业务模式的需求。</p>
+                            <div class="halo-feature-list">
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">实体商品</span>
+                                    <span class="halo-feature-value">支持多规格库存管理、物流跟踪、发货管理</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">虚拟商品</span>
+                                    <span class="halo-feature-value">支持配置文件下载资源、卡密资源池、API 远程调用发货</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">外部链接商品</span>
+                                    <span class="halo-feature-value">轻松对接外部商品链接，实现跳转销售</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal">
+                            <div class="halo-screenshot-card">
+                                <img src="../images/halo-shop/1.png" alt="Halo 商品管理" loading="lazy" />
+                                <div class="halo-screenshot-caption">
+                                    <h4>商品管理</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 能力 2: 多种支付方式 -->
+                    <div class="row align-items-center mb-5 g-4 flex-row-reverse">
+                        <div class="col-lg-6 reveal">
+                            <span class="halo-section-label">支付对接</span>
+                            <h3 class="halo-feature-title" style="margin-bottom: 16px;">支持对接多种支付方式</h3>
+                            <p class="text-muted mb-4">覆盖国内主流支付渠道及国际支付方式，满足不同客户群体的支付习惯。</p>
+                            <div class="halo-feature-list">
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">国内主流支付</span>
+                                    <span class="halo-feature-value">支付宝、微信支付，原生集成，一键启用</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">第三方聚合支付</span>
+                                    <span class="halo-feature-value">易支付、Stripe，覆盖更多支付场景</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">线下支付</span>
+                                    <span class="halo-feature-value">银行转账与收款码支付，满足 B2B 及线下交易需求</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal">
+                            <div class="halo-screenshot-card">
+                                <img src="../images/halo-shop/2.png" alt="Halo 支付对接" loading="lazy" />
+                                <div class="halo-screenshot-caption">
+                                    <h4>支付对接</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 能力 3: 专属电商主题 -->
+                    <div class="row align-items-center mb-5 g-4">
+                        <div class="col-lg-6 reveal">
+                            <span class="halo-section-label">主题设计</span>
+                            <h3 class="halo-feature-title" style="margin-bottom: 16px;">提供专属多电商主题</h3>
+                            <p class="text-muted mb-4">无需编写任何代码，一键套用专业电商主题，快速搭建高颜值在线商店。</p>
+                            <div class="halo-feature-list">
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">零代码操作</span>
+                                    <span class="halo-feature-value">一键套用主题，无需任何编程基础即可拥有专业商城</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">完整页面结构</span>
+                                    <span class="halo-feature-value">覆盖首页、商品列表、商品详情、购物车、结算页等完整电商场景</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">统一管理</span>
+                                    <span class="halo-feature-value">统一管理站点 Logo 与商品物料，保持品牌视觉一致性</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal">
+                            <div class="halo-screenshot-card">
+                                <img src="../images/halo-shop/3.png" alt="Halo 主题设计" loading="lazy" />
+                                <div class="halo-screenshot-caption">
+                                    <h4>主题设计</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 能力 4: 一站式高效运维 -->
+                    <div class="row align-items-center g-4 flex-row-reverse">
+                        <div class="col-lg-6 reveal">
+                            <span class="halo-section-label">高效运维</span>
+                            <h3 class="halo-feature-title" style="margin-bottom: 16px;">一站式高效运维</h3>
+                            <p class="text-muted mb-4">从商店后台到内容管理，从自动化交付到生态拓展，全方位提升运营效率。</p>
+                            <div class="halo-feature-list">
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">商店后台快捷入口</span>
+                                    <span class="halo-feature-value">内置仪表盘概览，快速查看销售数据、待处理订单和支付状态</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">商品自动化交付</span>
+                                    <span class="halo-feature-value">虚拟商品支持自动发货，实体商品支持库存与物流管理</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">内容管理体系</span>
+                                    <span class="halo-feature-value">内置富文本编辑器，支持文章分类、标签管理与 SEO 优化</span>
+                                </div>
+                                <div class="halo-feature-item">
+                                    <span class="halo-feature-label">海量生态拓展</span>
+                                    <span class="halo-feature-value">AI 助手、RAG 问答等插件持续更新</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 reveal">
+                            <div class="halo-screenshot-card">
+                                <img src="../images/halo-shop/4.png" alt="Halo 高效管理" loading="lazy" />
+                                <div class="halo-screenshot-caption">
+                                    <h4>高效运维</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 价格方案 -->
+            <section class="section bg-light reveal" id="pricing">
+                <div class="container">
+                    <div class="text-center mb-5 halo-section-heading">
+                        <span class="halo-section-label">Halo 商城版的价格</span>
+                        <h2 class="halo-section-title">选择适合你的方案</h2>
+                        <p class="text-muted mt-3">从免费开源到专业商城，满足不同阶段的业务需求</p>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-lg-3 g-4 justify-content-center">
+                        <!-- 社区版 -->
+                        <div class="col">
+                            <div class="halo-pricing-card">
+                                <div class="halo-pricing-header">
+                                    <div class="d-flex justify-content-center gap-2 mb-3">
+                                        <span class="badge rounded-pill bg-dark">免费</span>
+                                    </div>                                    
+                                    <h3 class="halo-pricing-title">Halo 社区版</h3>
+                                    <div class="halo-pricing-price">
+                                        <span class="currency">¥</span>0
+                                    </div>
+                                </div>
+                                <div class="halo-pricing-body">
+                                    <ul class="halo-pricing-features">
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>内容管理</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>邮箱验证注册登录</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>自定义用户角色权限</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>整站备份与恢复</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>应用市场免费主题</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-green"></span>应用市场免费插件</li>
+                                    </ul>
+                                </div>
+                                <div class="halo-pricing-footer">
+                                    <a href="https://halo.run/" target="_blank" class="halo-pricing-btn halo-pricing-btn-green">免费使用</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 专业版 -->
+                        <div class="col">
+                            <div class="halo-pricing-card">
+                                <div class="halo-pricing-header">
+                                    <div class="d-flex justify-content-center gap-2 mb-3">
+                                        <span class="badge rounded-pill bg-dark">按年</span>
+                                    </div>
+                                    <h3 class="halo-pricing-title">Halo 专业版</h3>
+                                    <div class="halo-pricing-price">
+                                        <span class="currency">¥</span>540<span class="period">/按年订阅</span>
+                                    </div>
+                                </div>
+                                <div class="halo-pricing-body">
+                                    <ul class="halo-pricing-features">
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>社区版全部功能</li>
+                                        <li><span class="mdi mdi-star-circle-outline check-purple"></span>移动端 App</li>
+                                        <li><span class="mdi mdi-star-circle-outline check-purple"></span>专业版专享插件</li>
+                                        <li><span class="mdi mdi-star-circle-outline check-purple"></span>专业版专享主题</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>AI 建站</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>RAG 智能问答</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>SEO 工具</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>手机号码验证注册登录</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>登录/注册人机验证</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>限制用户邮箱域名</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>自定义 LOGO 及品牌信息</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>全站私有化</li>
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>Redis 会话存储</li>
+                                    </ul>
+                                </div>
+                                <div class="halo-pricing-footer">
+                                    <a href="https://www.lxware.cn/halo" target="_blank" class="halo-pricing-btn halo-pricing-btn-blue">立即购买</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 商城版 -->
+                        <div class="col">
+                            <div class="halo-pricing-card popular">
+                                <div class="halo-pricing-header">
+                                    <div class="d-flex justify-content-center gap-2 mb-3">
+                                        <span class="badge rounded-pill bg-dark">按年</span>
+                                    </div>
+                                    <h3 class="halo-pricing-title" style="color: var(--halo-blue);">Halo 商城版</h3>
+                                    <div class="halo-pricing-price">
+                                        <span class="currency">¥</span>1,500<span class="period">/按年订阅</span>
+                                    </div>
+                                </div>
+                                <div class="halo-pricing-body">
+                                    <ul class="halo-pricing-features">
+                                        <li><span class="mdi mdi-check-circle-outline check-blue"></span>专业版全部功能</li>
+                                        <li><span class="mdi mdi-star-circle-outline check-purple"></span>在线商城功能></li>
+                                        <li><span class="mdi mdi-star-circle-outline check-purple"></span>商城小程序</li>
+                                    </ul>
+                                    <p class="text-muted small mt-3">包含商城版专属电商主题、多支付方式对接、商品自动化交付等完整电商能力。</p>
+                                </div>
+                                <div class="halo-pricing-footer">
+                                    <a href="https://www.lxware.cn/halo" target="_blank" class="halo-pricing-btn halo-pricing-btn-blue">立即购买</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="section reveal" id="cta-section">
+                <div class="container">
+                    <div class="halo-cta-card">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h2 class="halo-cta-title">开启你的电商之旅</h2>
+                                <p class="halo-cta-lead">Halo 商城版帮你快速搭建专业在线商店 —— 简单、高效、自主可控！</p>
+                                <p class="halo-cta-desc">微信扫码咨询，获取方案详情及优惠报价</p>
+                                <div class="halo-cta-features">
+                                    <span><span class="mdi mdi-check-circle-outline"></span> 无平台佣金</span>
+                                    <span><span class="mdi mdi-check-circle-outline"></span> 国内支付原生支持</span>
+                                    <span><span class="mdi mdi-check-circle-outline"></span> 实体+虚拟商品全支持</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                                <div class="halo-qr-placeholder">
+                                    <div class="halo-qr-box">
+                                        <img src="../images/wechat-customer.jpg" class="img-fluid halo-qr-img" alt="微信扫码咨询" />
+                                        <p class="mt-3 mb-0 halo-qr-title">微信扫码咨询</p>
+                                        <p class="text-muted small mb-0">获取详细方案与优惠报价</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 更进一步的价值 -->
+            <section class="section bg-light reveal">
+                <div class="container text-center">
+                    <span class="halo-section-label">更进一步的价值</span>
+                    <h2 class="halo-section-title mb-4">Halo + 1Panel：建站与运维的最佳拍档</h2>
+                    <p class="text-muted halo-section-intro halo-twinstar-intro">
+                        Halo 负责「搭得好」，1Panel 负责「管得稳」。飞致云为您提供「建站+运维」整体方案。
+                    </p>
+                    <div class="halo-twinstar">
+                        <div class="halo-twinstar-item">
+                            <h4>Halo</h4>
+                            <p class="text-muted">强大建站 · 搭得好</p>
+                        </div>
+                        <div class="halo-twinstar-plus">
+                            <span class="mdi mdi-plus-circle-outline"></span>
+                        </div>
+                        <div class="halo-twinstar-item">
+                            <h4>1Panel</h4>
+                            <p class="text-muted">运维管理 · 管得稳</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <a href="https://1panel.cn/" target="_blank" class="btn btn-outline-primary">
+                            了解 1Panel Linux 面板<span class="mdi mdi-open-in-new"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 购买咨询悬浮框 -->
+            <section id="wechat-customer">
+                <div class="wechat-customer">
+                    <span style="font-size: 24px" class="mdi mdi-close-circle-outline text-primary close-btn" id="wechat-customer-close"></span>
+                    <div class="wechat-customer_title f2c-btn-gradient">购买咨询</div>
+                    <div class="wechat-customer_content">
+                        <img src="../images/wechat-customer.jpg" class="img-fluid" alt="FIT2CLOUD 飞致云 微信咨询二维码" />
+                        <div class="text">
+                            <span class="mdi mdi-line-scan"></span>
+                            <span class="ms-2">微信扫码</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="f2c-footer section">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col">
+                        <h5 class="mb-4">常用链接</h5>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="http://lxware.cn/">凌霞软件 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="../cmp/index.html">云管平台 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://community.fit2cloud.com/">开源社区 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://support.fit2cloud.com/">客户支持门户 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://apps.fit2cloud.com/">应用商店 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://jumpserver.com/">JumpServer 国际站 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://1panel.pro/">1Panel 国际站 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" class="text-muted" href="https://upage.ai/">UPage AI 建站 <span class="mdi mdi-open-in-new"></span></a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5 class="mb-4">联系我们</h5>
+                        <p class="mb-3">
+                            <a href="mailto:support@fit2cloud.com" class="text-muted"><span class="mdi mdi-email-outline"></span> support@fit2cloud.com</a>
+                        </p>
+                        <p class="text-muted mb-3"><span class="mdi mdi-phone-outgoing-outline"></span> 400-052-0755</p>
+                        <p class="mb-3">
+                            <a target="_blank" href="https://partner.fit2cloud.com/yuyuechanpinyanshi" class="text-muted">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 2H3C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M6.83203 9.33323V7.3125L8.58203 8.32287L10.332 9.33323L8.58203 10.3436L6.83203 11.354V9.33323Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 5H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11 2L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 2L5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                预约产品演示</a>
+                        </p>
+                        <p class="mb-3">
+                            <a target="_blank" href="https://partner.fit2cloud.com/baobei" class="text-muted">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.66797 11.9997V14.6663H13.3346V1.33301H2.66797V3.99967" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 10H3.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 8H3.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 6H3.33333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8.0013 6.99967C8.73768 6.99967 9.33464 6.40272 9.33464 5.66634C9.33464 4.92996 8.73768 4.33301 8.0013 4.33301C7.26492 4.33301 6.66797 4.92996 6.66797 5.66634C6.66797 6.40272 7.26492 6.99967 8.0013 6.99967Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.6654 11.6667C10.6654 10.1939 9.47146 9 7.9987 9C6.52593 9 5.33203 10.1939 5.33203 11.6667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                合作伙伴项目报备</a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h5 class="mb-4">资料下载</h5>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/1panel/download/introduce-1panel_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> 1Panel 产品资料下载</a>
+                        </p>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/jumpserver/documents/introduce-jumpserver_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> JumpSever 产品资料下载</a>
+                        </p>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> DataEase 产品资料下载</a>
+                        </p>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/maxkb/download/introduce-maxkb_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> MaxKB 产品资料下载</a>
+                        </p>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/cordys/download/introduce-cordys_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> Cordys 产品资料下载</a>
+                        </p>
+                        <p class="mb-3">
+                            <a href="https://fit2cloud.com/metersphere/download/introduce-metersphere_2026.pdf" class="text-muted"><span class="mdi mdi-tray-arrow-down"></span> MeterSphere 产品资料下载</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: rgba(var(--bs-secondary-color-rgb), 0.2)" />
+            <div class="container text-center mt-5">
+                <p class="mb-2"><a href="https://beian.miit.gov.cn/" class="text-muted" target="_blank">浙ICP备14038283号</a></p>
+                <p class="text-muted mb-2">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                <p class="text-muted">
+                    <a href="https://fit2cloud.com/legal/privacy-policy.html" class="text-muted">隐私政策 |</a>
+                    <a href="https://fit2cloud.com/legal/licenses.html" class="text-muted">社区软件许可协议</a>
+                </p>
+            </div>
+        </footer>
+
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/scroll.js"></script>
+    </body>
+</html>
