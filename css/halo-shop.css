@@ -939,6 +939,16 @@ body > .position-fixed.inset-0 {
     font-size: 18px;
 }
 
+.halo-cta-actions {
+    margin-top: 32px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 .halo-qr-placeholder {
     position: relative;
     z-index: 1;
