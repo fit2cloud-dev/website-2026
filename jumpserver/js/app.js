@@ -141,5 +141,20 @@
 
     $('#wechat-customer-close').on('click', () => {
         $('#wechat-customer').hide();
-    })    
+    });
+
+    (function loadGa4Events() {
+        var scripts = document.getElementsByTagName('script');
+        for (var i = scripts.length - 1; i >= 0; i--) {
+            var src = scripts[i].src;
+            if (src && src.indexOf('app.js') !== -1) {
+                var ga4Src = src.replace(/app\.js(?:\?.*)?$/, 'ga4-events.js');
+                var ga4Script = document.createElement('script');
+                ga4Script.src = ga4Src;
+                ga4Script.async = true;
+                document.body.appendChild(ga4Script);
+                break;
+            }
+        }
+    })();
 })(jQuery);
