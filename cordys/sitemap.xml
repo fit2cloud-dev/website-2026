@@ -2,28 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cordys.cn/</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cordys.cn/pricing.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>  
+  </url>
   <url>
     <loc>https://cordys.cn/blog.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- 深度分析 / 行业评测 -->
   <url>
     <loc>https://cordys.cn/blog/china-crm-market-analysis.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>  
+  </url>
   <url>
     <loc>https://cordys.cn/blog/cordys-vs-xiaoshouyi-fxiaoke.html</loc>
     <lastmod>2026-06-02</lastmod>
@@ -36,6 +38,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://cordys.cn/blog/crm-review-fxiaoke-xiaoshouyi-zoho-2026.html</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 产品功能科普 -->
+  <url>
+    <loc>https://cordys.cn/blog/crm-functions-and-benefits.html</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cordys.cn/blog/l2c-leads-to-cash.html</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cordys.cn/blog/crm-deployment-saas-vs-onpremise.html</loc>
+    <lastmod>2025-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 版本发布 -->
   <url>
     <loc>https://cordys.cn/blog/approval-flow-v1-7-0.html</loc>
     <lastmod>2026-06-01</lastmod>
@@ -66,6 +96,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- 教程 / 操作指南 -->
   <url>
     <loc>https://cordys.cn/blog/sqlbot-sales-analytics.html</loc>
     <lastmod>2026-06-01</lastmod>
