@@ -204,19 +204,19 @@
                     <div class="blog-hero__content">
                         <h1 class="blog-hero__title">关注 AI CRM 的每一次能力演进</h1>
                         <p class="blog-hero__subtitle">收录 Cordys CRM 版本发布、功能更新、AI 集成实践和产品里程碑，帮助你快速了解开源 AI CRM 的最新进展。</p>
-                        <div class="blog-hero__stats">
-                            <div>
-                                <strong>11</strong>
-                                <span>篇文章</span>
-                            </div>
-                            <div>
-                                <strong>2026</strong>
-                                <span>持续更新</span>
-                            </div>
-                            <div>
-                                <strong>AI CRM</strong>
-                                <span>主题聚焦</span>
-                            </div>
+                    </div>
+                    <div class="blog-hero__stats">
+                        <div>
+                            <strong data-blog-total>16</strong>
+                            <span>篇文章</span>
+                        </div>
+                        <div>
+                            <strong>2026</strong>
+                            <span>持续更新</span>
+                        </div>
+                        <div>
+                            <strong>AI CRM</strong>
+                            <span>主题聚焦</span>
                         </div>
                     </div>
                 </div>
@@ -415,6 +415,7 @@
                             </div>
                         </article>
                     </div>
+                    <nav class="blog-pagination" aria-label="产品动态分页"></nav>
                 </div>
             </section>
         </main>
@@ -530,5 +531,125 @@
         </footer>
         <script src="js/main.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            (function () {
+                var list = document.querySelector('.blog-list');
+                var pagination = document.querySelector('.blog-pagination');
+                var totalCount = document.querySelector('[data-blog-total]');
+                if (!list || !pagination) {
+                    return;
+                }
+
+                var cards = Array.prototype.slice.call(list.querySelectorAll('.blog-card'));
+                var pageSize = 10;
+                var totalPages = Math.ceil(cards.length / pageSize);
+
+                if (totalCount) {
+                    totalCount.textContent = cards.length;
+                }
+
+                if (totalPages <= 1) {
+                    pagination.hidden = true;
+                    return;
+                }
+
+                function getPageFromUrl() {
+                    var params = new URLSearchParams(window.location.search);
+                    var page = parseInt(params.get('page'), 10);
+                    if (isNaN(page)) {
+                        return 1;
+                    }
+                    return Math.max(1, Math.min(totalPages, page));
+                }
+
+                function updateUrl(page) {
+                    var params = new URLSearchParams(window.location.search);
+                    if (page > 1) {
+                        params.set('page', page);
+                    } else {
+                        params.delete('page');
+                    }
+                    var query = params.toString();
+                    var url = window.location.pathname + (query ? '?' + query : '') + window.location.hash;
+                    window.history.replaceState(null, '', url);
+                }
+
+                function pageItems(currentPage) {
+                    var items = [];
+                    var previous = 0;
+                    for (var page = 1; page <= totalPages; page += 1) {
+                        if (page === 1 || page === totalPages || Math.abs(page - currentPage) <= 1) {
+                            if (previous && page - previous > 1) {
+                                items.push('ellipsis');
+                            }
+                            items.push(page);
+                            previous = page;
+                        }
+                    }
+                    return items;
+                }
+
+                function renderPagination(currentPage) {
+                    var buttons = ['<button type="button" class="blog-page-btn blog-page-prev" data-page="' + (currentPage - 1) + '"' + (currentPage === 1 ? ' disabled' : '') + '>上一页</button>'];
+
+                    pageItems(currentPage).forEach(function (item) {
+                        if (item === 'ellipsis') {
+                            buttons.push('<span class="blog-page-ellipsis">...</span>');
+                            return;
+                        }
+                        buttons.push(
+                            '<button type="button" class="blog-page-btn' + (item === currentPage ? ' is-active' : '') + '" data-page="' + item + '"' + (item === currentPage ? ' aria-current="page"' : '') + '>' + item + '</button>',
+                        );
+                    });
+
+                    buttons.push('<button type="button" class="blog-page-btn blog-page-next" data-page="' + (currentPage + 1) + '"' + (currentPage === totalPages ? ' disabled' : '') + '>下一页</button>');
+
+                    pagination.innerHTML = '<div class="blog-pagination-summary">共 ' + cards.length + ' 篇，第 ' + currentPage + ' / ' + totalPages + ' 页</div><div class="blog-pagination-controls">' + buttons.join('') + '</div>';
+                }
+
+                function scrollToListTop() {
+                    var listSection = document.querySelector('.blog-list-section');
+                    var header = document.getElementById('header');
+                    if (!listSection) {
+                        return;
+                    }
+
+                    var headerOffset = header ? header.offsetHeight : 0;
+                    var top = listSection.getBoundingClientRect().top + window.pageYOffset - headerOffset - 24;
+                    window.scrollTo({
+                        top: Math.max(0, top),
+                        behavior: 'smooth',
+                    });
+                }
+
+                function showPage(page, shouldScroll) {
+                    var currentPage = Math.max(1, Math.min(totalPages, page));
+                    var start = (currentPage - 1) * pageSize;
+                    var end = start + pageSize;
+                    cards.forEach(function (card, index) {
+                        card.hidden = index < start || index >= end;
+                    });
+                    renderPagination(currentPage);
+                    updateUrl(currentPage);
+                    if (shouldScroll) {
+                        window.requestAnimationFrame(scrollToListTop);
+                    }
+                }
+
+                pagination.addEventListener('click', function (event) {
+                    var button = event.target.closest('button[data-page]');
+                    if (!button || button.disabled) {
+                        return;
+                    }
+                    showPage(parseInt(button.dataset.page, 10), true);
+                });
+
+                window.addEventListener('popstate', function () {
+                    showPage(getPageFromUrl(), false);
+                });
+
+                showPage(getPageFromUrl(), false);
+            })();
+        </script>
     </body>
 </html>
