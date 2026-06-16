@@ -296,6 +296,34 @@
     margin: 0;
 }
 
+.f2c-waterfall-flow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.f2c-waterfall-flow > .columns {
+    display: flex;
+    margin-bottom: 0 !important;
+}
+
+.f2c-waterfall-flow .card {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .f2c-waterfall-flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .f2c-waterfall-flow {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 #f2c-scroll-row .card {
     break-inside: avoid;
     margin-bottom: calc(var(--bs-gutter-x) * 1);
