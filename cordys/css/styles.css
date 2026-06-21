@@ -321,6 +321,19 @@ body {
   animation: slideInLeft 0.8s ease-out;
 }
 
+.hero__tag {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-dark);
+  border-radius: 20px;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+}
+
 .hero__title {
   font-size: 48px;
   font-weight: 700;
