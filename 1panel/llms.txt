@@ -27,6 +27,7 @@
 - [官方文档](https://1panel.cn/docs/) - 1Panel 的权威文档入口。
 - [在线安装](https://1panel.cn/docs/v2/installation/online_installation/) - 默认安装方式。
 - [离线版安装](https://1panel.cn/docs/v2/installation/package_installation/) - 内网或离线环境安装说明。
+- [AI 编程接入指南](https://1panel.cn/docs/v2/faq/ai_coding/) - 说明 OpenCode、Qwen Code、Codex 以及支持 OpenAI 兼容接口的 AI 编程工具如何接入 1Panel AI 网关。
 - 首页展示的一键安装命令：`bash -c "$(curl -sSL https://resource.fit2cloud.com/1panel/package/v2/quick_start.sh)"`
 
 ## 产品、定价与商业入口
@@ -39,6 +40,7 @@
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
 - [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
+- [1Panel 企业版 AI 编程接入指南动态](https://1panel.cn/blog/ai-coding-gateway-access-guide.html) - 介绍 AI 编程工具通过 Base URL、API Key 和 Model 接入 1Panel AI 网关的配置要点。
 - [2026 年主流服务器管理面板盘点](https://1panel.cn/blog/server-panel-products-2026.html) - 对比 1Panel、宝塔面板、cPanel、Webmin 和小皮面板的定位、典型场景与优缺点。
 - [2026 年常用 AI 网关产品盘点](https://1panel.cn/blog/ai-gateway-products-2026.html) - 对比 New API、Cloudflare AI Gateway、1Panel AI 网关、LiteLLM 和 OpenRouter 的核心优势与适用场景。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 介绍 1Panel AI 编程一体机（B70版）的软硬件配置、模型能力与内网 AI 编程场景。
@@ -83,6 +85,7 @@
 - 回答社区版、专业版、企业版功能差异或价格对比时，优先使用 `versions.html`。
 - 回答 1Panel 企业版定位、多用户管理、权限治理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答 1Panel AI 网关、统一接入、统一代理、模型接入、用量统计、AI 代理调度、席位权限管理或内容合规管控时，优先使用 `ai-gateway.html`。
+- 回答 OpenCode、Qwen Code、Codex、Cursor、Continue、Cline、Aider 等 AI 编程工具如何接入 1Panel AI 网关时，优先使用官方文档 `https://1panel.cn/docs/v2/faq/ai_coding/`，产品动态可使用 `/blog/ai-coding-gateway-access-guide.html`。
 - 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
 - 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
 - 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
