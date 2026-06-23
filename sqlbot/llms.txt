@@ -17,7 +17,7 @@ SQLBot 官网的 LLM 友好索引。主语言为 `zh-CN`。
 ## Docs And Resources
 - https://community.fit2cloud.com/#/products/sqlbot/downloads — 下载入口。
 - https://github.com/dataease/SQLBot/ — 开源仓库。
-- https://partner.fit2cloud.com/yuyuechanpinyanshi — 预约演示。
+- https://jsj.top/f/UFPJsq — 预约演示。
 - https://www.bilibili.com/video/BV1SBtizgED4/ — 教学视频。
 
 ## Notes For LLMs
