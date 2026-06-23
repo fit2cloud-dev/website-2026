@@ -15,7 +15,7 @@ Cordys CRM 官网的 LLM 友好索引。主语言为 `zh-CN`。
 ## What The Homepage Covers
 - 开源 AI CRM 的定位与产品价值。
 - 功能亮点、优势与品牌背书。
-- 价格版本、预约演示与下载入口。
+- 价格版本、产品预约演示与下载入口。
 
 ## Product Updates
 - https://cordys.cn/blog/cordys-vs-xiaoshouyi-fxiaoke.html — Cordys CRM 与销售易、纷享销客的核心差异对比。
@@ -29,7 +29,7 @@ Cordys CRM 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - https://community.fit2cloud.com/#/products/cordys-crm/downloads — 下载入口。
 - https://github.com/1Panel-dev/CordysCRM — 开源仓库。
 - https://bbs.fit2cloud.com/c/crm/4 — Cordys CRM 用户论坛。
-- https://jsj.top/f/UFPJsq — 预约演示。
+- https://jsj.top/f/UFPJsq — 产品预约演示。
 - https://fit2cloud.com/about/index.html — 公司信息。
 - https://cordys.cn/sitemap.xml — 官网 sitemap。
 
