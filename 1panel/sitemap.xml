@@ -76,63 +76,87 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2025-12-25</lastmod>
+    <lastmod>2026-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/4.html</loc>
-    <lastmod>2025-07-27</lastmod>
+    <lastmod>2025-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2024-08-09</lastmod>
+    <lastmod>2024-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/7.html</loc>
-    <lastmod>2024-05-13</lastmod>
+    <lastmod>2024-06-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-01-12</lastmod>
+    <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-05-15</lastmod>
+    <lastmod>2023-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/ai-coding-gateway-access-guide.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/ai-coding-gateway-access/cover.png</image:loc>
+      <image:title>1Panel 企业版 AI 编程接入指南：通过 AI 网关统一接入 OpenCode、Qwen Code、Codex 等工具</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/ai-coding-gateway-access/image-01.svg</image:loc>
+      <image:title>AI 编程工具接入 1Panel AI 网关示意图</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/halo-shop-v2.25-release.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/halo-shop-v2.25/cover.png</image:loc>
+      <image:title>Halo 商城版 v2.25 正式发布：专为中国商家打造的在线商城解决方案</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/zabbix-xinchuang-deployment.html</loc>
