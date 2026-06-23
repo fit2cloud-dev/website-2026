@@ -2414,6 +2414,27 @@ body {
     line-height: 1.6;
 }
 
+.pricing-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 28px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.pricing-hero__cta:hover {
+    background: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 /* Pricing Hero decorative shapes */
 .pricing-hero__shape {
     position: absolute;
