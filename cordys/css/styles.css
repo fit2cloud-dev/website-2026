@@ -2995,7 +2995,7 @@ body {
 /* Feature Cards */
 .dev-consulting__features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 32px;
 }
@@ -3016,6 +3016,19 @@ body {
     border-color: rgba(2, 166, 171, 0.35);
     box-shadow: 0 4px 16px rgba(2, 166, 171, 0.08);
     transform: translateY(-4px);
+}
+
+a.dev-consulting__feature-card--link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.dev-consulting__feature-card--link h4 {
+    color: var(--text-primary);
+}
+
+a.dev-consulting__feature-card--link p {
+    color: var(--text-secondary);
 }
 
 .dev-consulting__feature-icon {
