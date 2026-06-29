@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节 - Cordys CRM 产品动态</title>
+        <meta name="description" content="详细介绍如何在WorkBuddy全能AI工作台中安装和使用Cordys CRM Skills，通过自然语言实现角色自适应的销售数据查询与管理，让AI真正融入每个销售环节。" />
+        <meta name="keywords" content="Cordys CRM Skills,WorkBuddy,AI CRM,CRM Skills,自然语言CRM,销售管理AI,L2C,角色自适应" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta name="theme-color" content="#02a6ab" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="icon" href="../images/favicon.png" />
+        <link rel="apple-touch-icon" href="../images/favicon.png" />
+        <link rel="canonical" href="https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" />
+        <link rel="alternate" hreflang="x-default" href="https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/styles.css?v=2" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <meta property="og:site_name" content="Cordys CRM" />
+        <meta property="og:title" content="操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节" />
+        <meta property="og:description" content="详细介绍如何在WorkBuddy全能AI工作台中安装和使用Cordys CRM Skills，通过自然语言实现角色自适应的销售数据查询与管理。" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" />
+        <meta property="og:image" content="https://cordys.cn/images/blog/cordys-17.png" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="操作教程丨在WorkBuddy中使用Cordys CRM Skills技能" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta property="og:updated_time" content="2026-06-29" />
+        <meta property="article:published_time" content="2026-06-29" />
+        <meta property="article:modified_time" content="2026-06-29" />
+        <meta property="article:section" content="Cordys CRM 产品动态" />
+        <meta property="article:author" content="FIT2CLOUD 飞致云" />
+        <meta property="article:tag" content="Cordys CRM Skills" />
+        <meta property="article:tag" content="WorkBuddy" />
+        <meta property="article:tag" content="AI CRM" />
+        <meta property="article:tag" content="CRM Skills" />
+        <meta property="article:tag" content="自然语言CRM" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节" />
+        <meta name="twitter:description" content="详细介绍如何在WorkBuddy全能AI工作台中安装和使用Cordys CRM Skills，通过自然语言实现角色自适应的销售数据查询与管理。" />
+        <meta name="twitter:image" content="https://cordys.cn/images/blog/cordys-17.png" />
+        <meta name="twitter:image:alt" content="操作教程丨在WorkBuddy中使用Cordys CRM Skills技能" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://fit2cloud.com/#organization",
+                        "name": "FIT2CLOUD 飞致云",
+                        "url": "https://fit2cloud.com/",
+                        "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" },
+                        "alternateName": "飞致云"
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://cordys.cn/#website",
+                        "url": "https://cordys.cn/",
+                        "name": "Cordys CRM",
+                        "inLanguage": "zh-CN",
+                        "publisher": { "@id": "https://fit2cloud.com/#organization" },
+                        "alternateName": "CordysCRM",
+                        "potentialAction": { "@type": "ReadAction", "target": ["https://cordys.cn/", "https://cordys.cn/blog.html", "https://cordys.cn/docs/"] }
+                    },
+                    {
+                        "@type": "ItemList",
+                        "@id": "https://cordys.cn/#site-navigation",
+                        "name": "Cordys CRM 站点导航",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "首页", "url": "https://cordys.cn/" },
+                            { "@type": "ListItem", "position": 2, "name": "产品介绍", "url": "https://cordys.cn/download/introduce-cordys_2026.pdf" },
+                            { "@type": "ListItem", "position": 3, "name": "产品动态", "url": "https://cordys.cn/blog.html" },
+                            { "@type": "ListItem", "position": 4, "name": "在线文档", "url": "https://cordys.cn/docs/" },
+                            { "@type": "ListItem", "position": 5, "name": "免费下载", "url": "https://cordys.cn/docs/installation/offline_installtion/" },
+                            { "@type": "ListItem", "position": 7, "name": "GitHub 仓库", "url": "https://github.com/1Panel-dev/CordysCRM" },
+                            { "@type": "ListItem", "position": 6, "name": "用户论坛", "url": "https://bbs.fit2cloud.com/c/crm/4" }
+                        ]
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html#breadcrumb",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://cordys.cn/" },
+                            { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://cordys.cn/blog.html" },
+                            { "@type": "ListItem", "position": 3, "name": "操作教程丨在WorkBuddy中使用Cordys CRM Skills技能", "item": "https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" }
+                        ]
+                    },
+                    {
+                        "@type": "BlogPosting",
+                        "@id": "https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html#article",
+                        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html" },
+                        "headline": "操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节",
+                        "description": "详细介绍如何在WorkBuddy全能AI工作台中安装和使用Cordys CRM Skills，通过自然语言实现角色自适应的销售数据查询与管理，让AI真正融入每个销售环节。",
+                        "image": [{ "@type": "ImageObject", "url": "https://cordys.cn/images/blog/cordys-17.png", "width": 1920, "height": 1080 }],
+                        "datePublished": "2026-06-29",
+                        "dateModified": "2026-06-29",
+                        "author": { "@type": "Organization", "name": "FIT2CLOUD 飞致云", "url": "https://fit2cloud.com/" },
+                        "publisher": { "@id": "https://fit2cloud.com/#organization" },
+                        "inLanguage": "zh-CN",
+                        "articleSection": "Cordys CRM 产品动态",
+                        "keywords": ["Cordys CRM Skills", "WorkBuddy", "AI CRM", "CRM Skills", "自然语言CRM", "销售管理AI", "L2C", "角色自适应"],
+                        "isPartOf": { "@id": "https://cordys.cn/blog.html#webpage" },
+                        "about": { "@id": "https://cordys.cn/#product" },
+                        "wordCount": 2100
+                    }
+                ]
+            }
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TWT2BFLFM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-3TWT2BFLFM');
+        </script>
+    </head>
+    <body>
+        <div class="top-bar" id="top-bar">
+            <div class="top-bar-container">
+                <div class="top-bar-left">
+                    <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                        <img src="../images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" style="height: 20px; width: auto" />
+                    </a>
+                </div>
+                <div class="top-bar-right">
+                    <div class="top-bar-dropdown" id="topBarDropdown">
+                        <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span class="dropdown-arrow">▼</span></button>
+                        <div class="top-bar-dropdown-content" id="dropdownContent">
+                            <a href="https://1panel.cn" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">1Panel</span><span class="top-bar-dropdown-item__desc">现代化、开源的 Linux 面板</span></a>
+                            <a href="https://cordys.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">Cordys</span><span class="top-bar-dropdown-item__desc">新一代的开源 AI CRM 系统</span></a>
+                            <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">JumpServer</span><span class="top-bar-dropdown-item__desc">广受欢迎的开源堡垒机</span></a>
+                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">MaxKB</span><span class="top-bar-dropdown-item__desc">强大易用的企业级智能体平台</span></a>
+                            <a href="https://dataease.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">DataEase</span><span class="top-bar-dropdown-item__desc">人人可用的开源 BI 工具</span></a>
+                            <a href="https://sqlbot.org/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">SQLBot</span><span class="top-bar-dropdown-item__desc">基于大模型的开源智能问数系统</span></a>
+                            <a href="https://metersphere.io/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">MeterSphere</span><span class="top-bar-dropdown-item__desc">新一代的开源持续测试工具</span></a>
+                            <a href="https://halo.run/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">Halo</span><span class="top-bar-dropdown-item__desc">强大易用的开源建站工具</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__brand">
+                        <a href="../index.html" class="nav__logo">
+                            <img src="../images/favicon.png" alt="Cordys CRM Logo" style="height: 48px; margin-right: 0.5em" />
+                            <span class="logo__text">Cordys CRM</span>
+                        </a>
+                    </div>
+                    <div class="nav__center">
+                        <a href="../index.html" class="nav__link">首页</a>
+                        <a href="../pricing.html" class="nav__link">价格</a>
+                        <div class="nav__dropdown" id="helpDropdown">
+                            <button class="nav__dropdown-btn" id="helpDropdownBtn" aria-expanded="false">帮助与支持 <span class="dropdown-arrow">▼</span></button>
+                            <div class="nav__dropdown-content" id="helpDropdownContent">
+                                <a href="https://cordys.cn/docs/" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer">在线文档</a>
+                                <a href="https://cordys.cn/docs/trial/" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer">在线体验</a>
+                                <a href="../blog.html" class="nav__dropdown-item">产品动态</a>
+                                <a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer">用户论坛</a>
+                                <a href="https://edu.fit2cloud.com/p/t_pc/goods_pc_detail/goods_detail/SPU_SRV_7582709936406lsgVeais91" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer">企业培训</a>
+                            </div>
+                        </div>
+                        <a href="#contact" class="nav__link">联系我们</a>
+                    </div>
+                    <div class="nav__right">
+                        <a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" class="nav__button nav__button--outline" rel="noopener noreferrer">代码仓库</a>
+                        <a href="https://cordys.cn/docs/installation/offline_installtion/" target="_blank" class="nav__button nav__button--primary" rel="noopener noreferrer"
+                            ><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" /></svg
+                            >免费下载</a
+                        >
+                    </div>
+                    <div class="nav__toggle" id="nav-toggle" aria-label="展开导航" role="button" tabindex="0">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="article-page">
+            <article class="container article-shell">
+                <a href="../blog.html" class="article-breadcrumb">产品动态</a>
+                <h1 class="article-title">操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节</h1>
+                <p class="article-summary">Cordys CRM Skills 将线索、客户、商机、合同、回款等核心管理能力封装为可被 AI 调用的技能模块，通过角色自适应机制，让不同岗位的人在提问时获得贴合自己职责的答案。</p>
+                <div class="article-meta"><time datetime="2026-06-29">2026年06月29日</time></div>
+                <img src="../images/blog/cordys-17.png" alt="操作教程丨在WorkBuddy中使用Cordys CRM Skills技能，让AI融入每个销售环节" class="article-cover" />
+                <div class="article-content">
+
+                    <p>在传统CRM系统中，销售、管理、财务团队每天都要面对一个共同的难题：想看一组数据，往往需要在层层菜单和复杂筛选器之间反复操作，大量工作时间耗费在了点击和切换上。</p>
+
+                    <p><a href="https://github.com/1Panel-dev/CordysCRM-skills" target="_blank" rel="noopener noreferrer"><strong>Cordys CRM Skills</strong></a> 可以有效解决这个问题。它并不是给CRM增加一个新界面，而是为其注入了充分的智能性，让AI智能体能够通过自然语言直接与CRM系统进行交互。用户只需像和同事说话一样提问，系统就能自动识别提问者的角色，并返回匹配的视角和内容——销售看到行动清单，经理看到团队看板，财务看到应收全景，真正实现"不同的人，看到不同的世界"。</p>
+
+                    <p>Cordys CRM Skills 是 Cordys CRM 开源项目组开发的一组标准化技能，专门设计给 AI 智能体使用。它将 Cordys CRM 中的线索、客户、商机、合同、回款等核心管理能力封装成可被 AI 调用的技能模块。通过在 WorkBuddy 等 AI 智能体平台中引用这些 Skills，智能助手就能直接理解业务语境、识别用户角色，并跨模块进行推理和查询，实现真正对话式的 CRM 应用体验。</p>
+
+                    <p>Cordys CRM Skills 的核心能力包括：</p>
+                    <p><strong>■ 角色自适应：</strong>系统能够自动识别用户角色（销售/经理/高管/商务/财务），并自动切换对应的数据范围、关注重点和输出风格；</p>
+                    <p><strong>■ 自然语言交互：</strong>支持使用日常语言提问，无需学习复杂的查询语法；</p>
+                    <p><strong>■ L2C 全链路覆盖：</strong>从线索到回款的全流程跟踪，都可以通过自然语言完成；</p>
+                    <p><strong>■ 主动预警：</strong>在智能问答的同时，支持主动发现异常问题（例如超期未跟进、商机卡顿、回款逾期等）。</p>
+
+                    <p>接下来，我们将详细介绍在 WorkBuddy 全能 AI 工作台中使用 Cordys CRM Skills 的具体方法，帮助团队快速构建与 CRM 的智能对话能力。</p>
+
+                    <h2>一、安装 WorkBuddy</h2>
+
+                    <p>打开 WorkBuddy 官网，点击下载 WorkBuddy，浏览器会自动匹配当前操作系统，下载合适的安装包，双击即可安装。</p>
+
+                    <h2>二、Cordys CRM Skills 安装</h2>
+
+                    <p>Cordys CRM Skills 已上架至 <a href="https://clawhub.ai/fit2-zhao/cordys-crm" target="_blank" rel="noopener noreferrer">ClawHub（https://clawhub.ai/fit2-zhao/cordys-crm）</a>，您可以直接在 WorkBuddy 技能市场搜索"Cordys"进行安装。</p>
+
+                    <p>安装完成后，新建任务，选择 CordysCRM，发送初始化命令。</p>
+
+                    <p>根据提示，选择提供 API 凭据，以便 WorkBuddy 完成初始化配置。</p>
+
+                    <p>登录至 Cordys CRM，从首页左下角的"个人信息"选项，进入个人中心的 API Keys 页面，从中获取 Access Key 和 Secret Key。</p>
+
+                    <p>输入相关连接信息后，Cordys CRM Skills 会自动加载用户信息，匹配用户角色，加载角色上下文。</p>
+
+                    <p>Cordys CRM Skills 内置了五种常用角色，并为每种角色预设了不同的关注重点、数据权限范围、主动预警逻辑以及输出风格。当用户通过自然语言提问时，系统会自动识别当前用户的角色身份，并应用对应的上下文规则，无需手动切换或额外配置。</p>
+
+                    <p>以下是 Cordys CRM Skills 内置五种常用角色的定位及说明：</p>
+
+                    <div style="overflow-x:auto; margin: 24px 0;">
+                        <table style="width:100%; border-collapse:collapse; font-size:14px; line-height:1.6;">
+                            <thead>
+                                <tr style="background:var(--bg-secondary);">
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">角色</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">核心关注</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">数据范围</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">主动预警</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">输出风格</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600; color:var(--color-primary, #02a6ab);">销售</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">我接下来该做什么？</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">我的客户/线索/商机</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">超期未跟进、商机卡顿</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">优先级行动清单</td>
+                                </tr>
+                                <tr style="background:var(--bg-secondary);">
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600; color:var(--color-primary, #02a6ab);">经理</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">谁需要我关注？</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">全部门+子团队</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">跟进率低、转化骤降</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">团队看板→支持下钻到个人</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600; color:var(--color-primary, #02a6ab);">高管</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">公司销售目标达成情况如何？</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">全公司</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">目标缺口、部门偏离</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">趋势分析→对比→预测</td>
+                                </tr>
+                                <tr style="background:var(--bg-secondary);">
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600; color:var(--color-primary, #02a6ab);">商务</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同签对了没有？</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同+审批流</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">到期未续、审批卡顿</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同状态+到期预警</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600; color:var(--color-primary, #02a6ab);">财务</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">钱到哪里了？</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同→回款→发票</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">逾期、未开票、链路断裂</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">应收全景→催收优先级排序</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>系统在识别用户角色后，会自动加载对应的数据权限、预警规则和输出模板。即使是同样的提问，不同角色也能获得差异化的结果和建议，大幅提升了信息获取的效率和精准度。</p>
+
+                    <h2>三、Cordys CRM Skills 模块概览</h2>
+
+                    <p>Cordys CRM Skills 覆盖了从线索到回款（Lead to Cash）的完整业务链路，将 CRM 中的核心对象和操作封装成可以被 AI 智能体调用的标准化技能模块。用户可以通过自然语言直接调用这些技能，无需关注底层数据结构和接口细节。</p>
+
+                    <p>Cordys CRM Skills 所包含的主要模块及典型用法如下：</p>
+
+                    <div style="overflow-x:auto; margin: 24px 0;">
+                        <table style="width:100%; border-collapse:collapse; font-size:14px; line-height:1.6;">
+                            <thead>
+                                <tr style="background:var(--bg-secondary);">
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">模块</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">自然语言常见叫法</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">核心能力</th>
+                                    <th style="padding:10px 14px; text-align:left; border:1px solid var(--border-color); font-weight:600; color:var(--text-primary);">典型查询示例</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">lead</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">线索</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">线索查询、跟进状态</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"查询我名下本周新增的线索"<br>"最近我部门30天没有跟进的线索有哪些"</td>
+                                </tr>
+                                <tr style="background:var(--bg-secondary);">
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">account</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">客户、公司</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">客户档案、联系人、跟进记录</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"查询某某公司的联系人信息"<br>"最近和某某客户有哪些跟进记录"</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">opportunity</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">商机</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">商机阶段、报价、预警</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"目前处于立项汇报阶段的商机有哪些"<br>"预警一下快要超期的商机"</td>
+                                </tr>
+                                <tr style="background:var(--bg-secondary);">
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">contract</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">合同状态、审批流、到期提醒</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"查询本月到期的合同"<br>"这笔合同目前审批到哪一步了"</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">lead-pool</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">线索池</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">线索池，用于共享线索</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"线索池里最近新增了哪些线索"</td>
+                                </tr>
+                                <tr style="background:var(--bg-secondary);">
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); font-weight:600;">account-pool</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">公海</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">公海，用于共享客户</td>
+                                    <td style="padding:10px 14px; border:1px solid var(--border-color); color:var(--text-secondary);">"公海里最近新增了哪些客户"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>其中，<strong>contract（合同）模块</strong>还包含一组重要的二级资源，用于追踪资金流和票据信息：</p>
+                    <p><strong>■ contract/payment-plan：</strong>回款计划</p>
+                    <p><strong>■ contract/payment-record：</strong>回款记录</p>
+                    <p><strong>■ contract/business-title：</strong>工商抬头</p>
+                    <p><strong>■ invoice：</strong>发票</p>
+                    <p><strong>■ opportunity/quotation：</strong>报价单</p>
+
+                    <p>这些二级资源可以与 Cordys CRM 的合同模块结合使用，例如查询"某合同的回款计划"、"未开票的合同有哪些"等。</p>
+
+                    <p>通过这些模块，Cordys CRM Skills 能够支持从线索获取、商机推进、合同签订到最终回款的全流程自然语言交互，利用 AI 智能体真正支持从线索到回款的全流程业务操作。</p>
+
+                    <h2>四、使用示例</h2>
+
+                    <p>配置完成后，用户可以直接在 WorkBuddy 中通过自然语言完成以下典型业务操作：</p>
+
+                    <p><strong>1. 查询个人名下的线索/客户/商机</strong></p>
+                    <p>销售人员可以直接询问"我名下本周新增了哪些线索"或"我有哪些商机快要到期"，系统自动匹配个人数据范围，给出行动清单。</p>
+
+                    <p><strong>2. 查询团队所有的线索/客户/商机</strong></p>
+                    <p>销售经理可以查询"我们团队这个月线索转化率如何"，系统自动切换到部门视角，汇总团队数据并提示需要关注的异常成员。</p>
+
+                    <p><strong>3. 查看区域当月运营复盘报告</strong></p>
+                    <p>区域负责人可以要求"生成本区域本月销售运营复盘报告"，系统按照高管视角自动整合线索、商机、合同、回款的完整链路数据，输出结构化的趋势分析。</p>
+
+                    <p><strong>4. 查看今日回款情况</strong></p>
+                    <p>财务人员查询"今天有哪些应收款项"，系统以应收全景视角返回合同、回款记录与发票状态，并按催收优先级排序。</p>
+
+                    <p><strong>5. 查看月度财报数据</strong></p>
+                    <p>可一键生成月度财务数据汇总，包含已回款、待回款、逾期回款等维度，支持下钻到具体合同和客户层级。</p>
+
+                    <p>Cordys CRM Skills 将 CRM 从"需要学习的工具"变成了"可以对话的同事"，不同角色的团队成员无需额外培训，即可通过自然语言获取各自所需的业务洞察。如需体验，欢迎访问 <a href="https://clawhub.ai/fit2-zhao/cordys-crm" target="_blank" rel="noopener noreferrer">ClawHub 技能页面</a>或在 WorkBuddy 技能市场搜索"Cordys"进行安装。</p>
+
+                </div>
+            </article>
+        </main>
+        <!-- Contact Section -->
+        <section class="section section--contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">联系我们</h2>
+                <p class="section__subtitle">想要进一步了解 Cordys? 欢迎通过以下方式联系我们。</p>
+                <div class="contact__card">
+                    <div class="contact__grid">
+                        <div class="contact__column">
+                            <h3 class="contact__label">购买咨询</h3>
+                            <div class="contact__qr">
+                                <img src="../images/wechat-customer.jpg" alt="购买咨询二维码" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="contact__column">
+                            <h3 class="contact__label">技术交流群</h3>
+                            <div class="contact__qr">
+                                <img src="../images/qrcode.png" alt="技术交流群二维码" loading="lazy" />
+                            </div>
+                        </div>
+                        <div class="contact__column contact__column--info">
+                            <h3 class="contact__label">联系方式</h3>
+                            <div class="contact__info-list">
+                                <div class="contact__info-item">
+                                    <span class="contact__info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                        </svg>
+                                    </span>
+                                    <span>400-052-0755</span>
+                                </div>
+                                <div class="contact__info-item">
+                                    <span class="contact__info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </span>
+                                    <span>support@fit2cloud.com</span>
+                                </div>
+                                <div class="contact__info-item">
+                                    <span class="contact__info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                        </svg>
+                                    </span>
+                                    <a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a>
+                                </div>
+                                <div class="contact__info-item">
+                                    <span class="contact__info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                                        </svg>
+                                    </span>
+                                    <a href="../download/introduce-cordys_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__brand">
+                        <a href="../index.html" class="footer__brand-link" aria-label="Cordys CRM 首页">
+                            <img src="../images/favicon.png" alt="Cordys CRM Logo" />
+                            <span>Cordys CRM</span>
+                        </a>
+                        <p class="footer__desc">新一代开源 AI CRM 系统，帮助企业实现从线索到回款的全生命周期管理。</p>
+                    </div>
+                    <nav class="footer__nav" aria-label="底部导航">
+                        <div class="footer__group">
+                            <h2 class="footer__title">产品</h2>
+                            <ul class="footer__links">
+                                <li><a href="../download/introduce-cordys_2026.pdf" target="_blank" rel="noopener noreferrer">产品介绍</a></li>
+                                <li><a href="../blog.html">产品动态</a></li>
+                                <li><a href="../pricing.html">产品价格</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__group">
+                            <h2 class="footer__title">资源</h2>
+                            <ul class="footer__links">
+                                <li><a href="https://cordys.cn/docs/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank" rel="noopener noreferrer">用户论坛</a></li>
+                                <li><a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" rel="noopener noreferrer">GitHub 仓库</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__group">
+                            <h2 class="footer__title">联系</h2>
+                            <ul class="footer__links">
+                                <li><a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a></li>
+                                <li><a href="https://fit2cloud.com/about/index.html" target="_blank" rel="noopener noreferrer">关于飞致云</a></li>
+                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                    <a class="footer__beian" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号-11</a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
