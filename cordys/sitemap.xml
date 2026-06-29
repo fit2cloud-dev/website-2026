@@ -105,12 +105,6 @@
 
   <!-- 教程 / 操作指南 -->
   <url>
-    <loc>https://cordys.cn/blog/sqlbot-sales-analytics.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://cordys.cn/blog/maxkb-sales-agents.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
