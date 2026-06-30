@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://cordys.cn/blog.html</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -125,6 +125,12 @@
   <url>
     <loc>https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html</loc>
     <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cordys.cn/blog/downloads-300000.html</loc>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
