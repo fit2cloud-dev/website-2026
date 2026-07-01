@@ -31,6 +31,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://1panel.cn/ai-portal.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/enterprise-ai-portal.png</image:loc>
+      <image:title>1Panel AI 门户模型广场界面</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/ai-gateway.html</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
