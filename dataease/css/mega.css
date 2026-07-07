@@ -186,7 +186,7 @@ th.visible-print,td.visible-print {
 }
 
 .mega-nav-sandbox .mega-nav-banner .text-muted {
-	color: #ffffff
+	color: #ffffff !important
 }
 
 .mega-nav-sandbox .mega-nav-banner-logo>img {

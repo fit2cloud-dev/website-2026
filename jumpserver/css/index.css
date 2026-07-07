@@ -3176,7 +3176,7 @@ a:focus {
 }
 
 .mega-nav-sandbox .mega-nav-tagline {
-    color: #6b7d96 !important;
+    color: #bcc7d6 !important;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0;
@@ -3185,7 +3185,7 @@ a:focus {
 }
 
 .mega-nav-sandbox .mega-nav-tagline .text-muted {
-    color: #6b7d96 !important;
+    color: #bcc7d6 !important;
 }
 
 .mega-nav-sandbox .mega-nav-ctrl {
@@ -4209,7 +4209,7 @@ th,
 }
 
 .mega-nav-sandbox .mega-nav-tagline {
-    color: #6b7d96 !important;
+    color: #bcc7d6 !important;
     font-family: var(--js-font-main) !important;
     font-size: var(--js-font-small);
     font-weight: 500;
