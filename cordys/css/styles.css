@@ -482,6 +482,40 @@ body {
    Contact Section Styles
    ========================================================================== */
 
+.contact__partner {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.contact__partner-desc {
+    font-size: 16px;
+    color: var(--text-secondary);
+    margin: 12px 0 24px;
+    line-height: 1.7;
+}
+
+.contact__partner-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--primary-color);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact__partner-cta:hover {
+    background: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
 .section--contact {
     background: var(--bg-secondary);
     padding: 80px 0;
@@ -601,6 +635,15 @@ body {
 
     .contact__info-item {
         justify-content: center;
+    }
+
+    .contact__partner {
+        margin-top: 36px;
+        padding-top: 28px;
+    }
+
+    .contact__partner-desc {
+        font-size: 15px;
     }
 }
 
