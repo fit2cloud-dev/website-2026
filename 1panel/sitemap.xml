@@ -20,13 +20,13 @@
   </url>
   <url>
     <loc>https://1panel.cn/versions.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/enterprise.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,6 +57,16 @@
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/virtual-machine.html</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/virtual-machine/overview.png</image:loc>
+      <image:title>1Panel 虚拟机管理概览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/security-ops-report.html</loc>
