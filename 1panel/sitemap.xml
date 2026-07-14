@@ -20,13 +20,13 @@
   </url>
   <url>
     <loc>https://1panel.cn/versions.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/enterprise.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -60,12 +60,12 @@
   </url>
   <url>
     <loc>https://1panel.cn/virtual-machine.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://1panel.cn/images/virtual-machine/overview.webp</image:loc>
-      <image:title>1Panel 虚拟机管理概览</image:title>
+      <image:title>1Panel 企业版 KVM Web 虚拟机管理概览</image:title>
     </image:image>
   </url>
   <url>
