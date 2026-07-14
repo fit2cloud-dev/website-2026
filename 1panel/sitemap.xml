@@ -96,63 +96,83 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2026-01-17</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/4.html</loc>
-    <lastmod>2025-09-03</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-05-09</lastmod>
+    <lastmod>2025-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2024-10-30</lastmod>
+    <lastmod>2024-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/7.html</loc>
-    <lastmod>2024-06-14</lastmod>
+    <lastmod>2024-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-02-03</lastmod>
+    <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2023-10-27</lastmod>
+    <lastmod>2023-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-06-29</lastmod>
+    <lastmod>2023-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/11.html</loc>
+    <lastmod>2023-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/kvm-web-ui/cover.webp</image:loc>
+      <image:title>KVM Web UI 有了新选择：1Panel 企业版支持虚拟机管理</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://1panel.cn/images/virtual-machine/overview.webp</image:loc>
+      <image:title>1Panel 企业版 KVM 虚拟机管理 Web UI 资源概览</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/ai-coding-gateway-access-guide.html</loc>
