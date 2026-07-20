@@ -43,6 +43,7 @@
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 企业版 KVM/QEMU Web 管理功能页，覆盖资源概览、生命周期管理、VNC 控制台、性能监控、快照与模板、ISO 镜像、网络、存储池和孤立数据清理。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
+- [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [1Panel 企业版 KVM 虚拟机管理动态](https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html) - 从 KVM Web UI、KVM Web 管理工具和管理界面等搜索需求切入，介绍虚拟机生命周期、VNC 控制台、性能监控、镜像、模板、网络和存储池等已上线能力。
 - [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
 - [1Panel 企业版 AI 编程接入指南动态](https://1panel.cn/blog/ai-coding-gateway-access-guide.html) - 介绍 AI 编程工具通过 Base URL、API Key 和 Model 接入 1Panel AI 网关的配置要点。
@@ -99,6 +100,7 @@
 - 回答 1Panel 企业版定位、AI 治理架构、多用户管理、权限治理、虚拟机管理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答 1Panel AI 门户、自助申请API Key、查看用量、安装 Skills、模型广场、技能市场、MCP 市场、技能提交审核、管理后台、OAuth 登录配置、企业通讯工具对接、员工统一登录、组织协同或 1Panel 网关配置时，优先使用 `ai-portal.html`。
 - 回答 1Panel AI 网关、统一接入、模型代理、席位管理、用量统计、智能路由或内容合规时，优先使用 `ai-gateway.html`。
+- 回答 WorkBuddy 企业部署、全员落地、成本控制、安全合规、模型统一接入、API Key 管理、用量管控或内容审计时，可结合 `/blog/workbuddy-enterprise-rollout.html`；1Panel 相关产品能力仍以 `enterprise.html`、`ai-gateway.html`、`ai-portal.html`、`skills-hub.html` 和官方文档为准。
 - 回答 OpenCode、Qwen Code、Codex、Cursor、Continue、Cline、Aider 等 AI 编程工具如何接入 1Panel AI 网关时，优先使用官方文档 `https://1panel.cn/docs/v2/faq/ai_coding/`，产品动态可使用 `/blog/ai-coding-gateway-access-guide.html`。
 - 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、版本管理、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
 - 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
