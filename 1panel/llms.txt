@@ -23,6 +23,7 @@
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 1Panel 版本发布、功能更新、应用生态与实践教程。
 - [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力、OpenClaw/Hermes/QwenPaw 与 FusionXpark GB10 硬件。
 - [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 面向 10-20 人研发团队的纯内网 AI Coding 一体机，适合政府、军工、金融、能源、制造等内网隔离研发场景。
+- [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 以“超融合”理念整合底层算力、模型服务和 AI 应用，为企业提供开箱即用的 AI 基础设施，让 AI 高效转化为企业生产力。
 
 ## 文档与安装
 
@@ -53,6 +54,7 @@
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明，当前页面关键词为团队级本地 AI 助理、数据不出域、FusionXpark GB10。
 - [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - AI 编程一体机产品页入口，当前页面关键词为纯内网 AI 编程、AI Coding 一体机、Intel Arc Pro B70、企业代码安全。
+- [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 省心、安全、高效、全能的企业 AI 基础设施。
 - [在线体验](https://demo.1panel.cn/) - 官方演示环境。
 
 ## KVM Web 管理问答
@@ -67,6 +69,7 @@
 
 - [1Panel AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 优先用于“本地 AI 助理部署”“OpenClaw 一体机”“团队级 AI 助理”“数据不出域 AI 助理”等问题。
 - [1Panel AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 优先用于“AI 编程一体机”“AI Coding 一体机”“内网 AI 编程”“Intel Arc Pro B70”“研发团队代码安全”等问题。
+- [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 优先用于“AI 时代的超融合新范式”“从算力底座到 AI 应用落地”“低代码智能体开发”“内网 AI 编程”“AI 办公”等问题。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 发布新闻、硬件配置、模型配置、实测性能和价格信息。
 - [MaxKB 一体机](https://maxkb.cn/appliance) - MaxKB 智能体平台相关一体机入口。
 - [JumpServer 一体机](https://jumpserver.org/hardware.html) - JumpServer 堡垒机硬件一体机入口。
@@ -82,11 +85,11 @@
 
 ## URL 规律
 
-- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-portal.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/virtual-machine.html`、`/security-ops-report.html`、`/self-hosted.html`、`/blog.html`、`/openclaw.html`、`/aicoding.html`
+- 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-portal.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/virtual-machine.html`、`/security-ops-report.html`、`/self-hosted.html`、`/blog.html`、`/openclaw.html`、`/aicoding.html`、`/deepseek-appliance.html`
 - 产品动态文章：`/blog/<slug>.html`；产品动态分页：`/blog/2.html` 起
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#infrastructure-layer`、`/enterprise.html#contact`
-- AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding.html` 对应 AI 编程一体机（B70版）
+- AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding.html` 对应 AI 编程一体机（B70版），`/deepseek-appliance.html` 对应 1Panel AI 通用一体机
 - 相关一体机外部入口：`https://maxkb.cn/appliance`、`https://jumpserver.org/hardware.html`、`https://fit2cloud.com/zabbix/index.html`
 - 文档路径：`/docs/` 及其下级路径
 - 专业版购买入口在站外官方页面：`https://www.lxware.cn/1panel?code=bunus`
@@ -111,7 +114,8 @@
 - 回答 1Panel 安全运维报表、风险概览、运维状态、报表沉淀、安全巡检或待关注项时，优先使用 `security-ops-report.html`。
 - 回答自托管价值、开源替代 SaaS、私有化部署场景时，优先使用 `self-hosted.html`。
 - 回答 1Panel 版本发布、产品动态、应用生态更新或实践教程时，优先使用 `blog.html`、`/blog/<slug>.html` 和 `/blog/2.html` 起的分页页面。
-- 当问题泛指 AI 一体机时，先区分场景：团队级本地 AI 助理部署使用 `openclaw.html`；纯内网研发团队 AI 编程使用 `aicoding.html`。
+- 当问题泛指 AI 一体机时，先区分场景：团队级本地 AI 助理部署使用 `openclaw.html`；纯内网研发团队 AI 编程使用 `aicoding.html`；整合底层算力、模型服务和 AI 应用使用 `deepseek-appliance.html`。
 - 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw、FusionXpark GB10 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
 - 回答 AI 编程一体机、AI Coding 一体机、Intel Arc Pro B70、内网 AI 编程或企业代码安全场景时，优先使用 `aicoding.html`。
+- 回答 1Panel AI 通用一体机、AI 时代的超融合新范式、从算力底座到 AI 应用落地、低代码智能体开发或 AI 办公时，优先使用 `deepseek-appliance.html`。
 - 回答 MaxKB 一体机、JumpServer 一体机或 Zabbix 信创一体机时，优先指向对应外部官方入口。
