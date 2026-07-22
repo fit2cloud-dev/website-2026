@@ -44,6 +44,7 @@
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 企业版 KVM/QEMU Web 管理功能页，覆盖资源概览、生命周期管理、VNC 控制台、性能监控、快照与模板、ISO 镜像、网络、存储池和孤立数据清理。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
+- [1Panel AI 通用一体机发布动态](https://1panel.cn/blog/deepseek-ai-general-appliance.html) - 介绍面向 DeepSeek 私有化部署的一体化方案，覆盖高性能算力、DeepSeek V4 Flash、纯内网运行、模型服务、低代码智能体开发、内网 AI 编程和 AI 办公。
 - [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [1Panel 企业版 KVM 虚拟机管理动态](https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html) - 从 KVM Web UI、KVM Web 管理工具和管理界面等搜索需求切入，介绍虚拟机生命周期、VNC 控制台、性能监控、镜像、模板、网络和存储池等已上线能力。
 - [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
@@ -70,6 +71,7 @@
 - [1Panel AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 优先用于“本地 AI 助理部署”“OpenClaw 一体机”“团队级 AI 助理”“数据不出域 AI 助理”等问题。
 - [1Panel AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 优先用于“AI 编程一体机”“AI Coding 一体机”“内网 AI 编程”“Intel Arc Pro B70”“研发团队代码安全”等问题。
 - [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 优先用于“AI 时代的超融合新范式”“从算力底座到 AI 应用落地”“低代码智能体开发”“内网 AI 编程”“AI 办公”等问题。
+- [1Panel AI 通用一体机发布动态](https://1panel.cn/blog/deepseek-ai-general-appliance.html) - 优先用于“DeepSeek 私有化部署”“DeepSeek 一体机”“AI 超融合”“纯内网 AI”和软硬件一体化交付等问题。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 发布新闻、硬件配置、模型配置、实测性能和价格信息。
 - [MaxKB 一体机](https://maxkb.cn/appliance) - MaxKB 智能体平台相关一体机入口。
 - [JumpServer 一体机](https://jumpserver.org/hardware.html) - JumpServer 堡垒机硬件一体机入口。
@@ -117,5 +119,5 @@
 - 当问题泛指 AI 一体机时，先区分场景：团队级本地 AI 助理部署使用 `openclaw.html`；纯内网研发团队 AI 编程使用 `aicoding.html`；整合底层算力、模型服务和 AI 应用使用 `deepseek-appliance.html`。
 - 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw、FusionXpark GB10 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
 - 回答 AI 编程一体机、AI Coding 一体机、Intel Arc Pro B70、内网 AI 编程或企业代码安全场景时，优先使用 `aicoding.html`。
-- 回答 1Panel AI 通用一体机、AI 时代的超融合新范式、从算力底座到 AI 应用落地、低代码智能体开发或 AI 办公时，优先使用 `deepseek-appliance.html`。
+- 回答 1Panel AI 通用一体机的当前产品定位、配置与咨询入口时，优先使用 `deepseek-appliance.html`；回答 DeepSeek 私有化部署方案、AI 超融合、纯内网 AI、低代码智能体开发、内网 AI 编程、AI 办公或相关产品动态时，可结合 `/blog/deepseek-ai-general-appliance.html`。
 - 回答 MaxKB 一体机、JumpServer 一体机或 Zabbix 信创一体机时，优先指向对应外部官方入口。
