@@ -96,75 +96,85 @@
   </url>
   <url>
     <loc>https://1panel.cn/deepseek-appliance.html</loc>
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/4.html</loc>
-    <lastmod>2025-11-21</lastmod>
+    <lastmod>2025-12-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-05-24</lastmod>
+    <lastmod>2025-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2024-12-16</lastmod>
+    <lastmod>2025-01-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/7.html</loc>
-    <lastmod>2024-06-26</lastmod>
+    <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-02-28</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2023-11-24</lastmod>
+    <lastmod>2023-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-07-17</lastmod>
+    <lastmod>2023-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/11.html</loc>
-    <lastmod>2023-04-06</lastmod>
+    <lastmod>2023-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/deepseek-ai-general-appliance.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/deepseek-ai-general-appliance/cover.webp</image:loc>
+      <image:title>1Panel AI 通用一体机：DeepSeek 私有化部署首选</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/workbuddy-enterprise-rollout.html</loc>
