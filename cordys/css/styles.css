@@ -252,7 +252,9 @@ body {
 }
 
 .nav__dropdown-item {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 16px;
   color: var(--text-secondary);
   text-decoration: none;
@@ -261,6 +263,12 @@ body {
   border-radius: var(--radius-sm);
   transition: all 0.2s ease;
   white-space: nowrap;
+}
+
+.nav__dropdown-item svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 .nav__dropdown-item:hover {
@@ -835,9 +843,6 @@ body {
 }
 
 .product-overview__media {
-  overflow: hidden;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
   background: transparent;
 }
 
@@ -948,9 +953,6 @@ body {
 }
 
 .preview-card__frame {
-  overflow: hidden;
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
   background: transparent;
 }
 
