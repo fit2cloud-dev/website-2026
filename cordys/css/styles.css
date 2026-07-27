@@ -1465,6 +1465,415 @@ body {
   text-decoration: underline;
 }
 
+/* ── Community vs Enterprise article ── */
+.article-page--comparison {
+  background:
+    radial-gradient(circle at 50% 11%, rgba(2, 166, 171, 0.11), transparent 28rem),
+    linear-gradient(180deg, #f7fbfb 0%, #ffffff 36%, #f4f7f9 100%);
+}
+
+.article-page--comparison .article-shell {
+  max-width: 1080px;
+}
+
+.article-page--comparison .article-breadcrumb,
+.article-page--comparison .article-title,
+.article-page--comparison .article-summary,
+.article-page--comparison .article-meta {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.article-page--comparison .article-breadcrumb {
+  display: flex;
+  width: max-content;
+  margin-bottom: 18px;
+  padding: 7px 14px;
+  border: 1px solid rgba(2, 166, 171, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(15, 55, 61, 0.06);
+}
+
+.article-page--comparison .article-title {
+  max-width: 900px;
+  font-size: clamp(34px, 4vw, 48px);
+  letter-spacing: -0.025em;
+}
+
+.article-page--comparison .article-summary {
+  max-width: 800px;
+  color: #53666b;
+}
+
+.article-page--comparison .article-cover {
+  width: min(100%, 760px);
+  max-height: 520px;
+  margin-top: 40px;
+  border: 1px solid rgba(2, 166, 171, 0.18);
+  border-radius: 24px;
+  background: #071f2a;
+  box-shadow: 0 26px 64px rgba(8, 46, 54, 0.18);
+  object-fit: cover;
+}
+
+.article-page--comparison .article-content {
+  max-width: 852px;
+  margin: 48px auto 0;
+}
+
+.article-page--comparison .article-content .article-lead {
+  margin-bottom: 42px;
+  padding: 24px 26px;
+  border: 1px solid rgba(2, 166, 171, 0.16);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(2, 166, 171, 0.08), rgba(82, 239, 194, 0.04));
+  color: #304b50;
+  font-size: 17px;
+  line-height: 2;
+}
+
+.article-page--comparison .article-content h2 {
+  position: relative;
+  margin: 58px 0 20px;
+  padding-left: 18px;
+  color: #163b40;
+  font-size: 28px;
+  letter-spacing: -0.015em;
+}
+
+.article-page--comparison .article-content h2::before {
+  position: absolute;
+  top: 0.15em;
+  bottom: 0.15em;
+  left: 0;
+  width: 5px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #02a6ab, #52efc2);
+  content: "";
+}
+
+.article-page--comparison .article-content h3 {
+  margin-top: 36px;
+  color: #244a4f;
+  font-size: 21px;
+}
+
+.article-page--comparison .article-content p,
+.article-page--comparison .article-content li {
+  color: #465f64;
+  line-height: 1.95;
+}
+
+.article-page--comparison .article-key-points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 22px 0 28px;
+}
+
+.article-page--comparison .article-key-points p {
+  display: flex;
+  position: relative;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid #dce9e9;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 28px rgba(19, 61, 67, 0.06);
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.article-page--comparison .article-key-points p strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #126f73;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.article-page--comparison .article-key-points--community {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.article-page--comparison .article-key-points--community p {
+  border-top: 3px solid rgba(2, 166, 171, 0.65);
+}
+
+.article-page--comparison .article-key-points--enterprise p {
+  border-top: 3px solid rgba(205, 166, 58, 0.7);
+}
+
+.article-page--comparison .article-key-points--enterprise p strong {
+  color: #8a6a13;
+}
+
+.article-page--comparison .article-key-points--skills p,
+.article-page--comparison .article-key-points--support p {
+  border-top: 3px solid rgba(2, 166, 171, 0.48);
+}
+
+.article-page--comparison .article-highlight {
+  margin: 24px 0 30px;
+  padding: 22px 24px;
+  border: 1px solid rgba(2, 166, 171, 0.2);
+  border-left: 5px solid #02a6ab;
+  border-radius: 0 14px 14px 0;
+  background: #f2fbfa;
+  color: #31565a;
+}
+
+.article-page--comparison .article-highlight strong {
+  color: #087a7f;
+}
+
+.article-page--comparison .article-content .article-table-wrapper {
+  width: 100%;
+  margin: 30px 0 38px;
+  overflow-x: auto;
+  border: 1px solid #d9e5e6;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 44px rgba(17, 60, 66, 0.1);
+  scrollbar-color: rgba(2, 166, 171, 0.45) transparent;
+  scrollbar-width: thin;
+}
+
+.article-page--comparison .article-content .article-table {
+  min-width: 720px;
+  color: #355156;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.article-page--comparison .article-content .article-table--pricing {
+  min-width: 800px;
+}
+
+.article-page--comparison .article-content .article-table th,
+.article-page--comparison .article-content .article-table td {
+  padding: 17px 20px;
+  border-right: 1px solid #e2ebec;
+  border-bottom: 1px solid #e2ebec;
+  vertical-align: middle;
+}
+
+.article-page--comparison .article-content .article-table th:last-child,
+.article-page--comparison .article-content .article-table td:last-child {
+  border-right: 0;
+}
+
+.article-page--comparison .article-content .article-table thead th {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: #123f46;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.article-page--comparison .article-content .article-table tbody tr:nth-child(even) {
+  background: #f7fafb;
+}
+
+.article-page--comparison .article-content .article-table tbody tr:hover {
+  background: #eef9f8;
+}
+
+.article-page--comparison .article-content .article-table tbody td:first-child {
+  color: #24484d;
+  font-weight: 650;
+}
+
+.article-page--comparison .article-content .article-table--comparison thead th:nth-child(2) {
+  background: #08787c;
+}
+
+.article-page--comparison .article-content .article-table--comparison thead th:nth-child(3) {
+  background: #7a641f;
+}
+
+.article-page--comparison .article-content .article-table--comparison tbody td:nth-child(2) {
+  background: rgba(2, 166, 171, 0.045);
+}
+
+.article-page--comparison .article-content .article-table--comparison tbody td:nth-child(3) {
+  background: rgba(205, 166, 58, 0.06);
+}
+
+.article-page--comparison .article-content .article-table--pricing tbody td:nth-child(2) {
+  color: #08787c;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.article-page--comparison .article-content .article-tip {
+  margin: 28px 0 34px;
+  padding: 18px 22px;
+  border: 1px solid rgba(2, 166, 171, 0.18);
+  border-left: 4px solid #02a6ab;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(2, 166, 171, 0.09), rgba(82, 239, 194, 0.06));
+  box-shadow: 0 10px 28px rgba(19, 61, 67, 0.06);
+}
+
+.article-page--comparison .article-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin: 24px 0 34px;
+}
+
+.article-page--comparison .article-choice-card {
+  padding: 24px;
+  border: 1px solid #dce9e9;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(19, 61, 67, 0.07);
+}
+
+.article-page--comparison .article-choice-card--community {
+  border-top: 4px solid #02a6ab;
+}
+
+.article-page--comparison .article-choice-card--enterprise {
+  border-top: 4px solid #cda63a;
+}
+
+.article-page--comparison .article-choice-card p {
+  margin-bottom: 12px;
+}
+
+.article-page--comparison .article-choice-card p strong {
+  color: #163f44;
+  font-size: 17px;
+}
+
+.article-page--comparison .article-choice-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-page--comparison .article-choice-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0;
+  padding: 7px 0;
+  font-size: 15px;
+}
+
+.article-page--comparison .article-choice-card li::before {
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+  margin-top: calc(0.975em - 4px);
+  border-radius: 50%;
+  background: #02a6ab;
+  box-shadow: 0 0 0 4px rgba(2, 166, 171, 0.11);
+  content: "";
+}
+
+.article-page--comparison .article-choice-card--enterprise li::before {
+  background: #c39b2f;
+  box-shadow: 0 0 0 4px rgba(195, 155, 47, 0.12);
+}
+
+@media (hover: hover) {
+  .article-page--comparison .article-key-points p:hover {
+    border-color: rgba(2, 166, 171, 0.34);
+    box-shadow: 0 14px 34px rgba(19, 61, 67, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 899px) {
+  .article-page--comparison .article-key-points--community {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .article-page--comparison .article-key-points--community p:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-page--comparison .article-title {
+    font-size: 30px;
+  }
+
+  .article-page--comparison .article-cover {
+    margin-top: 30px;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(8, 46, 54, 0.16);
+  }
+
+  .article-page--comparison .article-content {
+    margin-top: 36px;
+  }
+
+  .article-page--comparison .article-content .article-lead {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .article-page--comparison .article-content h2 {
+    margin-top: 46px;
+    font-size: 24px;
+  }
+
+  .article-page--comparison .article-key-points,
+  .article-page--comparison .article-choice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-page--comparison .article-key-points--community p:last-child {
+    grid-column: auto;
+  }
+
+  .article-page--comparison .article-key-points p,
+  .article-page--comparison .article-choice-card {
+    padding: 19px;
+  }
+
+  .article-page--comparison .article-content .article-table-wrapper {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .article-page--comparison .article-content .article-table th,
+  .article-page--comparison .article-content .article-table td {
+    padding: 14px 16px;
+  }
+
+  .article-page--comparison .article-content .article-table th:first-child,
+  .article-page--comparison .article-content .article-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  .article-page--comparison .article-content .article-table thead th:first-child {
+    z-index: 2;
+    background: #123f46;
+  }
+
+  .article-page--comparison .article-content .article-table tbody td:first-child {
+    background: #ffffff;
+    box-shadow: 8px 0 16px -14px rgba(15, 46, 50, 0.8);
+  }
+
+  .article-page--comparison .article-content .article-table tbody tr:nth-child(even) td:first-child {
+    background: #f7fafb;
+  }
+}
+
 /* ==========================================================================
    Animations
    ========================================================================== */
