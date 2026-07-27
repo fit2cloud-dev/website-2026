@@ -1380,6 +1380,58 @@ body {
   text-align: center;
 }
 
+.article-content .article-table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0 28px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+
+.article-content .article-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.article-content .article-table th,
+.article-content .article-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.article-content .article-table thead th {
+  background: var(--bg-soft, #f8fafc);
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.article-content .article-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.article-content .article-table tbody tr:hover {
+  background: rgba(2, 166, 171, 0.04);
+}
+
+.article-content .article-tip {
+  margin: 20px 0 28px;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  background: rgba(2, 166, 171, 0.08);
+  border-left: 4px solid var(--primary, #02a6ab);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.article-content .article-tip a {
+  color: var(--primary, #02a6ab);
+  font-weight: 500;
+}
+
 .article-content pre {
   overflow-x: auto;
   margin: 18px 0 24px;
