@@ -1472,10 +1472,6 @@ body {
     linear-gradient(180deg, #f7fbfb 0%, #ffffff 36%, #f4f7f9 100%);
 }
 
-.article-page--comparison .article-shell {
-  max-width: 1080px;
-}
-
 .article-page--comparison .article-breadcrumb,
 .article-page--comparison .article-title,
 .article-page--comparison .article-summary,
@@ -1497,13 +1493,11 @@ body {
 }
 
 .article-page--comparison .article-title {
-  max-width: 900px;
   font-size: clamp(34px, 4vw, 48px);
   letter-spacing: -0.025em;
 }
 
 .article-page--comparison .article-summary {
-  max-width: 800px;
   color: #53666b;
 }
 
@@ -1519,7 +1513,6 @@ body {
 }
 
 .article-page--comparison .article-content {
-  max-width: 852px;
   margin: 48px auto 0;
 }
 
