@@ -82,6 +82,7 @@
 
 - [应用商店](https://apps.fit2cloud.com/1panel) - 1Panel 官方应用商店。
 - [GitHub 仓库](https://github.com/1Panel-dev/1Panel) - 源码、Release、Issue 与社区协作入口。
+- [技术交流群](https://1panel.cn/#contact-us) - 官网联系区域提供微信二维码，供用户扫码加入 1Panel 技术交流群。
 - [社区论坛](https://bbs.fit2cloud.com/c/1p/) - 中文社区讨论与求助。
 - [GitHub Issues](https://github.com/1Panel-dev/1Panel/issues) - Bug 与功能建议。
 - [英文站点](https://1panel.pro/) - 国际版官网。
@@ -90,7 +91,7 @@
 
 - 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-portal.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/virtual-machine.html`、`/security-ops-report.html`、`/self-hosted.html`、`/blog.html`、`/openclaw.html`、`/aicoding.html`、`/deepseek-appliance.html`
 - 产品动态文章：`/blog/<slug>.html`；产品动态分页：`/blog/2.html` 起
-- 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`
+- 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`、`/#contact-us`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#infrastructure-layer`、`/enterprise.html#contact`
 - AI 一体机页面：`/openclaw.html` 对应 AI 助理一体机（GB10版），`/aicoding.html` 对应 AI 编程一体机（B70版），`/deepseek-appliance.html` 对应 1Panel AI 通用一体机
 - 相关一体机外部入口：`https://maxkb.cn/appliance`、`https://jumpserver.org/hardware.html`、`https://fit2cloud.com/zabbix/index.html`
