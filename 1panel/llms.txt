@@ -44,6 +44,7 @@
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 企业版 KVM/QEMU Web 管理功能页，覆盖资源概览、生命周期管理、VNC 控制台、性能监控、快照与模板、ISO 镜像、网络、存储池和孤立数据清理。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
+- [1Panel 社区版、专业版和企业版对比](https://1panel.cn/blog/1panel-community-professional-enterprise-comparison.html) - 基于官网和官方文档对比三个版本的价格、基础运维、AI 模型、WAF、多机管理、企业级 AI 治理、多用户、虚拟机、离线环境、支持方式与适用场景。
 - [1Panel AI 通用一体机发布动态](https://1panel.cn/blog/deepseek-ai-general-appliance.html) - 介绍面向 DeepSeek 私有化部署的一体化方案，覆盖高性能算力、DeepSeek V4 Flash、纯内网运行、模型服务、低代码智能体开发、内网 AI 编程和 AI 办公。
 - [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [1Panel 企业版 KVM 虚拟机管理动态](https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html) - 从 KVM Web UI、KVM Web 管理工具和管理界面等搜索需求切入，介绍虚拟机生命周期、VNC 控制台、性能监控、镜像、模板、网络和存储池等已上线能力。
