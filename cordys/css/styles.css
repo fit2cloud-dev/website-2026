@@ -2247,11 +2247,11 @@ body {
 }
 
 .article-page--comparison .article-key-points--enterprise p {
-  border-top: 3px solid rgba(205,166,58,0.6);
+  border-top: 3px solid rgba(2,166,171,0.55);
 }
 
 .article-page--comparison .article-key-points--enterprise p strong {
-  color: #8a6a13;
+  color: #126f73;
 }
 
 .article-page--comparison .article-key-points--skills p,
@@ -2336,7 +2336,7 @@ body {
 }
 
 .article-page--comparison .article-content .article-table--comparison thead th:nth-child(3) {
-  background: #7a641f;
+  background: #0d5e63;
 }
 
 .article-page--comparison .article-content .article-table--comparison tbody td:nth-child(2) {
@@ -2344,7 +2344,7 @@ body {
 }
 
 .article-page--comparison .article-content .article-table--comparison tbody td:nth-child(3) {
-  background: rgba(205,166,58,0.05);
+  background: rgba(2,166,171,0.08);
 }
 
 .article-page--comparison .article-content .article-table--pricing tbody td:nth-child(2) {
@@ -2384,7 +2384,7 @@ body {
 }
 
 .article-page--comparison .article-choice-card--enterprise {
-  border-top: 4px solid #cda63a;
+  border-top: 4px solid var(--primary-color);
 }
 
 .article-page--comparison .article-choice-card p {
@@ -2423,8 +2423,8 @@ body {
 }
 
 .article-page--comparison .article-choice-card--enterprise li::before {
-  background: #c39b2f;
-  box-shadow: 0 0 0 4px rgba(195,155,47,0.1);
+  background: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(2,166,171,0.1);
 }
 
 /* ==========================================================================
