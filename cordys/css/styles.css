@@ -491,7 +491,41 @@ body {
 .hero__features {
   display: flex;
   gap: var(--spacing-sm);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.hero__notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--primary-color);
+  animation: slideInLeft 0.8s ease-out 0.15s both;
+}
+
+.hero__notice svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  color: var(--primary-color);
+}
+
+.hero__notice-label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.hero__notice-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-color: rgba(2, 166, 171, 0.35);
+  text-underline-offset: 3px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__notice-link:hover {
+  color: var(--primary-dark);
+  text-decoration-color: rgba(2, 166, 171, 0.65);
 }
 
 .hero__right {
@@ -3295,6 +3329,13 @@ a.dev-consulting__feature-card--link p {
   .hero__features {
     flex-direction: column;
     align-items: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero__notice {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
   }
   
   .beta__card {
