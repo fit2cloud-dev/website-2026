@@ -484,7 +484,7 @@ body {
   font-size: clamp(16px, 2vw, 19px);
   color: var(--text-secondary);
   margin-bottom: var(--spacing-xl);
-  max-width: 520px;
+  max-width: 100%;
   line-height: 1.75;
 }
 
