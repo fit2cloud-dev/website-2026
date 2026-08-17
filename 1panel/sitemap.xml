@@ -167,6 +167,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/deepseek-v4-flash-private-deployment-report/cover.png</image:loc>
+      <image:title>DeepSeek-V4-Flash 企业私有化部署实测报告</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/blog/cockpit-vs-1panel-kvm-web-management.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,0 +1,54 @@
+<svg width="1536" height="864" viewBox="0 0 1536 864" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DeepSeek-V4-Flash 企业私有化部署实测报告">
+  <defs>
+    <linearGradient id="bgBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b5bff"/>
+      <stop offset="0.5" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#123a99"/>
+    </linearGradient>
+    <linearGradient id="glowLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="softGlow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1536" height="864" fill="url(#bgBlue)"/>
+
+  <!-- soft central glow -->
+  <ellipse cx="768" cy="380" rx="820" ry="480" fill="url(#softGlow)"/>
+
+  <!-- decorative faint rings -->
+  <circle cx="140" cy="700" r="170" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="140" cy="700" r="260" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+  <circle cx="1400" cy="150" r="150" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+  <circle cx="1400" cy="150" r="240" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+
+  <!-- floating dots -->
+  <g fill="#ffffff" fill-opacity="0.14">
+    <circle cx="240" cy="200" r="5"/>
+    <circle cx="1290" cy="620" r="6"/>
+    <circle cx="1100" cy="180" r="4"/>
+    <circle cx="420" cy="640" r="4"/>
+  </g>
+
+  <!-- small brand label -->
+  <text x="768" y="252" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="28" fill="#ffffff" fill-opacity="0.85" letter-spacing="8">DeepSeek V4 Flash</text>
+  <text x="768" y="300" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="22" fill="#ffffff" fill-opacity="0.6" letter-spacing="6">企 业 私 有 化 部 署</text>
+
+  <!-- main title 实测报告 -->
+  <text x="768" y="470" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif" font-weight="bold" font-size="150" fill="#ffffff" letter-spacing="30">实测报告</text>
+
+  <!-- accent underline -->
+  <rect x="524" y="520" width="488" height="6" rx="3" fill="url(#glowLine)"/>
+  <rect x="734" y="528" width="68" height="4" rx="2" fill="#ffffff" fill-opacity="0.9"/>
+
+  <!-- bottom tag -->
+  <g>
+    <rect x="614" y="612" width="308" height="52" rx="26" fill="#ffffff" fill-opacity="0.12"/>
+    <text x="768" y="646" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="24" fill="#ffffff" fill-opacity="0.92" letter-spacing="3">1Panel · AI 一体机</text>
+  </g>
+</svg>
