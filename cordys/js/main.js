@@ -393,16 +393,6 @@
     }
 
     /**
-     * Performance Optimizations
-     */
-
-    /**
-    window.addEventListener('error', function (e) {
-        console.error('JavaScript error occurred:', e.error);
-        // In production, you might want to send this to an analytics service
-    });
-
-    /**
      * Utility Functions
      */
 
