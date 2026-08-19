@@ -102,67 +102,67 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/4.html</loc>
-    <lastmod>2025-12-25</lastmod>
+    <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-07-27</lastmod>
+    <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2025-02-10</lastmod>
+    <lastmod>2025-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/7.html</loc>
-    <lastmod>2024-08-09</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-05-13</lastmod>
+    <lastmod>2024-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2024-01-12</lastmod>
+    <lastmod>2024-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-09-18</lastmod>
+    <lastmod>2023-10-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/11.html</loc>
-    <lastmod>2023-05-15</lastmod>
+    <lastmod>2023-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -174,6 +174,26 @@
     <image:image>
       <image:loc>https://1panel.cn/images/blog/deepseek-v4-flash-private-deployment-report/cover.png</image:loc>
       <image:title>DeepSeek-V4-Flash 企业私有化部署实测报告</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/deepseek-harness-1panel-app-store-install-guide.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/deepseek-harness-1panel-app-store-install-guide/cover.webp</image:loc>
+      <image:title>操作教程｜通过1Panel应用商店快速安装DeepSeek Harness</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/ai-gateway-vision-enhancement-guide.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/ai-gateway-vision-enhancement/cover.jpg</image:loc>
+      <image:title>使用1Panel AI网关为DeepSeek V4 Flash补齐多模态能力</image:title>
     </image:image>
   </url>
   <url>
