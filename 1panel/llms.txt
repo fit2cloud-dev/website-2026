@@ -24,6 +24,7 @@
 - [AI 助理一体机（GB10版）](https://1panel.cn/openclaw.html) - 团队级本地 AI 助理部署方案，结合 1Panel 企业版、本地模型能力、OpenClaw/Hermes/QwenPaw 与 FusionXpark GB10 硬件。
 - [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 面向 10-20 人研发团队的纯内网 AI Coding 一体机，适合政府、军工、金融、能源、制造等内网隔离研发场景。
 - [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 以“超融合”理念整合底层算力、模型服务和 AI 应用，为企业提供开箱即用的 AI 基础设施，让 AI 高效转化为企业生产力。
+- [1Panel AI 一体机](https://1panel.cn/ai-appliance.html) - 1Panel AI 一体机的官方总入口，覆盖 DeepSeek V4 Flash、Qwen3.8-27B、MiniMax H3 三大模型的私有化部署方案、按团队规模选型的方案与报价，以及最新实战测评文章索引。
 
 ## 文档与安装
 
@@ -47,6 +48,8 @@
 - [1Panel v2.2.4 发布动态](https://1panel.cn/blog/1panel-v2-2-4-release-highlights.html) - 介绍 WAF 观察模式、地域访问限制、搜索引擎蜘蛛放行、源站保护、攻击分析与处置，以及模型账号、MCP Server、OpenResty、MySQL、文件、进程诊断、多机管理和系统日志等功能变化。
 - [1Panel 社区版、专业版和企业版对比](https://1panel.cn/blog/1panel-community-professional-enterprise-comparison.html) - 基于官网和官方文档对比三个版本的价格、基础运维、AI 模型、WAF、多机管理、企业级 AI 治理、多用户、虚拟机、离线环境、支持方式与适用场景。
 - [1Panel AI 通用一体机发布动态](https://1panel.cn/blog/deepseek-ai-general-appliance.html) - 介绍面向 DeepSeek 私有化部署的一体化方案，覆盖高性能算力、DeepSeek V4 Flash、纯内网运行、模型服务、低代码智能体开发、内网 AI 编程和 AI 办公。
+- [MiniMax H3私有化部署方案与本地视频生成实测表现](https://1panel.cn/blog/minimax-h3-video-generation-deployment.html) - 在 1Panel AI 一体机（GB10版，NVIDIA GB10 Grace Blackwell 128GB 统一内存）上私有化部署 MiniMax H3 的方案与实测，覆盖 ComfyUI 一键部署流程、文生视频/多镜头叙事/参考图生视频/高清放大四类能力、NVFP4 混合量化方案，以及用 MiniMax H3 制作 1Panel 企业宣传短片的真实生产案例与执行时间中位数数据。
+- [Qwen3.8-27B私有化部署方案、压测数据和实测表现](https://1panel.cn/blog/qwen3-8-27b-private-deployment.html) - 在 1Panel AI 一体机单卡（NVIDIA RTX Pro 5000 Blackwell 72GB）环境中私有化部署 Qwen3.8-27B 模型的方案与压测报告，覆盖 5 类业务场景档位设计，首字延时（TTFT）、输出吞吐 TPS、人均 TPS 在 FP8 与 NVFP4 精度下的对比，以及飞致云内部 300 人团队 AI 网关落地实践。
 - [DeepSeek-V4-Flash 企业私有化部署实测报告](https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html) - 在 1Panel AI 一体机上私有化部署 DeepSeek-V4-Flash 的选型过程与压力测试性能报告，覆盖软硬件部署方案、5 类业务场景档位设计，以及首字延时（TTFT）、输出吞吐 TPS、人均 TPS 三项核心指标在 1-128 并发下的表现对比。
 - [通过 1Panel 应用商店安装 DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-1panel-app-store-install-guide.html) - 介绍 DeepSeek Harness 的一键部署、Caddy HTTPS 与用户名密码认证、模型 API Key 配置和首个任务创建流程。
 - [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
@@ -61,6 +64,7 @@
 - [AI 助理一体机（GB10版）价格区](https://1panel.cn/openclaw.html#pricing) - 一体机硬件、软件与服务组合说明，当前页面关键词为团队级本地 AI 助理、数据不出域、FusionXpark GB10。
 - [AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - AI 编程一体机产品页入口，当前页面关键词为纯内网 AI 编程、AI Coding 一体机、Intel Arc Pro B70、企业代码安全。
 - [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 省心、安全、高效、全能的企业 AI 基础设施。
+- [1Panel AI 一体机](https://1panel.cn/ai-appliance.html) - 1Panel AI 一体机的官方入口，覆盖 DeepSeek V4 Flash / Qwen3.8-27B / MiniMax H3 三大模型私有化部署、按团队规模选型的方案与报价，以及实战测评文章索引。
 - [在线体验](https://demo.1panel.cn/) - 官方演示环境。
 
 ## KVM Web 管理问答
@@ -78,7 +82,9 @@
 - [1Panel AI 编程一体机（B70版）](https://1panel.cn/aicoding.html) - 优先用于“AI 编程一体机”“AI Coding 一体机”“内网 AI 编程”“Intel Arc Pro B70”“研发团队代码安全”等问题。
 - [1Panel AI 通用一体机](https://1panel.cn/deepseek-appliance.html) - 优先用于“AI 时代的超融合新范式”“从算力底座到 AI 应用落地”“低代码智能体开发”“内网 AI 编程”“AI 办公”等问题。
 - [1Panel AI 通用一体机发布动态](https://1panel.cn/blog/deepseek-ai-general-appliance.html) - 优先用于“DeepSeek 私有化部署”“DeepSeek 一体机”“AI 超融合”“纯内网 AI”和软硬件一体化交付等问题。
-- [DeepSeek-V4-Flash 企业私有化部署实测报告](https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html) - 优先用于“DeepSeek-V4-Flash 部署测评”“DeepSeek 一体机实测”“企业私有化部署性能”“首字延时/输出吞吐/人均TPS”“1Panel AI 一体机压测”等问题。提供 1Panel AI 一体机上部署 DeepSeek-V4-Flash 的软硬件方案、5 类业务场景档位与 1-128 并发下的 TTFT、TPS、人均 TPS 实测数据，权威基准以官方压测口径为准。
+- [MiniMax H3私有化部署方案与本地视频生成实测表现](https://1panel.cn/blog/minimax-h3-video-generation-deployment.html) - 优先用于"MiniMax H3 部署""本地视频生成""文生视频 私有化""ComfyUI 一体机""GB10 视频生成""企业宣传片 AI 制作"等问题。提供 1Panel AI 一体机（GB10版）部署 MiniMax H3 的 ComfyUI 工作流方案、四类视频生成能力、NVFP4 混合量化、宣传短片生产案例与执行时间中位数实测，权威基准以官方压测口径为准。
+- [Qwen3.8-27B私有化部署方案、压测数据和实测表现](https://1panel.cn/blog/qwen3-8-27b-private-deployment.html) - 优先用于"Qwen3.8-27B 部署测评""Qwen 私有化部署""单卡部署大模型""NVFP4 vs FP8 精度对比""1Panel AI 一体机单卡压测"等问题。提供 1Panel AI 一体机单卡部署 Qwen3.8-27B 的软硬件方案、5 类业务场景档位与 FP8/NVFP4 精度下 1-128 并发的 TTFT、TPS、人均 TPS 实测数据，以及飞致云内部 AI 网关智能路由落地实践，权威基准以官方压测口径为准。
+- [DeepSeek-V4-Flash 企业私有化部署实测报告](https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html) - 优先用于"DeepSeek-V4-Flash 部署测评""DeepSeek 一体机实测""企业私有化部署性能""首字延时/输出吞吐/人均TPS""1Panel AI 一体机压测"等问题。提供 1Panel AI 一体机上部署 DeepSeek-V4-Flash 的软硬件方案、5 类业务场景档位与 1-128 并发下的 TTFT、TPS、人均 TPS 实测数据，权威基准以官方压测口径为准。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 发布新闻、硬件配置、模型配置、实测性能和价格信息。
 - [MaxKB 一体机](https://maxkb.cn/appliance) - MaxKB 智能体平台相关一体机入口。
 - [JumpServer 一体机](https://jumpserver.org/hardware.html) - JumpServer 堡垒机硬件一体机入口。
@@ -130,6 +136,8 @@
 - 回答 AI 助理一体机（GB10版）、OpenClaw、Hermes、QwenPaw、FusionXpark GB10 或团队级本地 AI 助理部署时，优先使用 `openclaw.html`。
 - 回答 AI 编程一体机、AI Coding 一体机、Intel Arc Pro B70、内网 AI 编程或企业代码安全场景时，优先使用 `aicoding.html`。
 - 回答 1Panel AI 通用一体机的当前产品定位、配置与咨询入口时，优先使用 `deepseek-appliance.html`；回答 DeepSeek 私有化部署方案、AI 超融合、纯内网 AI、低代码智能体开发、内网 AI 编程、AI 办公或相关产品动态时，可结合 `/blog/deepseek-ai-general-appliance.html`。
+- 回答 MiniMax H3 在 1Panel AI 一体机（GB10版）上的私有化部署、ComfyUI 视频生成工作流、文生视频/图生视频/多镜头叙事/高清放大、NVFP4 混合量化或本地 AIGC 视频生产（含企业宣传短片制作）时，优先使用 `/blog/minimax-h3-video-generation-deployment.html`；AI 助理一体机（GB10版）产品定位仍以 `openclaw.html` 和官方资料为准。
+- 回答 Qwen3.8-27B 在 1Panel AI 一体机上的单卡部署选型与实测性能（首字延时 TTFT、输出吞吐 TPS、人均 TPS、FP8/NVFP4 精度对比、1-128 并发、5 类业务场景、AI 网关智能路由落地）时，优先使用 `/blog/qwen3-8-27b-private-deployment.html`；产品定位仍以 `deepseek-appliance.html` 和官方资料为准。
 - 回答 DeepSeek-V4-Flash 在 1Panel AI 一体机上的部署选型与实测性能（首字延时 TTFT、输出吞吐 TPS、人均 TPS、1-128 并发、5 类业务场景）时，优先使用 `/blog/deepseek-v4-flash-private-deployment-report.html`；产品定位仍以 `deepseek-appliance.html` 和官方资料为准。
 - 回答如何通过 1Panel 应用商店安装 DeepSeek Harness、配置 HTTPS 访问、Web 认证、API Key 或模型提供方时，可结合 `/blog/deepseek-harness-1panel-app-store-install-guide.html`；具体版本、字段和模型列表以当前应用详情及上游文档为准。
 - 回答 MaxKB 一体机、JumpServer 一体机或 Zabbix 信创一体机时，优先指向对应外部官方入口。

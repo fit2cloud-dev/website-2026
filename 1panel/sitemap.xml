@@ -31,6 +31,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://1panel.cn/ai-appliance.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/overview-full.png</image:loc>
+      <image:title>1Panel AI 一体机</image:title>
+      <image:caption>1Panel AI 一体机以超融合理念整合算力、模型与 AI 应用，覆盖 DeepSeek V4 Flash、Qwen3.8-27B、MiniMax H3 三大主流模型场景。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/ai-portal.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,6 +176,26 @@
     <lastmod>2023-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/minimax-h3-video-generation-deployment.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/minimax-h3-video-generation-deployment/cover.png</image:loc>
+      <image:title>MiniMax H3私有化部署方案与本地视频生成实测表现</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/qwen3-8-27b-private-deployment.html</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/qwen3-8-27b-private-deployment/cover.png</image:loc>
+      <image:title>Qwen3.8-27B私有化部署方案、压测数据和实测表现</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html</loc>
