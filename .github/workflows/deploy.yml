@@ -46,6 +46,7 @@ jobs:
             tar zxf fit2cloudweb.tar.gz
             rm -rf fit2cloudweb.tar.gz
             /usr/local/nginx/sbin/nginx -s reload
+            rm -f /root/*.tar.gz
   deploy-to-aliyun-oss:
     runs-on: ubuntu-latest
     concurrency:
