@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://1panel.cn/ai-appliance.html</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -86,94 +86,74 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://1panel.cn/openclaw.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://1panel.cn/images/fusionxpark.png</image:loc>
-      <image:title>1Panel AI 助理一体机（GB10版）</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://1panel.cn/aicoding.html</loc>
-    <lastmod>2026-08-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://1panel.cn/images/aicoding-b70.png</image:loc>
-      <image:title>1Panel AI 编程一体机（B70版）</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://1panel.cn/deepseek-appliance.html</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2026-03-23</lastmod>
+    <lastmod>2026-03-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/4.html</loc>
-    <lastmod>2026-01-16</lastmod>
+    <lastmod>2026-01-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-08-08</lastmod>
+    <lastmod>2025-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2025-04-14</lastmod>
+    <lastmod>2025-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/7.html</loc>
-    <lastmod>2024-10-24</lastmod>
+    <lastmod>2024-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-06-07</lastmod>
+    <lastmod>2024-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2024-01-27</lastmod>
+    <lastmod>2024-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-10-20</lastmod>
+    <lastmod>2023-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/11.html</loc>
-    <lastmod>2023-06-19</lastmod>
+    <lastmod>2023-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/12.html</loc>
+    <lastmod>2023-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
