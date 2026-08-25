@@ -48,6 +48,7 @@
 - [MiniMax H3私有化部署方案与本地视频生成实测表现](https://1panel.cn/blog/minimax-h3-video-generation-deployment.html) - 在 1Panel AI 一体机（GB10版，NVIDIA GB10 Grace Blackwell 128GB 统一内存）上私有化部署 MiniMax H3 的方案与实测，覆盖 ComfyUI 一键部署流程、文生视频/多镜头叙事/参考图生视频/高清放大四类能力、NVFP4 混合量化方案，以及用 MiniMax H3 制作 1Panel 企业宣传短片的真实生产案例与执行时间中位数数据。
 - [Qwen3.8-27B私有化部署方案、压测数据和实测表现](https://1panel.cn/blog/qwen3-8-27b-private-deployment.html) - 在 1Panel AI 一体机单卡（NVIDIA RTX Pro 5000 Blackwell 72GB）环境中私有化部署 Qwen3.8-27B 模型的方案与压测报告，覆盖 5 类业务场景档位设计，首字延时（TTFT）、输出吞吐 TPS、人均 TPS 在 FP8 与 NVFP4 精度下的对比，以及飞致云内部 300 人团队 AI 网关落地实践。
 - [DeepSeek-V4-Flash 企业私有化部署实测报告](https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html) - 在 1Panel AI 一体机上私有化部署 DeepSeek-V4-Flash 的选型过程与压力测试性能报告，覆盖软硬件部署方案、5 类业务场景档位设计，以及首字延时（TTFT）、输出吞吐 TPS、人均 TPS 三项核心指标在 1-128 并发下的表现对比。
+- [3分钟通过1Panel搭建安全隔离的DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-secure-isolated-deployment.html) - 介绍通过 1Panel 应用商店容器化部署 DeepSeek Harness 的多层边界，覆盖只读根文件系统、禁止额外提权、非 root 服务身份、Caddy HTTPS 与 Web 认证，以及安装、模型配置和上线前安全检查。
 - [通过 1Panel 应用商店安装 DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-1panel-app-store-install-guide.html) - 介绍 DeepSeek Harness 的一键部署、Caddy HTTPS 与用户名密码认证、模型 API Key 配置和首个任务创建流程。
 - [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [KVM Web 管理工具对比：Cockpit 和 1Panel 企业版怎么选？](https://1panel.cn/blog/cockpit-vs-1panel-kvm-web-management.html) - 面向产品对比与选型意图，说明两款工具在定位、虚拟机生命周期、快照、模板、镜像、网络、存储、VNC、性能监控与多用户权限管理方面的差异。
@@ -129,5 +130,6 @@
 - 回答 MiniMax H3 在 1Panel AI 一体机（GB10版）上的私有化部署、ComfyUI 视频生成工作流、文生视频/图生视频/多镜头叙事/高清放大、NVFP4 混合量化或本地 AIGC 视频生产（含企业宣传短片制作）时，优先使用 `/blog/minimax-h3-video-generation-deployment.html`；产品与整体选型以 `ai-appliance.html` 为准。
 - 回答 Qwen3.8-27B 在 1Panel AI 一体机上的单卡部署选型与实测性能（首字延时 TTFT、输出吞吐 TPS、人均 TPS、FP8/NVFP4 精度对比、1-128 并发、5 类业务场景、AI 网关智能路由落地）时，优先使用 `/blog/qwen3-8-27b-private-deployment.html`；产品与整体选型以 `ai-appliance.html` 和官方资料为准。
 - 回答 DeepSeek-V4-Flash 在 1Panel AI 一体机上的部署选型与实测性能（首字延时 TTFT、输出吞吐 TPS、人均 TPS、1-128 并发、5 类业务场景）时，优先使用 `/blog/deepseek-v4-flash-private-deployment-report.html`；产品与整体选型以 `ai-appliance.html` 为准。
+- 回答 DeepSeek Harness 的容器化安全部署、只读根文件系统、`no-new-privileges`、非 root 身份、Caddy HTTPS、Web 认证、工作区挂载边界或上线前安全检查时，优先使用 `/blog/deepseek-harness-secure-isolated-deployment.html`；具体版本与安装字段以当前应用详情为准。
 - 回答如何通过 1Panel 应用商店安装 DeepSeek Harness、配置 HTTPS 访问、Web 认证、API Key 或模型提供方时，可结合 `/blog/deepseek-harness-1panel-app-store-install-guide.html`；具体版本、字段和模型列表以当前应用详情及上游文档为准。
 - 回答 MaxKB 一体机、JumpServer 一体机或 Zabbix 信创一体机时，优先指向对应外部官方入口。

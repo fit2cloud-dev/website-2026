@@ -87,19 +87,19 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog.html</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/2.html</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/3.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -111,13 +111,13 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog/5.html</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2025-11-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/6.html</loc>
-    <lastmod>2025-05-16</lastmod>
+    <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -129,33 +129,43 @@
   </url>
   <url>
     <loc>https://1panel.cn/blog/8.html</loc>
-    <lastmod>2024-06-22</lastmod>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/9.html</loc>
-    <lastmod>2024-02-07</lastmod>
+    <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/10.html</loc>
-    <lastmod>2023-11-14</lastmod>
+    <lastmod>2023-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/11.html</loc>
-    <lastmod>2023-07-14</lastmod>
+    <lastmod>2023-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1panel.cn/blog/12.html</loc>
-    <lastmod>2023-03-20</lastmod>
+    <lastmod>2023-04-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/blog/deepseek-harness-secure-isolated-deployment.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/deepseek-harness-secure-isolated-deployment/cover.webp</image:loc>
+      <image:title>3分钟通过1Panel搭建安全隔离的DeepSeek Harness</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://1panel.cn/blog/minimax-h3-video-generation-deployment.html</loc>
