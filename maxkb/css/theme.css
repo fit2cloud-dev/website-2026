@@ -288,6 +288,22 @@ html.reveal-ready body[data-static-site] [data-reveal] {
 }
 
 /* Site shell */
+body[data-static-site] [data-static-component="TopHeader"],
+body[data-static-site] [data-static-component="Header"] {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
 body[data-static-site] [data-static-component="TopHeader"] > div {
   padding-top: 7px;
   padding-right: 0;
@@ -341,13 +357,17 @@ body[data-static-site] [data-static-component="Header"] nav > :not([hidden]) ~ :
 body[data-static-site] [data-static-component="Header"] nav > a,
 body[data-static-site] [data-static-component="Header"] nav > div > button {
   color: #343a46 !important;
-  font-size: 14px;
-  font-weight: 520;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 body[data-static-site] [data-static-component="Header"] nav > a:hover,
 body[data-static-site] [data-static-component="Header"] nav > div > button:hover {
   color: var(--mk-brand) !important;
+}
+
+body[data-static-site] [data-static-component="Header"] nav > a[href="/price"] > span {
+  display: none;
 }
 
 body[data-static-site] [data-static-component="Header"] [data-header-actions] {
@@ -432,6 +452,34 @@ body[data-static-site] [data-static-component="TopHeader"] .absolute.top-full {
 body[data-static-site] [data-static-component="Header"] [data-static-dropdown-menu] a,
 body[data-static-site] [data-static-mobile-menu] .text-gray-700 {
   color: var(--mk-ink) !important;
+}
+
+body[data-static-site] [data-static-component="Header"] [data-static-dropdown-menu] {
+  min-width: 14rem;
+}
+
+body[data-static-site] [data-static-component="Header"] .static-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+body[data-static-site] [data-static-component="Header"] .static-menu-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  color: var(--mk-muted);
+  transition: color 0.2s ease;
+}
+
+body[data-static-site] [data-static-component="Header"] .static-menu-link > span {
+  white-space: nowrap;
+}
+
+body[data-static-site] [data-static-component="Header"] .static-menu-link:hover .static-menu-icon {
+  color: var(--mk-brand);
 }
 
 body[data-static-site] [data-static-component="Header"] [data-static-dropdown-menu] a:hover,

@@ -2,6 +2,22 @@
   'use strict';
 
   var openMenus = [];
+  var menuIcons = {
+    book: '<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path>',
+    news: '<path d="M4 22h16a2 2 0 0 0 2-2V4H8v16a2 2 0 0 1-4 0V6H2v14a2 2 0 0 0 2 2Z"></path><path d="M12 8h6"></path><path d="M12 12h6"></path><path d="M12 16h6"></path>',
+    message: '<path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z"></path><path d="M9.1 9a3 3 0 1 1 5.83 1c0 2-3 2-3 4"></path><path d="M12 17h.01"></path>',
+    certificate: '<circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>',
+    document: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"></path><path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path>',
+    presentation: '<path d="M2 3h20"></path><path d="M4 3v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3"></path><path d="m8 21 4-3 4 3"></path><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path>'
+  };
+  var supportItems = [
+    { label: '使用手册', href: 'https://maxkb.cn/docs/', icon: 'book' },
+    { label: '产品动态', href: '/blog', icon: 'news' },
+    { label: '论坛求助', href: 'https://bbs.fit2cloud.com/c/mk/11', icon: 'message' },
+    { label: '培训认证', href: 'https://edu.fit2cloud.com/', icon: 'certificate' },
+    { label: '技术白皮书', href: 'https://whitepaper.maxkb.cn/', icon: 'document' },
+    { label: '如何向团队介绍 MaxKB?', href: 'https://fit2cloud.com/maxkb/download/introduce-maxkb_2026.pdf', icon: 'presentation' }
+  ];
 
   function byText(nodes, text) {
     return Array.prototype.slice.call(nodes).find(function (node) {
@@ -23,7 +39,26 @@
     var link = document.createElement('a');
     link.href = item.href;
     link.className = className;
-    link.textContent = item.label;
+    if (item.icon && menuIcons[item.icon]) {
+      link.classList.add('static-menu-link');
+      var icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      icon.setAttribute('viewBox', '0 0 24 24');
+      icon.setAttribute('fill', 'none');
+      icon.setAttribute('stroke', 'currentColor');
+      icon.setAttribute('stroke-width', '1.8');
+      icon.setAttribute('stroke-linecap', 'round');
+      icon.setAttribute('stroke-linejoin', 'round');
+      icon.setAttribute('aria-hidden', 'true');
+      icon.setAttribute('focusable', 'false');
+      icon.setAttribute('class', 'static-menu-icon');
+      icon.innerHTML = menuIcons[item.icon];
+      var label = document.createElement('span');
+      label.textContent = item.label;
+      link.appendChild(icon);
+      link.appendChild(label);
+    } else {
+      link.textContent = item.label;
+    }
     if (/^https?:/i.test(item.href)) {
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
@@ -65,15 +100,12 @@
     var header = document.querySelector('header.sticky');
     if (!header) return;
 
+    header.querySelectorAll('a[href="/price"] > span').forEach(function (badge) {
+      if (badge.textContent.trim() === '🔥') badge.remove();
+    });
+
     var navigationButtons = header.querySelectorAll('nav button');
-    installDropdown(byText(navigationButtons, '帮助与支持'), [
-      { label: '使用手册', href: 'https://maxkb.cn/docs/' },
-      { label: '产品动态', href: '/blog' },
-      { label: '论坛求助', href: 'https://bbs.fit2cloud.com/c/mk/11' },
-      { label: '培训认证', href: 'https://edu.fit2cloud.com/' },
-      { label: '技术白皮书', href: 'https://whitepaper.maxkb.cn/' },
-      { label: '如何向团队介绍 MaxKB?', href: 'https://fit2cloud.com/maxkb/download/introduce-maxkb_2026.pdf' }
-    ]);
+    installDropdown(byText(navigationButtons, '帮助与支持'), supportItems);
 
     var mobileButton = Array.prototype.slice.call(header.querySelectorAll('button')).find(function (button) {
       return button.classList.contains('lg:hidden') && button.textContent.trim() === '';
@@ -90,18 +122,16 @@
     mobileMenu.hidden = true;
     mobileMenu.innerHTML = '<div class="flex flex-col space-y-4">' +
       '<a href="/" class="text-gray-700 hover:text-primary transition-colors">首页</a>' +
-      '<a href="/price" class="relative inline-block text-gray-700 hover:text-primary transition-colors">价格<span class="absolute text-xs">🔥</span></a>' +
+      '<a href="/price" class="text-gray-700 hover:text-primary transition-colors">价格</a>' +
       '<a href="/appliance" class="text-gray-700 hover:text-primary transition-colors">一体机</a>' +
       '<a href="https://apps.fit2cloud.com/maxkb" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary transition-colors">工具市场</a>' +
-      '<div><div class="text-gray-700 font-medium mb-2">帮助与支持</div><div class="pl-4 space-y-2">' +
-      '<a href="https://maxkb.cn/docs/" target="_blank" rel="noopener noreferrer" class="block text-gray-600 hover:text-primary">使用手册</a>' +
-      '<a href="/blog" class="block text-gray-600 hover:text-primary">产品动态</a>' +
-      '<a href="https://bbs.fit2cloud.com/c/mk/11" target="_blank" rel="noopener noreferrer" class="block text-gray-600 hover:text-primary">论坛求助</a>' +
-      '<a href="https://edu.fit2cloud.com/" target="_blank" rel="noopener noreferrer" class="block text-gray-600 hover:text-primary">培训认证</a>' +
-      '<a href="https://whitepaper.maxkb.cn/" target="_blank" rel="noopener noreferrer" class="block text-gray-600 hover:text-primary">技术白皮书</a>' +
-      '<a href="https://fit2cloud.com/maxkb/download/introduce-maxkb_2026.pdf" target="_blank" rel="noopener noreferrer" class="block text-gray-600 hover:text-primary">如何向团队介绍 MaxKB?</a></div></div>' +
+      '<div><div class="text-gray-700 font-medium mb-2">帮助与支持</div><div class="pl-4 space-y-2" data-static-mobile-support></div></div>' +
       '<a href="https://space.bilibili.com/1538710292/lists/5307430" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-primary transition-colors">成功案例</a>' +
       '<a href="/contact" class="text-gray-700 hover:text-primary transition-colors">联系我们</a></div>';
+    var mobileSupport = mobileMenu.querySelector('[data-static-mobile-support]');
+    supportItems.forEach(function (item) {
+      mobileSupport.appendChild(createLink(item, 'static-menu-link text-gray-600 hover:text-primary'));
+    });
     headerContainer.appendChild(mobileMenu);
     mobileButton.addEventListener('click', function (event) {
       event.preventDefault();
