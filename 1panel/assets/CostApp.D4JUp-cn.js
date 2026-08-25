@@ -1,0 +1,1 @@
+import{j as t}from"./icons.C9OtNFex.js";import{P as r}from"./PageShell.BTN5Ti4s.js";import{C as s}from"./CostAnalysisPage.CgkpNyi4.js";import"./client.BME85wcG.js";function i(){return t.jsx(r,{currentPath:"/vscpanel/cost",children:t.jsx(s,{})})}export{i as default};

@@ -1,0 +1,1 @@
+import{j as r}from"./icons.C9OtNFex.js";import{P as o}from"./PageShell.BTN5Ti4s.js";import{C as a}from"./ComparisonPage.YnrXBoCS.js";import"./client.BME85wcG.js";function e(){return r.jsx(o,{currentPath:"/vscpanel/comparison",children:r.jsx(a,{})})}export{e as default};
