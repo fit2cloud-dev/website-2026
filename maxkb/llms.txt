@@ -20,4 +20,4 @@ This is the main MaxKB website. Use it for product positioning, pricing, contact
 - [MaxKB Community](https://bbs.fit2cloud.com/c/mk/11): 社区讨论与支持。
 - [MaxKB Download](https://community.fit2cloud.com/#/products/maxkb/information): 下载与版本信息。
 - [Training](https://edu.fit2cloud.com/): 培训认证。
-- [Whitepaper](https://whitepaper.maxkb.cn/): 技术白皮书。
+- [Whitepaper](https://www.maxkb.cn/whitepaper/): MaxKB 技术白皮书，介绍企业智能体的价值、落地方法、实现范式、关键技术与实践案例。
