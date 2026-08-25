@@ -15,7 +15,7 @@
     { label: '产品动态', href: '/blog', icon: 'news' },
     { label: '论坛求助', href: 'https://bbs.fit2cloud.com/c/mk/11', icon: 'message' },
     { label: '培训认证', href: 'https://edu.fit2cloud.com/', icon: 'certificate' },
-    { label: '技术白皮书', href: 'https://whitepaper.maxkb.cn/', icon: 'document' },
+    { label: '技术白皮书', href: '/whitepaper/', icon: 'document' },
     { label: '如何向团队介绍 MaxKB?', href: 'https://fit2cloud.com/maxkb/download/introduce-maxkb_2026.pdf', icon: 'presentation' }
   ];
 
