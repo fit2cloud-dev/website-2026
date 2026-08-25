@@ -19,6 +19,48 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://1panel.cn/vsbt</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/comparisons/baota/server-dashboard.png</image:loc>
+      <image:title>1Panel VS 传统面板</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/vscpanel</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/comparisons/cpanel/server-dashboard.png</image:loc>
+      <image:title>1Panel VS cPanel</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://1panel.cn/vscpanel/comparison</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/vscpanel/cost</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://1panel.cn/vswebmin</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/comparisons/webmin/hero-dashboard.png</image:loc>
+      <image:title>1Panel VS Webmin</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/versions.html</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>weekly</changefreq>
