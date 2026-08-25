@@ -1,12 +1,2592 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.maxkb.cn/">
-    <title>正在跳转至 MaxKB</title>
-    <link rel="canonical" href="https://www.maxkb.cn/">
-</head>
-<body>
-    <p>正在跳转到 <a href="https://www.maxkb.cn/">MaxKB</a>...</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <base href="./" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>MaxKB - 强大易用的企业级智能体平台</title>
+    <meta
+      name="description"
+      content="MaxKB 是飞致云旗下开源企业级智能体平台，支持 RAG 知识库、DeepSeek 私有化部署、企业智能客服、智慧办公助手、工作流编排与企业级权限治理。"
+    />
+    <meta
+      name="keywords"
+      content="MaxKB,企业级智能体平台,RAG知识库,RAG知识库搭建,企业RAG知识库,知识库问答系统,DeepSeek知识库,DeepSeek企业部署,DeepSeek私有化部署,Qwen知识库搭建,企业AI落地方案,私有化部署AI平台,企业智能客服系统,智慧办公助手,企业知识库AI,企业微信AI助手搭建,钉钉AI知识库接入,飞书AI助手集成"
+    />
+    <meta name="author" content="飞致云" />
+    <meta name="application-name" content="MaxKB" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#5A55FA" />
+    <meta name="generator" content="Static HTML" />
+    <link rel="canonical" href="https://www.maxkb.cn/" />
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+    <meta property="og:title" content="MaxKB - 强大易用的企业级智能体平台" />
+    <meta
+      property="og:description"
+      content="MaxKB 是飞致云旗下开源企业级智能体平台，支持 RAG 知识库、DeepSeek 私有化部署、企业智能客服、智慧办公助手、工作流编排与企业级权限治理。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.maxkb.cn/" />
+    <meta property="og:image" content="https://www.maxkb.cn/images/dashboard.png" />
+    <meta property="og:image:alt" content="MaxKB - 强大易用的企业级智能体平台" />
+    <meta property="og:site_name" content="MaxKB" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MaxKB - 强大易用的企业级智能体平台" />
+    <meta
+      name="twitter:description"
+      content="MaxKB 是飞致云旗下开源企业级智能体平台，支持 RAG 知识库、DeepSeek 私有化部署、企业智能客服、智慧办公助手、工作流编排与企业级权限治理。"
+    />
+    <meta name="twitter:image" content="https://www.maxkb.cn/images/dashboard.png" />
+    <meta name="twitter:image:alt" content="MaxKB - 强大易用的企业级智能体平台" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG51348CBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = window.gtag || gtag;
+      gtag("js", new Date());
+      gtag("config", "G-NG51348CBW");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MaxKB",
+        "url": "https://www.maxkb.cn/",
+        "inLanguage": "zh-CN"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "MaxKB",
+        "url": "https://www.maxkb.cn/",
+        "logo": "https://www.maxkb.cn/images/maxkb.png",
+        "sameAs": [
+          "https://github.com/1Panel-dev/MaxKB",
+          "https://maxkb.cn/docs/",
+          "https://bbs.fit2cloud.com/c/mk/11"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "400-052-0755",
+          "contactType": "customer support",
+          "email": "support@fit2cloud.com",
+          "availableLanguage": ["zh-CN"]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "MaxKB",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, Linux",
+        "url": "https://www.maxkb.cn/",
+        "image": "https://www.maxkb.cn/images/dashboard.png",
+        "description": "MaxKB 是企业级智能体平台，支持 RAG 知识库、企业智能客服、智能办公助手、私有化部署和企业级权限治理。",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "MaxKB 核心入口",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "RAG知识库搭建", "url": "https://maxkb.cn/docs/" },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "DeepSeek 知识库与私有化部署",
+            "url": "https://www.maxkb.cn/contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "企业微信 / 钉钉 / 飞书 AI 助手",
+            "url": "https://www.maxkb.cn/contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "企业智能客服系统",
+            "url": "https://www.maxkb.cn/intelligentcs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "智慧办公与企业 AI 助手",
+            "url": "https://www.maxkb.cn/smartoffice"
+          },
+          { "@type": "ListItem", "position": 6, "name": "MaxKB 产品动态", "url": "https://www.maxkb.cn/blog" },
+          { "@type": "ListItem", "position": 7, "name": "MaxKB vs Dify", "url": "https://www.maxkb.cn/maxkb-vs-dify" },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "MaxKB vs RagFlow",
+            "url": "https://www.maxkb.cn/maxkb-vs-ragflow"
+          },
+          { "@type": "ListItem", "position": 9, "name": "MaxKB vs n8n", "url": "https://www.maxkb.cn/maxkb-vs-n8n" }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "什么是 RAG 知识库，MaxKB 适合哪些企业场景？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RAG 知识库通过检索企业内部知识来增强大模型回答效果。MaxKB 适合企业知识库问答、智能客服、内部助手、业务 Copilot 和私有化 AI 落地场景。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "MaxKB 能否用于 DeepSeek 知识库、Qwen 知识库和企业私有化部署？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以。MaxKB 支持对接本地大模型和主流模型供应商，适合搭建 DeepSeek 知识库、Qwen 知识库、DeepSeek 企业部署和私有化 AI 平台。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "MaxKB 是否支持企业微信、钉钉和飞书 AI 助手接入？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支持。MaxKB 可以零编码嵌入网站，也支持企业微信、钉钉、飞书等办公系统接入，方便企业快速搭建 AI 助手和知识库问答服务。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "MaxKB 是否支持企业级权限管控和私有化部署？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支持。MaxKB 提供私有化部署能力，同时支持 RBAC、SSO、企业扫码登录、操作日志和多租户等企业级权限治理能力。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "MaxKB 与 Dify、RagFlow、n8n 的主要区别是什么？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "MaxKB 更强调企业知识服务落地、原厂售后支持、价格透明和权限治理；Dify 更偏通用 AI 应用开发平台，RagFlow 更偏深度文档理解与 RAG 能力，n8n 更偏自动化工作流与系统集成。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "哪些行业适合用 MaxKB 做企业 AI 落地方案？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "政府、教育、医疗、制造、交通、零售、科技服务等行业都适合使用 MaxKB 搭建企业知识库 AI、智能客服系统和内部业务助手，MaxKB 已服务 1000+ 企业客户。"
+            }
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+  <body data-static-site data-page-kind="home">
+    <div class="page-aurora" aria-hidden="true"></div>
+    <div class="static-island" data-static-component="TopHeader" data-static-export="default">
+      <div class="bg-black text-white text-sm py-2 px-4 relative z-[9999]">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="flex items-center">
+            <a
+              href="https://www.fit2cloud.com/"
+              class="text-white hover:text-gray-200 transition-colors duration-200 font-medium"
+              ><img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD" class="h-5 w-auto"
+            /></a>
+          </div>
+          <div class="relative">
+            <button
+              class="flex items-center text-white hover:text-gray-200 transition-colors duration-200 px-3 py-1 rounded"
+            >
+              <span>了解飞致云旗下开源产品</span
+              ><svg
+                class="ml-2 w-4 h-4 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="static-island" data-static-component="Header" data-static-export="default">
+      <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="container-custom">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="text-2xl font-bold text-primary">
+                <a href="/" class="text-2xl font-bold text-primary"
+                  ><img src="images/maxkb.png" alt="MaxKB Logo" class="w-auto h-10 rounded-xl"
+                /></a>
+              </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8">
+              <a href="/" class="text-gray-700 hover:text-primary transition-colors">首页</a
+              ><a href="/price" class="relative inline-block text-gray-700 hover:text-primary transition-colors"
+                >价格<span class="absolute -top-1 -right-4 text-sm">🔥</span></a
+              ><a href="/appliance" class="text-gray-700 hover:text-primary transition-colors">一体机</a
+              ><a
+                href="https://apps.fit2cloud.com/maxkb"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-primary-tool-market
+                class="text-gray-700 hover:text-primary transition-colors"
+                >工具市场</a
+              >
+              <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                  帮助与支持<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down ml-1 h-4 w-4"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="https://space.bilibili.com/1538710292/lists/5307430"
+                target="_blank"
+                class="text-gray-700 hover:text-primary transition-colors"
+                rel="noopener noreferrer"
+                >成功案例</a
+              ><a href="/contact" class="text-gray-700 hover:text-primary transition-colors">联系我们</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-3" data-header-actions>
+              <a
+                href="https://github.com/1Panel-dev/MaxKB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary flex items-center space-x-2"
+                ><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  ></path></svg
+                ><span>代码仓库</span></a
+              ><a
+                href="https://community.fit2cloud.com/#/products/maxkb/information"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary flex items-center space-x-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-download h-4 w-4"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" x2="12" y1="15" y2="3"></line></svg
+                ><span>免费下载</span></a
+              >
+            </div>
+            <button class="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu h-6 w-6"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main id="main-content">
+      <div class="static-island" data-static-component="Hero" data-static-export="default">
+        <section
+          class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"
+        >
+          <div class="container-custom relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+              <div class="space-y-8">
+                <div class="space-y-6">
+                  <div
+                    class="inline-flex items-center px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full text-primary font-semibold text-sm border border-primary/20 shadow-lg"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-sparkles h-4 w-4 mr-2"
+                    >
+                      <path
+                        d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                      ></path>
+                      <path d="M20 3v4"></path>
+                      <path d="M22 5h-4"></path>
+                      <path d="M4 17v2"></path>
+                      <path d="M5 18H3"></path></svg
+                    >飞致云匠心出品
+                  </div>
+                  <h1 class="text-6xl lg:text-8xl font-bold leading-tight">
+                    <span
+                      class="bg-clip-text text-transparent"
+                      style="
+                        background-image: linear-gradient(to right, #3370ff, #7f3bf5);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                      "
+                      >MaxKB</span
+                    ><span class="block text-3xl lg:text-4xl font-semibold text-gray-700 mt-4">让 AI 落地更简单</span>
+                  </h1>
+                  <p class="text-xl text-gray-600 leading-relaxed max-w-2xl">
+                    MaxKB 是开源企业级智能体平台，致力于解决企业 AI
+                    落地面临的技术门槛高、部署成本高、迭代周期长等问题，助力企业在人工智能时代赢得先机。
+                  </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://community.fit2cloud.com/#/products/maxkb/information"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary flex items-center justify-center space-x-3 text-lg px-8 py-4 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-download h-5 w-5"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" x2="12" y1="15" y2="3"></line></svg
+                    ><span>免费下载</span></a
+                  ><a
+                    href="https://www.bilibili.com/video/BV1vpamzREeS/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-white/80 backdrop-blur-sm border-2 border-primary text-primary hover:bg-primary hover:text-white flex items-center justify-center space-x-3 text-lg px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-play h-5 w-5"
+                    >
+                      <polygon points="6 3 20 12 6 21 6 3"></polygon></svg
+                    ><span>观看演示</span></a
+                  >
+                </div>
+                <div class="grid grid-cols-3 gap-6 pt-8">
+                  <div
+                    class="text-center bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-sm"
+                  >
+                    <div
+                      class="text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent"
+                    >
+                      20K+
+                    </div>
+                    <div class="text-sm text-gray-600 mt-1 font-medium">GitHub Stars</div>
+                  </div>
+                  <div
+                    class="text-center bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-sm"
+                  >
+                    <div
+                      class="text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent"
+                    >
+                      100万+
+                    </div>
+                    <div class="text-sm text-gray-600 mt-1 font-medium">免费安装量</div>
+                  </div>
+                  <div
+                    class="text-center bg-white/50 backdrop-blur-sm p-4 rounded-2xl border border-gray-200/50 shadow-sm"
+                  >
+                    <div
+                      class="text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent"
+                    >
+                      1000+
+                    </div>
+                    <div class="text-sm text-gray-600 mt-1 font-medium">付费客户数</div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="relative">
+                  <div
+                    class="relative bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-gray-200/50"
+                  >
+                    <div class="space-y-6">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                          <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                          <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                          <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                        </div>
+                      </div>
+                      <img
+                        src="images/dashboard.png"
+                        alt="MaxKB AI 助手界面"
+                        class="w-full h-64 object-cover rounded-2xl"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur-sm rounded-xl shadow-xl p-4 border border-gray-200/50 animate-float delay-500"
+                  >
+                    <div class="flex items-center space-x-3">
+                      <div
+                        class="w-10 h-10 bg-gradient-to-r from-primary to-purple-500 rounded-lg flex items-center justify-center"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-shield h-5 w-5 text-white"
+                        >
+                          <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div>
+                        <div class="text-sm font-semibold text-gray-900">安全可控</div>
+                        <div class="text-xs text-gray-500">企业级部署</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">产品理念</h2>
+            <div class="text-2xl font-semibold text-primary mb-4">开箱即用 · 伴随成长</div>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              我们坚信 AI 应该是简单易用的，每个企业都应该能够轻松享受到 AI 带来的业务价值
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-6 space-x-4">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-rocket h-6 w-6 text-primary"
+                  >
+                    <path
+                      d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
+                    ></path>
+                    <path
+                      d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
+                    ></path>
+                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">开箱即用</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                无需复杂配置，快速部署上线。预配置的模板和组件让您在几分钟内就能拥有专属的 AI 助手，
+                大幅降低技术门槛和实施成本。
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center mb-6 space-x-4">
+                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-target h-6 w-6 text-primary"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">伴随成长</h3>
+              </div>
+              <p class="text-gray-600 leading-relaxed">
+                从基础知识问答（RAG）、复杂业务流程自动化（Workflow，工作流）到智能体（Agent）的渐进式升级路径。伴随业务的发展，
+                AI 能力也会不断进化，真正做到与企业共同成长。
+              </p>
+            </div>
+          </div>
+          <div data-landing-steps class="bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
+            <div class="text-center mb-12">
+              <h3 class="text-3xl font-bold text-gray-900 mb-4">三步实现 AI 落地</h3>
+              <p class="text-lg text-gray-600">简化 AI 落地流程，让新技术服务于业务</p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+              <div class="relative">
+                <div class="text-center">
+                  <div
+                    class="w-20 h-20 bg-gradient-to-r from-primary to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <span class="text-2xl font-bold text-white">1</span>
+                  </div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-4">快速接入大模型</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    在私有环境中快速接入主流大模型， 比如 DeepSeek、Qwen、OpenAI、Claude 等。
+                  </p>
+                </div>
+                <div class="hidden lg:block absolute top-10 -right-4 text-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-8 w-8"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="text-center">
+                  <div
+                    class="w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <span class="text-2xl font-bold text-white">2</span>
+                  </div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-4">构建专属知识库</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    高效构建企业专属知识库，支持多种格式的文档导入， 支持文本自动拆分和向量化。
+                  </p>
+                </div>
+                <div class="hidden lg:block absolute top-10 -right-4 text-primary">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-8 w-8"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <div class="text-center">
+                  <div
+                    class="w-20 h-20 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6"
+                  >
+                    <span class="text-2xl font-bold text-white">3</span>
+                  </div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-4">渐进式能力升级</h4>
+                  <p class="text-gray-600 leading-relaxed">
+                    从基础问答（RAG）开始，逐步升级到复杂流程自动化（Workflow）， 最终实现智能体（Agent）的全面应用。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-padding bg-white">
+        <div class="container-custom">
+          <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">快速嵌入各类系统</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">零编码快速集成，让现有系统瞬间拥有 AI 能力</p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-12 mb-16">
+            <div class="bg-gradient-to-br from-primary/5 to-purple-100/50 rounded-3xl p-8 lg:p-10">
+              <div class="flex items-center space-x-4 mb-6 h-16">
+                <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-globe h-8 w-8 text-white"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <div class="flex items-center h-full">
+                  <h3 class="text-2xl font-bold text-gray-900">零编码快速嵌入</h3>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                MaxKB 支持零编码快速嵌入到网站、办公系统（企业微信/钉钉/飞书）和第三方业务系统，
+                让已有系统快速拥有智能问答能力，提高用户满意度。
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8">
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">官网</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">企业微信</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">钉钉</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">飞书</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">公众号</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-check h-5 w-5 text-green-500"
+                  >
+                    <path d="M20 6 9 17l-5-5"></path></svg
+                  ><span class="text-gray-700">移动端 APP</span>
+                </div>
+              </div>
+              <div class="relative">
+                <img src="images/lingdaima.png" alt="办公系统集成" class="w-full h-48 object-cover rounded-2xl" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-100/50 rounded-3xl p-8 lg:p-10">
+              <div class="flex items-center space-x-4 mb-6 h-16">
+                <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-code h-8 w-8 text-white"
+                  >
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="flex items-center h-full">
+                  <h3 class="text-2xl font-bold text-gray-900">开放 API 接口</h3>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                MaxKB 实现 AI 能力并对外开放 API，业务系统可以调用 MaxKB 的 API 来实现 AI 审核和决策，
+                大幅度提升业务效率和决策质量。
+              </p>
+              <div class="space-y-4 mb-8">
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div class="font-semibold text-gray-900">智能审核</div>
+                    <div class="text-gray-600">让 AI 代替人工审核</div>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div>
+                    <div class="font-semibold text-gray-900">智能决策</div>
+                    <div class="text-gray-600">实现 AI 驱动的智能业务决策支持</div>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <img src="images/kaifang-api.png" alt="API 接口集成" class="w-full h-48 object-cover rounded-2xl" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="static-island" data-static-component="ApplicationScenarios">
+        <section id="scenarios" data-static-scenarios class="section-padding bg-gray-50">
+          <div class="container-custom">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+              <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">应用场景</h2>
+              <p class="text-xl text-gray-600 leading-relaxed">覆盖企业核心业务场景，为不同行业提供专业 AI 解决方案</p>
+            </div>
+            <div role="tablist" aria-label="应用场景" class="flex flex-wrap justify-center gap-4 mb-12">
+              <button
+                type="button"
+                role="tab"
+                data-scenario-tab="customer-service"
+                aria-selected="true"
+                class="flex items-center space-x-3 px-6 py-4 rounded-xl font-medium transition-all bg-primary text-white shadow-lg transform scale-105"
+              >
+                <span>智能客服</span></button
+              ><button
+                type="button"
+                role="tab"
+                data-scenario-tab="office-assistant"
+                aria-selected="false"
+                class="flex items-center space-x-3 px-6 py-4 rounded-xl font-medium transition-all bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
+              >
+                <span>智慧办公助手</span></button
+              ><button
+                type="button"
+                role="tab"
+                data-scenario-tab="business-ai"
+                aria-selected="false"
+                class="flex items-center space-x-3 px-6 py-4 rounded-xl font-medium transition-all bg-white text-gray-700 hover:bg-gray-50 border border-gray-200"
+              >
+                <span>业务系统 + AI</span>
+              </button>
+            </div>
+            <div
+              role="tabpanel"
+              data-scenario-panel="customer-service"
+              class="bg-white rounded-3xl overflow-hidden shadow-xl"
+            >
+              <div class="grid lg:grid-cols-2 gap-0">
+                <div class="p-8 lg:p-12">
+                  <div class="flex items-center space-x-4 mb-6">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-2xl text-white"
+                    >
+                      ✦
+                    </div>
+                    <div><h3 class="text-3xl font-bold text-gray-900">智能客服</h3></div>
+                  </div>
+                  <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    用 AI
+                    的方式解决长期困扰企业客服场景中服务时长受限、人力成本高、服务质量参差不齐、服务知识难于沉淀迭代等问题。
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">精准解决</div>
+                        <div class="text-gray-600 text-xs">全天候在线应答，提升服务效率</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">降本增效</div>
+                        <div class="text-gray-600 text-xs">减少人力投入，提升客服服务质量</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">持续优化</div>
+                        <div class="text-gray-600 text-xs">知识持续迭代，服务水平不断提升</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">安全可控</div>
+                        <div class="text-gray-600 text-xs">私有化部署，企业数据自主可控</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="font-semibold text-gray-900 mb-4">核心特性</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>快速部署使用</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>富媒体交互</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>企业级安全保障</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>结合垂直领域知识</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>专业技术支持</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>服务体系持续进化</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="/intelligentcs" class="btn-primary inline-block">了解详情</a>
+                </div>
+                <div class="relative">
+                  <img src="images/ai-customer-service.png" alt="智能客服" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-blue-500 to-blue-600 opacity-20"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              role="tabpanel"
+              data-scenario-panel="office-assistant"
+              hidden
+              class="bg-white rounded-3xl overflow-hidden shadow-xl"
+            >
+              <div class="grid lg:grid-cols-2 gap-0">
+                <div class="p-8 lg:p-12">
+                  <div class="flex items-center space-x-4 mb-6">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-2xl text-white"
+                    >
+                      ✦
+                    </div>
+                    <div><h3 class="text-3xl font-bold text-gray-900">智慧办公助手</h3></div>
+                  </div>
+                  <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    为企业提供全方位的办公自动化解决方案，从内容生成到规章制度，从合同审核到销售支持，全面提升工作效率和决策质量。
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">智能内容创作</div>
+                        <div class="text-gray-600 text-xs">员工结合内部知识库和联网数据，自动化生成营销文案和报告</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">规章制度问答</div>
+                        <div class="text-gray-600 text-xs">员工随时查询企业的人事和财务规章制度，获得准确解答</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">智能合同审核</div>
+                        <div class="text-gray-600 text-xs">法务部门利用 AI 助手快速审核合同条款，识别潜在风险</div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">智能销售支持</div>
+                        <div class="text-gray-600 text-xs">销售团队通过 AI 助手快速查询客户信息、生成报价单等</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="font-semibold text-gray-900 mb-4">核心特性</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>内容生成 AI 助手</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>规章问答 AI 助手</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>合同审核 AI 助手</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>销售支持 AI 助手</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="/smartoffice" class="btn-primary inline-block">了解详情</a>
+                </div>
+                <div class="relative">
+                  <img src="images/office-collaboration.jpg" alt="智慧办公助手" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-purple-500 to-purple-600 opacity-20"></div>
+                </div>
+              </div>
+            </div>
+            <div
+              role="tabpanel"
+              data-scenario-panel="business-ai"
+              hidden
+              class="bg-white rounded-3xl overflow-hidden shadow-xl"
+            >
+              <div class="grid lg:grid-cols-2 gap-0">
+                <div class="p-8 lg:p-12">
+                  <div class="flex items-center space-x-4 mb-6">
+                    <div
+                      class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-2xl text-white"
+                    >
+                      ✦
+                    </div>
+                    <div><h3 class="text-3xl font-bold text-gray-900">业务系统 + AI</h3></div>
+                  </div>
+                  <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                    重塑企业业务流程，减少对人力的依赖，提升决策的科学性和精准性。
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">自动化重复性任务</div>
+                        <div class="text-gray-600 text-xs">
+                          通过 AI 实现重复性高、规则明确任务的自动化，如数据录入等
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">业务流程更智能</div>
+                        <div class="text-gray-600 text-xs">
+                          借助 AI 开展岗位培训、点检、审计等工作，提升业务流程运行质量和效率。
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">智能决策支持</div>
+                        <div class="text-gray-600 text-xs">
+                          AI 参与企业的判断和决策过程，如供应链库存优化、市场营销投放策略等
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div
+                        class="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 text-primary"
+                      >
+                        ✓
+                      </div>
+                      <div>
+                        <div class="font-semibold text-gray-900 text-sm">系统集成与优化</div>
+                        <div class="text-gray-600 text-xs">
+                          AI 可以与现有 ERP、CRM 等业务系统深度集成，提升整体运营效率
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-8">
+                    <h4 class="font-semibold text-gray-900 mb-4">核心特性</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>AI 审批助手</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>智能故障解析</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>AI 智能出题</span>
+                      </div>
+                      <div class="flex items-center space-x-2 text-sm text-gray-600">
+                        <span class="text-primary">›</span><span>业务预测建模</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    href="https://space.bilibili.com/1538710292/lists/5307430/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary inline-block"
+                    >了解详情</a
+                  >
+                </div>
+                <div class="relative">
+                  <img src="images/digital-transformation.png" alt="业务系统 + AI" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-green-500 to-green-600 opacity-20"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="static-island" data-static-component="SuccessCases">
+        <section id="cases" data-static-cases-expanded class="section-padding bg-white">
+          <div class="container-custom">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+              <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">成功案例</h2>
+              <p class="text-xl text-gray-600 leading-relaxed">
+                已为 1000+ 企业和机构提供专业 AI 解决方案，广泛覆盖主流行业
+              </p>
+            </div>
+            <div data-case-grid class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/hualaishi.png" alt="华莱士智能客服" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">连锁餐饮</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">华莱士智能客服</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">连锁餐饮智能客服解决方案，显著提升客户服务效率。</p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">响应时间缩短</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">客服成本降低</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">客户满意度提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/zhongguonongda.png" alt="中国农业大学 AI 助手" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">高等教育</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">中国农业大学 AI 助手</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为师生提供校园服务 AI 助手，涵盖教务咨询、生活服务、学术资源等多个方面。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">师生咨询响应速度提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">校园服务覆盖率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">学生满意度提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/shenzhentong.png" alt='"深圳通"智能客服' class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">城市服务</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">&quot;深圳通&quot;智能客服</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为深圳通卡服务提供智能客服支持，处理充值、余额查询、使用指南等日常咨询需求。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">用户咨询满意度提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">自助解决率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">人工客服压力减轻</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/guangxizhijian.png"
+                    alt="广西质检院 AI 客服系统"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">质量检测</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">广西质检院 AI 客服系统</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    提供专业的检测业务咨询服务，涵盖检测项目介绍、流程指导、报告查询等功能。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">检测咨询响应速度提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">业务办理准确率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">客户等待时间减少</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/wanshunjiaoche.png" alt="万顺叫车 AI 客服系统" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">出行服务</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">万顺叫车 AI 客服系统</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    打造智能客服系统，处理订单问题、司机咨询、用户投诉等多场景服务需求。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">工单处理效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">司机问题解决率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">客服人力成本降低</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/geyang.png" alt="戈阳县政务服务 AI 助手" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">政务服务</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">戈阳县政务服务 AI 助手</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为戈阳县政务服务中心打造 AI 助手，提供政策解读、办事指南、预约服务等。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">政务服务效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">群众办事便利度提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">政策咨询准确率提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/futiangongzhengchu.png"
+                    alt="福田公证处 AI 助手"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">政务服务</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">福田公证处 AI 助手</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    构建 AI 助手，提供公证业务咨询、办事流程指导、法律条文解释等服务。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">业务咨询效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">办事流程清晰度提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">群众满意度提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/beijingjiangong.png"
+                    alt="北京建工六建智能建造助手"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">建筑工程</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">北京建工六建智能建造助手</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为建筑施工企业提供智能建造助手，涵盖施工规范、安全标准、技术指导等专业服务。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">技术咨询效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">安全规范执行率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">施工质量提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/dongbeicaijing.png"
+                    alt="东北财经大学专属智慧助理"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">高等教育</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">东北财经大学专属智慧助理</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为东北财经大学打造专属智慧助理，提供学术资源检索、课程咨询、校园生活指导等服务。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">学术资源利用率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">学生服务响应时间缩短</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">校园数字化水平提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/shenzhendaxue.png"
+                    alt="深圳大学附属华南医院医生助手"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">医疗健康</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">深圳大学附属华南医院医生助手</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为医院科室构建专业的医学知识库助手，辅助医生快速获取疾病信息、治疗方案等内容。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">医学知识检索效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">诊疗决策支持准确率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">医生工作效率提升</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img
+                    src="images/tangshanhaishiju.png"
+                    alt="唐山海事局 AI 海事应用"
+                    class="w-full h-full object-cover"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">海事管理</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">唐山海事局 AI 海事应用</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    为海事管理部门提供智能化海事服务，涵盖船舶管理、航行安全、法规咨询等专业领域。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">海事服务效率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">船舶管理数字化率提升</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">安全事故预防能力增强</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article
+                class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden border border-gray-100"
+              >
+                <div class="relative h-48 overflow-hidden">
+                  <img src="images/dushiliren.png" alt="都市丽人 AI 智慧导购" class="w-full h-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div class="absolute top-4 left-4">
+                    <span class="inline-block px-3 py-1 bg-primary/90 text-white text-sm rounded-full">服装零售</span>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-900 mb-3">都市丽人 AI 智慧导购</h3>
+                  <p class="text-gray-600 mb-6 leading-relaxed">
+                    通过数字化手段重构消费体验和门店运营模式，提供覆盖全场景的知识库和解决方案。
+                  </p>
+                  <div class="space-y-2">
+                    <h4 class="font-semibold text-gray-900 text-sm mb-3">核心成果</h4>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">门店营销素材高效自助生产</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">导购专业服务标准化赋能</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <div class="w-2 h-2 bg-primary rounded-full"></div>
+                      <span class="text-sm text-gray-600">跨门店库存智能查询调度</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="mt-16">
+              <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">覆盖行业</h3>
+              <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">政府</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">教育</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">医疗</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">制造</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">交通</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">零售</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">能源</div>
+                </div>
+                <div class="text-center p-4 bg-gray-50 rounded-xl hover:bg-primary/5 transition-colors">
+                  <div
+                    class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3 text-primary"
+                  >
+                    ✦
+                  </div>
+                  <div class="text-sm font-medium text-gray-700">科技</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section-padding bg-gray-50">
+        <div class="container-custom">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">为什么选择 MaxKB ？</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">开源开放、持续创新、经过验证的 AI 解决方案</p>
+          </div>
+          <div data-site-proof-grid class="grid lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-star h-8 w-8 text-white"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">20K+ GitHub Stars</h3>
+                  <p class="text-orange-500 font-medium">开发者信赖之选</p>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                开源开放，安全可控。在 GitHub 上收获超过 20K 个 Star， 赢得全球开发者社区的广泛认可。
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center p-4 bg-orange-50 rounded-xl">
+                  <div class="text-2xl font-bold text-orange-600">20K+</div>
+                  <div class="text-sm text-gray-600">GitHub Stars</div>
+                </div>
+                <div class="text-center p-4 bg-blue-50 rounded-xl">
+                  <div class="text-2xl font-bold text-blue-600">500+</div>
+                  <div class="text-sm text-gray-600">开源贡献者</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-zap h-8 w-8 text-white"
+                  >
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">按月迭代</h3>
+                  <p class="text-primary font-medium">功能快速升级</p>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                坚持每月发布新版本，快速响应用户需求，持续优化产品体验。 确保您始终享受到最新的 AI 技术和功能特性。
+              </p>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-primary rounded-full"></div>
+                  <span class="text-gray-700">新功能快速上线</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-primary rounded-full"></div>
+                  <span class="text-gray-700">用户反馈及时响应</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                  <div class="w-3 h-3 bg-primary rounded-full"></div>
+                  <span class="text-gray-700">技术架构持续优化</span>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-download h-8 w-8 text-white"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" x2="12" y1="15" y2="3"></line>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">100万+ 累计下载</h3>
+                  <p class="text-green-500 font-medium">用户广泛认可</p>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                累计安装下载量已达 100万+，覆盖全球用户。 稳定的产品质量和优秀的用户体验获得了市场的广泛认可。
+              </p>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="text-center p-3 bg-green-50 rounded-lg">
+                  <div class="text-lg font-bold text-green-600">100万+</div>
+                  <div class="text-xs text-gray-600">总下载量</div>
+                </div>
+                <div class="text-center p-3 bg-blue-50 rounded-lg">
+                  <div class="text-lg font-bold text-blue-600">20+</div>
+                  <div class="text-xs text-gray-600">国家/地区</div>
+                </div>
+                <div class="text-center p-3 bg-purple-50 rounded-lg">
+                  <div class="text-lg font-bold text-purple-600">98%</div>
+                  <div class="text-xs text-gray-600">好评率</div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-lg hover:shadow-xl transition-shadow">
+              <div class="flex items-center space-x-4 mb-6">
+                <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-8 w-8 text-white"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">1000+ 企业客户</h3>
+                  <p class="text-blue-500 font-medium">生产环境验证</p>
+                </div>
+              </div>
+              <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                服务超过 1000 家企业付费客户，广泛验证，成功经受严苛生产环境考验。
+              </p>
+              <div class="flex items-center justify-between">
+                <div class="text-center">
+                  <div class="text-xl font-bold text-blue-600">1000+</div>
+                  <div class="text-sm text-gray-600">企业客户</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-xl font-bold text-green-600">98%</div>
+                  <div class="text-sm text-gray-600">服务满意度</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-xl font-bold text-purple-600">8/5</div>
+                  <div class="text-sm text-gray-600">技术支持</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        data-site-section="contact"
+        class="section-padding bg-gradient-to-br from-slate-50 to-blue-50"
+      >
+        <div class="container-custom">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">联系我们</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+              专业的技术团队随时为您提供支持，让我们一起开启 AI 落地之旅
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+              <div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone h-8 w-8 text-white"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">400 客服电话</h3>
+                  <p class="text-2xl font-bold text-blue-600 mb-3">400-052-0755</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+              <div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mail h-8 w-8 text-white"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">邮箱联系</h3>
+                  <p class="text-xl font-bold text-green-600 mb-3">support@fit2cloud.com</p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://jsj.top/f/wQsdOJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white rounded-3xl p-8 shadow-xl"
+              ><div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big h-8 w-8 text-white"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">商业版试用</h3>
+                  <p class="text-xl font-bold text-purple-600 mb-3 inline-flex items-center">
+                    立即申请<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-external-link h-5 w-5 ml-2"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    </svg>
+                  </p>
+                </div></div></a
+            ><a
+              href="https://jsj.top/f/vKGHRP"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white rounded-3xl p-8 shadow-xl"
+              ><div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-8 w-8 text-white"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">成为合作伙伴</h3>
+                  <p class="text-xl font-bold text-orange-600 mb-3 inline-flex items-center">
+                    立即申请<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-external-link h-5 w-5 ml-2"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    </svg>
+                  </p>
+                </div></div
+            ></a>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">更多支持资源</h3>
+            <div class="grid md:grid-cols-4 gap-8">
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text h-8 w-8 text-blue-600"
+                  >
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">在线文档</h4>
+                <p class="text-gray-600 mb-4">详细的产品文档、API 文档和使用指南，帮助您快速上手</p>
+                <a
+                  href="https://maxkb.cn/docs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >查看文档<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-8 w-8 text-green-600"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">社区论坛</h4>
+                <p class="text-gray-600 mb-4">与其他用户交流经验、分享最佳实践，获得社区支持</p>
+                <a
+                  href="https://bbs.fit2cloud.com/c/mk/11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >加入论坛<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big h-8 w-8 text-purple-600"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">培训认证</h4>
+                <p class="text-gray-600 mb-4">专业的培训课程和认证体系，持续提升团队技能水平与实战能力</p>
+                <a
+                  href="https://edu.fit2cloud.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >了解培训<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-circle h-8 w-8 text-orange-600"
+                  >
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">扫码加入交流群</h4>
+                <div class="flex justify-center mb-4">
+                  <div class="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <img
+                      src="images/wechat-group.jpg"
+                      alt="微信群二维码"
+                      class="w-full h-full object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p class="text-gray-600 text-sm"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white text-sm">
+      <div class="container-custom py-16">
+        <div class="grid gap-12" data-footer-layout>
+          <div data-footer-brand>
+            <div class="mb-4"><img src="images/maxkb.png" alt="MaxKB Logo" class="w-auto h-10 rounded-xl" /></div>
+            <p class="text-gray-400 leading-relaxed mb-4 max-w-lg text-base">
+              MaxKB = Max Knowledge Brain，是企业级智能体平台，致力于解决企业 AI
+              落地面临的技术门槛高、部署成本高、迭代周期长等核心问题。
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">常用链接</h4>
+            <div class="space-y-3">
+              <a
+                href="https://github.com/1Panel-dev/MaxKB"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github h-4 w-4 group-hover:text-primary"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                ><span>GitHub 项目</span></a
+              ><a
+                href="https://maxkb.cn/docs/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>产品文档</span></a
+              ><a
+                href="/blog"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-newspaper h-4 w-4 group-hover:text-primary"
+                >
+                  <path
+                    d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"
+                  ></path>
+                  <path d="M18 14h-8"></path>
+                  <path d="M15 18h-5"></path>
+                  <path d="M10 6h8v4h-8V6Z"></path></svg
+                ><span>产品动态</span></a
+              ><a
+                href="https://bbs.fit2cloud.com/c/mk/11"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-circle h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg
+                ><span>社区论坛</span></a
+              ><a
+                href="https://edu.fit2cloud.com/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>培训认证</span></a
+              ><a
+                href="https://fit2cloud.com/about/index.html"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>关于飞致云</span></a
+              ><a
+                href="https://maxkb.pro/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>English</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">对比</h4>
+            <div class="space-y-3">
+              <a
+                href="/maxkb-vs-dify"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS Dify</span></a
+              ><a
+                href="/maxkb-vs-n8n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS n8n</span></a
+              ><a
+                href="/maxkb-vs-ragflow"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS RagFlow</span></a
+              >
+            </div>
+          </div>
+          <div data-footer-solutions>
+            <h4 class="text-white text-base font-semibold mb-4">解决方案</h4>
+            <div class="space-y-3">
+              <a
+                href="/intelligentcs"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>智能客服</span></a
+              ><a
+                href="/smartoffice"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>智慧办公</span></a
+              ><a
+                href="https://cordys.cn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>AI CRM</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">联系我们</h4>
+            <div class="space-y-5 text-sm text-gray-400">
+              <div class="flex items-start space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-phone h-4 w-4 text-primary mt-0.5"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <div>
+                  <div class="text-white font-medium">电话</div>
+                  <div class="text-lg font-bold text-primary">400-052-0755</div>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail h-4 w-4 text-primary mt-0.5"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div>
+                  <div class="text-white font-medium">邮箱</div>
+                  <div class="text-base text-primary">support@fit2cloud.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-800 pt-4 text-center space-y-3">
+        <p class="text-gray-500 text-sm pb-6">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号-9</a>
+        </p>
+        <p class="text-gray-500 text-sm pb-6">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        let e = document.querySelectorAll(`main > section, main > div > section, article`);
+        if ((e.forEach((e) => e.setAttribute(`data-reveal`, ``)), !(`IntersectionObserver` in window))) {
+          e.forEach((e) => e.classList.add(`is-visible`));
+          return;
+        }
+        document.documentElement.classList.add(`reveal-ready`);
+        let t = new IntersectionObserver(
+          (e) => {
+            e.forEach((e) => {
+              e.isIntersecting && (e.target.classList.add(`is-visible`), t.unobserve(e.target));
+            });
+          },
+          { rootMargin: `0px 0px -8% 0px`, threshold: 0.04 },
+        );
+        e.forEach((e) => t.observe(e));
+      })();
+    </script>
+    <script defer src="js/site.js"></script>
+    <script data-static-link-normalizer>
+      (function () {
+        if (location.protocol === "file:") return;
+        function n() {
+          document.querySelectorAll("a[href]").forEach(function (a) {
+            var h = a.getAttribute("href");
+            if (!h || /^(?:[a-z]+:|\/\/|#)/i.test(h)) return;
+            var m = h.match(/^(.*\/)index\.html([?#].*)?$/);
+            if (h === "index.html") a.setAttribute("href", "/");
+            else if (h.startsWith("index.html#") || h.startsWith("index.html?"))
+              a.setAttribute("href", "/" + h.slice(10));
+            else if (m) a.setAttribute("href", "/" + m[1].replace(/\/$/, "") + (m[2] || ""));
+          });
+        }
+        n();
+        new MutationObserver(n).observe(document.documentElement, {
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["href"],
+        });
+      })();
+    </script>
+  </body>
 </html>
