@@ -1,0 +1,23 @@
+# MaxKB
+
+This is the main MaxKB website. Use it for product positioning, pricing, contact, localized solution entry points, product updates, and competitive comparison pages. For implementation details, prefer the official MaxKB docs.
+
+## Core Pages
+- [Home](https://www.maxkb.cn/): 产品总览、能力介绍与客户案例。
+- [Pricing](https://www.maxkb.cn/price): 社区版、专业版与企业版授权说明。
+- [MaxKB Appliance](https://www.maxkb.cn/appliance): MaxKB 一体机（GB10版）软硬一体解决方案。
+- [AI Customer Service](https://www.maxkb.cn/intelligentcs): 本地化的 MaxKB 智能客服解决方案，覆盖私有化部署、RAG 知识库问答、7x24 在线服务和服务知识沉淀。
+- [Smart Office](https://www.maxkb.cn/smartoffice): 本地化的 MaxKB 智慧办公解决方案，覆盖内容生成、政策问答、合同审核和销售支持等企业 AI 办公场景。
+- [Contact](https://www.maxkb.cn/contact): 产品咨询、演示预约与企业服务。
+- [Product Updates](https://www.maxkb.cn/blog): 本地化产品动态入口，汇总 MaxKB 版本发布、实践教程、生态集成与行业应用文章。
+- [MaxKB vs Dify](https://www.maxkb.cn/maxkb-vs-dify): 与 Dify 的选型对比。
+- [MaxKB vs n8n](https://www.maxkb.cn/maxkb-vs-n8n): 与 n8n 的选型对比。
+- [MaxKB vs RagFlow](https://www.maxkb.cn/maxkb-vs-ragflow): 与 RagFlow 的选型对比。
+
+## Official Resources
+- [MaxKB Docs](https://maxkb.cn/docs/): 产品文档与部署指南。
+- [MaxKB GitHub](https://github.com/1Panel-dev/MaxKB): 源码与版本发布。
+- [MaxKB Community](https://bbs.fit2cloud.com/c/mk/11): 社区讨论与支持。
+- [MaxKB Download](https://community.fit2cloud.com/#/products/maxkb/information): 下载与版本信息。
+- [Training](https://edu.fit2cloud.com/): 培训认证。
+- [Whitepaper](https://whitepaper.maxkb.cn/): 技术白皮书。

@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>学习笔记丨MaxKB Office Word AI翻译加载项的实现 | MaxKB 产品动态</title>
+    <meta name="description" content="将MaxKB的AI翻译能力深度集成至Word办公环境。" />
+    <meta
+      name="keywords"
+      content="学习笔记丨MaxKB Office Word AI翻译加载项的实现,MaxKB 产品动态,MaxKB 博客,MaxKB 版本发布,MaxKB 教程,企业级智能体平台,RAG 知识库,企业 AI 应用"
+    />
+    <meta name="author" content="飞致云" />
+    <meta name="application-name" content="MaxKB" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="theme-color" content="#5A55FA" />
+    <meta name="generator" content="Static HTML" />
+    <link rel="canonical" href="https://www.maxkb.cn/blog/maxkb-word-translate" />
+    <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+    <meta property="og:title" content="学习笔记丨MaxKB Office Word AI翻译加载项的实现 | MaxKB 产品动态" />
+    <meta property="og:description" content="将MaxKB的AI翻译能力深度集成至Word办公环境。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.maxkb.cn/blog/maxkb-word-translate" />
+    <meta property="og:image" content="https://www.maxkb.cn/images/blog/maxkb-word-translate/cover.webp" />
+    <meta property="og:image:alt" content="学习笔记丨MaxKB Office Word AI翻译加载项的实现 | MaxKB 产品动态" />
+    <meta property="og:site_name" content="MaxKB" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="学习笔记丨MaxKB Office Word AI翻译加载项的实现 | MaxKB 产品动态" />
+    <meta name="twitter:description" content="将MaxKB的AI翻译能力深度集成至Word办公环境。" />
+    <meta name="twitter:image" content="https://www.maxkb.cn/images/blog/maxkb-word-translate/cover.webp" />
+    <meta name="twitter:image:alt" content="学习笔记丨MaxKB Office Word AI翻译加载项的实现 | MaxKB 产品动态" />
+    <meta property="article:author" content="飞致云" />
+    <meta property="article:published_time" content="2026-01-30" />
+    <meta property="article:modified_time" content="2026-01-30" />
+    <meta property="article:section" content="产品动态" />
+    <meta property="article:tag" content="MaxKB" />
+    <meta property="article:tag" content="产品动态" />
+    <meta property="article:tag" content="企业级智能体平台" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NG51348CBW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      window.gtag = window.gtag || gtag;
+      gtag("js", new Date());
+      gtag("config", "G-NG51348CBW");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "学习笔记丨MaxKB Office Word AI翻译加载项的实现",
+        "description": "将MaxKB的AI翻译能力深度集成至Word办公环境。",
+        "image": "https://www.maxkb.cn/images/blog/maxkb-word-translate/cover.webp",
+        "datePublished": "2026-01-30",
+        "dateModified": "2026-01-30",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "articleSection": "产品动态",
+        "author": { "@type": "Organization", "name": "飞致云", "url": "https://www.fit2cloud.com/" },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.maxkb.cn/blog/maxkb-word-translate" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MaxKB",
+          "url": "https://www.maxkb.cn/",
+          "logo": { "@type": "ImageObject", "url": "https://www.maxkb.cn/images/maxkb.png" }
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://www.maxkb.cn/" },
+          { "@type": "ListItem", "position": 2, "name": "产品动态", "item": "https://www.maxkb.cn/blog" },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "学习笔记丨MaxKB Office Word AI翻译加载项的实现",
+            "item": "https://www.maxkb.cn/blog/maxkb-word-translate"
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+  <body data-static-site data-page-kind="blog-article">
+    <div class="page-aurora" aria-hidden="true"></div>
+    <div class="static-island" data-static-component="TopHeader" data-static-export="default">
+      <div class="bg-black text-white text-sm py-2 px-4 relative z-[9999]">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <div class="flex items-center">
+            <a
+              href="https://www.fit2cloud.com/"
+              class="text-white hover:text-gray-200 transition-colors duration-200 font-medium"
+              ><img src="images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD" class="h-5 w-auto"
+            /></a>
+          </div>
+          <div class="relative">
+            <button
+              class="flex items-center text-white hover:text-gray-200 transition-colors duration-200 px-3 py-1 rounded"
+            >
+              <span>了解飞致云旗下开源产品</span
+              ><svg
+                class="ml-2 w-4 h-4 transition-transform duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="static-island" data-static-component="Header" data-static-export="default">
+      <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="container-custom">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="text-2xl font-bold text-primary">
+                <a href="/" class="text-2xl font-bold text-primary"
+                  ><img src="images/maxkb.png" alt="MaxKB Logo" class="w-auto h-10 rounded-xl"
+                /></a>
+              </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8">
+              <a href="/" class="text-gray-700 hover:text-primary transition-colors">首页</a
+              ><a href="/price" class="relative inline-block text-gray-700 hover:text-primary transition-colors"
+                >价格<span class="absolute -top-1 -right-4 text-sm">🔥</span></a
+              ><a href="/appliance" class="text-gray-700 hover:text-primary transition-colors">一体机</a
+              ><a
+                href="https://apps.fit2cloud.com/maxkb"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-primary-tool-market
+                class="text-gray-700 hover:text-primary transition-colors"
+                >工具市场</a
+              >
+              <div class="relative">
+                <button class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                  帮助与支持<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-chevron-down ml-1 h-4 w-4"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </button>
+              </div>
+              <a
+                href="https://space.bilibili.com/1538710292/lists/5307430"
+                target="_blank"
+                class="text-gray-700 hover:text-primary transition-colors"
+                rel="noopener noreferrer"
+                >成功案例</a
+              ><a href="/contact" class="text-gray-700 hover:text-primary transition-colors">联系我们</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-3" data-header-actions>
+              <a
+                href="https://github.com/1Panel-dev/MaxKB"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary flex items-center space-x-2"
+                ><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  ></path></svg
+                ><span>代码仓库</span></a
+              ><a
+                href="https://community.fit2cloud.com/#/products/maxkb/information"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary flex items-center space-x-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-download h-4 w-4"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" x2="12" y1="15" y2="3"></line></svg
+                ><span>免费下载</span></a
+              >
+            </div>
+            <button class="lg:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu h-6 w-6"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main id="main-content">
+      <article class="relative overflow-hidden bg-gray-50 text-gray-900">
+        <header class="relative overflow-hidden border-b border-indigo-100 bg-white">
+          <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(90,85,250,.16),transparent_36%),radial-gradient(circle_at_85%_20%,rgba(14,165,233,.10),transparent_32%)]"
+            aria-hidden="true"
+          ></div>
+          <div class="container-custom relative py-12 lg:py-16">
+            <a href="/blog" class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+              ><span aria-hidden="true">←</span>返回产品动态</a
+            >
+            <div data-blog-article-hero class="mt-8">
+              <div>
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                  <span class="h-2 w-2 rounded-full bg-primary"></span><span>2026年01月30日</span>
+                </div>
+                <h1 class="mt-4 text-3xl font-bold leading-tight text-gray-950 lg:text-5xl">
+                  学习笔记丨MaxKB Office Word AI翻译加载项的实现
+                </h1>
+                <p class="mt-5 max-w-3xl text-base leading-8 text-gray-600 lg:text-lg">
+                  将MaxKB的AI翻译能力深度集成至Word办公环境。
+                </p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container-custom py-10 lg:py-14">
+          <div
+            data-blog-article-body
+            class="mx-auto max-w-none rounded-2xl border border-indigo-100 bg-white/95 p-5 shadow-xl backdrop-blur-xl md:p-8 lg:p-12"
+          >
+            <div class="blog-article-content">
+              <p>
+                在全球化办公的场景中，跨语言文档协作是企业日常工作中的高频需求。无论是跨国业务合作的合同文件、海外市场拓展的产品资料，还是国际项目对接涉及的技术文档，都需要快速、准确的全文翻译支持。
+              </p>
+              <p>
+                然而，传统的翻译方式存在诸多痛点：一方面，人工翻译耗时长、成本高，难以满足大量文档的快速处理需求，且不同翻译人员的语言风格、专业术语把握存在差异，容易导致翻译结果不一致；另一方面，现有的翻译工具多为独立应用，需要手动导出文档、上传翻译、下载回传，操作流程繁琐，且无法与日常办公的Word环境进行深度融合，割裂了文档编辑与翻译的一体化流程。此外，企业专属术语库、行业规范等知识资产难以在翻译过程中被高效复用，导致专业文档翻译的准确性和合规性难以保障，历史翻译记录分散存储，追溯和管理难度较大。
+              </p>
+              <p>
+                AI技术的发展为解决上述痛点提供了全新的思路。MaxKB作为一款开源的企业级智能体平台，具备知识库集成、插件扩展与AI能力调度等特性，而Office
+                Word作为企业办公的核心文档工具，拥有广泛的用户基础和完善的文档编辑功能。MaxKB智能体平台可以与Office
+                Word进行对接，搭建“智能AI翻译加载项”，将AI翻译能力与企业专属知识库深度集成至日常办公环境，实现文档翻译的自动化、标准化与高效化，有效解决传统翻译模式的低效与割裂的问题，为企业跨语言协作提供有力支撑。
+              </p>
+              <figure>
+                <img src="images/blog/maxkb-word-translate/01.webp" alt="截屏2026-01-30 14.18.05.png" loading="lazy" />
+              </figure>
+              <p><strong>一、方案设计</strong></p>
+              <p>
+                MaxKB Office Word
+                AI翻译加载项的核心是实现多语言文档的智能化翻译，同时完整保留原文格式。用户在MaxKB中预先配置翻译智能体并发布，然后在Word中安装MaxKB翻译插件并接入服务，即可在办公软件内实现一键式全文翻译。该方案的实现流程如下：
+              </p>
+              <p>
+                <strong>1. 配置管理：</strong>在Office Word AI翻译加载项中打开
+                “插件配置”下拉面板，填写MaxKB服务地址、APP Key等信息；
+              </p>
+              <p><strong>2. 翻译内容与模式准备：</strong></p>
+              <p>
+                <strong>① 划词翻译：</strong
+                >在加载项的“原文”输入框手动输入文本，或者点击“获取选中文本”按钮提取当前Word中已经选中的内容；
+              </p>
+              <p><strong>② 全文翻译：</strong>打开“全文翻译设置”下拉面板，配置是否针对段落特殊格式进行处理。</p>
+              <p><strong>3. 启动翻译：</strong></p>
+              <p>
+                <strong>① 划词翻译：</strong>点击“开始翻译”按钮，发起单段文本的AI翻译请求，翻译结果展示在“译文”区域；
+              </p>
+              <p>
+                <strong>② 全文翻译：</strong
+                >点击“开始全文翻译”按钮启动翻译流程（从光标所在的段落开始全文翻译，过程中可以点击“停止翻译”按钮中断操作），每一个段落翻译完成后及时进行替换。
+              </p>
+              <p>
+                本方案的核心是构建一个非侵入式、智能化的翻译工作流，将MaxKB的AI问答与知识库检索能力，通过一个轻量级插件直接赋能给Word用户。该方案整体采用前后端分离架构：
+              </p>
+              <p>
+                <strong>■ 前端（Office Word加载项）：</strong
+                >负责文档交互、内容提取、界面展示和结果回填。它是一个运行在Word进程内的加载项，提供配置界面和翻译按钮，并将用户的翻译请求及文档内容发送至后端；
+              </p>
+              <p>
+                <strong>■ 后端（MaxKB智能体）：</strong
+                >这是整个系统的大脑。它接收前端请求，完成知识库检索、上下文增强、AI模型调用等任务，并且组织生成高质量的翻译结果。得益于MaxKB的平台能力，企业可以轻松管理和优化其专属的翻译知识库。
+              </p>
+              <figure>
+                <img src="images/blog/maxkb-word-translate/02.webp" alt="28-01.001-MeiN.jpeg" loading="lazy" />
+              </figure>
+              <p class="blog-caption">▲图1 MaxKB Office Word AI翻译加载项架构图</p>
+              <figure>
+                <img
+                  src="images/blog/maxkb-word-translate/03.webp"
+                  alt="学习笔记丨MaxKB Office Word AI翻译加载项的实现"
+                  loading="lazy"
+                />
+              </figure>
+              <p class="blog-caption">▲图2 MaxKB翻译工作流</p>
+              <p><strong>二、实现步骤与效果展示</strong></p>
+              <p>
+                通过MaxKB Office Word
+                AI翻译加载项，用户可以在几分钟内搞定长篇文档的精准翻译，并且完美保留原有的排版格式。以下是详细的操作步骤与效果说明：
+              </p>
+              <p><strong>1. 配置系统</strong></p>
+              <p>
+                首次使用时，在Word上方工具栏找到“加载项”选项，然后点击“MaxKB Office
+                Add-ins”按钮，在加载项页面“插件配置”栏目中填入MaxKB服务的Base URL、APP Key信息。
+              </p>
+              <figure><img src="images/blog/maxkb-word-translate/04.webp" alt="28-03.png" loading="lazy" /></figure>
+              <p class="blog-caption">▲图3 添加 MaxKB Office AI加载项</p>
+              <figure><img src="images/blog/maxkb-word-translate/05.webp" alt="28-04.png" loading="lazy" /></figure>
+              <p class="blog-caption">▲图4 MaxKB Office AI加载项配置页面</p>
+              <p><strong>2. 划词翻译</strong></p>
+              <p>选中Word文档中的文字段落，翻译完成后，按需替换原文或在光标位置插入译文。</p>
+              <figure></figure>
+              <p class="blog-caption">▲图5 划词翻译展示</p>
+              <p><strong>3.全文翻译</strong></p>
+              <p>
+                在执行全文替换翻译时，插件将自动检测原文段落中是否包含特殊格式或角标（例如超链接、上角标、下角标、下划线等）。如果检测到特殊格式，该段落将自动切换为对照翻译模式，将译文添加在原文后面并用红色进行标记，以便人工复查，确保格式不被破坏。
+              </p>
+              <figure><img src="images/blog/maxkb-word-translate/06.webp" alt="28-06.png" loading="lazy" /></figure>
+              <p class="blog-caption">▲图6 全文翻译配置页面</p>
+              <figure></figure>
+              <p class="blog-caption">▲图7 全文翻译效果展示</p>
+              <p><strong>三、使用条件与限制说明</strong></p>
+              <p>在部署与使用本文介绍的Office插件前，请务必了解并确认以下关键约束条件：</p>
+              <p>
+                <strong>1. 可信SSL证书：</strong
+                >客户需要提供一个可信的SSL证书。由于Office插件加载有安全检测机制，必须使用可信的SSL证书才能保证插件的正常部署和运行。
+              </p>
+              <p>
+                <strong>2. 翻译限制：</strong
+                >目前插件的全文翻译功能，没有对文档的页眉、页脚和目录进行处理。全文翻译完成后，用户需要对这一部分内容进行人工核查和修改，以确保其准确性与格式完整性。
+              </p>
+              <p>
+                <strong>3. 支持的文档类型：</strong
+                >此插件基于Office体系开发，插件主要支持.docx格式的Word文档，不支持.xlsx和.pptx等其他格式。
+              </p>
+              <p>
+                <strong>4. 格式还原的局限性：</strong
+                >本方案致力于最大程度地保留.docx文档格式。然而，由于技术限制，以下内容可能无法进行翻译，届时需要人工介入进行微调：
+              </p>
+              <p><strong>① 嵌入式对象：</strong>不支持对Word文档中嵌入的图表、Visio图等对象的翻译和格式还原；</p>
+              <p><strong>② 图片内文本：</strong>插件无法识别、翻译和还原图片内部的文字内容。</p>
+              <p><strong>四、总结</strong></p>
+              <p>
+                MaxKB Office Word
+                AI翻译加载项将AI翻译能力深度集成至Word办公环境，实现了专业文档翻译的智能化与自动化。这一方案通过企业知识库RAG（检索增强生成）、上下文感知翻译及格式保持等技术，能够在几分钟内完成以往需要数日的人工翻译任务，将效率从“天”级提升至“分钟”级。同时，基于统一的企业术语库与历史翻译记忆，该方案能够确保专业术语准确性与行文风格的一致性，不仅大幅降低了企业对专业翻译人员的依赖与成本，也有效规避了通用工具在专业语境下的误译风险，是AI技术赋能办公效率的典型实践。
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <section
+        id="contact"
+        data-site-section="contact"
+        class="section-padding bg-gradient-to-br from-slate-50 to-blue-50"
+      >
+        <div class="container-custom">
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">联系我们</h2>
+            <p class="text-xl text-gray-600 leading-relaxed">
+              专业的技术团队随时为您提供支持，让我们一起开启 AI 落地之旅
+            </p>
+          </div>
+          <div class="grid lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+              <div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone h-8 w-8 text-white"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">400 客服电话</h3>
+                  <p class="text-2xl font-bold text-blue-600 mb-3">400-052-0755</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl p-8 shadow-xl">
+              <div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mail h-8 w-8 text-white"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">邮箱联系</h3>
+                  <p class="text-xl font-bold text-green-600 mb-3">support@fit2cloud.com</p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://jsj.top/f/wQsdOJ"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white rounded-3xl p-8 shadow-xl"
+              ><div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big h-8 w-8 text-white"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">商业版试用</h3>
+                  <p class="text-xl font-bold text-purple-600 mb-3 inline-flex items-center">
+                    立即申请<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-external-link h-5 w-5 ml-2"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    </svg>
+                  </p>
+                </div></div></a
+            ><a
+              href="https://jsj.top/f/vKGHRP"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white rounded-3xl p-8 shadow-xl"
+              ><div class="flex items-start space-x-6">
+                <div
+                  class="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-8 w-8 text-white"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-bold text-gray-900 mb-3">成为合作伙伴</h3>
+                  <p class="text-xl font-bold text-orange-600 mb-3 inline-flex items-center">
+                    立即申请<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-external-link h-5 w-5 ml-2"
+                    >
+                      <path d="M15 3h6v6"></path>
+                      <path d="M10 14 21 3"></path>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    </svg>
+                  </p>
+                </div></div
+            ></a>
+          </div>
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">更多支持资源</h3>
+            <div class="grid md:grid-cols-4 gap-8">
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text h-8 w-8 text-blue-600"
+                  >
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">在线文档</h4>
+                <p class="text-gray-600 mb-4">详细的产品文档、API 文档和使用指南，帮助您快速上手</p>
+                <a
+                  href="https://maxkb.cn/docs/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >查看文档<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-8 w-8 text-green-600"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">社区论坛</h4>
+                <p class="text-gray-600 mb-4">与其他用户交流经验、分享最佳实践，获得社区支持</p>
+                <a
+                  href="https://bbs.fit2cloud.com/c/mk/11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >加入论坛<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-circle-check-big h-8 w-8 text-purple-600"
+                  >
+                    <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                    <path d="m9 11 3 3L22 4"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">培训认证</h4>
+                <p class="text-gray-600 mb-4">专业的培训课程和认证体系，持续提升团队技能水平与实战能力</p>
+                <a
+                  href="https://edu.fit2cloud.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >了解培训<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-external-link h-4 w-4 ml-2"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg
+                ></a>
+              </div>
+              <div
+                class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-circle h-8 w-8 text-orange-600"
+                  >
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                  </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-3">扫码加入交流群</h4>
+                <div class="flex justify-center mb-4">
+                  <div class="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center">
+                    <img
+                      src="images/wechat-group.jpg"
+                      alt="微信群二维码"
+                      class="w-full h-full object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+                <p class="text-gray-600 text-sm"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-900 text-white text-sm">
+      <div class="container-custom py-16">
+        <div class="grid gap-12" data-footer-layout>
+          <div data-footer-brand>
+            <div class="mb-4"><img src="images/maxkb.png" alt="MaxKB Logo" class="w-auto h-10 rounded-xl" /></div>
+            <p class="text-gray-400 leading-relaxed mb-4 max-w-lg text-base">
+              MaxKB = Max Knowledge Brain，是企业级智能体平台，致力于解决企业 AI
+              落地面临的技术门槛高、部署成本高、迭代周期长等核心问题。
+            </p>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">常用链接</h4>
+            <div class="space-y-3">
+              <a
+                href="https://github.com/1Panel-dev/MaxKB"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-github h-4 w-4 group-hover:text-primary"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path></svg
+                ><span>GitHub 项目</span></a
+              ><a
+                href="https://maxkb.cn/docs/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>产品文档</span></a
+              ><a
+                href="/blog"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-newspaper h-4 w-4 group-hover:text-primary"
+                >
+                  <path
+                    d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"
+                  ></path>
+                  <path d="M18 14h-8"></path>
+                  <path d="M15 18h-5"></path>
+                  <path d="M10 6h8v4h-8V6Z"></path></svg
+                ><span>产品动态</span></a
+              ><a
+                href="https://bbs.fit2cloud.com/c/mk/11"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-circle h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg
+                ><span>社区论坛</span></a
+              ><a
+                href="https://edu.fit2cloud.com/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>培训认证</span></a
+              ><a
+                href="https://fit2cloud.com/about/index.html"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>关于飞致云</span></a
+              ><a
+                href="https://maxkb.pro/"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path></svg
+                ><span>English</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">对比</h4>
+            <div class="space-y-3">
+              <a
+                href="/maxkb-vs-dify"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS Dify</span></a
+              ><a
+                href="/maxkb-vs-n8n"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS n8n</span></a
+              ><a
+                href="/maxkb-vs-ragflow"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>VS RagFlow</span></a
+              >
+            </div>
+          </div>
+          <div data-footer-solutions>
+            <h4 class="text-white text-base font-semibold mb-4">解决方案</h4>
+            <div class="space-y-3">
+              <a
+                href="/intelligentcs"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>智能客服</span></a
+              ><a
+                href="/smartoffice"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>智慧办公</span></a
+              ><a
+                href="https://cordys.cn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+                ><span>AI CRM</span></a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white text-base font-semibold mb-4">联系我们</h4>
+            <div class="space-y-5 text-sm text-gray-400">
+              <div class="flex items-start space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-phone h-4 w-4 text-primary mt-0.5"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <div>
+                  <div class="text-white font-medium">电话</div>
+                  <div class="text-lg font-bold text-primary">400-052-0755</div>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail h-4 w-4 text-primary mt-0.5"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <div>
+                  <div class="text-white font-medium">邮箱</div>
+                  <div class="text-base text-primary">support@fit2cloud.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-800 pt-4 text-center space-y-3">
+        <p class="text-gray-500 text-sm pb-6">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号-9</a>
+        </p>
+        <p class="text-gray-500 text-sm pb-6">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        let e = document.querySelectorAll(`main > section, main > div > section, article`);
+        if ((e.forEach((e) => e.setAttribute(`data-reveal`, ``)), !(`IntersectionObserver` in window))) {
+          e.forEach((e) => e.classList.add(`is-visible`));
+          return;
+        }
+        document.documentElement.classList.add(`reveal-ready`);
+        let t = new IntersectionObserver(
+          (e) => {
+            e.forEach((e) => {
+              e.isIntersecting && (e.target.classList.add(`is-visible`), t.unobserve(e.target));
+            });
+          },
+          { rootMargin: `0px 0px -8% 0px`, threshold: 0.04 },
+        );
+        e.forEach((e) => t.observe(e));
+      })();
+    </script>
+    <script defer src="js/site.js"></script>
+    <script data-static-link-normalizer>
+      (function () {
+        if (location.protocol === "file:") return;
+        function n() {
+          document.querySelectorAll("a[href]").forEach(function (a) {
+            var h = a.getAttribute("href");
+            if (!h || /^(?:[a-z]+:|\/\/|#)/i.test(h)) return;
+            var m = h.match(/^(.*\/)index\.html([?#].*)?$/);
+            if (h === "index.html") a.setAttribute("href", "/");
+            else if (h.startsWith("index.html#") || h.startsWith("index.html?"))
+              a.setAttribute("href", "/" + h.slice(10));
+            else if (m) a.setAttribute("href", "/" + m[1].replace(/\/$/, "") + (m[2] || ""));
+          });
+        }
+        n();
+        new MutationObserver(n).observe(document.documentElement, {
+          subtree: true,
+          attributes: true,
+          attributeFilter: ["href"],
+        });
+      })();
+    </script>
+  </body>
+</html>
