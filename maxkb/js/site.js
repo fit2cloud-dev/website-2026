@@ -253,6 +253,40 @@
     });
   }
 
+  function installOfficeTabs() {
+    var root = document.querySelector('#ai-assistants');
+    if (!root) return;
+    var buttons = root.querySelectorAll('.office-tab');
+    var panels = root.querySelectorAll('.office-tab-panel');
+    function activate(key) {
+      buttons.forEach(function (item) {
+        var active = item.dataset.tab === key;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach(function (panel) {
+        var active = panel.dataset.panel === key;
+        panel.classList.toggle('active', active);
+        panel.hidden = !active;
+      });
+    }
+    buttons.forEach(function (button) {
+      button.type = 'button';
+      button.addEventListener('click', function () {
+        activate(button.dataset.tab);
+      });
+    });
+    function activateFromHash() {
+      var id = location.hash.slice(1);
+      if (!id) return;
+      var panel = document.getElementById(id);
+      if (!panel || !root.contains(panel) || !panel.dataset.panel) return;
+      activate(panel.dataset.panel);
+    }
+    window.addEventListener('hashchange', activateFromHash);
+    activateFromHash();
+  }
+
   function installCompareTabs() {
     var root = document.querySelector('[data-static-component="ComparePage"]');
     if (!root) return;
@@ -307,6 +341,7 @@
   installPriceActions();
   installScenarioTabs();
   installCompareTabs();
+  installOfficeTabs();
 
   document.addEventListener('click', function () { closeMenus(); });
   document.addEventListener('keydown', function (event) {

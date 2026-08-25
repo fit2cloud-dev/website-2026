@@ -542,6 +542,17 @@ body[data-page-kind="contact"] [data-site-section="contact"]::after {
 body[data-static-site] [data-static-mobile-menu] {
   border-color: var(--mk-border) !important;
   background: #fff;
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 !important;
+  padding: 16px 24px 24px !important;
+  box-shadow: 0 18px 40px -18px rgba(35, 48, 96, 0.28) !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  z-index: 1100 !important;
 }
 
 body[data-static-site] footer {
@@ -1864,5 +1875,12 @@ body[data-page-kind="solution"] .office-hero-description {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* 移动端隐藏顶部 FIT2CLOUD 飞致云栏目 */
+@media (max-width: 767px) {
+  body[data-static-site] [data-static-component="TopHeader"] {
+    display: none !important;
   }
 }

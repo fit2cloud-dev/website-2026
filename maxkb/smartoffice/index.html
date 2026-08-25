@@ -280,19 +280,6 @@
     <main id="main-content">
       <div class="static-island" data-static-component="SolutionPages" data-static-export="SmartOfficePage">
         <div class="smartoffice-page">
-          <div data-site-consultation data-site-consultation-panel class="office-consultation-float">
-            <div data-site-consultation-header class="office-consultation-header">
-              <span class="office-consultation-title">预约专家咨询</span
-              ><button data-site-consultation-close class="office-consultation-close">×</button>
-            </div>
-            <div class="office-consultation-content">
-              <div data-site-consultation-qr class="office-qr-code">
-                <img src="images/solutions/smartoffice/wechat-customer.jpg" alt="二维码" />
-              </div>
-              <div class="office-consultation-subtitle">1对1指导</div>
-              <div class="office-consultation-desc">企业 AI 智能体落地</div>
-            </div>
-          </div>
           <main class="office-main-content">
             <section id="overview" class="office-content-section">
               <section class="office-hero">
@@ -333,7 +320,7 @@
                         <img src="images/solutions/smartoffice/content-writing.png" alt="智能内容创作" />
                       </div>
                       <div class="office-feature-content">
-                        <a href="/smartoffice#content-writing"><h3>智能内容创作</h3></a>
+                        <a href="/smartoffice#panel-content-writing"><h3>智能内容创作</h3></a>
                         <p class="office-feature-desc">
                           结合内部知识库和联网数据，自动化生成营销文案、分析报告等，提升工作效率
                         </p>
@@ -348,7 +335,7 @@
                         <img src="images/solutions/smartoffice/policy-qa.png" alt="政策智能问答" />
                       </div>
                       <div class="office-feature-content">
-                        <a href="/smartoffice#policy-qa"><h3>政策智能问答</h3></a>
+                        <a href="/smartoffice#panel-policy-qa"><h3>政策智能问答</h3></a>
                         <p class="office-feature-desc">
                           人事政策问答和财务报销政策问答，员工可随时查询各类企业政策，获得准确解答
                         </p>
@@ -363,7 +350,7 @@
                         <img src="images/solutions/smartoffice/contract-review.png" alt="智能合同审核" />
                       </div>
                       <div class="office-feature-content">
-                        <a href="/smartoffice#contract-review"><h3>智能合同审核</h3></a>
+                        <a href="/smartoffice#panel-contract-review"><h3>智能合同审核</h3></a>
                         <p class="office-feature-desc">
                           法务部门可以利用 AI 助手快速审核合同条款，识别潜在风险，并提供改进建议
                         </p>
@@ -378,7 +365,7 @@
                         <img src="images/solutions/smartoffice/sales-assistant.jpg" alt="智能销售支持" />
                       </div>
                       <div class="office-feature-content">
-                        <a href="/smartoffice#sales"><h3>智能销售支持</h3></a>
+                        <a href="/smartoffice#panel-sales"><h3>智能销售支持</h3></a>
                         <p class="office-feature-desc">
                           销售团队可以通过 AI 快速查询客户信息、生成报价单，并获得销售话术指导
                         </p>
@@ -391,38 +378,15 @@
                   </div>
                 </div>
               </section>
-              <section id="advantages" class="office-advantages">
-                <div class="office-container">
-                  <div class="office-section-header">
-                    <h2>为什么选择 MaxKB？</h2>
-                    <p>开源开放、安全稳定的企业级 AI 解决方案</p>
-                  </div>
-                  <div class="office-opensource-stats">
-                    <div class="office-opensource-stat-card">
-                      <div class="office-opensource-number">20K+</div>
-                      <div class="office-opensource-label">GitHub Stars</div>
-                      <div class="office-opensource-desc">开源社区认可</div>
-                    </div>
-                    <div class="office-opensource-stat-card">
-                      <div class="office-opensource-number">按月</div>
-                      <div class="office-opensource-label">产品迭代</div>
-                      <div class="office-opensource-desc">持续功能更新</div>
-                    </div>
-                    <div class="office-opensource-stat-card">
-                      <div class="office-opensource-number">50万+</div>
-                      <div class="office-opensource-label">累计安装下载</div>
-                      <div class="office-opensource-desc">用户广泛使用</div>
-                    </div>
-                    <div class="office-opensource-stat-card">
-                      <div class="office-opensource-number">1000+</div>
-                      <div class="office-opensource-label">企业付费客户</div>
-                      <div class="office-opensource-desc">商业价值验证</div>
-                    </div>
-                  </div>
-                </div>
-              </section>
             </section>
-            <section id="content-writing" class="office-content-section">
+            <section id="ai-assistants" class="office-content-section">
+              <div class="office-tabs" role="tablist">
+                <button class="office-tab active" data-tab="content-writing" role="tab" aria-selected="true">内容生成 AI 助手</button>
+                <button class="office-tab" data-tab="policy-qa" role="tab" aria-selected="false">政策问答 AI 助手</button>
+                <button class="office-tab" data-tab="contract-review" role="tab" aria-selected="false">合同审核 AI 助手</button>
+                <button class="office-tab" data-tab="sales" role="tab" aria-selected="false">销售支持 AI 助手</button>
+              </div>
+              <div class="office-tab-panel active" id="panel-content-writing" data-panel="content-writing">
               <div class="office-section-hero">
                 <div class="office-container">
                   <div class="office-section-hero-content">
@@ -567,8 +531,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="policy-qa" class="office-content-section">
+              </div>
+              <div class="office-tab-panel" id="panel-policy-qa" data-panel="policy-qa">
               <div class="office-section-hero">
                 <div class="office-container">
                   <div class="office-section-hero-content">
@@ -707,8 +671,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="contract-review" class="office-content-section">
+              </div>
+              <div class="office-tab-panel" id="panel-contract-review" data-panel="contract-review">
               <div class="office-section-hero">
                 <div class="office-container">
                   <div class="office-section-hero-content">
@@ -856,8 +820,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="sales" class="office-content-section">
+              </div>
+              <div class="office-tab-panel" id="panel-sales" data-panel="sales">
               <div class="office-section-hero">
                 <div class="office-container">
                   <div class="office-section-hero-content">
@@ -998,6 +962,7 @@
                     </div>
                   </div>
                 </div>
+              </div>
               </div>
             </section>
           </main>
@@ -1619,26 +1584,6 @@
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path></svg
                 ><span>智慧办公</span></a
-              ><a
-                href="https://cordys.cn/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors group"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-arrow-right h-4 w-4 group-hover:text-primary"
-                >
-                  <path d="M5 12h14"></path>
-                  <path d="m12 5 7 7-7 7"></path></svg
-                ><span>AI CRM</span></a
               >
             </div>
           </div>
