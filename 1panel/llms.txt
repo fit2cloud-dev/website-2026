@@ -25,21 +25,21 @@
 
 ## 产品对比
 
-- [1Panel 对比传统面板](https://1panel.cn/vsbt) - 对比 1Panel 与宝塔面板等传统 Linux 服务器面板的产品定位、技术架构、功能能力、用户体验与核心优势。
-  - [产品概况](https://1panel.cn/vsbt#overview) - 产品定位与适用人群。
-  - [技术架构](https://1panel.cn/vsbt#architecture) - 技术架构与部署方式。
-  - [功能对比](https://1panel.cn/vsbt#features) - 功能能力对比。
-  - [用户体验](https://1panel.cn/vsbt#experience) - 操作体验与运维效率。
-  - [独特优势](https://1panel.cn/vsbt#advantages) - 1Panel 的核心优势与推荐理由。
-- [1Panel 对比 cPanel](https://1panel.cn/vscpanel) - 对比 1Panel 与 cPanel 的核心差异，并提供功能对比和成本分析。
-- [1Panel 与 cPanel 功能对比](https://1panel.cn/vscpanel/comparison) - 文件管理、数据库、容器管理、网站部署、安全、监控与性能体验的详细对比。
-- [1Panel 与 cPanel 成本分析](https://1panel.cn/vscpanel/cost) - 授权费用、5 年总拥有成本与不同业务场景的预算差异。
-- [1Panel 对比 Webmin](https://1panel.cn/vswebmin) - 对比 1Panel 与 Webmin 的产品定位、功能能力、社区生态、适用场景与运维体验。
-  - [产品概述](https://1panel.cn/vswebmin#overview) - 产品概述与定位差异。
-  - [功能对比](https://1panel.cn/vswebmin#comparison) - 功能与技术能力对比。
-  - [优势分析](https://1panel.cn/vswebmin#advantages) - 1Panel 的优势分析。
-  - [使用场景](https://1panel.cn/vswebmin#use-cases) - 场景适配与选型参考。
-  - [社区对比](https://1panel.cn/vswebmin#community) - 社区数据与生态对比。
+- [1Panel 对比传统面板](https://1panel.cn/vsbt.html) - 对比 1Panel 与宝塔面板等传统 Linux 服务器面板的产品定位、技术架构、功能能力、用户体验与核心优势。
+  - [产品概况](https://1panel.cn/vsbt.html#overview) - 产品定位与适用人群。
+  - [技术架构](https://1panel.cn/vsbt.html#architecture) - 技术架构与部署方式。
+  - [功能对比](https://1panel.cn/vsbt.html#features) - 功能能力对比。
+  - [用户体验](https://1panel.cn/vsbt.html#experience) - 操作体验与运维效率。
+  - [独特优势](https://1panel.cn/vsbt.html#advantages) - 1Panel 的核心优势与推荐理由。
+- [1Panel 对比 cPanel](https://1panel.cn/vscpanel.html) - 对比 1Panel 与 cPanel 的核心差异，并提供功能对比和成本分析。
+- [1Panel 与 cPanel 功能对比](https://1panel.cn/vscpanel/comparison.html) - 文件管理、数据库、容器管理、网站部署、安全、监控与性能体验的详细对比。
+- [1Panel 与 cPanel 成本分析](https://1panel.cn/vscpanel/cost.html) - 授权费用、5 年总拥有成本与不同业务场景的预算差异。
+- [1Panel 对比 Webmin](https://1panel.cn/vswebmin.html) - 对比 1Panel 与 Webmin 的产品定位、功能能力、社区生态、适用场景与运维体验。
+  - [产品概述](https://1panel.cn/vswebmin.html#overview) - 产品概述与定位差异。
+  - [功能对比](https://1panel.cn/vswebmin.html#comparison) - 功能与技术能力对比。
+  - [优势分析](https://1panel.cn/vswebmin.html#advantages) - 1Panel 的优势分析。
+  - [使用场景](https://1panel.cn/vswebmin.html#use-cases) - 场景适配与选型参考。
+  - [社区对比](https://1panel.cn/vswebmin.html#community) - 社区数据与生态对比。
 
 ## 文档与安装
 
@@ -113,7 +113,7 @@
 ## URL 规律
 
 - 站内固定页面：`/`、`/about.html`、`/versions.html`、`/enterprise.html`、`/ai-portal.html`、`/ai-gateway.html`、`/skills-hub.html`、`/user-management.html`、`/virtual-machine.html`、`/security-ops-report.html`、`/self-hosted.html`、`/blog.html`、`/ai-appliance.html`
-- 产品对比页面：`/vsbt`、`/vscpanel`、`/vscpanel/comparison`、`/vscpanel/cost`、`/vswebmin`
+- 产品对比页面：`/vsbt.html`、`/vscpanel.html`、`/vscpanel/comparison.html`、`/vscpanel/cost.html`、`/vswebmin.html`
 - 产品动态文章：`/blog/<slug>.html`；产品动态分页：`/blog/2.html` 起
 - 首页重要锚点：`/#features`、`/#appstore`、`/#quickstart`、`/#contact-us`
 - 企业版重要锚点：`/enterprise.html#application-layer`、`/enterprise.html#governance-layer`、`/enterprise.html#model-layer`、`/enterprise.html#infrastructure-layer`、`/enterprise.html#contact`

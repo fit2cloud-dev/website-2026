@@ -19,7 +19,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://1panel.cn/vsbt</loc>
+    <loc>https://1panel.cn/vsbt.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://1panel.cn/vscpanel</loc>
+    <loc>https://1panel.cn/vscpanel.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -39,19 +39,19 @@
     </image:image>
   </url>
   <url>
-    <loc>https://1panel.cn/vscpanel/comparison</loc>
+    <loc>https://1panel.cn/vscpanel/comparison.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://1panel.cn/vscpanel/cost</loc>
+    <loc>https://1panel.cn/vscpanel/cost.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://1panel.cn/vswebmin</loc>
+    <loc>https://1panel.cn/vswebmin.html</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
