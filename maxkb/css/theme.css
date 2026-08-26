@@ -1411,7 +1411,7 @@ body[data-page-kind="solution"] .intelligentcs-page {
 body[data-page-kind="solution"] .intelligentcs-page > section:first-of-type {
   min-height: 720px;
   color: #fff;
-  background: var(--mk-dark) !important;
+  background: linear-gradient(135deg, #4a46e8 0%, #6b48f0 50%, #7a3fe0 100%) !important;
 }
 
 body[data-page-kind="solution"] .intelligentcs-page > section:first-of-type h1,
@@ -1484,8 +1484,9 @@ body[data-page-kind="solution"] .office-content-section {
 
 body[data-page-kind="solution"] .office-hero {
   padding: 112px 0 96px;
+  min-height: 720px;
   color: #fff;
-  background: var(--mk-dark);
+  background: linear-gradient(135deg, #4a46e8 0%, #6b48f0 50%, #7a3fe0 100%);
 }
 
 body[data-page-kind="solution"] .office-hero-title,
@@ -1788,6 +1789,7 @@ body[data-page-kind="solution"] .office-hero-description {
 
   body[data-page-kind="home"] [data-static-component="Hero"] section,
   body[data-page-kind="solution"] .intelligentcs-page > section:first-of-type,
+  body[data-page-kind="solution"] .office-hero,
   body[data-page-kind="appliance"] main > div > section:first-of-type {
     min-height: auto;
   }
