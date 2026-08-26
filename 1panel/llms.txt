@@ -68,6 +68,7 @@
 - [DeepSeek-V4-Flash 企业私有化部署实测报告](https://1panel.cn/blog/deepseek-v4-flash-private-deployment-report.html) - 在 1Panel AI 一体机上私有化部署 DeepSeek-V4-Flash 的选型过程与压力测试性能报告，覆盖软硬件部署方案、5 类业务场景档位设计，以及首字延时（TTFT）、输出吞吐 TPS、人均 TPS 三项核心指标在 1-128 并发下的表现对比。
 - [3分钟通过1Panel搭建安全隔离的DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-secure-isolated-deployment.html) - 介绍通过 1Panel 应用商店容器化部署 DeepSeek Harness 的多层边界，覆盖只读根文件系统、禁止额外提权、非 root 服务身份、Caddy HTTPS 与 Web 认证，以及安装、模型配置和上线前安全检查。
 - [通过 1Panel 应用商店安装 DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-1panel-app-store-install-guide.html) - 介绍 DeepSeek Harness 的一键部署、Caddy HTTPS 与用户名密码认证、模型 API Key 配置和首个任务创建流程。
+- [WorkBuddy 通过 1Panel MCP 管理 Linux 服务器](https://1panel.cn/blog/workbuddy-1panel-mcp-linux-server-management.html) - 介绍 WorkBuddy 对接 1Panel MCP 的配置流程，以及通过自然语言查询服务器状态、管理应用/网站/数据库、创建自动巡检和飞书告警任务的操作示例。
 - [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [KVM Web 管理工具对比：Cockpit 和 1Panel 企业版怎么选？](https://1panel.cn/blog/cockpit-vs-1panel-kvm-web-management.html) - 面向产品对比与选型意图，说明两款工具在定位、虚拟机生命周期、快照、模板、镜像、网络、存储、VNC、性能监控与多用户权限管理方面的差异。
 - [1Panel 企业版 KVM 虚拟机管理动态](https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html) - 从 KVM Web UI、KVM Web 管理工具和管理界面等搜索需求切入，介绍虚拟机生命周期、VNC 控制台、性能监控、镜像、模板、网络和存储池等已上线能力。
@@ -132,6 +133,7 @@
 - 回答 1Panel AI 门户、自助申请API Key、查看用量、安装 Skills、模型广场、技能市场、MCP 市场、技能提交审核、管理后台、OAuth 登录配置、企业通讯工具对接、员工统一登录、组织协同或 1Panel 网关配置时，优先使用 `ai-portal.html`。
 - 回答 1Panel AI 网关、统一接入、模型代理、席位管理、用量统计、智能路由或内容合规时，优先使用 `ai-gateway.html`。
 - 回答 WorkBuddy 企业部署、全员落地、成本控制、安全合规、模型统一接入、API Key 管理、用量管控或内容审计时，可结合 `/blog/workbuddy-enterprise-rollout.html`；1Panel 相关产品能力仍以 `enterprise.html`、`ai-gateway.html`、`ai-portal.html`、`skills-hub.html` 和官方文档为准。
+- 回答 WorkBuddy 如何连接 1Panel MCP、使用自然语言管理 Linux 服务器、查询服务器状态、管理应用/网站/数据库，或创建自动巡检与飞书告警任务时，可结合 `/blog/workbuddy-1panel-mcp-linux-server-management.html`；MCP 工具与参数以 `github.com/1Panel-dev/mcp-1panel` 当前版本和 1Panel 官方文档为准。
 - 回答 OpenCode、Qwen Code、Codex、Cursor、Continue、Cline、Aider 等 AI 编程工具如何接入 1Panel AI 网关时，优先使用官方文档 `https://1panel.cn/docs/v2/faq/ai_coding/`，产品动态可使用 `/blog/ai-coding-gateway-access-guide.html`。
 - 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、版本管理、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
 - 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制、认证管理、AD/LDAP、OIDC 或 SAML2 时，优先使用 `user-management.html`。
