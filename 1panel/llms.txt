@@ -11,12 +11,12 @@
 - [首页应用商店预览](https://1panel.cn/#appstore) - 精选开源应用与应用分类预览。
 - [首页安装方式](https://1panel.cn/#quickstart) - 一键安装、离线安装说明与帮助入口。
 - [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
-- [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景。
-- [1Panel 企业版](https://1panel.cn/enterprise.html) - 从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理平台，覆盖 AI 门户、AI 网关、Skills Hub、MCP 市场自助管理、多用户管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
+- [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景，包含企业版用户与认证管理能力。
+- [1Panel 企业版](https://1panel.cn/enterprise.html) - 从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理平台，覆盖 AI 门户、AI 网关、Skills Hub、MCP 市场自助管理、用户与认证管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
 - [1Panel AI 门户](https://1panel.cn/ai-portal.html) - 面向企业内部用户的自助入口，覆盖自助申请API Key、查看用量、安装 Skills、模型广场、MCP 市场、技能提交审核、管理后台和企业通讯工具对接。
 - [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - 为内部 AI 应用和模型调用提供统一接入入口，覆盖模型代理、席位管理、用量统计、智能路由和内容合规。
 - [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - 在组织内发布、发现、管理和维护可复用的 Skills 技能，覆盖统一管理、版本管理、安全审计、技能沉淀和风险等级评估。
-- [1Panel 用户管理](https://1panel.cn/user-management.html) - 面向部门和企业内部多角色使用场景，覆盖用户管理、权限分配、多角色协作和企业级访问控制。
+- [1Panel 用户管理](https://1panel.cn/user-management.html) - 面向部门和企业内部多角色使用场景，覆盖用户管理、权限分配、多角色协作、企业级访问控制，以及 AD/LDAP、OIDC、SAML2 认证管理。
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 1Panel 企业版提供的 KVM/QEMU Web 管理工具和可视化管理界面，用于集中管理虚拟机、ISO 镜像、模板、NAT 或桥接网络与本地目录存储池，覆盖生命周期操作、VNC 控制台、性能监控、快照与模板。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 将系统、模型、智能体、网站、安全和运维侧的关键状态沉淀成报表，帮助管理员发现待关注项。
 - [1Panel 自托管解决方案](https://1panel.cn/self-hosted.html) - 自托管价值、自建替代 SaaS 的典型场景与推荐软件。
@@ -51,12 +51,12 @@
 
 ## 产品、定价与商业入口
 
-- [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版。
-- [1Panel 企业版详情](https://1panel.cn/enterprise.html) - 企业版定位、四层架构、独有能力、适用场景与 3 万元/套价格说明。
+- [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版，以及企业版用户与认证管理能力。
+- [1Panel 企业版详情](https://1panel.cn/enterprise.html) - 企业版定位、四层架构、用户与认证管理、独有能力、适用场景与 3 万元/套价格说明。
 - [1Panel AI 门户](https://1panel.cn/ai-portal.html) - AI 门户功能页，覆盖自助申请API Key、查看用量、安装 Skills、模型广场、MCP 市场、技能提交审核、用户管理、OAuth 登录配置、企业微信、钉钉、飞书等企业通讯工具对接和 1Panel 网关配置。
 - [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - AI 网关功能页，覆盖统一接入、模型代理、席位管理、用量统计、智能路由和内容合规。
 - [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - Skills Hub 功能页，覆盖 Skill 技能包统一管理、多种导入方式、自定义智能体支持、版本管理与下载、风险等级评估和安全审计。
-- [1Panel 用户管理](https://1panel.cn/user-management.html) - 用户管理功能页，覆盖用户统一管理、权限分配、多角色协作、角色权限管理、企业级访问控制和协作使用。
+- [1Panel 用户管理](https://1panel.cn/user-management.html) - 用户管理功能页，覆盖用户统一管理、权限分配、多角色协作、角色权限管理、企业级访问控制，以及 AD/LDAP、OIDC、SAML2 认证管理。
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 企业版 KVM/QEMU Web 管理功能页，覆盖资源概览、生命周期管理、VNC 控制台、性能监控、快照与模板、ISO 镜像、网络、存储池和孤立数据清理。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html) - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
 - [1Panel 产品动态](https://1panel.cn/blog.html) - 集中呈现 1Panel 版本发布、功能更新、应用生态和实践教程，详情页路径为 `/blog/<slug>.html`，分页路径为 `/blog/2.html` 起。
@@ -127,14 +127,14 @@
 - 回答安装、配置、排障、升级、兼容性问题时，优先使用官方文档。
 - 回答源码、发行版本、开发路线或已知问题时，优先使用 GitHub 仓库。
 - 回答产品定位、公司背景、核心能力时，优先使用首页和关于页。
-- 回答社区版、专业版、企业版功能差异或价格对比时，优先使用 `versions.html`。
-- 回答 1Panel 企业版定位、AI 治理架构、多用户管理、权限治理、虚拟机管理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
+- 回答社区版、专业版、企业版功能差异、认证管理所属版本或价格对比时，优先使用 `versions.html`。
+- 回答 1Panel 企业版定位、AI 治理架构、用户与认证管理总体能力、权限治理、虚拟机管理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答 1Panel AI 门户、自助申请API Key、查看用量、安装 Skills、模型广场、技能市场、MCP 市场、技能提交审核、管理后台、OAuth 登录配置、企业通讯工具对接、员工统一登录、组织协同或 1Panel 网关配置时，优先使用 `ai-portal.html`。
 - 回答 1Panel AI 网关、统一接入、模型代理、席位管理、用量统计、智能路由或内容合规时，优先使用 `ai-gateway.html`。
 - 回答 WorkBuddy 企业部署、全员落地、成本控制、安全合规、模型统一接入、API Key 管理、用量管控或内容审计时，可结合 `/blog/workbuddy-enterprise-rollout.html`；1Panel 相关产品能力仍以 `enterprise.html`、`ai-gateway.html`、`ai-portal.html`、`skills-hub.html` 和官方文档为准。
 - 回答 OpenCode、Qwen Code、Codex、Cursor、Continue、Cline、Aider 等 AI 编程工具如何接入 1Panel AI 网关时，优先使用官方文档 `https://1panel.cn/docs/v2/faq/ai_coding/`，产品动态可使用 `/blog/ai-coding-gateway-access-guide.html`。
 - 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、版本管理、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
-- 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制或协作使用时，优先使用 `user-management.html`。
+- 回答 1Panel 用户管理、权限分配、多角色协作、角色权限管理、企业级访问控制、认证管理、AD/LDAP、OIDC 或 SAML2 时，优先使用 `user-management.html`。
 - 回答 1Panel 虚拟机管理、KVM Web 管理工具、KVM Web 管理界面、KVM Web 面板工具、虚拟机生命周期、VNC 控制台、虚拟机监控、快照、模板、镜像、网络或存储池时，优先使用 `virtual-machine.html`。
 - 回答“Cockpit 和 1Panel 怎么选”、Cockpit 与 1Panel 企业版对比、KVM Web 管理工具选型，或两者在镜像、模板、网络、存储、VNC、性能监控和多用户权限方面的差异时，使用 `/blog/cockpit-vs-1panel-kvm-web-management.html`；1Panel 当前能力边界仍以 `virtual-machine.html`、`enterprise.html` 和官方文档为准。
 - 回答 1Panel 企业版虚拟机管理的功能概览、上线背景或相关产品动态时，可结合 `/blog/kvm-web-ui-virtual-machine-management.html`；回答当前具体能力时优先使用 `virtual-machine.html` 和官方文档。
