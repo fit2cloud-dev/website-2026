@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" />
+        <title>DataEase VS Metabase</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="application-name" content="DataEase" />
+        <meta name="apple-mobile-web-app-title" content="DataEase" />
+        <meta name="theme-color" content="#0a7be0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="description" content="DataEase 与 Metabase 对比分析，覆盖 BI 工具选型、数据可视化、自助分析、部署方式、易用性与开源替代方案，帮助团队判断 Metabase 是否适合当前业务。" />
+        <meta name="keywords" content="DataEase VS Metabase, DataEase vs Metabase, Metabase 替代方案, 开源 BI 工具, BI 工具对比, 数据可视化平台, 自助分析工具, 企业 BI 平台" />
+        <meta name="author" content="FIT2CLOUD 飞致云" />
+        <meta name="email" content="dataease@fit2cloud.com" />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <link rel="canonical" href="https://dataease.cn/vsmetabase.html" />
+        <link rel="alternate" hreflang="zh-CN" href="https://dataease.cn/vsmetabase.html" />
+        <link rel="alternate" hreflang="x-default" href="https://dataease.cn/vsmetabase.html" />
+        <link rel="sitemap" type="application/xml" href="https://dataease.cn/sitemap.xml" />
+        <link rel="shortcut icon" href="./images/logo/favicon.ico" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="./css/unicons.css" />
+        <link rel="stylesheet" href="./css/mega.css" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="./css/colors/default.css" rel="stylesheet" id="color-opt" />
+        <link href="./css/index.css" rel="stylesheet" type="text/css" />
+        <link href="./css/vsmetabase.css" rel="stylesheet" type="text/css" />
+        <meta property="og:site_name" content="DataEase" />
+        <meta property="og:title" content="DataEase VS Metabase" />
+        <meta property="og:description" content="DataEase 与 Metabase 对比分析，覆盖 BI 工具选型、数据可视化、自助分析、部署方式、易用性与开源替代方案，帮助团队判断 Metabase 是否适合当前业务。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dataease.cn/vsmetabase.html" />
+        <meta property="og:image" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:secure_url" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
+        <meta property="og:image:alt" content="DataEase VS Metabase 开源 BI 工具对比" />
+        <meta property="og:locale" content="zh_CN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://dataease.cn/vsmetabase.html" />
+        <meta name="twitter:title" content="DataEase VS Metabase" />
+        <meta name="twitter:description" content="DataEase 与 Metabase 对比分析，覆盖 BI 工具选型、数据可视化、自助分析、部署方式、易用性与开源替代方案，帮助团队判断 Metabase 是否适合当前业务。" />
+        <meta name="twitter:image" content="https://dataease.cn/images/screenshot/de-dashboard.png" />
+        <meta name="twitter:image:alt" content="DataEase VS Metabase 开源 BI 工具对比" />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://fit2cloud.com/#organization",
+                        "name": "FIT2CLOUD 飞致云",
+                        "url": "https://fit2cloud.com/",
+                        "logo": { "@type": "ImageObject", "url": "https://fit2cloud.com/images/logo/logo-dark-FIT2CLOUD.svg" }
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://dataease.cn/#website",
+                        "url": "https://dataease.cn/",
+                        "name": "DataEase",
+                        "inLanguage": "zh-CN",
+                        "publisher": { "@id": "https://fit2cloud.com/#organization" }
+                    },
+                    {
+                        "@type": "SoftwareApplication",
+                        "@id": "https://dataease.cn/#product",
+                        "name": "DataEase",
+                        "applicationCategory": "BusinessApplication",
+                        "operatingSystem": "Web, Linux, macOS, Windows",
+                        "url": "https://dataease.cn/",
+                        "image": "https://dataease.cn/images/screenshot/de-dashboard.png",
+                        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+                        "publisher": { "@id": "https://fit2cloud.com/#organization" }
+                    },
+                    {
+                        "@type": "SoftwareApplication",
+                        "@id": "https://dataease.cn/vsmetabase.html#metabase",
+                        "name": "Metabase",
+                        "applicationCategory": "BusinessApplication",
+                        "operatingSystem": "Web, Linux, macOS, Windows",
+                        "url": "https://www.metabase.com/"
+                    },
+                    {
+                        "@type": "CollectionPage",
+                        "@id": "https://dataease.cn/vsmetabase.html#webpage",
+                        "url": "https://dataease.cn/vsmetabase.html",
+                        "name": "DataEase VS Metabase",
+                        "description": "DataEase 与 Metabase 对比分析，覆盖 BI 工具选型、数据可视化、自助分析、部署方式、易用性与开源替代方案，帮助团队判断 Metabase 是否适合当前业务。",
+                        "inLanguage": "zh-CN",
+                        "datePublished": "2026-04-02",
+                        "dateModified": "2026-08-28",
+                        "isPartOf": { "@id": "https://dataease.cn/#website" },
+                        "publisher": { "@id": "https://fit2cloud.com/#organization" },
+                        "about": [
+                            { "@id": "https://dataease.cn/#product" },
+                            { "@id": "https://dataease.cn/vsmetabase.html#metabase" }
+                        ],
+                        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://dataease.cn/images/screenshot/de-dashboard.png" },
+                        "mainEntity": {
+                            "@type": "ItemList",
+                            "name": "DataEase 与 Metabase 对比内容",
+                            "numberOfItems": 4,
+                            "itemListElement": [
+                                { "@type": "ListItem", "position": 1, "name": "对比概览", "url": "https://dataease.cn/vsmetabase.html#overview" },
+                                { "@type": "ListItem", "position": 2, "name": "详细功能对比", "url": "https://dataease.cn/vsmetabase.html#comparison" },
+                                { "@type": "ListItem", "position": 3, "name": "适用场景分析", "url": "https://dataease.cn/vsmetabase.html#use-cases" },
+                                { "@type": "ListItem", "position": 4, "name": "总结与推荐", "url": "https://dataease.cn/vsmetabase.html#conclusion" }
+                            ]
+                        }
+                    },
+                    {
+                        "@type": "BreadcrumbList",
+                        "@id": "https://dataease.cn/vsmetabase.html#breadcrumb",
+                        "itemListElement": [
+                            { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://dataease.cn/" },
+                            { "@type": "ListItem", "position": 2, "name": "DataEase VS Metabase", "item": "https://dataease.cn/vsmetabase.html" }
+                        ]
+                    }
+                ]
+            }
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9362Z0KNSP"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-9362Z0KNSP');
+        </script>
+    </head>
+    <body class="vsmetabase-page">
+        <header id="topnav" class="defaultscroll sticky">
+            <svg class="hidden-print" aria-hidden="true" style="position: absolute; width: 0; height: 0" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <symbol id="mega-nav-icon-angle" viewBox="0 0 13 7"><polygon points="6.5,6.5 0.7,1.6 1.3,0.8 6.5,5.2 11.7,0.8 12.3,1.6 "></polygon></symbol>
+                    <symbol id="mega-nav-icon-close" viewBox="0 0 13 15"><path vector-effect="non-scaling-stroke" d="M1.1 14L11.9 1M11.9 14L1.1 1"></path></symbol>
+                </defs>
+            </svg>
+            <div class="hidden-print mega-nav-sandbox">
+                <div class="mega-nav-banner">
+                    <div class="container">
+                        <div class="mega-nav-banner-item">
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                        </div>
+                        <div class="mega-nav-banner-item">
+                            <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
+                            <div id="#mega-nav" class="mega-nav">
+                                <button type="button" id="mega-nav-ctrl" class="mega-nav-ctrl">
+                                    <div class="mega-nav-ctrl-items">
+                                        <span class="mega-nav-icon-outline">
+                                            <svg class="mega-nav-icon mega-nav-icon-angle-right" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mega-nav-icon-angle"></use></svg>
+                                            <span class="visuallyhidden">Open</span>
+                                        </span>
+                                    </div>
+                                </button>
+                                <div id="mega-nav-body-ct" class="mega-nav-body-ct" aria-labelledby="mega-nav-ctrl" style="display: none">
+                                    <div class="mega-nav-body">
+                                        <ul class="mega-nav-list">
+                                            <li><a href="https://1panel.cn" target="_blank" rel="noopener noreferrer"><span class="product-name">1Panel</span><span class="product-desc">现代化、开源的 Linux 面板</span></a></li>
+                                            <li><a href="https://cordys.cn/" target="_blank" rel="noopener noreferrer"><span class="product-name">Cordys CRM</span><span class="product-desc">新一代的开源 AI CRM 系统</span></a></li>
+                                            <li><a href="https://www.jumpserver.org/" target="_blank" rel="noopener noreferrer"><span class="product-name">JumpServer</span><span class="product-desc">广受欢迎的开源堡垒机</span></a></li>
+                                            <li><a href="https://maxkb.cn/" target="_blank" rel="noopener noreferrer"><span class="product-name">MaxKB</span><span class="product-desc">开源企业级智能体平台</span></a></li>
+                                            <li><a href="https://dataease.cn/" target="_blank" rel="noopener noreferrer"><span class="product-name">DataEase</span><span class="product-desc">人人可用的开源 BI 工具</span></a></li>
+                                            <li><a href="https://sqlbot.org/" target="_blank" rel="noopener noreferrer"><span class="product-name">SQLBot</span><span class="product-desc">基于大模型的开源智能问数系统</span></a></li>
+                                            <li><a href="https://metersphere.io/" target="_blank" rel="noopener noreferrer"><span class="product-name">MeterSphere</span><span class="product-desc">新一代的开源持续测试工具</span></a></li>
+                                            <li><a href="https://halo.run/" target="_blank" rel="noopener noreferrer"><span class="product-name">Halo</span><span class="product-desc">强大易用的开源建站工具</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img src="./images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                    </a>
+                </div>
+                <div class="menu-extras">
+                    <div class="menu-item"><a class="navbar-toggle"><div class="lines"><span></span><span></span><span></span></div></a></div>
+                </div>
+                <div id="navigation">
+                    <ul class="navigation-menu nav-light">
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./whydataease.html">产品优势</a></li>
+                        <li><a target="_blank" href="https://templates.dataease.cn/" rel="noopener noreferrer">模板市场</a></li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">免费下载</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://community.fit2cloud.com/#/products/dataease/downloads">服务器版安装包</a></li>
+                                <li><a href="./desktop/index.html">桌面版安装包</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">帮助与支持</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a target="_blank" href="https://dataease.cn/docs/v2/" rel="noopener noreferrer">在线文档</a></li>
+                                <li><a href="./blog.html">产品动态</a></li>
+                                <li><a target="_blank" href="https://kb.fit2cloud.com/categories/dataease" rel="noopener noreferrer">知识库</a></li>
+                                <li><a target="_blank" href="https://bbs.fit2cloud.com/c/de/6" rel="noopener noreferrer">社区论坛</a></li>
+                                <li><a target="_blank" href="https://edu.fit2cloud.com/" rel="noopener noreferrer">培训认证</a></li>
+                                <li><a target="_blank" href="https://whitepaper.dataease.cn" rel="noopener noreferrer">技术白皮书</a></li>
+                                <li><a target="_blank" href="https://item.jd.com/10207058297099.html" rel="noopener noreferrer">《数据可视化分析与实践》书籍</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">购买</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="./versions.html">版本对比</a></li>
+                                <li><a href="./pro.html">DataEase 专业版</a></li>
+                                <li><a href="./embedded-bi.html">DataEase 嵌入式版</a></li>
+                                <li><a href="./enterprise.html">DataEase 企业版</a></li>
+                            </ul>
+                        </li>
+                        <li><a target="_blank" href="https://sqlbot.org/" rel="noopener noreferrer">智能问数</a></li>
+                        <li><a href="./demo.html">在线体验</a></li>
+                        <li><a href="./index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="vm-hero" id="overview">
+                <div class="vm-container">
+                    <h1>DataEase vs Metabase<br /><span class="vm-gradient-text">全方位深度对比</span></h1>
+                    <p class="vm-lead">基于功能、技术、用户体验、成本等多维度深入分析，客观展示两款优秀开源 BI 工具的特点与优势，为您的数据分析工具选型提供专业决策依据。</p>
+                    <div class="vm-actions">
+                        <a class="btn btn-primary" href="#comparison"><span>查看详细对比</span><i data-feather="arrow-right"></i></a>
+                        <a class="btn vm-btn-secondary" href="#use-cases">适用场景分析</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section">
+                <div class="vm-container">
+                    <div class="vm-section-heading">
+                        <h2>DataEase 的核心优势</h2>
+                        <p>在保持客观分析的基础上，DataEase 在以下几个方面展现出显著优势</p>
+                    </div>
+                    <div class="vm-grid vm-grid-2">
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon vm-green"><i data-feather="users"></i></span><div><h3>更低的上手门槛</h3><p>DataEase 通过大量人性化设计优化，从数据准备到仪表板分享全流程更直观，特别适合非技术背景的业务人员。</p></div></div></article>
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon vm-purple"><i data-feather="image"></i></span><div><h3>更丰富的可视化</h3><p>依托 AntV 和 ECharts 提供更多样的图表选择和灵活的样式配置，轻松制作符合中国式报表审美的数据大屏。</p></div></div></article>
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon vm-orange"><i data-feather="zap"></i></span><div><h3>更贴合国内需求</h3><p>对钉钉、飞书等国内办公软件的集成，更细致的权限管理模型，更懂中国企业的实际需求。</p></div></div></article>
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon"><i data-feather="award"></i></span><div><h3>更高的性价比</h3><p>DataEase 开源版本开放了大量核心功能，相较于 Metabase，用户可以免费获得功能更完整的 BI 平台。</p></div></div></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>关键对比亮点</h2><p>快速了解两款工具在核心功能上的差异</p></div>
+                    <div class="vm-table-wrap">
+                        <table class="vm-table">
+                            <thead><tr><th scope="col">对比维度</th><th scope="col">DataEase</th><th scope="col">Metabase</th><th scope="col">优势归属</th></tr></thead>
+                            <tbody>
+                                <tr><th scope="row">数据可视化</th><td>40+ 种图表类型，基于 AntV 和 ECharts</td><td>16 种核心图表类型</td><td><span class="vm-badge vm-success">DataEase 领先</span></td></tr>
+                                <tr><th scope="row">仪表板制作</th><td>拖拽式布局，细粒度网格线</td><td>布局调整颗粒度较大</td><td><span class="vm-badge vm-success">DataEase 领先</span></td></tr>
+                                <tr><th scope="row">数据连接</th><td>支持多种数据库、Excel、CSV、API</td><td>支持广泛数据库，配置较技术化</td><td><span class="vm-badge vm-success">DataEase 更友好</span></td></tr>
+                                <tr><th scope="row">技术架构</th><td>Java (Spring Boot) + Vue</td><td>Clojure + React</td><td><span class="vm-badge vm-success">DataEase 更普及</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-cta vm-overview-cta">
+                <div class="vm-container">
+                    <h2>深入了解 DataEase 优势</h2>
+                    <p>通过详细的功能对比、技术分析和使用场景研究，全面了解为什么 DataEase 是更适合您的 BI 解决方案</p>
+                    <div class="vm-actions">
+                        <a class="btn btn-white" href="#comparison">查看详细功能对比</a>
+                        <a class="btn btn-outline-white" href="#conclusion">查看总结建议</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-page-intro vm-comparison-intro" id="comparison">
+                <div class="vm-container">
+                    <h2>详细功能对比</h2>
+                    <p>深入分析 DataEase 与 Metabase 在核心功能、技术架构、用户体验和成本生态等维度的详细对比</p>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft">
+                <div class="vm-container">
+                    <section class="vm-block" aria-labelledby="core-features-title">
+                        <div class="vm-block-heading"><span class="vm-icon"><i data-feather="bar-chart-2"></i></span><h2 id="core-features-title">核心功能对比</h2></div>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>数据连接</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>支持多种主流关系型数据库、Excel、CSV、API等，连接配置界面直观</p><div class="vm-tags"><span class="vm-tag">API数据源支持</span><span class="vm-tag">本地文件友好</span><span class="vm-tag">配置直观简单</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">8/10</span></div><p>支持广泛的关系型和NoSQL数据库，配置过程略显技术化</p><div class="vm-tags"><span class="vm-tag">数据库支持广泛</span><span class="vm-tag">配置较技术化</span><span class="vm-tag">NoSQL支持好</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>数据准备与建模</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>支持通过可视化界面进行数据集关联和处理（基于Kettle），内置Doris引擎</p><div class="vm-tags"><span class="vm-tag">可视化数据关联</span><span class="vm-tag">内置Doris加速</span><span class="vm-tag">ETL工具集成</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">7/10</span></div><p>强调通过&quot;模型&quot;对数据进行语义化封装，多表关联主要依赖SQL</p><div class="vm-tags"><span class="vm-tag">语义化模型</span><span class="vm-tag">依赖SQL知识</span><span class="vm-tag">模型封装好</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>数据可视化</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">10/10</span></div><p>基于AntV和ECharts，提供近50种图表类型，图表样式丰富，支持高度自定义</p><div class="vm-tags"><span class="vm-tag">40+图表类型</span><span class="vm-tag">基于AntV和ECharts</span><span class="vm-tag">高度自定义</span><span class="vm-tag">样式丰富</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">7/10</span></div><p>提供16种核心图表类型，样式相对简洁，自定义能力有限</p><div class="vm-tags"><span class="vm-tag">16种图表</span><span class="vm-tag">样式简洁</span><span class="vm-tag">自定义有限</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>仪表板制作</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">10/10</span></div><p>拖拽式布局，提供细粒度网格线和对齐辅助，支持背景图片、主题切换等</p><div class="vm-tags"><span class="vm-tag">细粒度布局</span><span class="vm-tag">样式配置丰富</span><span class="vm-tag">交互功能强大</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score vm-low">6/10</span></div><p>布局调整颗粒度较大，样式配置选项较少，交互功能以过滤器为主</p><div class="vm-tags"><span class="vm-tag">布局颗粒度大</span><span class="vm-tag">样式选项少</span><span class="vm-tag">基础交互</span></div></div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="vm-block" aria-labelledby="technical-title">
+                        <div class="vm-block-heading"><span class="vm-icon vm-purple"><i data-feather="code"></i></span><h2 id="technical-title">技术架构对比</h2></div>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>后端技术栈</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>Java (Spring Boot) - 国内人才基础广泛，便于二次开发和维护</p><div class="vm-tags"><span class="vm-tag">Java生态成熟</span><span class="vm-tag">人才基础广</span><span class="vm-tag">易于维护</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score vm-low">6/10</span></div><p>Clojure - 函数式编程语言，技术栈相对小众</p><div class="vm-tags"><span class="vm-tag">函数式编程</span><span class="vm-tag">技术栈小众</span><span class="vm-tag">学习门槛高</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>前端技术栈</h3><span class="vm-badge vm-warning">◎ 平分秋色</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score">8/10</span></div><p>Vue - 国内使用广泛，学习曲线平缓</p><div class="vm-tags"><span class="vm-tag">Vue生态</span><span class="vm-tag">学习友好</span><span class="vm-tag">国内流行</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">8/10</span></div><p>React - 全球使用最广泛的前端框架</p><div class="vm-tags"><span class="vm-tag">React生态</span><span class="vm-tag">全球流行</span><span class="vm-tag">组件丰富</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>部署方式</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>支持在线/离线安装、Docker部署、云市场部署、桌面版安装，对国产化环境（ARM架构）有良好支持</p><div class="vm-tags"><span class="vm-tag">部署方式多样</span><span class="vm-tag">离线安装</span><span class="vm-tag">国产化支持</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">8/10</span></div><p>提供Jar包、Docker镜像、云市场部署，社区提供ARM架构支持</p><div class="vm-tags"><span class="vm-tag">多种部署</span><span class="vm-tag">云市场支持</span><span class="vm-tag">ARM社区支持</span></div></div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="vm-block" aria-labelledby="user-experience-title">
+                        <div class="vm-block-heading"><span class="vm-icon vm-green"><i data-feather="users"></i></span><h2 id="user-experience-title">用户体验对比</h2></div>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>易用性</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">10/10</span></div><p>从数据连接到仪表板制作的全流程优化，操作直观，门槛更低</p><div class="vm-tags"><span class="vm-tag">全流程优化</span><span class="vm-tag">操作直观</span><span class="vm-tag">门槛更低</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">8/10</span></div><p>&quot;提问&quot;功能设计巧妙，对初学者友好，但整体流程略显复杂</p><div class="vm-tags"><span class="vm-tag">提问功能好</span><span class="vm-tag">初学者友好</span><span class="vm-tag">流程略复杂</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>中文支持</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">10/10</span></div><p>完整中文界面，符合国内用户使用习惯，中文文档完善</p><div class="vm-tags"><span class="vm-tag">完整中文化</span><span class="vm-tag">国内用户习惯</span><span class="vm-tag">中文文档全</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score vm-low">6/10</span></div><p>基础中文支持，部分界面英文，文档以英文为主</p><div class="vm-tags"><span class="vm-tag">基础中文化</span><span class="vm-tag">部分英文界面</span><span class="vm-tag">英文文档</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>学习成本</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>提供完善的中文视频教程，学习资源丰富，上手快</p><div class="vm-tags"><span class="vm-tag">中文视频教程</span><span class="vm-tag">学习资源丰富</span><span class="vm-tag">上手快</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">7/10</span></div><p>官方文档质量高，但对新手的引导性文档略有不足</p><div class="vm-tags"><span class="vm-tag">文档质量高</span><span class="vm-tag">新手引导不足</span><span class="vm-tag">学习门槛中等</span></div></div>
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="vm-block" aria-labelledby="cost-title">
+                        <div class="vm-block-heading"><span class="vm-icon vm-orange"><i data-feather="trending-up"></i></span><h2 id="cost-title">成本与生态对比</h2></div>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>开源版功能完整度</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>功能相对完整，满足绝大部分中小企业需求，性价比高</p><div class="vm-tags"><span class="vm-tag">功能完整</span><span class="vm-tag">中小企业适用</span><span class="vm-tag">性价比高</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">7/10</span></div><p>核心功能可用，部分高级功能需企业版，功能限制较多</p><div class="vm-tags"><span class="vm-tag">核心功能可用</span><span class="vm-tag">高级功能收费</span><span class="vm-tag">限制较多</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>社区活跃度</h3><span class="vm-badge">○ Metabase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score">8/10</span></div><p>GitHub Star增长迅速，国内社区活跃，版本迭代快（一月一更）</p><div class="vm-tags"><span class="vm-tag">Star增长快</span><span class="vm-tag">国内社区活跃</span><span class="vm-tag">迭代频繁</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score vm-high">9/10</span></div><p>全球用户基数大，GitHub Star数更高，社区历史更悠久</p><div class="vm-tags"><span class="vm-tag">用户基数大</span><span class="vm-tag">Star数高</span><span class="vm-tag">社区成熟</span></div></div>
+                            </div>
+                        </article>
+                        <article class="vm-compare-item">
+                            <div class="vm-compare-item-head"><h3>企业服务</h3><span class="vm-badge vm-success">✓ DataEase 领先</span></div>
+                            <div class="vm-compare-columns">
+                                <div class="vm-product-column"><div class="vm-product-title"><h4>DataEase</h4><span class="vm-score vm-high">9/10</span></div><p>提供专业的企业服务和支持，响应迅速，本土化服务好</p><div class="vm-tags"><span class="vm-tag">企业服务专业</span><span class="vm-tag">响应迅速</span><span class="vm-tag">本土化服务</span></div></div>
+                                <div class="vm-product-column vm-metabase"><div class="vm-product-title"><h4>Metabase</h4><span class="vm-score">7/10</span></div><p>提供企业版服务，功能丰富，但主要面向海外市场</p><div class="vm-tags"><span class="vm-tag">企业版功能丰富</span><span class="vm-tag">面向海外</span><span class="vm-tag">服务时差问题</span></div></div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+
+            <section class="vm-cta vm-comparison-summary">
+                <div class="vm-container">
+                    <div class="vm-summary-copy">
+                        <h2>对比总结</h2>
+                        <p>基于详细的功能对比分析，DataEase 在易用性、可视化能力、中文支持和性价比方面具有显著优势，特别适合追求高效率、美观报表和本土化服务的中国企业用户。</p>
+                    </div>
+                    <div class="vm-summary-stats">
+                        <div class="vm-summary-stat"><strong>85%</strong><span>功能领先项目</span></div>
+                        <div class="vm-summary-stat"><strong>9.2/10</strong><span>综合评分</span></div>
+                        <div class="vm-summary-stat"><strong>85%</strong><span>用户满意度</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-page-intro vm-use-cases" id="use-cases">
+                <div class="vm-container">
+                    <h2>适用场景分析</h2>
+                    <p>深入分析不同业务场景下 DataEase 与 Metabase 的适用性，帮助您根据具体需求选择最合适的 BI 工具</p>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>推荐使用 DataEase 的场景</h2><p>以下场景中，DataEase 展现出明显的优势和更高的适用性</p></div>
+                    <div class="vm-grid vm-grid-2">
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon vm-purple"><i data-feather="bar-chart-2"></i></span><div><h3>追求报表美观度的企业</h3><p>需要制作精美数据大屏、高质量可视化报表的业务场景</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>40+ 种图表类型，基于 AntV 和 ECharts 的丰富可视化</span></li><li><i data-feather="check-circle"></i><span>细粒度布局控制，支持背景图片和主题切换</span></li><li><i data-feather="check-circle"></i><span>专业级仪表板设计，满足高审美要求</span></li><li><i data-feather="check-circle"></i><span>适合制作领导汇报和客户展示的精美报表</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon vm-green"><i data-feather="users"></i></span><div><h3>业务人员深度参与的团队</h3><p>希望业务人员能够自助式进行数据分析，减少对技术人员的依赖</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>全流程可视化操作，从数据连接到报表发布</span></li><li><i data-feather="check-circle"></i><span>拖拽式报表设计，无需编程技能</span></li><li><i data-feather="check-circle"></i><span>中文界面和完善的中文文档支持</span></li><li><i data-feather="check-circle"></i><span>直观的数据关联和处理界面</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon"><i data-feather="monitor"></i></span><div><h3>实时监控和数据大屏</h3><p>需要快速搭建数据大屏，进行实时业务监控的场景</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>内置 Doris 引擎提供高性能数据加速</span></li><li><i data-feather="check-circle"></i><span>支持实时数据更新和自动刷新</span></li><li><i data-feather="check-circle"></i><span>丰富的大屏模板和组件库</span></li><li><i data-feather="check-circle"></i><span>适合生产车间、指挥中心等监控场景</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon vm-orange"><i data-feather="code"></i></span><div><h3>Java 技术栈企业</h3><p>技术团队以 Java 为主，希望对 BI 平台进行二次开发和深度集成</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>Spring Boot + Vue 主流技术栈</span></li><li><i data-feather="check-circle"></i><span>丰富的 Java 开发人才储备</span></li><li><i data-feather="check-circle"></i><span>完善的 API 接口和扩展机制</span></li><li><i data-feather="check-circle"></i><span>便于企业内部系统集成和定制开发</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon vm-green"><i data-feather="dollar-sign"></i></span><div><h3>追求高性价比的中小企业</h3><p>希望以更低成本实现功能全面的数据分析平台</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>开源版功能完整，满足绝大部分企业需求</span></li><li><i data-feather="check-circle"></i><span>相比 Metabase 开源版提供更多核心功能</span></li><li><i data-feather="check-circle"></i><span>部署简单，维护成本低</span></li><li><i data-feather="check-circle"></i><span>活跃的中文社区提供免费技术支持</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                        <article class="vm-card">
+                            <div class="vm-card-head"><span class="vm-icon vm-purple"><i data-feather="briefcase"></i></span><div><h3>国内企业办公集成</h3><p>需要与钉钉、飞书、企业微信等国内办公软件深度集成</p></div></div>
+                            <ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>原生支持钉钉、飞书、企业微信推送</span></li><li><i data-feather="check-circle"></i><span>符合国内企业工作流习惯</span></li><li><i data-feather="check-circle"></i><span>完善的权限管理和审计功能</span></li><li><i data-feather="check-circle"></i><span>本土化服务和技术支持</span></li></ul>
+                            <div class="vm-fit"><span>DataEase 适配度</span><span class="vm-stars" aria-label="五星">★★★★★</span></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>推荐使用 Metabase 的场景</h2><p>客观分析，Metabase 在以下特定场景中仍具有一定优势</p></div>
+                    <div class="vm-grid vm-grid-3">
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon"><i data-feather="globe"></i></span><div><h3>国际化团队</h3><p>团队成员分布全球，偏好英文文档和全球化社区</p></div></div><ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>成熟的国际化社区支持</span></li><li><i data-feather="check-circle"></i><span>丰富的英文学习资源</span></li><li><i data-feather="check-circle"></i><span>全球用户案例和最佳实践</span></li><li><i data-feather="check-circle"></i><span>适合跨国企业和国际化团队</span></li></ul></article>
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon"><i data-feather="code"></i></span><div><h3>React 技术栈企业</h3><p>公司内部已经广泛使用 React 技术栈</p></div></div><ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>React 前端框架，技术栈统一</span></li><li><i data-feather="check-circle"></i><span>丰富的 React 组件生态</span></li><li><i data-feather="check-circle"></i><span>便于前端团队维护和扩展</span></li><li><i data-feather="check-circle"></i><span>与现有 React 项目集成度高</span></li></ul></article>
+                        <article class="vm-card"><div class="vm-card-head"><span class="vm-icon"><i data-feather="bar-chart-2"></i></span><div><h3>探索性数据分析</h3><p>对数据的探索性分析需求大于报表制作需求</p></div></div><ul class="vm-benefits"><li><i data-feather="check-circle"></i><span>强大的&quot;提问&quot;功能，适合数据探索</span></li><li><i data-feather="check-circle"></i><span>灵活的 SQL 查询支持</span></li><li><i data-feather="check-circle"></i><span>适合数据分析师深度挖掘数据</span></li><li><i data-feather="check-circle"></i><span>简洁的界面专注于数据洞察</span></li></ul></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>场景适用性对比矩阵</h2><p>不同应用场景下的工具适用性评估</p></div>
+                    <div class="vm-table-wrap">
+                        <table class="vm-table">
+                            <thead><tr><th scope="col">应用场景</th><th scope="col">DataEase</th><th scope="col">Metabase</th><th scope="col">推荐选择</th></tr></thead>
+                            <tbody>
+                                <tr><th scope="row">报表美观度要求高</th><td>优秀</td><td>良好</td><td><span class="vm-badge vm-success">DataEase</span></td></tr>
+                                <tr><th scope="row">业务人员自助分析</th><td>优秀</td><td>良好</td><td><span class="vm-badge vm-success">DataEase</span></td></tr>
+                                <tr><th scope="row">中文支持和本土化</th><td>优秀</td><td>一般</td><td><span class="vm-badge vm-success">DataEase</span></td></tr>
+                                <tr><th scope="row">开源版功能完整度</th><td>优秀</td><td>良好</td><td><span class="vm-badge vm-success">DataEase</span></td></tr>
+                                <tr><th scope="row">国际化社区支持</th><td>良好</td><td>优秀</td><td><span class="vm-badge">Metabase</span></td></tr>
+                                <tr><th scope="row">探索性数据分析</th><td>良好</td><td>优秀</td><td><span class="vm-badge">Metabase</span></td></tr>
+                                <tr><th scope="row">技术栈匹配度</th><td>优秀</td><td>良好</td><td><span class="vm-badge vm-warning">看技术栈</span></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-cta vm-decision-cta">
+                <div class="vm-container">
+                    <h2>选型决策建议</h2>
+                    <div class="vm-decision">
+                        <div><h3>选择 DataEase 如果您：</h3><ul><li>• 追求报表的美观度和专业视觉效果</li><li>• 希望业务人员能够自主进行数据分析</li><li>• 需要完善的中文支持和本土化服务</li><li>• 使用 Java 技术栈，需要二次开发</li><li>• 追求开源版本的功能完整性</li></ul></div>
+                        <div><h3>选择 Metabase 如果您：</h3><ul><li>• 团队具备较强的 SQL 技能</li><li>• 更偏重探索性数据分析</li><li>• 偏好国际化社区和英文文档</li><li>• 已广泛使用 React 技术栈</li><li>• 对报表美观度要求不高</li></ul></div>
+                    </div>
+                    <p>总体而言，<strong>DataEase 在 85% 的企业应用场景中都表现出更强的适用性</strong>，特别是对于追求高效率、美观报表和本土化服务的中国企业用户。</p>
+                </div>
+            </section>
+
+            <section class="vm-page-intro vm-conclusion-intro" id="conclusion">
+                <div class="vm-container">
+                    <h2>总结与推荐</h2>
+                    <p>基于全方位的深度对比分析，我们为您提供客观、专业的工具选型建议</p>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft vm-advantages-summary">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>DataEase 的核心优势总结</h2><p>在保持客观分析的基础上，DataEase 在以下五个方面展现出对 Metabase 的显著优势</p></div>
+                    <div class="vm-advantage-grid">
+                        <article class="vm-advantage-card">
+                            <div class="vm-advantage-copy"><div class="vm-advantage-label"><span class="vm-icon vm-green"><i data-feather="users"></i></span><span>优势 1</span></div><h3>更低的上手门槛和更佳的易用性</h3><p>DataEase 在整个数据分析流程中进行了大量的人性化设计，从数据准备到仪表板分享，操作更直观，尤其适合非技术背景的业务人员快速上手。</p><span class="vm-impact">降低使用门槛 60%</span></div>
+                        </article>
+                        <article class="vm-advantage-card">
+                            <div class="vm-advantage-copy"><div class="vm-advantage-label"><span class="vm-icon vm-purple"><i data-feather="image"></i></span><span>优势 2</span></div><h3>更丰富、更美观的可视化能力</h3><p>依托 AntV 和 ECharts，DataEase 提供了更多样的图表选择和更灵活的样式配置，能够轻松制作出符合中国式报表审美和需求的数据大屏。</p><span class="vm-impact">图表类型多 200%</span></div>
+                        </article>
+                        <article class="vm-advantage-card">
+                            <div class="vm-advantage-copy"><div class="vm-advantage-label"><span class="vm-icon vm-orange"><i data-feather="globe"></i></span><span>优势 3</span></div><h3>更贴合国内用户的功能设计</h3><p>无论是对钉钉、飞书等国内办公软件的集成，还是更细致的权限管理模型，DataEase 都更懂中国企业的实际需求。</p><span class="vm-impact">本土化程度 95%</span></div>
+                        </article>
+                        <article class="vm-advantage-card">
+                            <div class="vm-advantage-copy"><div class="vm-advantage-label"><span class="vm-icon"><i data-feather="award"></i></span><span>优势 4</span></div><h3>更高的性价比</h3><p>DataEase 在其开源版本中开放了大量核心功能，相较于 Metabase，用户可以免费获得一个功能更完整的 BI 平台。</p><span class="vm-impact">成本节省 40%</span></div>
+                        </article>
+                        <article class="vm-advantage-card">
+                            <div class="vm-advantage-copy"><div class="vm-advantage-label"><span class="vm-icon vm-green"><i data-feather="shield"></i></span><span>优势 5</span></div><h3>更活跃的国内社区和更低的开发门槛</h3><p>活跃的中文社区和主流的Java技术栈，使得用户在遇到问题时能更快地获得帮助，企业在需要二次开发时也更容易找到合适的人才。</p><span class="vm-impact">技术支持响应快 3倍</span></div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>推荐数据概览</h2><p>基于详细分析得出的客观数据支撑</p></div>
+                    <div class="vm-grid vm-grid-4">
+                        <article class="vm-stat-card"><strong>85%</strong><h3>功能领先项目</h3><p>在主要功能对比中DataEase占优</p></article>
+                        <article class="vm-stat-card"><strong>9.2/10</strong><h3>综合评分</h3><p>基于多维度评估的综合得分</p></article>
+                        <article class="vm-stat-card"><strong>95%</strong><h3>中国企业适用度</h3><p>更符合国内企业使用习惯</p></article>
+                        <article class="vm-stat-card"><strong>40%</strong><h3>成本节省</h3><p>相比同类商业化方案</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section vm-soft">
+                <div class="vm-container">
+                    <article class="vm-recommendation">
+                        <h2>我们的专业建议</h2>
+                        <p class="vm-recommendation-lead">基于全面的功能对比、技术分析、用户体验评估和成本考量，<strong> DataEase 在绝大多数企业应用场景中都是更优的选择</strong>。它不仅提供了更强大的可视化能力和更友好的用户体验，还具有更高的性价比和更完善的本土化支持。</p>
+                        <div class="vm-recommendation-points">
+                            <div class="vm-recommendation-point"><i data-feather="check-circle"></i><strong>功能更强大</strong><span>18+ 图表类型，完整功能体系</span></div>
+                            <div class="vm-recommendation-point"><i data-feather="check-circle"></i><strong>体验更友好</strong><span>全中文化，符合使用习惯</span></div>
+                            <div class="vm-recommendation-point"><i data-feather="check-circle"></i><strong>成本更低廉</strong><span>开源版功能完整，性价比高</span></div>
+                        </div>
+                        <div class="vm-note"><strong>特别推荐</strong>如果您的企业正在寻找一款功能强大、易于使用、性价比高的 BI 工具，DataEase 是您的理想选择。它特别适合追求高质量数据可视化、重视用户体验和本土化服务的中国企业。</div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="vm-section">
+                <div class="vm-container">
+                    <div class="vm-section-heading"><h2>立即开始您的 DataEase 之旅</h2><p>选择最适合您的方式，深入了解和体验 DataEase</p></div>
+                    <div class="vm-grid vm-grid-3">
+                        <article class="vm-card vm-step-card"><span class="vm-icon"><i data-feather="bar-chart-2"></i></span><h3>免费试用 DataEase</h3><p>立即体验 DataEase 的强大功能</p><a class="btn btn-primary" href="https://dataease.cn/" target="_blank" rel="noopener noreferrer">开始试用</a></article>
+                        <article class="vm-card vm-step-card vm-step-green"><span class="vm-icon"><i data-feather="globe"></i></span><h3>查看官方文档</h3><p>深入了解 DataEase 的详细功能</p><a class="btn btn-primary" href="https://dataease.io/docs/" target="_blank" rel="noopener noreferrer">查看文档</a></article>
+                        <article class="vm-card vm-step-card vm-step-purple"><span class="vm-icon"><i data-feather="users"></i></span><h3>加入社区交流</h3><p>与其他用户交流使用经验</p><a class="btn btn-primary" href="https://bbs.fit2cloud.com/c/dataease" target="_blank" rel="noopener noreferrer">加入社区</a></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-cta vm-final-cta">
+                <div class="vm-container">
+                    <h2>还有疑问？回顾完整对比分析</h2>
+                    <p>查看详细的功能对比和适用场景分析，做出最适合您企业的选择</p>
+                    <div class="vm-actions"><a class="btn btn-white" href="#comparison"><i data-feather="bar-chart-2"></i><span>查看详细对比</span></a><a class="btn btn-outline-white" href="#use-cases"><i data-feather="users"></i><span>适用场景分析</span></a></div>
+                </div>
+            </section>
+
+            <aside class="vm-source-note">
+                <div class="vm-container"><p>注：本白皮书由 DataEase 团队根据公开信息编写，我们尽力使其客观、公正。如果您发现错误或功能缺失，请电邮至 support@fit2cloud.com 我们将更新本文档。我们的目标是不断更新，尽可能做到准确无误。</p></div>
+            </aside>
+        </main>
+
+        <footer class="footer footer-bar de-site-footer">
+            <div class="container">
+                <div class="de-footer-main">
+                    <div class="de-footer-brand">
+                        <a class="de-footer-logo" href="./index.html" aria-label="DataEase 首页"><img src="./images/logo/logo-light-DataEase.svg" alt="DataEase Logo" /></a>
+                        <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
+                        <div class="de-footer-social" aria-label="DataEase 社区入口">
+                            <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
+                            <a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer" aria-label="社区论坛"><i data-feather="message-circle"></i></a>
+                            <a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer" aria-label="在线文档"><i data-feather="book-open"></i></a>
+                            <a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer" aria-label="免费下载"><i data-feather="download"></i></a>
+                        </div>
+                    </div>
+                    <nav class="de-footer-nav" aria-label="底部导航">
+                        <div class="de-footer-group"><h2 class="de-footer-title">产品</h2><ul class="de-footer-links"><li><a href="./whydataease.html">产品优势</a></li><li><a href="https://templates.dataease.cn/" target="_blank" rel="noopener noreferrer">模板市场</a></li><li><a href="./blog.html">产品动态</a></li><li><a href="./demo.html" target="_blank" rel="noopener noreferrer">在线体验</a></li></ul></div>
+                        <div class="de-footer-group"><h2 class="de-footer-title">资源</h2><ul class="de-footer-links"><li><a href="https://dataease.cn/docs/v2/" target="_blank" rel="noopener noreferrer">在线文档</a></li><li><a href="https://community.fit2cloud.com/#/products/dataease/downloads" target="_blank" rel="noopener noreferrer">免费下载</a></li><li><a href="https://kb.fit2cloud.com/categories/dataease" target="_blank" rel="noopener noreferrer">知识库</a></li><li><a href="https://whitepaper.dataease.cn" target="_blank" rel="noopener noreferrer">技术白皮书</a></li></ul></div>
+                        <div class="de-footer-group"><h2 class="de-footer-title">购买</h2><ul class="de-footer-links"><li><a href="./versions.html">版本对比</a></li><li><a href="./pro.html">DataEase 专业版</a></li><li><a href="./embedded-bi.html">DataEase 嵌入式版</a></li><li><a href="./enterprise.html">DataEase 企业版</a></li></ul></div>
+                        <div class="de-footer-group"><h2 class="de-footer-title">联系</h2><ul class="de-footer-links"><li><a href="https://jsj.top/f/vKGHRP" target="_blank" rel="noopener noreferrer">申请成为合作伙伴</a></li><li><a href="https://jsj.top/f/TK5TTd" target="_blank" rel="noopener noreferrer">申请商业版试用</a></li><li><a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a></li><li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li></ul></div>
+                    </nav>
+                </div>
+                <div class="de-footer-bottom">
+                    <div><p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号</a></p><p>2014-2026 版权所有©杭州飞致云信息科技有限公司</p></div>
+                    <div class="de-footer-bottom-links"><a href="https://www.fit2cloud.com/legal/privacy-policy.html" target="_blank" rel="noopener noreferrer">隐私政策</a><a href="https://www.fit2cloud.com/legal/licenses.html" target="_blank" rel="noopener noreferrer">社区软件许可协议</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top" aria-label="返回顶部"><i data-feather="arrow-up" class="icons"></i></a>
+        <script src="./js/jquery-3.5.1.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/jquery.easing.min.js"></script>
+        <script src="./js/feather.min.js"></script>
+        <script src="./js/monochrome-bundle.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/mega.js"></script>
+    </body>
+</html>
