@@ -77,6 +77,8 @@
 - [1Panel 企业版 AI 编程接入指南动态](https://1panel.cn/blog/ai-coding-gateway-access-guide.html) - 介绍 AI 编程工具通过 Base URL、API Key 和 Model 接入 1Panel AI 网关的配置要点。
 - [2026 年主流服务器管理面板盘点](https://1panel.cn/blog/server-panel-products-2026.html) - 对比 1Panel、宝塔面板、cPanel、Webmin 和小皮面板的定位、典型场景与优缺点。
 - [2026 年常用 AI 网关产品盘点](https://1panel.cn/blog/ai-gateway-products-2026.html) - 对比 New API、Cloudflare AI Gateway、1Panel AI 网关、LiteLLM 和 OpenRouter 的核心优势与适用场景。
+- [1Panel AI 网关 vs New API 对比分析报告](https://1panel.cn/1panel-ai-gateway-vs-newapi.html) - 从产品定位到 6 项核心能力深度对比 1Panel AI 网关与 New API，看清企业级 AI 治理网关与开源模型聚合网关的本质差异。
+- [1Panel AI 网关 vs LiteLLM 对比分析报告](https://1panel.cn/1panel-ai-gateway-vs-litellm.html) - 从产品定位到 6 项核心能力深度对比 1Panel AI 网关与 LiteLLM，看清中国本土企业级 AI 治理网关与全球工程 SDK/Proxy 网关的差异。
 - [1Panel AI 编程一体机（B70版）发布动态](https://1panel.cn/blog/ai-coding-appliance-b70-release.html) - 介绍 1Panel AI 编程一体机（B70版）的软硬件配置、模型能力与内网 AI 编程场景。
 - [1Panel 专业版购买](https://www.lxware.cn/1panel?code=bunus) - 专业版购买入口。
 - [1Panel AI 一体机](https://1panel.cn/ai-appliance.html) - 统一的 AI 一体机产品入口，覆盖 DeepSeek V4 Flash / Qwen3.8-27B / MiniMax H3 三大模型私有化部署、按团队规模选型的方案与报价，以及实战测评文章索引。
