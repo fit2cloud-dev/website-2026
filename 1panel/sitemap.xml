@@ -1349,4 +1349,14 @@
       <image:title>1Panel 开源 Linux 面板正式发布</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/1panel-ai-gateway-community-launch.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/1panel-ai-gateway-community-launch/cover.png</image:loc>
+      <image:title>1Panel AI 网关向社区用户开放，10 人及以下团队免费使用</image:title>
+    </image:image>
+  </url>
 </urlset>
