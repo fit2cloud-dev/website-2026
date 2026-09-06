@@ -6,6 +6,7 @@
 
 ## 核心页面
 
+- [告别积分焦虑！WorkBuddy+Qwen3.8-Flash-Next本地部署，实现AI办公自由](https://1panel.cn/blog/workbuddy-qwen38-flash-next-local-deployment.html): 在 AI 办公普及的当下，按 Token 计费的云端模型让企业背负积分焦虑；把 Qwen3.8-Flash-Next 模型搬到 1Panel AI 一体机并对接 WorkBuddy 办公智能体，可实现数据不出域、模型调用边际成本趋近于零，并已在飞致云生产环境稳定运行超一周。
 - [首页](https://1panel.cn/) - 产品总览、核心能力、应用商店预览、安装方式、社区入口。
 - [首页功能概览](https://1panel.cn/#features) - 网站、数据库、容器、文件、安全、备份与 AI 管理能力摘要。
 - [首页应用商店预览](https://1panel.cn/#appstore) - 精选开源应用与应用分类预览。
