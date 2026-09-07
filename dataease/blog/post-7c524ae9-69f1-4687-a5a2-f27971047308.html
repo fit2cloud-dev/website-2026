@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>模板学堂丨妙用Tab组件制作多屏仪表板并实现自动轮播</h1>
                     <p>模板市场上新！还有教您如何妙用Tab组件制作多屏仪表板并实现自动轮播！</p>
                     <time datetime="2023-03-07">2023年03月07日</time>
-                    <img src="../images/blog/common/dataease-028.jpg" alt="模板学堂丨妙用Tab组件制作多屏仪表板并实现自动轮播" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-028.webp" alt="模板学堂丨妙用Tab组件制作多屏仪表板并实现自动轮播" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -229,15 +231,15 @@
                     <h2 id="2023%E5%B9%B42%E6%9C%88%E4%B8%8A%E6%96%B0%E6%A8%A1%E6%9D%BF">2023年2月上新模板</h2>
                     <p>DataEase模板市场定期进行模板上新。2023年2月共上新5个模板，涉及能源、测试、采购、消费等主题，欢迎大家在DataEase模板市场下载使用。</p>
                     <p>
-                        <img src="../images/blog/template-20230307/dataease-107-01.jpg" alt="01-中国能源情况分析报告 大.jpeg" loading="lazy" /><img
-                            src="../images/blog/template-20230307/dataease-107-02.jpg"
+                        <img decoding="async" src="../images/blog/template-20230307/dataease-107-01.webp" alt="01-中国能源情况分析报告 大.jpeg" loading="lazy" /><img decoding="async"
+                            src="../images/blog/template-20230307/dataease-107-02.webp"
                             alt="02-MeterSphere 质量大屏 大.jpeg"
                             loading="lazy"
-                        /><img src="../images/blog/template-20230307/dataease-107-03.jpg" alt="03-采购分析看板 大.jpeg" loading="lazy" /><img
-                            src="../images/blog/template-20230307/dataease-107-04.jpg"
+                        /><img decoding="async" src="../images/blog/template-20230307/dataease-107-03.webp" alt="03-采购分析看板 大.jpeg" loading="lazy" /><img decoding="async"
+                            src="../images/blog/template-20230307/dataease-107-04.webp"
                             alt="04-羽绒服品类趋势洞察 大.jpeg"
                             loading="lazy"
-                        /><img src="../images/blog/template-20230307/dataease-107-05.jpg" alt="05-羽绒服消费者洞察 大.jpeg" loading="lazy" />
+                        /><img decoding="async" src="../images/blog/template-20230307/dataease-107-05.webp" alt="05-羽绒服消费者洞察 大.jpeg" loading="lazy" />
                     </p>
                     <h2 id="%E6%A8%A1%E6%9D%BF%E6%8A%80%E5%B7%A7">模板技巧</h2>
                     <p>本月为大家推荐的模板技巧是如何使用DataEase的选项卡组件（即Tab组件）实现多个大屏轮播的效果。</p>
@@ -249,38 +251,38 @@
                     <p>■ 通过Tab组件的轮播功能可实现不同Tab页的轮播效果。</p>
                     <h2 id="%E6%96%B9%E6%B3%95%E4%BB%8B%E7%BB%8D"><strong>方法介</strong>绍</h2>
                     <p>■ 方法一：将选项卡组件大小设置为与仪表板大小相同，将选项卡作为仪表板的画布来使用，在每个选项页下完成独立完整的仪表板的制作；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-06.jpg" alt="图01.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-06.webp" alt="图01.jpeg" loading="lazy" /></p>
                     <p>■ 方法二：将选项卡组件大小设置为与仪表板大小相同，再将网页组件放入到选项卡组件中，同样将大小设置为与仪表板页面相同大小，网页组件中配置对应已做好的仪表板公共链接。</p>
                     <h2 id="%E6%93%8D%E4%BD%9C%E6%BC%94%E7%A4%BA">操作演示</h2>
                     <p><strong>一、方法一操作过程</strong></p>
                     <p>1. 将选项卡组件拖入到仪表板中；</p>
                     <p>2. 将选项卡组件的大小设置为与仪表板同样大小；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-07.jpg" alt="图02.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-07.webp" alt="图02.jpeg" loading="lazy" /></p>
                     <p>3. 在每个Tab标签页下的空间中放入需要的各类视图和组件，制作完整的仪表板；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-08.jpg" alt="图03.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-08.webp" alt="图03.jpeg" loading="lazy" /></p>
                     <p>4. 开启轮播，并配置轮播间隔时间；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-09.jpg" alt="图04.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-09.webp" alt="图04.jpeg" loading="lazy" /></p>
                     <p>5. 预览仪表板，查看自动轮播效果。</p>
                     <p><strong>二、方法二操作过程</strong></p>
                     <p>方法二需要满足以下两个条件才可实现：</p>
                     <p>■ 各个需要轮播的仪表板均单独存在，且已制作完成；</p>
                     <p>■ 各个仪表板在安全性控制上支持创建公共链接，即可以通过创建的公共链接进行无密码访问。</p>
                     <p>1. 将选项卡组件拖入到仪表板中；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-06.jpg" alt="图06.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-06.webp" alt="图06.jpeg" loading="lazy" /></p>
                     <p>2. 将选项卡组件的大小设置为与仪表板同样大小；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-07.jpg" alt="图07.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-07.webp" alt="图07.jpeg" loading="lazy" /></p>
                     <p>3. 在每个选项卡组件中放入一个网页组件，也将其大小调整为屏幕大小；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-12.jpg" alt="图08.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-12.webp" alt="图08.jpeg" loading="lazy" /></p>
                     <p>4. 分别对想要统一轮播的仪表板创建公共链接，并配置在网页组件中；</p>
                     <p>
-                        <img src="../images/blog/template-20230307/dataease-107-13.jpg" alt="图09.jpeg" loading="lazy" /><img src="../images/blog/template-20230307/dataease-107-14.jpg" alt="图10.jpeg" loading="lazy" /><img
-                            src="../images/blog/template-20230307/dataease-107-15.jpg"
+                        <img decoding="async" src="../images/blog/template-20230307/dataease-107-13.webp" alt="图09.jpeg" loading="lazy" /><img decoding="async" src="../images/blog/template-20230307/dataease-107-14.webp" alt="图10.jpeg" loading="lazy" /><img decoding="async"
+                            src="../images/blog/template-20230307/dataease-107-15.webp"
                             alt="图11.jpeg"
                             loading="lazy"
                         />
                     </p>
                     <p>5. 开启轮播并配置轮播间隔时间；</p>
-                    <p><img src="../images/blog/template-20230307/dataease-107-16.jpg" alt="图12.jpeg" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/template-20230307/dataease-107-16.webp" alt="图12.jpeg" loading="lazy" /></p>
                     <p>6. 预览仪表板，查看自动轮播效果。</p>
                     <h2 id="%E6%80%BB%E7%BB%93">总结</h2>
                     <p>
@@ -336,11 +338,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -386,7 +388,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -449,15 +451,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

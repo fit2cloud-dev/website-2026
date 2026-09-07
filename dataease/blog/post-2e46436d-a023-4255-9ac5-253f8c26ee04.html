@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,13 +217,13 @@
                     <h1>案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系</h1>
                     <p>欢迎同样有DataEase应用需求的企业与柯尼卡美能达软件开发（大连）有限公司交流沟通。</p>
                     <time datetime="2024-07-23">2024年07月23日</time>
-                    <img src="../images/blog/case-20240723/dataease-048.png" alt="案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系" loading="eager" />
+                    <img decoding="async" src="../images/blog/case-20240723/dataease-048.webp" alt="案例研究｜柯尼卡美能达软件开发（大连）有限公司基于DataEase构筑内部数据可视化体系" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
                         柯尼卡美能达软件开发（大连）有限公司于2007年5月25日注册成立。公司以“洞悉在工作的人们真实情况，探寻他们的愿望，持续提供使人们更加幸福的服务”为使命，致力于系统品质测试服务、软件开发服务、IT安全服务、高级BPO服务等领域，专注为客户提供最契合的优质服务。
                     </p>
-                    <p><img src="../images/blog/case-20240723/dataease-048.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/case-20240723/dataease-048.webp" alt="" loading="lazy" /></p>
                     <p>
                         <span><strong>一、数据可视化的痛点</strong></span>
                     </p>
@@ -277,15 +279,15 @@
                     <p>
                         在引入数据可视化工具之前，公司的资产数据处理方式如图1所示。数据团队需要先在SCCM系统中将所有电脑软件安装的信息导出，然后逐一检索每一款软件安装在哪些电脑中，并与实际申请的软件安装台账进行对比，核对分筛出合规安装与违规安装。除此之外，数据团队还需要统计软件剩余可用量，确认已安装软件的资产数量和购买台账对比有没有超额。整套流程十分繁琐，且工作量极大。
                     </p>
-                    <p><img src="../images/blog/case-20240723/dataease-048-02.png" alt="" loading="lazy" />▲ 图1 柯尼卡美能达软件开发（大连）有限公司传统软件安装数据处理流程</p>
+                    <p><img decoding="async" src="../images/blog/case-20240723/dataease-048-02.webp" alt="" loading="lazy" />▲ 图1 柯尼卡美能达软件开发（大连）有限公司传统软件安装数据处理流程</p>
                     <p>
                         引入DataEase后，数据团队通过DataEase制作了运用支援平台数据大屏。这个数据大屏清晰直观地展示了资产的补丁安装情况、软件更新情报、PC在线情况、资产情报、软件授权情况等多项可视化数据，如图2所示。这一数据大屏的搭建展示极大地提升了公司IT部门查询软件安装数据的便捷性，减少了无意义的重复劳动，有效帮助数据处理和数据查询的员工提高了工作效率。
                     </p>
-                    <p><img src="../images/blog/case-20240723/dataease-048-03.png" alt="" loading="lazy" />▲ 图2 柯尼卡美能达软件开发（大连）有限公司运用支援平台大屏</p>
+                    <p><img decoding="async" src="../images/blog/case-20240723/dataease-048-03.webp" alt="" loading="lazy" />▲ 图2 柯尼卡美能达软件开发（大连）有限公司运用支援平台大屏</p>
                     <p>
                         在运用支援平台数据大屏中，用户还可以点击不同图表的标题，向其他数据大屏进行跳转。例如，点击“软件授权管理”图表的标题，就可以跳转到软件授权管理大屏，如图3所示。在软件授权管理大屏中，IT部门可以查看各软件的安装数量、收费软件超额使用列表、未经申请审批的违规安装软件列表、软件安装的明细情况，以及收费软件的安装数量和License（许可证）残量，同时还可以通过告警线对License残量进行预警。
                     </p>
-                    <p><img src="../images/blog/case-20240723/dataease-048-04.png" alt="" loading="lazy" />▲ 图3 柯尼卡美能达软件开发（大连）有限公司软件授权管理大屏</p>
+                    <p><img decoding="async" src="../images/blog/case-20240723/dataease-048-04.webp" alt="" loading="lazy" />▲ 图3 柯尼卡美能达软件开发（大连）有限公司软件授权管理大屏</p>
                     <p>
                         <span><strong>四、使用DataEase后的成果和收益</strong></span>
                     </p>
@@ -365,11 +367,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -415,7 +417,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -478,15 +480,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

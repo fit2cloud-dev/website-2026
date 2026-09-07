@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布</h1>
                     <p>视图支持更换数据集。</p>
                     <time datetime="2021-08-09">2021年08月09日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="支持Oracle数据源，新增支持消息中心和定时任务中心，DataEase开源数据可视化分析平台v1.1.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20210809/dataease-177-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-01.png" alt="" loading="lazy" /></figure>
                     <p>
                         8月9日，DataEase开源数据可视化分析平台正式发布v1.1.0版本。在该版本中，新增了对Oracle数据源的支持，同时还新增两大功能：即消息中心和定时任务中心。在消息中心内，用户可以获取到系统发给自己的系统事件通知。在定时任务中心内，用户可对数据集的定时同步任务做统一的全生命周期管理。此外，我们还对数据集、视图、仪表板等常用的功能也进行了大量的优化和修复。
                     </p>
@@ -226,37 +228,37 @@
                     <h3>新增功能</h3>
                     <p><strong>■ Oracle数据源支持</strong></p>
                     <p>作为市面上主流的关系型数据库，用户对Oracle数据源的要求非常迫切。在DataEase v1.1.0版本中，我们增加了对Oracle数据源的支持。目前已在Oracle 11和Oracle 12两个版本上完成了验证。</p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-02.png" alt="" loading="lazy" /></figure>
                     <p><strong>■ 消息中心</strong></p>
                     <p>
                         在DataEase
                         v1.1.0版本中，新增了对消息中心的支持。用户可以在第一时间接收到异步任务的完成消息，以及其他用户对自己的授权通知。点击系统界面右上角的消息通知按钮，即可快速进入到消息中心。目前，消息中心支持的事件有仪表板分享、数据集同步，后续会逐步添加其他系统事件的支持。消息中心默认为每个用户开启了“仪表板分享”和“数据集同步失败”消息的订阅。如不需要相关通知，可以在“接收管理”菜单中选择关闭即可。
                     </p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-03.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 定时任务中心</strong></p>
                     <p>
                         在DataEase
                         v1.1.0版本中，新增了对定时任务中心的支持。在此之前的版本中，用户需要单独在每个数据集中去设置定时任务。定时任务多起来之后，管理起来会非常不方便。在新增的定时任务中心内，用户可以集中查看系统中所添加的所有任务的情况，包括当前执行状况、下次执行计划、任务执行历史记录等，还可以对指定任务进行启动、停止、删除等操作，极大地提升了用户的使用体验。
                     </p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-04.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 同数据源直连数据集之间支持数据关联</strong></p>
                     <p>
                         在此前的版本中，DataEase支持设置数据关联关系的数据集仅包含定时同步类型的数据集和Excel数据集。在DataEase v1.1.0版本中，对于相同数据源的直连模式数据集，我们也可以设置数据集之间的关联关系，从而创建衍生的自定义数据集。
                     </p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-05.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-06.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 视图支持更换数据集</strong></p>
                     <p>
                         在DataEase v1.1.0版本中新增了视图更换数据集的支持。在以往的版本中，用户创建了视图之后，如果数据集有变动或失效，就需要重新制作视图。如果该视图已经用在了多个仪表板中，则还需要去修改相关的仪表板。在DataEase
                         v1.1.0版本中，用户可以直接编辑视图，更换相关数据集，重新制作的视图会自动更新到所有相关的仪表板中。
                     </p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-07.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-07.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 仪表板编辑增加新建视图功能，可直接在仪表板新建视图</strong></p>
                     <p>
                         DataEase
                         v1.1.0版本支持在编辑仪表板的同时新建视图的功能。用户可以更加快速方便地在仪表板中加入所需展示的视图，而无需经历进行退出仪表板→进入视图→新建视图→进入仪表板→编辑仪表板等一系列繁杂的操作，进一步提升了仪表板的开发效率。
                     </p>
-                    <figure><img src="../images/blog/release-20210809/dataease-177-08.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210809/dataease-177-08.webp" alt="" loading="lazy" /></figure>
                     <p>除了上述提到的新增功能外，DataEase v1.1.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h3>功能优化</h3>
@@ -342,11 +344,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -392,7 +394,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -455,15 +457,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

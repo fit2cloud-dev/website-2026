@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>仪表板展示｜DataEase可视化数据分析工具中的瀑布图和视图跳转</h1>
                     <p>中国吃肉地图大屏。</p>
                     <time datetime="2021-11-17">2021年11月17日</time>
-                    <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜DataEase可视化数据分析工具中的瀑布图和视图跳转" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-128.webp" alt="仪表板展示｜DataEase可视化数据分析工具中的瀑布图和视图跳转" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -235,39 +237,39 @@
 
                     <h2>数据导入</h2>
                     <p>选择“数据集”菜单，新建一个目录，点击目录右侧“+”按钮，选择“添加数据集”选项，然后导入Excel数据，如下图。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-01.webp" alt="" loading="lazy" /></figure>
                     <p>创建自定义数据集。因为牛、羊肉消费分别用到“中国各地牛肉消费表”和“中国各地羊肉消费表”两张表，要制作“没有一只羊，能活着离开西北”的视图部分，需要创建一个自定义视图，将两张表关联。具体操作如下：</p>
                     <p>1. 创建关联字段。选择已经导入的“中国各地牛肉消费表”数据集，进入“数据关联”页面，然后点击“新建关联”按钮，选择关联字段。这里选择的是“地区”字段。</p>
                     <p>2. 选择关联方式，以及关联的另外一个数据集“中国各地羊肉消费表”关联的字段。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-02.webp" alt="" loading="lazy" /></figure>
                     <p> 3. 新建自定义数据集，选择要关联的数据集表，并且勾选自定义数据集所要展示的字段。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-03.webp" alt="" loading="lazy" /></figure>
 
                     <h2>创建视图</h2>
                     <p>1. 在“视图”菜单中新建目录或选择已有目录，点击目录右侧“+”按钮，选择“添加视图”选项选择对应的表格数据。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-04.webp" alt="" loading="lazy" /></figure>
                     <p>2. 选择“堆叠柱状图”图表类型。将“地区”字段拖入“类别轴/维度”框里，将值“2019年人均羊肉消费”和“2019年人均牛肉消费”字段拖到“值轴/指标”框里，效果如下图。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-05.webp" alt="" loading="lazy" /></figure>
 
                     <h2>制作瀑布图</h2>
                     <p>为了能够更加直观地看出哪个省份的猪肉消费最多，这里选择使用瀑布图进行展现，通过对比所有柱体的垂直高度，一眼就可以看出“四川”和“重庆”的猪肉消费占比最高。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-06.webp" alt="" loading="lazy" /></figure>
 
                     <h2>制作仪表板</h2>
                     <p>点击“仪表板”菜单，在点击“+”按钮后选择“新建仪表板”选项并添加视图。可直接将做好的视图拖拽到画布中，进行组装，并可以进行编辑、样式调整、美化等操作。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-07.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-07.webp" alt="" loading="lazy" /></figure>
                     <p><strong>仪表板展示：</strong></p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-08.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-08.webp" alt="" loading="lazy" /></figure>
 
                     <h2>视图跳转</h2>
                     <p>假如想要具体看某一种肉类的各个地区消费情况，可针对仪表板中视图设置跳转。如下，对视图“中国人的餐桌上，猪肉占据主流”设置跳转，编辑视图，选择“跳转设置”选项。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-09.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-09.webp" alt="" loading="lazy" /></figure>
                     <p>选择“启用跳转”选项，勾选“肉类”字段，设定“打开方式”和“链接类型”选项。然后选择联动视图、跳转的仪表盘、以及联动的视图字段，点击“确定”按钮。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-10.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-10.webp" alt="" loading="lazy" /></figure>
                     <p>跳转效果如下，点击“中国人的餐桌上，猪肉占据主流”视图的其中一种肉类所属的扇形，就可以直接跳转到新的仪表板中，并按照点击的肉类种类进行筛选。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-11.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-11.webp" alt="" loading="lazy" /></figure>
                     <p>点击跳转后页面，显示如下图。</p>
-                    <figure><img src="../images/blog/chart-20211117/dataease-163-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211117/dataease-163-12.webp" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
@@ -316,11 +318,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -366,7 +368,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -429,15 +431,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

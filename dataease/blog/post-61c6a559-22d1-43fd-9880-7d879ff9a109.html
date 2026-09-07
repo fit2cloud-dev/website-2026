@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>操作教程｜在PowerPoint中插入可交互的DataEase仪表板</h1>
                     <p>让PowerPoint成为动态的数据展示平台，在演示中获得更好的数据表现力和观众参与度。</p>
                     <time datetime="2024-04-09">2024年04月09日</time>
-                    <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜在PowerPoint中插入可交互的DataEase仪表板" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-005.webp" alt="操作教程｜在PowerPoint中插入可交互的DataEase仪表板" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <h2 id="%E5%89%8D%E8%A8%80">前言</h2>
@@ -242,23 +244,23 @@
                         <strong><span>一、安装Web Viewer插件</span></strong>
                     </p>
                     <p><span>打开PowerPoint，新建空白演示文稿，打开“开发工具”菜单，点击功能区中的“加载项”按钮，如图1所示。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图1 PowerPoint中“加载项”按钮的位置</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-01.webp" alt="" loading="lazy" />▲ 图1 PowerPoint中“加载项”按钮的位置</p>
                     <p><span>点击“加载项”按钮后，会出现“Office 加载项”的弹出窗口，该弹出窗口默认显示“我的加载项”选项卡，需要在窗口左上角切换至“应用商店”选项卡。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-02.png" alt="" loading="lazy" />▲ 图2 “Office 加载项”窗口中的“应用商店”选项卡界面</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-02.png" alt="" loading="lazy" />▲ 图2 “Office 加载项”窗口中的“应用商店”选项卡界面</p>
                     <p><span>在“应用商店”选项卡的搜索栏中搜索“Web Viewer”，在右侧的搜索结果列表中点击“Web Viewer”插件右侧的“添加”按钮。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-03.png" alt="" loading="lazy" />▲ 图3 在“应用商店”选项卡中查找Web Viewer插件</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-03.png" alt="" loading="lazy" />▲ 图3 在“应用商店”选项卡中查找Web Viewer插件</p>
                     <p><span>添加完成后，在“Office 加载项”窗口中切换到“我的加载项”选项卡下，可以看到Web Viewer插件已经被添加，如图4所示。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-04.png" alt="" loading="lazy" />▲ 图4 成功添加Web Viewer插件</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-04.png" alt="" loading="lazy" />▲ 图4 成功添加Web Viewer插件</p>
                     <p>
                         <strong><span>二、在PowerPoint中嵌入DataEase仪表板</span></strong>
                     </p>
                     <p><span>Web Viewer插件安装完成后，就可以在PowerPoint演示文稿中嵌入DataEase仪表板了。</span></p>
                     <p><span>在编辑幻灯片页面打开“开发工具”菜单，点击功能区中的“加载项”按钮。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-01.png" alt="" loading="lazy" />▲ 图5 在演示文稿中添加加载项</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-01.webp" alt="" loading="lazy" />▲ 图5 在演示文稿中添加加载项</p>
                     <p><span>在弹出的“Office 加载项”窗口中选择“我的加载项”选项卡，选中Web Viewer插件，然后点击窗口右下角的“添加”按钮。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-06.png" alt="" loading="lazy" />▲ 图6 在演示文稿中添加Web Viewer插件</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-06.png" alt="" loading="lazy" />▲ 图6 在演示文稿中添加Web Viewer插件</p>
                     <p><span>在演示文稿中成功添加Web Viewer插件后的界面如图7所示。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-07.png" alt="" loading="lazy" />▲ 图7 在演示文稿中添加Web Viewer插件后的效果</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-07.png" alt="" loading="lazy" />▲ 图7 在演示文稿中添加Web Viewer插件后的效果</p>
                     <p>
                         <span
                             >接下来，点击幻灯片中Web
@@ -266,7 +268,7 @@
                         >
                     </p>
                     <p><span>注意：PowerPoint仅允许访问HTTPS安全地址，如果DataEase未配置HTTPS安全地址，生成的公共链接会被PowerPoint拦截。</span></p>
-                    <p><img src="../images/blog/tutorial-20240409/dataease-065-08.png" alt="" loading="lazy" />▲ 图8 在Web Viewer地址栏添加DataEase仪表板的公共链接</p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240409/dataease-065-08.png" alt="" loading="lazy" />▲ 图8 在Web Viewer地址栏添加DataEase仪表板的公共链接</p>
                     <p><span>在幻灯片中插入了DataEase仪表板后的展示效果如图9所示。</span></p>
                     <p>▲ 图9 利用Web Viewer嵌入可交互DataEase仪表板的展示效果</p>
                     <h2 id="%E7%BB%93%E8%AF%AD"><span>结语</span></h2>
@@ -324,11 +326,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -374,7 +376,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -437,15 +439,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

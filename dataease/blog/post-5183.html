@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>仪表板支持水印设置，数据集新增脱敏规则支持，DataEase开源数据可视化分析平台v1.17.0发布</h1>
                     <p>定时报告支持富文本内容。</p>
                     <time datetime="2022-12-05">2022年12月05日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="仪表板支持水印设置，数据集新增脱敏规则支持，DataEase开源数据可视化分析平台v1.17.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="仪表板支持水印设置，数据集新增脱敏规则支持，DataEase开源数据可视化分析平台v1.17.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20221205/dataease-114-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221205/dataease-114-01.png" alt="" loading="lazy" /></figure>
                     <p>12月5日，DataEase开源数据可视化分析平台正式发布v1.17.0版本。</p>
                     <p>
                         这一版本的功能升级包括：<strong>数据集方面</strong>，支持将数据集数据按指定条件导出为Excel文件，方便用户对权限范围内的数据进行二次处理。数据集字段支持日期解析格式设置，解决了日期过滤组件无效的问题；<strong>仪表板方面</strong>，Tab组件新增轮播功能，以满足多屏内容自动切换的需求；悬浮模式下组件支持精确位置设置和大小设置，用户可以制作更加精细的仪表板；<strong>视图方面</strong>，新增横向百分比柱状图。同时AntV图库的所有柱状图、面积图、仪表盘新增渐变色支持，对视图展示效果做了增强。
@@ -232,24 +234,24 @@
                     <h2>新增功能</h2>
                     <p><strong>■ </strong><strong>视图：AntV图库的柱状图、面积图、仪表盘等新增渐变色支持，展示效果更丰富</strong></p>
                     <p>数据可视化工具除了清晰准确地表达数据内在意义以外，良好的展示效果对于用户的使用体验也很重要。在v1.17.0版本中，DataEase对AntV图库中的所有柱状图、面积图以及仪表盘均增加了渐变色的支持，丰富了这些图表类型的展示效果。</p>
-                    <figure><img src="../images/blog/release-20221205/dataease-114-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221205/dataease-114-02.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ X-Pack增强包：定时报告新增富文本支持，报告内容更精彩</strong></p>
                     <p>在DataEase v1.17.0之前的版本中，定时报告中的报告内容只能添加普通文本内容，不支持用户添加图片、链接等内容。</p>
                     <p>在v1.17.0版本中，DataEase将报告内容使用的普通文本编辑器替换为富文本编辑器，用户可以在报告内进行字体设置、文字排版、内容编号等操作，也可以添加诸如图片、超链接等元素。</p>
                     <p>此外，DataEase对目前所支持的邮件、企业微信、钉钉、飞书、飞书国际版等所有报告分发渠道均进行了富文本的适配，用户无论通过哪个渠道发送报告，都可以获得内容丰富、形式多彩的报告。</p>
-                    <figure><img src="../images/blog/release-20221205/dataease-114-03.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221205/dataease-114-03.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ X-Pack增强包：仪表板支持水印设置，数据分享更放心</strong></p>
                     <p>随着企业数字化的推广与普及，企业用户日益重视保护数字产品的版权和完整性，并开始关注防复制或去向追踪的相关技术。</p>
                     <p>
                         在v1.17.0版本中，DataEase加入了对水印设置的支持，用户可以将DataEase账号、昵称、IP和系统当前时间进行自由组合，形成水印内容。设置的水印将会影响所有仪表板展现的场景，包括仪表板预览、报告、PDF导出等。对数据安全具有较高要求的用户，还可以强制要求所有仪表板必须带有水印。
                     </p>
-                    <figure><img src="../images/blog/release-20221205/dataease-114-04.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221205/dataease-114-04.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ X-Pack增强包：数据集新增脱敏规则设置，数据展示更安全</strong></p>
                     <p>
                         在v1.17.0版本之前，DataEase为数据集数据提供了简单的脱敏处理功能，可以将指定字段的源数据用“*”号进行替代展示。但在某些情况下，用户希望一些类型的数据仅屏蔽关键部分的信息，而非完全屏蔽所有信息，例如屏蔽身份证号、手机号、人名等。用户仅需隐藏这些数据的中间部分，这样既可以看到省份、手机归属地等信息，又很好地把生日、具体号码、姓名等隐私信息进行了脱敏处理。
                     </p>
                     <p>DataEase v1.17.0版本中新增数据脱敏规则支持，用户可以指定数据全脱敏、指定头尾位数脱敏、指定中间位数脱敏等脱敏规则，有效满足用户个性化的数据处理需求，让敏感数据在展示时更加安全。</p>
-                    <figure><img src="../images/blog/release-20221205/dataease-114-05.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221205/dataease-114-05.webp" alt="" loading="lazy" /></figure>
                     <p>除了上述新增功能外，DataEase v1.17.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h2>功能优化</h2>
@@ -326,11 +328,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -376,7 +378,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -439,15 +441,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

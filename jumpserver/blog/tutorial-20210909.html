@@ -213,7 +213,7 @@
                     <time datetime="2021-09-09">2021-09-09</time>
                     <h1>操作指南｜在Kubernetes集群上快速部署JumpServer开源堡垒机</h1>
                     <p>JumpServer容器化部署到操作文档。</p>
-                    <img src="../images/blog/security-20221213/cover.jpg" alt="操作指南｜在Kubernetes集群上快速部署JumpServer开源堡垒机" loading="lazy" />
+                    <img src="../images/blog/security-20221213/cover.webp" alt="操作指南｜在Kubernetes集群上快速部署JumpServer开源堡垒机" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p>在8月25日的直播中，我们给大家实际演示了<strong>在Kubernetes集群上快速部署JumpServer</strong>的全过程。作为全球首款完全开源的堡垒机，容器化部署一直是JumpServer堡垒机的特色功能之一。</p>
@@ -265,9 +265,9 @@
                     <p><strong>3. 部署环境简介</strong></p>
                     <p>操作系统为CentOS7系统或者以上，CPU和内存推荐4Core、8GB或者以上，硬盘容量推荐200GB或者以上，主备模式或者集群模式，需要VIP。Kubernetes版本建议大于等于v1.18版本，存储选择NFS网络共享存储。</p>
                     <p>■&nbsp;部署环境说明</p>
-                    <p><img src="../images/blog/tutorial-20210909/image-01.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20210909/image-01.webp" alt="" loading="lazy" / decoding="async"/></p>
                     <p>■&nbsp;虚拟机服务器信息</p>
-                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>■&nbsp;部署Kubernetes集群（注：如已经有Kubernetes环境可忽略此步骤）</p>
                     <p>部署Kubernetes集群推荐使用KubeOperator，可自动完成生产级别的Kubernetes集群部署。KubeOperator详细使用步骤可参考官方文档：</p>
                     <p><a href="https://kubeoperator.io/docs/index.html。">https://kubeoperator.io/docs/index.html。</a></p>
@@ -275,7 +275,7 @@
                     <p>① 创建Kubernetes集群，若已经准备好Kubernetes集群，可跳过此步骤。</p>
                     <p>将准备好的服务器录入到KuberOperator的“主机”列表后，在“集群”页面创建Kubernetes集群 。详细步骤参考官方文档：</p>
                     <p><em>https://kubeoperator.io/docs/index.html 。</em><br /></p>
-                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>② 准备NFS Server</p>
                     <p>■&nbsp;进入NFS主机安装NFS</p>
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
@@ -295,14 +295,14 @@ exportfs -ra</code></pre>
                     <p>③ 创建StorageClass</p>
                     <p>本次环境将使用NFS为Kubernetes集群提供持久化存储服务。通过KubeOperator创建StorageClass非常简单，可在Web页面完成StorageClass的创建。若需要使用其他类型的存储方案，可参考Kubernetes官方文档：</p>
                     <p><a href="https://kubernetes.io/docs/concepts/storage/storage-classes/。">https://kubernetes.io/docs/concepts/storage/storage-classes/。</a></p>
-                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" /></p>
-                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" / decoding="async"/></p>
+                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>④ 部署JumpServer堡垒机</p>
                     <p>
                         在Kubernetes集群上部署应用的传统方式是创建各种资源类型YAML文件，但是对于一个复杂的工程部署起来会非常的麻烦，并且难以维护。此时我们可以使用Helm/Chart进行应用的安装。使用Helm/Chart的好处在于我们不必为每个应用程序手动编写单独的YAML文件，只需创建一个Helm
                         Chart就可以将应用部署到集群。
                     </p>
-                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20210909/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>备注：以下操作均在Kubernetes的Master节点进行操作。</p>
                     <p>■&nbsp;准备Helm Chart</p>
                     <p>JumpServer官方已经提供了Chart文件，我们只需要将项目下载到本地，略做修改之后便可以使用。</p>
@@ -404,11 +404,11 @@ helm -n jms uninstall jumpserver</code></pre>
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -555,16 +555,16 @@ helm -n jms uninstall jumpserver</code></pre>
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

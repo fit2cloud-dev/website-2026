@@ -213,10 +213,10 @@
                     <time datetime="2022-03-21">2022-03-21</time>
                     <h1>支持基于角色的权限访问控制，优化UI界面，JumpServer堡垒机v2.20.0发布</h1>
                     <p>新增支持腾讯云对象存储（COS）。</p>
-                    <img src="../images/blog/release-20221121/cover.jpg" alt="支持基于角色的权限访问控制，优化UI界面，JumpServer堡垒机v2.20.0发布" loading="lazy" />
+                    <img src="../images/blog/release-20221121/cover.webp" alt="支持基于角色的权限访问控制，优化UI界面，JumpServer堡垒机v2.20.0发布" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/release-20220321/image-01.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/release-20220321/image-01.webp" alt="" loading="lazy" / decoding="async"/></p>
                     <p>
                         2022年3月18日，JumpServer开源堡垒机正式发布v2.20.0版本。在这一版本中，JumpServer新增支持基于角色的权限访问控制（Role-Based Access
                         Control，即RBAC）。通过用户关联角色、角色关联权限的方法来间接地赋予用户权限，从而方便进行权限管理。同时，在这一版本中，JumpServer的UI界面进行了重要优化，我们将视图划分为：控制台、审计台和工作台，进一步提升了用户的使用体验。
@@ -225,12 +225,12 @@
                     <h2 id="heading-1">新增功能</h2>
                     <p><strong>1. 支持基于角色的权限访问控制（RBAC）</strong></p>
                     <p>在JumpServer v2.20.0版本中，新增支持基于角色的权限访问控制（Role-Based Access Control，即RBAC）。在用户与权限之间添加角色层，权限与角色相关联，用户可以通过与角色绑定赋予该角色权限，从而方便进行权限管理。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图1 &nbsp;用户、角色与权限的关系</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图1 &nbsp;用户、角色与权限的关系</p>
                     <p>基于角色的权限访问控制在JumpServer社区版和企业版中具有一定的区别：</p>
                     <p>■&nbsp;<strong>JumpServer社区版</strong></p>
                     <p>JumpServer社区版的角色列表是系统角色列表。默认保留原有的三种系统角色：系统管理员、系统审计员和用户，兼容用户旧版本的角色体系，同时支持系统管理员自定义角色。</p>
                     <p>系统管理员可以通过选择“用户管理”→“角色列表”→“系统角色”，创建一个自定义系统角色。进入详情页即可赋予该角色权限，并授权给用户，用户则拥有该角色的权限。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图2 在JumpServer社区版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“系统角色”，创建自定义系统角色</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图2 在JumpServer社区版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“系统角色”，创建自定义系统角色</p>
                     <p>■&nbsp;<strong>JumpServer企业版（X-Pack增强包内）</strong></p>
                     <p>
                         在X-Pack增强包内，JumpServer的角色列表包含系统角色列表和组织角色列表。在社区版的基础上，企业版保留了默认的系统角色，同时也保留了默认的组织角色，即组织管理员、组织审计员、组织用户，兼容用户旧版本的组织角色体系。同时企业版不仅支持自定义系统角色，还支持自定义组织角色。
@@ -238,24 +238,24 @@
                     <p>
                         在自定义系统角色方面，系统管理员可以通过选择“用户管理”→“角色列表”→“系统角色”，创建一个自定义的系统角色。进入详情页即可赋予该角色权限，并授权给用户，用户即可拥有该角色的权限。企业版系统角色的授权用户，可以切换至任意组织，操作其有权限的功能模块。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图3 在JumpServer企业版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“系统角色”中，创建自定义系统角色</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图3 在JumpServer企业版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“系统角色”中，创建自定义系统角色</p>
                     <p>
                         自定义组织角色方面，系统管理员可以通过选择“用户管理”→“角色列表”→“组织角色”，创建一个自定义组织角色。进入详情页即可赋予该角色权限，切换组织，并授权给组织用户，组织用户则拥有该角色的权限。用户可以在该组织操作其拥有权限的模块功能。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图4 在JumpServer企业版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“组织角色”，创建自定义组织角色</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图5 在自定义系统角色详情页中，赋予角色权限</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图6 自定义系统角色详情页中，添加授权用户</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图7 授权用户登录，可以看到其有权限的模块</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图4 在JumpServer企业版中选择“用户管理”→&nbsp;“角色列表”→&nbsp;“组织角色”，创建自定义组织角色</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图5 在自定义系统角色详情页中，赋予角色权限</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图6 自定义系统角色详情页中，添加授权用户</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图7 授权用户登录，可以看到其有权限的模块</p>
                     <p><strong>2.&nbsp;新增支持腾讯云对象存储（COS）</strong></p>
                     <p>在JumpServer v2.20.0版本中，新增支持腾讯云对象存储（COS）。目前，JumpServer支持的对象存储有Amazon S3、Ceph、Swift、阿里云OSS、Azure、华为云OBS和腾讯云COS，满足了更多用户的使用需求。</p>
                     <p>系统管理员可以选择“系统设置”→&nbsp;“终端设置”→&nbsp;“录像存储”，创建COS对象存储进行使用。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.png" alt="" loading="lazy" />▲ 图8 选择“系统设置”→&nbsp;“终端设置”→&nbsp;“录像存储”，创建COS对象存储</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图8 选择“系统设置”→&nbsp;“终端设置”→&nbsp;“录像存储”，创建COS对象存储</p>
                     <p><strong>3.&nbsp;UI界面重要优化</strong></p>
                     <p>在JumpServer v2.20.0版本中，我们对UI界面进行了重要优化，将视图划分为：控制台、审计台和工作台，进一步提升了用户的使用体验。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-10.png" alt="" loading="lazy" />▲ 图9 新版JumpServer控制台视图</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-11.png" alt="" loading="lazy" />▲ 图10 新版JumpServer审计台视图</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-12.png" alt="" loading="lazy" />▲ 图11 新版JumpServer工作台视图</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-13.png" alt="" loading="lazy" />▲ 图12 新版JumpServer系统设置视图</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-10.webp" alt="" loading="lazy" / decoding="async"/>▲ 图9 新版JumpServer控制台视图</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-11.webp" alt="" loading="lazy" / decoding="async"/>▲ 图10 新版JumpServer审计台视图</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-12.webp" alt="" loading="lazy" / decoding="async"/>▲ 图11 新版JumpServer工作台视图</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220321/image-13.webp" alt="" loading="lazy" / decoding="async"/>▲ 图12 新版JumpServer系统设置视图</p>
                     <h2 id="heading-2">功能优化</h2>
                     <p>■&nbsp;优化资产授权创建时，默认选中点击的资产和节点的问题；</p>
                     <p>■&nbsp;优化命令过滤器关联的系统用户包含RDP/VNC协议的问题 ；</p>
@@ -289,11 +289,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -440,16 +440,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

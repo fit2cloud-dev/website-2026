@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>相比Superset，DataEase开源工具的部署为什么更简单？</h1>
                     <p>DataEase真正做到了“人人可快速安装，人人可快速构建自己的仪表板”。</p>
                     <time datetime="2022-10-19">2022年10月19日</time>
-                    <img src="../images/blog/common/dataease-108.png" alt="相比Superset，DataEase开源工具的部署为什么更简单？" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-108.png" alt="相比Superset，DataEase开源工具的部署为什么更简单？" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/news-20221019/dataease-121-01.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-01.webp" alt="" loading="lazy" /></figure>
                     <p>
                         在我们选择想要使用的软件时，安装是最先经历的步骤，也是我们对于软件的第一印象，数据可视化分析工具也不例外。GitHub上有很多开源的数据可视化分析工具，例如Superset、Metabase、DataEase等，大家可以免费部署使用，但是其中很多工具在安装部署时都存在一定的难度，给用户设置了较高的使用门槛。
                     </p>
@@ -247,20 +249,20 @@
                     <p>
                         此外，用户在安装DataEase时可能并没有注意到install.conf这个文件就已经完成了安装。这是因为DataEase已经为用户提供了默认配置，通过设计默认配置可以帮助用户无需决策就能基础地使用该软件，让安装过程变得更加简单。当然，安装完成后你仍然可以修改这些配置。
                     </p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-02.png" alt="" loading="lazy" /></figure>
                     <p><strong>四、注册系统服务，提供快捷命令</strong></p>
                     <p>如果你使用过Linux系统，想必对<em>service</em>命令一定不会陌生。当你想查看某个服务的状态时，只需执行<em>service &lt;service_name&gt; status</em>命令即可。</p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-03.png" alt="" loading="lazy" /></figure>
                     <p>DataEase在安装后，默认会注册一个服务，这样用户就可以像使用其他服务一样，通过执行<em>service dataease &lt;action&gt;</em>来启动、停止、重启DataEase服务以及查看DataEase服务的运行状态。</p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-04.png" alt="" loading="lazy" /></figure>
                     <p>这些操作也可以通过<em>dectl</em>命令来进行，DataEase提供一个快捷命令，方便用户维护DataEase服务，包括查看状态、在线升级等。</p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-05.png" alt="" loading="lazy" /></figure>
 
                     <h2>Superset与DataEase部署过程对比</h2>
                     <p>
                         通过对比Superset和DataEase的安装步骤，明显可以看出DataEase对安装部署的过程做了极大的简化。Superset的安装步骤更多，同时还会涉及到使用语言的编译汉化（如下图所示）。下面我们就通过解析两者的安装部署过程，切身体会一下DataEase安装过程的便利性。
                     </p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-06.jpg" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-06.webp" alt="" loading="lazy" /></figure>
                     <p><strong>一、Superset的部署过程</strong></p>
                     <p>
                         用户可以将Superset直接安装到系统中，也可以使用Docker Compose运行。使用Docker Compose运行是Superset最快捷的部署方式，因此我们以后者为例进行对比分析。具体安装步骤可以参考官网文档：<em
@@ -299,7 +301,7 @@ cd superset</code></pre>
 vim /root/config.py</code></pre>
                     </shiki-code>
                     <p>config.py需要修改如下图所示内容：</p>
-                    <figure><img src="../images/blog/news-20221019/dataease-121-07.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/news-20221019/dataease-121-07.png" alt="" loading="lazy" /></figure>
                     <p>修改后继续执行如下命令，可以实现汉化的效果：</p>
                     <shiki-code>
                         <pre><code>docker cp /root/config.py superset_app:/app/superset/config.py
@@ -400,11 +402,11 @@ exit</code></pre>
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -450,7 +452,7 @@ exit</code></pre>
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -513,15 +515,15 @@ exit</code></pre>
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

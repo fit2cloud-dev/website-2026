@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>支持自定义离线地图地理区域，查询组件及数据源功能增强，DataEase开源BI工具v2.10.3 LTS发布</h1>
                     <p>折线图、面积图支持条件样式设置，支持对仪表板/数据大屏整体进行字体设置。</p>
                     <time datetime="2024-12-11">2024年12月11日</time>
-                    <img src="../images/blog/common/dataease-001.png" alt="支持自定义离线地图地理区域，查询组件及数据源功能增强，DataEase开源BI工具v2.10.3 LTS发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-001.webp" alt="支持自定义离线地图地理区域，查询组件及数据源功能增强，DataEase开源BI工具v2.10.3 LTS发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>2024年12月9日，人人可用的开源BI工具DataEase正式发布v2.10.3 LTS版本。</p>
@@ -241,26 +243,26 @@
                         <span><strong>■ 图表：离线类地图支持自定义地理区域设置，并支持下钻、轮播</strong></span>
                     </p>
                     <p>DataEase v2.10.3 LTS版本支持在“系统参数”菜单下的“地图设置”选项卡中对离线类地图进行自定义地理区域的设置，让用户可以将中国的省份、直辖市自定义分类组合为区域，从而满足用户的区域划分需求。</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-01.png" alt="" loading="lazy" />▲图1 DataEase的自定义地理区域设置页面</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-01.png" alt="" loading="lazy" />▲图1 DataEase的自定义地理区域设置页面</p>
                     <p>在地图和气泡地图等离线地图中，用户可以设置“地区”种类为“自定义区域”，然后在维度框中添加“区域”字段（“区域”字段中包含如“东区”、“南区”、“北区”的数据值）。配置好区域与省份的对应下钻设置，可以支持地图从区域下钻至省份。</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-02.png" alt="" loading="lazy" />▲图2 DataEase地图组件应用自定义地理区域设置</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-03.png" alt="" loading="lazy" />▲图3 自定义地理区域下钻示例</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-02.png" alt="" loading="lazy" />▲图2 DataEase地图组件应用自定义地理区域设置</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-03.png" alt="" loading="lazy" />▲图3 自定义地理区域下钻示例</p>
                     <p>
                         <span><strong>■ 折线图、面积图支持条件样式设置</strong></span>
                     </p>
                     <p>在DataEase v2.10.3 LTS版本中，折线图、面积图新增对条件样式设置的支持。用户可以根据不同的业务阈值给图表设置不同的条件，让数据在图表中呈现出不同的状态。</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-04.png" alt="" loading="lazy" />▲图4 折线图、面积图条件样式示例</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-04.png" alt="" loading="lazy" />▲图4 折线图、面积图条件样式示例</p>
                     <p>
                         <span><strong>■ 组件：查询组件功能增强</strong></span>
                     </p>
                     <p>DataEase v2.10.3 LTS版本对查询组件进行了许多方面的增强，包括：支持自定义排序、支持设置内边距和圆角、时间查询组件支持设置时间筛选范围，以及支持单独设置查询条件宽度等。</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-05.png" alt="" loading="lazy" />▲图5 查询组件自定义排序功能示例</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-05.png" alt="" loading="lazy" />▲图5 查询组件自定义排序功能示例</p>
                     <p>
                         <span><strong>■ 仪表板和数据大屏：支持对仪表板/数据大屏整体进行字体设置</strong></span>
                     </p>
                     <p>在DataEase v2.10.3 LTS版本中，仪表板和数据大屏的“整体配置”菜单中，新增“字体选择”功能。字体选择列表中会列出常用字体及提前在“字体管理”设置中添加好的自定义字体。</p>
                     <p>用户可以通过字体选择功能，对仪表板内所有组件（包括图表、查询组件等）进行整体的字体设置，包括图表的标题、标签、图例、轴标签、数值、提示等诸多属性。</p>
-                    <p><img src="../images/blog/release-20241211/dataease-029-06.png" alt="" loading="lazy" />▲图6 仪表板整体字体设置示例</p>
+                    <p><img decoding="async" src="../images/blog/release-20241211/dataease-029-06.png" alt="" loading="lazy" />▲图6 仪表板整体字体设置示例</p>
                     <p>除了上述新增功能外，DataEase v2.10.3 LTS版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
                     <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
                     <p><span>■</span> refactor（数据大屏）：数据大屏支持批量隐藏；</p>
@@ -369,11 +371,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -419,7 +421,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -482,15 +484,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

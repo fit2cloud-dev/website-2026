@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置</h1>
                     <p>用DataEase开源工具分析CPI趋势。</p>
                     <time datetime="2021-11-02">2021年11月02日</time>
-                    <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-128.webp" alt="仪表板展示｜DataEase可视化数据分析工具中的视图钻取和联动设置" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -225,7 +227,7 @@
                         本文介绍DataEase工具的使用，重点来介绍“视图钻取”和“联动设置”两个功能。通过使用“钻取”功能可以展示图表的子级类目数据；通过使用“联动”功能能够实现多表数据相互联动的效果。希望本文可以帮助更多人学会使用DataEase工具，做出精彩的可视化数据分析图表。
                     </p>
                     <p>首先展示一下通过DataEase制作完成的《2021年8月居民消费价格》趋势分析图。下面会从数据准备、需求分析、视图制作、仪盘板制作等几个方面展示DataEase的具体使用方法。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-01.webp" alt="" loading="lazy" /></figure>
 
                     <h2>数据准备</h2>
                     <p>从国家统计局官网获取到“2021年8月份居民消费价格”数据，包含2021年8月全国居民消费价格同比、环比涨跌幅；各类商品及服务价格同比、环比变动情况；以及居民消费价格主要数据等。</p>
@@ -245,56 +247,56 @@
 
                     <h2>数据导入</h2>
                     <p><strong>操作路径：</strong>在DataEase中依次选择数据集→创建数据集分组→添加数据集→Excel数据集→上传文件导入。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-02.webp" alt="" loading="lazy" /></figure>
                     <p>按照此操作把所有数据集导入进来。除了使用Excel文件，还可以通过数据库导入数据集。DataEase支持MySQL、Oracle、SQL Server、PostgreSQL等多种数据源。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-03.png" alt="" loading="lazy" /></figure>
 
                     <h2>视图制作</h2>
                     <p><strong>操作路径：</strong>依次选择视图→创建视图分组→添加视图。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-04.webp" alt="" loading="lazy" /></figure>
                     <p>导入数据后，把维度和指标拖拽到对应的类别轴和值轴里，右侧生成图表。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-05.webp" alt="" loading="lazy" /></figure>
 
                     <h2>样式优化</h2>
                     <p>在DataEase的“样式”模块中，可以对图形属性和组件样式进行优化调整。通过自定义，可设置图表展示哪些重要数据并隐藏非重要信息。同时进行图表美化，可以打造自己喜欢的风格。</p>
                     <p>以下列举出几张图表样式的对比图：</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-06.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-07.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-08.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-09.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-10.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-06.webp" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-07.webp" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-08.webp" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-09.webp" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-10.webp" alt="" loading="lazy" /></figure>
 
                     <h2>视图钻取</h2>
                     <p><strong>操作路径：</strong>编辑视图/编辑仪表板。</p>
                     <p><strong>1. 设置钻取目录</strong></p>
                     <p>生成一级视图后，拖拽钻取字段至“钻取/维度”标签。请注意：下钻目录与拖入的字段顺序有关，如下图所示，自上而下依次下钻。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-11.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-11.webp" alt="" loading="lazy" /></figure>
                     <p><strong>2. 下钻</strong></p>
                     <p>以下图为例，点击“食品烟酒”选项。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-12.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-12.webp" alt="" loading="lazy" /></figure>
                     <p>下钻结果如下图，展示食品烟酒类别下所有的二级分类数据。如果想返回上一级，可点击视图左下角的“全部”选项，返回一级视图。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-13.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-13.webp" alt="" loading="lazy" /></figure>
 
                     <h2>制作仪表板</h2>
                     <p><strong>操作路径：</strong>依次选择仪表板→新建目录→新建仪表板。</p>
                     <p><strong>1. 添加视图</strong></p>
                     <p>在下图目录中，新建仪表板“2021年8月份居民消费价格”目录，添加视图。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-14.png" alt="" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-15.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-14.webp" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-15.webp" alt="" loading="lazy" /></figure>
                     <p><strong>2. 设计仪表板</strong></p>
                     <p>将视图在画板中排列。可以通过左侧的“组件”、“其他”选项来调整仪表板样式，也可以对每张视图进行编辑。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-16.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-16.webp" alt="" loading="lazy" /></figure>
 
                     <h2>联动设置</h2>
                     <p><strong>1. 联动设置</strong></p>
                     <p>如下图，点击展开功能菜单，点击“联动设置”选项。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-17.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-17.webp" alt="" loading="lazy" /></figure>
                     <p><strong>2. 设置联动字段</strong></p>
                     <p>当设置两个视图联动时，设置相对应的数据集的联动字段。设置完成后，点击“确定”按钮，联动设置完成。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-18.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-18.webp" alt="" loading="lazy" /></figure>
                     <p><strong>3. 仪表板效果</strong></p>
                     <p>如下图，点击“食品烟酒类”视图的“鲜菜”数据，联动的视图只展示“鲜菜”数据的联动字段数据。如果想取消联动效果，可点击页面右上角的“清除所有联动”选项。</p>
-                    <figure><img src="../images/blog/chart-20211102/dataease-165-19.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/chart-20211102/dataease-165-19.png" alt="" loading="lazy" /></figure>
                 </div>
             </article>
         </main>
@@ -343,11 +345,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -393,7 +395,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -456,15 +458,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

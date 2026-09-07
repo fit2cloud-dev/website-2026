@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>操作教程｜快速上手DataEase透视表制作</h1>
                     <p>DataEase支持“透视表”视图，轻松完成各类报表。</p>
                     <time datetime="2022-05-31">2022年05月31日</time>
-                    <img src="../images/blog/common/dataease-125.jpg" alt="操作教程｜快速上手DataEase透视表制作" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-125.jpg" alt="操作教程｜快速上手DataEase透视表制作" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文为掘金博主cjwts的原创文章。</em></p>
@@ -233,63 +235,63 @@
                     <h2>操作流程</h2>
                     <p>第一步，建立新的数据集分组。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-01.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-01.png" alt="" loading="lazy" />
                         <figcaption>图1 添加数据表分组</figcaption>
                     </figure>
                     <p><br />第二步，导入实验所用数据。DataEase支持多种数据源，可以将Excel文件直接导入至DataEase平台。</p>
-                    <figure><img src="../images/blog/tutorial-20220531/dataease-141-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-02.webp" alt="" loading="lazy" /></figure>
                     <p>第三步，整理数据。导入数据集后，可以在“字段管理”功能里修改字段类型，我在这里将“月份”字段的字段类型修改为“时间”类型。这样初始数据的准备就完成了。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-03.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-03.webp" alt="" loading="lazy" />
                         <figcaption>图3 修改字段类型</figcaption>
                     </figure>
                     <p>第四步，选择视图类型。进入“仪表板”界面，添加“视图”，指定需要用到的数据集并选择视图类型为“透视表”。目前DataEase暂时只有AntV视图包含透视表类型，ECharts暂不支持，在选择的时候请大家注意一下。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-04.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-04.webp" alt="" loading="lazy" />
                         <figcaption>图4 视图指定数据集</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-05.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-05.webp" alt="" loading="lazy" />
                         <figcaption>图5 选择图表类型</figcaption>
                     </figure>
                     <p>第五步，制作视图。将“地区”字段拖入数据行维度，“季度”和“月份”字段拖入数据列维度，这样透视表的行维度显示为“地区”，列维度一级显示为“季度”，二级显示为“月份”，其中“月份”还能够以年月的形式显示。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-06.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-06.webp" alt="" loading="lazy" />
                         <figcaption>图6 待分析区处理</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-07.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-07.png" alt="" loading="lazy" />
                         <figcaption>图7 月份指标处理</figcaption>
                     </figure>
                     <p>然后将指标字段拖入到数据列指标，透视表的雏形就做好了。为了方便展示重要数据，DataEase还提供了丰富的过滤器。通过添加对应的过滤规则和过滤值，我在仪表板上留下了三大地区的数据，便于查看和展示。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-08.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-08.png" alt="" loading="lazy" />
                         <figcaption>图8 添加过滤规则</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-09.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-09.png" alt="" loading="lazy" />
                         <figcaption>图9 通过规则对字段进行过滤</figcaption>
                     </figure>
                     <p>第六步，完善视图。从图10中可以看到处理后的报表会自动算出行维度和列维度的总计值。接着将行总计的别名修改为“全国”，列总计的别名修改为“季度地区总计”，再将表头、表格修改为自己喜欢的配色，这样透视表就完成了。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-10.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-10.webp" alt="" loading="lazy" />
                         <figcaption>图10 修改合计行显示名</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-11.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-11.webp" alt="" loading="lazy" />
                         <figcaption>图11 处理后的报表</figcaption>
                     </figure>
                     <p>此外，DataEase还支持对指标列进行环比的快速计算。通过选择字段下的“快速计算”，选择“同比/环比”计算，设置“差值百分比”环比，就可以看到相应字段自动替换成了环比增长率的数值。</p>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-12.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-12.png" alt="" loading="lazy" />
                         <figcaption>图12 选择快速计算方式</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-13.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-13.png" alt="" loading="lazy" />
                         <figcaption>图13 同环比设置</figcaption>
                     </figure>
                     <figure>
-                        <img src="../images/blog/tutorial-20220531/dataease-141-14.png" alt="" loading="lazy" />
+                        <img decoding="async" src="../images/blog/tutorial-20220531/dataease-141-14.webp" alt="" loading="lazy" />
                         <figcaption>图14 同环比数据展示</figcaption>
                     </figure>
 
@@ -347,11 +349,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -397,7 +399,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -460,15 +462,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

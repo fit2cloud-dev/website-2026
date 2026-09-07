@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>SQL数据集支持数据参考功能，新增飞书、钉钉、企业微信平台接入支持，DataEase开源数据可视化分析平台v1.15.0发布</h1>
                     <p>全面优化数据源和数据集板块的交互；视图方面，辅助线支持设置动态值。</p>
                     <time datetime="2022-10-10">2022年10月10日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="SQL数据集支持数据参考功能，新增飞书、钉钉、企业微信平台接入支持，DataEase开源数据可视化分析平台v1.15.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="SQL数据集支持数据参考功能，新增飞书、钉钉、企业微信平台接入支持，DataEase开源数据可视化分析平台v1.15.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20221010/dataease-122-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-01.webp" alt="" loading="lazy" /></figure>
                     <p>10月10日，DataEase开源数据可视化分析平台正式发布v1.15.0版本。</p>
                     <p>
                         在这一版本中，DataEase对数据源和数据集两个板块的交互进行了全面优化；<strong>数据集方面</strong>，SQL数据集新增数据参考功能，在编写SQL语句时可方便地查询数据表的结构；<strong>视图方面</strong>，辅助线支持设置动态值，堆叠项支持自定义排序，AntV透视表的小计、总计支持选择多种聚合方式，此外DataEase还在更多的视图使用细节方面进行了完善；<strong>系统管理方面</strong>，支持防暴力登录设置，让系统用起来更安全。
@@ -230,30 +232,30 @@
                     <p><strong>■ </strong><strong>数据集：SQL数据集新增数据参考功能</strong></p>
                     <p>在DataEase v1.15.0版本之前，创建SQL数据集时无法在DataEase平台上查看到其对应的数据表结构信息。而当编写较复杂的SQL语句时，则非常需要实时查询相关表的字段等信息。</p>
                     <p>在v1.15.0版本中，SQL数据集新增数据参考功能。用户在编写SQL语句时，可以在编辑区侧边区域实时查询指定数据表的数据字段，为SQL数据集的创建提供便利。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-02.png" alt="图片" loading="lazy" /></figure>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-03.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-02.webp" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-03.webp" alt="图片" loading="lazy" /></figure>
                     <p><strong>■ 视图：辅助线支持设置动态值，AntV透视表的小计、总计支持选择多种聚合方式</strong></p>
                     <p>在DataEase v1.15.0版本中，AntV和ECharts图库中支持辅助线设置的图形均增加了辅助线动态值设置。用户可以选择数据集中的字段及其计算方式得出辅助线的动态值，解决了之前版本中只能手动计算并设置固定的辅助线数值的问题。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-04.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-04.webp" alt="图片" loading="lazy" /></figure>
                     <p>AntV S2表格已支持求和、最大值、最小值、平均值等聚合方式，DataEase v1.15.0版本中已将透视表更新至AntV S2版本，同时放开了这些计算选项，用户在制作透视表的时候有了更多的选择。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-05.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-05.webp" alt="图片" loading="lazy" /></figure>
                     <p><strong>■ 系统管理：新增防暴力登录设置</strong></p>
                     <p>v1.15.0版本之前，DataEase并没有对规定时间内的登录失败次数进行限制，恶意用户可以通过“字典攻击”的方式来尝试暴力破解DataEase用户的登录密码。</p>
                     <p>在v1.15.0版本中，DataEase新增防暴力设置支持，用户可以通过设置触发禁止登录的次数上限和等待时长来防范非法登录行为。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-06.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-06.webp" alt="图片" loading="lazy" /></figure>
                     <p>当用户被恶意触发禁止登录后，管理员可以在“用户管理”页面中对相应的用户进行手动解锁。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-07.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-07.webp" alt="图片" loading="lazy" /></figure>
                     <p><strong>■ X-Pack增强包：支持飞书、钉钉、企业微信平台接入，支持扫码登录、接收消息和定时报告</strong></p>
                     <p>
                         飞书、钉钉和企业微信作为市面上主流的办公APP，拥有规模庞大的用户群体。在v1.15.0版本中，用户可以在DataEase中为使用账户绑定相关平台的账号，绑定后的用户在登录页面时可以通过扫码的方式登录DataEase，无需使用“用户名+密码”的登录方式，在使用上更加便利和安全。
                     </p>
                     <p>除了可以和上述三个平台绑定登录外，DataEase中的消息通知、定时报告等功能也和飞书、钉钉、企业微信做了接入支持，用户可以在这三个平台上选择接收来自DataEase的通知以及报告，让办公更加便捷。</p>
                     <p>用户可以在“个人信息”页面中设置三个平台的账号绑定。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-08.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-08.webp" alt="图片" loading="lazy" /></figure>
                     <p>在登录页上可以选择扫码登录图标，切换到扫码登录的方式。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-09.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-09.webp" alt="图片" loading="lazy" /></figure>
                     <p>可以在“定时报告”和“消息中心”菜单中勾选报告及消息的接收设置。</p>
-                    <figure><img src="../images/blog/release-20221010/dataease-122-10.png" alt="图片" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20221010/dataease-122-10.webp" alt="图片" loading="lazy" /></figure>
                     <p>除了上述提到的新增功能外，DataEase v1.15.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h2>功能优化</h2>
@@ -327,11 +329,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -377,7 +379,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -440,15 +442,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

@@ -213,7 +213,7 @@
                     <time datetime="2024-01-18">2024-01-18</time>
                     <h1>操作教程｜JumpServer堡垒机结合Ansible进行批量系统初始化</h1>
                     <p>提高系统的安全性和运维效率，轻松解放双手。</p>
-                    <img src="../images/blog/tutorial-20260115/cover.jpg" alt="操作教程｜JumpServer堡垒机结合Ansible进行批量系统初始化" loading="lazy" />
+                    <img src="../images/blog/tutorial-20260115/cover.webp" alt="操作教程｜JumpServer堡垒机结合Ansible进行批量系统初始化" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p style="text-align: start">
@@ -231,7 +231,7 @@
                     <p style="text-align: start">
                         Playbook模式（即剧本模式）是Ansible的主要管理方式，也是Ansible功能强大的关键所在。Playbook模式是通过多个Task（即任务）集合来完成某类功能的，例如Web服务的安装部署、数据库服务器的批量备份等，可以简单地把Playbook理解为通过组合多条“<em>ad-hoc</em>”操作的配置文件。
                     </p>
-                    <p><img src="../images/blog/tutorial-20240118/image-01.png" alt="logo.png" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20240118/image-01.webp" alt="logo.png" loading="lazy" / decoding="async"/></p>
                     <h2 style="" id="%E4%BA%8C%E3%80%81%E5%AE%9E%E6%96%BD%E6%96%B9%E6%A1%88">二、实施方案</h2>
                     <p style="text-align: start">
                         JumpServer作为运维安全审计管理平台，本身内置Ansible模块，可以实现对服务器等资产的安全管控。用户通过JumpServer的认证和授权功能，获得相应权限后才能使用Ansible对目标主机进行操作，确保了操作的安全性。
@@ -250,14 +250,14 @@
                         <strong><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">2. 创建Playbook作业</span></strong>
                     </p>
                     <p style="text-align: start">■ 登录JumpServer堡垒机，进入工作台界面；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图1-dteu.png" loading="lazy" />▲ 图1 登录JumpServer堡垒机</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图2-vbpj.png" loading="lazy" />▲ 图2 进入JumpServer工作台界面</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图1-dteu.png" loading="lazy" / decoding="async"/>▲ 图1 登录JumpServer堡垒机</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图2-vbpj.png" loading="lazy" / decoding="async"/>▲ 图2 进入JumpServer工作台界面</p>
                     <p style="text-align: start">■ 在JumpServer中选择“作业中心”→“模版管理”→“Playbook管理”，创建Playbook模板；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图3-yqkj.png" loading="lazy" />▲ 图3 创建Playbook模板</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图4-bljv.png" loading="lazy" />▲ 图4 创建模板详情</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图3-yqkj.png" loading="lazy" / decoding="async"/>▲ 图3 创建Playbook模板</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图4-bljv.png" loading="lazy" / decoding="async"/>▲ 图4 创建模板详情</p>
                     <p style="text-align: start">■ 创建完成之后，管理页面会出现新创建的模板信息，并填写模板内容；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图5-jjou.png" loading="lazy" />▲ 图5 新创建的模板</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图6-crak.png" loading="lazy" />▲ 图6 填写模板内容</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图5-jjou.png" loading="lazy" / decoding="async"/>▲ 图5 新创建的模板</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图6-crak.png" loading="lazy" / decoding="async"/>▲ 图6 填写模板内容</p>
                     <p style="text-align: start">Playbook具体内容如下：</p>
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre><code>[root@v3 ~]# cat main.yml
@@ -314,13 +314,13 @@
         shell: sed -i '$a vm.max_map_count=262144' /etc/sysctl.conf ; sysctl -p</code></pre>
                     </shiki-code>
                     <p style="text-align: start">■ 在JumpServer中选择“作业中心”→“作业管理”，创建Playbook作业；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图7-ppzv.png" loading="lazy" />▲ 图7 创建Playbook作业</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图7-ppzv.png" loading="lazy" / decoding="async"/>▲ 图7 创建Playbook作业</p>
                     <p style="text-align: start">■ 按照如下图示填写所需的信息；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图8-xdzn.png" loading="lazy" />▲ 图8 填写作业信息</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image.png" alt="图8-xdzn.png" loading="lazy" / decoding="async"/>▲ 图8 填写作业信息</p>
                     <p style="text-align: start">■ Playbook作业创建成功后，运行Playbook作业进行测试；</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image-10.png" alt="图9-ezok.png" loading="lazy" />▲ 图9 运行新创建的作业</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image-10.png" alt="图9-ezok.png" loading="lazy" / decoding="async"/>▲ 图9 运行新创建的作业</p>
                     <p style="text-align: start">■ 运行成功。在JumpServer中创建Playbook模板后，如果需要新增服务器，运维人员只需要创建一个Playbook作业即可快速完成资产的系统初始化，轻松解放双手。</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image-11.png" alt="图10-resx.png" loading="lazy" />▲ 图10 成功执行Playbook作业</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20240118/image-11.png" alt="图10-resx.png" loading="lazy" / decoding="async"/>▲ 图10 成功执行Playbook作业</p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -338,11 +338,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -489,16 +489,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

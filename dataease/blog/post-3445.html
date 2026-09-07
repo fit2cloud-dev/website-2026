@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>支持Apache Impala，DataEase开源数据可视化分析平台v1.9.0发布</h1>
                     <p>仪表板增加网页、流媒体组件；X-Pack功能方面，行权限支持内置系统变量。</p>
                     <time datetime="2022-04-11">2022年04月11日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="支持Apache Impala，DataEase开源数据可视化分析平台v1.9.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="支持Apache Impala，DataEase开源数据可视化分析平台v1.9.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20220411/dataease-148-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20220411/dataease-148-01.webp" alt="" loading="lazy" /></figure>
                     <p>
                         4月11日，DataEase开源数据可视化分析平台正式发布v1.9.0版本。在这一版本中，DataEase平台新增了对Apache
                         Impala数据源的支持；仪表板方面，用户可以直接在仪表板页面对指定的视图进行相关设置，新增网页组件和流媒体组件；视图方面，增加高级选项支持，部分视图已添加阈值相关设置支持；X-Pack增强功能方面，行权限支持内置系统变量，可以更方便地对数据进行权限控制。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。
@@ -230,13 +232,13 @@
                         Impala是Apache旗下的开源项目，它提供SQL语义，能够查询存储在Hadoop的HDFS和HBase中的PB级大数据。已有的Hive系统虽然也提供了SQL语义，但由于Hive底层执行使用的是MapReduce引擎，仍然是一个批处理过程，难以满足查询的交互性。相比之下，Impala的最大特点兼卖点就是它的快速响应能力。
                     </p>
                     <p>在v1.9.0版本中，DataEase新增Apache Impala数据源，用户可以将Impala相关连接信息加入到DataEase数据源中，在DataEase里对Impala数据进行展示和分析。</p>
-                    <figure><img src="../images/blog/release-20220411/dataease-148-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20220411/dataease-148-02.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 视图组件增加阈值相关功能</strong></p>
                     <p>
                         一般在数据分析时可将数据与特定阈值进行对比分析，通过数据的对比来清晰准确地反映数据所处状态。在DataEase
                         v1.9.0版本中，我们对部分视图类型增加了高级设置功能，其中包含了折线图、柱状图的辅助线设置，以及仪表盘的阈值区间设置的支持。
                     </p>
-                    <figure><img src="../images/blog/release-20220411/dataease-148-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20220411/dataease-148-03.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 支持多种安装运行模式</strong></p>
                     <p>
                         在v1.9.0版本之前，DataEase标准安装默认会部署运行DataEase、MySQL、Kettle、Apache Doris FE、Apache Doris BE五个组件。对于部分用户来说，他们需要分析和展示的数据量并不太大，Kettle和Apache
@@ -251,7 +253,7 @@
                     <p>
                         企业用户的数据在很多时候会带有企业的部门、用户的角色、邮箱等相关信息。在v1.9.0版本中，DataEase内置了对一些常见系统变量的支持，例如用户ID、用户名、用户邮箱、用户来源、用户角色、组织等。数据集的管理员可以在行权限中灵活地使用这些内置的系统变量，轻松快捷地实现不同的用户访问各自所属的数据资源。
                     </p>
-                    <figure><img src="../images/blog/release-20220411/dataease-148-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20220411/dataease-148-04.webp" alt="" loading="lazy" /></figure>
                     <p>除了上述提到的新增功能外，DataEase v1.9.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h2>功能优化</h2>
@@ -325,11 +327,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -375,7 +377,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -438,15 +440,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

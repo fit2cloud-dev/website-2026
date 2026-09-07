@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>在线地图支持天地图和腾讯地图，仪表板和数据大屏支持发布功能，DataEase开源BI工具v2.10.7 LTS版本发布</h1>
                     <p>新增子弹图图表类型，图表新增排序优先级设置。</p>
                     <time datetime="2025-04-13">2025年04月13日</time>
-                    <img src="../images/blog/common/dataease-001.png" alt="在线地图支持天地图和腾讯地图，仪表板和数据大屏支持发布功能，DataEase开源BI工具v2.10.7 LTS版本发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-001.webp" alt="在线地图支持天地图和腾讯地图，仪表板和数据大屏支持发布功能，DataEase开源BI工具v2.10.7 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>2025年4月11日，人人可用的开源BI工具DataEase正式发布v2.10.7 LTS版本。</p>
@@ -232,24 +234,24 @@
                         >方面，支持数据填报模块，可以查看和填写数据报表；<span><strong>其他</strong></span
                         >方面，OAuth2支持<em>client_secret_jwt</em>方式认证，认证方式对接用户信息支持多级属性映射等。
                     </p>
-                    <p><img src="../images/blog/release-20250413/dataease-023-01.png" alt="" loading="lazy" />▲图1 DataEase的四大优势</p>
+                    <p><img decoding="async" src="../images/blog/release-20250413/dataease-023-01.png" alt="" loading="lazy" />▲图1 DataEase的四大优势</p>
                     <h2 id="%E6%96%B0%E5%A2%9E%E5%8A%9F%E8%83%BD">新增功能</h2>
                     <p>
                         <span><strong>■ 图表：在线地图支持天地图和腾讯地图</strong></span>
                     </p>
                     <p>DataEase v2.10.7 LTS版本在线地图正式支持高德地图、天地图（国家地理信息公共服务平台）和腾讯地图三大地图服务，用户可基于业务需求自由切换地图引擎，提升地理数据的可视化能力。</p>
                     <p>对于以上三种在线地图，在政务或测绘场景建议优先使用天地图，满足国家地理信息合规要求；在品牌定制需求场景建议选用腾讯地图的“个性地图”功能，强化视觉一致性；在通用场景中推荐使用高德地图，适配常规导航与位置服务。</p>
-                    <p><img src="../images/blog/release-20250413/dataease-023-02.png" alt="" loading="lazy" />▲图2 DataEase的在线地图设置</p>
+                    <p><img decoding="async" src="../images/blog/release-20250413/dataease-023-02.webp" alt="" loading="lazy" />▲图2 DataEase的在线地图设置</p>
                     <p>
                         <span><strong>■ 图表：新增子弹图</strong></span>
                     </p>
                     <p>DataEase v2.10.7 LTS版本新增子弹图图表类型。子弹图可以通过简洁的样式展示单一指标的实际值、目标值以及不同性能区间的对比，适合在有限空间内高效呈现数据。</p>
-                    <p><img src="../images/blog/release-20250413/dataease-023-03.png" alt="" loading="lazy" />▲图3 子弹图示例图</p>
+                    <p><img decoding="async" src="../images/blog/release-20250413/dataease-023-03.png" alt="" loading="lazy" />▲图3 子弹图示例图</p>
                     <p>
                         <span><strong>■ 图表：支持排序优先级设置</strong></span>
                     </p>
                     <p>DataEase v2.10.7 LTS版本支持对多个图表字段（维度和指标）的排序优先级进行设置，系统将根据设置的优先级顺序依次对图表字段进行排序。</p>
-                    <p><img src="../images/blog/release-20250413/dataease-023-04.png" alt="" loading="lazy" />▲图4 图表字段排序优先级设置</p>
+                    <p><img decoding="async" src="../images/blog/release-20250413/dataease-023-04.png" alt="" loading="lazy" />▲图4 图表字段排序优先级设置</p>
                     <p>
                         <span><strong>■ 仪表板、数据大屏：支持发布功能</strong></span>
                     </p>
@@ -257,7 +259,7 @@
                     <p>
                         仪表板和数据大屏提供发布版本与草稿版本两种版本，支持保存、发布、取消发布、恢复及预览操作。其中发布与取消发布操作会影响发布版本，保存和恢复至发布版本操作则作用于草稿版本。用户可以在不影响当前发布版本的情况下制作新版本的仪表板或数据大屏，从而实现版本发布的无缝衔接。
                     </p>
-                    <p><img src="../images/blog/release-20250413/dataease-023-05.png" alt="" loading="lazy" />▲图5 仪表板和数据大屏发布功能</p>
+                    <p><img decoding="async" src="../images/blog/release-20250413/dataease-023-05.webp" alt="" loading="lazy" />▲图5 仪表板和数据大屏发布功能</p>
                     <p>除了上述新增功能外，DataEase v2.10.7 LTS版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
                     <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
                     <p><span>■</span> refactor（图表）：优化组件事件弹窗的窗口打开方式（#15087）；</p>
@@ -349,11 +351,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -399,7 +401,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -462,15 +464,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

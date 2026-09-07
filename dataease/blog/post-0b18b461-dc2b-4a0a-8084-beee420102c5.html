@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布</h1>
                     <p>新增支持数据填报、血缘分析和阈值告警功能。</p>
                     <time datetime="2024-09-09">2024年09月09日</time>
-                    <img src="../images/blog/common/dataease-001.png" alt="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-001.webp" alt="透视表支持自定义聚合公式，新增字体管理功能，DataEase开源BI工具v2.10 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -239,17 +241,17 @@
                         <span><strong>■ 图表：透视表支持自定义聚合公式</strong></span>
                     </p>
                     <p><span>在DataEase v2.10 LTS版本中，透视表支持自定义聚合公式，用户可以通过自行编写SQL语句来实现更加准确的聚合计算，使聚合结果更加符合预期。需要注意的是，自定义聚合公式会忽略原字段设置的聚合方式。</span></p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-01.png" alt="" loading="lazy" />▲图1 透视表自定义聚合公式</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-02.png" alt="" loading="lazy" />▲图2 自定义聚合公式计算结果</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-01.webp" alt="" loading="lazy" />▲图1 透视表自定义聚合公式</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-02.png" alt="" loading="lazy" />▲图2 自定义聚合公式计算结果</p>
                     <p>
                         <span><strong>■ 系统设置：新增字体管理功能</strong></span>
                     </p>
                     <p>DataEase v2.10 LTS版本新增了“字体管理”功能模块，用户可以自行上传并使用更加符合仪表板和数据大屏主题的字体文件。此举可以有效提高仪表板的美观度，弥补了系统内置的字体风格可能和大屏主题不够匹配的问题。</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-03.png" alt="" loading="lazy" />▲图3 系统设置中的“字体管理”页面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-03.png" alt="" loading="lazy" />▲图3 系统设置中的“字体管理”页面</p>
                     <p>“字体管理”功能模块中的字体类型分为“系统内置”和“自定义”两类。系统内置字体不可删除，且内置字体默认不附带字体文件；自定义字体文件可以由用户自行上传。</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-04.png" alt="" loading="lazy" />▲图4 更换系统默认字体</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-04.png" alt="" loading="lazy" />▲图4 更换系统默认字体</p>
                     <p>字体名称不允许修改且不允许重复，但允许删除和重新上传字库文件。将某种字体设置为默认字体后，除了会改变仪表板和数据大屏的字体以外，也会影响系统默认字体的显示。</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-05.png" alt="" loading="lazy" />▲图5 图表制作过程中使用上传的自定义字体</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-05.png" alt="" loading="lazy" />▲图5 图表制作过程中使用上传的自定义字体</p>
                     <p>
                         <span><strong>■ X-Pack增强包：新增血缘分析功能</strong></span>
                     </p>
@@ -257,16 +259,16 @@
                         在v2.10
                         LTS版本中，DataEase新增了血缘分析功能。用户可以通过指定任一数据源、数据集或仪表板，对其进行关联性分析，DataEase将以表格或者关联图的形式把和指定资源相关联的资源进行统一展示。用户在删除数据源、数据集时，DataEase也会对即将删除的资源进行血缘分析，让用户可以清楚地知道删除操作后对数据与环境的影响面。
                     </p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-06.png" alt="" loading="lazy" />▲图6 血缘关系脑图展示</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-07.png" alt="" loading="lazy" />▲图7 删除资源时弹出的提示性血缘关系图</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-06.png" alt="" loading="lazy" />▲图6 血缘关系脑图展示</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-07.png" alt="" loading="lazy" />▲图7 删除资源时弹出的提示性血缘关系图</p>
                     <p>
                         <span><strong>■ X-Pack增强包：新增数据填报功能</strong></span>
                     </p>
                     <p>DataEase v2.10 LTS版本新增了数据填报模块，用户可以通过该模块创建数据表单和下发数据填报任务，以此来收集和整理日常工作中的业务数据。最终的业务数据可以在仪表板和数据大屏中进行相关的展示与分析。</p>
                     <p>拥有数据填报功能使用权限的用户可以创建需要收集的数据表单，指定需要其他用户填报的内容。当前支持的表单组件类型包括单行文本、多行文本、下拉框、单选框、多选框、日期、时间范围等。</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-08.png" alt="" loading="lazy" />▲图8 数据填报表单创建页</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-08.png" alt="" loading="lazy" />▲图8 数据填报表单创建页</p>
                     <p>被指定填写表单的用户可以在DataEase的“工作台”模块的“我的填报”列表中，对收到的填报任务进行处理。</p>
-                    <p><img src="../images/blog/release-20240909/dataease-039-09.png" alt="" loading="lazy" />▲图9 “我的填报“列表页面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240909/dataease-039-09.png" alt="" loading="lazy" />▲图9 “我的填报“列表页面</p>
                     <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
                     <p><span>■</span> refactor（数据源）：升级Calcite依赖，支持低版本SQL Server数据源；</p>
                     <p><span>■</span> refactor（图表）：优化AntV图表加载速度（#11098）；</p>
@@ -354,11 +356,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -404,7 +406,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -467,15 +469,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

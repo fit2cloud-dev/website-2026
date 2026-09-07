@@ -213,14 +213,14 @@
                     <time datetime="2023-09-11">2023-09-11</time>
                     <h1>案例研究｜农业信息化企业天演维真的堡垒机选型思路与落地实践</h1>
                     <p>借助JumpServer对异构IT资产进行集中管理，并构建统一的访问入口。</p>
-                    <img src="../images/blog/tutorial-20230911/cover.jpg" alt="案例研究｜农业信息化企业天演维真的堡垒机选型思路与落地实践" loading="lazy" />
+                    <img src="../images/blog/tutorial-20230911/cover.webp" alt="案例研究｜农业信息化企业天演维真的堡垒机选型思路与落地实践" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p style="text-align: start"></p>
                     <p style="text-align: start">
                         浙江天演维真网络科技股份有限公司（以下简称为“天演维真”）成立于2004年，是中国领先的乡村振兴数字化服务整体解决方案提供商。作为中国品牌农业信息化服务的先行者、中国农产品数字身份识别技术开创者，天演维真的产品已助力全国27个省、300余个县域产业振兴，赋能20000余家品牌农头企业，服务60余家认证机构，累计覆码产品超10亿。
                     </p>
-                    <p><img src="../images/blog/tutorial-20230911/cover.jpg" alt="jumpserver官网-案例研究图-天演维真-01.jpg" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20230911/cover.webp" alt="jumpserver官网-案例研究图-天演维真-01.jpg" loading="lazy" / decoding="async"/></p>
                     <p>
                         在IT运维管理方面，天演维真的IT部门原先使用的传统运维审计平台面临着版本老旧、功能更新迭代缓慢等问题，无法满足公司现阶段的IT系统运维需求，因此需要寻找一款新的堡垒机产品。经过多方对比，天演维真的IT部门最终选择了JumpServer堡垒机。
                     </p>
@@ -242,7 +242,7 @@
                     <p style="text-align: start">目前天演维真拥有多个分支机构，资产分布较为分散，JumpServer堡垒机所支持的分布式部署方式正好可以满足公司当前对分布式资产管理和业务使用的需求。</p>
                     <p style="text-align: start">天演维真在公司的核心机房部署完整的JumpServer核心节点和数据库，在分支机房部署JumpServer分节点，分节点分别向核心机房的核心节点注册。</p>
                     <p style="text-align: start">这样一来，分支机构的审计录像就会直接上传至核心机房的录像存储池中。每个分公司的用户可以通过各自的机房就近访问JumpServer入口，实现IT资产的就近访问，节省了不必要的带宽消耗。</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-02.png" alt="图1-zunb.png" loading="lazy" />▲ 图1 天演维真JumpServer部署架构</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-02.png" alt="图1-zunb.png" loading="lazy" / decoding="async"/>▲ 图1 天演维真JumpServer部署架构</p>
                     <h1 style="text-align: start" id="jumpserver%E7%9A%84%E4%BD%BF%E7%94%A8%E5%AE%9E%E8%B7%B5">JumpServer的使用实践</h1>
                     <p style="text-align: start">经过了一段时间的实际部署使用，天演维真的IT部门总结了一些JumpServer堡垒机的使用经验和心得，有着类似应用场景的客户可以作为参考。</p>
                     <p style="text-align: start"><strong>1. 权限管理</strong></p>
@@ -253,23 +253,23 @@
                         在之前使用的运维安全审计平台中，具体的权限开通需要堡垒机管理员手动开通和确认，操作起来较为繁琐。JumpServer堡垒机企业版内置了工单系统，用户只需要向管理员提交权限申请工单，通过审批后，JumpServer将会自动创建相应的权限并分发给用户。
                     </p>
                     <p style="text-align: start">同时，JumpServer内置的工单系统提供API接口能力，可以方便地与外部系统进行集成和调用。</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-03.png" alt="图2-pndd.png" loading="lazy" />▲ 图2 JumpServer权限管理流程</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-03.png" alt="图2-pndd.png" loading="lazy" / decoding="async"/>▲ 图2 JumpServer权限管理流程</p>
                     <p style="text-align: start"><strong>2. 安全管理</strong></p>
                     <p style="text-align: start">
                         JumpServer提供安全防护的相关功能，比如MFA多因子认证、用户登录限制、黑白名单等。管理员可以根据用户、访问主机、访问方式等内容设置细粒度的访问策略，同时支持指令黑白名单、时间黑白名单、IP黑白名单等功能，拒绝非法登录，保障系统的安全性。
                     </p>
                     <p style="text-align: start">同时，JumpServer通过集中统一的访问控制和细粒度的命令级授权策略，确保“权限最小化”原则，有效规避了运维操作的风险。</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-04.png" alt="图3-zxle.png" loading="lazy" />▲ 图3 JumpServer安全管理</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-04.png" alt="图3-zxle.png" loading="lazy" / decoding="async"/>▲ 图3 JumpServer安全管理</p>
                     <p style="text-align: start"><strong>3. 运维审计</strong></p>
                     <p style="text-align: start">
                         JumpServer支持对资产进行全面的运维审计，包括录像会话记录、在线监控、命令复核、运维审计大屏、告警等功能。针对运维过程中可能存在的潜在操作风险，JumpServer支持根据已设定的访问控制策略，自动检测日常运维过程中所发生的越权访问、违规操作等安全事件，系统能够根据安全事件的类型和等级等条件自动进行告警或阻断处理，确保系统正常运行。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-05.png" alt="图4-unwh.png" loading="lazy" />▲ 图4 JumpServer运维审计</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-05.png" alt="图4-unwh.png" loading="lazy" / decoding="async"/>▲ 图4 JumpServer运维审计</p>
                     <p style="text-align: start"><strong>4. 多租户组织管理</strong></p>
                     <p style="text-align: start">
                         天演维真的堡垒机需要在多机房的场景下使用，在统一管理的前提下，JumpServer的多租户功能可以实现管理权限的下放。这样一来，各组织管理员就可以自行管理本部门的资产、用户与权限，提高了各分公司IT资产管理的自主性和灵活性。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-06.png" alt="图5-kdou.png" loading="lazy" />▲ 图5 JumpServer多租户组织管理</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20230911/image-06.png" alt="图5-kdou.png" loading="lazy" / decoding="async"/>▲ 图5 JumpServer多租户组织管理</p>
                     <h1 style="text-align: start" id="jumpserver%E7%9A%84%E4%BB%B7%E5%80%BC%E6%94%B6%E7%9B%8A">JumpServer的价值收益</h1>
                     <p style="text-align: start">目前，JumpServer已经成为天演维真在分布式IT架构下进行运维安全审计的必备组件。借助JumpServer，IT部门可以对异构IT资产进行集中管理，并构建统一的访问入口，从而有效控制IT系统的运维风险。</p>
                     <p style="text-align: start">作为符合4A规范的运维安全审计系统，JumpServer可以为企业通过等保评估提供有力支持，并为企业带来以下收益：</p>
@@ -293,11 +293,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -444,16 +444,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

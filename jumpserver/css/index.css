@@ -2567,7 +2567,7 @@ a:focus {
 
 .js-founder-portrait {
     background:
-        url("../images/banner/banner10.png") no-repeat 31% bottom / auto 108%,
+        url("../images/banner/banner10.webp") no-repeat 31% bottom / auto 108%,
         linear-gradient(180deg, #ffffff 0%, #eef8f4 100%);
     border: 1px solid rgba(43, 147, 124, 0.14);
     border-radius: 8px;

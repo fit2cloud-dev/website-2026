@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>操作教程｜通过DataEase开源BI工具对接金山多维表格</h1>
                     <p>将金山多维表格对接至DataEase，方便企业更加高效地制作数据大屏，展示实时数据。</p>
                     <time datetime="2024-05-20">2024年05月20日</time>
-                    <img src="../images/blog/common/dataease-005.jpg" alt="操作教程｜通过DataEase开源BI工具对接金山多维表格" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-005.webp" alt="操作教程｜通过DataEase开源BI工具对接金山多维表格" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <h2 id="%E5%89%8D%E8%A8%80">前言</h2>
@@ -230,11 +232,11 @@
                         <strong><span>一、配置金山多维表格</span></strong>
                     </p>
                     <p><span>1. 创建金山多维表格，录入测试数据；</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-01.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-01.png" alt="" loading="lazy" /></p>
                     <p><span>2. 在金山多维表格的“开发”模块下新建脚本；</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-02.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-02.png" alt="" loading="lazy" /></p>
                     <p><span>3. 在新建的脚本框中编写脚本程序；</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-03.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-03.png" alt="" loading="lazy" /></p>
                     <p>
                         <span>脚本程序的代码参考如下（详细内容可以参考完整文档：</span><em><span>https://www.kdocs.cn/l/ctzsgDlAGF0l</span></em
                         ><span>）：</span>
@@ -281,9 +283,9 @@ console.log(returnData)
 return returnData</code></pre>
                     </shiki-code>
                     <p><span>4. 创建脚本令牌；</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-04.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-04.png" alt="" loading="lazy" /></p>
                     <p><span>5. 复制脚本Webhook（即网络钩子）。</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-05.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-05.png" alt="" loading="lazy" /></p>
                     <p>
                         <strong><span>二、将金山多维表格数据源接入DataEase</span></strong>
                     </p>
@@ -293,7 +295,7 @@ return returnData</code></pre>
                     <p><span>② 在“请求”栏录入复制的金山多维表格Webhook地址；</span></p>
                     <p><span>③ 在“请求参数”栏的请求头中录入“Content-Type”：“application/json”；</span></p>
                     <p><span>④ 在“请求参数”栏的请求头中录入“AirScript-Token”：即金山多维表格中创建的脚本令牌；</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-06.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-06.png" alt="" loading="lazy" /></p>
                     <p><span>⑤ 在“请求参数”栏的请求体中录入json字符串，参考如下：</span></p>
                     <shiki-code>
                         <pre><code>{
@@ -303,14 +305,14 @@ return returnData</code></pre>
     }
 }</code></pre>
                     </shiki-code>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-07.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-07.png" alt="" loading="lazy" /></p>
                     <p><span>所有信息录入完成后，点击“下一步”按钮。</span></p>
                     <p><span>2. 提取数据</span></p>
                     <p><span>勾选“数据结构”栏目中对应的解析字段数据层级，点击“保存”按钮。</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-08.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-08.png" alt="" loading="lazy" /></p>
                     <h2 id="%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA">结果展示</h2>
                     <p><span>金山多维表格与DataEase开源数据可视化分析工具的对接演示效果如下图所示：</span></p>
-                    <p><img src="../images/blog/tutorial-20240520/dataease-058-09.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/tutorial-20240520/dataease-058-09.png" alt="" loading="lazy" /></p>
                     <p>
                         <em><span>编者注：本文参考了包永康在WPS社区发布的《使用金山文档+DataEase制作高大上的数字看板》一文（</span></em
                         ><a href="https://bbs.wps.cn/topic/18861" target="_blank" rel="noopener noreferrer"
@@ -365,11 +367,11 @@ return returnData</code></pre>
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -415,7 +417,7 @@ return returnData</code></pre>
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -478,15 +480,15 @@ return returnData</code></pre>
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

@@ -213,7 +213,7 @@
                     <time datetime="2024-10-10">2024-10-10</time>
                     <h1>操作教程｜JumpServer使用Linux操作系统发布虚拟应用</h1>
                     <p>通过Panda组件实现对虚拟应用的调度和管理。</p>
-                    <img src="../images/blog/tutorial-20260115/cover.jpg" alt="操作教程｜JumpServer使用Linux操作系统发布虚拟应用" loading="lazy" />
+                    <img src="../images/blog/tutorial-20260115/cover.webp" alt="操作教程｜JumpServer使用Linux操作系统发布虚拟应用" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -263,7 +263,7 @@
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">1. 用户通过访问JumpServer的Web Terminal，连接虚拟应用资产；</span></p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">2. Panda组件创建基于VNC的GUI容器，并返回该VNC的连接信息至Lion组件；</span></p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">3. Lion组件创建容器请求，并通过VNC协议连接该容器。</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-01.jpg" alt="" loading="lazy" />▲图1 虚拟应用技术原理图</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-01.webp" alt="" loading="lazy" / decoding="async"/>▲图1 虚拟应用技术原理图</p>
                     <p>
                         <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>三、虚拟应用部署方案</strong></span>
                     </p>
@@ -275,7 +275,7 @@
                             >一台虚拟机同时部署JumpServer和虚拟应用服务。将部署JumpServer的服务器自身当做虚拟应用发布机使用，用户在使用虚拟应用时，JumpServer的Panda组件启动App容器承载虚拟应用。</span
                         >
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.jpg" alt="" loading="lazy" />▲图2 一体化部署方案原理图</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图2 一体化部署方案原理图</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">具体操作步骤如下：</span></p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>1. 配置主配置文件</strong></span>
@@ -299,9 +299,9 @@ PANDA_HOST=http://panda:9001</code></pre>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>2. 开启虚拟应用功能</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“系统设置”→“功能设置”，在“虚拟应用”标签页中开启“启用虚拟应用”按钮；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图3 开启虚拟应用功能</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图3 开启虚拟应用功能</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">开启虚拟应用功能后，在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”，可以看到“虚拟应用”和“应用提供者”标签页；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图4 “应用提供者”标签页</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图4 “应用提供者”标签页</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>3. 下载并上传虚拟应用</strong></span>
                     </p>
@@ -314,35 +314,35 @@ PANDA_HOST=http://panda:9001</code></pre>
                             >（<em>https://docs.jumpserver.org/zh/v3/guide/system/remoteapp/#34</em>）；</span
                         >
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图5 JumpServer应用商店虚拟应用列表</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图5 JumpServer应用商店虚拟应用列表</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"
                             >以Chrome浏览器应用为例，在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”→“虚拟应用”，在“虚拟应用”标签页中，上传Chrome浏览器虚拟应用。系统将自动同步该虚拟应用配置的镜像，内网环境请联系技术人员获取虚拟应用的镜像包；</span
                         >
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图6 上传虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图6 上传虚拟应用</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”→“应用提供者”，在“虚拟应用”标签页中可以看到应用已发布成功；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图7 成功发布虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图7 成功发布虚拟应用</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>4. 添加Web资产并授权</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“资产管理”→“资产列表”→“Web”，添加Web资产；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图8 添加Web资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图8 添加Web资产</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer“控制台”的“权限管理”页面中，添加资产授权；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图9 添加资产授权</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图9 添加资产授权</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>5. 使用虚拟应用</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">进入JumpServer的Web Terminal页面，使用虚拟应用连接资产；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-10.png" alt="" loading="lazy" />▲图10 使用虚拟应用连接资产</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-11.png" alt="" loading="lazy" />▲图11 连接资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-10.webp" alt="" loading="lazy" / decoding="async"/>▲图10 使用虚拟应用连接资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-11.webp" alt="" loading="lazy" / decoding="async"/>▲图11 连接资产</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">此时，JumpServer服务启动App容器以承载虚拟应用：<em>2970298425/docker-chrome-app:v0.1.0</em>（说明：此容器镜像为虚拟应用的镜像包）。</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-12.png" alt="" loading="lazy" />▲图12 JumpServer服务启动App容器承载虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-12.png" alt="" loading="lazy" / decoding="async"/>▲图12 JumpServer服务启动App容器承载虚拟应用</p>
                     <p>
                         <span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)"><strong>■ 方案二：发布机外置部署方案</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">通过使用外置的应用发布机来部署使用虚拟应用。用户在使用虚拟应用时，外置的JumpServer的Panda组件启动App容器以承载虚拟应用。</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-13.png" alt="" loading="lazy" />▲图13 发布机外置部署方案原理图</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-13.png" alt="" loading="lazy" / decoding="async"/>▲图13 发布机外置部署方案原理图</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">具体操作步骤如下：</span></p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>1. 配置主配置文件</strong></span>
@@ -418,9 +418,9 @@ services:
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>3. 开启虚拟应用功能</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“系统设置”→“功能设置”，在“虚拟应用”标签页中开启“启用虚拟应用”按钮；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图14 开启虚拟应用功能</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图14 开启虚拟应用功能</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">开启虚拟应用功能后，在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”，可以看到“虚拟应用”和“应用提供者”标签页；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-15.png" alt="" loading="lazy" />▲图15 “应用提供者”标签页</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-15.webp" alt="" loading="lazy" / decoding="async"/>▲图15 “应用提供者”标签页</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>4. 下载并上传虚拟应用</strong></span>
                     </p>
@@ -429,30 +429,30 @@ services:
                             >前往飞致云应用商店（<em>https://apps.fit2cloud.com/jumpserver</em>）下载虚拟应用至本地。自定义应用可参考官方文档（<em>https://docs.jumpserver.org/zh/v3/guide/system/remoteapp/#34</em>）；</span
                         >
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图16 JumpServer应用商店虚拟应用列表</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图16 JumpServer应用商店虚拟应用列表</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"
                             >以Chrome浏览器应用为例，在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”→“虚拟应用”，在“虚拟应用”标签页中，上传Chrome浏览器虚拟应用。系统将自动同步该虚拟应用配置的镜像，内网环境请联系技术人员获取虚拟应用的镜像包；</span
                         >
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图17 上传虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图17 上传虚拟应用</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“系统设置”→“远程应用”→“应用提供者”，在“虚拟应用”标签页中可以看到应用已发布成功；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-18.png" alt="" loading="lazy" />▲图18 成功发布虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-18.webp" alt="" loading="lazy" / decoding="async"/>▲图18 成功发布虚拟应用</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>5. 添加Web资产并授权</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer中依次选择“控制台”→“资产管理”→“资产列表”→“Web”，添加Web资产；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图19 添加Web资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图19 添加Web资产</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">在JumpServer“控制台”的“权限管理”页面中，添加资产授权；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.png" alt="" loading="lazy" />▲图20 添加资产授权</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image.webp" alt="" loading="lazy" / decoding="async"/>▲图20 添加资产授权</p>
                     <p>
                         <span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)"><strong>6. 使用虚拟应用</strong></span>
                     </p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">进入JumpServer的Web Terminal页面，使用虚拟应用连接资产；</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-10.png" alt="" loading="lazy" />▲图21 使用虚拟应用连接资产</p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-11.png" alt="" loading="lazy" />▲图22 连接资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-10.webp" alt="" loading="lazy" / decoding="async"/>▲图21 使用虚拟应用连接资产</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-11.webp" alt="" loading="lazy" / decoding="async"/>▲图22 连接资产</p>
                     <p><span fontsize="" color="rgb(0, 0, 0)" style="color: rgb(0, 0, 0)">此时，JumpServer服务启动App容器以承载虚拟应用：<em>2970298425/docker-chrome-app:v0.1.0</em>（说明：此容器镜像为虚拟应用的镜像包）。</span></p>
-                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-23.png" alt="" loading="lazy" />▲图23 JumpServer服务启动App容器承载虚拟应用</p>
+                    <p style="text-align: center"><img src="../images/blog/tutorial-20241010/image-23.png" alt="" loading="lazy" / decoding="async"/>▲图23 JumpServer服务启动App容器承载虚拟应用</p>
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
             </article>
@@ -470,11 +470,11 @@ services:
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -621,16 +621,16 @@ services:
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

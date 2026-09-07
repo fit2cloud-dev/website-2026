@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>新增AI Copilot，DataEase开源数据可视化分析工具v2.9.0发布</h1>
                     <p>DataEase拥抱生成式AI技术。</p>
                     <time datetime="2024-08-05">2024年08月05日</time>
-                    <img src="../images/blog/common/dataease-001.png" alt="新增AI Copilot，DataEase开源数据可视化分析工具v2.9.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-001.webp" alt="新增AI Copilot，DataEase开源数据可视化分析工具v2.9.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>2024年8月5日，人人可用的开源数据可视化分析工具DataEase正式发布v2.9.0版本。</p>
@@ -239,28 +241,28 @@
                         借助生成式AI技术，在DataEase
                         v2.9.0版本中，用户通过自然语言的交互就可以直接获取数据结果，实现数据即问即答，让数据分析更加直观和便捷。用户可以选择一个数据集，并围绕该数据集的相关信息与Copilot进行对话。Copilot将通过表格、折线图等形式展示相关的分析数据。
                     </p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-01.png" alt="" loading="lazy" />▲图1 DataEase AI Copilot对话界面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-01.png" alt="" loading="lazy" />▲图1 DataEase AI Copilot对话界面</p>
                     <p>
                         <strong><span>■ 图表：分布图、关系图、柱/条图、线/面图支持在基础样式中为图例设置不同的颜色</span></strong>
                     </p>
                     <p>在DataEase v2.9.0版本中，支持按图例设置不同的颜色，在自定义颜色的基础上，进一步增强配色功能。</p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-02.png" alt="" loading="lazy" />▲图2 图表可按图例设置不同颜色</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-02.png" alt="" loading="lazy" />▲图2 图表可按图例设置不同颜色</p>
                     <p>
                         <strong><span>■ 应用管理功能：支持将仪表板和数据大屏以应用的形式进行导出/导入</span></strong>
                     </p>
                     <p>在DataEase v2.9.0版本中，支持在“模板管理”模块中，将仪表板与数据大屏模板以“应用”的形式进行管理。</p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-03.png" alt="" loading="lazy" />▲图3 DataEase的“应用导出”功能界面</p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-04.png" alt="" loading="lazy" />▲图4 DataEase的“应用导入”功能界面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-03.webp" alt="" loading="lazy" />▲图3 DataEase的“应用导出”功能界面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-04.webp" alt="" loading="lazy" />▲图4 DataEase的“应用导入”功能界面</p>
                     <p>
                         <strong><span>■ 数据源：支持SSH隧道连接方式</span></strong>
                     </p>
                     <p>DataEase v2.9.0版本支持以密码和密钥两种方式，通过跳板机连接其他网络环境中的数据源。</p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-05.png" alt="" loading="lazy" />▲图5 SSH配置界面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-05.png" alt="" loading="lazy" />▲图5 SSH配置界面</p>
                     <p>
                         <strong><span>■ X-Pack增强包：新增LDAP认证</span></strong>
                     </p>
                     <p>DataEase v2.9.0版本新增支持LDAP认证设置，为用户提供更加便捷的用户访问与组织管理功能。</p>
-                    <p><img src="../images/blog/release-20240805/dataease-046-06.png" alt="" loading="lazy" />▲图6 LDAP设置界面</p>
+                    <p><img decoding="async" src="../images/blog/release-20240805/dataease-046-06.webp" alt="" loading="lazy" />▲图6 LDAP设置界面</p>
                     <p>除了上述新增功能外，DataEase v2.9.0版本还包含了很多其他的功能更新和优化，欢迎进入DataEase的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
                     <h2 id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
                     <p><span>■</span> refactor（仪表板）：优化仪表板中的明细表下钻功能，只有在当前下钻路径的字段才会出现下钻选项（#9094）；</p>
@@ -382,11 +384,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -432,7 +434,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -495,15 +497,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

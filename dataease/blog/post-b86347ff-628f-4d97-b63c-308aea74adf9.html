@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>社区分享｜企业BI选型：从Quick BI、Superset到DataEase</h1>
                     <p>从产品使用者到产品贡献者的转变。</p>
                     <time datetime="2023-07-20">2023年07月20日</time>
-                    <img src="../images/blog/news-20230720/dataease-094.png" alt="社区分享｜企业BI选型：从Quick BI、Superset到DataEase" loading="eager" />
+                    <img decoding="async" src="../images/blog/news-20230720/dataease-094.webp" alt="社区分享｜企业BI选型：从Quick BI、Superset到DataEase" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p><strong>“使用DataEase后，我们把使用过程中发现的一些不方便的地方提出来，项目团队和用户一起想办法解决和优化，共同把这个产品做得更好。DataEase是一个开发者和用户共创的开源产品。”</strong></p>
@@ -245,8 +247,8 @@
                         马先生：之前我们公司一直使用Superset作为数据图表展示系统。随着业务的增长，有很多运营和产品同事希望自己配置报表，他们接触Superset之后，<strong>普遍反馈说Superset配置比较繁琐。</strong>比如配置折线图，Superset要配置时间列、时间粒度、指标、维度、分组等，很多业务同事在配置图表这一步就迷糊了，很难理解维度、分组这些术语。实际上，业务同事需要的是一个能够把数据集、图表、仪表盘和配置项都集成在一起的、方便配置的图表系统。这种图表系统的学习成本低，可以让业务同事快速上手。
                     </p>
                     <p>经过了一系列的产品调研之后，发现了DataEase。我在DataEase官网上的测试环境试用了一下，发现还挺好用的，于是就开始给业务部门部署使用了。</p>
-                    <p><img src="../images/blog/news-20230720/dataease-094-01.png" alt="图01-wlqc.png" loading="lazy" />▲ 图1 Superset的视图设计页面</p>
-                    <p><img src="../images/blog/news-20230720/dataease-094-02.png" alt="图02-kgww.png" loading="lazy" />▲ 图2 DataEase的视图设计页面</p>
+                    <p><img decoding="async" src="../images/blog/news-20230720/dataease-094-01.webp" alt="图01-wlqc.png" loading="lazy" />▲ 图1 Superset的视图设计页面</p>
+                    <p><img decoding="async" src="../images/blog/news-20230720/dataease-094-02.png" alt="图02-kgww.png" loading="lazy" />▲ 图2 DataEase的视图设计页面</p>
                     <p>■ DataEase视图设计功能区介绍</p>
                     <p>【序号1】：数据操作区、样式编辑区和高级功能区切换</p>
                     <p>【序号2】：搜索</p>
@@ -271,8 +273,8 @@
                         1.
                         DataEase给我的第一感觉就是界面<strong>简洁并且漂亮</strong>，它可以方便地制作各种样式的图表，背景图案、图表的样式边框都可以自定义设置。最重要的是，它配置图表的过程足够简洁，对于业务人员来说，他只需要知道需要什么样的数据集，就可以直接创建仪表板。Superset的数据集是一个杂乱无章的列表结构，而DataEase的数据集可以分级分类。
                     </p>
-                    <p><img src="../images/blog/news-20230720/dataease-094-03.png" alt="图03-shei.png" loading="lazy" />▲ 图3 Superset的使用界面</p>
-                    <p><img src="../images/blog/news-20230720/dataease-094-04.png" alt="图04-mmtf.png" loading="lazy" />▲ 图4 DataEase的使用界面</p>
+                    <p><img decoding="async" src="../images/blog/news-20230720/dataease-094-03.webp" alt="图03-shei.png" loading="lazy" />▲ 图3 Superset的使用界面</p>
+                    <p><img decoding="async" src="../images/blog/news-20230720/dataease-094-04.webp" alt="图04-mmtf.png" loading="lazy" />▲ 图4 DataEase的使用界面</p>
                     <p>2. DataEase的社区交流群内非常活跃，客服也会耐心地解答我们的问题。这是一种开源的生态环境，让我们相信<strong>DataEase是一个有活力的项目。</strong></p>
                     <p>3. DataEase的社区版<strong>完全开源</strong>，用我们最为熟悉的Springboot+Vue.js技术栈开发，有利于我们在其基础上做一些定制化的东西。</p>
                     <p><strong>DataEase解决了您公司什么样的业务需求呢？是如何使用DataEase的？</strong></p>
@@ -356,11 +358,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -406,7 +408,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -469,15 +471,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>仪表板展示｜DataEase看中国：数据呈现中国能源发展情况</h1>
                     <p>响应碳中和号召，DataEase带你看看中国能源发展情况。</p>
                     <time datetime="2023-01-31">2023年01月31日</time>
-                    <img src="../images/blog/common/dataease-025.jpg" alt="仪表板展示｜DataEase看中国：数据呈现中国能源发展情况" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-025.webp" alt="仪表板展示｜DataEase看中国：数据呈现中国能源发展情况" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/chart-20230131/dataease-110-01.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-01.webp" alt="" loading="lazy" /></p>
                     <h2 id="%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D">背景介绍</h2>
                     <p>
                         能源是经济发展的基石，能源的供给与人们生活和经济发展息息相关。二十大报告强调：“要积极稳妥推进碳达峰碳中和，立足我国能源资源禀赋，坚持先立后破，有计划分步骤地实施碳达峰行动。深入推进能源革命，加强煤炭清洁高效利用，加快规划建设新型能源体系，积极参与应对气候变化全球治理。”在过去的十年里，我国的能源自主保障能力显著提升，建成了全球最大的清洁发电体系，能源结构不断优化，有力地保障了国民经济的稳定运行。
@@ -227,38 +229,38 @@
                         为了了解我国能源结构及供给情况，我们使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）来制作一个仪表板，分析展示近几年电能、石油、煤炭等能源的指标数据。数据源自国家统计局官方网站，由于最新的统计数据尚未披露，目前使用的数据统计截止至2020年。
                     </p>
                     <p>下图是使用DataEase开源数据可视化分析工具制作的仪表板的最终效果：</p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-02.jpg" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-02.webp" alt="" loading="lazy" /></p>
                     <h2 id="%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</h2>
                     <p><strong>一、电产量</strong></p>
                     <p>从历年电产量和电产量占比趋势中可以看到，2012年我国核电产量973.9亿千瓦小时，占比1.96%，风电产量959.8亿千瓦小时，占比1.94%，水电产量8721.1亿千瓦小时，占比17.59%，火电产量38928.1亿千瓦小时，占比78.51%。</p>
                     <p>2020年，核电产量3662.5亿千瓦小时，占比4.87%，风电产量4664.7亿千瓦小时，占比6.2%，水电产量13552.1亿千瓦小时，占比18.03%，火电产量53302.5亿千瓦时，占比70.9%。</p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-03.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-03.webp" alt="" loading="lazy" /></p>
                     <p>2012年除火电外的三种清洁能源电产量占比为21.49%。而到了2020年，除火电外的三种清洁能源电产量占比则提升至29.1%。</p>
                     <p>九年间，虽然火电依然是主体，但核能、风能、水能三种清洁能源的总发电量从2012年的10654.8亿千瓦小时提高到了2020年的21879.3亿千瓦小时，实现了产量翻倍。其中，核电产量翻了近三倍，风电产量翻了近四倍。</p>
                     <p>2022年的北京冬奥会，三大赛区26个场馆全部实现了绿色供电。这些绿色供电主要是由河北张家口的光伏发电和风力发电提供，可以说是我国多年来大力发展可再生能源成就的一个缩影。</p>
                     <p>不仅如此，尽管我国发电量持续增长，但火电机组的二氧化碳、氮氧化物和烟尘排放量均大幅下降。2019年10月7日，英国《自然·能源》杂志发表报告称，中国针对燃煤火电机组采取的超低排放改造措施已取得显著成效。</p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-04.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-04.webp" alt="" loading="lazy" /></p>
                     <p><strong>二、电消费</strong></p>
                     <p>从历年电消费量和消费占比中可以看到，2012年我国工业电消费量为36232.2亿千瓦小时，占比72.81%，居民生活电消费量为6219亿千瓦小时，占比12.5%，其他行业电消费量为3083.6亿千瓦小时，占比14.69%。</p>
                     <p>2020年，工业电消费量为52353.4亿千瓦小时，占比67.45%，居民生活电消费量增长至11396.5亿千瓦小时，占比14.68%，其他行业电消费量为6517亿千瓦小时，占比17.87%。</p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-05.png" alt="" loading="lazy" /></p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-06.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-05.webp" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-06.webp" alt="" loading="lazy" /></p>
                     <p>从电消费的增长趋势可以看出，2014年至2015年我国电力消费增长缓慢，尤其是2015年工业电能消费出现了负增长。</p>
                     <p>
                         中国电力企业联合会发布的《2016年度全国电力供需形势分析预测报告》指出：2015年，受宏观经济尤其是重化工业生产下滑、产业结构调整、工业转型升级以及气温等因素影响，全社会用电量增速回落，第二产业用电量40年来首次负增长。而固定资产投资特别是房地产投资增速持续放缓，导致黑色金属冶炼和建材行业用电均出现下滑，两个行业用电下降是工业用电量下降、全社会用电量低速增长的主要原因。
                     </p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-07.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-07.webp" alt="" loading="lazy" /></p>
                     <p><strong>三、能源结构</strong></p>
                     <p>
                         从能源结构分析中可以看出，2012年到2021年的十年间，煤炭占比从68.5%下降到了56%，天然气从4.8%上涨到了8.9%，一次电力（即核电、水电、风电以及太阳能发电所发出的电力）及其他能源则从9.7%上涨到了16.6%。我国的能源结构优化成果显著。
                     </p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-08.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-08.webp" alt="" loading="lazy" /></p>
                     <p><strong>四、能源对外依存度</strong></p>
                     <p>能源对外依存度指的是每年总的能源消耗中有多少能源是进口的，占比越大说明能源对外依存度越高。本文使用的对外依存度计算公式为：能源对外依存度=能源进口量/国内能源消费总量*100%。</p>
                     <p>
                         在仪表板中可以看到，2012年，我国煤炭进口量为28841万吨，对外依存度为5.72%；原油进口量为27103万吨，对外依存度为57.52%；天然气进口量为421亿立方米，对外依存度为23.23%。而到了2020年，煤炭进口量为30361万吨，对外依存度为7.5%，涨幅较小；天然气进口量为1397亿立方米，对外依存度为41.83%，相较于2012年，进口量增长了两倍多，对外依存度则增长了近18.6个百分点；原油进口量为54201万吨，较2012年进口量增长了近一倍，对外依存度则增长了20.29个百分点，达到了78.01%。
                     </p>
-                    <p><img src="../images/blog/chart-20230131/dataease-110-09.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20230131/dataease-110-09.webp" alt="" loading="lazy" /></p>
                     <h2 id="%E6%80%BB%E7%BB%93">总结</h2>
                     <p>在这个能源主题仪表板的制作过程中，我们主要使用了DataEase开源数据可视化分析工具的视图组件，其中涉及到基础折线图、玫瑰图、面积图等图表类型，通过不同的视图全方位呈现了中国能源行业近十年来的变化和进步。</p>
                     <p>
@@ -312,11 +314,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -362,7 +364,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -425,15 +427,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

@@ -213,7 +213,7 @@
                     <time datetime="2022-08-04">2022-08-04</time>
                     <h1>社区分享｜腾讯海外游戏基于JumpServer构建游戏安全运营能力</h1>
                     <p>锻造行业领先游戏安全技术与运营能力。</p>
-                    <img src="../images/blog/security-20221103/cover.jpg" alt="社区分享｜腾讯海外游戏基于JumpServer构建游戏安全运营能力" loading="lazy" />
+                    <img src="../images/blog/security-20221103/cover.webp" alt="社区分享｜腾讯海外游戏基于JumpServer构建游戏安全运营能力" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：在2022年7月9日举办的“2022 JumpServer开源堡垒机城市遇见·深圳站”活动中，腾讯海外游戏安全运营负责人林鼎盛分享了题为《锻造行业领先游戏安全技术与运营能力》的主题演讲。以下内容根据本次演讲整理而成。</em></p>
@@ -221,7 +221,7 @@
                     <p>
                         在很多情况下，我们进行安全管理所需的资源和时间都是有限的，为了在这些约束条件下更好地进行安全运维工作，就需要有“分级分类”的管理思维。例如，在做安全规划或处理安全风险之前，需要对相关需求风险做出识别，进行分级分类，集中重点资源解决高风险或优先级更高的事项。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/security-20220804/image-01.jpg" alt="" loading="lazy" /><strong>▲ </strong>腾讯海外游戏安全运营负责人 林鼎盛</p>
+                    <p style="text-align: center"><img src="../images/blog/security-20220804/image-01.webp" alt="" loading="lazy" / decoding="async"/><strong>▲ </strong>腾讯海外游戏安全运营负责人 林鼎盛</p>
                     <p>腾讯海外游戏的业务遍布全球，团队也分布在海外多个地区。由于海外环境相对而言比较复杂，仅使用腾讯云不足以满足现有海外业务的需求。因此，在实际的工作场景中我们采纳了多云环境。</p>
                     <p>
                         在这种背景下，要建设好腾讯海外游戏的安全运维体系，“分级分类”的思维非常关键。这种思维能够很好地帮助我们识别并分类包括全球相关团队的云上资源、安全相关权限、相关策略等在内的各项业务。比如：用户类型需要分级分类用于更好地隔离权限；VPC区域需要分级分类用于分离网络；区域团队需要做好分类便于分级管理。这样一来，我们就可以根据这些分类制定整体的实施策略。
@@ -251,7 +251,7 @@
                     <p>下面通过四个主要应用场景来分享腾讯海外游戏在JumpServer堡垒机建设运维中的一些经验，在这些场景中也都体现了“分级分类”的思维。</p>
                     <p><strong>场景一：构建层级架构管理体系，实现全球分区域灵活管理</strong></p>
                     <p>对于组织架构，我们需要先做好整个多层级管理架构的规划，再结合相应的统一管理标准和操作流程，逐层逐级将相关权限下放到每一个组织。</p>
-                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.png" alt="" loading="lazy" />▲ 图1&nbsp;腾讯海外游戏层级架构管理体系</p>
+                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图1&nbsp;腾讯海外游戏层级架构管理体系</p>
                     <p>场景特点：</p>
                     <p>■&nbsp;多层级管理架构，权限关系清晰；</p>
                     <p>■&nbsp;逐层分级管理，实现权限下放；</p>
@@ -261,7 +261,7 @@
                     </p>
                     <p><strong>场景二：共建开源自主可控生态，融入企业安全运维整体框架</strong></p>
                     <p>在这一场景中，我们首先需要根据一定维度对整体人员进行分类，同时对集群进行拆分，比如高敏感、低敏感等，并对云上VPC做好分类，将JumpServer的能力融入到整个安全运维框架中。</p>
-                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.png" alt="" loading="lazy" />▲ 图2&nbsp;腾讯海外游戏安全运维整体框架</p>
+                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图2&nbsp;腾讯海外游戏安全运维整体框架</p>
                     <p>场景特点：</p>
                     <p>■&nbsp;统一资产、权限角色管理；</p>
                     <p>■&nbsp;对敏感资产实行网络隔离；</p>
@@ -274,7 +274,7 @@
                         为了适配多云场景，腾讯海外游戏有不同的区域、不同的云，且设有不同的VPC，需要打通JumpServer与这些VPC之间的通路。由于专线所花费的成本过高，因此在这种情况下，我们首先可以针对区域环境进行简单的拆分，针对每个区域环境业务量的不同采取不同的打通方式。
                     </p>
                     <p>比如对重要性非常高、流量比较大的区域，就可以选择专线方式进行打通；对于其他重要性较低、流量较小的区域，可以选择VPN等方式接入。网络打通后，JumpServer可适配内网直连以及网域网关的方式纳管资产。</p>
-                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.png" alt="" loading="lazy" />▲ 图3 腾讯海外游戏多云环境适配架构</p>
+                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图3 腾讯海外游戏多云环境适配架构</p>
                     <p>场景特点：</p>
                     <p>■&nbsp;适配多云网络环境，支持网域网关方式连接内网资产；</p>
                     <p>■&nbsp;基于云API实现云资产自动纳管。</p>
@@ -289,7 +289,7 @@
                     <p>
                         企业引入堡垒机是为了通过使用它获得良好的管理效果，但如果堡垒机本身成为管理系统中的瓶颈，就是本末倒置了。由于JumpServer堡垒机在多云容器服务的适应方面表现良好，所以我们可以运用JumpServer所具有的容器特性，来为企业提供一个比较健壮的运行架构，保证系统整体运行的稳定性。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.jpg" alt="" loading="lazy" />▲ 图4 基于容器服务的全球多站点分布部署架构</p>
+                    <p style="text-align: center"><img src="../images/blog/security-20220804/image.webp" alt="" loading="lazy" / decoding="async"/>▲ 图4 基于容器服务的全球多站点分布部署架构</p>
                     <p>场景特点：</p>
                     <p>■&nbsp;支持多云容器服务，灵活部署；</p>
                     <p>■&nbsp;可扩展性、高可用性。</p>
@@ -323,11 +323,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -474,16 +474,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

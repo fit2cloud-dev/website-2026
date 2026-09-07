@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>安全漏洞修复，图表功能增强，DataEase开源BI工具v2.10.20 LTS版本发布</h1>
                     <p>世界地图支持下钻至国家。</p>
                     <time datetime="2026-03-14">2026年03月14日</time>
-                    <img src="../images/blog/common/dataease-003.png" alt="安全漏洞修复，图表功能增强，DataEase开源BI工具v2.10.20 LTS版本发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-003.webp" alt="安全漏洞修复，图表功能增强，DataEase开源BI工具v2.10.20 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>2026年3月12日，人人可用的开源BI工具DataEase正式发布v2.10.20 LTS版本。</p>
@@ -233,13 +235,13 @@
                         在DataEase v2.10.20
                         LTS版本中，世界地图新增支持下钻至国家的功能，用户可以从全球视角深入到具体国家层面进行数据分析，地理数据分析的深度和精度进一步提升。同时，明细表新增自定义汇总功能，用户可以根据业务需求灵活设置汇总规则，满足多样化的数据统计分析需求。
                     </p>
-                    <figure><img src="../images/blog/security-20260314/dataease-004-01.png" alt="▲图1 DataEase世界地图支持下钻至国家.png" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/security-20260314/dataease-004-01.png" alt="▲图1 DataEase世界地图支持下钻至国家.png" loading="lazy" /></figure>
                     <p>▲图1 DataEase世界地图支持下钻至国家</p>
                     <p><strong>■ 图表：表格条件样式功能全面升级</strong></p>
                     <p>
                         新版DataEase的表格条件样式功能进一步增强，支持设置其他字段样式或者整行样式的条件格式化。这一改进让用户能够更直观地通过颜色、字体等视觉元素突出显示关键数据，提升数据洞察力和报表可读性，特别适用于复杂数据表格的可视化表达。
                     </p>
-                    <figure><img src="../images/blog/security-20260314/dataease-004-02.png" alt="▲图2 DataEase表格条件样式设置.png" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/security-20260314/dataease-004-02.png" alt="▲图2 DataEase表格条件样式设置.png" loading="lazy" /></figure>
                     <p>▲图2 DataEase表格条件样式设置</p>
                     <p><strong>■ X-Pack增强包：新增Playwright自动化工具和定时报告数据权限设置功能</strong></p>
                     <p>
@@ -349,11 +351,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -399,7 +401,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -462,15 +464,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

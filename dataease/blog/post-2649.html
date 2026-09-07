@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>数据源新增支持SQL Server和PostgreSQL，DataEase开源数据可视化分析平台v1.2.0发布</h1>
                     <p>增加对数据钻取、联动的支持，加入新的视图展示图形。</p>
                     <time datetime="2021-09-06">2021年09月06日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="数据源新增支持SQL Server和PostgreSQL，DataEase开源数据可视化分析平台v1.2.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="数据源新增支持SQL Server和PostgreSQL，DataEase开源数据可视化分析平台v1.2.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20210906/dataease-171-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-01.webp" alt="" loading="lazy" /></figure>
                     <p>
                         9月6日，DataEase开源数据可视化分析平台正式发布v1.2.0版本。在该版本中，DataEase新增了对SQL
                         Server和PostgreSQL数据源的支持；视图和仪表板方面，增加了对数据钻取、联动的支持，同时加入了新的视图展示图形（包括中国地图、散点图、气泡图、矩形树图等），丰富了视图展示图形的种类；数据集方面支持新增计算字段，用户可以在原有数据结构的基础上，通过计算公式增加新的统计字段。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。
@@ -227,20 +229,20 @@
                     <h2>新增功能</h2>
                     <p><strong>■ 数据源新增支持SQL Server和PostgreSQL</strong></p>
                     <p>在DataEase v1.2.0版本中，我们增加了对SQL Server和PostgreSQL数据源的支持。加上之前版本支持的Oracle、MySQL数据源，基本上已经涵盖了市面上主流的关系型数据库。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-02.png" alt="" loading="lazy" /></figure>
                     <p><strong>■ 视图展示图形新增支持中国地图、散点图、气泡图、矩形树图等种类</strong></p>
                     <p>在DataEase v1.2.0版本中，新增了对中国地图、散点图、气泡图、矩形树图的支持，丰富了视图展示图形的种类。用户可以利用新增的图表类型做出比之前更加丰富的可视化内容。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-03.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 支持视图联动和钻取</strong></p>
                     <p>在DataEase v1.2.0版本中，新增了对视图联动和钻取的支持。通过联动和钻取的设置，用户可以在仪表板上实现数据分析与交互操作。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-04.webp" alt="" loading="lazy" /></figure>
                     <p>在仪表板中可以为指定视图相关联的视图添加联动设置，当指定视图的维度选择变化时，与之相关联的视图显示数据会随之变化，方便用户进行同步观察。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-05.webp" alt="" loading="lazy" /></figure>
                     <p>在视图中支持设置图表的钻取维度，支持设置多级钻取维度。用户通过数据钻取，可以让视图按照指定维度或条件进行数据细分呈现，从而让数据范围从一个比较大的面逐步下钻并聚焦到一个小的点上，达到数据分析的效果。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-06.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-06.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 数据集字段管理新增计算字段</strong></p>
                     <p>DataEase v1.2.0在数据集的字段管理中，新增了计算字段的功能。当用户从原有数据字段中无法获取到所需数据时，可以通过基本的四则混合运算公式，或者直接使用DataEase内置的常用函数来生成新的字段，满足业务可视化展示的需求。</p>
-                    <figure><img src="../images/blog/release-20210906/dataease-171-07.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20210906/dataease-171-07.webp" alt="" loading="lazy" /></figure>
                     <p>除了上述提到的新增功能外，DataEase v1.2.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h2>功能优化</h2>
@@ -315,11 +317,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -365,7 +367,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -428,15 +430,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

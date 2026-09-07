@@ -213,7 +213,7 @@
                     <time datetime="2023-05-22">2023-05-22</time>
                     <h1>新增Video-Worker组件，支持会话录像自动转MP4格式，JumpServer堡垒机v3.3.0发布</h1>
                     <p>资产连接令牌有效期内不限制复用次数。</p>
-                    <img src="../images/blog/tutorial-20260107/cover.jpg" alt="新增Video-Worker组件，支持会话录像自动转MP4格式，JumpServer堡垒机v3.3.0发布" loading="lazy" />
+                    <img src="../images/blog/tutorial-20260107/cover.webp" alt="新增Video-Worker组件，支持会话录像自动转MP4格式，JumpServer堡垒机v3.3.0发布" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -221,7 +221,7 @@
                             src="../images/blog/release-20230522/image-01.png"
                             alt="数据表.png"
                             loading="lazy"
-                        />2023年5月22日，JumpServer开源堡垒机正式发布v3.3.0版本。在这一版本中，<strong>资产连接令牌</strong>支持在有效期内不限次数地复用；<strong>用户登录方式</strong>（包含钉钉、飞书、企业微信扫码登录）支持当不存在的用户扫码登录后，自动创建新用户。同时，<strong>账号改密</strong>功能支持特权账号密码的自修改；<strong>账号列表</strong>导出功能支持对导出的文件进行加密保护；<strong>账号模版</strong>新增“切换自”字段，在创建账号时支持自动关联所选的“切换自”账号。
+                        / decoding="async"/>2023年5月22日，JumpServer开源堡垒机正式发布v3.3.0版本。在这一版本中，<strong>资产连接令牌</strong>支持在有效期内不限次数地复用；<strong>用户登录方式</strong>（包含钉钉、飞书、企业微信扫码登录）支持当不存在的用户扫码登录后，自动创建新用户。同时，<strong>账号改密</strong>功能支持特权账号密码的自修改；<strong>账号列表</strong>导出功能支持对导出的文件进行加密保护；<strong>账号模版</strong>新增“切换自”字段，在创建账号时支持自动关联所选的“切换自”账号。
                     </p>
                     <p>另外，Web终端页面左侧的用户授权树新增“类型树”视图，Web终端页面连接Windows资产时支持键盘布局的选择。</p>
                     <p>X-Pack增强包方面，这一版本的JumpServer新增Video-Worker组件，该组件支持将Razor组件和Lion组件产生的会话录像自动转换为MP4格式，让会话录像审计更自由、更流畅、更节省。</p>
@@ -285,7 +285,7 @@
                         <strong><span color="#279A81" style="color: #279a81">2. 资产连接令牌有效期内不限制复用次数 </span></strong>
                     </p>
                     <p>在JumpServer v3.3.0版本中，用户使用资产连接令牌时，可在令牌未过期前不限制次数地使用相同的令牌来连接资产。需要在配置文件中增加参数：<em>CONNECTION_TOKEN_REUSABLE=true。</em></p>
-                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-02.png" alt="图2-kvfl.png" loading="lazy" />▲ 图2 &nbsp;资产连接令牌有效期内不限制复用次数</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-02.webp" alt="图2-kvfl.png" loading="lazy" / decoding="async"/>▲ 图2 &nbsp;资产连接令牌有效期内不限制复用次数</p>
                     <p>
                         <strong><span color="#279A81" style="color: #279a81">3. 用户登录方式（包含钉钉、飞书、企业微信扫码登录）支持不存在的用户扫码登录后，自动创建新用户</span></strong>
                     </p>
@@ -293,7 +293,7 @@
                     <p>对于新创建的用户，无法在个人界面解绑对应的认证方式，如果第三方账号和JumpServer本地账号绑定错误，有以下两种解决方式：</p>
                     <p><span color="#279A81" style="color: #279a81">■</span>&nbsp;联系管理员将此账号删除，用户重新登录待绑定的本地账号，手动绑定第三方账号；</p>
                     <p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span>&nbsp;联系管理员将此账号的“来源”配置项更新为“数据库”，并设置密码，此时用户方可自行解绑第三方账号。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-03.png" alt="图3-piwt.png" loading="lazy" />▲ 图3 管理员手动更新用户“来源”配置项，并设置密码</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-03.webp" alt="图3-piwt.png" loading="lazy" / decoding="async"/>▲ 图3 管理员手动更新用户“来源”配置项，并设置密码</p>
                     <p>
                         <strong><span color="#279A81" style="color: #279a81">4. 账号改密功能支持自修改特权账号</span></strong>
                     </p>
@@ -306,17 +306,17 @@
                         <strong><span color="#279A81" style="color: #279a81">6. 账号模版新增“切换自”字段，创建账号时支持自动关联所选的“切换自”账号</span></strong>
                     </p>
                     <p>在JumpServer v3.3.0版本中，账号模版新增“切换自”功能字段，充分利用了账号模板的抽象功能，从而快速实现对资产账号的批量操作。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-04.png" alt="图4-nmhs.png" loading="lazy" />▲ 图4 账号模版新增“切换自”字段，创建账号时支持自动关联所选的“切换自”账号</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-04.webp" alt="图4-nmhs.png" loading="lazy" / decoding="async"/>▲ 图4 账号模版新增“切换自”字段，创建账号时支持自动关联所选的“切换自”账号</p>
                     <p>
                         <strong><span color="#279A81" style="color: #279a81">7. Web终端页面左侧用户授权树新增“类型树”视图</span></strong>
                     </p>
                     <p>在JumpServer v3.3.0版本中，为了方便资产数量庞大的用户，对于Web终端的操作台页面，我们新增了“类型树”视图，方便用户根据资产的类型快速定位到所需要连接的资产。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-05.png" alt="图5-gtra.png" loading="lazy" />▲ 图5 Web终端页面左侧用户授权树新增“类型树”视图</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-05.webp" alt="图5-gtra.png" loading="lazy" / decoding="async"/>▲ 图5 Web终端页面左侧用户授权树新增“类型树”视图</p>
                     <p>
                         <strong><span color="#279A81" style="color: #279a81">8. Web终端页面连接Windows资产时，支持键盘布局的选择</span></strong>
                     </p>
                     <p>在JumpServer v3.3.0版本中，当用户连接Windows资产时，可以选择键盘布局。在Web Terminal界面中，选择“设置”→“图形化”，即可进行配置。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-06.png" alt="图6-alby.png" loading="lazy" />▲ 图6 Web终端页面连接Windows资产时，支持键盘布局的选择</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20230522/image-06.webp" alt="图6-alby.png" loading="lazy" / decoding="async"/>▲ 图6 Web终端页面连接Windows资产时，支持键盘布局的选择</p>
                     <h2 style="" id="%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96">功能优化</h2>
                     <p><span color="#279A81" style="color: #279a81">■</span>&nbsp;“查看账号”页面支持直接修改账号密码；</p>
                     <p><span fontsize="" color="rgb(39, 154, 129)" style="color: rgb(39, 154, 129)">■</span>&nbsp;页面切换时顶部进度条颜色根据系统主题颜色变化；</p>
@@ -376,11 +376,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -527,16 +527,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

@@ -213,7 +213,7 @@
                     <time datetime="2025-11-19">2025-11-19</time>
                     <h1>操作教程｜MySQL数据库在JumpServer中的纳管与连接指南</h1>
                     <p>内含资产连接方式对比表。</p>
-                    <img src="../images/blog/tutorial-20260115/cover.jpg" alt="操作教程｜MySQL数据库在JumpServer中的纳管与连接指南" loading="lazy" />
+                    <img src="../images/blog/tutorial-20260115/cover.webp" alt="操作教程｜MySQL数据库在JumpServer中的纳管与连接指南" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
                     <p>本教程主要介绍在JumpServer V4版本中纳管MySQL数据库和托管信息查询（例如账号密码、端口）的方法，MySQL资产连接方式与特点对比，MySQL数据库资产连接常见报错的处理与排查思路，以及最佳实践建议。</p>
@@ -231,29 +231,29 @@
                     <p>■ 默认数据库：填写自己要使用的数据库（连接之后的第一个库，连接上后仍可切换）；</p>
                     <p>■ 协议组：默认为mysql 3306；</p>
                     <p>■ 安全：支持SSL/TLS（可选）。</p>
-                    <p><img src="../images/blog/tutorial-20251119/image-01.png" alt="" loading="lazy" /></p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image-01.png" alt="" loading="lazy" / decoding="async"/></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>接下来添加数据库资产账号。在资产列表中新增账号，填写信息如下，然后点击“确认”按钮。</p>
                     <p>■ 名称：自定义名称；</p>
                     <p>■ 用户名：MySQL登录账号（例如Root或专用管理账号）；</p>
                     <p>■ 特权账号：根据实际需求勾选（建议用于管理场景）；</p>
                     <p>■ 密码：对应的账号密码。</p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>然后进行资产授权。在JumpServer中选择“资产授权”→“创建”，填写该资产授权名称，并进行设置，设置有效期后点击“提交”按钮。相关设置信息如下：</p>
                     <p>■ 资产/节点：已添加的MySQL资产/ 已添加的MySQL资产所在的节点；</p>
                     <p>■ 用户/用户组：需要授权访问的JumpServer用户；</p>
                     <p>■ 账号：所有账号/指定账号/虚拟账号/无；</p>
                     <p>■ 协议组：全部协议/指定协议；</p>
                     <p>■ 动作：全部/连接/文件传输/剪贴板/分享。</p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p><strong>二、托管信息查询方法</strong></p>
                     <p>在JumpServer控制台可以查询资产基本信息，在JumpServer左侧菜单选择“资产列表”选项，点击对应MySQL资产名称，可以获取IP地址、端口、资产编号、所属节点等信息。</p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p>
                         资产账号密码查询的方法为：在JumpServer依次选择“资产列表”→对应SQL资产名称→账号，可以查看该资产的所有被纳管的系统账号用户名，点击“查看”按钮可以查看密码。注意：密码默认隐藏，需要具有管理员权限且开启MFA才能查看和重置。
                     </p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p><strong>三、MySQL资产连接方式及特点对比</strong></p>
                     <p>■ <strong>Web控制台CLI连接：</strong>控制台→资产→选择MySQL资产，依次点击“连接”→“Web”→“Web CLI”。</p>
                     <p>■<strong> Web控制台GUI连接：</strong>控制台→资产→选择MySQL资产，依次点击“连接”→“Web”→“Web GUI”。</p>
@@ -263,7 +263,7 @@
                     <p><strong>方法二：</strong>使用数据库管理工具（例如Navicat、SQLyog等），将JumpServer提供的加密信息复制到连接参数中，进行数据库连接。</p>
                     <p>■ <strong>远程应用连接（以DBeaver为例，部分应用需要JumpServer企业版支持）：</strong>首先给对应发布机部署远程应用，然后在JumpServer资产详情页点击“连接”→“远程应用”→“DBeaver”。</p>
                     <p>■ <strong>虚拟应用连接（以DBeaver为例，仅JumpServer企业版支持）：</strong>在JumpServer中启用并上传虚拟应用，然后在JumpServer资产详情页点击“连接”→“虚拟应用”→“DBeaver”。</p>
-                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" /></p>
+                    <p><img src="../images/blog/tutorial-20251119/image.png" alt="" loading="lazy" / decoding="async"/></p>
                     <p><strong>四、常见报错的处理与排查思路</strong></p>
                     <p><strong>1. 网络不通（连接拒绝）</strong></p>
                     <p>现象：连接尝试后长时间无响应，最终提示超时。</p>
@@ -340,11 +340,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -491,16 +491,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

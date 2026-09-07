@@ -1,0 +1,65 @@
+# ============================================================
+# DataEase 官网 —— 性能配置（Apache / LiteSpeed）
+# 覆盖：文本压缩 + 浏览器缓存
+# 注意：本站 CSS/JS 无内容指纹（hash），故缓存期不宜过长，
+#       更新后需用户刷新或改文件名才能生效。
+# ============================================================
+
+<IfModule mod_deflate.c>
+    # 文本资源 Gzip 压缩（CSS/JS 可再省 70%~80%）
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css \
+        text/javascript application/javascript application/x-javascript \
+        application/json application/xml application/rss+xml \
+        image/svg+xml font/ttf font/otf font/eot
+
+    # 兼容旧代理
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+</IfModule>
+
+# Brotli（若主机已启用 mod_brotli，优先级高于 gzip）
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/xml text/css \
+        text/javascript application/javascript application/x-javascript \
+        application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # HTML：每次校验，保证内容及时更新
+    ExpiresByType text/html                 "access plus 0 seconds"
+
+    # CSS / JS：一周（无指纹，不宜设一年）
+    ExpiresByType text/css                  "access plus 1 week"
+    ExpiresByType text/javascript           "access plus 1 week"
+    ExpiresByType application/javascript    "access plus 1 week"
+
+    # 图片 / 字体：内容基本不变，设为一年
+    ExpiresByType image/jpeg                "access plus 1 year"
+    ExpiresByType image/png                 "access plus 1 year"
+    ExpiresByType image/webp                "access plus 1 year"
+    ExpiresByType image/gif                 "access plus 1 year"
+    ExpiresByType image/svg+xml             "access plus 1 year"
+    ExpiresByType image/x-icon              "access plus 1 year"
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+    ExpiresByType font/ttf                  "access plus 1 year"
+    ExpiresByType application/pdf           "access plus 1 month"
+</IfModule>
+
+<IfModule mod_headers.c>
+    # 静态资源公开缓存
+    <FilesMatch "\.(css|js|webp|jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot|pdf)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+    # 图片单独放宽到一年
+    <FilesMatch "\.(webp|jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    # HTML 走协商缓存
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "public, no-cache"
+    </FilesMatch>
+</IfModule>

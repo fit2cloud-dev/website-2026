@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布</h1>
                     <p>通过DataEase Skills技能体系，快速集成各种业务场景的智能化分析功能。</p>
                     <time datetime="2026-04-20">2026年04月20日</time>
-                    <img src="../images/blog/common/dataease-003.png" alt="DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-003.webp" alt="DataEase Skills技能体系上线，DataEase开源BI工具v2.10.21 LTS版本发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>2026年4月16日，人人可用的开源BI工具DataEase正式发布v2.10.21 LTS版本。</p>
@@ -238,18 +240,18 @@
                         DataEase v2.10.21版本新增了DataEase Skills技能，这是一个全新的AI能力扩展体系，能够为用户的数据分析工作提供丰富的预构建技能模板和自定义技能开发能力。用户可以通过DataEase
                         Skills技能体系快速集成各种业务场景的智能化分析功能，显著降低ChatBI应用开发门槛，提升数据分析的智能化水平。DataEase Skills技能详细可参见GitHub仓库（https://github.com/dataease/DataEase-skills）。
                     </p>
-                    <figure><img src="../images/blog/skills-20260420/dataease-003-01.png" alt="▲图1 DataEase Skills使用效果图.png" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/skills-20260420/dataease-003-01.webp" alt="▲图1 DataEase Skills使用效果图.png" loading="lazy" /></figure>
                     <p>▲图1 DataEase Skills使用效果示意</p>
                     <p><strong>■ 图表新增支持多维散点图</strong></p>
                     <p>
                         DataEase
                         v2.10.21版本新增多维散点图支持，能够更直观地展现多维度数据之间的复杂关系，丰富了数据可视化的表达方式。同时，DataEase新增仪表板/数据大屏默认标签字体颜色设置功能，支持明细表分页字体大小配置，让用户能够更精细化地定制图表外观，提升报表的专业性和可读性。
                     </p>
-                    <figure><img src="../images/blog/skills-20260420/dataease-003-02.png" alt="▲图2 DataEase新增支持多维散点图.png" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/skills-20260420/dataease-003-02.png" alt="▲图2 DataEase新增支持多维散点图.png" loading="lazy" /></figure>
                     <p>▲图2 DataEase新增支持多维散点图</p>
                     <p><strong>■ 移动端体验显著提升</strong></p>
                     <p>在DataEase v2.10.21版本中，移动端新增改密功能，用户可以直接在移动设备上修改账户密码，提升了账号管理的安全性和便利性。同时新增骨架屏显示功能，有效改善了页面加载过程中的用户体验，让应用交互更加流畅自然。</p>
-                    <figure><img src="../images/blog/skills-20260420/dataease-003-03.png" alt="▲图3 DataEase移动端改密操作页面.png" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/skills-20260420/dataease-003-03.webp" alt="▲图3 DataEase移动端改密操作页面.png" loading="lazy" /></figure>
                     <p>▲图3 DataEase移动端改密操作页面</p>
                     <p><strong>■ X-Pack增强包：权限管控、数据填报、定时报告功能优化</strong></p>
                     <p>在DataEase v2.10.21版本中，X-Pack增强包在权限配置中新增“手机号”字段系统变量，支持基于用户手机号进行数据权限的匹配与控制，进一步丰富了权限管控维度。</p>
@@ -352,11 +354,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -402,7 +404,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -465,15 +467,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

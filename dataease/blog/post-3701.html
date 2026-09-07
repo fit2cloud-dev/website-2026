@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>仪表板展示｜DataEase看中国：数据呈现中国资本市场</h1>
                     <p>大跌还是反弹？开源数据可视化分析工具DataEase带你分析国内股市和资本市场的现状和发展。</p>
                     <time datetime="2022-08-04">2022年08月04日</time>
-                    <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜DataEase看中国：数据呈现中国资本市场" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-128.webp" alt="仪表板展示｜DataEase看中国：数据呈现中国资本市场" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p><em>编者注：本文为知乎博主“数据分析小能手”的原创文章。</em></p>
@@ -225,31 +227,31 @@
                     <p>
                         1990年12月，沪深证券交易所先后成立，标志着中国资本市场正式形成。至今，中国资本市场已经走过了32年的风雨历程，从无到有、从小到大、从区域到全国乃至国外，一次又一次地实现了自身的发展突破和转折性的变化。中国资本市场的发展进程既是中国经济改革开放的历史缩影，也是中国经济从计划经济向市场经济体制转型的重要标志。
                     </p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-01.png" alt="" loading="lazy" />▲ 图1 中国股市历史进程</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-01.png" alt="" loading="lazy" />▲ 图1 中国股市历史进程</p>
                     <p>在本文中，我将使用DataEase开源数据可视化分析工具（<em>github.com/dataease/</em>）对中国股市的相关数据进行分析展示，并简单描述一下我对现阶段中国资本市场的看法。</p>
                     <p>下图是我基于从同花顺PC端应用（Windows版）获取到的数据，采用DataEase开源工具制作的仪表板（数据截止时间为2022年7月8日）。</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-02.png" alt="" loading="lazy" />▲ 图2 现阶段的中国资本市场概览（DataEase制作）</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-02.webp" alt="" loading="lazy" />▲ 图2 现阶段的中国资本市场概览（DataEase制作）</p>
                     <h2 id="heading-2">数据分析</h2>
                     <p>
                         经历了三十余载的光阴，中国股市的成员从最初的“老八股”发展至现在的4840家上市公司，总市值超过93.41万亿元。从数据上看，已经有31%的上市公司市值达到了100亿元以上，其中千亿级市值的公司有148家，甚至有7家公司的市值已经达到了万亿市值的级别。
                     </p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-03.png" alt="" loading="lazy" />▲ 图3 上市公司市值分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-03.png" alt="" loading="lazy" />▲ 图3 上市公司市值分布</p>
                     <p>从股市发展的第二个十年开始，上市公司的数量开始以迅猛之势增长。从2010年至2022年7月8日，共有3202家公司在A股上市，平均每年上市267家公司。这既是企业经济发展历程中的必然趋势，也体现了优质企业在融资方面的实际需求。</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-04.png" alt="" loading="lazy" />▲ 图4 上市企业上市年份分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-04.png" alt="" loading="lazy" />▲ 图4 上市企业上市年份分布</p>
                     <p>
                         在4840家上市公司中，有1659家挂在上交所主板，占比34.28%，深交所主板紧随其后，占比30.64%；从市值上来看，上交所的所有上市公司总市值达到50.93万亿元，占当前A股总市值（93.41万亿元）一半有余。另外，北交所于2021年9月成立，经过10个月的时间积累，已经有102家公司在其上市，累计总市值达0.21万亿元。
                     </p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-05.png" alt="" loading="lazy" />▲ 图5 上市公司板块分布</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-06.png" alt="" loading="lazy" />▲ 图6 上市公司市值分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-05.png" alt="" loading="lazy" />▲ 图5 上市公司板块分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-06.png" alt="" loading="lazy" />▲ 图6 上市公司市值分布</p>
                     <p>截至2022年7月8日收盘，股价主要在10-50元范围内的企业，占比48.02%；0-10元股价范围内的企业占比42.85%；此外，股价在100元以上的企业有162家。其中百元股在上交所科创板占比最多，占比达45.96%，共有74家。</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-07.png" alt="" loading="lazy" />▲ 图7 上市公司股价分布</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-08.png" alt="" loading="lazy" />▲ 图8 百元股上市板块分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-07.png" alt="" loading="lazy" />▲ 图7 上市公司股价分布</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-08.png" alt="" loading="lazy" />▲ 图8 百元股上市板块分布</p>
                     <p>从城市上看，城市上市企业数量排名中，北京、上海和深圳位列前三，紧随其后的是杭州、苏州和广州。</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-09.png" alt="" loading="lazy" />▲ 图9 城市上市企业数量排名TOP20</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-09.png" alt="" loading="lazy" />▲ 图9 城市上市企业数量排名TOP20</p>
                     <p>行业分布方面，电力设备、计算机应用、化学制品、汽车零部件类型的行业上市公司最多，其次是专用设备、半导体及元件以及通用设备。</p>
                     <p>另外，从行业以及市值角度上看，银行行业总市值最高，其次就是电力设备、饮料制造以及半导体及元件行业。</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-10.png" alt="" loading="lazy" />▲ 图10 拥有超过100家上市公司的行业</p>
-                    <p><img src="../images/blog/chart-20220804/dataease-132-11.png" alt="" loading="lazy" />▲ 图11 上市企业总市值排名前十的行业</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-10.png" alt="" loading="lazy" />▲ 图10 拥有超过100家上市公司的行业</p>
+                    <p><img decoding="async" src="../images/blog/chart-20220804/dataease-132-11.png" alt="" loading="lazy" />▲ 图11 上市企业总市值排名前十的行业</p>
                     <h2 id="heading-3">总结</h2>
                     <p>
                         通过对中国股市相关数据进行分析，我们可以看到，在中国资本市场发展的历史里，优质的企业会会变得更加优质，不少后起之秀的企业也在迎头赶上。整个中国资本市场正在沿着社会经济发展的路径稳健前行。由于发展时间短，中国资本市场可能还不够健全，但是相信中国股市在政府政策支持、企业持续改进以及公众监督的共同作用下，一定会日渐完善，愈来愈好。
@@ -303,11 +305,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -353,7 +355,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -416,15 +418,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

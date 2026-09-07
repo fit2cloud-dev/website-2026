@@ -213,10 +213,10 @@
                     <time datetime="2022-07-25">2022-07-25</time>
                     <h1>支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布</h1>
                     <p>文件上传新增支持通过SFTP协议直连资产。</p>
-                    <img src="../images/blog/release-20221121/cover.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />
+                    <img src="../images/blog/release-20221121/cover.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>
                 </header>
                 <div class="de-article-content">
-                    <p><img src="../images/blog/release-20220725/image-01.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" /></p>
+                    <p><img src="../images/blog/release-20220725/image-01.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/></p>
                     <p>
                         2022年7月25日，JumpServer开源堡垒机正式发布v2.24.0版本。在这一版本中，文件上传新增支持通过SFTP协议直连资产。会话分享方面，支持指定有效期和加入者，防止因链接泄漏引发的安全问题。服务端点支持通过资产标签进行匹配，从而可以规避IP冲突的场景。另外，这一版本的JumpServer还支持用户查看自己在使用过程中所创建的连接令牌信息。
                     </p>
@@ -228,14 +228,14 @@
                     <p>在JumpServer v2.24.0版本中，文件上传新增支持通过SFTP协议直连资产。使用格式如下：</p>
                     <p>支持#格式：<em>sftp jumpserverUsername#systemUsername#AssetIP#jumpserverHostIP -p2222</em></p>
                     <p>支持@格式：<em>sftp jumpserverUsername@systemUsername@AssetIP@jumpserverHostIP -p2222</em></p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图1 SFTP直连资产信息</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图1 SFTP直连资产信息</p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图2 SFTP直连资产成功，并从本地上传文件到直连资产的指定目录
+                        <img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图2 SFTP直连资产成功，并从本地上传文件到直连资产的指定目录
                     </p>
                     <p><strong>2. 会话分享支持指定有效期和加入者</strong></p>
                     <p>在JumpServer v2.24.0版本中，会话分享支持指定有效期和加入者，防止因链接泄漏引发的安全问题。</p>
                     <p>系统管理员可以在“系统设置”→“安全设置”中开启会话分享，用户使用Web终端连接资产时，可分享该会话，并设置有效期和加入者。</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图3 会话分享支持指定有效期和加入者</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图3 会话分享支持指定有效期和加入者</p>
                     <p><strong>3. 支持用户查看自己使用过程中所创建的连接令牌信息</strong></p>
                     <p>
                         在JumpServer
@@ -247,7 +247,7 @@
                     <p>③ 连接数据库应用：通过Web终端连接数据库应用，选择连接方式为DB Client客户端，即可创建令牌信息；</p>
                     <p>④ 通过调用API方式。</p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图4 用户可查看自己连接的令牌信息，也可以手动点击“过期”按钮，使令牌立即过期
+                        <img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图4 用户可查看自己连接的令牌信息，也可以手动点击“过期”按钮，使令牌立即过期
                     </p>
                     <p><strong>4. 服务端点支持通过资产标签进行匹配</strong></p>
                     <p>
@@ -265,16 +265,16 @@
                     <p>⑤ 上海组织创建标签，标签名必须为endpoint，值为端点的名称，例如示例中是上海端点；</p>
                     <p>⑥ 测试上海和北京分别去连接相同的IP网段，查看资产使用的服务端点。</p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图5 北京组织创建资产标签，标签名必须为endpoint，值的名称为北京端点
+                        <img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图5 北京组织创建资产标签，标签名必须为endpoint，值的名称为北京端点
                     </p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图6 上海组织创建资产标签，标签名必须为endpoint，值的名称为上海端点
+                        <img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图6 上海组织创建资产标签，标签名必须为endpoint，值的名称为上海端点
                     </p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图7 上海端点规则和北京端点规则，IP网段均为：172.16.10.1-172.16.10.200
+                        <img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图7 上海端点规则和北京端点规则，IP网段均为：172.16.10.1-172.16.10.200
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图8 北京的IP网段走北京的端点服务</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-10.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图9 上海的IP网段走上海的端点服务</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图8 北京的IP网段走北京的端点服务</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-10.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图9 上海的IP网段走上海的端点服务</p>
                     <p><strong>5. Magnus数据库连接组件新增支持代理直连Oracle数据库（X-Pack增强包内）</strong></p>
                     <p>
                         在JumpServer v2.24.0版本中，Magnus组件新增支持代理直连Oracle数据库（目前仅支持Oracle Database
@@ -285,30 +285,30 @@
                         用户可以通过Web终端点击”Oracle”数据库，选择“DB
                         Client”连接方式，获取数据库连接信息。用户可以点击“拉起客户端”按钮，直连数据库；还可以复制命令行连接信息，到Terminal执行命令去连接数据库；还可以使用数据库客户端工具（例如Navicat，暂不支持SQL Developer）连接数据库。
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-11.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图10 点击客户端执行方式，拉起本地客户端连接数据库</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-12.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图11 使用Navicat工具，输入数据库连接信息</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-13.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图12 使用Navicat工具成功连接数据库，并进行操作</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-11.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图10 点击客户端执行方式，拉起本地客户端连接数据库</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-12.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图11 使用Navicat工具，输入数据库连接信息</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-13.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图12 使用Navicat工具成功连接数据库，并进行操作</p>
                     <p><strong>6. 支持多种主题配色（X-Pack增强包内）</strong></p>
                     <p>在JumpServer v2.24.0版本中，还支持多种主题配色，包括中国红、深邃黑、科技蓝、高贵紫以及经典绿。用户可以根据自己喜好，选择相应的主题配色。</p>
                     <p>系统管理员通过选择“系统设置”→“界面设置”，即可进行主题设置。</p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image-14.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13 系统管理员通过“系统设置”→“界面设置”进行主题设置
+                        <img src="../images/blog/release-20220725/image-14.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13 系统管理员通过“系统设置”→“界面设置”进行主题设置
                     </p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-15.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13-1 主题之高贵紫高贵紫</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-16.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13-2 主题之经典绿</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-17.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13-3 主题之科技蓝</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-18.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13-4 主题之深邃黑</p>
-                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-19.jpg" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图13-5 主题之中国红</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-15.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13-1 主题之高贵紫高贵紫</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-16.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13-2 主题之经典绿</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-17.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13-3 主题之科技蓝</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-18.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13-4 主题之深邃黑</p>
+                    <p style="text-align: center"><img src="../images/blog/release-20220725/image-19.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图13-5 主题之中国红</p>
                     <p><strong>7. 工单模块新增支持审批工单时修改申请资源（X-Pack增强包内）</strong></p>
                     <p>
                         在JumpServer
                         v2.24.0版本中，工单模块新增支持审批工单时修改申请资源。用户申请资产授权工单，审批人审批时可以对该工单的资源（例如资产、节点、系统用户、授权时间，以及资产的动作权限）进行修改。用户申请应用授权工单，审批人审批时可以对该工单的资源（例如应用、系统用户、授权时间以及应用的动作权限）进行修改。
                     </p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image-20.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图14 审批人审批资产工单时，可对资产、节点、系统用户、授权有效期、授权动作进行修改
+                        <img src="../images/blog/release-20220725/image-20.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图14 审批人审批资产工单时，可对资产、节点、系统用户、授权有效期、授权动作进行修改
                     </p>
                     <p style="text-align: center">
-                        <img src="../images/blog/release-20220725/image-21.png" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" />▲ 图15 审批人审批应用工单时，可对应用、系统用户、授权有效期进行修改
+                        <img src="../images/blog/release-20220725/image-21.webp" alt="支持代理直连Oracle数据库，JumpServer堡垒机v2.24.0发布" loading="lazy" / decoding="async"/>▲ 图15 审批人审批应用工单时，可对应用、系统用户、授权有效期进行修改
                     </p>
                     <h2 id="heading-2">功能优化</h2>
                     <p>■&nbsp;AMD架构部署或升级数据库时，默认使⽤MariaDB作为后台数据库；</p>
@@ -353,11 +353,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">技术交流群</h4>
-                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" />
+                        <img src="https://download.jumpserver.org/images/wecom-group.jpeg" alt="JumpServer Logo" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" />
+                        <img src="../images/wechat-customer.webp" alt="JumpServer 购买咨询二维码" width="120" style="margin-top: 20px" decoding="async" />
                     </div>
                     <div class="col-lg-4 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -504,16 +504,16 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/scrollspy.min.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/owl.init.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script src="../js/jquery-3.5.1.min.js" defer></script>
+        <script src="../js/bootstrap.bundle.min.js" defer></script>
+        <script src="../js/jquery.easing.min.js" defer></script>
+        <script src="../js/scrollspy.min.js" defer></script>
+        <script src="../js/jquery.magnific-popup.min.js" defer></script>
+        <script src="../js/magnific.init.js" defer></script>
+        <script src="../js/owl.carousel.min.js" defer></script>
+        <script src="../js/owl.init.js" defer></script>
+        <script src="../js/feather.min.js" defer></script>
+        <script src="../js/app.js" defer></script>
+        <script src="../js/mega.js" defer></script>
     </body>
 </html>

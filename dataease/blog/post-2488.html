@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,7 +217,7 @@
                     <h1>仪表板展示｜使用DataEase制作汽车销售大数据仪表板</h1>
                     <p>通过DataEase进行汽车销售类数据大屏可视化复现。</p>
                     <time datetime="2021-08-24">2021年08月24日</time>
-                    <img src="../images/blog/common/dataease-128.png" alt="仪表板展示｜使用DataEase制作汽车销售大数据仪表板" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-128.webp" alt="仪表板展示｜使用DataEase制作汽车销售大数据仪表板" loading="eager" />
                 </header>
                 <div class="de-article-content">
                     <p>
@@ -231,7 +233,7 @@
                     <p>6.  ……</p>
                     <p>首先我搜索了汽车销售数据类的大屏展示，发现了百度智能云有一个示例场景符合我的要求，于是打算找一款开源的数据可视化工具对这一场景进行复现。</p>
                     <p>示例场景：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-01.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-01.webp" alt="" loading="lazy" /></p>
                     <h2 id="heading-2">数据可视化工具选择</h2>
                     <p>
                         最近在GitHub上发现了一款很热门的数据可视化分析工具名叫DataEase，这是一款开源的数据可视化工具，可以帮助用户快速分析数据并洞察业务趋势，从而实现业务的改进与优化。DataEase能够支持丰富的数据源连接，用户可以通过拖拉拽方式快速制作图表，并且可以方便地与他人分享。
@@ -252,25 +254,25 @@
                     <p><strong>二、准备数据源</strong></p>
                     <p>虽然百度智能云提供的经典大屏示例中没有提供类似数据库等可以实时获取数据的数据源，但是示例的页面中可以导出视图的数据为Excel。所以数据集的创建就使用了添加Excel数据集的方式。</p>
                     <p>首先在示例场景中导出数据为Excel：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-02.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-02.webp" alt="" loading="lazy" /></p>
                     <p>然后在DataEase上添加Excel数据集：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-03.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-03.png" alt="" loading="lazy" /></p>
                     <p>上传示例场景中导出的Excel文件：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-04.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-04.webp" alt="" loading="lazy" /></p>
                     <p>重复以上步骤，将所有视图所需的数据集都导入之后，我们就可以开始进行视图的制作了。</p>
                     <p><strong>三、创建视图</strong></p>
                     <p>■ 首先，根据示例场景中的视图样式，在DataEase上选择对应的图表类型；</p>
                     <p>■ 然后，选择维度和指标，把需要展示的维度和指标分别拖拽到图表类型下方的类别轴／维度、值轴／指标；</p>
                     <p>■ 再进行指标和维度的排序汇总方式选择，调整视图样式尽量复现示例场景等操作。这样就可以将数据集中的数据通过视图的方式展示出来。</p>
                     <p>下图为销售地区视图：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-05.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-05.webp" alt="" loading="lazy" /></p>
                     <p><strong>四、编辑仪表板</strong></p>
                     <p>当所有的视图都制作完成之后，就可以开始编辑仪表板了。首先获取示例大屏的背景图以及修饰图，进行模仿示例大屏的初步布局。</p>
                     <p>初步布局后的仪表板如下：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-06.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-06.webp" alt="" loading="lazy" /></p>
                     <p>完成初步布局后，我们只需要选择左侧的视图，拖拽对应设计的视图到仪表板中，再进行样式的调整，就可以完成最终的大屏展示。</p>
                     <p>最终的大屏展示结果如下：</p>
-                    <p><img src="../images/blog/chart-20210824/dataease-174-07.png" alt="" loading="lazy" /></p>
+                    <p><img decoding="async" src="../images/blog/chart-20210824/dataease-174-07.webp" alt="" loading="lazy" /></p>
                     <h2 id="heading-4">DataEase使用体会</h2>
                     <p>在本次学习制作汽车销售大数据仪表板的过程中，发现了DataEase开源数据可视化分析工具的一些亮点，在此分享给大家：<br /></p>
                     <p>■ <strong>开源开放：</strong>在GitHub网站上即可获取整个开源项目，不需要支付额外的费用，并且按月发布新版本，将会有越来越多的新功能上线，值得期待；</p>
@@ -326,11 +328,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -376,7 +378,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -439,15 +441,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>

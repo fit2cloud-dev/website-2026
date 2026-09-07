@@ -47,8 +47,10 @@
         <link rel="stylesheet" href="../css/owl.carousel.min.css" />
         <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -75,7 +77,7 @@
                 <div class="mega-nav-banner">
                     <div class="container">
                         <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
+                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
                         </div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
@@ -150,8 +152,8 @@
             <div class="container">
                 <div>
                     <a class="logo" href="../index.html">
-                        <img src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
-                        <img src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-dark-DataEase.svg" class="l-dark" height="35" alt="DataEase Logo" />
+                        <img decoding="async" loading="eager" src="../images/logo/logo-light-DataEase.svg" class="l-light" height="35" alt="DataEase Logo" />
                     </a>
                 </div>
                 <div class="menu-extras">
@@ -215,10 +217,10 @@
                     <h1>新增支持Hive数据源，引入新图表类型词云图，DataEase开源数据可视化分析平台v1.5.0发布</h1>
                     <p>数据集新增同步字段功能，仪表板支持视频组件。</p>
                     <time datetime="2021-12-06">2021年12月06日</time>
-                    <img src="../images/blog/common/dataease-114.jpg" alt="新增支持Hive数据源，引入新图表类型词云图，DataEase开源数据可视化分析平台v1.5.0发布" loading="eager" />
+                    <img decoding="async" src="../images/blog/common/dataease-114.webp" alt="新增支持Hive数据源，引入新图表类型词云图，DataEase开源数据可视化分析平台v1.5.0发布" loading="eager" />
                 </header>
                 <div class="de-article-content">
-                    <figure><img src="../images/blog/release-20211206/dataease-160-01.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20211206/dataease-160-01.png" alt="" loading="lazy" /></figure>
                     <p>
                         12月6日，DataEase开源数据可视化分析平台正式发布v1.5.0版本。在该版本中，新增了对Hive数据源的支持；视图方面，图表类型增加了对词云图的支持；视图编辑的操作上，提供了重置功能，并取消了之前版本的实时保存功能；数据集方面新增同步字段功能，解决了由于数据集变化导致的视图不可用的问题；仪表板方面，增加了对视频组件的支持。另外，我们还对其他一些常用的功能进行了功能优化和问题修复。
                     </p>
@@ -232,25 +234,25 @@
                     <p>
                         Hive是基于Hadoop的一个数据仓库工具，用来进行数据提取、转化、加载，是一种可以存储、查询和分析存储在Hadoop中大规模数据的机制。Hive的优点是学习成本低，可以通过类似SQL语句实现快速MapReduce统计，使MapReduce变得更加简单，而不必开发专门的MapReduce应用程序。
                     </p>
-                    <figure><img src="../images/blog/release-20211206/dataease-160-02.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20211206/dataease-160-02.png" alt="" loading="lazy" /></figure>
                     <p><strong>■ 数据集新增同步字段功能</strong></p>
                     <p>
                         在之前版本的DataEase中，用户编辑数据集时，不论是否对原有字段进行修改，都可能会造成诸如视图无法显示等异常情况，且数据集表结构的变化也无法更新到之前的数据集中。DataEase
                         v1.5.0版本中，在数据集管理页新增了同步字段功能，用户在修改了数据库表结构后，能够在DataEase中将更新的字段信息同步过来，解决之前版本中所存在的问题。
                     </p>
-                    <figure><img src="../images/blog/release-20211206/dataease-160-03.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20211206/dataease-160-03.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 视图增加对词云图的支持</strong></p>
                     <p>
                         视图图表的支持对于数据可视化工具来说至关重要，DataEase一直坚持在持续迭代的每个版本中不断增加对新图表类型的支持。在DataEase
                         v1.5.0版本中，增加了新的图表类型——词云图。词云图由词汇组成类似云的彩色图形，用于展示大量文本数据。例如，制作用户画像、对用户进行聚类，实现精细化营销。
                     </p>
-                    <figure><img src="../images/blog/release-20211206/dataease-160-04.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20211206/dataease-160-04.webp" alt="" loading="lazy" /></figure>
                     <p><strong>■ 仪表板支持视频组件</strong></p>
                     <p>
                         多媒体元素对于数据可视化来说也是非常重要的组成部分，它可以丰富可视化大屏的展示形式，从另一个维度表达出数据所不能表达的内容。在DataEase
                         v1.5.0版本中，新增了视频组件，可以实现在仪表板中播放mp4、webm格式的视频影像，满足了用户对多媒体展现形式的需求。
                     </p>
-                    <figure><img src="../images/blog/release-20211206/dataease-160-05.png" alt="" loading="lazy" /></figure>
+                    <figure><img decoding="async" src="../images/blog/release-20211206/dataease-160-05.webp" alt="" loading="lazy" /></figure>
                     <p>除了上述提到的新增功能外，DataEase v1.5.0版本还包含了很多其他的功能更新和优化，欢迎进入我们的官方文档及GitHub仓库的Release页面查看更加详细的更新日志。</p>
 
                     <h2>功能优化</h2>
@@ -324,11 +326,11 @@
                 <div class="row justify-content-between align-items-top">
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">购买咨询</h4>
-                        <img src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/wechat-customer.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="col-lg-4 col-md-4 order-1 order-md-2 text-center mt-3">
                         <h4 class="page-title mb-0">技术交流群</h4>
-                        <img src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
+                        <img decoding="async" loading="lazy" src="../images/contact/wechat-group.jpg" alt="DataEase 微信咨询二维码" width="120" />
                     </div>
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
@@ -374,7 +376,7 @@
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
                         <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
+                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
                         </a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
@@ -437,15 +439,15 @@
             </div>
         </footer>
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-        <script src="../js/jquery-3.5.1.min.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-        <script src="../js/jquery.easing.min.js"></script>
-        <script src="../js/feather.min.js"></script>
-        <script src="../js/monochrome-bundle.js"></script>
-        <script src="../js/jquery.magnific-popup.min.js"></script>
-        <script src="../js/magnific.init.js"></script>
-        <script src="../js/owl.carousel.min.js"></script>
-        <script src="../js/app.js"></script>
-        <script src="../js/mega.js"></script>
+        <script defer src="../js/jquery-3.5.1.min.js"></script>
+        <script defer src="../js/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/jquery.easing.min.js"></script>
+        <script defer src="../js/feather.min.js"></script>
+        <script defer src="../js/monochrome-bundle.js"></script>
+        <script defer src="../js/jquery.magnific-popup.min.js"></script>
+        <script defer src="../js/magnific.init.js"></script>
+        <script defer src="../js/owl.carousel.min.js"></script>
+        <script defer src="../js/app.js"></script>
+        <script defer src="../js/mega.js"></script>
     </body>
 </html>
