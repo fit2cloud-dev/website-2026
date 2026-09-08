@@ -77,8 +77,12 @@ var HashiMegaNav = function() {
   });
 }
 
-// Handle document ready function and the turbolinks load.
-$(document).on("ready turbolinks:load", HashiMegaNav);
+// Handle document ready function.
+// NOTE: jQuery 3.0+ no longer fires the "ready" event via .on("ready", ...).
+// Must use .ready() or the ready shortcut $(fn) instead. Keeping the
+// turbolinks:load handler for theoretical future use; static pages skip it.
+$(document).ready(HashiMegaNav);
+$(document).on("turbolinks:load", HashiMegaNav);
 // HashiSidebar is the sidebar implementation for mobile websites. It
 // appears at a configurable breakpoint in the CSS.
 var HashiSidebar = function() {
@@ -117,8 +121,9 @@ var HashiSidebar = function() {
   });
 }
 
-// Handle document ready function and the turbolinks load.
-$(document).on("ready turbolinks:load", HashiSidebar);
+// Handle document ready function (see note above re jQuery 3.0+ behavior).
+$(document).ready(HashiSidebar);
+$(document).on("turbolinks:load", HashiSidebar);
 'use strict'
 
 /**
