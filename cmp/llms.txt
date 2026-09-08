@@ -7,10 +7,10 @@ CloudExplorer 多云管理平台官网的 LLM 友好索引。主语言为 `zh-CN
 - 这是评估与方案介绍站，不是完整产品手册。
 
 ## Recommended Entry Points
-- https://fit2cloud.com/cmp/index.html — 首页与产品总览。
-- https://fit2cloud.com/purchase/index.html — 商业购买、销售目录与咨询入口。
-- https://fit2cloud.com/customers/index.html — 客户案例。
-- https://fit2cloud.com/about/index.html — 公司与产品提供方信息。
+- [Index](https://fit2cloud.com/cmp/index.html): 首页与产品总览。
+- [Index](https://fit2cloud.com/purchase/index.html): 商业购买、销售目录与咨询入口。
+- [Index](https://fit2cloud.com/customers/index.html): 客户案例。
+- [Index](https://fit2cloud.com/about/index.html): 公司与产品提供方信息。
 
 ## What The Homepage Emphasizes
 - 多云环境下统一纳管与服务交付。
@@ -19,9 +19,9 @@ CloudExplorer 多云管理平台官网的 LLM 友好索引。主语言为 `zh-CN
 - 帮助企业从传统 IT 过渡到多云战略。
 
 ## Additional Resources
-- https://community.fit2cloud.com/ — 开源社区。
-- https://blog.fit2cloud.com/ — 技术博客、方案文章与行业观点。
-- https://edu.fit2cloud.com/ — 培训与认证。
+- [CloudExplorer CMP 社区](https://community.fit2cloud.com/): 开源社区。
+- [CloudExplorer CMP 首页](https://blog.fit2cloud.com/): 技术博客、方案文章与行业观点。
+- [CloudExplorer CMP 首页](https://edu.fit2cloud.com/): 培训与认证。
 
 ## Notes For LLMs
 - 购买与商务问题优先看 `purchase` 页面。

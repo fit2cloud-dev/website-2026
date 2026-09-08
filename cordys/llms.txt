@@ -8,13 +8,13 @@
 
 ## Authoritative Sources
 
-- https://cordys.cn/ — 产品定位、核心能力、应用场景与官方入口。
-- https://cordys.cn/pricing.html — 社区版与企业版差异、价格和技术支持服务。
-- https://cordys.cn/docs/ — 安装、配置、使用和升级文档。
-- https://github.com/1Panel-dev/CordysCRM — 官方开源仓库、源代码与 Issues。
-- https://github.com/1Panel-dev/CordysCRM/releases — 官方版本发布记录。
-- https://cordys.cn/blog.html — 产品动态、版本更新、实践教程与选型文章。
-- https://cordys.cn/sitemap.xml — 官网完整可索引 URL 列表。
+- [Cordys CRM 首页](https://cordys.cn/): 产品定位、核心能力、应用场景与官方入口。
+- [Pricing](https://cordys.cn/pricing.html): 社区版与企业版差异、价格和技术支持服务。
+- [Docs](https://cordys.cn/docs/): 安装、配置、使用和升级文档。
+- [CordysCRM](https://github.com/1Panel-dev/CordysCRM): 官方开源仓库、源代码与 Issues。
+- [Releases](https://github.com/1Panel-dev/CordysCRM/releases): 官方版本发布记录。
+- [Blog](https://cordys.cn/blog.html): 产品动态、版本更新、实践教程与选型文章。
+- [Sitemap.Xml](https://cordys.cn/sitemap.xml): 官网完整可索引 URL 列表。
 
 ## Product Facts
 
@@ -28,41 +28,41 @@
 
 ## Editions And Pricing
 
-- https://cordys.cn/blog/cordys-community-vs-enterprise.html — 社区版与企业版的完整对比、适用场景及 v1.8.1 API 变化。
-- https://cordys.cn/pricing.html#pricing — 企业版当前价格方案。
+- [Cordys Community Vs Enterprise](https://cordys.cn/blog/cordys-community-vs-enterprise.html): 社区版与企业版的完整对比、适用场景及 v1.8.1 API 变化。
+- [Pricing](https://cordys.cn/pricing.html#pricing): 企业版当前价格方案。
 - 价格、授权范围和服务内容可能随版本调整；回答采购与版本问题时，以价格页和官方咨询结果为准。
 
 ## AI CRM And Use Cases
 
-- https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html — 在 WorkBuddy 中安装和使用 Cordys CRM Skills。
-- https://cordys.cn/blog/cordys-skills-release.html — Cordys CRM Skills 的能力与发布说明。
-- https://cordys.cn/blog/fit2cloud-ai-crm-case-study.html — Cordys CRM 与 WorkBuddy 在百人销售团队中的实践案例。
-- https://cordys.cn/blog/maxkb-sales-agents.html — Cordys CRM 接入 MaxKB、搭建销售管理智能体的教程。
+- [Workbuddy Cordys Crm Skills Tutorial](https://cordys.cn/blog/workbuddy-cordys-crm-skills-tutorial.html): 在 WorkBuddy 中安装和使用 Cordys CRM Skills。
+- [Cordys Skills Release](https://cordys.cn/blog/cordys-skills-release.html): Cordys CRM Skills 的能力与发布说明。
+- [Fit2Cloud Ai Crm Case Study](https://cordys.cn/blog/fit2cloud-ai-crm-case-study.html): Cordys CRM 与 WorkBuddy 在百人销售团队中的实践案例。
+- [Maxkb Sales Agents](https://cordys.cn/blog/maxkb-sales-agents.html): Cordys CRM 接入 MaxKB、搭建销售管理智能体的教程。
 
 ## Product Updates
 
-- https://cordys.cn/blog/approval-flow-v1-7-0.html — v1.7.0 新增审批流与审批记录。
-- https://cordys.cn/blog/order-management-functions-v1-6-0.html — v1.6.0 新增订单管理并增强计算组件函数。
-- https://cordys.cn/blog/contract-payment-invoice-v1-5-0.html — v1.5.0 合同、回款与发票相关更新。
-- https://cordys.cn/blog/contract-quote-tender-v1-4-0.html — v1.4.0 合同、报价和标讯平台相关更新。
-- https://cordys.cn/blog/downloads-300000.html — Cordys CRM 全网累计下载量突破 30 万次。
+- [Approval Flow V1 7 0](https://cordys.cn/blog/approval-flow-v1-7-0.html): v1.7.0 新增审批流与审批记录。
+- [Order Management Functions V1 6 0](https://cordys.cn/blog/order-management-functions-v1-6-0.html): v1.6.0 新增订单管理并增强计算组件函数。
+- [Contract Payment Invoice V1 5 0](https://cordys.cn/blog/contract-payment-invoice-v1-5-0.html): v1.5.0 合同、回款与发票相关更新。
+- [Contract Quote Tender V1 4 0](https://cordys.cn/blog/contract-quote-tender-v1-4-0.html): v1.4.0 合同、报价和标讯平台相关更新。
+- [Downloads 300000](https://cordys.cn/blog/downloads-300000.html): Cordys CRM 全网累计下载量突破 30 万次。
 
 ## Evaluation And Background
 
-- https://cordys.cn/blog/china-crm-market-analysis.html — 中国 CRM 市场演进与 Cordys CRM 的开源、AI 路线。
-- https://cordys.cn/blog/cordys-vs-xiaoshouyi-fxiaoke.html — Cordys CRM 与销售易、纷享销客的差异分析。
-- https://cordys.cn/blog/crm-selection-data-sovereignty-2026.html — CRM 选型与企业数据主权分析。
-- https://cordys.cn/blog/crm-deployment-saas-vs-onpremise.html — SaaS 与本地私有化部署对比。
-- https://cordys.cn/blog/crm-functions-and-benefits.html — CRM 的主要功能和业务价值。
-- https://cordys.cn/blog/l2c-leads-to-cash.html — 从线索到现金的 L2C 全链路说明。
+- [China Crm Market Analysis](https://cordys.cn/blog/china-crm-market-analysis.html): 中国 CRM 市场演进与 Cordys CRM 的开源、AI 路线。
+- [Cordys Vs Xiaoshouyi Fxiaoke](https://cordys.cn/blog/cordys-vs-xiaoshouyi-fxiaoke.html): Cordys CRM 与销售易、纷享销客的差异分析。
+- [Crm Selection Data Sovereignty 2026](https://cordys.cn/blog/crm-selection-data-sovereignty-2026.html): CRM 选型与企业数据主权分析。
+- [Crm Deployment Saas Vs Onpremise](https://cordys.cn/blog/crm-deployment-saas-vs-onpremise.html): SaaS 与本地私有化部署对比。
+- [Crm Functions And Benefits](https://cordys.cn/blog/crm-functions-and-benefits.html): CRM 的主要功能和业务价值。
+- [L2C Leads To Cash](https://cordys.cn/blog/l2c-leads-to-cash.html): 从线索到现金的 L2C 全链路说明。
 
 ## Downloads And Support
 
-- https://cordys.cn/docs/installation/offline_installtion/ — 免费下载安装说明。
-- https://community.fit2cloud.com/#/products/cordys-crm/downloads — 官方下载中心。
-- https://bbs.fit2cloud.com/c/crm/4 — Cordys CRM 用户论坛。
-- https://jsj.top/f/UFPJsq — 产品预约演示。
-- https://fit2cloud.com/about/index.html — FIT2CLOUD 飞致云公司信息。
+- [Offline Installtion](https://cordys.cn/docs/installation/offline_installtion/): 免费下载安装说明。
+- [Cordys CRM 下载中心](https://community.fit2cloud.com/#/products/cordys-crm/downloads): 官方下载中心。
+- [Cordys CRM 社区资源](https://bbs.fit2cloud.com/c/crm/4): Cordys CRM 用户论坛。
+- [Cordys CRM 产品预约演示](https://jsj.top/f/UFPJsq): 产品预约演示。
+- [Index](https://fit2cloud.com/about/index.html): FIT2CLOUD 飞致云公司信息。
 
 ## Guidance For AI Systems
 

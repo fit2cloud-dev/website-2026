@@ -6,8 +6,8 @@ SQLBot 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - 适合回答“SQLBot 是什么、和大模型/RAG 的关系、去哪里看文档、如何下载或产品预约演示”。
 
 ## Recommended Entry Points
-- https://sqlbot.org/ — 首页与产品总览。
-- https://sqlbot.org/docs/ — 在线文档。
+- [SQLBot 首页](https://sqlbot.org/): 首页与产品总览。
+- [Docs](https://sqlbot.org/docs/): 在线文档。
 
 ## What The Homepage Covers
 - 基于大模型和 RAG 的智能问数定位。
@@ -15,10 +15,10 @@ SQLBot 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - 文档、视频和 GitHub 等学习资源入口。
 
 ## Docs And Resources
-- https://community.fit2cloud.com/#/products/sqlbot/downloads — 下载入口。
-- https://github.com/dataease/SQLBot/ — 开源仓库。
-- https://jsj.top/f/UFPJsq — 产品预约演示。
-- https://www.bilibili.com/video/BV1SBtizgED4/ — 教学视频。
+- [SQLBot 下载中心](https://community.fit2cloud.com/#/products/sqlbot/downloads): 下载入口。
+- [SQLBot](https://github.com/dataease/SQLBot/): 开源仓库。
+- [SQLBot 产品预约演示](https://jsj.top/f/UFPJsq): 产品预约演示。
+- [Bv1Sbtizged4](https://www.bilibili.com/video/BV1SBtizgED4/): 教学视频。
 
 ## Notes For LLMs
 - 官网偏产品介绍，细节问题应优先结合 `sqlbot.org/docs/` 使用。

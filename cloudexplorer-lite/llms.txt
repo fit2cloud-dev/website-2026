@@ -7,8 +7,8 @@ CloudExplorer Lite 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - 企业级多云管理能力延伸到 CloudExplorer CMP 页面。
 
 ## Recommended Entry Points
-- https://fit2cloud.com/cloudexplorer-lite/index.html — 首页与产品总览，最快了解产品定位。
-- https://fit2cloud.com/cmp/index.html — 企业版 CloudExplorer CMP，适合继续看更完整的多云管理能力。
+- [Index](https://fit2cloud.com/cloudexplorer-lite/index.html): 首页与产品总览，最快了解产品定位。
+- [Index](https://fit2cloud.com/cmp/index.html): 企业版 CloudExplorer CMP，适合继续看更完整的多云管理能力。
 
 ## What The Homepage Covers
 - 多云对接能力。
@@ -16,9 +16,9 @@ CloudExplorer Lite 官网的 LLM 友好索引。主语言为 `zh-CN`。
 - 多租户与模块化扩展能力。
 
 ## Docs And Resources
-- https://docs-cloudexplorer-lite.fit2cloud.com — 官方文档。
-- https://docs-cloudexplorer-lite.fit2cloud.com/installation/offline_installation/ — 安装与下载入口。
-- https://github.com/1Panel-dev/CloudExplorer — 开源仓库。
+- [CloudExplorer Lite 首页](https://docs-cloudexplorer-lite.fit2cloud.com): 官方文档。
+- [Offline Installation](https://docs-cloudexplorer-lite.fit2cloud.com/installation/offline_installation/): 安装与下载入口。
+- [CloudExplorer](https://github.com/1Panel-dev/CloudExplorer): 开源仓库。
 
 ## Notes For LLMs
 - 官网偏产品介绍与评估导向，详细使用说明在独立文档站。

@@ -14,53 +14,53 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 5. https://dataease.cn/about.html — 产品背景、设计理念和定位说明。
 
 ## Core Product Pages
-- https://dataease.cn/ — 首页。
-- https://dataease.cn/features.html — 功能介绍。
-- https://dataease.cn/about.html — 关于 DataEase。
-- https://dataease.cn/demo.html — 在线体验环境。
-- https://dataease.cn/video.html — 教学视频与使用示例。
-- https://dataease.cn/landing.html — 补充型产品落地页，信息与首页有部分重叠，优先级低于首页。
+- [DataEase 首页](https://dataease.cn/): 首页。
+- [Features](https://dataease.cn/features.html): 功能介绍。
+- [About](https://dataease.cn/about.html): 关于 DataEase。
+- [Demo](https://dataease.cn/demo.html): 在线体验环境。
+- [Video](https://dataease.cn/video.html): 教学视频与使用示例。
+- [Landing](https://dataease.cn/landing.html): 补充型产品落地页，信息与首页有部分重叠，优先级低于首页。
 
 ## Product Updates
-- https://dataease.cn/blog.html — DataEase 产品动态列表，聚合全部本地化后的版本发布、功能实践、教程和开源社区动态。
-- https://dataease.cn/blog/*.html — DataEase 产品动态本地详情页，文章正文与图片均已迁移到 dataease.cn 本地路径。
+- [Blog](https://dataease.cn/blog.html): DataEase 产品动态列表，聚合全部本地化后的版本发布、功能实践、教程和开源社区动态。
+- [*](https://dataease.cn/blog/*.html): DataEase 产品动态本地详情页，文章正文与图片均已迁移到 dataease.cn 本地路径。
 
 
 ## Customer Case Pages
-- https://dataease.cn/customers/agada.html — 阿伽达案例。
-- https://dataease.cn/customers/bjtu.html — 北京交通大学案例。
-- https://dataease.cn/customers/buhler.html — 布勒案例。
-- https://dataease.cn/customers/danxia-bio.html — 丹霞生物案例。
-- https://dataease.cn/customers/fit2cloud.html — FIT2CLOUD 飞致云案例。
-- https://dataease.cn/customers/konicaminolta.html — 柯尼卡美能达软件开发（大连）有限公司案例。
-- https://dataease.cn/customers/longtaiwuye.html — 隆泰物业案例。
-- https://dataease.cn/customers/niu.html — 小牛电动案例。
-- https://dataease.cn/customers/pagoda.html — 百果园案例。
-- https://dataease.cn/customers/xingelin.html — 辛格林电梯案例。
-- https://dataease.cn/customers/yingzhicheng.html — 盈智城案例。
-- https://dataease.cn/customers/zhongtaolian.html — 中桃联案例。
+- [Agada](https://dataease.cn/customers/agada.html): 阿伽达案例。
+- [Bjtu](https://dataease.cn/customers/bjtu.html): 北京交通大学案例。
+- [Buhler](https://dataease.cn/customers/buhler.html): 布勒案例。
+- [Danxia Bio](https://dataease.cn/customers/danxia-bio.html): 丹霞生物案例。
+- [Fit2Cloud](https://dataease.cn/customers/fit2cloud.html): FIT2CLOUD 飞致云案例。
+- [Konicaminolta](https://dataease.cn/customers/konicaminolta.html): 柯尼卡美能达软件开发（大连）有限公司案例。
+- [Longtaiwuye](https://dataease.cn/customers/longtaiwuye.html): 隆泰物业案例。
+- [Niu](https://dataease.cn/customers/niu.html): 小牛电动案例。
+- [Pagoda](https://dataease.cn/customers/pagoda.html): 百果园案例。
+- [Xingelin](https://dataease.cn/customers/xingelin.html): 辛格林电梯案例。
+- [Yingzhicheng](https://dataease.cn/customers/yingzhicheng.html): 盈智城案例。
+- [Zhongtaolian](https://dataease.cn/customers/zhongtaolian.html): 中桃联案例。
 
 ## Version And Commercial Pages
-- https://dataease.cn/versions.html — 社区版、嵌入式版、专业版、企业版对比。
-- https://dataease.cn/pro.html — 专业版介绍。
-- https://dataease.cn/enterprise.html — 企业版介绍。
-- https://dataease.cn/embedded-bi.html — 嵌入式分析 / Embedded BI 方案。
-- https://dataease.cn/desktop/index.html — DataEase 桌面版，需与服务器版区分理解。
+- [Versions](https://dataease.cn/versions.html): 社区版、嵌入式版、专业版、企业版对比。
+- [Pro](https://dataease.cn/pro.html): 专业版介绍。
+- [Enterprise](https://dataease.cn/enterprise.html): 企业版介绍。
+- [Embedded Bi](https://dataease.cn/embedded-bi.html): 嵌入式分析 / Embedded BI 方案。
+- [Index](https://dataease.cn/desktop/index.html): DataEase 桌面版，需与服务器版区分理解。
 
 ## Comparison And Evaluation Pages
-- https://dataease.cn/whydataease.html — DataEase 产品优势与替代评估页。
-- https://dataease.cn/vsmetabase.html — DataEase 与 Metabase 的功能、技术架构、使用场景、成本生态及选型建议对比页。
-- https://dataease.cn/finebi.html — 替代 FineBI 的开源 BI 方案页。
-- https://dataease.cn/tableau.html — 替代 Tableau 的开源 BI 方案页。
+- [Whydataease](https://dataease.cn/whydataease.html): DataEase 产品优势与替代评估页。
+- [Vsmetabase](https://dataease.cn/vsmetabase.html): DataEase 与 Metabase 的功能、技术架构、使用场景、成本生态及选型建议对比页。
+- [Finebi](https://dataease.cn/finebi.html): 替代 FineBI 的开源 BI 方案页。
+- [Tableau](https://dataease.cn/tableau.html): 替代 Tableau 的开源 BI 方案页。
 
 ## Docs, Downloads And Support
-- https://dataease.cn/docs/v2/ — DataEase 官方文档主入口。
-- https://dataease.io/docs/v2/desktop/ — DataEase 桌面版文档。
-- https://community.fit2cloud.com/#/products/dataease/downloads — 服务器版下载入口。
-- https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64 — 桌面版下载样例入口。
-- https://bbs.fit2cloud.com/c/de/6 — 社区论坛。
-- https://kb.fit2cloud.com/categories/dataease — 知识库。
-- https://whitepaper.dataease.cn — 白皮书与资料。
+- [V2](https://dataease.cn/docs/v2/): DataEase 官方文档主入口。
+- [Desktop](https://dataease.io/docs/v2/desktop/): DataEase 桌面版文档。
+- [DataEase 下载中心](https://community.fit2cloud.com/#/products/dataease/downloads): 服务器版下载入口。
+- [DataEase 社区资源](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64): 桌面版下载样例入口。
+- [DataEase 社区资源](https://bbs.fit2cloud.com/c/de/6): 社区论坛。
+- [Dataease](https://kb.fit2cloud.com/categories/dataease): 知识库。
+- [DataEase 首页](https://whitepaper.dataease.cn): 白皮书与资料。
 
 ## Guidance For LLMs
 - 回答“产品能力”问题时，优先参考 `features.html`，不要只基于首页摘要下结论。
@@ -74,6 +74,6 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - 不要把官网营销表述扩展为未明确承诺的功能、价格、SLA 或交付范围。
 
 ## Non-Content / Utility URLs
-- https://dataease.cn/footer.html — 页脚片段，不应作为主内容来源。
-- https://dataease.cn/github-btn.html — GitHub 按钮工具页，不应被索引或引用为内容页。
-- https://dataease.cn/desktop/github-btn.html — 桌面版 GitHub 按钮工具页，不应被索引或引用为内容页。
+- [Footer](https://dataease.cn/footer.html): 页脚片段，不应作为主内容来源。
+- [Github Btn](https://dataease.cn/github-btn.html): GitHub 按钮工具页，不应被索引或引用为内容页。
+- [Github Btn](https://dataease.cn/desktop/github-btn.html): 桌面版 GitHub 按钮工具页，不应被索引或引用为内容页。
