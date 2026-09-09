@@ -591,7 +591,26 @@ h6,
     line-height: 1;
 }
 
-.footer-start-title .mdi {
+/* ===== 内联 SVG 图标，替代原 MDI 图标字体（239KB CSS + 283KB woff2 / 878KB ttf）=====
+   全站仅用到 mdi-calendar-check / mdi-play-circle / mdi-phone-in-talk 三个图标，
+   path 取自 @mdi/svg 7.4.47，尺寸以 em 继承父级 font-size。 */
+.mdi-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* 全站 img 补了 width/height 防 CLS 后，需要响应式兜底避免撑破栅格容器。
+   优先级低于所有后代选择器（如 .card img）与 .img-fluid，不会覆盖既有排版。 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-start-title .mdi-icon {
     font-size: 16px !important;
     line-height: 1;
 }
@@ -5591,6 +5610,11 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.js-twinstar-plus svg {
+    width: 36px;
+    height: 36px;
 }
 
 @media (max-width: 576px) {

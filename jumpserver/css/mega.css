@@ -190,7 +190,9 @@ th.visible-print,td.visible-print {
 }
 
 .mega-nav-sandbox .mega-nav-banner-logo>img {
-	height: 22px
+	height: 22px;
+	max-width: none;
+	width: auto
 }
 
 .mega-nav-sandbox .mega-nav-banner-item:first-child {
