@@ -9,17 +9,79 @@
         <meta name="author" content="FIT2CLOUD 飞致云" />
         <meta name="email" content="support@fit2cloud.com" />
         <link rel="shortcut icon" href="../images/logo/favicon.ico" />
-        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="../css/mega.css" />
-        <link href="../css/animate.css" rel="stylesheet" />
-        <link href="../css/animations-delay.css" rel="stylesheet" />
-        <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
-        <link href="../css/index.css" rel="stylesheet" type="text/css" />
-        <link href="../css/customer-detail.css" rel="stylesheet" type="text/css" />
+        <!-- 关键资源预加载与连接 -->
+        <link rel="preload" href="../images/banner/banner9.webp" as="image" fetchpriority="high" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+        <!-- Critical CSS（首屏必需，避免阻塞渲染） -->
+        <style>*,*::before,*::after{box-sizing:border-box}
+            body{margin:0;font-family:"Source Han Sans SC","Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#3c4858;text-align:left;background-color:#fff}
+            .container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+            @media (min-width:992px){.container{max-width:960px}}
+            @media (min-width:1200px){.container{max-width:1140px}}
+            .row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}
+            .col-12,.col-lg-12,.col-md-12{position:relative;width:100%;padding-right:12px;padding-left:12px}
+            @media (min-width:992px){.col-lg-12{flex:0 0 100%;max-width:100%}}
+            .justify-content-center{justify-content:center!important}
+            .text-center{text-align:center!important}
+            .text-light{color:#f8f9fa!important}
+            .mt-2{margin-top:.5rem!important}
+            .mt-4{margin-top:1.5rem!important}
+            .mb-2{margin-bottom:.5rem!important}
+            .pt-2{padding-top:.5rem!important}
+            .bg-half{padding:184px 0 90px;position:relative;background-size:cover;background-position:center center}
+            .bg-half-170{padding:170px 0;position:relative;background-size:cover;background-position:center center}
+            .bg-half-260{padding:260px 0;position:relative;background-size:cover;background-position:center center}
+            @media (max-width:768px){.bg-half{padding:130px 0 60px}.bg-half-170{padding:120px 0}.bg-half-260{padding:150px 0}}
+            .bg-dark{background-color:#3c4858!important}
+            .d-table{display:table!important}
+            .w-100{width:100%!important}
+            .title-heading{line-height:26px}
+            .title-heading .heading,.title-heading h1{font-size:45px;letter-spacing:1px;font-weight:700;color:#fff}
+            @media (max-width:768px){.title-heading .heading,.title-heading h1{font-size:35px!important}}
+            h1,h5{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2}
+            h5{font-size:1.25rem}
+            .btn{display:inline-block;font-weight:400;text-align:center;vertical-align:middle;border:1px solid transparent;padding:.375rem .75rem;font-size:.875rem;line-height:1.5;border-radius:.25rem}
+            .btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}
+            #topnav{position:relative;z-index:1030}
+            @media (min-width:992px){#topnav{position:fixed;top:0;right:0;left:0;background:0 0}}
+            .mega-nav-sandbox{width:100%}
+            .mega-nav-sandbox *{letter-spacing:0;line-height:1.42857143;margin-bottom:0;margin-top:0;text-transform:none}
+            .mega-nav-sandbox .mega-nav-banner{background-color:#000;color:#fff;font-size:16px;min-height:3em;align-items:center;display:flex}
+            .mega-nav-sandbox .mega-nav-banner>.container{align-items:center;display:flex}
+            .mega-nav-sandbox .mega-nav-banner-logo>img{height:22px}
+            .mega-nav-sandbox .mega-nav-banner-item:last-child{margin-left:auto}
+            .mega-nav-sandbox .mega-nav{display:inline-block;font-size:14px;line-height:1.35714}
+            .mega-nav-sandbox .mega-nav,.mega-nav-sandbox .mega-nav *{box-sizing:border-box}
+            .mega-nav-sandbox .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}
+            .mega-nav-sandbox .mega-nav-banner{background-color:#000;color:#fff;font-size:16px;min-height:3em;align-items:center;display:flex}.mega-nav-sandbox .mega-nav-banner>.container{align-items:center;display:flex}.mega-nav-sandbox .mega-nav-banner-logo>img{height:22px;display:block}.mega-nav-sandbox .mega-nav-tagline{align-items:center;display:inline-flex;margin-bottom:0;vertical-align:-1px;font-size:16px;color:#fff}.mega-nav-sandbox .mega-nav{font-size:14px;line-height:1.35714;display:inline-block}.mega-nav-sandbox .mega-nav,.mega-nav-sandbox .mega-nav *{box-sizing:border-box}.mega-nav-sandbox .mega-nav-icon{display:inline-block;width:1em;height:1em;fill:currentColor;stroke:currentColor}.mega-nav-sandbox .mega-nav-icon-angle-right{width:.8em;height:.8em;color:#8492a6;transform:rotate(-90deg)}.mega-nav-sandbox .mega-nav-ctrl{background-color:transparent;border:0;margin-left:.5em;padding:0;text-align:center;vertical-align:middle}.mega-nav-sandbox .mega-nav-ctrl-items{align-items:center;display:flex;padding-top:1px}.mega-nav-sandbox .mega-nav-icon-outline{border:1px solid #8492a6;margin-top:-1px;padding:.5em}
+            #topnav{position:fixed;top:0;right:0;left:0;z-index:1030;background-color:transparent;border:0;transition:none}#topnav>.container{padding-right:15px;padding-left:15px}#topnav .logo{float:left;line-height:68px;padding-bottom:6px;color:#3c4858}#topnav .logo>img{height:35px;display:inline-block;vertical-align:middle}#topnav .logo .l-dark{display:none}#topnav .logo .l-light{display:inline-block;height:35px}.mega-nav-sandbox .mega-nav-banner-item:last-child{margin-left:auto}.mega-nav-sandbox .mega-nav-icon-outline .mega-nav-icon{display:block}.mega-nav-sandbox .mega-nav{font-size:14px;line-height:19px}.mega-nav-sandbox .mega-nav-banner{font-family:klavika-web,"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}.title-heading{line-height:26px}.title-heading h1{font-size:45px;line-height:1.28;font-weight:700}.text-light{color:#f8f9fc}.btn{display:inline-block;font-size:16px;font-weight:700;line-height:1.35;padding:10px 22px;border-radius:8px;text-decoration:none}.btn-primary{background-color:#2b937c;color:#fff}.menu-btn{padding:8px 10px;font-size:14px;font-weight:400;line-height:1.35;display:inline-block;border-radius:8px;text-decoration:none;white-space:nowrap}.mega-nav-sandbox *{line-height:1.42857143;margin-top:0;margin-bottom:0;text-transform:none;letter-spacing:0}.mega-nav-sandbox .mega-nav-tagline{font-size:15px;line-height:32px;color:#bcc7d6;font-weight:500;font-family:"Source Han Sans SC","Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif}#topnav .menu-btn{display:inline-flex;align-items:center;justify-content:center;height:38px;min-height:38px;padding:0 16px;line-height:1;vertical-align:middle;font-size:14px;font-weight:400}.icons{display:inline-block;width:24px;height:24px;vertical-align:middle}.mega-nav-sandbox .mega-nav .visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}#topnav .navigation-menu{list-style:none;margin:0;padding:0}#topnav .menu-extras{float:right}#topnav .buy-button{float:right}@media (min-width:992px){#topnav #navigation{display:block;text-align:center}#topnav .submenu{text-align:left}#topnav .navigation-menu{display:inline-flex;justify-content:center;align-items:center}#topnav .navigation-menu>li{float:left;display:block;position:relative;margin:0 8px}#topnav .navigation-menu>li:first-child{margin-left:90px}#topnav .navigation-menu>li:last-child{display:flex;align-items:center;justify-content:center;margin-left:90px;min-height:70px}#topnav .navigation-menu>li>a{display:block;font-size:15px;font-weight:700;line-height:24px;padding:25px 10px;min-height:62px;text-transform:uppercase}#topnav:not(.nav-sticky):not(.scroll):not(.de-blog-nav) .navigation-menu>li>a{color:#ffffff!important;text-shadow:0 1px 2px rgba(15,32,51,.32)}#topnav:not(.nav-sticky):not(.scroll):not(.de-blog-nav){background:linear-gradient(180deg,rgba(12,26,38,.34) 0%,rgba(12,26,38,.12) 62%,rgba(12,26,38,0) 100%)}#topnav .navbar-toggle{display:none}#topnav .navigation-menu>li .submenu{position:absolute;top:100%;left:0;visibility:hidden;opacity:0;list-style:none;padding:0;margin:0}}@media (max-width:991px){#topnav #navigation{display:none}#topnav .navbar-toggle{display:block}}
+        </style>
+        <!-- 非关键 CSS 异步加载（避免阻塞首屏渲染） -->
+        <link rel="preload" href="../css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/mega.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/colors/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="../css/customer-detail.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript>
+            <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+            <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+            <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+            <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+            <link rel="stylesheet" href="../css/mega.css" />
+            <link href="../css/animate.css" rel="stylesheet" />
+            <link href="../css/animations-delay.css" rel="stylesheet" />
+            <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+            <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
+            <link href="../css/index.css" rel="stylesheet" type="text/css" />
+            <link href="../css/customer-detail.css" rel="stylesheet" type="text/css" />
+        </noscript>
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
         <link rel="canonical" href="https://www.jumpserver.org/customers/yineng.html" />
@@ -211,7 +273,7 @@
         </header>
 
         <main id="main-content">
-            <section class="bg-half bg-dark d-table w-100" style="background-image: url('../images/banner/banner9.png')">
+            <section class="bg-half bg-dark d-table w-100" style="background-image: url(../images/banner/banner9.webp)">
                 <div class="bg-overlay"></div>
                 <div class="container">
                     <div class="row justify-content-center">
