@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -269,186 +268,147 @@
                         12月21日，JumpServer开源堡垒机正式发布v2.6.0版本。该版本的新增功能包括：新增系统监控功能，方便监控各个组件健康状态；支持通过Excel文件对资源进行导入/导出；支持手动修改资产信息配置；支持对指定资产进行批量推送系统用户；以及统一社区版和企业版Release包。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":1} -->
                     <h1>新增功能</h1>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 新增系统监控功能（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.6.0版本中，新增系统监控功能，提供Prometheus的API调用进行各个组件状态的监控。点击“X-Pack”→“系统监控”，我们可以很方便地通过图形界面化所展示的信息，观察KoKo、Guacamole、OmniDB组件的状态，以及各个组件在线会话的数量等信息。也可以在“会话管理”→“终端管理”中查看各个组件的CPU负载、磁盘使用率、内存使用率，以及组件状态等信息。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1703,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20201222/image-01.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图1 系统监控功能图形化信息展示</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1704,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图2 系统监控功能表格化信息展示</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持Excel文件格式对资源导入/导出</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.6.0版本中，支持Excel文件的导入/导出。在之前版本中，我们仅支持CSV文件的导入导出。为满足更广大用户的需求，我们在这个版本中新增了Excel文件的导入导出。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>① 导出：</strong>在对某个资源进行导出时，只需选择导出文件类型以及导出范围，即可导出对应文件类型文件。例如在导出表单中选择“Excel”，则导出的就是Excel文件格式的数据；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>② 导入：</strong>在对某个资源进行导入时，只需选择导入的文件类型以及上传该文件类型的资源。例如在导入表单中选择“Excel”文件类型，并上传文件，点击“确认”按钮即可将Excel数据导入。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1705,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图3 导出Excel数据</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图4 导入Excel数据</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 支持手动修改资产信息配置</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.6.0版本中，我们支持手动修改资产的信息配置。管理员只需在资产列表页面中，点击某个资产的“配置更多信息”按钮，即可很方便地编辑该资产的信息，包括硬件信息、操作系统信息等。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1706,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图5 点击某台资产的“配置更多信息”按钮，获取修改资产配置信息表单</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图6 管理员可修改该资产的硬件信息、操作系统等信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 支持对指定资产进行批量推送系统用户</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.6.0版本中，支持对指定资产进行批量推送系统用户。管理员获取某个可推送系统用户的详情页，点击“资产列表”标签页，勾选需要批量推送的资产，然后点击页面左上角的“推送所选”按钮即可批量推送该系统用户。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1707,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20201222/image.webp" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图7 勾选需要批量推送的资产，点击“推送所选”按钮，即可批量推送该系统用户</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5.支持密码过期后引导用户重置密码</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.6.0版本中，我们支持密码过期后引导用户进行密码重置。之前用户密码过期则提示密码过期，无法登录，需要管理员重置其密码才可重新登录。现在我们支持用户密码过期。在登录时，提示其密码过期，引导用户进行密码重置，重置成功后即可正常登录使用。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":1} -->
                     <h1>功能优化</h1>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化Telnet资产系统用户含有user关键字连接失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化登录页面的验证码模块；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化用户授权资产列表加载速度；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化用户列表响应慢的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 新增用户登录日志添加认证方式字段；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 支持表头过滤字段进行资源过滤；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 支持应用分组织展示（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":1} -->
                     <h1>Bug修复</h1>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复推送动态系统用户时报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复创建自动推送的应用授权后系统用户没有自动推送的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复某些列表没有克隆创建的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复清除幽灵会话失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复用户详情页面中应用授权列表的过滤问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复Default节点迁移的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复只配置DC域时，LDAP用户认证失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复腾讯云获取实例公网IP为None的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复AWS同步时获取系统平台为None的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复用户离开组织后授权的资产没主动刷新的问题（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
@@ -513,7 +473,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

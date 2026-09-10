@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,111 +266,85 @@
                 <div class="de-article-content">
                     <p><em>编者注：2022年5月，JumpServer开源社区访谈了来自成都的社区用户蔡庆辉先生，以下内容根据本次访谈的内容整理而成。</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 关键词：易用（使用方便、部署简单）</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 首个部署版本：JumpServer开源堡垒机v2.13.2版本（2021年8月发布）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>怎么认识JumpServer？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2021年5月，我才开始接触到计算机行业。公司主要是为用户提供技术类服务，在上海、深圳、广州和成都设有四个机房，资产大概在2000多台的规模。当时公司有堡垒机使用的需求，6月通过朋友的介绍了解到JumpServer开源堡垒机项目。之前我没有接触过其他堡垒机，上手使用的第一款堡垒机就是JumpServer。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer有哪些吸引你的地方？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>从一个IT运维新人的角度，JumpServer开源堡垒机有几个地方对于我来说是非常友好且方便的：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 开源</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>市面上开源的堡垒机本身就比较少，而JumpServer开源堡垒机提供了一个开放、兼容的平台，让更多的用户可以相互沟通进步，共筑安全生态；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 批量管理大规模资产</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>由于我们公司的资产规模比较大，有时候需要批量部署一些程序和脚本。通过JumpServer可以批量管理资产，批量对资产进行操作。这样一来，我们的运维效率就大大提高了。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 用户访问权限控制的需要</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         当时是有用户提出需求，需要访问我们的机器设备。而我们的机器大部分都是部署在内网上，出于安全考虑，就需要对用户的权限进行控制。用户可以通过内部搭建的JumpServer映射出去，访问到我们内网的设备。同时，我们也可以通过JumpServer对客户的访问权限进行一些限制，这种对资产的访问权限的控制确实满足了我们的刚需。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer的部署架构</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>我们的JumpServer部署架构比较简单。公司分别在上海、深圳、广州、成都设有四个机房，在四个机房分别独立部署JumpServer开源堡垒机，直接管理本地的机器。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer的亮点功能有哪些？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 使用部署方便</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>我也是刚接触到这个行业没多久，虽然是第一次部署堡垒机，但是参照JumpServer官方文档进行部署，就可以实现一键部署，非常简单方便，版本升级也很顺滑。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>同时，JumpServer的Web页面也很简洁，容易快速上手，没有很复杂的客户端流程，让我们这些技术人员能够花费更少的时间成本来学习堡垒机本身的使用技能，很大程度上提升了用户的使用体验和效率。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 权限控制</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>很多公司内、外部用户有访问我们本地资产的需求，我们可以通过JumpServer赋予不同的用户不同的权限，对客户的访问行为进行控制，这样我们整体系统运维的安全性就得到了保障。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 命令过滤</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>通过JumpServer我们可以实现对授权用户所执行命令的控制，同时借助JumpServer的危险命令报警功能，防止用户的误操作行为对公司系统运营产生的不利影响。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 批量发送命令</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>批量发送命令也是我们使用频率比较高的一个功能，有效地提高了运维效率。当然，如果能够增加命令搜索的功能就更好了。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 资产管理</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer上添加资产、导入/导出都十分方便，可以通过一条命令批量添加资产，让我们的运维管理工作变得轻松，管理效率大大提升。当然，未来也希望JumpServer能够增加搜索资产、多选资产的功能。</p>
                     <!-- /wp:paragraph -->
@@ -436,7 +409,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

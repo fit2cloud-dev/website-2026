@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,203 +266,164 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20210524/image-01.png" width="824" height="342" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>5月24日，JumpServer开源堡垒机正式发布v2.10.0版本。在该版本中，JumpServer支持用户通过企业微信、钉钉进行登录，满足了更多企业用户的实际需求。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         这一版本的JumpServer还新增了Lion图形化连接组件，该组件主要是使用Golang和Vue.js重构了JumpServer的Guacamole组件。Lion图形化连接组件极大地优化了对系统资源的占用，增强了JumpServer对RDP/VNC协议会话的管理与控制，完善了原有的连接、终断、上传/下载、录像上传、文件上传/下载审计等功能，并且新增了Windows会话监控的功能。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer企业版附含的X-Pack增强包新增命令复核功能，针对风险命令，审批人可审批该命令是否可以执行。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 支持用户通过企业微信、钉钉登录到JumpServer</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.10.0版本中，支持用户通过企业微信、钉钉进行登录，以满足更多企业的实际需求。管理员只需在“系统设置”→“企业微信”或者“钉钉”配置好相应的信息，用户在个人信息中点击绑定企业微信或钉钉，按要求进行扫码即可绑定成功。在登录页面点击“企业微信”或“钉钉”，扫码后即可成功登录到JumpServer。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-02.png" width="1919" height="943" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图1 企业微信认证配置</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-03.png" width="1919" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图2 钉钉认证配置</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-04.png" width="1919" height="941" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图3 在用户个人信息页面绑定企业微信或者钉钉</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-05.webp" width="1919" height="946" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图4 登录JumpServer欢迎界面，点击“企业微信”或者“钉钉”扫码登录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 新增Lion图形化连接组件，支持RDP/VNC协议的会话监控</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.10.0版本中，新增Lion图形化连接组件。该组件主要是使用Golang和Vue.js重构了JumpServer的Guacamole组件。Lion图形化连接组件极大地优化了对系统资源的占用，增强了JumpServer对RDP/VNC协议会话的管理与控制，完善了原有的连接、终断、上传/下载、录像上传、文件上传/下载审计等功能，并且新增了Windows会话监控的功能。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-06.png" width="1919" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图5 连接RDP/VNC资产，右侧新增快捷键、剪贴板、文件管理功能</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-07.png" width="1919" height="952" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图6 支持监控RDP/VNC协议会话</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 新增命令复核功能（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         JumpServer
                         v2.10.0版本的X-Pack增强包新增了命令复核功能。管理员选择“命令过滤”→“命令过滤规则”，即可创建一个命令过滤复核动作的规则。管理员可以根据需要设定规则，对规则类型、规则内容、审批人等信息进行设置。然后，将该命令过滤设置给某个系统用户，当用户使用该系统用户登录资产时，输入该规则中的命令，即会发送命令复核工单给审批人。待审批人同意后，该命令才可执行。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-08.png" width="1909" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图7 创建命令复核规则</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-09.png" width="1919" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图8 将该规则指定给某些系统用户</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-10.png" width="1917" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图9 系统用户执行该规则中的命令，需要等待审批人同意后，方可执行</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-11.png" width="1919" height="944" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图10 审批人同意该命令执行，则命令执行成功</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210524/image-12.png" width="1919" height="946" alt="支持企业微信、钉钉登录和Windows会话监控，JumpServer v2.10发布" loading="lazy" / decoding="async"/>
                         <figcaption>图11 审批人拒绝该命令执行，则命令执行失败</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化过期用户可以立即退出登录；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化资产授权过期时在线会话自动断开；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化创建ElasticSearch命令存储时可设置是否忽略SSL证书；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化用户公钥设置功能，管理员可配置是否允许用户设置公钥；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;优化管理员可以设置用户下次登录前是否需要修改密码；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化授权导入功能，支持使用用户名、资产名、IP、节点路径、系统用户名称进行导入；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化管理员可设置历史密码不可重复次数；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化节点删除设计，在删除节点时可以同时删除不包含子孙资产的子孙节点。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;修复创建资产时Protocols字段默认值有误的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;修复创建资产不传Nodes报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>修复上传XSLX文件中包含数字类型数据时报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;修复上传超大文件超时问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>优化管理员可以设置用户下次登录前是否需要修改密码；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;</strong>修复数据库组件网关不传递密码报错的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;修复改密计划页面更新资产、节点报错的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong>&nbsp;修复收集用户任务创建不填写周期执行报错的问题（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
@@ -528,7 +488,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

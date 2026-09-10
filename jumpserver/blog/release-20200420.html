@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -270,98 +269,78 @@
                         V1.5.8版本中，新增的在线会话监控功能允许管理员实时地监控在线SSH/Telnet会话，且不影响该会话的正常操作。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1、在线会话监控</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         JumpServer
                         V1.5.8版本新增在线会话监控功能，允许管理员和审计员加入当前在线的SSH/Telnet会话，获取当前会话的实时输入/输出信息，并且不会对此会话产生任何影响。同时，该版本支持分布式KoKo，前提是KoKo使用Redis进行消息交换，图形化的实时监控功能还在计划之中。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1144,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200420/image-01.webp" width="1024" height="478" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 在线会话界面新增监控功能</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1143,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200420/image-02.webp" width="1024" height="518" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 左图为用户使用页面，右图为管理员看到的输入/输出信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2、针对特殊用户（例如Root、Administrator等）的批量改密操作（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer V1.5.8版本支持特权账户改密，原来的版本因为安全原因禁止更改Root和Administrator的密码。新版本对改密算法进行了增强，开放了更改特权账号的限制。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1142,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200420/image-03.webp" width="1024" height="479" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 特权账号改密任务列表</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3、同步实例任务可覆盖同步的资产信息（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer V1.5.8版本在“云管中心”创建同步实例时，允许管理员选择是否以云上资产为准覆盖本地已同步的资产信息。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1141,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200420/image-04.webp" width="1024" height="524" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 在“云管中心”中选择“创建同步实例”，允许选择是否覆盖资产信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化用户API，添加Admin_org字段；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化录像存储功能，创建录像存储时自动清除字段值两端的空白字符；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化取当前组织的优先级。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug 修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复列表日期显示的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复命令记录导出的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复API的Bug；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ KOKO修复使用Azure云存储时录像上传的问题。</p>
                     <!-- /wp:paragraph -->
@@ -426,7 +405,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

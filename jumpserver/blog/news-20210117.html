@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -270,66 +269,51 @@
                         users who access their JumpServer through the public network.
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>The affected versions as follows:</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &lt; v2.6.2</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &lt; v2.5.4</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &lt; v2.4.5</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>The safety versions as follows:</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &gt;= v2.6.2</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &gt;= v2.5.4</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer &gt;= v2.4.5</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>How to fix</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>It is highly recommended that users of JumpServer (including community version and enterprise version) upgrade to the safety version as soon as possible.&nbsp;</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>How to fix temporary</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>Please modify the Nginx configuration file to shield the vulnerable interface:</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:list -->
                     <ul>
                         <li>/api/v1/authentication/connection-token/</li>
                         <li>/api/v1/users/connection-token/</li>
                     </ul>
                     <!-- /wp:list -->
-
                     <!-- wp:paragraph -->
                     <p>The location of the Nginx configuration file is as follows:</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>Previous community version
@@ -340,11 +324,9 @@
                         jumpserver-release/compose/config_static/http_server.conf</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:paragraph -->
                     <p>The instance of the Nginx configuration file as follows:</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>### make sure it is added before /api and /
@@ -367,15 +349,12 @@
                         ...</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:paragraph -->
                     <p>Restart the Nginx service after modifying the configuration file.</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Acknowledgement:</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>Thanks to the reactivity of Alibaba Hackerone bug bounty program (Sweden) for submitting this bug to us.</p>
                     <!-- /wp:paragraph -->
@@ -440,7 +419,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

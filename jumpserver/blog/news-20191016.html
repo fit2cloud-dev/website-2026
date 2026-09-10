@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,7 +266,6 @@
                 <div class="de-article-content">
                     <p><strong>作者：</strong>大智慧 吴守畅</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:quote -->
                     <blockquote class="wp-block-quote">
                         <p>
@@ -276,113 +274,90 @@
                         </p>
                     </blockquote>
                     <!-- /wp:quote -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4><strong>前言</strong></h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         对于中国的股民来说，“大智慧”是一个广为人知的证券投资服务品牌。作为中国领先的互联网金融信息服务提供商，大智慧股份有限公司（以下简称为大智慧）的前身是成立于2000年12月的上海大智慧网络技术有限公司。2009年12月，公司整体变更为股份有限公司，并于2011年成功在上交所上市。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"align":"center","id":884} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/news-20191016/image-01.webp" width="1920" height="1080" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         从成立之日起，大智慧就致力于以软件终端为载体，以互联网为平台，向投资者提供及时、专业的金融数据和数据分析。伴随着业务的不断发展，大智慧的IT基础设施规模也在快速扩张。尤其是随着公有云在企业内部的持续使用，大智慧的IT基础设施已经形成包括公有云和本地数据中心在内的混合IT架构。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         为了解决混合IT架构中服务器统一访问鉴权及安全审计问题，并配合企业完成等保2.0安全合规的评审工作，经过对多家堡垒机的调研，大智慧最终选择了Jumpserver堡垒机作为运维审计管理解决方案。基于Jumpserver堡垒机软件订阅服务提供的实施服务支持，大智慧于2019年3月完成两套Jumpserver堡垒机的上线部署，并安全运行至今。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4><strong>挑战：主机运维审计与多公有云环境的适配</strong></h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>证券信息服务行业的客户对于证券信息获取的及时性、高效性和权威性是十分看重的。为了更好地满足用户的要求，大智慧很早就尝试使用公有云，希望充分利用公有云广布局、高弹性等特点满足客户在信息获取及时性等方面的需求。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         考虑到不同公有云的特点以及避免供应商锁定的问题，大智慧在2017年完成公有云试点使用后，在2018年引入了四家国内主流的公有云供应商，并形成主要业务在多家公有云合理分布式部署的格局。与此同时，因为部分合规管理及子公司业务要求，大智慧还保留了部分本地数据中心来运行敏感性和特殊性业务。这样一来，大智慧的IT架构就形成了充分的混合性，实现企业在基础设施层面性能、效率、成本和安全合规的再平衡。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>随着混合IT基础设施的搭建完成，大智慧原有的运维审计管理体系出现了与业务发展相脱节、管理成本高、使用体验差以及和公有云适配能力弱等问题。具体来说包括以下几个方面：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 随着越来越多业务运行在公有云之上，主机运维审计管理系统需要能更好地适配公有云，包括更好地在公有云上部署运行、跨不同公有云供应商的统一管理，以及实现系统与公有云主机服务API的对接等；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 随着企业主机资产规模的快速扩张，主机运维审计管理系统需要能够帮助运维人员实现资产管理，让资产的归属与其访问授权管理进行关联；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 随着浏览器能力持续提升，大智慧希望，主机运维审计管理系统能够抛弃原有的浏览器插件模式，实现“浏览器原生”的访问模式。这在降低管理成本、提升用户使用体验方面有非常大的帮助和意义。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4><strong>实现：量身打造的分布式部署方案</strong></h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>经过充分的方案选型和验证测试后，大智慧最终选择通过Jumpserver堡垒机解决方案实现建立面向混合IT环境的运维审计管理系统。在具体的方案内容包括：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ Jumpserver堡垒机软件订阅服务及X-Pack增强包：</strong
                         >Jumpserver堡垒机软件订阅服务提供了面向多云环境的运维安全审计服务能力，并附含搭载了面向企业应用场景的商业功能软件包——X-Pack增强包。借助X-Pack增强包中的多云资产纳管、改密计划等功能，大智慧实现了运维审计管理系统与主流公有云API的无缝对接、专业MFA支持、批量自动改密等，切实提升了系统的运维管理效率和安全性；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ 面向混合IT环境的专有分布式部署方案：</strong
                         >Jumpserver核心工程师按照大智慧的IT基础设施架构，设计出一套完善的分布式部署方案。该方案很好地兼顾了大智慧在集中鉴权和就近访问两方面的需求，让分布在多个公有云和本地数据中心的主机资源都能够统一纳管鉴权，用户又能就近访问主机资源；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 订阅服务期的专业支持服务：</strong>Jumpserver软件订阅服务包含了专业的原厂商业支持服务，包括专属的技术支持经理、持续升级的软件安装包、线上问题及时解答，以及线下的现场救援和使用培训。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在方案落地的过程中，专有的分布式部署方案无疑是最大的亮点。这一部署方案充分考虑到了大智慧IT基础设施的分散性、统一管理的必要性，以及主机就近访问的需求。分布式部署方案的架构图如下：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"align":"center","id":912} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/news-20191016/image.webp" width="864" height="466" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph {"align":"center"} -->
                     <p class="has-text-align-center">附图 大智慧Jumpserver堡垒机分布式部署方案</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>注：大智慧使用了多个公有云，且绝大部分基础设施已经在公有云上，但图中仅以一个公有云区域作为示意。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>如附图所示，客户的基础设施分布在本地两个数据中心以及线上的多个公有云。整个Jumpserver分布式部署方案包括以下几个部分：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:list {"ordered":true} -->
                     <ol>
                         <li>首先，选择在企业内部主数据中心部署完整的“主Jumpserver堡垒机”，包括Jumpserver堡垒机的Web端（Luna）、接入端（Coco / Guacamole）和鉴权数据库；</li>
@@ -393,38 +368,30 @@
                         <li>最后，为“主Jumpserver堡垒机”和每个“接入Jumpserver堡垒机”配置好独立的域名，并且利用智能DNS实现多Jumpserver堡垒机的域名智能解析。</li>
                     </ol>
                     <!-- /wp:list -->
-
                     <!-- wp:paragraph -->
                     <p>这一分布式部署方案给大智慧带来的价值包括：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 由于所有的鉴权数据库以及鉴权API请求都会回到“主Jumpserver堡垒机”，分散的主机资产和鉴权管理都得以统一，用户不需要为分散的资产单独部署多套系统并独立进行管理；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         ■ 由于每个区域都有本地的接入端（Coco /
                         Guacamole），并保证每个区域的本地资源都通过本地接入端进行连接，这样就实现了接入端和目标资产之间的就近访问。再结合智能DNS，最终用户会按其所在的地理位置和网络情况选择一个最佳的Jumpserver接入端，这样便实现了从用户到Jumpserver接入端、再到目标资产整个链路上的最优访问方案，即“主机就近访问”。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4><strong>收益：统一管理、高效访问和专业服务</strong></h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>通过Jumpserver堡垒机，大智慧构建了完整、先进的运维审计管理体系，具体的收益包括：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 混合IT环境下分散资产的统一运维管理。</strong>借助Jumpserver堡垒机分布式部署方案，大智慧在本地IDC和多个公有云的分散资产实现了统一管理、统一授权和统一访问入口；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ <strong>简单、高效的主机资产访问体验。</strong>结合Jumpserver堡垒机分布式部署方案中的“就近访问”能力和Jumpserver堡垒机自身的零插件访问能力，用户可以在任何地方仅使用主流浏览器就能够简单、高效地访问主机资产；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ 持续演进的堡垒机功能与服务支持保障。</strong
@@ -492,7 +459,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

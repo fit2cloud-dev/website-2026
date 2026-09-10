@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,216 +266,171 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20220822/image-01.webp" width="1024" height="273" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2022年8月22日，JumpServer开源堡垒机正式发布v2.25.0版本。在这一版本中，用户登录支持OAuth2.0协议认证方式，管理员配置OAuth2相关的认证信息，用户在登录时即可通过OAuth2认证方式进行认证登录。同时，系统设置新增系统⼯具Ping和Telnet，更方便用户检测网络的连通情况和分析网络速度。另外，客户端拉起支持Deepin（深度）国产操作系统。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>X-Pack增强包方面，针对短信服务，JumpServer除了支持腾讯云和阿里云的短信服务外，在这一版本新增支持CMPP v2.0协议短信网关。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         另外，在“云同步”模块中，JumpServer新增支持局域网同步。目前，JumpServe所支持的云平台除了阿里云、腾讯云、华为云、百度云、京东云、AWS（中国）、AWS（国际）、Azure（中国）、Azure（国际）、谷歌云、VMware、青云私有云、华为私有云、OpenStack、Nutanix、华为Fusion
                         Compute以外，还支持局域网同步，满足了企业在多云资产纳管方面的实际需求，协助用户实现对私有云、公有云资产的统一纳管。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>新增功能</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 用户登录支持OAuth2.0协议认证方式</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.25.0版本中，用户登录支持OAuth2.0协议认证方式。管理员可以选择“系统设置”→“认证设置”→“OAuth2”，配置相关的认证信息，并开启该认证。这样一来，用户登录页面后就可以选择OAuth2认证方式进行认证登录。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3776,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 选择“系统设置”→“认证设置”→“OAuth2”：以新浪微博为例，配置OAuth2认证</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3777,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 登录页面：用户可以点击weibo认证进行认证登录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3778,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 用户扫描二维码进行认证登录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 系统设置新增系统⼯具Ping和Telnet</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.25.0版本中，系统设置新增系统⼯具Ping和Telnet。管理员选择“系统设置”→“系统工具”，即可使用Ping或者Telnet系统工具，用户能够更加方便地检测网络的连通情况和分析网络速度。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4659,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 使用Ping和Telnet检测网络的连通情况</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 客户端拉起支持Deepin（深度）国产操作系统</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.25.0版本中，客户端拉起新增支持Deepin（深度）国产操作系统。用户使用Deepin操作系统，登录JumpServer连接资产时，选择SSH Client或RDP客户端连接方式，即可直接拉起本地相应的SSH客户端或RDP客户端。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3779,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 Deepin（深度）操作系统拉起本地RDP客户端</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 短信服务支持CMPP v2.0协议（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.25.0版本中，短信服务在腾讯云和阿里云短信服务的基础上新增对CMPP v2.0协议短信网关的支持。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员在“系统设置”→"短信设置“中，选择“CMPP v2.0”选项进行配置，并且启用SMS。用户在“个人信息”页面中，开启多因子（MFA）认证，同时启用短信认证。此后，用户在登录二次认证时，即可使用该CMPP短信服务进行短信验证码认证。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3780,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 CMPP v2.0短信服务配置（X-Pack增强包内）</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3781,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 用户在登录二次认证时，即可使用该CMPP短信服务进行短信验证码认证</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5. 云同步支持局域网同步（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.25.0版本中，在“云同步”模块新增支持局域网同步。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         目前，JumpServe支持的云平台除了阿里云、腾讯云、华为云、百度云、京东云、AWS（中国）、AWS（国际）、Azure（中国）、Azure（国际）、谷歌云、VMware、青云私有云、华为私有云、OpenStack、Nutanix、华为Fusion
                         Compute以外，还支持局域网同步，满足了企业在多云资产纳管方面的实际需求，协助用户实现对私有云、公有云资产的统一纳管。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员选择”资产列表“→”云同步“，创建局域网账号，并且创建局域网同步任务，即可将符合规则的局域网IP同步到JumpServer进行统一纳管。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3782,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image.webp" width="1024" height="536" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图8 创建局域网账号</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3783,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220822/image-10.webp" width="1024" height="674" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图9 创建局域网同步任务</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2>功能优化</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化配置⽂件⽀持对敏感信息进⾏加密后填写；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化资产树显⽰，⽀持搜索节点；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化⽤户登录规则，根据优先级进⾏匹配；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化第三⽅⽤户登录也验证⽤户登录规则；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化登录失败⽇志中的原因信息；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;通过Luna页⾯连接远程应⽤时，隐藏右侧快捷键弹窗；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化下载RDP⽂件名，解决⽂件名中包含“/”时不能正常拉起客户端的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;⽀持PostgreSQL、MySQL数据库的预处理SQL记录并审计，取消记录Select语句的执⾏结果。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>Bug修复</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复PostgreSQL通过KoKo连接时不⾛⽹关的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复通过Xshell⼯具使⽤rz下载⽂件时后续录像没有记录的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Luna组件左侧树布局折叠展⽰和组织选择问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复⽤户登录每隔⼀⼩时⾃动退出的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复系统平台不能导⼊的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复更新资产账号密码不成功的问题（当资产账号密码结尾是“:”的情况时）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>直播预告</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -539,7 +493,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

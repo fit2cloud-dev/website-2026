@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -274,33 +273,26 @@
                         >一文。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2><strong>一、Kubernetes运维审计现状</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         Kubernetes是一种可自动实施Linux容器操作的开源平台，可以帮助用户省去应用容器化过程中的许多手动部署和扩展操作，其已经成为了容器编排的事实标准。企业基于Kubernetes部署的业务应用越来越多，这样一来，企业用户在Kubernetes的使用和管理上就面临了一些问题：
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;&nbsp;业务线众多，多个团队都需要使用Kubernetes，存在Token复用的情况，用户的身份很难唯一；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;&nbsp;维护人员的操作行为难以约束，如果对容器进行了一些违规、越权操作难以进行阻止；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;&nbsp;维护人员的操作过程不透明，管理人员对于当前有哪些运维人员对集群做了哪些操作完全不清楚，也不清楚这些操作的风险；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;&nbsp;缺乏有效的技术手段来记录和复现用户的操作场景，当出现运维安全事故的时候，无法快速定位故障原因和责任人。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         JumpServer 是广受欢迎的开源堡垒机，是符合4A（包含认证Authentication 、授权Authorization、
@@ -309,179 +301,135 @@
                         >
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在日常运维管理方面，JumpServer内嵌Kubectl客户端，能够直接管控Kubenetes的Kubectl命令；在应用部署和管理方面，JumpServer内嵌Helm客户端，能够直接管控Helm命令进行Kubernetes应用安装管理，并在此基础上能够对Kubectl、Helm命令与操作进行记录、录屏和高危命令阻断。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>下面就来详细介绍下如何通过JumpServer开源堡垒机实现Kubernetes的运维安全审计。&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2><strong>二、划分权限对应关系</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>基于Kubernetes的RBAC（即Role-Based Access Control，基于角色的访问控制）权限能力，并结合JumpServer的系统账号管理能力，企业可以设计不同的权限划分关系，如下图所示：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5210,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-01.webp" width="1024" height="486" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>管理员在Kubernetes为不同的用户或者团队创建不同的SA（即Service Account，服务账户），并且进行相应的RBAC权限控制。同时在JumpServer上为不同的SA创建不同的系统用户，形成如上图一一绑定的关系。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2><strong>三、JumpServer纳管Kubernetes的具体步骤</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>1. 获取Kubernetes集群的访问入口地址；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5211,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 在JumpServer中添加相应的Kubernetes应用；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5212,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 将JumpServer堡垒机对Kubenetes进行授权，结合Kubenetes自身的RBAC权限管控，控制人员的访问权限；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>4. 创建Kubernetes SA账号，并查看Token信息；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5213,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>5. 将JumpServer中的普通用户和Kubernetes角色进行绑定；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5214,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>6. 通过Web Terminal连接Kubernetes资产，普通用户无法在左侧菜单栏查看所有的Pods信息，只能查看所拥有的Namespace下的资产情况，无法获取到其他业务Namespace的状态；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5215,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>7. 支持使用Helm命令。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5216,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2><strong>四、针对高危命令配置审核机制，规避误操作行为</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>1. 添加过滤规则时，管理员可以选择“复核”或者“拒绝”选项进行审核操作；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5217,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 在系统用户列表中，绑定对应的命令过滤器；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5218,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image.webp" width="1024" height="491" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 阻断结果:&nbsp; 当普通用户操作高危命令时，需要管理员进行命令复核才能继续执行。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5219,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-10.png" width="1024" height="508" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2><strong>五、全程跟踪记录Kubernetes的操作过程</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>1. 对于在线用户，管理员可以通过JumpServer进行实时监控，一旦发现有任何异常操作对其立刻阻断；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5220,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-11.webp" width="1024" height="486" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 对于历史会话，管理员可以在线或者下载到本地进行录像查看；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5221,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-12.webp" width="1024" height="489" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 记录Kubernetes集群的操作命令，一旦系统出现故障，能够快速定位故障原因和责任人；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5222,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-13.webp" width="1024" height="494" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>4. 创建会话分享，支持多用户协同办公。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5223,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/security-20221213/image-14.webp" width="1024" height="494" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2><strong>六、价值收益</strong></h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>通过JumpServer实现Kubernetes的运维安全审计，可以对企业的Kubernetes管理带来了一些实质性的价值和收益：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 对于Kubernetes集群管理可以形成统一的运维入口，实现运维操作路径的唯一化；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>2. 通过JumpServer系统账号管理能力和Kubernetes的RBAC权限管控结合，严格控制了访问权限，有效规避了非授权访问带来的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>3. Token托管使得密码管理规范化并且能够有效落地，避免了因人员的流动导致Kubernetes密码外泄的风险；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>4. 能够完整记录运维人员的操作过程，当Kubernetes业务应用因人为操作导致故障的时候，能够通过JumpServer快速定位到问题原因和责任人。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -544,7 +492,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

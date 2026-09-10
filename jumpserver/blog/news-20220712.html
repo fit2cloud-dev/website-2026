@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,95 +266,75 @@
                 <div class="de-article-content">
                     <p>编者注：2022年5月，JumpServer开源社区访谈了来自北京的开源社区用户王新，以下内容根据本次访谈的内容整理而成。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:quote -->
                     <blockquote class="wp-block-quote"><p>■&nbsp;<strong>关键词：</strong>“活下来”很厉害！</p></blockquote>
                     <!-- /wp:quote -->
-
                     <!-- wp:quote -->
                     <blockquote class="wp-block-quote"><p>■&nbsp;<strong>首个部署版本：</strong>JumpServer v0.2版本</p></blockquote>
                     <!-- /wp:quote -->
-
                     <!-- wp:paragraph -->
                     <p><strong>“作为一个开源爱好者，我也接触了很多开源项目。像是堡垒机这个领域，也有过很多开源项目。JumpServer这个项目在2014年创立，能够‘活下来’，还能够保持这样旺盛的生命力和社区活跃度，真的很厉害。”</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph {"align":"right"} -->
                     <p class="has-text-align-right">——JumpServer社区用户 王新</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>怎么认识JumpServer的？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>我使用JumpServer非常早。2016年一个偶然的机会接触到JumpServer开源项目，当时部署的是v0.2版本。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>目前如何使用JumpServer？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         我目前主要从事的是云计算方向的工作，公司在全国设有多个分支机构，在北京总部部署并使用JumpServer。在内网部署，并通过统一的大网连接到各地分支机构，进行统一的运维管理。由于疫情的影响，最近一直是居家办公的状态，整体使用下来，通过JumpServer进行远程运维还是比较方便的。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         算下来从2016年到现在，我使用JumpServer已经有6年的时间了。从v0.2版本到目前正在使用的v2.18版本，可以说是JumpServer的资深忠实用户了。其实，在最开始的时候，我们也尝试过对JumpServer进行二次开发，但是后来看到官方版本的迭代非常快，我们去同步这种迭代是很困难的，最后还是决定跟随着JumpServer的官方版本走。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         我们当时使用JumpServer的第一需求就是资产的纳管。使用下来，通过JumpServer来纳管资产还是比较方便快捷的，提高了运维管理效率，可以满足我们的需求。不过关于批量配置管理这方面，JumpServer做得还不够完善，目前我们还是主要使用Ansible来实现这部分的操作。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>您使用过其他的堡垒机吗？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>之前我们也使用其他品牌的堡垒机。老实说，这些堡垒机对于Windows资产的纳管做得还是比较好的。JumpServer的开源版以Linux资产纳管为主，使用JumpServer开源版已经基本上能够满足我们的需求。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         相比这些硬件堡垒机，JumpServer的优势在于他们的灵活性，因为不涉及硬件资产，部署起来更加灵活，也更轻量化。同时，JumpServer提供了一键部署的能力，我们要部署一台堡垒机不需要寻求厂家的支持，通过自助式的方式就可以实现，版本升级也比较方便。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>另外，我之前也了解过其他一些类似的开源运维安全审计项目，不过使用下来还是JumpServer更智能、方便和快捷。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer的部署架构</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         目前，我们公司的JumpServer部署在纯内网环境，不涉及公网和互联网，采用主备的部署方式，部署架构比较简单。之前我们也考虑过采用分布式的部署架构，但是考虑到维护成本比较高，而且主备方式也基本能够满足我们的需求，所以目前还是保持了主备的部署方式。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer的亮点功能有哪些？</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         JumpServer的审计操作功能是我们高频使用的功能。通过JumpServer的会话回放、会话记录等功能，我们可以对所有的操作进行录屏录像、记录操作命令，并且作为审计依据进行保存。管理员或者运维负责人还可以对操作进行实时监控，一旦发现违规操作，可以立即中断操作，保障了系统的安全性。另外，这些审计信息对系统后端存储容量的要求也不是很大。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>对JumpServer的建议</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>不知道JumpServer是否考虑过提供对具体产品的批量升级功能？这部分的能力会不会出现在JumpServer的研发路线图中？现在都在提“智能运维”的概念，智能的配置变更应该也是一个重要的方向。</p>
                     <!-- /wp:paragraph -->
@@ -420,7 +399,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

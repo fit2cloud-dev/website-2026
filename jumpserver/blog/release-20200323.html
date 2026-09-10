@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -270,159 +269,126 @@
                         V1.5.7版本中，新增的动态系统用户功能允许多用户无冲突地同时连接同一个RDP或者RemoteApp，用户使用体验得到显著提升。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1、动态系统用户</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         JumpServer V1.5.7提出动态系统用户的概念，当用户登录资产时自动使用与其JumpServer用户名相同的系统用户连接资产，而管理员无需再为每个用户创建对应的系统用户，动态系统用户同样支持自动推送（Windows 系统需要安装
                         OpenSSH）。当多个用户通过JumpServer使用同一 RDP/RemoteApp 时，可确保其他正在使用的用户链接不会断开，用户体验得以显著提升。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1092,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-01.webp" width="1024" height="579" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 创建动态系统用户</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1093,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-02.webp" width="1024" height="577" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 Admin用户使用动态系统用户连接到Windows</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1094,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-03.webp" width="1024" height="621" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 普通用户使用同一账户通过动态系统用户连接到Windows</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2、录像下载和离线回放</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer V1.5.7版本支持下载会话录像，可配合 JumpServer Video Player进行离线播放，并附带录像的操作信息。JumpServer Video Player支持Mac 、Windows、Linux 等主流客户端操作系统。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1095,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-04.webp" width="1024" height="488" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 历史会话列表提供录像下载和离线回放</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1096,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-05.webp" width="1024" height="618" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 录像离线播放器</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3、SFTP根路径设置</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer V1.5.7版本支持自定义配置文件的上传路径，允许管理员为不同系统用户指定不同的SFTP挂载目录（目前仅支持Linux资产），降低了管理员操作的复杂性。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1097,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-06.webp" width="1024" height="579" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 创建系统用户可指定SFTP根路径</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4、云管中心支持华为云同步（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer V1.5.7 版本支持同步华为云资产，多云资产纳管能力进一步丰富。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1098,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200323/image-07.webp" width="1024" height="545" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 创建华为云同步账户</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5、支持CAS统一用户登录认证</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>除了使用OpenID、LDAP统一认证外，增加支持CAS统一认证，企业用户对接内部系统增加了新选择。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化前端页面, 提升Dashboard的加载速度；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化资产授权规则，当用户、用户组、资产、节点、系统用户等变更时，实时刷新与其他实体之间的关联关系；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化LDAP/AD配置模块的测试可连接性逻辑，并添加测试用户登录的功能；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化可连接性测试逻辑；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 对部分API（包括资产、系统用户、管理用户等相关API）进行优化；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化改密计划执行（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug 修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复无法删除空节点的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复命令记录、批量命令没有针对组织进行分组显示的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复存在无效Elastic Storage存储时访问命令记录页面失效的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复会对第三方认证用户发送创建用户成功、密码过期提醒邮件的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复Koko主进程偶发性假死的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复Koko Telenet资产网关连接未关闭的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复Guacamole首次启动获取录像存储类型为Null的问题。</p>
                     <!-- /wp:paragraph -->
@@ -487,7 +453,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

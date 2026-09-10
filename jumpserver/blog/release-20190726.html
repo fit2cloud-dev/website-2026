@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -269,121 +268,98 @@
                         <figure class="aligncenter"><img src="../images/blog/release-20190726/image-01.webp" width="1024" height="576" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         “标记我的生活”是当红APP“小红书”代表其庞大的用户群体发出的宣言和告白。作为目前中国最大的生活分享平台，小红书深受年轻一代消费族群的追捧，快速崛起成为明星互联网企业之一。目前，小红书拥有2.5亿注册用户，其中90后用户占比70％，95后用户占比50％。对于年轻一代的消费群体来说，小红书是他们分享生活点滴、获得热门商品信息的种草基地和消费决策入口。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"align":"center"} -->
                     <div class="wp-block-image"><figure class="aligncenter"></figure></div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         从2013年创立至今，小红书，即行吟信息科技（上海）有限公司，一直处于高速发展的状态。在业务规模呈现爆炸式增长的同时，小红书的IT基础设施规模和服务化能力也在快速提升。作为一家以经营线上电商社区为主业的互联网企业，小红书的IT基础设施和业务系统具有典型的互联网属性，大规模的基础设施分布在云端，业务系统采用分布式运行的方式，具有强大的负载弹性。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在针对分布式IT资产的安全管理方面，小红书很早便引入了Jumpserver堡垒机开源版本作为其核心的运维安全审计系统。2019年年初，小红书成功借助Jumpserver堡垒机软件订阅服务实现从早期版本到最新版本的迁移，将大规模且高度分布式的IT资产升级至新版Jumpserver堡垒机的管理体系之下。下面我们来为您复盘小红书基于Jumpserver堡垒机的大规模资产跨版本迁移过程。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>挑战：大规模资产管理需要稳定性保障</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         作为Jumpserver堡垒机的老用户，小红书的IT运维团队已经把Jumpserver堡垒机当做业务运维管理的主入口，承担了非常多的运维管理职责。不过，在实际使用Jumpserver堡垒机开源版本的过程中，小红书的IT运维团队也遇到了一些现实的挑战，主要包括以下几个方面：
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 版本过低，存在潜在的安全风险</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>基于历史原因，小红书长期使用Jumpserver堡垒机的0.3版本，而Jumpserver堡垒机项目已经进行了多个版本迭代，升级至1.4版本，小红书所采纳的早期版本与Jumpserver的最新版本功能性差距较大，早期版本的社区支持已严重滞后；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 管理资产规模巨大，日常维护成本高昂</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>通过Jumpserver堡垒机，小红书管理的IT资产已经从开始几百台主机的规模快速扩张到超过1万台主机的规模。由于Jumpserver堡垒机是小红书IT资产日常运维的主入口，用户数量大且链接负载高，平台运行的性能面临严峻的挑战；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■ 支撑超大规模资产运维安全审计，稳定性更加重要</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         伴随着IT系统运维对堡垒机依赖程度的不断增加，系统稳定运行的重要性也不断攀升。小红书逐渐感受到，通过开源社区获取技术支持的方式在专业性和响应速度方面已经难以达到企业环境大规模运维的需要，希望通过专业化的日常支持、紧急救援和现场培训等服务，确保Jumpserver堡垒机长期稳定地运行。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>改变：跨版本无缝迁移，强化平台能力</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         基于开源版本软件的使用经验和遇到的实际问题，小红书在2019年年初成为了Jumpserver堡垒机软件订阅服务的用户。借助后者所提供的原厂商业支持服务，小红书在短期内成功升级至Jumpserver
                         1.4.9版本，同时部署了多个针对大规模、分布式资产的管理功能，运维管理平台的整体能力得到显著增强。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ 跨版本迁移：</strong
                         >在Jumpserver堡垒机软件订阅服务（企业版）的支持下，小红书在不到一周的时间内成功将Jumpserver堡垒机从0.3.2的老版本升级至1.4.9的新版本。整个迁移过程快速平稳，超过1万台的IT资产安全、完整迁移至新平台，既有的授权规则和使用部门的应用体验也无缝迁移至新平台；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ 功能增强：</strong
                         >借助Jumpserver堡垒机软件订阅服务附含的X-Pack增强包，小红书在其运维管理平台上增加了多云资产纳管、批量密码变更等功能，有效提升了平台的运维管理效率和安全性。所谓“X-Pack增强包”，即为搭载了面向企业应用场景的商业功能软件包，这些增强功能跟随Jumpserver软件版本的演进持续增加。现已上线的增强功能包括改密计划、组织管理、多云资产纳管、RemoteApp和界面自定义等。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>■ 专业服务支持：</strong
                         >借助Jumpserver堡垒机软件订阅服务（企业版），小红书还对其IT运维团队进行了线下培训，培训由Jumpserver核心工程师现场讲解，帮助IT运维团队更好地理解和掌握Jumpserver的核心能力与新增功能。同时，Jumpserver堡垒机软件订阅服务（企业版）还可提供现场安装、紧急救助、软件故障排查等原厂专业支持服务，以保障Jumpserver堡垒机在企业环境长期、稳定地运营。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>收益：快速获取运维管理平台快速演进能力</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>从开源版本到软件订阅服务，小红书对Jumpserver堡垒机的使用经历了从粗放到精进的转变。这一过程也对很多Jumpserver用户有着重要的借鉴意义。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         Jumpserver堡垒机软件订阅服务帮助小红书在短时间内升级至新版本，由此提升了平台的安全性，获得了更加丰富的功能。对于小红书这样业务高速增长的互联网企业来说，上万台资产在运维管理平台的迁移是一项浩大的工程。借助Jumpserver软件订阅服务所提供的原厂商业支持服务，小红书在短期内就完成了这一高难度操作，迁移过程平滑高效，切实保证了迁移过程中数据的完整性，用户体验也实现无缝过渡。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         除了版本升级和纳管资产的迁移，小红书还在新的运维管理平台之上获得了长期、可持续的平台演进能力。在Jumpserver堡垒机软件订阅服务的服务期内，小红书可以享受到软件版本、软件补丁、增强功能包等软件升级服务，让Jumpserver堡垒机持续同步开源社区的最新版本，同时借助X-Pack增强包不断强化平台针对企业应用场景的相关能力。这种持续的平台演进能力帮助小红书很好地解决了潜在的安全性隐患，并且可以在第一时间内借助专业服务支持完成故障排查，平台性能和可靠性均得到了有效提升。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>客户证言</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:quote -->
                     <blockquote class="wp-block-quote">
                         <p>
@@ -453,7 +429,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

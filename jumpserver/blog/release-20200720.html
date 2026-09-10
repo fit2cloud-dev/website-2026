@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -270,132 +269,105 @@
                         Server连接，Guacamole新增Windows资产上传/下载文件的审计记录和对Windows资产上传/下载的控制，同时该版本还完成了若干功能优化和Bug修复。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;Koko支持GBK编码的SSH Server连接</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.1.0版本中，Koko开始支持GBK编码的SSH Server连接，解决了之前部分中文乱码的问题。在创建系统平台界面中，用户可选择GBK编码模式。在创建资产界面中，系统平台选项可选择自己创建的使用了GBK编码模式的平台。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1345,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image-01.webp" width="1919" height="944" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图1&nbsp;创建GBK系统平台</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1346,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图2&nbsp;创建资产中选择使用GBK编码模式的平台</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;Guacamole支持对Windows资产上传/下载文件进行审计记录</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.1.0版本中，Guacamole新增文件上传/下载记录功能，该记录在FTP日志中可以查看到。连接Windows资产，拖拽文件并上传，根据FTP日志，即可以查看到文件的上传/下载记录。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1347,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图3&nbsp;连接Windows资产后上传文件</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1348,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图4 查看上传的文件</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1349,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图5 查看FTP日志记录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;Guacamole支持对Windows资产上传/下载的控制</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.1.0版本中，Guacamole开始支持文件上传/下载控制。在授权资产界面中，用户可对Windows资产进行上传/下载等行为进行控制。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1350,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图6&nbsp;授权Windows资产，可控制上传/下载选项</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1351,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200720/image.webp" width="1024" height="503" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图7&nbsp;使用限制上传的Windows资产上传文件，可看到上传的文件大小均为0KB</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;增加Celery队列数量，现队列数量由之前的2个优化为4个；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化登录密码加密传输；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;限制上传CSV文件的大小为10MB；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化改密任务执行锁机制，解决相同任务在请求锁时，由于等待而堵塞任务队列的问题（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复RADIUS认证失败问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复系统用户测试可连接性失败问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复节点、资产关系发生变化时，关联系统用户引起的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复创建资源时，由于created_by字段长度限制导致创建失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修改创建AuthBook对象锁机制时，使用select_for_update替换redis_lock的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复命令记录没有根据Session进行过滤的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Koko MySQL连接默认UTF-8编码的问题。</p>
                     <!-- /wp:paragraph -->
@@ -460,7 +432,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

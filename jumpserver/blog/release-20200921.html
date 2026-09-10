@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -269,113 +268,90 @@
                         9月21日，JumpServer开源堡垒机正式发布v2.3.0版本。在该版本中，新增配置项可关闭工单菜单，用户修改配置文件TICKETS_ENABLED=false，工单即隐藏。同时，该版本还支持CAS用户登录日志审计，用户使用CAS用户登录JumpServer后，系统管理员可以在登录日志中查看到CAS用户的登录信息。同时，该版本还支持全局配置项禁止Guacamole复制/粘贴、上传/下载控制。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 支持CAS用户登录日志审计</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.3.0版本中，支持CAS用户登录日志审计。配置好环境后，用户使用CAS用户登录，系统管理员即可查看到CAS用户登录日志。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1501,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image-01.png" width="1024" height="505" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图1 使用如图所示的环境中CAS用户登录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1502,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image.webp" width="1024" height="506" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图2 使用系统管理员可查看到CAS用户的登录日志信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 新增配置项，可关闭工单菜单</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.3.0版本中，用户可通过修改配置文件中的TICKETS_ENABLED=false即可隐藏工单。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1503,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image.webp" width="1024" height="506" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图3 配置文件TICKETS_ENABLED=true时，即可显示工单</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1504,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image.webp" width="1024" height="506" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图4 配置文件TICKETS_ENABLED=false时，即可隐藏工单</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 支持全局配置项禁止Guacamole复制/粘贴、上传/下载控制</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.3.0版本中，用户修改配置文件中的JUMPSERVER_DISABLE_ALL_COPY_PASTE=true，即可全局禁止Guacamole复制/粘贴；JUMPSERVER_DISABLE_ALL_UPLOAD_DOWNLOAD=true即全局禁止Guacamole上传/下载。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1505,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image.webp" width="1024" height="506" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图5 配置文件JUMPSERVER_DISABLE_ALL_COPY_PASTE=true时，复制/粘贴不可用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1506,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20200921/image.webp" width="1024" height="506" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>图6 配置文件JUMPSERVER_DISABLE_ALL_UPLOAD_DOWNLOAD=true时，上传/下载不可用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;新增用户在一个设备登录JumpServer后，该用户在其他设备上的登录则自动退出；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;字符协议Web Terminal由KOKO提供，LUNA只作为汇聚层；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;终端存储提交时，同时支持name和uuid字段。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复CAS退出失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复同时开启RADIUS、OpenID引起的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复开启二次认证时，地址跳转出错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复系统用户导入模版没有密码字段的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复华为云获取image的问题。</p>
                     <!-- /wp:paragraph -->
@@ -440,7 +416,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

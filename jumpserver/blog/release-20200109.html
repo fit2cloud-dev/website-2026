@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,19 +266,15 @@
                 <div class="de-article-content">
                     <p>2020年1月3日，Jumpserver堡垒机发布V1.5.6版本。该版本全面适配IPv6网络环境，可在纯IPv6网络下运行和管理资产。此外，新版本还增加了对数据库应用的授权管理，目前仅支持MySQL数据库。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4>新增功能</h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1、 全面适配IPv6网络环境</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>IPv6是由互联网工程任务组（IETF）设计的用于替代IPv4的下一代IP协议。顺应企业加快IPv6部署的趋势，Jumpserver堡垒机V1.5.6版本全面适配IPv6网络环境，主要包括在IPv6网络环境中运行、纳管和运维IPv6网络的资产。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1020,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter">
@@ -288,7 +283,6 @@
                         </figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1021,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter">
@@ -297,7 +291,6 @@
                         </figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1022,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter">
@@ -306,188 +299,148 @@
                         </figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2、 支持连接MySQL数据库应用</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>为了实现更细粒度的企业资源管理与授权访问，Jumpserver堡垒机从V1.5.0版本开始支持对于RemoteApp远程应用的授权管理（X-Pack增强包），该版本发布之后受到了众多企业用户的青睐。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>为了更加契合企业用户的需求，Jumpserver堡垒机从V1.5.6版本开始支持对数据库应用的授权管理，目前仅支持MySQL 数据库。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1023} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 创建数据库应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1024} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 授权数据库应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1025} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 连接数据库应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3、 Windows资产支持批量执行命令</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         虽然对于Windows资产我们更多时候会通过图形化窗口进行操作，但是为了满足一些用户在特殊情况下的使用，Jumpserver堡垒机从V1.5.6版本开始支持针对Windows资产批量执行命令。当然，Jumpserver堡垒机已经支持对Windows资产的SSH连接方式。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1026} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 针对Windows资产批量执行命令</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4、 新增Swift、Ceph录像存储类型</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>对象存储类型多种多样，为了满足企业灵活选择存储类型的实际需求，Jumpserver堡垒机的录像存储功能持续更新，以便支持更多可选类型，降低用户使用的复杂度。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Jumpserver堡垒机V1.5.6版本支持的录像存储类型包括S3、OSS、Azure、Ceph以及Swift，另外还包含默认存储类型default（存储到本地）和null（不存储）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1027} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图8 录像存储类型列表</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5、 新增平台列表功能</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         为了满足用户对于不同系统平台的自定义配置，Jumpserver堡垒机V1.5.6版本新增平台列表模块（默认包含一些基本系统平台类型），用户可以自行创建不同参数的系统平台。在创建资产时可从平台列表中选择符合自己要求的系统平台，实现自定义功能。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1028} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image.webp" width="1920" height="1055" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图9 系统平台列表</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1029} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200109/image-10.webp" width="1920" height="1049" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图10 系统平台创建</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4>功能优化</h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1、 优化用户详情页面</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员在用户详情页面可以更方便地查看对指定用户所授权的资产、应用，以及用户所在的授权规则等。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2、 修改用户来源更新逻辑</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>用户来源只在用户初次创建时进行设置，不再随着认证平台的改变而改变，方便管理员更准确地掌握用户背景。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3、 录像、命令存储配置迁移至终端管理模块</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>录像、命令存储的配置从系统设置模块迁移至终端管理模块中，方便管理员更好地管理所添加的存储配置，同时更新默认的存储类型：default（存储到本地）、null（不存储）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4、 优化前端表单渲染逻辑</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5、 优化日志审计功能</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>6、 优化前端导入/导出组件</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>7、 用户组优化删除逻辑，可在详情页直接删除</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>8、 优化数据库表结构，减少数据库查询次数，快速响应用户操作</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>9、 修改非DEFAULT组织下管理员对用户的删除操作,更改为移除</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>10、 优化校验用户资产权限API</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>11、 支持管理员查看资产节点详情信息</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4>Bug 修复</h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复校验用户有效性逻辑；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复工单按用户搜索无效的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复密码匣子导出失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复密码匣子翻页后选择资产失效的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复管理员重置MFA后自动退出的问题。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":4} -->
                     <h4>漏洞修复</h4>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修复用户被管理员强制开启使用MFA二次认证后仍可自主绕过绑定的漏洞。</p>
                     <!-- /wp:paragraph -->
@@ -552,7 +505,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

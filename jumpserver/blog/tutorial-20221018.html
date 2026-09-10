@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,146 +266,112 @@
                 <div class="de-article-content">
                     <p>本文重点介绍两种常见的单点登录协议，即OIDC（OpenID Connect）协议和SAML 2.0（Security Assertion Markup Language）协议，以及如何在JumpServer开源堡垒机上完成与Okta的集成对接。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>一、概要</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;单点登录</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>单点登录（Single Sign On，简称为SSO）是一种身份验证方案，允许用户使用单一的认证凭证访问到多个独立的软件系统中的任意一个，减少了用户重复认证的步骤，并且统一了不同软件间的用户认证管理。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>常见的单点登录认证协议包括: OIDC、OAuth 2.0、SAML 2.0、CAS等。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;Okta</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         Okta是一家美国高新技术公司，其软件的主要功能是将一家公司及其员工使用的大量软件应用整合在一起，能够让员工很方便地使用单一、安全的账号登录他们工作所需要使用的各种自有及第三方的网络服务，并且通过细粒度的多租户身份验证确保最终用户的访问体验。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;OIDC</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         OIDC（OpenID Connect）在OAuth 2.0上构建了一个身份层，是一个基于OAuth 2.0协议的身份认证标准协议。OIDC使用OAuth
                         2.0的授权服务器来为第三方客户端提供用户的身份认证，并把对应的身份认证信息传递给客户端，且可以适用于各种类型的客户端（例如服务端应用、移动APP、JavaScript应用），且完全兼容OAuth 2.0协议。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;SAML</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>SAML（Security Assertion Markup Language）是一种用于安全性断言的标记语言，目前的最新版本是2.0，是Web浏览器用来通过安全令牌启用单点登录（SSO）的标准协议。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;OIDC协议与SAML 2.0协议之间的相同点与不同点：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4818,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-01.webp" width="1024" height="541" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>二、对接前的准备工作</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 如果JumpServer需要与Okta平台对接，需要在官网进行注册，Okta平台的官网地址为：<em>https://www.okta.com/</em>；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>2. 注册成功后，Okta会发送一封电子邮件，邮件内容包含独立的平台域名、用户名和临时密码信息。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>三、SAML 2.0协议对接</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■</strong><strong>&nbsp;对接步骤：Okta端</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 通过官网进入到Okta平台首页后，点击左边菜单栏中的“Applications”→“Applications”；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4820,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 点击“Create App Integration”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4821,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 选择“SAML 2.0”选项后，点击“Next”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4822,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>4. 根据提示，创建应用名、登录Logo等配置信息；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4823,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>5. 配置相应SAML信息；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Single sign on URL（即Okta认证成功的回调地址）：<em>http[s]://host:port/core/auth/saml2/callback/；</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Audience URI（应用堡垒机的标识）：<em>http[s]://host:port/core/auth/saml2/login/；</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4824,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>6. 如果需要配置JumpServer设置中的同步注销功能，还需要在这里单独进行配置，点击“Show Advanced Settings”按钮（无需此功能，可忽略此步骤，建议最后配置此项）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4825,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>需要配置证书，输入以下代码生成一个密钥证书，后续JumpServer堡垒机也会使用到这个密钥证书；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:list -->
                     <ul>
                         <li></li>
                     </ul>
                     <!-- /wp:list -->
-
                     <!-- wp:preformatted -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre
@@ -414,193 +379,145 @@
                         ><code>$ openssl genrsa -out server.key 2048 # 这个生成的是 私钥</code><code>$&nbsp;openssl&nbsp;req&nbsp;-new&nbsp;-x509&nbsp;-days&nbsp;3650&nbsp;-key&nbsp;server.key&nbsp;-out&nbsp;server.crt&nbsp;-subj&nbsp;"/C=CN/ST=mykey/L=mykey/O=mykey/OU=mykey/CN=domain1/CN=domain2/CN=domain3"&nbsp;&nbsp;#&nbsp;这个是证书</code></pre>
                     </shiki-code>
                     <!-- /wp:preformatted -->
-
                     <!-- wp:paragraph -->
                     <p>填写Single Logout URL（即Okta注销地址），一般为：<em>http[s]://host:port/login/signout</em>；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4826,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>若上述URL配置有误，可通过以下图片所示方式获取正确地址，并填入“Single Logout URL”处；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4827,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>7. 设置“Attribute Statements（Optional）”选项卡，这里是用户属性映射，JumpServer默认会把SAML 2.0协议传输过来的uid字段和JumpServer中的username字段相关联；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>如果想修改这里的信息，将JumpServer设置为同步修改即可，然后拉到页面底部，点击“Next”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4828,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-10.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>8. 按照下图设置完成后，点击“Finish”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4829,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-11.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>9. 创建应用成功后，在应用界面找到“SAML Signing Certificates”选项卡，选择状态为“Active”的记录，在“Action”菜单中点击“View IdP metadata”选项；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4830,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-12.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>10. 将弹出的浏览器框地址栏中的地址保存下来，以便后续配置JumpServer；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4831,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-13.webp" width="1024" height="571" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>11. 点击应用名称，进入应用设置中找到“Assignments”选项后，点击“Assign”菜单邀请用户进入当前应用。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4832,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-14.webp" width="1024" height="519" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;对接步骤：JumpServer端</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 登录JumpServer后，选择“设置”→“认证设置”→“SAML2”；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4833,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 将对接Okta端操作中的第6步（若上述第6步跳过，则返回第6步生成密钥证书部分，执行命令获取证书）生成的密钥证书上传到JumpServer堡垒机，并把第10步生成的URL地址，填写在“IDP metadata URL”中，即可完成JumpServer端的配置。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4834,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-16.webp" width="1024" height="526" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>四、OIDC-OpenID协议对接</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;对接步骤：Okta端</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 通过官网进入到Okta平台首页后，点击左边菜单栏中的“Applications”→“Applications”；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4835,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 点击“Create App Integration”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4836,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image.webp" width="1024" height="523" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 选择“OIDC-OpenID Connect”选项，然后选择“Web Application”选项，点击“Next”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4837,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-19.webp" width="1024" height="520" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>4. 根据以下图示填写相应内容，其余部分保持默认设置；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>App integration name（Okta端应用名称）：不重复即可；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Sign-in redirect URIs（认证成功回调地址）：域名更换成自己的即可；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Sign-out redirect URIs（注销用户会话后的重定向地址）：选填；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4838,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-20.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4839,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-21.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>5. 跳转到应用信息详情页后，进入“Okta API &nbsp;Scopes”选项卡进行授权；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4840,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-22.webp" width="1024" height="522" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>6. 在页面最底部找到okta.users.read，点击右侧“Grant”按钮完成授权动作，即可完成Okta端的对接设置。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4841,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-23.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;对接步骤：JumpServer端</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 登录JumpServer后，选择“设置”→“认证设置”→“OIDC”，并根据下图填入相应参数，域名处更换为自己的Okta域名；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4842,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-29.webp" width="1024" height="525" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 在Okta端配置客户端ID（Client ID）及客户端密钥（Client Secret）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4843,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-25.webp" width="1024" height="571" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 按照下图设置相应信息，即可完成JumpServer端的对接设置。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4844,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-26.webp" width="1024" height="521" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4845,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221018/image-27.webp" width="1024" height="524" alt="图片" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -663,7 +580,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

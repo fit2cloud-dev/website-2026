@@ -251,7 +251,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -291,169 +290,133 @@
                                     <div class="case-article">
                                         <p>编者注：本文作者为沐瞳科技Stian。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             上海沐瞳科技有限公司（MOONTON）成立于2014年，公司总部位于上海，在印尼、新加坡等海外多地设有分支机构。上海沐瞳科技有限公司（以下简称为沐瞳科技）立足于全球化游戏研发与发行，已成功推出多款在海外拥有高知名度的移动游戏产品，是拥有最多海外玩家的中国游戏公司之一。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             目前，沐瞳科技已经与全球30多个国家的政府机构、电竞协会、职业战队建立了长期合作伙伴关系。公司旗下的Mobile Legends更是成为海外最大MOBA（Multiplayer Online Battle
                                             Arena，多人在线战术竞技游戏）。沐瞳科技在海外拥有众多的机房资源，同时公司有很多项目都采用了独立网络。这样一来，多游戏项目就会在安全运维方面面临着诸多挑战。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>安全运维的痛点</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>沐瞳科技业务的快速发展为其日常运维管理工作带来了很多问题和挑战，简单可以概括为以下几方面：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>1. 多项目网络的隔离管理问题</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>游戏公司一般拥有很多个项目，并且每个项目之间的网络都是独立且隔离的。在这种情况下进行运维工作，就需要各个项目分别管理自己的堡垒机。这就导致了会存在管理权限分散、难以进行统一管理等问题；</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>2. 多IDC登录加速问题</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>在多项目的情况下，且每个项目的IDC呈全球分布的状态，如果堡垒机集中部署在某个节点，就会存在登录某些IDC时延迟较高的现象，从而导致日常运维工作体验较差的情况；</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>3. 现网用户操作审计问题</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             公司以前是无法进行用户行为追溯的，每年都会遇到一些用户的误操作行为导致系统故障等问题的情况。出现故障的时候，公司无法马上查明是用户误操作行为导致的，还是服务器性能存在问题，导致问题没办法很快地进行排查和修复。因此对于用户行为的追溯也是公司最迫切想要解决的一个问题；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>4. 现网数据库访问审计问题</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             公司游戏项目使用的是全局逻辑数据库。在日常运维过程中，有一些表格经常需要查看和修改，之前的处理方式是通过反向代理打通办公网络，然后使用数据库管理软件查看和操作表格。这样操作比较繁琐，并且存在一定的安全隐患；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>5. 现网文件上传审计问题</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>公司游戏项目的发布包、配置文件等资料需要通过办公网进行传送，主要是通过打通Rsync的方式进行上传。这样一来，就存在无法进行文件审计和限制用户操作的问题。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>堡垒机选型思路</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>沐瞳科技运维中心在经过一系列市场调研和选型之后，并且对JumpServer进行了一系列的内部测试，发现其核心功能能够满足企业对堡垒机的核心诉求。主要的优势功能包括：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 组织管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>JumpServer堡垒机企业版支持组织管理功能，能够实现多租户管理和权限隔离。这样公司每个项目都可以设置一个组织，将所有的用户、资产、授权等分别进行更细粒度的设置，很好地解决了多项目管理不统一的问题；</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 日志审计和会话管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             JumpServer堡垒机支持日志审计和会话管理功能。在发生运维事故或调查问题时，可以快速定位问题，确认是人为误操作还是其他故障导致的问题，有效避免同样的问题再次出现。这样就解决了用户行为审计和追溯的问题，符合公司安全合规的要求；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 远程应用和数据库管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             JumpServer堡垒机企业版支持远程应用（RemoteApp）和数据库管理功能。数据库支持线上数据库的命令行和GUI访问方式，同时通过远程应用功能还可以兼容以往运维人员自己习惯使用的数据库管理软件来进行日常操作，这就解决了数据库权限管控和应用操作审计的问题；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 文件传输与管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>JumpServer堡垒机支持文件传输与管理功能。用户可以通过Web终端上传和下载文件，同时支持FTP-API，方便用户脚本执行文件的上传和下载，并且支持审计功能。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>JumpServer堡垒机的部署架构</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>基于上述核心功能以及游戏公司多项目、多地数据中心的特点，沐瞳科技最终选用了分布式架构的部署方式。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             将JumpServer堡垒机部署到生产环境中，首先在全球某个IDC部署中心节点，将Web Server和DB
                                             Server进行了分离，用两个虚拟IP做前端，并且基于Keepalived做了可用性。这种并发机制，可以做到在5秒之内如果其中的一个业务出现了问题，系统会自动进行切换。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             然后再基于公司业务的需求场景，在全球范围内挑选几个合适的IDC部署JumpServer从节点。从节点只包含部分组件，通过Auth
                                             API向中心节点鉴权，每个从节点通常也采用高可用方案。这样一来，在日常运维过程中，用户可以基于不同的业务、不同的机房，选择任意节点就近登录堡垒机。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>JumpServer堡垒机功能亮点</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>实际使用下来，我们发现JumpServer还有其他的一些功能亮点，它们在实际的使用场景中有效提升了企业安全运维审计的能力：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 改密计划</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             JumpServer堡垒机企业版支持资产和数据库定期批量修改密码，可以生成随机密码，用户可以根据具体的需求自由选择多种密码策略。这个功能很好地解决了堡垒机密码需要定时修改的问题，并且很大程度上提高了系统的安全性，
                                             满足了公司的安全合规要求；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ 多云资产纳管</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>JumpServer堡垒机企业版支持对私有云、公有云资产的⾃动统⼀纳管。公司在多云环境上部署了大量的资产，通过JumpServer就可以统一纳管多云上的IT资产，大大提高了公司资产管理的效率；</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■ Web终端操作</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>Web终端的操作方式使得很多轻量级的使用者不需要安装XShell等命令行工具，就可以基本满足日常运维、服务器管理的需要，操作简单，使用起来也非常的便捷。</p>
                                         <!-- /wp:paragraph -->
@@ -537,7 +500,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,105 +266,85 @@
                 <div class="de-article-content">
                     <p>6月18日，JumpServer开源堡垒机正式发布v2.0版本。在此次升级中，JumpServer堡垒机使用Vue+ElementUI进行了前端页面的重构，同时完成若干功能优化和Bug修复。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>重构 Web 前端界面</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>相比上一个发布的JumpServer v1.5.9版本，JumpServer项目的版本号跨度较大，主要原因是在前端架构发生了重要的变化。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在v2.0版本中，JumpServer堡垒机通过前端重构向用户交付全新的应用体验。JumpServer原来的前端架构自2015年启用，已经使用了5年的时间。伴随着前后端分离技术趋势的盛行，JumpServer自2019年第四季度开始酝酿前端重构工作，并且在开源社区广泛征求用户的意见和建议。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>上一版本的前端架构采用了BootStrap+JQuery的组合，应用体验与用户的实际需求存在落差。同时，由于前后端没有分离，开发逻辑存在冗余问题，页面操作和API也存在不统一等问题。此外，JQuery的开发相对繁琐，限制了开发的延展性。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>JumpServer项目研发团队自2020年1月正式启动前端重构工作，选择的是Vue+ElementUI的技术路线。</strong
                         >在做技术路线选择时，研发团队首先抛弃了React这样的纯前端语言，在Angular和Vue中选择了具有更加快捷开发模式的Vue。UI框架方面，研发团队选择了ElementUI，与FIT2CLOUD旗下的KubeOperator、MeterSphere产品线保持一致。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         整个前端重构过程耗时6个月，新的前端架构对大量基础组件进行抽象，同时在样式方面保留了原有的风格，使得用户的使用习惯得以延续，并且会在未来持续优化和改进。新的前端界面在通用组件封装、基础组件抽象等方面投入了大量资源，让用户操作更加容易。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200622/image-01.webp" width="640" height="326" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图1 JumpServer堡垒机v2.0仪表盘</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■ 各模块间统一了导入/导出及搜索界面</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200622/image-02.webp" width="640" height="358" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图2 用户列表界面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■ 修改了包括Table、Heading在内的布局</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200622/image-03.webp" width="640" height="356" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图3 资产列表界面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■ 用户详情页布局统一，均使用Tab格式</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200622/image-04.webp" width="640" height="357" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图4 用户详情界面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>■ 优化创建更新页面</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20200622/image-05.webp" width="640" height="358" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图5 用户创建界面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ Core优化、添加部分API；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ Core优化、删除大部分View及Template模块。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug 修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■ Luna修复API请求路径错误的问题。</p>
                     <!-- /wp:paragraph -->
@@ -430,7 +409,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,30 +266,24 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image"><img src="../images/blog/release-20210719/image-01.png" width="558" height="156" alt="支持国产ARM64架构部署，JumpServer堡垒机v2.12.0发布" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>7月19日，JumpServer开源堡垒机正式发布v2.12.0版本。在这一版本中，JumpServer新增支持ARM64架构部署的功能。目前，JumpServer堡垒机已经能够支持多种ARM64架构，满足了企业在国产化方面的实际需求。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在v2.12.0版本中，当用户通过Web
                         Terminal或者Terminal连接纳管资产时，JumpServer均支持使用rz、sz命令进行文件的上传下载。在该版本中，我们还对管理用户、系统用户模块进行重大的优化整合，将两者统一为系统用户模块，并按照普通用户和特权用户进行展示。X-Pack增强包方面，云管中心支持华为私有云、青云私有云的资产同步。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>新增功能</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 全面支持国产ARM64架构部署</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.12.0版本中，JumpServer堡垒机全面支持国产ARM64架构部署。目前，JumpServer已经验证支持的国产操作系统包括：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:list -->
                     <ul>
                         <li>统信UOS、深度Deepin；</li>
@@ -299,15 +292,12 @@
                         <li>openEuler。</li>
                     </ul>
                     <!-- /wp:list -->
-
                     <!-- wp:paragraph -->
                     <p><em>注：经过测试的操作系统均为最新版本，其他版本只要Linux内核版本高于v3.10版本即可。</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持rz、sz命令上传下载文件</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer v2.12.0版本中，新增支持rz、sz命令进行文件的上传下载。用户可以通过Web
@@ -316,130 +306,102 @@
                         >
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210719/image-02.webp" width="1909" height="819" alt="支持国产ARM64架构部署，JumpServer堡垒机v2.12.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图1 通过Web Terminal连接资产，使用rz命令上传文件</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210719/image-03.png" width="1926" height="637" alt="支持国产ARM64架构部署，JumpServer堡垒机v2.12.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图2 通过Terminal连接资产，使用sz命令下载文件</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 统一管理用户、系统用户模块</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.12.0版本中，我们将管理用户、系统用户模块统一为系统用户模块，并按照普通用户、特权用户进行展示。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>所谓特权用户，即为资产已存在，且拥有“高级权限”的系统用户。JumpServer使用该用户进行推送系统用户、获取资产硬件信息等操作；所谓普通用户，是可以在资产上预先存在的，也可以由“特权用户”自动创建。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>注意事项：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>① 特权用户在授权时，也可以作为系统用户进行授权；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>② 针对未单独设置过某资产账号认证信息的情况，在登录该资产时，选择该系统用户，则使用该系统用户对象的认证信息进行登录；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         ③
                         单独设置过某资产的账号认证信息（Authbook表中生成一条记录，用户ID、资产ID、系统用户ID三者联合唯一，记录资产账号密码），登录该资产时，选择该系统用户，则会使用Authbook表中，通过用户ID、资产ID、系统用户ID三者联合唯一查询到的最新修改过的账号密码进行登录，此时不会再使用该系统用户对象的认证信息；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>④ 在X-Pack增强包的改密计划中，修改资产某个账户的密码时，Authbook表中如果有该资产的账号密码信息，则会更改为最新的密码。在登录资产时，也会使用改密后的密码进行登录。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210719/image-04.webp" width="1917" height="941" alt="支持国产ARM64架构部署，JumpServer堡垒机v2.12.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图3 管理用户、系统用户模块统一为系统用户模块</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 云管中心支持华为私有云、青云私有云的资产同步（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>X-Pack增强功能方面，JumpServer v2.12.0版本新增支持华为私有云、青云私有云的资产同步。满足了企业在多云应用方面的实际需求，实现对私有云、公有云资产统一纳管。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210719/image-05.png" width="1904" height="750" alt="支持国产ARM64架构部署，JumpServer堡垒机v2.12.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图4 云管中心中新增华为私有云、青云私有云资产同步</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>功能优化</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;支持设置默认存储（命令、录像），针对新注册的终端有效；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;批量命令支持更广泛的设备，例如思科等网络设备；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化CAS配置，支持自定义属性映射；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化由于SSH连接复用造成的网络阻塞问题（Koko）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化改密计划的任务日志（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;通过XRDP组件连接的资产，支持授权过期和空闲超时自动断开（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>Bug修复</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复用户组删除时授权树不会自动更新的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复创建用户时如果没有在任何组织内会默认添加到Default组织的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复审计员可以点击DashBoard页面的资产/用户总数的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复周期任务不执行的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复XRDP终端上报系统状态数据不准确的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Lion下载超过1.6GB文件时失败的问题（Lion）。</p>
                     <!-- /wp:paragraph -->
@@ -504,7 +466,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

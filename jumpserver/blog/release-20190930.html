@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,111 +266,87 @@
                 <div class="de-article-content">
                     <p>2019年9月30日，Jumpserver堡垒机发布V1.5.3版本。自 V1.5.3 版本起，Koko（即基于Go语言开发的SSH客户端）将担任Coco（即基于Python语言开发的SSH客户端）在Jumpserver项目中的角色，后续版本将不会再对Coco进行维护。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1、使用Go重构的Koko替代Coco</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Koko是使用Go重构的Unix资产连接组件。与之前使用的Coco相比，Koko支持多线程，性能更强，且负载更低。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><b>2、可收集资产上的已存在用户</b></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>Jumpserver软件订阅服务附含的X-Pack增强包新增“收集用户列表”功能，支持主动发现资产上已经存在的用户。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":871,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-01.webp" width="1024" height="535" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><b>3、组织可添加审计员角色</b></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>审计员是独立于用户与管理员之外的第三种角色，没有资产的连接和修改权限，只拥有日志的查看权限。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":872,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-02.webp" width="1024" height="499" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>审计员登录后只能看到日志审计及会话审计。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":873,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-03.webp" width="1024" height="465" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4、Luna左侧授权树支持设置同步/异步加载，设置异步加载后资产展示方式变更</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":874,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-04.webp" width="1024" height="439" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5、Luna 添加窗口列表功能</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>可使用窗口列表查看所有已打开的窗口。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":876,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-05.webp" width="1024" height="423" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>6、Luna支持SFTP模式的文件打包下载</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>可直接在Unix资产上下载文件夹，会以压缩文件的形式下载。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":877,"align":"center"} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/release-20190930/image-06.png" width="1024" height="564" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>7、Koko支持资产的异步加载和搜索</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>8、LDAP 导入/搜索使用分页获取</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>针对超大规模的LDAP用户数，Jumpserver支持分页形式导入，默认每页为1000个用户。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:list {"ordered":true} -->
                     <ol>
                         <li>优化RemoteApp授权链逻辑；</li>
@@ -383,11 +358,9 @@
                         <li>优化Guacamole功能，支持定时清理上传文件。</li>
                     </ol>
                     <!-- /wp:list -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug 修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:list {"ordered":true} -->
                     <ol>
                         <li>修复授权规则列表前端展示的问题；</li>
@@ -408,9 +381,7 @@
                         <li>修复用户树节点资产数量不对的问题。</li>
                     </ol>
                     <!-- /wp:list -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -473,7 +444,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

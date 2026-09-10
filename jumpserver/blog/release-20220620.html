@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,236 +266,184 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20220620/image-01.webp" width="1024" height="280" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2022年6月20日，JumpServer开源堡垒机正式发布v2.23.0版本。这一版本的JumpServer在X-Pack增强包中新增了Razor组件。该组件支持代理连接RDP协议资产，替代了JumpServer原有的XRDP组件，为用户提供更加流畅的连接体验。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4333,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20220620/image.webp" width="1024" height="1024" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>在原有XRDP功能的基础上，Razor组件实现了单向控制上传/下载、复制/粘贴功能；外接显示屏时，Razor组件能够直接拉起RemoteApp远程应用；在连接资产或应用，以及播放录像方面体验，Razor组件所提供的连接体验更加丝滑流畅。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在v2.23.0版本中，JumpServer还支持对数据库命令进行复核（通过CLI和Web CLI方式连接的数据库）。同时，在Web Terminal页面中，新增支持按组织显示授权资源。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>另外，在开源版本中，JumpServer新增支持OpenID认证设置用户属性映射字段，用户可以自定义设置用户属性字段。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>新增功能</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 新增Razor组件支持代理连接RDP（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.23.0版本中，新增的Razor组件。该组件支持代理连接RDP协议资产，替代了JumpServer原有的XRDP组件，原生RDP连接体验全面升级。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在原有XRDP组件功能的基础上，Razor组件在权限控制方面，实现了单向控制上传/下载、复制/粘贴功能；同时，外接显示屏时，可直接拉起RemoteApp远程应用，解决了旧版本因外接显示屏，无法拉起RemoteApp远程应用的问题。另外，在连接拉起资产或应用，以及播放录像等体验方面，借助Razor组件，用户能够获得更加丝滑流畅的使用体验。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4334,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-03.webp" width="1024" height="557" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 外接显示屏时，Razor组件能够直接拉起RDP客户端连接RemoteApp应用，例如MySQL WorkBench应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4335,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><figcaption>▲ 图2 单向开启下载文件权限，Razor拉起资产或应用时，只能下载文件，无法上传文件</figcaption></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持对数据库命令进行复核（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.23.0版本中，新增支持对数据库命令进行复核（通过CLI和Web CLI方式连接的数据库）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         管理员选择“资产管理”→“命令过滤”，即可创建数据库命令复核的规则，并设置审批人。授权的用户连接数据库（使用CLI或Web
                         CLI连接方式）后，输入该命令复核规则中的命令，会提示该命令需要工单审批信息。审批人同意该工单，则该命令执行成功；反之，审批人拒绝该工单，该命令执行失败。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4336,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-04.webp" width="1024" height="480" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 创建数据库命令复核规则</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4337,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-05.webp" width="1024" height="635" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 用户执行命令复核规则中的命令，提示需要工单审批等信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4338,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-06.webp" width="1024" height="580" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 审批人拒绝该工单，则用户执行该命令是被禁止的</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. Web Terminal页面支持按组织显示授权资源（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.23.0版本中，Web Terminal页面新增支持按组织显示授权资源。当用户在多组织下都有授权资源时，在Web Terminal页面中，可切换组织获取该组织的授权资源。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4339,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-07.png" width="1024" height="635" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 在Web Terminal页面中，可以切换组织获取该组织的授权资源</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 新增支持OpenID认证设置用户属性映射字段</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.23.0版本中，新增支持OpenID认证设置用户属性映射字段。管理员选择“系统设置”→“认证设置”→“OIDC”，即可自定义用户属性映射字段，实现将OpenID中用户属性映射到JumpServer用户上的操作。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><em>注：如果用户所填写的属性不存在，则会使用OpenID中用户的ID作为属性进行映射。</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4340,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220620/image-08.webp" width="1024" height="629" alt="新增Razor组件支持代理连接RDP，JumpServer堡垒机v2.23.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 管理员在OIDC设置页面上，可以自定义用户属性映射字段</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2>功能优化</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Luna页⾯访问资产显⽰Loading的动画；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化克隆角⾊权限时包含权限位；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         ■&nbsp;增加配置项<em><br />CONNECTION_TOKEN_EXPIRATION</em>控制连接Token的过期时间，默认⾄少5分钟；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化RBAC模块的数据库迁移逻辑，提升升级速度；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化JumpServer Client版本v1.1.6，⽀持ARM架构；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化授权规则过期通知⽂案；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化系统⽤户、改密任务密码字段，不⽀持输⼊单双引号；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化命令过滤器详情页⾯，增加快速选择⽤户、⽤户组、应⽤等资源；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化管理页⾯中技术⽀持菜单，提供“⼯具下载”链接；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化OpenID⽤户登录时默认邮件后缀使⽤配置项；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化⽂件上传成功的提⽰信息（Lion组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化命令记录中⽂字符记录乱码的问题（Lion组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Web终端显⽰最⼤滚动⾏数，从1000行提升至5000⾏（KoKo组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化⽀持MySQL 8.0版本数据库（Magnus组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化会话记录的登录IP地址问题，去掉记录端口号（Magnus组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化⽀持PostgreSQL SCRAM认证（Magnus组件）（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>Bug 修复</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复⽤户重置密码地址不正确的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复获取登录IP城市时不准确的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复公告设置内容不显⽰的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复LDAP⽤户属性映射配置了⽤户组字段后导致⽤户登录失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复推送动态⽤户时Comment中包含空格导致推送失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复命令列表模糊搜索时报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复列表⾃定义搜索时再次返回页⾯显⽰True的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复⽤户⾸次登录页⾯提交后，会取消第三⽅绑定账号的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复OmniDB组件占⽤CPU资源过⾼的问题，有效提升用户的连接和使用性能（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复⼿动登录的系统⽤户连接RemoteApp应⽤时获取不到认证信息导致登录失败的问题（X-Pack增强包内）。<br /></p>
                     <!-- /wp:paragraph -->
@@ -561,7 +508,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

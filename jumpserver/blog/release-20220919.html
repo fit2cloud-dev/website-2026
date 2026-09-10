@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,18 +266,15 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20220919/image-01.webp" width="1024" height="268" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2022年9月19日，JumpServer开源堡垒机正式发布v2.26.0版本。基于该版本的JumpServer一体机支持使用硬件设备的国密加密。认证方面，新版本的JumpServer支持用户自定义认证逻辑，满足了一部分企业用户使用独特认证方式的需求。另外，在数据库代理连接方面（KoKo组件），新增支持MongoDB
                         SSL/TLS以及Redis SSL/TLS的连接。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>X-Pack增强包方面，针对短信服务，JumpServer除了支持腾讯云、阿里云和CMPP v2.0协议以外，这一版本还新增支持华为云短信服务。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         同时，在“云同步”模块中，JumpServer新增支持腾讯云轻量应用服务器（TencentCloud
@@ -286,94 +282,74 @@
                         Compute、局域网的支持，有效协助用户实现对私有云、公有云资产的统一纳管。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         此外，在改密计划模块中，JumpServer新增支持MongoDB数据库改密（暂不支持MongoDB SSL/TLS改密），满足了用户对数据库密码的相关安全策略要求。目前已支持改密的数据库类型包括：MySQL、MariaDB、Oracle、PostgreSQL、SQL
                         Server和MongoDB。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>新增功能</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. JumpServer一体机支持使用硬件设备的国密加密</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         基于JumpServer v2.26.0版本的JumpServer一体机支持使用硬件设备的国密加密。国密算法是国家密码管理局制定的自主可控的国产算法，实现了数据的安全传输。为了保证数据的安全传输，JumpServer一体机新增支持使用硬件设备的国密加密。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持用户自定义认证逻辑</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.26.0版本中，支持用户自定义认证逻辑。目前JumpServer已经支持的认证方式虽然众多，但是有一部分企业仍会采用自己独特的认证方式，这些认证方式不在业界标准之内。针对这一现实场景，JumpServer开放出一个标准接口来实现这个功能。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>如果企业想在JumpServer服务中对接自己独特的认证方式，可以按照以下配置流程进行操作：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>① 在<em>/opt/jumpserver/core/data</em>目录下创建一个auth目录，其中包含两个文件:</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ __init__.py；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ main.py；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>② __init__.py文件中不需要填写任何内容；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>③ 在main.py文件中确定一个authentication方法（参考下面的main.py文件，认证的逻辑一般由用户方实现）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>④ 在config.txt配置文件中，配置<em>AUTH_CUSTOM=true</em>；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>⑤在config.txt配置文件中，配置<em>AUTH_CUSTOM_FILE_MD5={main.py文件的md5值}</em>；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>⑥ 配置完成后，重启JumpServer服务。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>注意事项：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         ■ 按照配置流程配置完成后启动服务，再修改<em><br />/opt/jumpserver/core/data/auth/main.py</em
                         >文件，新的认证逻辑不会生效，需要再次更新<em>AUTH_CUSTOM_FILE_MD5</em>的值并重启服务（从安全考虑角度），新的认证逻辑才会生效；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■ 只有<em>AUTH_CUSTOM=true</em>，并且<em>AUTH_CUSTOM_FILE_MD5</em>值正确的情况下，自定义认证方式才会被启用。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>main.py文件代码示例：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>""" Customize the authentication module """
@@ -406,217 +382,172 @@ def authenticate(username, password, **kwargs):
     }</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. KoKo组件支持MongoDB SSL/TLS、Redis SSL/TLS连接</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.26.0版本中，数据库代理连接（KoKo组件）新增支持MongoDB SSL/TLS以及Redis SSL/TLS的连接。管理员通过选择“应用管理”→“数据库”，创建“MongoDB”或“Redis”数据库，在创建表单上启用SSL/TLS，并上传证书。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3885,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 创建MongoDB或Redis数据库，开启SSL/TLS，并上传证书</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4723,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 测试连接MongoDB SSL/TLS，连接成功</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4724,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 测试连接Redis SSL/TLS，连接成功</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 短信服务支持华为云短信平台（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.26.0版本中，短信服务在腾讯云、阿里云和CMPP v2.0协议的基础上，新增支持华为云短信平台。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员选择“系统设置”→“短信设置”，选择“华为云”选项进行配置，并且启用SMS。用户在“个人信息”页面中，开启多因子（MFA）认证，同时启用短信认证。此后，用户在二次认证登录时，即可使用华为云短信服务进行短信验证码认证。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4725,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 华为云短信服务配置（X-Pack增强包内）</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4726,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 用户在进行二次认证登录时，即可使用华为云短信服务进行短信验证码认证</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5. 云同步支持腾讯云轻量应用服务器以及天翼云私有云同步（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.26.0版本中的“云同步”模块中，新增支持腾讯云轻量应用服务器（TencentCloud Lighthouse）以及天翼云私有云同步。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         此前，JumpServer在多云资产纳管方面已经实现了对阿里云、腾讯云、华为云、百度云、京东云、AWS（中国）、AWS（国际）、Azure（中国）、Azure（国际）、谷歌云、VMware、青云私有云、华为私有云、OpenStack、Nutanix、Fusion
                         Compute、局域网的支持，有效协助用户实现对私有云、公有云资产的统一纳管。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员通过选择“资产列表”→“云同步”，创建“腾讯云（轻量应用服务器）”或“天翼云”账号，并创建同步任务，即可将符合IP规则的云资产同步到JumpServer进行统一纳管。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4727,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 通过“资产列表”→“云同步”，创建“腾讯云（轻量应用服务器）”账号</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4728,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 创建腾讯云轻量应用服务器同步任务</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4729,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image.webp" width="1024" height="502" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图8 同步成功后，在资产列表页面可查看同步过来的腾讯云轻量应用服务器资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>6. 改密计划新增支持MongoDB数据库改密（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在“改密计划”模块中，JumpServer新增支持MongoDB数据库改密（暂不支持MongoDB SSL改密），满足了用户对数据库密码的相关安全策略要求。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>目前JumpServer已支持改密的数据库类型包括：MySQL、MariaDB、Oracle、PostgreSQL、SQL Server以及MongoDB。同时，在创建应用改密计划时，JumpServer提供了三种密码策略供管理员进行选择。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4730,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image-10.webp" width="1024" height="493" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图9 选择“账号管理”→“改密计划”进行应用改密，创建MongoDB改密计划</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4731,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image-11.webp" width="1024" height="495" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图10 待改密计划任务触发后，在应用改密计划列表页面即可查看其执行次数</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4732,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220919/image-12.webp" width="1024" height="495" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图11 在“改密计划详情”页面执行列表Tab中可查看改密任务执行详细日志</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2>功能优化</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化对OAuth 2.0认证协议的自定义注销功能；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化系统工具Ping或Telnet输出结果使用UTF-8编码；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;第三⽅⽤户登录时，支持⽤户登录规则；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Web Terminal页面，点击Logo跳转至主界面；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Luna页面，重连资产时不刷新整个页面；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化账号备份的执行速度（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化工单列表的搜索过滤字段（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;通过Web GUI方式连接PostgreSQL数据库时，支持自定义编码（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>Bug修复</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复在线会话监控页面中布局部分被遮挡的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复前端加密导致页面表单提交时偶尔报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复批量更新资产时，页面加载速度慢的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复配置MFA失效时间设置不生效的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复设置了命令规则后，连接资产复制/粘贴多行命令执行时不能阻断的问题（KoKo组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复数据库命令过滤导致会话连接断开的问题（Magnus组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复服务长时间运行时会出现内存泄漏的问题（Magnus组件）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复通过Windows 2008 R2连接资产时，不能录像的问题（Razor组件，X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复通过Linux XRDP连接资产时，没有录像和服务停止的问题（Razor组件，X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>直播预告</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -679,7 +610,7 @@ def authenticate(username, password, **kwargs):
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

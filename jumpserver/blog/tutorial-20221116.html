@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,7 +266,6 @@
                 <div class="de-article-content">
                     <p>本文重点介绍两种常见的单点登录协议，即OIDC（OpenID Connect）协议和SAML 2.0（Security Assertion Markup Language）协议，以及如何在JumpServer开源堡垒机上完成与Keycloak的集成对接。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         此前，我们专门介绍过JumpServer与Okta集成对接的方法，可参见《操作指南丨JumpServer与Okta集成对接》一文（点击<a href="https://mp.weixin.qq.com/s/rr1LQ_3U_PAzhd4RdNVNRw?scene=25#wechat_redirect"
@@ -275,314 +273,240 @@
                         >亦可查看）。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>一、概要</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;单点登录</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>单点登录（Single Sign On，简称为SSO）是一种身份验证方案，允许用户使用单一的认证凭证访问到多个独立的软件系统中的任意一个，减少了用户重复认证的步骤，并且统一了不同软件间的用户认证管理。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>常见的单点登录认证协议包括: OIDC、OAuth 2.0、SAML 2.0、CAS等。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;Keycloak</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         Keycloak是一个针对现代应用程序和服务的开源身份和访问管理解决方案。Keycloak提供用户联合、强身份认证、用户管理及细粒度权限管理等功能，旨在帮助用户能够在最小的成本下向应用程序和服务中添加身份验证等功能。另外，Keycloak支持单点登录，因此服务可以通过OIDC、OAuth
                         2.0等协议对接Keycloak。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;OIDC</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         OIDC（OpenID Connect）在OAuth 2.0上构建了一个身份层，是一个基于OAuth 2.0协议的身份认证标准协议。OIDC使用OAuth
                         2.0的授权服务器来为第三方客户端提供用户的身份认证，并把对应的身份认证信息传递给客户端，且可以适用于各种类型的客户端（例如服务端应用、移动APP、JavaScript应用），且完全兼容OAuth 2.0协议。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;SAML</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>SAML（Security Assertion Markup Language）是一种用于安全性断言的标记语言，目前的最新版本是2.0，是Web浏览器用来通过安全令牌启用单点登录（SSO）的标准协议。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;OIDC协议与SAML 2.0协议之间的相同点与不同点：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4994,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-01.webp" width="1024" height="497" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>二、对接前的准备工作</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. Keycloak的官网地址为：<em>https://www.keycloak.org/</em>；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2. Keycloak的部署可参照其官网的用户手册选择相应的方式进行部署：<em><br />https://www.keycloak.org/guides</em>；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>3. 本文档选用的是Docker部署方式，Keycloak版本为19.0.2。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>三、SAML 2.0协议对接</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;对接步骤：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 根据图示顺序打开JumpServer中关于SAML 2.0认证的设置界面；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4995,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2. 根据下方命令，将生成的server.key及server.crt分别放入到JumpServer认证设置页面中的“SP密钥”及“SP证书”中，然后点击“查看”链接 ，将显示内容保存至本地文件中（我们这里保存并命名为jumpserver_metadata.xml），以便后续使用；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>$ openssl genrsa -out server.key 2048 # 这个生成的是 私钥
 $ openssl req -new -x509 -days 3650 -key server.key -out server.crt -subj "/C=CN/ST=mykey/L=mykey/O=mykey/OU=mykey/CN=domain1/CN=domain2/CN=domain3" # 这个是证书</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:image {"id":4996,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4997,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 进入到部署好的Keycloak服务控制台，创建一个新的Realm，并自定义名称，这里我们命名为“JumpServer-SAML2”；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":4998,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":4999,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>4. 按照图示，新建一个Client；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5000,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         5. 根据页面提示，将必须填写的信息填入到对应的选项即可。Client type选择“SAML”，Client ID填入：<em>http[s]<br />://host:ip/core/auth/saml2/login/</em>，域名更换成自己JumpServer下的域名或者IP，点击下方“Save”按钮保存；
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5001,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>6. 创建完Client后，在Access settings栏修改配置，域名更换为自己JumpServer下的域名或者IP，点击下方“Save”按钮保存；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5002,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>7. 在“Keys”选项卡中，将Client signature required调整为“Off”状态；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5003,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-10.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>8. 点击“Client scopes”选项卡中的第一行“Assigned client scope”链接；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5004,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-11.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>9. 点击“Configure a new mapper”按钮，进行用户属性映射配置，此配置将决定Keycloak中用户的哪些属性和JumpServer的属性相对应起来；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5005,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-12.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>10. 选择“User Attribute”选项；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5006,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-13.webp" width="1024" height="519" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>11. 创建用户映射，并按照下图所示填写相关信息；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5007,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-14.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5008,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-15.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>12. 按照图示步骤，创建用户；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5009,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-16.webp" width="1024" height="523" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5010,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-17.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5011,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-18.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>13. 根据图示顺序，获取Keycloak端的Metadata配置信息文件内容；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5012,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-19.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>14. 切换至JumpServer页面，打开SAML2认证，将新弹出的会话窗口页面的浏览器地址栏中的地址复制到JumpServer的IDP metadata URL中，点击“提交”按钮，即可完成配置。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5013,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-20.webp" width="1024" height="567" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5014,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-21.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>四、OIDC-OpenID协议对接</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>■&nbsp;对接步骤：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>1. 进入到部署好的Keycloak服务控制台，创建一个新的Realm，并自定义名称，这里我们命名为“JumpServer-OIDC”；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5015,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5016,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-23.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>2. 按照图示，新建一个Client；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5017,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-24.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>3. 根据页面提示，将必须填写的信息填入到对应的选项即可，Client type选择 “OpenID Connect”，Client ID自定义即可，这里选择将JumpServer的域名填入，点击下方“Next”按钮；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5018,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-25.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>4. 按照图示进行配置，点击“Save”按钮即可；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5019,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-26.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>5. 创建完Client后，在此Access settings栏修改配置，域名更换为自己JumpServer下的域名或者IP，点击下方“Save”按钮保存；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5020,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-27.webp" width="1024" height="519" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>6. 根据图示，将所选信息保存，并设置填写到JumpServer中，点击提交；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5021,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-28.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5022,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-29.webp" width="1024" height="525" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5023,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-30.webp" width="1024" height="520" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>7. 按照图示步骤，创建新用户，即可完成配置；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":5024,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-31.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5025,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-32.webp" width="1024" height="522" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":5026,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large"><img src="../images/blog/tutorial-20221116/image-33.webp" width="1024" height="521" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
@@ -647,7 +571,7 @@ $ openssl req -new -x509 -days 3650 -key server.key -out server.crt -subj "/C=CN
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

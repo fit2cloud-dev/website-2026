@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -269,142 +268,114 @@
                         1月25日，JumpServer开源堡垒机正式发布v2.7.0版本。该版本中支持批量测试资产的可连接性，同时支持在批量命令执行高危命令时，发送危险命令告警邮件。另外，在X-Pack增强包的工单管理功能中新增支持申请应用授权，用户可通过提交申请应用授权工单，对所需操作的应用（RemoteApp应用、数据库应用、Kubernetes应用）进行主动申请。<br />
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>新增功能</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 支持批量测试资产的可连接性</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.7.0版本中，支持批量测试资产的可连接性。用户可在系统用户详情页中，批量选中资产，点击“测试资产可连接性”按钮，即可批量测试这些资产的可连接性。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1802,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-01.webp" width="1024" height="506" alt="▲ 图1 批量测试资产的可连接性" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 批量测试资产的可连接性</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持在批量命令执行高危命令时，发送危险命令告警邮件</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.7.0版本中，支持批量命令执行高危命令时，发送危险命令告警邮件。在之前的版本中，我们仅支持用户在Web或者Terminal连接资产时，执行高危命令时会发送高危命令告警邮件。在v2.7.0版本中中，我们新增支持批量命令执行高危命令时，也会发送高危命令告警邮件。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1803,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image.png" width="1024" height="504" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 用户选择资产，可批量执行高危命令</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1804,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-03.webp" width="1024" height="506" alt="▲ 图3 查看邮箱，接收到高危命令告警邮件" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 查看邮箱，接收到高危命令告警邮件</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 工单管理新增支持申请应用授权（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.7.0版本中，新增了用户可申请应用授权的工单。用户可发起工单，对特定应用（例如RemoteAPP应用、数据库应用、Kubernetes应用）在某一时间进行使用的权限申请。审批人同意该工单后，申请人将具有在特定时间使用该应用的权限。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1805,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-04.webp" width="1024" height="505" alt="▲ 图4 申请人申请应用权限" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 申请人申请应用权限</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1806,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-05.png" width="1024" height="512" alt="▲ 图5 申请人创建申请应用授权工单，支持申请远程应用、数据库应用和云应用的授权" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 申请人创建申请应用授权工单，支持申请远程应用、数据库应用和云应用的授权</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":1807,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-06.webp" width="1024" height="501" alt="▲ 图6 审批人审批工单" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 审批人审批工单</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>​</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":1808,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20210125/image-07.webp" width="1024" height="487" alt="▲ 图7 审批人同意后，申请人具有使用该应用的权限" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 审批人同意后，申请人具有使用该应用的权限</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>功能优化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;统一JumpServer社区版和企业版登录页面，并且登录页面上添加CAS、OpenID等第三方登录链接；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;重构工单管理模块（X-Pack增强包内）、云管中心的云管账号模块（X-Pack增强包内）、应用模块、录像存储模块及命令存储模块；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化组织管理中可查看组织资源的统计数量；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化录像文件上传超时的问题（KoKo）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Linux资产字符命令解析的问题（KoKo）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>Bug修复</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复当用户名超过64个字符时命令记录保存失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复资产树超过屏幕时右键菜单显示不完整的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复危险命令告警邮件发送失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复清除审计日志时循环调用的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复资产列表没有克隆按钮的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复推送系统用户到资产偶尔失败的问题。</p>
                     <!-- /wp:paragraph -->
@@ -469,7 +440,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

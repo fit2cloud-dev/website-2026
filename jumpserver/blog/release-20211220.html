@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,14 +266,12 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20211220/image-01.webp" width="1024" height="287" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         12月20日，JumpServer开源堡垒机正式发布v2.17.0版本。在这一版本中，JumpServer支持基于SAML
                         2.0的联合身份验证，支持对Windows资产的键盘操作进行记录和审计，同时用户可以通过键盘操作快速定位Windows资产会话录像，并且支持对数据库操作的SQL语句进行过滤。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         X-Pack增强包方面，JumpServer新增对微软SQL
@@ -282,15 +279,12 @@
                         GUI方式连接的数据库进行SQL指令补全和过滤。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>新增功能</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 支持基于SAML 2.0的联合身份验证以实现单点登录</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer v2.17.0版本中，用户登录已支持基于SAML 2.0的联合身份验证。SAML 2.0 （安全断言标记语言2.0）是许多身份验证提供商（Identity
@@ -298,248 +292,200 @@
                         Sign-on），管理员可以授权经过联合身份验证通过的用户登录JumpServer的管理系统或用户系统。目前JumpServer已支持的用户登录认证方式包括但不限于CAS、OpenID、SAML 2.0、AD/LDAP、RADIUS、企业微信、钉钉和飞书。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3120,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图1 JumpServer的用户登录页面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3121,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图2 SAML 2.0认证配置页面</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持对数据库操作的SQL语句进行阻断（仅支持允许、拒绝操作，暂不支持复核）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         敏感SQL命令的阻断与拦截是安全审计的重要特性。这可以有效避免团队成员的违规操作、敏感操作、误操作等行为，避免为企业带来不必要的损失。在JumpServer
                         v2.17.0版本中，管理员可以通过创建命令过滤器，并与命令过滤规则、用户、普通系统用户和数据库应用等进行关联，定义SQL命令过滤规则。这样一来，用户无论是通过CLI、Web CLI，还是Web GUI方式连接的数据库，都可以被实时阻断。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3122,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图3 通过Web CLI方式连接数据库，执行SQL命令被阻断</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3123,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图4 通过Web GUI方式连接数据库，执行SQL命令被阻断</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 支持对Windows资产的键盘操作进行记录和审计（仅支持Web连接的方式）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.17.0版本中，对于通过Web方式连接的Windows资产，支持对用户的键盘操作进行记录和审计。同时，当管理员查看录像回放时，可以选择从某个键盘操作记录的指定位置开始回放。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3124,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图5 通过Web方式连接Windows资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3125,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图6 录像回放页面左侧显示键盘操作记录列表</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 支持对SQL Server数据库进行管理、连接、操作和审计（仅支持CLI和Web CLI方式连接）（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         Microsoft SQL Server是由美国微软公司推出的一种关系数据库解决方案，最新的版本为SQL Server 2019。根据DB-Engines对数据库管理系统的流行程度排名，SQL
                         Server的市场份额排名第三。为了满足更多企业对于数据库多样化的管理需求，JumpServer在v2.17.0版本中，新增了对SQL Server数据库的管理、连接、操作和审计功能。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3126,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图7 在JumpServer管理页面创建SQL Server数据库应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3127,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图8 在Web UI页面连接SQL Server数据库</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5. 支持通过XRDP方式连接Windows远程应用（需要使用最新的Jmservisor脚本）（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer v2.17.0版本中，用户连接远程应用时可以选择通过Web GUI或者本地RDP客户端的方式进行连接。下图是一个通过RDP客户端（Remote Desktop Client）连接Windows远程应用Chrome浏览器，并打开JumpServer官方文档页面的示例。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3128,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image-10.webp" width="1024" height="721" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图9 通过RDP连接Windows远程应用Chrome浏览器</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>6. 支持对OpenStack私有云资产进行同步（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.17.0版本中，云管中心支持对OpenStack私有云资产进行同步。目前，JumpServer支持的公有云、私有云资产同步对象包括阿里云、腾讯云、华为云、AWS（中国区域、国际）、Azure（中国区域、国际）、谷歌云、VMware、青云私有云、华为私有云、Nutanix和OpenStack等。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3129,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image-11.webp" width="1024" height="655" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图10 创建OpenStack云管账号</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>7. 支持对通过Web GUI方式连接的数据库进行SQL补全（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.17.0版本中，对通过Web GUI方式连接的数据库应用，用户可以在操作页面中开启或关闭SQL语句命令补全功能（默认开启）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3130,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image-12.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图11 通过Web GUI连接数据库并输入SQL语句，自动提示完整命令</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>8. 支持将改密计划执行结果发送给指定接收人（仅支持邮件方式）（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer
                         v2.17.0版本中，管理员创建改密计划时可以指定收件人。当改密计划执行完成后，系统会将本次改密计划的资产账号信息以加密文件的方式通过邮件发送给收件人。需要注意的是，为了确保资产账号信息的安全性，防止在传输过程中出现信息泄漏的问题，只有在个人信息页面配置了文件加密密码的用户才能够收到改密后的资产账号信息文件。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3131,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image-13.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图12 创建改密计划指定收件人</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3132,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20211220/image-14.webp" width="1024" height="658" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲图13 在个人信息页面中配置文件加密密码</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2>功能优化</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;支持对命令过滤器进行多维度绑定；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化服务启动脚本的执行速度；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化终端性能指标对内存使用率兼容Docker Limit的设置；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化消息通知类型，支持Markdown格式；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化站内信文案和显示遮挡的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化JSON输入框，支持一键格式化；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化申请资产工单，可以指定节点（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;移除远程应用右侧快捷键菜单栏（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化创建申请资产、应用工单时默认选中当前组织（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>Bug修复</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复数据库连接未关闭的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复在Redis集群环境下使用Redis锁机制报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复openSUSE系统su切换用户失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复根据节点、资产查询授权时报错的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复用户使用CAS、OpenID登录时的跳转问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复根据资产IP查询资产显示不全的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复会话详情页命令列表排序功能失效的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复获取应用类型时系统用户认证信息失败的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复青云私有云同步资产网段地址固定的问题（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复将应用从某个授权中移除时会从所有授权中移除的问题（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
@@ -604,7 +550,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

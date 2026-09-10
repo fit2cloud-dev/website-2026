@@ -251,7 +251,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -296,164 +295,130 @@
                                             >
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             博世是全球最大的汽车技术供应商之一，在全球50多个国家设有子公司和分支机构。博世汽车部件（苏州）有限公司（以下简称为博世汽车部件）成立于1999年，是博世集团在中国的全资子公司，下设四个事业部：即汽车电子事业部、底盘控制事业部、汽车多媒体事业部和设备制造事业部。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>博世集团秉承“根植本土、服务本土”的理念，深度融入了中国经济的发展，与中国市场共同成长。自2017年以来，博世在中国的业务发展迅速，销售额大幅增长，达到千亿级的销售规模。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>安全运维痛点</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>业务的迅速发展给博世汽车部件的日常运维管理工作带来了很多问题和挑战，可以简单概括为以下几方面：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>■<strong>&nbsp;IT资产规模迅速扩张</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             博世汽车部件在苏州拥有多个中等规模的数据中心，计算节点超过1000个。可以看到，其IT基础设施规模比较大、
                                             分布也相对分散。从2016年起，博世汽车部件迈入了数字化转型的阶段，加上业务增长速度很快，IT资产规模每年以成倍的速度扩张，这使得其在运营管理、权限分配等方面遇到了很多瓶颈。因此，公司需要一款能够<strong>有效统一管控分布式资产、适应大规模资产增长需要</strong>的堡垒机产品；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>■&nbsp;<strong>原有堡垒机系统无法满足现有需求</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             博世汽车部件原有的堡垒机系统WTS是专门为IT部门设计的，主要是面向管理员的权限进行分配。而在数字化转型之后，公司的组织架构发生了变化，每个用户部门都设有产品经理、项目经理、技术团队领袖等职位，这些人都具有IT背景。针对这种转变，就需要把一些服务器资源、访问权限、应用权限分配到各个业务部门。这样一来，原有堡垒机系统就无法承担相应的功能，无法满足用户的实际需求，可用性大大下降；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>■&nbsp;<strong>用户误操作难于管理，需要对用户行为进行追溯</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>每年公司都会遇到一些用户的误操作导致服务器宕机等故障的情况，这些故障会直接影响到业务，并且可能造成经济损失。因此，对于用户行为的追溯也是公司迫切需要解决的一个问题。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>堡垒机选型思路</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>根据上述痛点问题，在经过内部讨论之后，博世汽车部件希望新的堡垒机系统能够实现以下几个核心功能：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>1. 多系统Web远程终端</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             原有的堡垒机系统没有统一的Web界面去做管理。公司希望，新的堡垒机系统最好是能够通过Web端来进行统一的平台管理，支持统一的协议，包括Windows远程登录协议（RDP)、SSH等。数据库方面，公司目前使用的是Oracle和SQL
                                             Server数据库，希望新的堡垒机系统能够支持多种数据库系统，同时也需要集成FTP/SFTP文件访问权限。另外，近两年博世汽车部件也开始使用混合云的架构，在多云环境中部署IT资产，例如VMware、Azure、AWS等，期望新堡垒机系统也能够支持云管平台的功能；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>2. 用户行为追溯</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             公司原有的WTS堡垒机是没有用户行为追溯功能的，希望新的堡垒机系统能够实现对用户行为的追踪，记录服务器上的用户行为。这样的话，一旦故障出现就可以及时进行查看，确认故障是用户行为导致的，还是服务器配置或性能导致的这个问题，有效避免同样的问题再次出现。除此之外，对于那些对业务背景不太了解的人员操作行为，希望新堡垒机能够支持命令过滤和危险命令报警功能，防止用户误操作行为对系统运营产生的不利影响；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>3. 账号管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>由于公司的规模比较大，部门也比较多，希望能够有一个成熟的组织管理架构去结合Windows域验证来实现多层级的组织管理体系，包含统一的AD账户登录、多层级AD权限管理等；</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>4. 高可用</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>平常公司做系统性维护的时间比较少，时间也都比较分散，所以希望新的堡垒机系统具备高可用、扩容简单、易维护、易操作的特点，让所有的相关人员都可以快速上手操作。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>基于这些具体的需求，博世汽车部件在经过一系列的市场选型之后，也看了很多开源项目，后来找到了JumpServer，发现它是一款简单实用的堡垒机产品，能够符合其实际的需要。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:heading -->
                                         <h2>JumpServer架构设计</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>前期博世汽车部件对JumpServer进行了一系列的内部测试，发现其核心功能能够满足他们的具体需求，于是在一周内迅速上线使用，将JumpServer部署在生产环境中。</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             博世汽车部件根据生产环境的需要对JumpServer的部署架构进行设计，将Web Server和DB
                                             Server进行了分离，用两个虚拟IP做前端，基于Keepalived做了可用性。其设计的这种并发机制，可以做到在5秒之内如果其中的一个业务出现了问题，系统会自动进行切换。同时，系统允许100个用户同时访问，系统整体能够支持1500个IT资产。后来，通过一系列的压力测试、性能测试也证实了JumpServer完全符合公司的实际要求。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             此外，JumpServer的RemoteApp功能实际上起到了Remote Session的作用。用户可以通过JumpServer直接访问应用程序，无需本地环境的支持。公司在内部测试环境中也对Windows Server远程登录、Linux
                                             Server远程登录、OracleDB远程登录、MariaDB远程登录等功能进行了测试部署。整体使用下来，可以感受到JumpServer对远程操作系统的访问支持是非常好的。
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:image {"id":3081,"sizeSlug":"large"} -->
                                         <figure class="wp-block-image size-large">
                                             <img src="../images/customer/customer-detail-5d45feaca92c.webp" width="1024" height="537" alt="" class="wp-image-3081" decoding="async" />
                                             <figcaption>博世汽车部件JumpServer部署架构设计</figcaption>
                                         </figure>
                                         <!-- /wp:image -->
-
                                         <!-- wp:heading -->
                                         <h2>JumpServer功能亮点</h2>
                                         <!-- /wp:heading -->
-
                                         <!-- wp:paragraph -->
                                         <p>实际应用JumpServer之后，在众多的功能中，博世汽车部件发现了三个相对来说比较亮眼的功能，它们在很大程度上提高了其IT系统运维的效率：</p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>■&nbsp;<strong>改密计划</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             JumpServer提供批量改密功能，可以定期修改资产上的系统用户密码。以前使用WTS系统的时候，审批部门需要定期审计资产、修改资产密码，需要对IT资产进行统计，不同的业务需要制定不同的密码策略。这样的工作通常每6个月进行一次，操作起来非常繁琐。而现在通过JumpServer这样一个统一的平台去进行密码修改的操作，节省了很多时间，对公司来说是非常实用的；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>■&nbsp;<strong>RemoteApp远程应用</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             用户可以自助式地通过JumpServer访问远程应用，可以通过客户端或者Web端去远程访问应用，不需要在本地环境安装相关应用。甚至是想访问应用的时候，不需要输入用户名和密码，只需要通过JumpServer的用户认证体系就可以实现连接。当然这部分的功能目前还有一些小的局限，期待着未来能看到更加完善的RemoteApp功能；
                                         </p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p><strong>■&nbsp;工单管理</strong></p>
                                         <!-- /wp:paragraph -->
-
                                         <!-- wp:paragraph -->
                                         <p>
                                             在使用JumpServer之前，公司是使用PAM系统审批各个用户部门的权限需求的，非常费时费力。而现在通过JumpServer中的工单管理，包括授权工单申请，公司实现了一级、二级审批流程，用户可以自助式地申请需要访问的资产或应用。经过审批人审批之后，资产或应用就会被授权给对应的申请用户，使用起来非常得快捷方便，大大降低了IT系统运维的时间成本，提高了工作效率。
@@ -539,7 +504,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

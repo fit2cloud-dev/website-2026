@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -269,13 +268,11 @@
                         2019年12月1日，对于很多企业的运维安全团队来说是一个重要的时间节点，国家级安全标准——《信息安全技术网络安全等级保护基本要求》2.0版本(简称为等保2.0)将正式实施。新的等保2.0标准更具行业针对性，涵盖内容也更加细致和丰富。围绕等保2.0的落地实施，各行各业可以场景化、规范化地构建企业IT的安全体系。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"align":"center","id":733} -->
                     <div class="wp-block-image">
                         <figure class="aligncenter"><img src="../images/blog/security-20190626/image-01.webp" width="640" height="360" alt="" loading="lazy" / decoding="async"/></figure>
                     </div>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在游戏行业，对等保规定的遵从是业务运营的强制性要求。在等保2.0标准发布前，游戏行业就以等保1.0为标杆，规范IT系统的运维安全体系。在等保2.0的多层面合规要求中，主机资产管理是一项非常重要的工作。<strong
@@ -283,85 +280,70 @@
                         >
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>挑战：IT资产广泛分布且持续变化</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         作为知名的全球化IP游戏运营商，中手游以IP为核心，通过自主研发和代理发行，不断为全球玩家提供精品IP游戏，并围绕IP和CP展开积极的投资布局，打造围绕IP游戏的生态体系。据了解，在国内手游市场中，中手游按发行根据IP开发的游戏产生累计收益计排名第一，按发行根据IP开发的游戏总数计排名第一，在IP资源储备方面也排名第一。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>出于全球化服务交付等方面的考虑，中手游在IT建设上率先采用了多云架构。</strong
                         >目前，中手游已经使用了多个公有云，包括阿里云、腾讯云、金山云、华为云、UCLOUD等。在不同的公有云之上，中手游均拥有大量的虚拟机、存储、数据库等云上资产。这些分布式、大规模的云资产需要进行统一化的安全管理与审计。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>另一方面，这些云上资产的数量还会伴随游戏业务的运营扩充或者缩减。</strong>当有火爆游戏上线时，云端资产数量快速上升，但是在游戏的相对淡季，中手游会根据市场情况回收资源，充分利用公有云服务的弹性伸缩优势。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         从实际的业务需求出发，中手游希望通过堡垒机统一纳管大规模且不断变化的云端资产，构建符合4A(认证Authentication 、授权Authorization、账号Accounting
                         和审计Auditing)规范的运维安全审计体系，从资产合规管理层面满足等保2.0标准的要求。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>实现：三大核心能力护航，遵从等保新规</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         经过产品选型和实际测试，中手游最终选择了基于Jumpserver堡垒机构建面向大规模云端资产管理的运维安全审计系统。中手游认为，作为一款颇具创新力的堡垒机，Jumpserver堡垒机对多云环境的支持是他们最为看重的。<strong>与传统堡垒机相比，Jumpserver采用了分布式架构设计，能够更好地支持企业针对多云环境的资产管理与审计需求。</strong>同时，由于Jumpserver对并发和资产数量不设限制，在规模扩展时无需担心许可证限制问题。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>针对等保标准中对主机安全的具体要求，中手游基于Jumpserver堡垒机实现了<strong>身份鉴别、访问控制、安全审计</strong>三大核心能力：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>1. 身份鉴别：</strong
                         >对登录用户进行身份标识和鉴别，身份标识具有唯一性。每位用户通过自己独立的堡垒机账号登录，正确鉴别用户身份，有效避免账号的混用和身份不清晰等安全隐患。同时，Jumpserver堡垒机还提供多因子认证(MFA)功能，可通过手机应用的动态验证码进行二次认证，操作简便快捷。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>2. 访问控制：</strong
                         >Jumpserver堡垒机提供了完善的权限管理体系，便于企业厘清人与资产、资产与权限、人与权限之前的多对多关系，并且让企业可以灵活地创建和分配这一套授权体系。以此为框架，中手游构建起人员、资产、权限三位一体的访问控制体系，很好地满足了等保规范的相关要求。管理员可以及时阻断某些高危操作，避免危险情况发生，有效提升系统安全性。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>3. 安全审计：</strong
                         >Jumpserver堡垒机提供面向Windows、Linux系统的审计能力，可对每位用户的每次操作进行记录和留痕，所有通过堡垒机的操作都会进行录像。管理员可在事后对所有连接操作进行审计，有效杜绝了安全责任不清等问题。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>收益：多云资产统一纳管、云端存储与灵活扩展</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>对于中手游来说，借助Jumpserver堡垒机领先的架构设计和可扩展能力，安全运维团队成功地克服了大规模、分布式资产纳管的难题，搭建起面向多云环境的运维安全审计体系。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>在多云环境中，云中资产信息的自动获取是非常大的挑战。</strong
                         >Jumpserver堡垒机软件订阅服务附含的X-Pack软件包提供了“多云资产纳管”功能，借助这一功能，中手游实现了对公有云资源的快速纳管，一键同步、定期同步公有云资产到Jumpserver堡垒机，无需手动录入和操作，管理体验大幅提升。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>对于采用多云架构的企业而言，不断地激发企业使用云原生服务的能力是一个重要目标。</strong
@@ -369,14 +351,12 @@
                         S3、阿里云OSS、ElasticSearch等云存储服务之上，节省了大量带宽资源。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>扩展性方面，Jumpserver堡垒机的不同子组件可以实现独立部署，并进行横向扩展。</strong
                         >在遇到业务压力高峰时，用户可自行扩展子组件，快速应对访问压力。当压力高峰度过后，可以减少子组件的部署数量，在不影响使用体验的情况，轻松实现系统的弹性伸缩。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         企业安全体系的建设与运营是一项长期任务。在满足了等保新规要求之后，中手游还计划将堡垒机融合到内容运维发布体系中，借助Jumpserver堡垒机标准化的API接口，打通游戏开服、发布、运维、安全等不同环节，并且实现堡垒机与云管平台的联动，在持续提升系统安全性的同时，不断优化IT系统运营效率。
@@ -443,7 +423,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

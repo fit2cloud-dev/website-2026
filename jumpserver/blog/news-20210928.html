@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,100 +266,80 @@
                 <div class="de-article-content">
                     <p><em>编者注：在2021年9月11日举办的“2021 JumpServer开源堡垒机城市遇见· 杭州站”活动中，微拍堂运维工程师章远强分享了题为《JumpServer在微拍堂的落地实践》的演讲。以下内容根据本次演讲整理而成。</em></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>微拍堂成立于2014年，是国内领先的文玩艺术品电商平台。目前微拍堂平台累计用户已经超过7000万，入驻商家超过30万家。作为一家创新企业，微拍堂开创了文玩艺术品直播拍卖的先河，从商业模式上实现了文玩拍卖行业的线上化。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":2795,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/news-20210928/image-01.webp" width="1024" height="577" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>微拍堂运维工程师 章远强</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         微拍堂的IT基础设施全部构建于公有云之上。为了对云上的服务器进行管控，微拍堂基于JumpServer搭建了一套管理平台，并利用JumpServer中的开放API接口构建了自己的权限管控系统，所有操作记录录像也存储在云端。由于所有的计算节点都在云上，我们十分依赖这个管控平台去管理这些节点。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在使用JumpServer以前，我们使用的是像齐治、帕拉迪这样的传统厂商提供的硬件堡垒机。这些堡垒机主要以管理本地资产为主，并不是非常适合我们的公有云架构。我们也考察了公有云服务商提供的云堡垒机，它们主要是以云上服务为主。对于微拍堂来说，公司的业务增长速度很快，云上基础设施的规模也在快速增加，未来我们还有可能引入多云的技术架构。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>因此，我们需要一款高性能、支持水平扩展的堡垒机，并且能够支持多云的应用环境。考虑了这些方面，我们认为JumpServer更加符合我们实际的业务需要，所以我们最终选择了基于JumpServer来构建这个管控平台。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>那么JumpServer对于我们来说有哪些优势呢？</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>第一点就是它可以基于软件部署的方式去进行管理；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>第二点就是我们在使用传统堡垒机的时候会遇到数据被误删、账号共享使用、访问不统一、操作时没有留痕、权限不控制、出现故障后无法回溯等安全运维的问题。这些问题都导致了我们必须要选择一套能够统一管控的堡垒机系统。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>JumpServer堡垒机支持软件部署，可以做到事先防范、集中管控还有事后溯源，很好地满足了微拍堂运维安全审计的实际需求。</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         微拍堂的云基础设施都建立在腾讯云之上，因此我们也将JumpServer堡垒机部署在腾讯云上。作为JumpServer堡垒机的长期用户，微拍堂已经拥有丰富的使用经验。下面我们就来分享一下微拍堂在堡垒机部署、权限管控和日志管理方面的具体实践，供大家参考和探讨。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>JumpServer的部署</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer提供三种部署架构，即单点部署、主从部署和分布式部署。目前微拍堂的云上资产大概有2000多个节点，基于安全、运维、成本等诸多方面的考虑，尤其是容量方面的规划，我们最终选择的是主从部署的方案。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>用户可以通过Web页面和SSH客户端访问JumpServer，采纳MFA多因子认证，并进行录像审计以及SSH协议支持等。数据库采用的是主主同步的方式。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         对象存储方面，微拍堂使用了腾讯云的COS（Cloud Object
                         Storage）存储，账号数据可以永久地保存在COS之上。JumpServer堡垒机自上线以来一直保持着高效稳定运营的状态。从登录频次上看，目前微拍堂每日用户登录JumpServer堡垒机的频次峰值已经超过了700次。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>基于JumpServer的权限管控</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>微拍堂基于JumpServer构建了一套权限管控机制，开发了一套CMDB（配置管理数据库）开发管控平台，通过调用JumpServer的API接口进行权限审批，对用户登录节点的行为进行授权。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         用户理论上是不允许登录线上节点的，只能登录一些授权节点。只有经过管理审批后，用户才有权限登录到指定节点并进行操作，所有操作行为都会在JumpServer上进行录像保留。这些记录会被收集到Elastic Search，然后通过Elastic
                         Search实现监控告警。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         如果发现一些高危操作，我们都会基于JumpServer管控平台转发告知管理员。针对文件编辑的操作，我们会把初始文件在第一时间进行保存。用户操作后，如有需要回滚，可以根据文件的时间戳进行回滚。另外，我们给用户的访问权限分为永久权限和临时权限，节点授权之后默认24小时回收，而运维管理人员有权限访问所有的节点。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>基于JumpServer的日志管理</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>
                         我们把JumpServer的账户信息、录像审计、操作日志统一保存到腾讯云的COS上，并通过Elastic
@@ -428,7 +407,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

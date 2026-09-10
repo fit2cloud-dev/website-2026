@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,66 +266,51 @@
                 <div class="de-article-content">
                     <p>2021年1月15日，JumpServer开源堡垒机发现一处远程执行漏洞，需要用户尽快进行修复，尤其是可通过公网访问的JumpServer堡垒机用户建议尽快进行修复。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>影响版本如下：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＜v2.6.2版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＜v2.5.4版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＜v2.4.5版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p><strong>安全版本如下：</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＞=v2.6.2版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＞=v2.5.4版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer堡垒机＞=v2.4.5版本</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>修复方案</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>建议JumpServer堡垒机（含社区版及企业版）用户升级至安全版本。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>临时修复方案</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>修改Nginx配置文件，以屏蔽漏洞接口 ：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:list -->
                     <ul>
                         <li>/api/v1/authentication/connection-token/</li>
                         <li>/api/v1/users/connection-token/</li>
                     </ul>
                     <!-- /wp:list -->
-
                     <!-- wp:paragraph -->
                     <p>Nginx配置文件位置如下：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>社区老版本
@@ -337,11 +321,9 @@
                         jumpserver-release/compose/config_static/http_server.conf</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:paragraph -->
                     <p>Nginx配置文件实例为：</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:code -->
                     <shiki-code variant="simple" light-theme="catppuccin-mocha" dark-theme="catppuccin-mocha" font-size="0.875em">
                         <pre class="wp-block-code"><code>### 保证在 /api 之前 和 / 之前
@@ -364,15 +346,12 @@
                         ...</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
-
                     <!-- wp:paragraph -->
                     <p>修改配置文件完毕后，重启Nginx服务即可。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3>致谢</h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>感谢reactivity of Alibaba Hackerone bug bounty program（瑞典）向我们报告此 Bug。</p>
                     <!-- /wp:paragraph -->
@@ -437,7 +416,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

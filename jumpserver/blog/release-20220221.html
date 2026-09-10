@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -267,239 +266,190 @@
                 <div class="de-article-content">
                     <figure class="wp-block-image size-large"><img src="../images/blog/release-20220221/image-01.webp" width="1024" height="325" alt="" loading="lazy" / decoding="async"/></figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p>
                         2022年2月21日，JumpServer开源堡垒机正式发布v2.19.0版本。在这一版本中，JumpServer新增支持第三方认证用户开启MFA认证流程，满足了更多用户对于账号安全性的需求。同时，支持命令过滤规则忽略大小写匹配策略，并且在Web终端页面连接资产时，新增支持自动保存上次使用的系统用户，进一步提升用户的使用体验。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>另外，在列表搜索方面，支持多级自定义模糊搜索。在大规模资产的场景下，用户可以通过多级自定义搜索功能，更加精确地搜索出结果。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>X-Pack增强包方面，JumpServer新增支持工单申请Redis数据库应用，用户可以通过工单授权申请Redis数据库应用。同时，支持通过XRDP连接远程应用时的复制/粘贴、上传/下载（磁盘挂载）权限控制。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>新增功能</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1.&nbsp;支持第三方认证用户开启MFA认证流程</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.19.0版本中，新增支持第三方认证用户的MFA认证流程，满足了更多用户对于账号安全性的需求。其中，第三方登录方式包括OIDC、CAS，以及SAML 2.0。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         管理员可以在“系统设置”→&nbsp;“安全设置”中，开启“第三方登录用户进行MFA认证”选项。第三方认证的用户可以通过JumpServer的“个人信息”页面，开启并绑定MFA。绑定成功，且该用户成功通过第三方登录认证后，还需要进行MFA多因子认证，才能够成功登录JumpServer系统。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3327} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图1 在“系统设置”→“安全设置”页面启用“第三方登录用户进行MFA认证”选项</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3328} -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图2 用户在“个人信息”→“基本信息”→“设置多因子认证”页面启用MFA，并进行绑定</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3329,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图3 使用第三方OIDC用户登录</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3330,"width":580,"height":326} -->
                     <figure class="wp-block-image is-resized">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图4 用户通过第三方认证成功后，进行MFA多因子认证</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 新增命令过滤规则忽略大小写匹配策略</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.19.0版本中，新增命令过滤规则忽略大小写匹配策略。管理员可以在“创建命令过滤器规则”页面中，勾选“忽略大小写”选项。这样一来，用户在使用高危命令时，输入大写或小写命令，都会被拦截。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3331,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图5 管理员在“创建命令过滤器规则”页面中勾选“忽略大小写”选项</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3332,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图6 用户输入高危命令时，输入大小写都会被拦截</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. Web终端连接资产时，新增自动保存上次使用的系统用户</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.19.0版本中，支持Web终端连接资产时，自动保存上次使用的系统用户，进一步提升了用户的使用便捷性。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3333,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图7 Web终端连接资产时，自动保存上次使用的系统用户</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 支持多级自定义模糊搜索</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.19.0版本中，在列表搜索方面，支持多级自定义模糊搜索。这样一来，在大规模资产的场景下，用户可以通过多级自定义搜索，更加精确地搜索出结果。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3334,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图8 列表搜索支持多级自定义模糊搜索</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5. 支持工单申请Redis数据库应用（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer v2.19.0版本支持工单授权申请Redis数据库应用。目前，工单申请数据库应用除了支持Oracle、MySQL、PostgreSQL、MairaDB、SQL Server以外，还支持了Redis数据库。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>用户可以在“工单”→“申请应用授权”中，选择“Redis”数据库应用类型。工单创建完成且审批人员通过后，用户即有权限使用该Redis数据库应用。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3335,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image-10.webp" width="1024" height="578" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图9 用户申请Redis数据库应用工单</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3336,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image-11.png" width="1024" height="577" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图10 审批人员同意工单申请后，用户有权限连接Redis数据库应用</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>6. 支持通过XRDP连接远程应用时的复制/粘贴、上传/下载（磁盘挂载）权限控制（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.19.0版本中，新增支持通过XRDP连接远程应用时的复制/粘贴、上传/下载（磁盘挂载）权限控制，即授权远程应用时，开启上传/下载（挂载磁盘）、复制/粘贴的权限。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         复制/粘贴权限是指用户连接该远程应用时，可以从外部计算机复制信息，并且粘贴到该远程应用；或者从该远程应用复制信息，粘贴到外部计算机。通过上传/下载功能，用户只需在打开的远程应用中单击右键，在打开的菜单中选择“另存为”选项。然后在打开的文件夹中找到挂载磁盘，即可向磁盘中拖拽文件，进行上传/下载操作。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image {"id":3337,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image-12.webp" width="1024" height="656" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图11 远程应用复制/粘贴功能</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image {"id":3338,"sizeSlug":"large"} -->
                     <figure class="wp-block-image size-large">
                         <img src="../images/blog/release-20220221/image-13.webp" width="1024" height="617" alt="" loading="lazy" / decoding="async"/>
                         <figcaption>▲ 图12 远程应用向挂载磁盘中拖拽文件，实现上传/下载功能</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading -->
                     <h2>功能优化</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化账号备份的性能问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化会话录像回放窗口的自适应问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化用户授权树右击Kubernetes节点时，不自动展开的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化表单提交时，自动滚动到校验报错字段位置的问题。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>Bug修复</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复获取SAML 2.0协议的用户属性偶尔为空的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复测试资产可连接性失败的问题（在资产关联了多个系统用户的情况下）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复站内信功能导致Redis数据库连接数量持续增加的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Syslog记录的日志不显示命令记录中远端地址的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复会话录像文件未被定时清除的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复资产账号列表数据重复的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复通过SSH连接资产时的复用问题（当资产IP修改后，不再复用已有连接）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复资产账号导出条数不准确的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复通过XRDP连接资产时，会生成用户登录日志的问题（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading -->
                     <h2>直播预告</h2>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
-
                     <!-- /wp:paragraph -->
                 </div>
                 <div class="de-article-back"><a href="../blog.html">返回产品动态</a></div>
@@ -562,7 +512,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">

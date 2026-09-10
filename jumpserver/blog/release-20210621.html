@@ -245,7 +245,6 @@
                             </ul>
                         </li>
                         <li><a href="#contact">联系我们</a></li>
-
                         <li>
                             <div class="mt-3 menu-mt-pnone">
                                 <a target="_blank" href="https://docs.jumpserver.org/zh/v4/installation/setup_linux_standalone/offline_install/" class="btn btn-primary menu-btn"><i data-feather="download" class="icons"></i> 免费下载</a>
@@ -270,104 +269,86 @@
                         Code）的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产，从而进行远程开发。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         X-Pack增强包功能方面，JumpServer新增XRDP组件，支持用户通过本地客户端直连RDP资产，建立图形会话界面。为了满足更多企业用户实际需求，我们还新增了账号管理，主要包括资产账号、应用账号、收集用户、以及改密计划等功能，以方便账号集中统一纳管。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>新增功能</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p><strong>1. 新增站内信功能</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>在JumpServer v2.11.0版本中，新增站内信功能，支持订阅查看内部消息提示。目前JumpServer支持四种消息接收方式，即邮件、企业微信、钉钉和站内信。支持设置接收消息类型包括：危险命令告警以及监控告警。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>管理员可点击“系统设置”→“系统消息订阅”，勾选具体的接收消息方式，并且设置消息接收人。如果危险命令告警勾选了全部消息接收方式，当用户执行了高危命令，接收人即可通过邮件、企业微信、钉钉、站内信方式收到告警信息。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-01.png" width="1919" height="948" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图1 通过选择“系统设置”→“系统消息订阅”，设置消息接收方式和接收人</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-02.webp" width="1919" height="942" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图2 接收人在JumpServer界面右上角点击“站内信”图标，即可展示所收到的未读站内信</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-03.webp" width="1872" height="1001" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图3 接收人可在企业微信接收到告警信息</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>2. 支持通过SSH工具直连资产</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer v2.11.0版本中，支持通过SSH工具直连资产。使用命令格式：s<em>sh jumpserverUsername@systemUsername@AssetIP@jumpserverHostIP -p2222</em
                         >，如果能匹配到唯一资产、唯一系统用户名，则可直接登录该资产。如匹配到多个同IP资产，则用户可自主选择资产以及系统用户进行登录。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-04.webp" width="1919" height="638" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图4 通过SSH特殊命令格式，指定系统用户直连资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>3. 支持通过VS Code的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         在JumpServer v2.11.0版本中，支持通过VS Code（即Visual Studio Code）的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产，从而进行远程开发。用户需要在VS
                         Code插件库下载Remote-SSH。下载成功后，点击远程SSH连接工具，选择“Connect to Host”→“Add New SSH Host”。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         输入命令格式：<em>ssh jumpserverUsername@systemUsername@AssetIP@jumpserverHostIP -p2222</em
                         >，根据提示，可使用指定的系统用户连接指定的资产（即JumpServer所纳管的Linux-SSH协议资产）。目前我们仅支持自动登录的系统用户，且匹配的资产是唯一的。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-05.png" width="1823" height="1002" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图5 支持通过VS Code的Remote-SSH插件直连JumpServer所纳管的Linux-SSH协议资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-06.png" width="1919" height="1052" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图6 成功直连JumpServer所纳管的Linux-SSH协议资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>4. 新增XRDP组件，支持用户通过本地客户端直连RDP资产（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         X-Pack增强功能方面，JumpServer
@@ -375,109 +356,87 @@
                         Client”选项，并点击“确定”按钮，即会自动下载一个RDP文件。用户通过本地自主安装的远程桌面客户端连接工具打开RDP文件，即可使用刚才选择的系统用户直连该资产，同时JumpServer还能够对其进行会话审计。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-07.png" width="1919" height="944" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图7 用户下载RDP文件，点击“Windows资产”→ “系统用户”，选择Microsoft RDP Client连接方式</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-08.png" width="1919" height="1069" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图8 使用本地Microsoft RDP Client打开该RDP文件，成功使用所选择的系统用户连接该资产</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-09.png" width="1919" height="943" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图9 管理员可在“会话管理”界面审计该XRDP会话</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:paragraph -->
                     <p><strong>5. 新增账号管理功能模块（X-Pack增强包内）</strong></p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>JumpServer v2.11.0版本还新增了账号管理功能模块（X-Pack增强包内）。主要包括资产账号、应用账号、收集用户、以及改密计划等功能，方便账号集中统一纳管。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>
                         <strong>需要说明的是，这一版本的JumpServer取消了原有X-Pack模块中的密码匣子、收集用户、改密计划选项，将其功能合并至账号管理功能模块中。</strong
                         >以资产账号为例，管理员点击资产账号左侧的资产树节点，即可获取该节点下所有资产列表信息；点击某条资产，右侧即可获取该资产的所有账号列表。用户还可对账号密码进行查询、更新、测试可连接性、导出资产账号密码等操作。
                     </p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-10.webp" width="1919" height="941" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图10 获取资产的所有账号列表信息，并且可对账号密码进行查询、更新、测试可连接性、导出资产账号密码等操作</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:image -->
                     <figure class="wp-block-image">
                         <img src="../images/blog/release-20210621/image-11.png" width="1918" height="938" alt="支持通过VS Code直连Linux-SSH协议资产，JumpServer v2.11.0发布" loading="lazy" / decoding="async"/>
                         <figcaption>图11 获取某应用的所有账号密码信息，并可进行查看密码、导出账号密码等操作</figcaption>
                     </figure>
                     <!-- /wp:image -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>功能优化</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;支持使用华为云对象存储服务（OBS)，可对会话录像进行存储；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化系统用户，支持用户设置临时密码；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化通过Luna页面登录资产时对系统用户的选择，提升用户使用体验；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化记录Token认证的登录日志；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化Koko组件的代码结构，并重构部分代码逻辑（Koko）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化云同步的资产创建者字段为System（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;优化云账号测试失败的提示信息（X-Pack增强包内）。</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:heading {"level":3} -->
                     <h3><strong>Bug修复</strong></h3>
                     <!-- /wp:heading -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Redis服务异常时（例如主从切换）用户Session立即过期的问题 ；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复导入模版生成的列表中没有显示整数类型所在列的问题；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修改周期监测任务的配置参数；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复Azure云管账号创建必填字段提示信息（X-Pack增强包内）；</p>
                     <!-- /wp:paragraph -->
-
                     <!-- wp:paragraph -->
                     <p>■&nbsp;修复组织批量删除的问题，禁止批量。</p>
                     <!-- /wp:paragraph -->
@@ -542,7 +501,7 @@
                     </div>
                 </div>
             </div>
-        
+
                 <div class="text-center mt-5 pt-4">
                     <h4 class="title mb-4">Zabbix + JumpServer：IT 运维的开源双子星</h4>
                     <p class="text-muted" style="max-width: 700px; margin: 0 auto 40px;">
