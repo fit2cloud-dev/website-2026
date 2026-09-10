@@ -44,27 +44,14 @@
             .js-security-alert{line-height:1.78;position:relative;z-index:2;margin-top:-110px;padding-bottom:12px}.js-security-alert-card{display:flex;align-items:flex-start;gap:26px;padding:26px 30px;border:1px solid rgba(43,147,124,.26);border-radius:8px;background:#fff;box-shadow:0 16px 42px rgba(47,85,212,.08)}.js-security-alert-icon{flex:0 0 46px;width:46px;height:46px;border-radius:8px;background:rgba(43,147,124,.1);color:#2b937c}.js-security-alert-icon svg{width:24px;height:24px}.js-security-alert-body{flex:1 1 auto;min-width:0}.js-security-alert-tag{display:inline-block;margin:0 0 10px;padding:3px 10px;border-radius:4px;background:rgba(43,147,124,.1);color:#2b937c;font-size:13px;font-weight:700}.js-security-alert-title{margin:0 0 8px;color:#172033;font-size:20px;font-weight:700;line-height:1.45}.js-security-alert-desc{margin:0 0 18px;color:#5b6b82;font-size:15px;line-height:1.78}.js-security-alert-versions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:20px;padding-top:16px;border-top:1px solid rgba(23,32,51,.08)}.js-security-alert-version+.js-security-alert-version{padding-left:24px;border-left:1px solid rgba(23,32,51,.08)}.js-security-alert-version span{display:block;margin-bottom:6px;color:#172033;font-size:14px;font-weight:700}.js-security-alert-version p{margin:0;color:#5b6b82;font-size:14px;line-height:1.9}.js-security-alert-actions{display:flex;flex-wrap:wrap;gap:12px}@media (max-width:767px){.js-security-alert{margin-top:-70px}.js-security-alert-card{flex-direction:column;gap:16px;padding:22px}.js-security-alert-versions{grid-template-columns:1fr}.js-security-alert-version+.js-security-alert-version{margin-top:14px;padding-top:14px;padding-left:0;border-left:0}}
         </style>
         <!-- 非关键 CSS 异步加载（避免阻塞首屏渲染） -->
-        <link rel="preload" href="./css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/mega.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/colors/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="./css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <!-- 首屏关键 CSS 同步加载：站内跳转时 memory cache 命中零延迟，完全消除 FOUC -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/style.css" id="theme-opt" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/mega.css" />
+        <link rel="stylesheet" href="./css/colors/default.css" id="color-opt" />
+        <!-- 非关键 CSS 异步加载（不阻塞首屏渲染） -->
         <noscript>
-            <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-            <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-            <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-            <link rel="stylesheet" href="./css/mega.css" />
-            <link href="./css/animate.css" rel="stylesheet" />
-            <link href="./css/animations-delay.css" rel="stylesheet" />
-            <link href="./css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-            <link href="./css/colors/default.css" rel="stylesheet" id="color-opt" />
-            <link href="./css/index.css" rel="stylesheet" type="text/css" />
         </noscript>
         <!-- SEO Enhancements Start -->
         <meta name="author" content="FIT2CLOUD 飞致云" />
@@ -265,13 +252,13 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
                             <div class="title-heading text-center mt-4">
-                                <h1 class="text-light para-dark animated">
+                                <h1 class="text-light para-dark">
                                     <b>广受欢迎的开源堡垒机</b>
                                 </h1>
-                                <h5 class="mt-4 mb-2 text-light para-dark animated" style="font-weight: 400">
+                                <h5 class="mt-4 mb-2 text-light para-dark" style="font-weight: 400">
                                     <span>运维必备神器！JumpServer 支持事前授权、事中监察、事后审计，满足等保合规要求，由飞致云匠心出品。</span>
                                 </h5>
-                                <div class="mt-4 pt-2 animated">
+                                <div class="mt-4 pt-2">
                                     <a target="_blank" href="https://www.bilibili.com/video/BV1hErPYrEsn/" class="btn btn-primary mt-2"> 了解更多</a>
                                 </div>
                             </div>
@@ -1494,13 +1481,6 @@
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
 
         <script src="./js/jquery-3.5.1.min.js" defer></script>
-        <script src="./js/bootstrap.bundle.min.js" defer></script>
-        <script src="./js/jquery.easing.min.js" defer></script>
-        <script src="./js/scrollspy.min.js" defer></script>
-        <script src="./js/jquery.magnific-popup.min.js" defer></script>
-        <script src="./js/magnific.init.js" defer></script>
-        <script src="./js/owl.carousel.min.js" defer></script>
-        <script src="./js/owl.init.js" defer></script>
         <script src="./js/feather.min.js" defer></script>
         <script src="./js/app.js" defer></script>
         <script src="./js/mega.js" defer></script>

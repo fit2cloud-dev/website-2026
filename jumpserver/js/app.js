@@ -63,20 +63,6 @@
         }
     });
 
-    $('.mouse-down').on('click', function (event) {
-        var $anchor = $(this);
-        $('html, body')
-            .stop()
-            .animate(
-                {
-                    scrollTop: $($anchor.attr('href')).offset().top - 72,
-                },
-                1500,
-                'easeInOutExpo',
-            );
-        event.preventDefault();
-    });
-
     //Sticky
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -128,14 +114,6 @@
         });
     });
 
-    //Tooltip
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
-    //Popover
-    $(function () {
-        $('[data-toggle="popover"]').popover();
-    });
     //Feather icon
     feather.replace();
 

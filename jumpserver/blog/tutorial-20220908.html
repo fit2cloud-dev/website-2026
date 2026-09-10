@@ -57,23 +57,13 @@
         </style>
         <!-- 非关键 CSS 异步加载（避免阻塞首屏渲染） -->
         <link rel="preload" href="../css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="../css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="../css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="../css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <link rel="preload" href="../css/mega.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <link rel="preload" href="../css/colors/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <link rel="preload" href="../css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript>
             <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-            <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
-            <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-            <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
             <link rel="stylesheet" href="../css/mega.css" />
-            <link href="../css/animate.css" rel="stylesheet" />
-            <link href="../css/animations-delay.css" rel="stylesheet" />
             <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
             <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
             <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -433,10 +423,10 @@ HTTP_URL="http://192.168.100.100"
 USERNAME="admin"
 #jumpserver用户登录密码
 PASSWORD="fit2cloud"
-TOKEN=`curl -s -X POST -H 'Content-Type: application/json' -d '{"username":"'"$USERNAME"'","password":"'"$PASSWORD"'"}' ${HTTP_URL}/api/v1/authentication/auth/ |awk  -F ',' '{print $1"}"}'|awk -F '[{ " :]' '{print $6}'`
+TOKEN=`curl -s -X POST -H 'Content-Type: application/json' -d '{"username":"'"$USERNAME"'","password":"'"$PASSWORD"'"}' ${HTTP_URL}/api/v1/authentication/auth/ |awk -F ',' '{print $1"}"}'|awk -F '[{ " :]' '{print $6}'`
 while read name username email password
 do
-        curl -X POST -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json'  -d '{"name":"'"$name"'","username":"'"$username"'","email":"'"$email"'","password":"'"$password"'","is_active":"true","password_strategy":"custom","system_roles":["00000000-0000-0000-0000-000000000003"],"org_roles":["00000000-0000-0000-0000-000000000007"]}' ${HTTP_URL}/api/v1/users/users/
+        curl -X POST -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{"name":"'"$name"'","username":"'"$username"'","email":"'"$email"'","password":"'"$password"'","is_active":"true","password_strategy":"custom","system_roles":["00000000-0000-0000-0000-000000000003"],"org_roles":["00000000-0000-0000-0000-000000000007"]}' ${HTTP_URL}/api/v1/users/users/
 done &lt;name.txt</code></pre>
                     </shiki-code>
                     <!-- /wp:code -->
@@ -743,13 +733,6 @@ done &lt;name.txt</code></pre>
             </div>
         </footer>
         <script src="../js/jquery-3.5.1.min.js" defer></script>
-        <script src="../js/bootstrap.bundle.min.js" defer></script>
-        <script src="../js/jquery.easing.min.js" defer></script>
-        <script src="../js/scrollspy.min.js" defer></script>
-        <script src="../js/jquery.magnific-popup.min.js" defer></script>
-        <script src="../js/magnific.init.js" defer></script>
-        <script src="../js/owl.carousel.min.js" defer></script>
-        <script src="../js/owl.init.js" defer></script>
         <script src="../js/feather.min.js" defer></script>
         <script src="../js/app.js" defer></script>
         <script src="../js/mega.js" defer></script>
