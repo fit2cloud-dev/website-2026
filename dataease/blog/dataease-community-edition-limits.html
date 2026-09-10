@@ -42,15 +42,7 @@
         <meta name="twitter:image" content="https://dataease.cn/images/blog/dataease-community-edition-limits/cover.png" />
         <meta name="twitter:image:alt" content="DataEase社区版（免费版）的限制有哪些？ - DataEase 产品动态" />
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="../css/unicons.css" />
-        <link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
         <link rel="stylesheet" href="../css/mega.css" />
-        <link rel="preload" href="../css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link href="../css/animate.css" rel="stylesheet" /></noscript>
-        <link rel="preload" href="../css/animations-delay.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link href="../css/animations-delay.css" rel="stylesheet" /></noscript>
         <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
         <link href="../css/colors/default.css" rel="stylesheet" id="color-opt" />
         <link href="../css/index.css" rel="stylesheet" type="text/css" />
@@ -76,9 +68,7 @@
             <div class="hidden-print mega-nav-sandbox">
                 <div class="mega-nav-banner">
                     <div class="container">
-                        <div class="mega-nav-banner-item">
-                            <a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a>
-                        </div>
+                        <div class="mega-nav-banner-item"><a class="mega-nav-banner-logo" href="https://www.fit2cloud.com/"><img decoding="async" loading="eager" src="../images/logo/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" /></a></div>
                         <div class="mega-nav-banner-item">
                             <p class="mega-nav-tagline"><span class="text-muted">飞致云旗下开源产品</span></p>
                             <div id="#mega-nav" class="mega-nav">
@@ -168,11 +158,7 @@
         </header>
         <main class="de-article-main">
             <article class="de-article container">
-                <nav class="de-article-breadcrumb" aria-label="面包屑">
-                    <a href="../index.html">首页</a>
-                    <span>/</span>
-                    <a href="../blog.html">产品动态</a>
-                </nav>
+                <nav class="de-article-breadcrumb" aria-label="面包屑"><a href="../index.html">首页</a><span>/</span><a href="../blog.html">产品动态</a></nav>
                 <header class="de-article-header">
                     <h1>DataEase社区版（免费版）的限制有哪些？</h1>
                     <p>逐项梳理社区版的功能边界，帮你判断免费版是否满足实际业务场景。</p>
@@ -180,22 +166,16 @@
                     <img decoding="async" src="../images/blog/dataease-community-edition-limits/cover.webp" alt="DataEase社区版（免费版）的限制有哪些？" loading="eager" />
                 </header>
                 <div class="de-article-content">
-
                     <p>DataEase 社区版完全免费开源，在 GitHub 上已累计获得超过 17000 个 Star。对于初次评估这款工具的团队，一个常见的问题是：免费版究竟有哪些限制？哪些场景下会遇到瓶颈？</p>
-
                     <p>本文基于官方版本对比页面，对社区版的功能边界做逐项说明，尽量做到具体、可判断，而不是泛泛而谈。</p>
-
                     <h2>一、社区版完整保留的能力</h2>
-
                     <p>在介绍限制之前，先明确社区版的能力范围，避免误解。以下功能在社区版中<strong>完整提供</strong>，与付费版无差异：</p>
-
                     <h3>数据接入</h3>
                     <ul>
                         <li>常见关系型数据库（MySQL、PostgreSQL、SQLServer、Oracle 等）</li>
                         <li>API 数据源</li>
                         <li>Excel、CSV 文件上传</li>
                     </ul>
-
                     <h3>数据准备</h3>
                     <ul>
                         <li>数据表建模（拖拽式字段关联）</li>
@@ -203,7 +183,6 @@
                         <li>跨数据源建模</li>
                         <li>数据填报（表单录入数据回写数据库）</li>
                     </ul>
-
                     <h3>可视化分析</h3>
                     <ul>
                         <li>全部常用图表类型（柱状图、折线图、饼图、散点图、地图等）</li>
@@ -214,92 +193,58 @@
                         <li>模板市场（提供海量精美模板）</li>
                         <li>AI 小助手（产品智能问答）</li>
                     </ul>
-
                     <p>也就是说，从数据接入到做出一张漂亮的仪表板，这条核心链路在社区版中是完整的。</p>
-
                     <h2>二、社区版的主要限制</h2>
-
                     <h3>2.1 权限管理体系缺失</h3>
-
                     <p>这是社区版最核心的限制，也是大部分企业最先遇到的瓶颈。</p>
-
                     <p>社区版仅支持基础的用户管理（创建用户、分配账号），以下功能<strong>不包含</strong>：</p>
-
                     <ul>
                         <li><strong>组织管理</strong>：无法按部门、团队建立层级组织结构</li>
                         <li><strong>系统权限管理</strong>：无法基于角色分配系统操作权限</li>
                         <li><strong>资源权限管理</strong>：无法控制哪些用户可以查看哪些仪表板或数据集</li>
                         <li><strong>数据行列权限</strong>：无法实现不同用户看到同一仪表板但数据范围不同（例如销售员只看自己负责的区域数据）</li>
                     </ul>
-
                     <p>这意味着，在社区版中，系统内所有用户对同一份数据的可见范围基本一致，无法做精细化数据隔离。对于多部门协同使用、或者涉及敏感数据需要按角色隔离的场景，这是实质性限制。</p>
-
                     <h3>2.2 定时报告与数据同步</h3>
-
                     <p>社区版不支持以下两项自动化功能：</p>
-
                     <ul>
                         <li><strong>定时报告</strong>：无法配置按计划自动生成报告并推送给指定收件人（邮件/企业微信等）</li>
                         <li><strong>数据同步管理</strong>：无法管理跨系统的数据同步任务</li>
                     </ul>
-
                     <p>如果团队有"每周一自动发送销售周报"这类需求，社区版无法直接实现，需要借助外部调度工具或自行开发。</p>
-
                     <h3>2.3 系统个性化配置受限</h3>
-
                     <p>社区版在系统设置层面缺少三项能力：</p>
-
                     <ul>
                         <li><strong>系统变量</strong>：无法配置全局变量供分析中动态引用</li>
                         <li><strong>水印设置</strong>：分享的仪表板和大屏无法加水印</li>
                         <li><strong>自定义外观</strong>：无法替换系统 Logo、调整主题色，对外展示时将保留 DataEase 默认品牌样式</li>
                     </ul>
-
                     <p>对于需要对外展示数据或将 DataEase 纳入内部门户的企业，品牌定制能力的缺失会有影响。</p>
-
                     <h3>2.4 开放集成能力为零</h3>
-
                     <p>社区版不包含任何开放集成功能：</p>
-
                     <ul>
                         <li><strong>企业认证协议</strong>：不支持 LDAP、OIDC、CAS、OAuth2。这意味着无法与企业已有的统一身份认证系统对接，用户需要在 DataEase 内单独维护一套账号体系</li>
                         <li><strong>平台对接</strong>：不支持钉钉、飞书、企业微信集成，无法通过这些协作平台接收报告推送或完成单点登录</li>
                         <li><strong>开放 API</strong>：不提供 REST API，外部系统无法通过接口调用 DataEase 的数据或功能</li>
                     </ul>
-
                     <p>这对于已建立企业级 IT 环境的中大型企业来说是明显短板——员工需要记忆额外的账号密码，也无法将 DataEase 的数据推送集成进日常工作流。</p>
-
                     <h3>2.5 嵌入式能力不包含</h3>
-
                     <p>社区版没有任何嵌入式支持，无法将仪表板或图表以 iframe 或 div 的方式嵌入到其他系统或网页中。</p>
-
                     <p>如果有"将数据分析页面内嵌进 ERP 或 CRM 系统"的需求，社区版无法实现，需要采购嵌入式版或企业版。</p>
-
                     <h3>2.6 部署灵活性有限</h3>
-
                     <p>社区版仅支持<strong>单机部署</strong>，不支持冷备、热备或集群部署。对于对系统可用性有较高要求的生产环境，单机部署意味着单点故障风险。</p>
-
                     <p>此外，社区版不提供 ARM 架构安装包，不适用于信创（基于国产 ARM 处理器）环境。</p>
-
                     <h3>2.7 插件扩展不包含</h3>
-
                     <p>社区版不含以下两类插件：</p>
-
                     <ul>
                         <li><strong>数据源插件</strong>：扩展支持国产数据库（如达梦、人大金仓、OceanBase 等），以及更多专业数据库类型</li>
                         <li><strong>图表插件</strong>：提供高级图表类型，如 3D 饼图、3D 柱状图等</li>
                     </ul>
-
                     <p>如果企业的数据库类型较为标准（MySQL、PostgreSQL 等），数据源插件限制影响不大。图表插件则主要影响大屏展示的视觉丰富度。</p>
-
                     <h3>2.8 无原厂技术支持</h3>
-
                     <p>社区版不提供原厂企业级技术支持服务。遇到问题只能通过社区论坛、知识库和 GitHub Issues 寻求帮助，不保证响应时效。</p>
-
                     <p>对于生产环境使用、对故障响应时效有要求的企业，这是需要提前考量的风险点。专业版提供 5×8、4 小时响应的基础级支持；企业版提供 7×24、1 小时响应的增强级支持。</p>
-
                     <h2>三、限制汇总</h2>
-
                     <table>
                         <thead>
                             <tr>
@@ -366,26 +311,18 @@
                             </tr>
                         </tbody>
                     </table>
-
                     <h2>四、什么情况下社区版是够用的？</h2>
-
                     <p>尽管限制不少，社区版在以下场景下完全足够：</p>
-
                     <ul>
                         <li><strong>个人学习和技术评估</strong>：完整体验 DataEase 的核心功能，无需付费</li>
                         <li><strong>小团队内部使用（5人以内）</strong>：用户数少、无复杂权限需求、数据类型标准</li>
                         <li><strong>初创公司快速启动</strong>：先用社区版搭起数据分析体系，随业务扩张再考虑升级</li>
                         <li><strong>对外演示和 PoC</strong>：展示 DataEase 的可视化能力，不需要生产级权限管控</li>
                     </ul>
-
                     <p>一旦团队规模扩大、数据需要按部门隔离、或者需要与企业已有系统打通，就基本意味着到了该升级的节点。</p>
-
                     <h2>五、从社区版升级的路径</h2>
-
                     <p>DataEase 支持从社区版平滑升级到付费版，已有的数据、仪表板和配置不会丢失。升级前建议申请<a href="https://jsj.top/f/TK5TTd" target="_blank" rel="noopener noreferrer">商业版试用</a>，在实际环境中验证付费功能是否满足需求。</p>
-
                     <p>完整版本功能对比可参考 <a href="../versions.html">DataEase 版本对比页面</a>。</p>
-
                 </div>
             </article>
         </main>
@@ -396,11 +333,7 @@
                     <div class="col-12 text-center">
                         <div class="section-title">
                             <h4 class="title mb-4">联系我们</h4>
-                            <p class="text-muted para-desc mx-auto mb-4">
-                                想要进一步了解
-                                <span class="text-primary font-weight-bold">DataEase</span>
-                                ? 欢迎通过如下方式联系我们。
-                            </p>
+                            <p class="text-muted para-desc mx-auto mb-4">想要进一步了解 <span class="text-primary font-weight-bold">DataEase</span> ? 欢迎通过如下方式联系我们。</p>
                         </div>
                     </div>
                 </div>
@@ -416,33 +349,25 @@
                     <div class="offset-1 col-lg-3 col-md-3 order-1 order-md-2">
                         <div class="title-heading ml-lg-4">
                             <div class="media contact-detail align-items-center mt-2">
-                                <div class="icon">
-                                    <i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i>
-                                </div>
+                                <div class="icon"><i data-feather="phone" class="fea icon-m-md text-dark mr-3"></i></div>
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a href="tel:400-052-0755" class="text-muted">400-052-0755</a></h4>
                                 </div>
                             </div>
                             <div class="media contact-detail align-items-center mt-2">
-                                <div class="icon">
-                                    <i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i>
-                                </div>
+                                <div class="icon"><i data-feather="mail" class="fea icon-m-md text-dark mr-3"></i></div>
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a href="mailto:support@fit2cloud.com" class="text-muted">support@fit2cloud.com</a></h4>
                                 </div>
                             </div>
                             <div class="media contact-detail align-items-center mt-2">
-                                <div class="icon">
-                                    <i data-feather="download" class="fea icon-m-md text-dark mr-3"></i>
-                                </div>
+                                <div class="icon"><i data-feather="download" class="fea icon-m-md text-dark mr-3"></i></div>
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://fit2cloud.com/dataease/download/introduce-dataease_2026.pdf" class="footer-text-color" rel="noopener noreferrer">产品 PPT 材料</a></h4>
                                 </div>
                             </div>
                             <div class="media contact-detail align-items-center mt-2">
-                                <div class="icon">
-                                    <i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i>
-                                </div>
+                                <div class="icon"><i data-feather="edit" class="fea icon-m-md text-dark mr-3"></i></div>
                                 <div class="media-body content">
                                     <h4 class="page-title mb-0"><a target="_blank" href="https://jsj.top/f/TK5TTd" class="footer-text-color" rel="noopener noreferrer">申请商业版试用</a></h4>
                                 </div>
@@ -456,9 +381,7 @@
             <div class="container">
                 <div class="de-footer-main">
                     <div class="de-footer-brand">
-                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页">
-                            <img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" />
-                        </a>
+                        <a class="de-footer-logo" href="../index.html" aria-label="DataEase 首页"><img decoding="async" loading="lazy" src="../images/logo/logo-light-DataEase.svg" alt="DataEase Logo" /></a>
                         <p class="de-footer-desc">人人可用的开源 BI 工具，帮助用户快速完成数据分析、可视化展示与业务洞察。</p>
                         <div class="de-footer-social" aria-label="DataEase 社区入口">
                             <a href="https://github.com/dataease/dataease" target="_blank" rel="noopener noreferrer" aria-label="GitHub 仓库"><i data-feather="github"></i></a>
@@ -501,7 +424,6 @@
                                 <li><a href="https://jsj.top/f/vKGHRP" target="_blank" rel="noopener noreferrer">申请成为合作伙伴</a></li>
                                 <li><a href="https://jsj.top/f/TK5TTd" target="_blank" rel="noopener noreferrer">申请商业版试用</a></li>
                                 <li><a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a></li>
-
                                 <li><a href="https://bbs.fit2cloud.com/c/de/6" target="_blank" rel="noopener noreferrer">社区论坛</a></li>
                             </ul>
                         </div>
@@ -522,13 +444,7 @@
         <a href="#" class="btn btn-icon btn-soft-primary back-to-top" id="back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
         <script defer src="../js/jquery-3.5.1.min.js"></script>
         <script defer src="../js/bootstrap.bundle.min.js"></script>
-        <script defer src="../js/jquery.easing.min.js"></script>
         <script defer src="../js/feather.min.js"></script>
-        <script defer src="../js/monochrome-bundle.js"></script>
-        <script defer src="../js/jquery.magnific-popup.min.js"></script>
-        <script defer src="../js/magnific.init.js"></script>
-        <script defer src="../js/owl.carousel.min.js"></script>
         <script defer src="../js/app.js"></script>
-        <script defer src="../js/mega.js"></script>
     </body>
 </html>
