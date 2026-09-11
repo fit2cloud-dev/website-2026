@@ -16,6 +16,11 @@
     --f2c-MeterSphere-rgb: 120, 56, 135;
 }
 
+/* 固定导航底衬：遮挡滚动时从导航卡片上方缝隙透出的页面内容 */
+header.fixed-top {
+    background: var(--f2c-body-bg);
+}
+
 .f2c-header-card {
     background: linear-gradient(90deg, #fbfdff 0%, #fbfcff 100%);
     box-shadow: 0px 2px 4px 0px rgba(0, 27, 91, 0.1);
