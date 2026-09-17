@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="JumpServer V5 原生客户端：一个客户端，访问所有资产">
+    <rect width="1600" height="900" fill="#f6f9fb" />
+
+    <text x="800" y="86" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="44" font-weight="700" fill="#172033">一个客户端，访问所有资产</text>
+    <text x="800" y="134" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" fill="#5a6b7c">无需为不同类型资产切换不同工具，获得流畅、统一的操作体验</text>
+    <line x1="640" y1="168" x2="960" y2="168" stroke="#2b937c" stroke-width="4" stroke-linecap="round" />
+
+    <!-- 资产类型 -->
+    <text x="150" y="214" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="600" fill="#8492a6">资产类型</text>
+
+    <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+        <g>
+            <rect x="150" y="230" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="230" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="255" font-size="24" font-weight="600" fill="#172033">SSH</text>
+            <text x="186" y="276" font-size="17" fill="#8492a6">Linux / Unix 终端</text>
+        </g>
+        <g>
+            <rect x="150" y="298" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="298" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="323" font-size="24" font-weight="600" fill="#172033">RDP</text>
+            <text x="186" y="344" font-size="17" fill="#8492a6">Windows 远程桌面</text>
+        </g>
+        <g>
+            <rect x="150" y="366" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="366" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="391" font-size="24" font-weight="600" fill="#172033">VNC</text>
+            <text x="186" y="412" font-size="17" fill="#8492a6">图形化远程桌面</text>
+        </g>
+        <g>
+            <rect x="150" y="434" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="434" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="459" font-size="24" font-weight="600" fill="#172033">数据库</text>
+            <text x="186" y="480" font-size="17" fill="#8492a6">MySQL / Redis / Oracle 等</text>
+        </g>
+        <g>
+            <rect x="150" y="502" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="502" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="527" font-size="24" font-weight="600" fill="#172033">Web</text>
+            <text x="186" y="548" font-size="17" fill="#8492a6">Web 站点</text>
+        </g>
+        <g>
+            <rect x="150" y="570" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="570" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="595" font-size="24" font-weight="600" fill="#172033">K8s</text>
+            <text x="186" y="616" font-size="17" fill="#8492a6">Kubernetes 集群</text>
+        </g>
+        <g>
+            <rect x="150" y="638" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="638" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="663" font-size="24" font-weight="600" fill="#172033">RemoteApp</text>
+            <text x="186" y="684" font-size="17" fill="#8492a6">Windows 应用虚拟化</text>
+        </g>
+        <g>
+            <rect x="150" y="706" width="360" height="58" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="150" y="706" width="6" height="58" rx="3" fill="#2b937c" />
+            <text x="186" y="731" font-size="24" font-weight="600" fill="#172033">VirtualApp</text>
+            <text x="186" y="752" font-size="17" fill="#8492a6">Linux 应用虚拟化</text>
+        </g>
+    </g>
+
+    <!-- 连接线 -->
+    <g stroke="#b9d8d1" stroke-width="3" fill="none">
+        <path d="M510 259 C 640 259, 660 497, 790 497" />
+        <path d="M510 327 C 640 327, 660 497, 790 497" />
+        <path d="M510 395 C 640 395, 660 497, 790 497" />
+        <path d="M510 463 C 640 463, 660 497, 790 497" />
+        <path d="M510 531 C 640 531, 660 497, 790 497" />
+        <path d="M510 599 C 640 599, 660 497, 790 497" />
+        <path d="M510 667 C 640 667, 660 497, 790 497" />
+        <path d="M510 735 C 640 735, 660 497, 790 497" />
+    </g>
+
+    <!-- 客户端 -->
+    <g>
+        <rect x="800" y="372" width="620" height="250" rx="18" fill="#2b937c" />
+        <rect x="800" y="372" width="620" height="250" rx="18" fill="none" stroke="#2b937c" stroke-width="2" />
+        <text x="1110" y="464" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="38" font-weight="700" fill="#ffffff">JumpServer V5 原生客户端</text>
+        <text x="1110" y="508" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="23" fill="#d7ece7">统一入口 · 统一体验</text>
+        <text x="1110" y="558" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="600" fill="#ffffff">一个客户端，访问所有资产</text>
+    </g>
+
+    <!-- 底部说明 -->
+    <rect x="150" y="792" width="1300" height="66" rx="12" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+    <text x="800" y="834" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" font-weight="600" fill="#172033">彻底重塑客户端体验，SSH、RDP、VNC、数据库、Web 站点、K8s、RemoteApp、VirtualApp 一站式直达</text>
+</svg>

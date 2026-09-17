@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="JumpServer V5 内置 AI 能力：让运维更高效、更安全">
+    <rect width="1600" height="900" fill="#f6f9fb" />
+
+    <text x="800" y="86" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="44" font-weight="700" fill="#172033">内置 AI：让运维更高效、更安全</text>
+    <text x="800" y="134" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="24" fill="#5a6b7c">从 V5 开始，AI 能力将逐步融入堡垒机的方方面面</text>
+    <line x1="640" y1="168" x2="960" y2="168" stroke="#2b937c" stroke-width="4" stroke-linecap="round" />
+
+    <!-- 三张能力卡片 -->
+    <g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+        <g>
+            <rect x="110" y="250" width="420" height="340" rx="16" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="110" y="250" width="420" height="8" rx="4" fill="#2b937c" />
+            <circle cx="200" cy="352" r="40" fill="#e8f4f1" />
+            <path d="M186 366 l0 -26 l28 13 l-28 13 z" fill="#2b937c" />
+            <text x="268" y="344" font-size="18" font-weight="600" letter-spacing="0.6" fill="#2b937c">AI ASSIST</text>
+            <text x="268" y="380" font-size="28" font-weight="700" fill="#172033">智能命令推荐</text>
+            <text x="150" y="452" font-size="22" fill="#5a6b7c">结合当前资产与上下文，</text>
+            <text x="150" y="488" font-size="22" fill="#5a6b7c">推荐可直接执行的运维命令，</text>
+            <text x="150" y="524" font-size="22" fill="#5a6b7c">减少记忆成本与操作失误。</text>
+        </g>
+        <g>
+            <rect x="590" y="250" width="420" height="340" rx="16" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="590" y="250" width="420" height="8" rx="4" fill="#2b937c" />
+            <circle cx="680" cy="352" r="40" fill="#e8f4f1" />
+            <path d="M680 328 l24 42 l-24 0 l0 14 l-24 -42 l24 0 z" fill="#2b937c" />
+            <text x="748" y="344" font-size="18" font-weight="600" letter-spacing="0.6" fill="#2b937c">AI GUARD</text>
+            <text x="748" y="380" font-size="28" font-weight="700" fill="#172033">操作风险预警</text>
+            <text x="630" y="452" font-size="22" fill="#5a6b7c">识别高风险命令与异常操作，</text>
+            <text x="630" y="488" font-size="22" fill="#5a6b7c">在造成影响前及时提示，</text>
+            <text x="630" y="524" font-size="22" fill="#5a6b7c">让权限与操作边界更清晰。</text>
+        </g>
+        <g>
+            <rect x="1070" y="250" width="420" height="340" rx="16" fill="#ffffff" stroke="#dbe4ec" stroke-width="2" />
+            <rect x="1070" y="250" width="420" height="8" rx="4" fill="#2b937c" />
+            <circle cx="1160" cy="352" r="40" fill="#e8f4f1" />
+            <rect x="1144" y="334" width="32" height="36" rx="4" fill="none" stroke="#2b937c" stroke-width="3" />
+            <line x1="1152" y1="346" x2="1168" y2="346" stroke="#2b937c" stroke-width="3" />
+            <line x1="1152" y1="356" x2="1168" y2="356" stroke="#2b937c" stroke-width="3" />
+            <text x="1228" y="344" font-size="18" font-weight="600" letter-spacing="0.6" fill="#2b937c">AI AUDIT</text>
+            <text x="1228" y="380" font-size="28" font-weight="700" fill="#172033">自动化审计报告</text>
+            <text x="1110" y="452" font-size="22" fill="#5a6b7c">自动汇总会话与操作记录，</text>
+            <text x="1110" y="488" font-size="22" fill="#5a6b7c">生成可追溯的审计摘要，</text>
+            <text x="1110" y="524" font-size="22" fill="#5a6b7c">让安全管理更高效、更省心。</text>
+        </g>
+    </g>
+
+    <!-- 底部说明 -->
+    <rect x="110" y="646" width="1380" height="120" rx="16" fill="#172033" />
+    <text x="800" y="702" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" fill="#ffffff">AI 将成为您运维工作中的得力助手</text>
+    <text x="800" y="742" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="22" fill="#b9d8d1">安全管理更智能、更高效；v5.0.0 只是 JumpServer V5 的第一步，未来将持续迭代、不断进化</text>
+</svg>
