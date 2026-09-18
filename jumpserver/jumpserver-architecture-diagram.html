@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; background: #ffffff; }
+  svg { display: block; }
+  text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .mono { font-family: "SF Mono", Menlo, Consolas, monospace; }
+</style>
+</head>
+<body>
+<svg width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/>
+    </marker>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- ============ Outer frame ============ -->
+  <rect x="20" y="20" width="1160" height="860" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.5"/>
+
+  <!-- ============ IT Assets section ============ -->
+  <rect x="60" y="60" width="1080" height="200" rx="12" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="600" y="106" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">IT Assets</text>
+
+  <!-- IT Assets cards: x = 89 + i*130, w=112, h=95, y=135 -->
+  <!-- SSH -->
+  <g filter="url(#soft)">
+    <rect x="89" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <rect x="129" y="159" width="32" height="26" rx="5" fill="#111827"/>
+  <text x="145" y="177" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff" class="mono">&gt;_</text>
+  <text x="145" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">SSH</text>
+
+  <!-- RDP -->
+  <g filter="url(#soft)">
+    <rect x="219" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <rect x="260.5" y="157.5" width="13" height="13" fill="#0078d4"/>
+  <rect x="276.5" y="157.5" width="13" height="13" fill="#0078d4"/>
+  <rect x="260.5" y="173.5" width="13" height="13" fill="#0078d4"/>
+  <rect x="276.5" y="173.5" width="13" height="13" fill="#0078d4"/>
+  <text x="275" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">RDP</text>
+
+  <!-- VNC -->
+  <g filter="url(#soft)">
+    <rect x="349" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <rect x="389" y="159" width="32" height="22" rx="3" fill="#2563eb"/>
+  <rect x="392" y="162" width="26" height="16" fill="#93c5fd"/>
+  <rect x="402" y="181" width="6" height="5" fill="#2563eb"/>
+  <rect x="396" y="186" width="18" height="3" rx="1.5" fill="#2563eb"/>
+  <text x="405" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">VNC</text>
+
+  <!-- Kubernetes -->
+  <g filter="url(#soft)">
+    <rect x="479" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <circle cx="535" cy="172" r="16" fill="#326ce5"/>
+  <g stroke="#ffffff" stroke-width="1.6">
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(0 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(51.4 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(102.9 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(154.3 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(205.7 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(257.1 535 172)"/>
+    <line x1="535" y1="159" x2="535" y2="168" transform="rotate(308.6 535 172)"/>
+  </g>
+  <circle cx="535" cy="172" r="4" fill="#ffffff"/>
+  <text x="535" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">Kubernetes</text>
+
+  <!-- Database -->
+  <g filter="url(#soft)">
+    <rect x="609" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <path d="M 651 165 v 14 a 14 6 0 0 0 28 0 v -14 Z" fill="#5b8ac0"/>
+  <ellipse cx="665" cy="165" rx="14" ry="6" fill="#8fb3d9"/>
+  <text x="665" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">Database</text>
+
+  <!-- Website -->
+  <g filter="url(#soft)">
+    <rect x="739" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <circle cx="795" cy="172" r="15" fill="#0ea5e9"/>
+  <ellipse cx="795" cy="172" rx="6.5" ry="15" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+  <line x1="780" y1="172" x2="810" y2="172" stroke="#ffffff" stroke-width="1.8"/>
+  <text x="795" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">Website</text>
+
+  <!-- RemoteApp -->
+  <g filter="url(#soft)">
+    <rect x="869" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <circle cx="925" cy="172" r="15" fill="#ef4444"/>
+  <path d="M 919 178 L 931 166 M 923 166 h 8 v 8" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="925" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">RemoteApp</text>
+
+  <!-- VirtualApp -->
+  <g filter="url(#soft)">
+    <rect x="999" y="135" width="112" height="95" rx="10" fill="#ffffff" stroke="#e5e7eb" stroke-width="1.2"/>
+  </g>
+  <path d="M 1055 158 L 1067 165 L 1055 172 L 1043 165 Z" fill="#8b5cf6"/>
+  <path d="M 1055 164 L 1067 171 L 1055 178 L 1043 171 Z" fill="#8b5cf6" opacity="0.65"/>
+  <path d="M 1055 170 L 1067 177 L 1055 184 L 1043 177 Z" fill="#8b5cf6" opacity="0.38"/>
+  <text x="1055" y="215" text-anchor="middle" font-size="13.5" font-weight="600" fill="#1f2937">VirtualApp</text>
+
+  <!-- ============ Dashed arrows: IT Assets <-> JumpServer ============ -->
+  <g stroke="#4b5563" stroke-width="1.6" stroke-dasharray="6 5">
+    <line x1="250" y1="266" x2="555" y2="324" marker-start="url(#ah)"/>
+    <line x1="600" y1="266" x2="600" y2="324" marker-start="url(#ah)"/>
+    <line x1="950" y1="266" x2="645" y2="324" marker-start="url(#ah)"/>
+  </g>
+
+  <!-- ============ JumpServer section ============ -->
+  <rect x="60" y="330" width="1080" height="280" rx="12" fill="#ffffff" stroke="#2b937c" stroke-width="1.8"/>
+
+  <!-- Logo row (official logo lockup) -->
+  <svg x="365" y="358" width="220" height="44.3" viewBox="847.5 183.1 174 35">
+    <style>.st0{fill:#2B937C;}</style>
+    <g>
+      <path class="st0" d="M861.8,186.2c-1.1,0.7-2.3,1.3-3.5,1.9c-1.3,0.7-2.6,1.5-4.1,2.3c3.1,2,6.1,3.9,9.3,5.9c-0.6,0.4-1.1,0.6-1.5,0.9c-0.5,0.3-0.8,0.3-1.3,0c-2.5-1.5-5.1-3-7.6-4.6c-1.1-0.7-1.9-0.8-2.9-0.1c-1,0.7-1.1,1.6,0,2.2c0.5,0.3,1,0.6,1.5,1c2.8,1.7,5.6,3.4,8.2,5.2c1.7,1.1,3.2,1.1,4.8,0.1c1.5-0.9,3-1.8,4.5-2.7c0.6-0.3,1.1-0.7,1.8-1.1c-3-1.9-5.8-3.7-8.7-5.6c0.5-0.4,0.9-0.6,1.3-0.9c0.5-0.4,0.9-0.4,1.5-0.1c2.5,1.4,5,2.8,7.5,4.2c1.7,0.9,1.7,0.9,3-0.5c0.5-0.6,0.4-1.3-0.3-1.7c-4-2.2-8-4.4-11.9-6.6C862.7,185.9,862.3,185.9,861.8,186.2z"/>
+      <path class="st0" d="M864.5,203.8c-1.4,0.7-2.8,0.8-4.2-0.1c-3.3-2-6.5-3.9-9.8-5.9c-0.3-0.2-0.6-0.4-1.1-0.6c0,1.3,0,2.4,0,3.5c0,0.7,0.2,1,0.7,1.3c3.5,2,7,4.1,10.5,6.1c1.2,0.7,2.5,0.7,3.6,0.1c2.3-1.2,8.8-5.2,11-6.5c0.2-0.1,0.5-0.4,0.5-0.6c0-1.3,0-2.6,0-4c-0.4,0.2-0.7,0.4-1,0.6C872.8,198.9,866.5,202.8,864.5,203.8z"/>
+      <path class="st0" d="M866.8,208.4c-1,0.5-2,1.1-3,1.5c-1.1,0.5-2.3,0.5-3.4-0.2c-0.9-0.6-1.9-1.1-2.8-1.6c-1.6-1-3.3-2-4.9-3c-1.1-0.7-2.2-1.3-3.5-2c0,1.4,0,2.6,0,3.9c0,0.2,0.2,0.5,0.4,0.6c3.6,2.2,7.2,4.3,10.9,6.4c1.2,0.7,2.6,0.7,3.8,0c2.2-1.2,9-5.3,11.1-6.5c0.2-0.1,0.4-0.3,0.4-0.5c0-1.3,0-2.6,0-3.9c-0.1,0-0.3,0-0.4,0.1C874.2,204,868.2,207.6,866.8,208.4z"/>
+      <path class="st0" d="M863,183.2L863,183.2l-15.4,8.8l-0.1,0v16.5l15.4,9.4l15.3-9.4l0.1-0.1v-16.4L863,183.2z M877.9,208.4l-15.1,9.2l-15.1-9.2v-16.1l15.1-8.7l15.1,8.7V208.4z"/>
+      <g>
+        <path class="st0" d="M893.2,203c0,1.7,0,3.5-0.6,4.5c-0.4,0.7-1.2,1.4-2.2,1.9c-1.4,0.7-3.3,0.6-5.2,0.6h-0.7l0.4-4c0.5,0,2.5-0.1,2.8-0.2c0.8-0.4,1-1,1-2.1v-12.4l4.6-0.4L893.2,203L893.2,203z"/>
+        <path class="st0" d="M928.5,202.4v7.5h-4v-8.2c0-0.8-0.4-1.3-1.1-1.4c-0.4-0.1-0.8-0.1-1.3,0.1c-0.4,0.1-0.8,0.3-1.1,0.5v9.1h-4v-8.2c0-0.8-0.4-1.3-1.1-1.4c-0.3,0-0.6,0-0.8,0c-0.3,0-0.6,0.1-0.8,0.2c-0.3,0.1-0.6,0.2-0.9,0.4h0v9.1h-3.9V197h3.6c0,0,0,0.7,0,0.8l0.1-0.1c0.1,0,0.2-0.1,0.2-0.1c0.2-0.1,0.5-0.2,0.7-0.3c0.3-0.1,0.7-0.2,1.1-0.3c0.4-0.1,0.9-0.2,1.3-0.2h0.2c0.6,0,1.2,0.1,1.6,0.3c0.8,0.4,0.9,0.7,1.3,1c0,0,0.1,0,0.1,0c0.3-0.1,0.8-0.6,1.1-0.7c0.4-0.2,0.8-0.4,1.1-0.5c0.8-0.2,1.1-0.2,1.8-0.2c2.3,0,3.7,0.6,4.2,1.8C928.3,199.2,928.5,200.4,928.5,202.4z"/>
+        <path class="st0" d="M950.7,210.2c-0.9,0-1.9-0.1-3-0.2c-0.4,0-0.9-0.1-1.3-0.2l-1-0.2l-0.6-4.5l1.1,0.5l1.4,0.4c0.6,0.1,1.1,0.2,1.5,0.2c0.6,0.1,1.1,0.1,1.6,0.1c1.7,0,2.7-0.4,2.9-1.1c0.2-0.3,0.1-1.2,0-1.5c-0.2-0.3-0.5-0.6-1-0.9c-0.2-0.1-0.5-0.2-0.9-0.3l-1-0.3c-0.4-0.1-0.8-0.2-1.2-0.3c-0.4-0.1-0.9-0.3-1.2-0.4c-0.9-0.4-1.6-0.8-2.2-1.3c-0.5-0.5-0.8-1.2-0.9-1.9c-0.1-0.5-0.1-1.1,0-1.8c0.2-2,1.1-3.3,2.5-4.1c0.6-0.3,1.2-0.5,2-0.6c0.3,0,0.6-0.1,1-0.1l1-0.1h0.7c0.8,0,1.6,0,2.5,0.1l1.1,0.1l0.9,0.1l0.4,4.4c-0.4-0.3-1.2-0.7-2-0.8c-1-0.1-1.9-0.2-2.7-0.2c-1.8,0-2.8,0.4-3.1,1.2c-0.1,0.3-0.1,0.7,0,1c0.2,0.4,0.6,0.7,1.1,0.9c0.2,0.1,0.6,0.2,0.9,0.4l2.3,0.7c0.4,0.1,0.8,0.3,1.2,0.4c0.8,0.4,1.5,0.8,1.9,1.2c0.5,0.5,0.8,1.1,1,1.9c0.1,0.6,0.1,1.7,0,2.4c-0.2,2-1.1,3.3-2.5,4.1c-0.6,0.3-1.2,0.5-2,0.6c-0.3,0-0.6,0.1-1,0.1l-0.9,0.1L950.7,210.2L950.7,210.2z"/>
+        <path class="st0" d="M992.9,209.8h-5l-4.5-12.7h4.7l2.3,9.3l2.3-9.3h4.6L992.9,209.8z"/>
+      </g>
+      <path class="st0" d="M930.9,197h3.2l0.2,0.8c0.4-0.2,0.7-0.3,1-0.5c0.4-0.2,0.8-0.3,1.2-0.4c1-0.2,2-0.2,2.9,0.1c0.6,0.2,1.1,0.5,1.5,1c0.2,0.2,0.3,0.4,0.4,0.6l0.2,0.3c0,0.1,0.1,0.2,0.1,0.2c0.2,0.4,0.3,0.9,0.4,1.5c0.1,0.6,0.1,1.4,0.1,2.3v1.2c0,1.9-0.2,2.6-0.5,3.2c-0.5,1.2-1.9,1.8-4.1,1.8c-0.4,0-0.8,0-1.1-0.1l-0.9-0.2c-0.3-0.1-0.6-0.2-0.8-0.2v6.7l-3.9-0.3L930.9,197L930.9,197z M934.8,205.4c0.7,0.4,1.3,0.5,1.8,0.5l0.6,0c0.7-0.2,1.1-0.6,1.1-1.4V202c0-0.4,0-0.6-0.1-0.8c-0.2-0.8-0.9-1.1-1.9-0.9l-0.4,0.1l-0.7,0.2l-0.3,0.1V205.4L934.8,205.4z"/>
+      <path class="st0" d="M971.6,202.3v2.3h-7.2v0.4c0,0.9,0.3,1.4,0.8,1.6c0.4,0.1,0.9,0.2,1.4,0.2h0.3c1.4,0,2.2,0,3.7-0.3h0l0.6,3.1c0,0-0.7,0.2-2,0.4c-0.8,0.1-1.8,0.1-2.9,0.1c-2.8,0-4.6-0.9-5.4-2.8c-0.3-0.7-0.5-1.5-0.5-2.4v-3.1c0-2.2,0.9-3.7,2.8-4.5c0.8-0.3,1.7-0.4,2.7-0.4c2.6,0,4.4,0.9,5.1,2.6C971.5,200.1,971.6,201.1,971.6,202.3z M967.7,201.7c0-0.9-0.2-1.4-0.6-1.6c-0.3-0.2-0.6-0.3-1.1-0.3c-1.1,0-1.6,0.5-1.6,1.5v0.6h3.2V201.7z"/>
+      <path class="st0" d="M1010,202.3v2.3h-7.2v0.4c0,0.9,0.3,1.4,0.8,1.6c0.4,0.1,0.9,0.2,1.4,0.2h0.3c1.4,0,2.2,0,3.7-0.3h0l0.6,3.1c0,0-0.7,0.2-2,0.4c-0.8,0.1-1.8,0.1-2.9,0.1c-2.8,0-4.6-0.9-5.4-2.8c-0.3-0.7-0.5-1.5-0.5-2.4v-3.1c0-2.2,0.9-3.7,2.8-4.5c0.8-0.3,1.7-0.4,2.7-0.4c2.6,0,4.4,0.9,5.1,2.6C1009.8,200.1,1010,201.1,1010,202.3z M1006,201.7c0-0.9-0.2-1.4-0.6-1.6c-0.3-0.2-0.6-0.3-1.1-0.3c-1.1,0-1.6,0.5-1.6,1.5v0.6h3.2V201.7z"/>
+      <path class="st0" d="M982.4,197.4l-0.2,3.2c-0.6,0-0.8-0.1-1.5-0.1l-0.5,0c-0.5,0.1-1.3,0.2-2.4,0.6v8.5H974v-12.6h3.3c0,0,0.1,0.7,0.2,0.9l0.9-0.3c0.5-0.2,1.2-0.4,1.9-0.4C981.6,197.2,982,197.3,982.4,197.4z"/>
+      <path class="st0" d="M1021,197.4l-0.2,3.2c-0.6,0-0.8-0.1-1.5-0.1l-0.5,0c-0.5,0.1-1.3,0.2-2.4,0.6v8.5h-3.8v-12.6h3.3c0,0,0.1,0.7,0.2,0.9l0.9-0.3c0.5-0.2,1.2-0.4,1.9-0.4C1020.1,197.2,1020.5,197.3,1021,197.4z"/>
+      <path class="st0" d="M895.5,204.4v-7.3l4,0.3v7.8c0,0.8,0.4,1.3,1.1,1.5c0.3,0,0.6,0,0.8,0c0.6,0,1.1-0.1,1.7-0.3l0.1-9.2l3.9,0.4v12.3h-3.5c0,0-0.1-0.4-0.1-0.5c0,0-1.8,0.5-2.2,0.5c-0.4,0.1-0.9,0.2-1.3,0.2c-0.9,0-1.6,0-2.2-0.2c-0.7-0.3-1.3-0.8-1.8-1.5C895.7,207.5,895.5,206.2,895.5,204.4z"/>
+    </g>
+  </svg>
+  <text x="605" y="386" font-size="18" font-weight="700" fill="#2b937c">Open-source PAM platform</text>
+
+  <!-- Capability cards: x = 160 + i*230, w=190, h=92, y=426 -->
+  <!-- Authentication -->
+  <g filter="url(#soft)">
+    <rect x="160" y="426" width="190" height="92" rx="10" fill="#ffffff" stroke="#2b937c" stroke-width="1.5"/>
+  </g>
+  <circle cx="248" cy="460" r="7.5" fill="none" stroke="#f59e0b" stroke-width="4.5"/>
+  <rect x="255" y="457.8" width="14" height="4.4" rx="2" fill="#f59e0b"/>
+  <rect x="263" y="462" width="3" height="6" fill="#f59e0b"/>
+  <text x="255" y="502" text-anchor="middle" font-size="14.5" font-weight="700" fill="#2b937c">Authentication</text>
+
+  <!-- Account -->
+  <g filter="url(#soft)">
+    <rect x="390" y="426" width="190" height="92" rx="10" fill="#ffffff" stroke="#2b937c" stroke-width="1.5"/>
+  </g>
+  <circle cx="492" cy="453" r="5.5" fill="#93c5fd"/>
+  <path d="M 483 471 a 9 8 0 0 1 18 0 z" fill="#93c5fd"/>
+  <circle cx="478" cy="455" r="6.5" fill="#3b82f6"/>
+  <path d="M 467 473 a 11 9 0 0 1 22 0 z" fill="#3b82f6"/>
+  <text x="485" y="502" text-anchor="middle" font-size="14.5" font-weight="700" fill="#2b937c">Account</text>
+
+  <!-- Authorization -->
+  <g filter="url(#soft)">
+    <rect x="620" y="426" width="190" height="92" rx="10" fill="#ffffff" stroke="#2b937c" stroke-width="1.5"/>
+  </g>
+  <circle cx="715" cy="460" r="15" fill="#22c55e"/>
+  <path d="M 708 461 L 713 466 L 723 454" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="715" y="502" text-anchor="middle" font-size="14.5" font-weight="700" fill="#2b937c">Authorization</text>
+
+  <!-- Audit -->
+  <g filter="url(#soft)">
+    <rect x="850" y="426" width="190" height="92" rx="10" fill="#ffffff" stroke="#2b937c" stroke-width="1.5"/>
+  </g>
+  <path d="M 930 460 Q 945 446 960 460 Q 945 474 930 460 Z" fill="#1e3a8a"/>
+  <circle cx="941" cy="460" r="5" fill="#ffffff"/>
+  <circle cx="941" cy="460" r="2.2" fill="#1e3a8a"/>
+  <text x="945" y="502" text-anchor="middle" font-size="14.5" font-weight="700" fill="#2b937c">Audit</text>
+
+  <!-- Built-in AI full-width bar -->
+  <g filter="url(#soft)">
+    <rect x="160" y="534" width="880" height="44" rx="10" fill="#ffffff" stroke="#2b937c" stroke-width="1.5"/>
+  </g>
+  <path d="M 557 544 Q 559.3 553.7 569 556 Q 559.3 558.3 557 568 Q 554.7 558.3 545 556 Q 554.7 553.7 557 544 Z" fill="#2b937c"/>
+  <text x="576" y="561" font-size="15" font-weight="700" fill="#2b937c">Built-in AI</text>
+
+  <!-- ============ Dashed arrows: Users -> JumpServer ============ -->
+  <g stroke="#4b5563" stroke-width="1.6" stroke-dasharray="6 5">
+    <line x1="176" y1="616" x2="176" y2="666" marker-start="url(#ah)"/>
+    <line x1="388" y1="616" x2="388" y2="666" marker-start="url(#ah)"/>
+    <line x1="600" y1="616" x2="600" y2="666" marker-start="url(#ah)"/>
+    <line x1="812" y1="616" x2="812" y2="666" marker-start="url(#ah)"/>
+    <line x1="1024" y1="616" x2="1024" y2="666" marker-start="url(#ah)"/>
+  </g>
+
+  <!-- ============ Users ============ -->
+  <!-- Admin -->
+  <circle cx="176" cy="690" r="15" fill="#f5c9a3"/>
+  <path d="M 150 756 L 150 738 A 26 26 0 0 1 202 738 L 202 756 Z" fill="#3b82f6"/>
+  <text x="176" y="784" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Admin</text>
+
+  <!-- DBA -->
+  <circle cx="388" cy="690" r="15" fill="#f5c9a3"/>
+  <path d="M 362 756 L 362 738 A 26 26 0 0 1 414 738 L 414 756 Z" fill="#10b981"/>
+  <text x="388" y="784" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">DBA</text>
+
+  <!-- Developer -->
+  <circle cx="600" cy="690" r="15" fill="#f5c9a3"/>
+  <path d="M 574 756 L 574 738 A 26 26 0 0 1 626 738 L 626 756 Z" fill="#8b5cf6"/>
+  <text x="600" y="784" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Developer</text>
+
+  <!-- QA -->
+  <circle cx="812" cy="690" r="15" fill="#f5c9a3"/>
+  <path d="M 786 756 L 786 738 A 26 26 0 0 1 838 738 L 838 756 Z" fill="#f97316"/>
+  <text x="812" y="784" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">QA</text>
+
+  <!-- Other... -->
+  <circle cx="1024" cy="690" r="15" fill="#f5c9a3"/>
+  <path d="M 998 756 L 998 738 A 26 26 0 0 1 1050 738 L 1050 756 Z" fill="#14b8a6"/>
+  <text x="1024" y="784" text-anchor="middle" font-size="16" font-weight="600" fill="#111827">Other...</text>
+</svg>
+</body>
+</html>
