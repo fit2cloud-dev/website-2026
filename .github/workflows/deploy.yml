@@ -75,5 +75,5 @@ jobs:
           rm -rf oss-tmp
           mkdir -p oss-tmp
           tar zxf fit2cloudweb.tar.gz -C oss-tmp
-          ossutil cp -r -f --meta=Cache-Control:max-age=0 oss-tmp/ oss://www-fit2cloud-com/
+          ossutil cp -r -f --jobs=100 --meta=Cache-Control:max-age=0 oss-tmp/ oss://www-fit2cloud-com/
           rm -rf oss-tmp
