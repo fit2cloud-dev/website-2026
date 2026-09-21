@@ -1387,4 +1387,14 @@
       <image:title>GPU监控支持华为昇腾设备，防火墙管理焕新，虚拟机管理下放至专业版，1Panel v2.3.0版本发布</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/1panel-ai-appliance-plan3-benchmark.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/1panel-ai-appliance-plan3-benchmark/cover.png</image:loc>
+      <image:title>1Panel AI一体机（方案三）实测报告：双卡RTX Pro 5000部署Qwen3.8-Flash-Next</image:title>
+    </image:image>
+  </url>
 </urlset>
