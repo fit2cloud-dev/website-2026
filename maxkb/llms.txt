@@ -15,7 +15,7 @@ This is the main MaxKB website. Use it for product positioning, pricing, contact
 - [MaxKB vs RagFlow](https://www.maxkb.cn/maxkb-vs-ragflow): 与 RagFlow 的选型对比。
 
 ## Official Resources
-- [MaxKB Docs](https://maxkb.cn/docs/): 产品文档与部署指南。
+- [MaxKB Docs](https://docs.fit2cloud.com/maxkb/): 产品文档与部署指南。
 - [MaxKB GitHub](https://github.com/1Panel-dev/MaxKB): 源码与版本发布。
 - [MaxKB Community](https://bbs.fit2cloud.com/c/mk/11): 社区讨论与支持。
 - [MaxKB Download](https://community.fit2cloud.com/#/products/maxkb/information): 下载与版本信息。

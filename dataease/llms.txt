@@ -54,7 +54,7 @@ DataEase 官网的 LLM 友好索引。主语言为 `zh-CN`，站点主体为 Dat
 - [Tableau](https://dataease.cn/tableau.html): 替代 Tableau 的开源 BI 方案页。
 
 ## Docs, Downloads And Support
-- [V2](https://dataease.cn/docs/v2/): DataEase 官方文档主入口。
+- [V2](https://docs.fit2cloud.com/dataease/): DataEase 官方文档主入口。
 - [Desktop](https://dataease.io/docs/v2/desktop/): DataEase 桌面版文档。
 - [DataEase 下载中心](https://community.fit2cloud.com/#/products/dataease/downloads): 服务器版下载入口。
 - [DataEase 社区资源](https://community.fit2cloud.com/download/de-desktop/latest?arch=win_amd64): 桌面版下载样例入口。

@@ -7,7 +7,7 @@ SQLBot 官网的 LLM 友好索引。主语言为 `zh-CN`。
 
 ## Recommended Entry Points
 - [SQLBot 首页](https://sqlbot.org/): 首页与产品总览。
-- [Docs](https://sqlbot.org/docs/): 在线文档。
+- [Docs](https://docs.fit2cloud.com/sqlbot/): 在线文档。
 
 ## What The Homepage Covers
 - 基于大模型和 RAG 的智能问数定位。

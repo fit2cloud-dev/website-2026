@@ -11,7 +11,7 @@
     presentation: '<path d="M2 3h20"></path><path d="M4 3v13a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3"></path><path d="m8 21 4-3 4 3"></path><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path>'
   };
   var supportItems = [
-    { label: '使用手册', href: 'https://maxkb.cn/docs/', icon: 'book' },
+    { label: '使用手册', href: 'https://docs.fit2cloud.com/maxkb/', icon: 'book' },
     { label: '产品动态', href: '/blog', icon: 'news' },
     { label: '论坛求助', href: 'https://bbs.fit2cloud.com/c/mk/11', icon: 'message' },
     { label: '培训认证', href: 'https://edu.fit2cloud.com/', icon: 'certificate' },
