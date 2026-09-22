@@ -259,6 +259,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.jumpserver.org/security.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.jumpserver.org/blog/skills-20260327.html</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>

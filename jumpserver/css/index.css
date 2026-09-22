@@ -1254,6 +1254,70 @@ a:focus {
     opacity: 0.45;
 }
 
+/* 漏洞公告页 */
+.de-security-notice {
+    align-items: flex-start;
+    background: rgba(43, 147, 124, 0.06);
+    border: 1px solid rgba(43, 147, 124, 0.18);
+    border-radius: 12px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding: 16px 20px;
+}
+
+.de-security-notice-title {
+    color: var(--de-primary);
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.de-security-notice p {
+    color: var(--de-text-soft) !important;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.de-security-meta {
+    border-top: 1px dashed #e2ece7;
+    display: grid;
+    gap: 6px;
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 12px 0 0;
+}
+
+.de-security-meta li {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    line-height: 1.7;
+}
+
+.de-security-label {
+    color: var(--de-muted);
+    flex: 0 0 auto;
+    font-size: 13px;
+    font-weight: 700;
+    min-width: 70px;
+}
+
+.de-security-cve {
+    color: var(--de-ink);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.de-security-ver {
+    color: var(--de-text-soft);
+    font-size: 13px;
+}
+
 .de-article-main {
     padding-bottom: 70px;
 }
@@ -2084,6 +2148,17 @@ a:focus {
 
     .de-blog-pagination-controls {
         justify-content: center;
+    }
+
+    .de-security-notice {
+        flex-direction: column;
+        gap: 6px;
+        padding: 14px 16px;
+    }
+
+    .de-security-meta li {
+        flex-direction: column;
+        gap: 2px;
     }
 
     .de-article {

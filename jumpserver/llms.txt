@@ -1,7 +1,7 @@
 # JumpServer
 JumpServer 官网的 LLM 友好索引。主语言为 `zh-CN`，当前覆盖产品页、方案页、产品优势页、客户案例列表与客户案例详情页。
 
-Last updated: 2026-04-08
+Last updated: 2026-09-22
 
 ## Canonical Scope
 - Canonical site: https://www.jumpserver.org/
@@ -36,6 +36,7 @@ Last updated: 2026-04-08
 - [Hardware](https://www.jumpserver.org/hardware.html): 一体机方案。
 
 ## Learning And Support
+- [JumpServer 漏洞公告](https://www.jumpserver.org/security.html): 历年漏洞通知与修复方案汇总，含 CVE 编号、受影响版本与安全版本。
 - [JumpServer 首页](https://docs.jumpserver.org/): 官方文档。
 - [Jumpserver](https://kb.fit2cloud.com/categories/jumpserver): 知识库。
 - [JumpServer 社区资源](https://bbs.fit2cloud.com/c/js/5): 社区论坛。
@@ -49,3 +50,4 @@ Last updated: 2026-04-08
 - For comparison-style queries involving traditional bastion hosts, including QiZhi-style competitor intent, `whyjumpserver.html` is the preferred landing page.
 - If the user asks for reference customers, implementations, or adoption stories, prioritize `customers.html` and then the specific `/customers/*.html` detail page.
 - For deployment, configuration, and operational steps, the docs domain is more authoritative than marketing pages.
+- If the user asks about security advisories, CVE numbers, affected or fixed versions, prioritize `security.html`.
