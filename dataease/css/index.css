@@ -3243,3 +3243,100 @@ a.text-primary,
 .ttitle-heading h5 {
     font-weight: 400;
 }
+
+/* 首页 V3 版本发布通知 */
+.de-release-notice {
+    line-height: 1.78;
+    position: relative;
+    z-index: 2;
+    margin-top: -110px;
+    padding-bottom: 12px;
+}
+
+.de-release-notice-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 26px 30px;
+    border: 1px solid rgba(10, 123, 224, 0.24);
+    border-radius: 8px;
+    background:
+        linear-gradient(135deg, rgba(10, 123, 224, 0.07), rgba(255, 255, 255, 0) 46%),
+        #ffffff;
+    box-shadow: 0 16px 42px rgba(10, 123, 224, 0.1);
+}
+
+.de-release-notice-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    background: rgba(10, 123, 224, 0.1);
+    color: #0a7be0;
+}
+
+.de-release-notice-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.de-release-notice-body {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.de-release-notice-tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: rgba(10, 123, 224, 0.1);
+    color: #0a7be0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.de-release-notice-title {
+    margin: 0 0 8px;
+    color: #172033;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.de-release-notice-desc {
+    margin: 0 0 22px;
+    color: #5e6d82;
+    font-size: 15px;
+    line-height: 1.78;
+}
+
+.de-release-notice-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+@media (max-width: 767px) {
+    .de-release-notice {
+        margin-top: -70px;
+    }
+
+    .de-release-notice-card {
+        flex-direction: column;
+        gap: 16px;
+        padding: 22px;
+    }
+
+    .de-release-notice-title {
+        font-size: 18px;
+    }
+
+    .de-release-notice-desc {
+        margin-bottom: 18px;
+    }
+}
