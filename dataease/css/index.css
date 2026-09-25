@@ -3371,3 +3371,46 @@ a.text-primary,
         max-width: none;
     }
 }
+
+/* 顶栏「免费下载」按钮（对齐 jumpserver.org 的菜单位置与样式） */
+#topnav .menu-btn {
+    align-items: center;
+    display: inline-flex !important;
+    height: 38px;
+    justify-content: center;
+    line-height: 1 !important;
+    min-height: 38px;
+    padding: 0 16px !important;
+    vertical-align: middle;
+}
+
+#topnav .navigation-menu > li:first-child {
+    margin-left: auto;
+}
+
+#topnav .navigation-menu > li:last-child {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    min-height: 70px;
+}
+
+#topnav .navigation-menu > li:last-child .mt-3 {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 991px) {
+    #topnav .navigation-menu > li:first-child,
+    #topnav .navigation-menu > li:last-child {
+        margin-left: 0;
+    }
+
+    #topnav .navigation-menu > li:last-child {
+        display: block;
+        min-height: 0;
+    }
+
+    #topnav .menu-btn {
+        display: none !important;
+    }
+}
