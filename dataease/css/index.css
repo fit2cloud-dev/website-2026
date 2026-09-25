@@ -3340,3 +3340,34 @@ a.text-primary,
         margin-bottom: 18px;
     }
 }
+
+/* 首页 DataEase 功能架构 */
+.de-home-architecture {
+    background: linear-gradient(180deg, #eef7ff 0%, #ffffff 10%, #ffffff 90%, #eef7ff 100%);
+}
+
+.de-home-architecture .section-title {
+    margin-bottom: 44px;
+}
+
+.de-home-architecture .section-title .title {
+    color: var(--de-ink);
+}
+
+@media (max-width: 767px) {
+    .de-home-architecture .section-title {
+        margin-bottom: 28px;
+    }
+
+    /* 架构图信息密集，小屏不整体缩放，改为横向滚动以保持文字可读 */
+    .de-architecture-figure {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .de-architecture-figure img {
+        width: auto;
+        min-width: 848px;
+        max-width: none;
+    }
+}
