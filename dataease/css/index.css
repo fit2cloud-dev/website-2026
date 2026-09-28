@@ -1564,6 +1564,31 @@ a {
     transform: translateY(-2px);
 }
 
+/* 卡片右上角「V3 新增」标记：与 .video-icon 同款胶囊几何，换成暖色以示区别 */
+.enterprise-xpack .de-xpack-flag {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(224, 72, 60, 0.22);
+    border-radius: 999px;
+    box-shadow: 0 10px 24px rgba(224, 72, 60, 0.12);
+    color: #e0483c;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    letter-spacing: 0;
+    line-height: 1;
+    padding: 0 12px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    white-space: nowrap;
+    z-index: 3;
+}
+
 .de-home-advantages {
     background:
         radial-gradient(circle at 12% 18%, rgba(24, 183, 255, 0.16), transparent 26%),
@@ -3412,5 +3437,135 @@ a.text-primary,
 
     #topnav .menu-btn {
         display: none !important;
+    }
+}
+
+/* ============================================================
+   版本功能对比表（2026-09-28 重设计）
+   目标：版本列等宽对齐、表头与分区带分层、去斑马纹降噪
+   ============================================================ */
+.versions-compare-table {
+    padding-bottom: 0;
+}
+
+.versions-compare-table .table {
+    table-layout: fixed;
+    background: #ffffff;
+    border: 1px solid #e4edf8;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(15, 40, 80, 0.06);
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+/* 列宽：功能列 36%，四个版本列各 16%，保证勾选位置严格对齐 */
+.versions-compare-table .table thead th:first-child {
+    width: 36%;
+}
+
+.versions-compare-table .table thead th:not(:first-child) {
+    width: 16%;
+}
+
+/* 表头：去渐变改扁平浅蓝，底部一条细线压住数据区 */
+.versions-compare-table .table thead th {
+    background: #f2f8ff !important;
+    background-image: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid #dbe9f9 !important;
+    color: #172033 !important;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 17px 18px;
+    text-align: center;
+}
+
+/* 数据行：纯白 + 极细横线（替代斑马纹） */
+.versions-compare-table .table tbody td,
+.versions-compare-table .table tbody th,
+.versions-compare-table .table tbody tr:nth-child(even) td {
+    background: #ffffff;
+    border: 0 !important;
+    border-bottom: 1px solid #eef3f9 !important;
+    padding: 15px 18px;
+}
+
+.versions-compare-table .table tbody tr:not(.title-bg-th):hover td,
+.versions-compare-table .table tbody tr:not(.title-bg-th):hover th {
+    background: #f7fbff;
+}
+
+/* 末行去掉底边，避免与外框叠成双线 */
+.versions-compare-table .table tbody tr:last-child td,
+.versions-compare-table .table tbody tr:last-child th {
+    border-bottom: 0 !important;
+}
+
+/* 功能名 */
+.versions-compare-table .table tbody th .title {
+    color: #27364c !important;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.55;
+}
+
+/* 支持 / 不支持 */
+.versions-compare-table .table .mdi-check-circle {
+    color: #12b981 !important;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+.versions-compare-table .table td.de-na {
+    color: #b9c5d4 !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* 分区带：中性浅灰蓝底 + 左侧主色竖条，深色字，与表头拉开层级 */
+.versions-compare-table .table .title-bg-th th {
+    background: #f6f9fd !important;
+    background-image: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid #e8eff8 !important;
+    padding: 0 !important;
+}
+
+.versions-compare-table .table .title-bg {
+    background: transparent !important;
+    background-image: none !important;
+    border: 0;
+    border-left: 3px solid var(--de-primary);
+    border-radius: 0;
+    color: #172033 !important;
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 15px 20px 15px 15px;
+    width: 100%;
+}
+
+.versions-compare-table .table .title-bg-th:hover th,
+.versions-compare-table .table .title-bg-th:hover .title-bg {
+    background: #f1f6fd !important;
+    background-image: none !important;
+}
+
+/* 移动端：功能列加宽，减少长标签折行 */
+@media (max-width: 767px) {
+    .versions-compare-table .table thead th:first-child {
+        width: 44%;
+    }
+
+    .versions-compare-table .table thead th:not(:first-child) {
+        width: 14%;
+    }
+
+    .versions-compare-table .table .title-bg {
+        padding: 13px 14px 13px 11px;
     }
 }
