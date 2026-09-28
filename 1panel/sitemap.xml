@@ -1397,4 +1397,14 @@
       <image:title>1Panel AI一体机（方案三）实测报告：双卡RTX Pro 5000部署Qwen3.8-Flash-Next</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/1panel-ai-gateway-jev-mode.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/1panel-ai-gateway-jev-mode/cover.png</image:loc>
+      <image:title>1Panel AI 网关 v1.3 发布：智能路由新增支持 Jev 模式</image:title>
+    </image:image>
+  </url>
 </urlset>
