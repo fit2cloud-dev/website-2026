@@ -1,55 +1,57 @@
 <!doctype html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本 - Cordys CRM 产品动态</title>
-        <meta name="description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
-        <meta name="keywords" content="Cordys CRM v1.7.0,审批流,审批记录,我的待办,AI CRM,开源 CRM" />
-        <meta name="author" content="FIT2CLOUD 飞致云" />
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="theme-color" content="#02a6ab" />
-        <meta name="format-detection" content="telephone=no" />
-        <link rel="icon" href="../images/favicon.png" />
-        <link rel="apple-touch-icon" href="../images/favicon.png" />
-        <link rel="canonical" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
-        <link rel="alternate" hreflang="zh-CN" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
-        <link rel="alternate" hreflang="x-default" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
-        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="../css/styles.css?v=2" />
-        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <meta property="og:site_name" content="Cordys CRM" />
-        <meta property="og:title" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
-        <meta property="og:description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
-        <meta property="og:image" content="https://cordys.cn/images/blog/cordys-01.png" />
-        <meta property="og:image:width" content="1920" />
-        <meta property="og:image:height" content="1080" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
-        <meta property="og:locale" content="zh_CN" />
-        <meta property="og:updated_time" content="2026-06-01" />
-        <meta property="article:published_time" content="2026-05-31" />
-        <meta property="article:modified_time" content="2026-06-01" />
-        <meta property="article:section" content="Cordys CRM 产品动态" />
-        <meta property="article:author" content="FIT2CLOUD 飞致云" />
-        <meta property="article:tag" content="Cordys CRM v1.7.0" />
-        <meta property="article:tag" content="审批流" />
-        <meta property="article:tag" content="审批记录" />
-        <meta property="article:tag" content="我的待办" />
-        <meta property="article:tag" content="AI CRM" />
-        <meta property="article:tag" content="开源 CRM" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
-        <meta name="twitter:description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
-        <meta name="twitter:image" content="https://cordys.cn/images/blog/cordys-01.png" />
-        <meta name="twitter:image:alt" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
-        <script type="application/ld+json">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本 - Cordys CRM 产品动态</title>
+    <meta name="description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
+    <meta name="keywords" content="Cordys CRM v1.7.0,审批流,审批记录,我的待办,AI CRM,开源 CRM" />
+    <meta name="author" content="FIT2CLOUD 飞致云" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#02a6ab" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="../images/favicon.png" />
+    <link rel="apple-touch-icon" href="../images/favicon.png" />
+    <link rel="canonical" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
+    <link rel="alternate" hreflang="zh-CN" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
+    <link rel="alternate" hreflang="x-default" href="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="//www.google-analytics.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles.css?v=2" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <meta property="og:site_name" content="Cordys CRM" />
+    <meta property="og:title" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
+    <meta property="og:description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://cordys.cn/blog/approval-flow-v1-7-0.html" />
+    <meta property="og:image" content="https://cordys.cn/images/blog/cordys-01.png" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:updated_time" content="2026-06-01" />
+    <meta property="article:published_time" content="2026-05-31" />
+    <meta property="article:modified_time" content="2026-06-01" />
+    <meta property="article:section" content="Cordys CRM 产品动态" />
+    <meta property="article:author" content="FIT2CLOUD 飞致云" />
+    <meta property="article:tag" content="Cordys CRM v1.7.0" />
+    <meta property="article:tag" content="审批流" />
+    <meta property="article:tag" content="审批记录" />
+    <meta property="article:tag" content="我的待办" />
+    <meta property="article:tag" content="AI CRM" />
+    <meta property="article:tag" content="开源 CRM" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
+    <meta name="twitter:description" content="Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。" />
+    <meta name="twitter:image" content="https://cordys.cn/images/blog/cordys-01.png" />
+    <meta name="twitter:image:alt" content="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" />
+    <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@graph": [
@@ -80,7 +82,7 @@
                             { "@type": "ListItem", "position": 2, "name": "产品介绍", "url": "https://cordys.cn/download/introduce-cordys_2026.pdf" },
                             { "@type": "ListItem", "position": 3, "name": "产品动态", "url": "https://cordys.cn/blog.html" },
                             { "@type": "ListItem", "position": 4, "name": "在线文档", "url": "https://docs.fit2cloud.com/cordys/" },
-                            { "@type": "ListItem", "position": 5, "name": "免费下载", "url": "https://cordys.cn/docs/installation/offline_installtion/" },
+                            { "@type": "ListItem", "position": 5, "name": "免费下载", "url": "https://docs.fit2cloud.com/cordys/installation/offline_installtion/" },
                             { "@type": "ListItem", "position": 7, "name": "GitHub 仓库", "url": "https://github.com/1Panel-dev/CordysCRM" },
                             { "@type": "ListItem", "position": 6, "name": "用户论坛", "url": "https://bbs.fit2cloud.com/c/crm/4" }
                         ]
@@ -115,277 +117,362 @@
                 ]
             }
         </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TWT2BFLFM"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-3TWT2BFLFM');
-        </script>
-    </head>
-    <body>
-        <div class="top-bar" id="top-bar">
-            <div class="top-bar-container">
-                <div class="top-bar-left">
-                    <a href="https://www.fit2cloud.com/" class="top-bar-brand">
-                        <img src="../images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo" style="height: 20px; width: auto" />
-                    </a>
-                </div>
-                <div class="top-bar-right">
-                    <div class="top-bar-dropdown" id="topBarDropdown">
-                        <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span class="dropdown-arrow">▼</span></button>
-                        <div class="top-bar-dropdown-content" id="dropdownContent">
-                            <a href="https://1panel.cn" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">1Panel 面板</span><span class="top-bar-dropdown-item__desc">现代化、开源的 Linux 面板</span></a>
-                            <a href="https://1panel.cn/ai-gateway.html" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">1Panel AI 网关</span><span class="top-bar-dropdown-item__desc">AI 统一接入与治理平台</span></a>
-                            <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">JumpServer</span><span class="top-bar-dropdown-item__desc">广受欢迎的开源堡垒机</span></a>
-                            <a href="https://maxkb.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">MaxKB</span><span class="top-bar-dropdown-item__desc">强大易用的企业级智能体平台</span></a>
-                            <a href="https://dataease.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">DataEase</span><span class="top-bar-dropdown-item__desc">人人可用的开源 BI 工具</span></a>
-                            <a href="https://sqlbot.org/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">SQLBot</span><span class="top-bar-dropdown-item__desc">基于大模型的开源智能问数系统</span></a>
-                            <a href="https://metersphere.io/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">MeterSphere</span><span class="top-bar-dropdown-item__desc">新一代的开源持续测试工具</span></a>
-                            <a href="https://halo.run/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">Halo</span><span class="top-bar-dropdown-item__desc">强大易用的开源建站工具</span></a>
-                            <a href="https://cordys.cn/" class="top-bar-dropdown-item"><span class="top-bar-dropdown-item__name">Cordys</span><span class="top-bar-dropdown-item__desc">新一代的开源 AI CRM 系统</span></a>
-                        </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3TWT2BFLFM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-3TWT2BFLFM');
+    </script>
+</head>
+
+<body>
+    <div class="top-bar" id="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-left">
+                <a href="https://www.fit2cloud.com/" class="top-bar-brand">
+                    <img src="../images/logo-light-FIT2CLOUD.svg" alt="FIT2CLOUD 飞致云 Logo"
+                         style="height: 20px; width: auto" />
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-dropdown" id="topBarDropdown">
+                    <button class="top-bar-dropdown-btn" id="dropdownBtn">飞致云旗下开源产品 <span
+                              class="dropdown-arrow">▼</span></button>
+                    <div class="top-bar-dropdown-content" id="dropdownContent">
+                        <a href="https://1panel.cn" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">1Panel 面板</span><span
+                                  class="top-bar-dropdown-item__desc">现代化、开源的 Linux 面板</span></a>
+                        <a href="https://1panel.cn/ai-gateway.html" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">1Panel AI 网关</span><span
+                                  class="top-bar-dropdown-item__desc">AI 统一接入与治理平台</span></a>
+                        <a href="https://www.jumpserver.org/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">JumpServer</span><span
+                                  class="top-bar-dropdown-item__desc">广受欢迎的开源堡垒机</span></a>
+                        <a href="https://maxkb.cn/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">MaxKB</span><span
+                                  class="top-bar-dropdown-item__desc">强大易用的企业级智能体平台</span></a>
+                        <a href="https://dataease.cn/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">DataEase</span><span
+                                  class="top-bar-dropdown-item__desc">人人可用的开源 BI 工具</span></a>
+                        <a href="https://sqlbot.org/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">SQLBot</span><span
+                                  class="top-bar-dropdown-item__desc">基于大模型的开源智能问数系统</span></a>
+                        <a href="https://metersphere.io/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">MeterSphere</span><span
+                                  class="top-bar-dropdown-item__desc">新一代的开源持续测试工具</span></a>
+                        <a href="https://halo.run/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">Halo</span><span
+                                  class="top-bar-dropdown-item__desc">强大易用的开源建站工具</span></a>
+                        <a href="https://cordys.cn/" class="top-bar-dropdown-item"><span
+                                  class="top-bar-dropdown-item__name">Cordys</span><span
+                                  class="top-bar-dropdown-item__desc">新一代的开源 AI CRM 系统</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <header class="header" id="header">
-            <div class="container">
-                <nav class="nav">
-                    <div class="nav__brand">
-                        <a href="../index.html" class="nav__logo">
-                            <img src="../images/favicon.png" alt="Cordys CRM Logo" style="height: 48px; margin-right: 0.5em" />
-                            <span class="logo__text">Cordys CRM</span>
-                        </a>
-                    </div>
-                    <div class="nav__center">
-                        <a href="../index.html" class="nav__link">首页</a>
-                        <a href="../pricing.html" class="nav__link">价格</a>
-                        <div class="nav__dropdown" id="helpDropdown">
-                            <button class="nav__dropdown-btn" id="helpDropdownBtn" aria-expanded="false">帮助与支持 <span class="dropdown-arrow">▼</span></button>
-                            <div class="nav__dropdown-content" id="helpDropdownContent">
-                                <a href="https://docs.fit2cloud.com/cordys/" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>在线文档</span></a>
-                                <a href="https://cordys.cn/docs/trial/" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><span>在线体验</span></a>
+    </div>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__brand">
+                    <a href="../index.html" class="nav__logo">
+                        <img src="../images/favicon.png" alt="Cordys CRM Logo"
+                             style="height: 48px; margin-right: 0.5em" />
+                        <span class="logo__text">Cordys CRM</span>
+                    </a>
+                </div>
+                <div class="nav__center">
+                    <a href="../index.html" class="nav__link">首页</a>
+                    <a href="../pricing.html" class="nav__link">价格</a>
+                    <div class="nav__dropdown" id="helpDropdown">
+                        <button class="nav__dropdown-btn" id="helpDropdownBtn" aria-expanded="false">帮助与支持 <span
+                                  class="dropdown-arrow">▼</span></button>
+                        <div class="nav__dropdown-content" id="helpDropdownContent">
+                            <a href="https://docs.fit2cloud.com/cordys/" target="_blank" class="nav__dropdown-item"
+                               rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                                </svg><span>在线文档</span></a>
+                            <a href="https://cordys.cn/docs/trial/" target="_blank" class="nav__dropdown-item"
+                               rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg><span>在线体验</span></a>
 
-                                <a href="../blog.html" class="nav__dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg><span>产品动态</span></a>
-                                <a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>用户论坛</span></a>
-                                <a href="https://edu.fit2cloud.com/p/t_pc/goods_pc_detail/goods_detail/SPU_SRV_7582709936406lsgVeais91" target="_blank" class="nav__dropdown-item" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span>企业培训</span></a>
+                            <a href="../blog.html" class="nav__dropdown-item"><svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 11a9 9 0 0 1 9 9" />
+                                    <path d="M4 4a16 16 0 0 1 16 16" />
+                                    <circle cx="5" cy="19" r="1" />
+                                </svg><span>产品动态</span></a>
+                            <a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank" class="nav__dropdown-item"
+                               rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg><span>用户论坛</span></a>
+                            <a href="https://edu.fit2cloud.com/p/t_pc/goods_pc_detail/goods_detail/SPU_SRV_7582709936406lsgVeais91"
+                               target="_blank" class="nav__dropdown-item" rel="noopener noreferrer"><svg
+                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg><span>企业培训</span></a>
+                        </div>
+                    </div>
+                    <a href="#contact" class="nav__link">联系我们</a>
+                </div>
+                <div class="nav__right">
+                    <a href="https://github.com/1Panel-dev/CordysCRM" target="_blank"
+                       class="nav__button nav__button--outline" rel="noopener noreferrer">代码仓库</a>
+                    <a href="https://docs.fit2cloud.com/cordys/installation/offline_installtion/" target="_blank"
+                       class="nav__button nav__button--primary" rel="noopener noreferrer"><svg width="20" height="20"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>免费下载</a>
+                </div>
+                <div class="nav__toggle" id="nav-toggle" aria-label="展开导航" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="article-page">
+        <article class="container article-shell">
+            <a href="../blog.html" class="article-breadcrumb">产品动态</a>
+            <h1 class="article-title">新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本</h1>
+            <p class="article-summary">Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。</p>
+            <div class="article-meta"><time datetime="2026-05-31">2026年05月31日</time></div>
+            <img src="../images/blog/cordys-01.png" alt="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" class="article-cover" />
+            <div class="article-content">
+                <p>2026年5月29日，Cordys CRM开源AI CRM系统正式发布v1.7.0版本。</p>
+                <p>
+                    在这一版本中，Cordys
+                    CRM系统新增了灵活可配置的“<strong>审批流</strong>”功能，并且支持报价、合同、发票、订单四大模块按照条件分支、多级、会签等规则自定义审批流，同时审计记录全程可追溯。另外，系统首页新增“<strong>我的待办</strong>”功能，用户可以集中处理审批事项，进一步规范业务流程，提升办公效率。除此之外，Cordys
+                    CRM v1.7.0版本也结合社区用户的实际反馈完成了多项功能优化与问题修复。
+                </p>
+                <h3>亮点更新</h3>
+                <p><strong>■ 流程设置新增审批流功能</strong></p>
+                <p>
+                    Cordys CRM v1.7.0版本重磅上线“审批流”功能，为用户强化业务合规管控、破解销售流程卡点提供帮助。在报价、合同、发票、订单等业务的每一个关键节点，Cordys
+                    CRM均支持企业根据自身业务规则灵活配置流程，实现从提交到结办的全链路可控。通过配置审批流，用户可以在保障业务流转高效畅通的同时，沉淀完整的业务数据、提前拦截潜在风险，并且实现每一步业务操作的合规可追溯。
+                </p>
+                <p>Cordys CRM的审批流功能提供了丰富的配置项，能够适配全场景审批规则：</p>
+                <p><strong>● 条件分支自定义：</strong>可根据表单字段设置分流规则，例如报价单可按照“金额＞10 万”自动触发多级上级审批，其他情况直接走部门负责人审批，不同场景的流程无需重复搭建；
+                </p>
+                <p><strong>● 审批模式自定义：</strong>支持连续多级上级、指定负责人等审批人设置，提供会签、或签、依次审批等多种模式可选，还能配置审批异常自动通过规则，特殊场景也能顺畅流转；</p>
+                <p><strong>● 表单权限自定义：</strong>支持对表单字段进行精细化的权限配置，可以针对不同审批节点设置隐藏、查看、编辑三种权限，敏感数据可按需隐藏；</p>
+                <p><strong>● 审批后操作自定义：</strong>支持对不同审批结果设置自动更新操作，减少人工干预。</p>
+                <figure>
+                    <img src="../images/blog/articles/approval-flow-v1-7-0-01.png" alt="0528-01.png" loading="lazy"
+                         decoding="async" />
+                </figure>
+                <p class="article-caption">▲图1 Cordys CRM审批流设计界面</p>
+                <p>
+                    在审批流的权限控制方面，新版本Cordys
+                    CRM提供精细化的状态控制。在节点权限设置方面，针对已通过、审批中、已驳回、已撤销、待提审等流程状态，支持用户单独配置查看、编辑、删除、下载及作废权限，操作权限一目了然，有效杜绝流程风险；同时，系统支持审批人批量处理、撤回、加签，还可以设置自动审批规则，同一审批人重复出现时可仅首个节点审批，后续节点自动同意，大幅减少重复审批操作。
+                </p>
+                <figure>
+                    <img src="../images/blog/articles/approval-flow-v1-7-0-02.png" alt="0528-02.png" loading="lazy"
+                         decoding="async" />
+                </figure>
+                <p class="article-caption">▲图2 Cordys CRM支持审批流权限控制</p>
+                <p><strong>■ 报价、合同、发票、订单四大模块新增审批记录功能</strong></p>
+                <p>
+                    在Cordys
+                    CRM的审批流中，每一次提交、审批、意见都被完整记录在案，成为业务合规的“数字档案”。审批轨迹全程透明，每一位审批人的操作时间、审批状态、审批意见等信息全程可追溯；审批附件与审批记录绑定存档，后续在财务核对、法务复盘时可以直接在审批流中找到相关依据；系统提供会签、或签、加签模式，可适配复杂业务场景；此外，抄送人可以按需查看审批记录，关键信息高效同步。
+                </p>
+                <figure>
+                    <img src="../images/blog/articles/approval-flow-v1-7-0-03.png" alt="0528-03.png" loading="lazy"
+                         decoding="async" />
+                </figure>
+                <p class="article-caption">▲图3 Cordys CRM支持查看完整审批记录</p>
+                <p><strong>■ 首页新增“我的待办”功能</strong></p>
+                <p>Cordys CRM v1.7.0版本在系统首页新增“我的待办”模块，以实现核心审批场景的集中管理：</p>
+                <p><strong>● 待我审批：</strong>需要处理的报价、合同、订单等申请，直接按类型分类展示，不需要在不同模块查找审批单；</p>
+                <p><strong>● 我处理的：</strong>参与审批的单据，流程进度随时可查；</p>
+                <p><strong>● 我发起的：</strong>自己提交的审批申请可实时追踪审批节点动态，无需反复催问进度；</p>
+                <p><strong>● 抄送我的：</strong>所有相关的审批抄送信息集中展示，关键业务动态不遗漏。</p>
+                <figure>
+                    <img src="../images/blog/articles/approval-flow-v1-7-0-04.png" alt="0528-04.png" loading="lazy"
+                         decoding="async" />
+                </figure>
+                <p class="article-caption">▲图4 Cordys CRM首页新增“我的待办”模块</p>
+                <p>在“待我审批”列表中，按照业务类型进行分类（报价、合同、订单、发票），用户可以快速筛选处理不同类型的审批，避免无效查找。同时，系统支持一键勾选多条单据，批量执行“同意”或“驳回”操作。</p>
+                <figure>
+                    <img src="../images/blog/articles/approval-flow-v1-7-0-05.png" alt="0528-05.png" loading="lazy"
+                         decoding="async" />
+                </figure>
+                <p class="article-caption">▲图5 “待我审批”列表支持按业务类型快速筛选</p>
+                <h3>功能优化</h3>
+                <p><strong>■</strong> 优化（合同）：合同模块增加合同阶段看板模式；</p>
+                <p><strong>■</strong> 优化（订单）：订单模块增加订单状态看板模式；</p>
+                <p><strong>■</strong> 优化（性能）：全量导出数据性能优化；</p>
+                <p><strong>■</strong> 优化（通用）：初始化表单视图优化。</p>
+                <h3>问题修复</h3>
+                <p><strong>■ </strong>Bug（产品）：修复产品详情删除附件未校验权限的问题（#2429）；</p>
+                <p><strong>■ </strong>Bug（合同）：修复合同收到回款后未展示回款记录的问题（#2102）；</p>
+                <p><strong>■</strong>Bug（系统）：修复商机表单显隐规则未生效的问题（#2128）。</p>
+                <p><strong>■ </strong>Bug（系统）：修复部分接口的XSS安全漏洞（#2239）。</p>
+                <p><strong>■</strong> Bug（系统）：修复部分接口的查询排序字段存在的SQL注入漏洞 。</p>
+            </div>
+        </article>
+    </main>
+    <!-- Contact Section -->
+    <section class="section section--contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">联系我们</h2>
+            <p class="section__subtitle">想要进一步了解 Cordys? 欢迎通过以下方式联系我们。</p>
+            <div class="contact__card">
+                <div class="contact__grid">
+                    <div class="contact__column">
+                        <h3 class="contact__label">购买咨询</h3>
+                        <div class="contact__qr">
+                            <img src="../images/wechat-customer.jpg" alt="购买咨询二维码" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="contact__column">
+                        <h3 class="contact__label">技术交流群</h3>
+                        <div class="contact__qr">
+                            <img src="../images/qrcode.png" alt="技术交流群二维码" loading="lazy" />
+                        </div>
+                    </div>
+                    <div class="contact__column contact__column--info">
+                        <h3 class="contact__label">联系方式</h3>
+                        <div class="contact__info-list">
+                            <div class="contact__info-item">
+                                <span class="contact__info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path
+                                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span>400-052-0755</span>
+                            </div>
+                            <div class="contact__info-item">
+                                <span class="contact__info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path
+                                              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                                <span>support@fit2cloud.com</span>
+                            </div>
+                            <div class="contact__info-item">
+                                <span class="contact__info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                                    </svg>
+                                </span>
+                                <a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a>
+                            </div>
+                            <div class="contact__info-item">
+                                <span class="contact__info-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="7 10 12 15 17 10"></polyline>
+                                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                                    </svg>
+                                </span>
+                                <a href="../download/introduce-cordys_2026.pdf" target="_blank"
+                                   rel="noopener noreferrer">产品 PPT 材料</a>
                             </div>
                         </div>
-                        <a href="#contact" class="nav__link">联系我们</a>
                     </div>
-                    <div class="nav__right">
-                        <a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" class="nav__button nav__button--outline" rel="noopener noreferrer">代码仓库</a>
-                        <a href="https://cordys.cn/docs/installation/offline_installtion/" target="_blank" class="nav__button nav__button--primary" rel="noopener noreferrer"
-                            ><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                                <polyline points="7 10 12 15 17 10" />
-                                <line x1="12" y1="15" x2="12" y2="3" /></svg
-                            >免费下载</a
-                        >
+                </div>
+            </div>
+            <div class="contact__partner">
+                <h3 class="contact__label">申请成为合作伙伴</h3>
+                <p class="contact__partner-desc">Cordys CRM 咨询和实施合作伙伴积极招募中，共创 AI CRM 新时代。</p>
+                <a href="https://jsj.top/f/vKGHRP" target="_blank" class="contact__partner-cta"
+                   rel="noopener noreferrer">立即申请</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__brand-link" aria-label="Cordys CRM 首页">
+                        <img src="../images/favicon.png" alt="Cordys CRM Logo" />
+                        <span>Cordys CRM</span>
+                    </a>
+                    <p class="footer__desc">新一代开源 AI CRM 系统，帮助企业实现从线索到回款的全生命周期管理。</p>
+                </div>
+                <nav class="footer__nav" aria-label="底部导航">
+                    <div class="footer__group">
+                        <h2 class="footer__title">产品</h2>
+                        <ul class="footer__links">
+                            <li><a href="../download/introduce-cordys_2026.pdf" target="_blank"
+                                   rel="noopener noreferrer">产品介绍</a></li>
+                            <li><a href="../blog.html">产品动态</a></li>
+
+                            <li><a href="../pricing.html">产品价格</a></li>
+
+                        </ul>
                     </div>
-                    <div class="nav__toggle" id="nav-toggle" aria-label="展开导航" role="button" tabindex="0">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="footer__group">
+                        <h2 class="footer__title">资源</h2>
+                        <ul class="footer__links">
+                            <li><a href="https://docs.fit2cloud.com/cordys/" target="_blank"
+                                   rel="noopener noreferrer">在线文档</a></li>
+                            <li><a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank"
+                                   rel="noopener noreferrer">用户论坛</a></li>
+                            <li><a href="https://github.com/1Panel-dev/CordysCRM" target="_blank"
+                                   rel="noopener noreferrer">GitHub 仓库</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__group">
+                        <h2 class="footer__title">联系</h2>
+                        <ul class="footer__links">
+                            <li><a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a>
+                            </li>
+                            <li><a href="https://fit2cloud.com/about/index.html" target="_blank"
+                                   rel="noopener noreferrer">关于飞致云</a></li>
+                            <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
             </div>
-        </header>
-        <main class="article-page">
-            <article class="container article-shell">
-                <a href="../blog.html" class="article-breadcrumb">产品动态</a>
-                <h1 class="article-title">新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本</h1>
-                <p class="article-summary">Cordys CRM v1.7.0 新增审批流、审批记录和首页我的待办功能，进一步规范业务流程，提升办公效率。</p>
-                <div class="article-meta"><time datetime="2026-05-31">2026年05月31日</time></div>
-                <img src="../images/blog/cordys-01.png" alt="新增审批流、审批记录功能，Cordys CRM发布v1.7.0版本" class="article-cover" />
-                <div class="article-content">
-                    <p>2026年5月29日，Cordys CRM开源AI CRM系统正式发布v1.7.0版本。</p>
-                    <p>
-                        在这一版本中，Cordys
-                        CRM系统新增了灵活可配置的“<strong>审批流</strong>”功能，并且支持报价、合同、发票、订单四大模块按照条件分支、多级、会签等规则自定义审批流，同时审计记录全程可追溯。另外，系统首页新增“<strong>我的待办</strong>”功能，用户可以集中处理审批事项，进一步规范业务流程，提升办公效率。除此之外，Cordys
-                        CRM v1.7.0版本也结合社区用户的实际反馈完成了多项功能优化与问题修复。
-                    </p>
-                    <h3>亮点更新</h3>
-                    <p><strong>■ 流程设置新增审批流功能</strong></p>
-                    <p>
-                        Cordys CRM v1.7.0版本重磅上线“审批流”功能，为用户强化业务合规管控、破解销售流程卡点提供帮助。在报价、合同、发票、订单等业务的每一个关键节点，Cordys
-                        CRM均支持企业根据自身业务规则灵活配置流程，实现从提交到结办的全链路可控。通过配置审批流，用户可以在保障业务流转高效畅通的同时，沉淀完整的业务数据、提前拦截潜在风险，并且实现每一步业务操作的合规可追溯。
-                    </p>
-                    <p>Cordys CRM的审批流功能提供了丰富的配置项，能够适配全场景审批规则：</p>
-                    <p><strong>● 条件分支自定义：</strong>可根据表单字段设置分流规则，例如报价单可按照“金额＞10 万”自动触发多级上级审批，其他情况直接走部门负责人审批，不同场景的流程无需重复搭建；</p>
-                    <p><strong>● 审批模式自定义：</strong>支持连续多级上级、指定负责人等审批人设置，提供会签、或签、依次审批等多种模式可选，还能配置审批异常自动通过规则，特殊场景也能顺畅流转；</p>
-                    <p><strong>● 表单权限自定义：</strong>支持对表单字段进行精细化的权限配置，可以针对不同审批节点设置隐藏、查看、编辑三种权限，敏感数据可按需隐藏；</p>
-                    <p><strong>● 审批后操作自定义：</strong>支持对不同审批结果设置自动更新操作，减少人工干预。</p>
-                    <figure>
-                        <img src="../images/blog/articles/approval-flow-v1-7-0-01.png" alt="0528-01.png" loading="lazy" decoding="async" />
-                    </figure>
-                    <p class="article-caption">▲图1 Cordys CRM审批流设计界面</p>
-                    <p>
-                        在审批流的权限控制方面，新版本Cordys
-                        CRM提供精细化的状态控制。在节点权限设置方面，针对已通过、审批中、已驳回、已撤销、待提审等流程状态，支持用户单独配置查看、编辑、删除、下载及作废权限，操作权限一目了然，有效杜绝流程风险；同时，系统支持审批人批量处理、撤回、加签，还可以设置自动审批规则，同一审批人重复出现时可仅首个节点审批，后续节点自动同意，大幅减少重复审批操作。
-                    </p>
-                    <figure>
-                        <img src="../images/blog/articles/approval-flow-v1-7-0-02.png" alt="0528-02.png" loading="lazy" decoding="async" />
-                    </figure>
-                    <p class="article-caption">▲图2 Cordys CRM支持审批流权限控制</p>
-                    <p><strong>■ 报价、合同、发票、订单四大模块新增审批记录功能</strong></p>
-                    <p>
-                        在Cordys
-                        CRM的审批流中，每一次提交、审批、意见都被完整记录在案，成为业务合规的“数字档案”。审批轨迹全程透明，每一位审批人的操作时间、审批状态、审批意见等信息全程可追溯；审批附件与审批记录绑定存档，后续在财务核对、法务复盘时可以直接在审批流中找到相关依据；系统提供会签、或签、加签模式，可适配复杂业务场景；此外，抄送人可以按需查看审批记录，关键信息高效同步。
-                    </p>
-                    <figure>
-                        <img src="../images/blog/articles/approval-flow-v1-7-0-03.png" alt="0528-03.png" loading="lazy" decoding="async" />
-                    </figure>
-                    <p class="article-caption">▲图3 Cordys CRM支持查看完整审批记录</p>
-                    <p><strong>■ 首页新增“我的待办”功能</strong></p>
-                    <p>Cordys CRM v1.7.0版本在系统首页新增“我的待办”模块，以实现核心审批场景的集中管理：</p>
-                    <p><strong>● 待我审批：</strong>需要处理的报价、合同、订单等申请，直接按类型分类展示，不需要在不同模块查找审批单；</p>
-                    <p><strong>● 我处理的：</strong>参与审批的单据，流程进度随时可查；</p>
-                    <p><strong>● 我发起的：</strong>自己提交的审批申请可实时追踪审批节点动态，无需反复催问进度；</p>
-                    <p><strong>● 抄送我的：</strong>所有相关的审批抄送信息集中展示，关键业务动态不遗漏。</p>
-                    <figure>
-                        <img src="../images/blog/articles/approval-flow-v1-7-0-04.png" alt="0528-04.png" loading="lazy" decoding="async" />
-                    </figure>
-                    <p class="article-caption">▲图4 Cordys CRM首页新增“我的待办”模块</p>
-                    <p>在“待我审批”列表中，按照业务类型进行分类（报价、合同、订单、发票），用户可以快速筛选处理不同类型的审批，避免无效查找。同时，系统支持一键勾选多条单据，批量执行“同意”或“驳回”操作。</p>
-                    <figure>
-                        <img src="../images/blog/articles/approval-flow-v1-7-0-05.png" alt="0528-05.png" loading="lazy" decoding="async" />
-                    </figure>
-                    <p class="article-caption">▲图5 “待我审批”列表支持按业务类型快速筛选</p>
-                    <h3>功能优化</h3>
-                    <p><strong>■</strong> 优化（合同）：合同模块增加合同阶段看板模式；</p>
-                    <p><strong>■</strong> 优化（订单）：订单模块增加订单状态看板模式；</p>
-                    <p><strong>■</strong> 优化（性能）：全量导出数据性能优化；</p>
-                    <p><strong>■</strong> 优化（通用）：初始化表单视图优化。</p>
-                    <h3>问题修复</h3>
-                    <p><strong>■ </strong>Bug（产品）：修复产品详情删除附件未校验权限的问题（#2429）；</p>
-                    <p><strong>■ </strong>Bug（合同）：修复合同收到回款后未展示回款记录的问题（#2102）；</p>
-                    <p><strong>■</strong>Bug（系统）：修复商机表单显隐规则未生效的问题（#2128）。</p>
-                    <p><strong>■ </strong>Bug（系统）：修复部分接口的XSS安全漏洞（#2239）。</p>
-                    <p><strong>■</strong> Bug（系统）：修复部分接口的查询排序字段存在的SQL注入漏洞 。</p>
-                </div>
-            </article>
-        </main>
-        <!-- Contact Section -->
-        <section class="section section--contact" id="contact">
-            <div class="container">
-                <h2 class="section__title">联系我们</h2>
-                <p class="section__subtitle">想要进一步了解 Cordys? 欢迎通过以下方式联系我们。</p>
-                <div class="contact__card">
-                    <div class="contact__grid">
-                        <div class="contact__column">
-                            <h3 class="contact__label">购买咨询</h3>
-                            <div class="contact__qr">
-                                <img src="../images/wechat-customer.jpg" alt="购买咨询二维码" loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="contact__column">
-                            <h3 class="contact__label">技术交流群</h3>
-                            <div class="contact__qr">
-                                <img src="../images/qrcode.png" alt="技术交流群二维码" loading="lazy" />
-                            </div>
-                        </div>
-                        <div class="contact__column contact__column--info">
-                            <h3 class="contact__label">联系方式</h3>
-                            <div class="contact__info-list">
-                                <div class="contact__info-item">
-                                    <span class="contact__info-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                        </svg>
-                                    </span>
-                                    <span>400-052-0755</span>
-                                </div>
-                                <div class="contact__info-item">
-                                    <span class="contact__info-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
-                                    </span>
-                                    <span>support@fit2cloud.com</span>
-                                </div>
-                                <div class="contact__info-item">
-                                    <span class="contact__info-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                                        </svg>
-                                    </span>
-                                    <a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a>
-                                </div>
-                                <div class="contact__info-item">
-                                    <span class="contact__info-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                            <polyline points="7 10 12 15 17 10"></polyline>
-                                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                                        </svg>
-                                    </span>
-                                    <a href="../download/introduce-cordys_2026.pdf" target="_blank" rel="noopener noreferrer">产品 PPT 材料</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact__partner">
-                    <h3 class="contact__label">申请成为合作伙伴</h3>
-                    <p class="contact__partner-desc">Cordys CRM 咨询和实施合作伙伴积极招募中，共创 AI CRM 新时代。</p>
-                    <a href="https://jsj.top/f/vKGHRP" target="_blank" class="contact__partner-cta" rel="noopener noreferrer">立即申请</a>
-                </div>
+            <div class="footer__bottom">
+                <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
+                <a class="footer__beian" href="https://beian.miit.gov.cn/" target="_blank"
+                   rel="noopener noreferrer">浙ICP备14038283号-11</a>
             </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
 
-        </section>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__main">
-                    <div class="footer__brand">
-                        <a href="../index.html" class="footer__brand-link" aria-label="Cordys CRM 首页">
-                            <img src="../images/favicon.png" alt="Cordys CRM Logo" />
-                            <span>Cordys CRM</span>
-                        </a>
-                        <p class="footer__desc">新一代开源 AI CRM 系统，帮助企业实现从线索到回款的全生命周期管理。</p>
-                    </div>
-                    <nav class="footer__nav" aria-label="底部导航">
-                        <div class="footer__group">
-                            <h2 class="footer__title">产品</h2>
-                            <ul class="footer__links">
-                                <li><a href="../download/introduce-cordys_2026.pdf" target="_blank" rel="noopener noreferrer">产品介绍</a></li>
-                                <li><a href="../blog.html">产品动态</a></li>
-
-                                                        <li><a href="../pricing.html">产品价格</a></li>
-
-                                                        </ul>
-                        </div>
-                        <div class="footer__group">
-                            <h2 class="footer__title">资源</h2>
-                            <ul class="footer__links">
-                                <li><a href="https://docs.fit2cloud.com/cordys/" target="_blank" rel="noopener noreferrer">在线文档</a></li>
-                                <li><a href="https://bbs.fit2cloud.com/c/crm/4" target="_blank" rel="noopener noreferrer">用户论坛</a></li>
-                                <li><a href="https://github.com/1Panel-dev/CordysCRM" target="_blank" rel="noopener noreferrer">GitHub 仓库</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__group">
-                            <h2 class="footer__title">联系</h2>
-                            <ul class="footer__links">
-                                <li><a href="https://jsj.top/f/UFPJsq" target="_blank" rel="noopener noreferrer">产品预约演示</a></li>
-                                <li><a href="https://fit2cloud.com/about/index.html" target="_blank" rel="noopener noreferrer">关于飞致云</a></li>
-                                <li><a href="https://www.fit2cloud.com/" target="_blank" rel="noopener noreferrer">飞致云官网</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div class="footer__bottom">
-                    <p class="footer__text">2014-2026 版权所有©杭州飞致云信息科技有限公司</p>
-                    <a class="footer__beian" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">浙ICP备14038283号-11</a>
-                </div>
-            </div>
-        </footer>
-        <script src="../js/main.js"></script>
-        <script src="../js/bootstrap.bundle.min.js"></script>
-    </body>
 </html>
