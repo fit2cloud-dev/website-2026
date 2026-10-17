@@ -3,7 +3,7 @@
 ## 官方源 (高可信度)
 1. 1Panel官网 - https://1panel.cn/ - 访问日期: 2025-06-17 - 产品特性、架构介绍
 2. 1Panel GitHub - https://github.com/1Panel-dev/1Panel - 访问日期: 2025-06-17 - 技术文档、版本信息
-3. 1Panel文档 - https://1panel.cn/docs/ - 访问日期: 2025-06-17 - 安装配置指南
+3. 1Panel文档 - https://docs.fit2cloud.com/1panel/ - 访问日期: 2025-06-17 - 安装配置指南
 4. webmin官网 - https://www.webmin.com/ - 访问日期: 2025-06-17 - 功能特性、版本发布
 5. webmin GitHub - https://github.com/webmin/webmin - 访问日期: 2025-06-17 - 开源项目信息
 6. webmin文档 - https://doxfer.webmin.com/Webmin/Main_Page - 访问日期: 2025-06-17 - 功能模块详情
