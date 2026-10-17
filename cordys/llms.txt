@@ -58,7 +58,7 @@
 
 ## Downloads And Support
 
-- [Offline Installtion](https://docs.fit2cloud.com/cordys/installation/offline_installtion/): 免费下载安装说明。
+- [Offline Installtion](https://community.fit2cloud.com/#/products/cordys-crm/downloads): 免费下载安装说明。
 - [Cordys CRM 下载中心](https://community.fit2cloud.com/#/products/cordys-crm/downloads): 官方下载中心。
 - [Cordys CRM 社区资源](https://bbs.fit2cloud.com/c/crm/4): Cordys CRM 用户论坛。
 - [Cordys CRM 产品预约演示](https://jsj.top/f/UFPJsq): 产品预约演示。
