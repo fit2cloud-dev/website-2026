@@ -13,7 +13,7 @@
 - [首页安装方式](https://1panel.cn/#quickstart) - 一键安装、离线安装说明与帮助入口。
 - [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景，包含企业版用户与认证管理能力。
-- [1Panel 企业版](https://1panel.cn/enterprise.html) - 从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理平台，覆盖 AI 门户、AI 网关、Skills Hub、MCP 市场自助管理、用户与认证管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
+- [1Panel 企业版](https://1panel.cn/enterprise.html) - 从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理面板，覆盖 AI 门户、AI 网关、Skills Hub、MCP 市场自助管理、用户与认证管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
 - [1Panel AI 门户](https://1panel.cn/ai-portal.html) - 面向企业内部用户的自助入口，覆盖自助申请API Key、查看用量、安装 Skills、模型广场、MCP 市场、技能提交审核、管理后台和企业通讯工具对接。
 - [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - 为内部 AI 应用和模型调用提供统一接入入口，覆盖模型代理、席位管理、用量统计、智能路由和内容合规；支持离线安装包部署（推荐）与 1Panel 应用商店一键安装，10 人及以下团队可免费使用。
 - [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - 在组织内发布、发现、管理和维护可复用的 Skills 技能，覆盖统一管理、版本管理、安全审计、技能沉淀和风险等级评估。
