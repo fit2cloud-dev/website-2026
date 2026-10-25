@@ -176,9 +176,15 @@
   </url>
   <url>
     <loc>https://www.maxkb.cn/blog</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.maxkb.cn/blog/maxkb-security-20261022</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.maxkb.cn/blog/maxkb-bamo-ai-process-knowledge-platform</loc>
