@@ -77,6 +77,14 @@ jobs:
           tar zxf fit2cloudweb.tar.gz -C oss-tmp
           ossutil cp -r -f --jobs=100 --meta=Cache-Control:max-age=0 oss-tmp/ oss://www-fit2cloud-com/
           rm -rf oss-tmp
+  refresh-aliyun-cdn-cache:
+    runs-on: ubuntu-latest
+    needs: [deploy-to-server, deploy-to-aliyun-oss]
+    if: ${{ always() }}
+    concurrency:
+      group: refresh-aliyun-cdn-cache
+      cancel-in-progress: true
+    steps:
       - name: 刷新cdn缓存
         run: |
           set -euo pipefail
@@ -96,3 +104,4 @@ jobs:
           aliyun dcdn RefreshDcdnObjectCaches \
             --ObjectPath "https://fit2cloud.com/" \
             --ObjectType Directory
+
