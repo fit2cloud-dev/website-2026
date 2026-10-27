@@ -77,3 +77,22 @@ jobs:
           tar zxf fit2cloudweb.tar.gz -C oss-tmp
           ossutil cp -r -f --jobs=100 --meta=Cache-Control:max-age=0 oss-tmp/ oss://www-fit2cloud-com/
           rm -rf oss-tmp
+      - name: 刷新cdn缓存
+        run: |
+          set -euo pipefail
+          # 安装阿里云 CLI
+          curl -fsSL https://aliyuncli.alicdn.com/install.sh | bash
+          # 配置访问凭证
+          aliyun configure set \
+            --profile default \
+            --mode AK \
+            --region cn-hangzhou \
+            --access-key-id ${{ secrets.OSS_AK }} \
+            --access-key-secret ${{ secrets.OSS_SK }}
+          # 刷新缓存
+          aliyun dcdn RefreshDcdnObjectCaches \
+            --ObjectPath "https://www.fit2cloud.com/" \
+            --ObjectType Directory
+          aliyun dcdn RefreshDcdnObjectCaches \
+            --ObjectPath "https://fit2cloud.com/" \
+            --ObjectType Directory
