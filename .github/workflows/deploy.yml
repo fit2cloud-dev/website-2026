@@ -86,7 +86,7 @@ jobs:
           aliyun configure set \
             --profile default \
             --mode AK \
-            --region cn-hangzhou \
+            --region cn-hongkong \
             --access-key-id ${{ secrets.OSS_AK }} \
             --access-key-secret ${{ secrets.OSS_SK }}
           # 刷新缓存
