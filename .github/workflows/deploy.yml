@@ -104,4 +104,6 @@ jobs:
           aliyun dcdn RefreshDcdnObjectCaches \
             --ObjectPath "https://fit2cloud.com/" \
             --ObjectType Directory
-
+          aliyun dcdn RefreshDcdnObjectCaches \
+            --ObjectPath "https://1panel.cn/" \
+            --ObjectType Directory
