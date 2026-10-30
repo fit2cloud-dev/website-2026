@@ -62,13 +62,13 @@
   </url>
   <url>
     <loc>https://1panel.cn/versions.html</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://1panel.cn/enterprise.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -100,6 +100,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://1panel.cn/model-management.html</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/1p-model-management.png</image:loc>
+      <image:title>1Panel 模型管理模型广场界面</image:title>
+      <image:caption>1Panel 模型管理提供模型全生命周期的可视化便捷管理，支持官方精选模型、从魔搭社区和 HuggingFace 便捷下载、VLLM 可视化部署快速启动，以及本地推理引擎持续监控。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/1panel-ai-gateway-vs-newapi.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -119,7 +130,7 @@
   </url>
   <url>
     <loc>https://1panel.cn/user-management.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -135,7 +146,7 @@
   </url>
   <url>
     <loc>https://1panel.cn/security-ops-report.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
