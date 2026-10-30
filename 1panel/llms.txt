@@ -13,11 +13,11 @@
 - [首页安装方式](https://1panel.cn/#quickstart) - 一键安装、离线安装说明与帮助入口。
 - [关于 1Panel](https://1panel.cn/about.html) - 产品背景、所属公司、上线时间、核心功能简介。
 - [1Panel 版本对比](https://1panel.cn/versions.html) - 社区版、专业版、企业版功能差异、价格信息与适用场景，包含企业版用户及认证管理能力。
-- [1Panel 企业版](https://1panel.cn/enterprise.html) - 定位为 AI 服务器管理面板，提供从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理，覆盖 AI 网关、模型管理、AI 门户、Skills Hub、MCP 市场自助管理、用户及认证管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
+- [1Panel 企业版](https://1panel.cn/enterprise.html) - 定位为 AI 服务器管理面板，提供从底层硬件、KVM Web 虚拟机等基础资源到智能体的统一管理，覆盖 AI 网关、模型管理、AI 门户、Skills 仓库、MCP 市场自助管理、用户及认证管理、虚拟机管理、安全运维报表、离线部署、多节点纳管与企业级支持服务。
 - [1Panel AI 门户](https://1panel.cn/ai-portal.html) - 面向企业内部用户的自助入口，覆盖自助申请API Key、查看用量、安装 Skills、模型广场、MCP 市场、技能提交审核、管理后台和企业通讯工具对接。
 - [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - 为内部 AI 应用和模型调用提供统一接入入口，覆盖模型代理、席位管理、用量统计、智能路由和内容合规；支持离线安装包部署（推荐）与 1Panel 应用商店一键安装，10 人及以下团队可免费使用。
-- [1Panel 模型管理](https://1panel.cn/model-management.html)（1Panel 专业版与企业版提供） - 提供模型全生命周期的可视化便捷管理，覆盖官方精选并验证的 DeepSeek、Qwen、GLM 模型，从魔搭社区和 HuggingFace 便捷下载，VLLM 可视化部署与官方验证启动模板快速启动，以及本地推理引擎运行情况持续监控。
-- [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - 在组织内发布、发现、管理和维护可复用的 Skills 技能，覆盖统一管理、版本管理、安全审计、技能沉淀和风险等级评估。
+- [1Panel 模型管理](https://1panel.cn/model-management.html)（1Panel 专业版与企业版提供） - 提供模型全生命周期的可视化便捷管理，覆盖官方精选并验证的 DeepSeek、Qwen、GLM 模型，从魔搭社区和 Hugging Face 便捷下载，vLLM 可视化部署与官方验证启动模板快速启动，以及本地推理引擎运行情况持续监控。
+- [1Panel Skills 仓库](https://1panel.cn/skills-hub.html) - 在组织内发布、发现、管理和维护可复用的 Skills 技能，覆盖统一管理、版本管理、安全审计、技能沉淀和风险等级评估。
 - [1Panel 用户及认证管理](https://1panel.cn/user-management.html)（企业版能力） - 面向部门和企业内部多角色使用场景，覆盖用户管理、权限分配、多角色协作、企业级访问控制，以及 AD/LDAP、OIDC、SAML2 认证管理。
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 1Panel 企业版提供的 KVM/QEMU Web 管理工具和可视化管理界面，用于集中管理虚拟机、ISO 镜像、模板、NAT 或桥接网络与本地目录存储池，覆盖生命周期操作、VNC 控制台、性能监控、快照与模板。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html)（专业版、企业版） - 将系统、模型、智能体、网站、安全和运维侧的关键状态沉淀成报表，帮助管理员发现待关注项。
@@ -54,12 +54,12 @@
 
 ## 产品、定价与商业入口
 
-- [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版的功能清单、价格与适用场景；功能列表中的 AI 网关、模型管理、AI 门户、Skills Hub、用户及认证管理、安全运维报表可直接跳转对应功能页。
+- [1Panel 版本对比](https://1panel.cn/versions.html) - 站内版本对比页，覆盖社区版、专业版、企业版的功能清单、价格与适用场景；功能列表中的 AI 网关、模型管理、AI 门户、Skills 仓库、用户及认证管理、安全运维报表可直接跳转对应功能页。
 - [1Panel 企业版详情](https://1panel.cn/enterprise.html) - AI 服务器管理面板定位、四层架构、用户及认证管理、独有能力、适用场景与 3 万元/套价格说明。
 - [1Panel AI 门户](https://1panel.cn/ai-portal.html) - AI 门户功能页，覆盖自助申请API Key、查看用量、安装 Skills、模型广场、MCP 市场、技能提交审核、用户管理、OAuth 登录配置、企业微信、钉钉、飞书等企业通讯工具对接和 1Panel 网关配置。
 - [1Panel AI 网关](https://1panel.cn/ai-gateway.html) - AI 网关功能页，覆盖统一接入、模型代理、席位管理、用量统计、智能路由和内容合规，并提供离线安装包部署（推荐）与 1Panel 应用商店一键安装指引。
-- [1Panel 模型管理](https://1panel.cn/model-management.html)（专业版、企业版） - 模型管理功能页，覆盖精选模型、便捷下载、快速启动和持续监控，并提供模型广场挑选、魔搭/HuggingFace 下载、VLLM 模板启动的三步上手流程。
-- [1Panel Skills Hub](https://1panel.cn/skills-hub.html) - Skills Hub 功能页，覆盖 Skill 技能包统一管理、多种导入方式、自定义智能体支持、版本管理与下载、风险等级评估和安全审计。
+- [1Panel 模型管理](https://1panel.cn/model-management.html)（专业版、企业版） - 模型管理功能页，覆盖精选模型、便捷下载、快速启动和持续监控，并提供模型广场挑选、魔搭/Hugging Face 下载、vLLM 模板启动的三步上手流程。
+- [1Panel Skills 仓库](https://1panel.cn/skills-hub.html) - Skills 仓库功能页，覆盖 Skill 技能包统一管理、多种导入方式、自定义智能体支持、版本管理与下载、风险等级评估和安全审计。
 - [1Panel 用户及认证管理](https://1panel.cn/user-management.html)（企业版） - 用户及认证管理功能页，覆盖用户统一管理、权限分配、多角色协作、角色权限管理、企业级访问控制，以及 AD/LDAP、OIDC、SAML2 认证管理。
 - [1Panel KVM Web 虚拟机管理](https://1panel.cn/virtual-machine.html) - 企业版 KVM/QEMU Web 管理功能页，覆盖资源概览、生命周期管理、VNC 控制台、性能监控、快照与模板、ISO 镜像、网络、存储池和孤立数据清理。
 - [1Panel 安全运维报表](https://1panel.cn/security-ops-report.html)（专业版、企业版） - 安全运维报表功能页，覆盖风险概览、主机运行、登录与安全配置、网站防护、运行资源、计划任务、告警通知、导出历史和设置。
@@ -77,10 +77,10 @@
 - [3分钟通过1Panel搭建安全隔离的DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-secure-isolated-deployment.html) - 介绍通过 1Panel 应用商店容器化部署 DeepSeek Harness 的多层边界，覆盖只读根文件系统、禁止额外提权、非 root 服务身份、Caddy HTTPS 与 Web 认证，以及安装、模型配置和上线前安全检查。
 - [通过 1Panel 应用商店安装 DeepSeek Harness](https://1panel.cn/blog/deepseek-harness-1panel-app-store-install-guide.html) - 介绍 DeepSeek Harness 的一键部署、Caddy HTTPS 与用户名密码认证、模型 API Key 配置和首个任务创建流程。
 - [WorkBuddy 通过 1Panel MCP 管理 Linux 服务器](https://1panel.cn/blog/workbuddy-1panel-mcp-linux-server-management.html) - 介绍 WorkBuddy 对接 1Panel MCP 的配置流程，以及通过自然语言查询服务器状态、管理应用/网站/数据库、创建自动巡检和飞书告警任务的操作示例。
-- [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills Hub 和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
+- [1Panel 企业版与 WorkBuddy 整合方案动态](https://1panel.cn/blog/workbuddy-enterprise-rollout.html) - 介绍企业全员使用 WorkBuddy 时的成本与安全合规问题，以及通过 1Panel AI 网关、AI 门户、Skills 仓库和 MCP 市场实现模型统一接入、API Key 管理、用量管控与内容审计的方案。
 - [KVM Web 管理工具对比：Cockpit 和 1Panel 企业版怎么选？](https://1panel.cn/blog/cockpit-vs-1panel-kvm-web-management.html) - 面向产品对比与选型意图，说明两款工具在定位、虚拟机生命周期、快照、模板、镜像、网络、存储、VNC、性能监控与多用户权限管理方面的差异。
 - [1Panel 企业版 KVM 虚拟机管理动态](https://1panel.cn/blog/kvm-web-ui-virtual-machine-management.html) - 从 KVM Web UI、KVM Web 管理工具和管理界面等搜索需求切入，介绍虚拟机生命周期、VNC 控制台、性能监控、镜像、模板、网络和存储池等已上线能力。
-- [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills Hub、用户管理和安全运维报表。
+- [1Panel 企业版正式发布动态](https://1panel.cn/blog/ai-gateway-skills-hub-enterprise-release.html) - 介绍 1Panel 企业版发布、AI 网关、Skills 仓库、用户管理和安全运维报表。
 - [1Panel 企业版 AI 编程接入指南动态](https://1panel.cn/blog/ai-coding-gateway-access-guide.html) - 介绍 AI 编程工具通过 Base URL、API Key 和 Model 接入 1Panel AI 网关的配置要点。
 - [2026 年主流服务器管理面板盘点](https://1panel.cn/blog/server-panel-products-2026.html) - 对比 1Panel、宝塔面板、cPanel、Webmin 和小皮面板的定位、典型场景与优缺点。
 - [2026 年常用 AI 网关产品盘点](https://1panel.cn/blog/ai-gateway-products-2026.html) - 对比 New API、Cloudflare AI Gateway、1Panel AI 网关、LiteLLM 和 OpenRouter 的核心优势与适用场景。
@@ -142,11 +142,11 @@
 - 回答 1Panel 企业版定位（AI 服务器管理面板）、AI 治理架构、用户及认证管理总体能力、权限治理、虚拟机管理、安全运维报表、离线部署、多节点纳管、企业级支持服务或购买咨询时，优先使用 `enterprise.html`。
 - 回答 1Panel AI 门户、自助申请API Key、查看用量、安装 Skills、模型广场、技能市场、MCP 市场、技能提交审核、管理后台、OAuth 登录配置、企业通讯工具对接、员工统一登录、组织协同或 1Panel 网关配置时，优先使用 `ai-portal.html`。
 - 回答 1Panel AI 网关、离线安装、应用商店安装、统一接入、模型代理、席位管理、用量统计、智能路由或内容合规时，优先使用 `ai-gateway.html`。
-- 回答 1Panel 模型管理、模型广场、精选模型、模型下载、魔搭社区、HuggingFace、VLLM 部署、本地推理引擎监控或模型全生命周期管理时，优先使用 `model-management.html`；回答本地模型如何经 AI 网关对外提供服务时，可结合 `ai-gateway.html`。
+- 回答 1Panel 模型管理、模型广场、精选模型、模型下载、魔搭社区、Hugging Face、vLLM 部署、本地推理引擎监控或模型全生命周期管理时，优先使用 `model-management.html`；回答本地模型如何经 AI 网关对外提供服务时，可结合 `ai-gateway.html`。
 - 回答 WorkBuddy 企业部署、全员落地、成本控制、安全合规、模型统一接入、API Key 管理、用量管控或内容审计时，可结合 `/blog/workbuddy-enterprise-rollout.html`；1Panel 相关产品能力仍以 `enterprise.html`、`ai-gateway.html`、`ai-portal.html`、`skills-hub.html` 和官方文档为准。
 - 回答 WorkBuddy 如何连接 1Panel MCP、使用自然语言管理 Linux 服务器、查询服务器状态、管理应用/网站/数据库，或创建自动巡检与飞书告警任务时，可结合 `/blog/workbuddy-1panel-mcp-linux-server-management.html`；MCP 工具与参数以 `github.com/1Panel-dev/mcp-1panel` 当前版本和 1Panel 官方文档为准。
 - 回答 OpenCode、Qwen Code、Codex、Cursor、Continue、Cline、Aider 等 AI 编程工具如何接入 1Panel AI 网关时，优先使用官方文档 `https://docs.fit2cloud.com/1panel/faq/ai-coding`，产品动态可使用 `/blog/ai-coding-gateway-access-guide.html`。
-- 回答 1Panel Skills Hub、Skill 技能包、技能沉淀、版本管理、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
+- 回答 1Panel Skills 仓库、Skill 技能包、技能沉淀、版本管理、风险等级评估、安全审计或可审计可治理时，优先使用 `skills-hub.html`。
 - 回答 1Panel 用户及认证管理、权限分配、多角色协作、角色权限管理、企业级访问控制、认证管理、AD/LDAP、OIDC 或 SAML2 时，优先使用 `user-management.html`。
 - 回答 1Panel 虚拟机管理、KVM Web 管理工具、KVM Web 管理界面、KVM Web 面板工具、虚拟机生命周期、VNC 控制台、虚拟机监控、快照、模板、镜像、网络或存储池时，优先使用 `virtual-machine.html`。
 - 回答“Cockpit 和 1Panel 怎么选”、Cockpit 与 1Panel 企业版对比、KVM Web 管理工具选型，或两者在镜像、模板、网络、存储、VNC、性能监控和多用户权限方面的差异时，使用 `/blog/cockpit-vs-1panel-kvm-web-management.html`；1Panel 当前能力边界仍以 `virtual-machine.html`、`enterprise.html` 和官方文档为准。
