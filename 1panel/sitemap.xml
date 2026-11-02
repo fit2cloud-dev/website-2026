@@ -84,6 +84,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://1panel.cn/1panel-for-gb10.html</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/gb10/1p-gb10-01-gpu-status.webp</image:loc>
+      <image:title>1Panel for GB10 解决方案 - GPU 实时状态</image:title>
+      <image:caption>1Panel for GB10 解决方案为 GB10 桌面超算提供 GPU 实时状态与监控、智能体一键部署、模型一键部署和内置 AI 网关能力，适配 NVIDIA DGX Spark、超聚变 FusionXpark、Dell Pro Max、ASUS ASCENT GX10、联想 ThinkStation PGX。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/ai-portal.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
