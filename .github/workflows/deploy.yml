@@ -80,7 +80,7 @@ jobs:
   refresh-aliyun-cdn-cache:
     runs-on: ubuntu-latest
     needs: [deploy-to-server, deploy-to-aliyun-oss]
-    if: ${{ always() }}
+    # if: ${{ always() }}
     concurrency:
       group: refresh-aliyun-cdn-cache
       cancel-in-progress: true
