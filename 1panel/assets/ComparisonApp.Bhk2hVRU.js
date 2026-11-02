@@ -1,1 +1,1 @@
-import{j as r}from"./icons.C9OtNFex.js";import{P as o}from"./PageShell.BVm5N4N6.js";import{C as t}from"./ComparisonPage.C4AgCGBe.js";import"./client.BME85wcG.js";function e(){return r.jsx(o,{currentPath:"/vscpanel/comparison.html",children:r.jsx(t,{})})}export{e as default};
+import{j as r}from"./icons.C9OtNFex.js";import{P as o}from"./PageShell.BVm5N4N6.js";import{C as t}from"./ComparisonPage.C4AgCGBe.js";import"./client.BME85wcG.js";function e(){return r.jsx(o,{currentPath:(window.__SITE_BASE__||"/")+"vscpanel/comparison.html",children:r.jsx(t,{})})}export{e as default};
