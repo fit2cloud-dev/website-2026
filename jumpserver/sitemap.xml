@@ -19,6 +19,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.jumpserver.org/blog/news-20261101.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.jumpserver.org/blog/release-20260917.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>

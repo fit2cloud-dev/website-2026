@@ -1417,6 +1417,14 @@ a:focus {
     max-width: 100%;
 }
 
+.de-article-content .de-article-figcaption {
+    color: var(--de-muted) !important;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: -8px 0 24px;
+    text-align: center;
+}
+
 .de-article-content pre {
     background: #14241e;
     border-radius: 10px;
