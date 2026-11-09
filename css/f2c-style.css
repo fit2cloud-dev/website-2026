@@ -458,3 +458,224 @@ header.fixed-top {
         display: none !important;
     }
 }
+
+/* 关于飞致云 · 核心价值观 */
+.f2c-value-card {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    cursor: default;
+    border: 1px solid rgba(0, 94, 235, 0.1);
+    background: #ffffff;
+    box-shadow: 0 10px 30px -14px rgba(0, 44, 116, 0.14);
+    transition:
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.3s ease;
+}
+
+.f2c-value-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 94, 235, 0.18);
+    box-shadow: 0 18px 44px -16px rgba(0, 44, 116, 0.2);
+}
+
+.f2c-value-card__no {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    color: rgba(0, 94, 235, 0.17);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    pointer-events: none;
+}
+
+/* 图标与标题同排，压缩卡片高度 */
+.f2c-value-card .card-body {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-content: start;
+    align-items: center;
+    column-gap: 16px;
+    /* 覆盖 Bootstrap 的 p-4 / p-lg-5 */
+    padding: 24px 30px 22px;
+}
+
+.f2c-value-card__icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 13px;
+    background: rgba(0, 94, 235, 0.08);
+    color: var(--f2c-1Panel);
+    font-size: 23px;
+}
+
+.f2c-value-card__title {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    color: #0b1b33;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+}
+
+.f2c-value-card__slogan {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    margin: 4px 0 0;
+    color: var(--f2c-1Panel);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.55;
+    text-wrap: balance;
+}
+
+.f2c-value-card__list {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.f2c-value-card__list li {
+    position: relative;
+    padding-left: 16px;
+    color: #5b6b85;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.f2c-value-card__list li + li {
+    margin-top: 6px;
+}
+
+.f2c-value-card__list li::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(0, 94, 235, 0.38);
+}
+
+@media (max-width: 767.98px) {
+    .f2c-value-card .card-body {
+        grid-template-columns: 42px minmax(0, 1fr);
+        column-gap: 14px;
+        padding: 22px 20px 20px;
+    }
+
+    .f2c-value-card__icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        font-size: 21px;
+    }
+
+    .f2c-value-card__no {
+        top: 15px;
+        right: 16px;
+        font-size: 28px;
+    }
+
+    .f2c-value-card__title {
+        font-size: 20px;
+    }
+
+    .f2c-value-card__list {
+        margin-top: 16px;
+    }
+}
+
+.f2c-join-cta {
+    position: relative;
+    margin-top: 56px;
+    padding: 52px 32px 48px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 94, 235, 0.12);
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(0, 94, 235, 0.075) 0%, rgba(51, 61, 255, 0.03) 52%, rgba(0, 94, 235, 0.055) 100%);
+    text-align: center;
+}
+
+.f2c-join-cta::after {
+    content: "";
+    position: absolute;
+    top: -150px;
+    right: -90px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 94, 235, 0.14) 0%, rgba(0, 94, 235, 0) 70%);
+    pointer-events: none;
+}
+
+.f2c-join-cta > * {
+    position: relative;
+    z-index: 1;
+}
+
+.f2c-join-cta__tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    border: 1px solid rgba(0, 94, 235, 0.16);
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 6px 16px -10px rgba(0, 44, 116, 0.3);
+    color: var(--f2c-1Panel);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+}
+
+.f2c-join-cta__tag .mdi {
+    font-size: 16px;
+}
+
+.f2c-join-cta__title {
+    max-width: 780px;
+    margin: 20px auto 0;
+    color: #0b1b33;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+}
+
+.f2c-join-cta__actions {
+    margin-top: 28px;
+}
+
+@media (max-width: 767.98px) {
+    .f2c-join-cta {
+        margin-top: 40px;
+        padding: 38px 20px 34px;
+        border-radius: 16px;
+    }
+
+    .f2c-join-cta__title {
+        margin-top: 16px;
+        font-size: 22px;
+    }
+
+    .f2c-join-cta__actions {
+        margin-top: 22px;
+    }
+}
+
