@@ -1478,4 +1478,14 @@
       <image:title>1Panel AI 一体机（方案六）实测报告：8 卡部署 DeepSeek-V4.1-Flash-1017</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/rtx-pro-5000-gpu-selection-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/rtx-pro-5000-gpu-selection-guide/cover.png</image:loc>
+      <image:title>NVIDIA GPU 选型指南：为什么 RTX Pro 5000 是当下的优选？</image:title>
+    </image:image>
+  </url>
 </urlset>
