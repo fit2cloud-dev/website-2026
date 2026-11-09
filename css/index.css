@@ -385,7 +385,7 @@ body {
     display: flex;
     align-items: center;
     gap: 18px;
-    margin-top: 48px;
+    margin-top: -2px;
     margin-bottom: 64px;
     padding: 22px 26px;
     overflow: hidden;
@@ -404,7 +404,7 @@ body {
 
 /* 右上角柔光，提升卡片层次 */
 .f2c-news-bar::after {
-    content: "";
+    content: '';
     position: absolute;
     top: -80px;
     right: -50px;
@@ -498,7 +498,7 @@ body {
 
 /* 分隔点跟随其后的片段，避免换行时孤立在行末 */
 .f2c-news-bar__desc > span + span::before {
-    content: "·";
+    content: '·';
     margin-right: 9px;
     color: #b4c0d2;
     font-weight: 700;
