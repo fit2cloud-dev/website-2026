@@ -1488,4 +1488,14 @@
       <image:title>NVIDIA GPU 选型指南：为什么 RTX Pro 5000 是当下的优选？</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/1panel-v2-5-0-release.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/1panel-v2-5-0-release/cover.png</image:loc>
+      <image:title>打通本地模型部署全流程，1Panel 开源面板 v2.5.0 版本发布</image:title>
+    </image:image>
+  </url>
 </urlset>
