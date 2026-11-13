@@ -1498,4 +1498,14 @@
       <image:title>打通本地模型部署全流程，1Panel 开源面板 v2.5.0 版本发布</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://1panel.cn/blog/1panel-ai-gateway-v1-7-0-release.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/blog/1panel-ai-gateway-v1-7-0-release/cover.png</image:loc>
+      <image:title>支持内容脱敏与模型体验，1Panel AI 网关 v1.7.0 版本发布</image:title>
+    </image:image>
+  </url>
 </urlset>
