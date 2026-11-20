@@ -95,6 +95,17 @@
     </image:image>
   </url>
   <url>
+    <loc>https://1panel.cn/1panel-for-rtx-pro-5000.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://1panel.cn/images/rtx-pro-5000/og-cover.png</image:loc>
+      <image:title>1Panel for RTX Pro 5000 解决方案</image:title>
+      <image:caption>1Panel for RTX Pro 5000 解决方案：NVIDIA RTX Pro 5000 单卡 72GB 显存、FP4 1000 TFLOPS、整卡 300W，覆盖单卡、双卡、四卡、八卡四套 1Panel AI 一体机方案，并配套公开的实机评测报告。</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://1panel.cn/ai-portal.html</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>weekly</changefreq>
