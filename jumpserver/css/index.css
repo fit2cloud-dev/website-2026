@@ -2801,27 +2801,14 @@ a:focus {
 }
 
 .js-founder-portrait {
-    background:
-        url("../images/banner/banner10.webp") no-repeat 31% bottom / auto 108%,
-        linear-gradient(180deg, #ffffff 0%, #eef8f4 100%);
-    border: 1px solid rgba(43, 147, 124, 0.14);
-    border-radius: 8px;
+  background: url("../images/banner/banner10.png") no-repeat left 100%;
+background-size: 90%;
     box-shadow: none;
     min-height: 340px;
     overflow: hidden;
     position: relative;
 }
 
-.js-founder-portrait::after {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(238, 248, 244, 0.78) 66%, rgba(223, 243, 236, 0.98) 100%);
-    bottom: 0;
-    content: "";
-    height: 38%;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-}
 
 .js-founder-content {
     min-width: 0;
@@ -5198,7 +5185,7 @@ a:focus {
 }
 
 .js-4a-grid::before {
-    background: linear-gradient(90deg, rgba(43, 147, 124, 0.2), rgba(74, 168, 255, 0.2));
+    /* background: linear-gradient(90deg, rgba(43, 147, 124, 0.2), rgba(74, 168, 255, 0.2)); */
     content: "";
     height: 2px;
     left: 10%;
