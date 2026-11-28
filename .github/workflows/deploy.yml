@@ -93,11 +93,7 @@ jobs:
           # 安装阿里云 CLI
           curl -fsSL https://aliyuncli.alicdn.com/install.sh | bash
           # 配置访问凭证
-          aliyun configure set \
-            --profile \
-            --mode AK \
-            --region cn-hongkong \
-            --access-key-id ${{ secrets.OSS_AK }} --access-key-secret ${{ secrets.OSS_SK }}
+          aliyun configure set --mode AK --access-key-id ${{ secrets.OSS_AK }} --access-key-secret ${{ secrets.OSS_SK }} --region cn-hongkong
           # 刷新缓存
           aliyun dcdn RefreshDcdnObjectCaches \
             --ObjectPath "https://www.fit2cloud.com/" \
