@@ -94,7 +94,7 @@ jobs:
           curl -fsSL https://aliyuncli.alicdn.com/install.sh | bash
           # 配置访问凭证
           aliyun configure set \
-            --profile default \
+            --profile \
             --mode AK \
             --region cn-hongkong \
             --access-key-id ${{ secrets.OSS_AK }} --access-key-secret ${{ secrets.OSS_SK }}
