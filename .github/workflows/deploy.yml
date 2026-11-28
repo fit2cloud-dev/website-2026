@@ -97,8 +97,7 @@ jobs:
             --profile default \
             --mode AK \
             --region cn-hongkong \
-            --access-key-id ${{ secrets.OSS_AK }} \
-            --access-key-secret ${{ secrets.OSS_SK }}
+            --access-key-id ${{ secrets.OSS_AK }} --access-key-secret ${{ secrets.OSS_SK }}
           # 刷新缓存
           aliyun dcdn RefreshDcdnObjectCaches \
             --ObjectPath "https://www.fit2cloud.com/" \
